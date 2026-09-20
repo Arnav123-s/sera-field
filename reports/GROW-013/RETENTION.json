@@ -1,0 +1,74 @@
+{
+  "cohort": "Previously opened UNIFIED-012 cohort used only for prospective regression checks",
+  "metrics": {
+    "reading": {
+      "n": 384,
+      "accuracy": 0.6588541666666666,
+      "loss": 0.8929402328397676
+    },
+    "math": {
+      "n": 192,
+      "accuracy": 0.11979166666666667,
+      "loss": 3.769034011910359
+    },
+    "pairs": {
+      "dailydialog": {
+        "n": 48,
+        "accuracy": 0.25
+      },
+      "webster": {
+        "n": 48,
+        "accuracy": 0.6666666666666666
+      }
+    }
+  },
+  "reference": {
+    "arm": "coupled",
+    "ablation": null,
+    "selection": {
+      "sha256": "509632a08bb8c243fb0ded9ab68623eae40f3f28a20a0a04a6fa59955d967f80",
+      "revision": "509632a08bb8c243fb0ded9ab68623eae40f3f28a20a0a04a6fa59955d967f80.pt",
+      "parent": "abddb1aeb01d79e44d514c76e62516dd5c2dff54652e99348302007670bd701f",
+      "weights": "aead9f7363bb421425f4c65fb3b259f53b9723b075e5c542ca152641c01268dc",
+      "updates": 14,
+      "score": 0.9936002698239226,
+      "step": 1024
+    },
+    "weights_before": "aead9f7363bb421425f4c65fb3b259f53b9723b075e5c542ca152641c01268dc",
+    "reading": {
+      "n": 384,
+      "accuracy": 0.6588541666666666,
+      "loss": 0.8923871767016559
+    },
+    "math": {
+      "n": 192,
+      "accuracy": 0.11979166666666667,
+      "loss": 3.769086412464579
+    },
+    "pairs": {
+      "dailydialog": {
+        "n": 48,
+        "accuracy": 0.25,
+        "loss": 1.795538220088929
+      },
+      "webster": {
+        "n": 48,
+        "accuracy": 0.6458333333333334,
+        "loss": 0.7542811659635239
+      }
+    },
+    "physics": {
+      "n": 256,
+      "mse": 0.07861130491463575,
+      "median": 0.004682335304096341
+    },
+    "omitted": {
+      "n": 128,
+      "mse": 0.5353620636851701,
+      "median": 0.24159183353185654
+    },
+    "weights_after": "aead9f7363bb421425f4c65fb3b259f53b9723b075e5c542ca152641c01268dc",
+    "cases_sha256": "1d6aa1e45017e5facf1c962d77805febb5b882bd647250ca8d6a122d5bbca4c3"
+  },
+  "protected_parent_parameters_exact": true
+}

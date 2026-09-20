@@ -1,0 +1,21 @@
+{
+  "gates": {
+    "reading_retention": true,
+    "mathematics_retention": true,
+    "mean_pair_retention": true,
+    "physical_retention": true,
+    "exact_replay": true,
+    "immutable_inference": true
+  },
+  "all_gates": true,
+  "selected": {
+    "sha256": "509632a08bb8c243fb0ded9ab68623eae40f3f28a20a0a04a6fa59955d967f80",
+    "revision": "509632a08bb8c243fb0ded9ab68623eae40f3f28a20a0a04a6fa59955d967f80.pt",
+    "parent": "abddb1aeb01d79e44d514c76e62516dd5c2dff54652e99348302007670bd701f",
+    "weights": "aead9f7363bb421425f4c65fb3b259f53b9723b075e5c542ca152641c01268dc",
+    "updates": 14,
+    "score": 0.9936002698239226,
+    "step": 1024
+  },
+  "whole_architecture_completed": false
+}

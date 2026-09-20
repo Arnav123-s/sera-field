@@ -1,0 +1,11 @@
+{
+  "sha256": "c54755e41c10bfe1fd28b4b7430125cc531e96b3d69bda4120e1b86a8f9bd7b5",
+  "revision": "c54755e41c10bfe1fd28b4b7430125cc531e96b3d69bda4120e1b86a8f9bd7b5.pt",
+  "parent": "abddb1aeb01d79e44d514c76e62516dd5c2dff54652e99348302007670bd701f",
+  "weights": "aead9f7363bb421425f4c65fb3b259f53b9723b075e5c542ca152641c01268dc",
+  "updates": 14,
+  "score": 0.9936002698239226,
+  "step": 1024,
+  "source_checkpoint_sha256": "509632a08bb8c243fb0ded9ab68623eae40f3f28a20a0a04a6fa59955d967f80",
+  "role": "qualified_coupled_owner"
+}

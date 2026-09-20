@@ -1,5 +1,5 @@
 {
-  "completed": "CONCEPT-008 through CONCEPT-011: trained acquisition, qualified independent-credit policy, three documented language studies, five-use final qualification and persistent task release",
+  "completed": "UNIFIED-012 coupled field and GROW-013 learned residual extension: trained, independently replayed, retention-qualified and exported",
   "full_vision": "Persistent grounded understanding, imagination, investigation and learning across language and domains",
   "full_vision_completed": false,
   "work_delegated": false,
@@ -15,14 +15,21 @@
   },
   "selection_sha256": "0a959c2962380080382ee8d91ceebb711f0a2007dc3ee8bb446d15424ff6edfd",
   "sealed_finals_opened": true,
-  "ongoing_owned_jobs": [],
-  "numerical_lease_released": true,
-  "resume_training": "All scheduled acquisition and repair studies are complete. Preserve opened finals and every resumable revision. Do not restart completed teaching.",
+  "ongoing_owned_jobs": [
+    {
+      "attempt": "inquiry014-campaign-001",
+      "state": "runs/inquiry014-campaign-001/state.json",
+      "command": "scripts/complete_inquiry014.py",
+      "shared_lease": true
+    }
+  ],
+  "numerical_lease_released": false,
+  "resume_training": "Inspect the owned inquiry014-campaign-001 state and lease. While active, do not duplicate its worker. The supervisor runs both teaching arms, final registration, six controls/ablations and exact replay sequentially. A later invocation resumes committed episode state and skips completed arms.",
   "next_executable_user_task": ".\\.venv\\Scripts\\python.exe scripts/supervise.py --attempt my-device-001 -- -m sera_field.session_cli --session local/my-device new --input examples/concept-task.json",
-  "next_research_gate": "Extend qualified acquisition to a richer missing mechanism with a prospectively frozen cohort, then connect verified capture/retention under the supplied memory contracts. Keep the completed five-use release usable and preserve all current owners.",
+  "next_research_gate": "Finish INQUIRY-014 and its retention/identity audit, then continue open curvature-specific memory, representation topology, raw-language situation and broad discovery requirements in docs/WHOLE_ARCHITECTURE.md.",
   "preserved_reference_head": "0dcbcb902706f3d299cd38a433fcf1f26a357efd",
   "preserved_reference_checkpoint_sha256": "b29d8cccea6a7b8b9e0f0bbc28432d146a6388bca7716a828c446b3b42036d95",
-  "scope_audit": "reports/CONCEPT-011/POST_BUILD_AUDIT.md",
+  "scope_audit": "docs/WHOLE_ARCHITECTURE.md",
   "whole_behavior_acceptance": "docs/BEHAVIOR_ACCEPTANCE.md",
   "curriculum": "docs/CURRICULUM.md",
   "additional_subject_training_started": true,
@@ -52,8 +59,8 @@
     "protocol": "protocols/CONNECTED-002-CAMPAIGN.json",
     "review": "reports/CONNECTED-002/DELEGATION_REVIEW_001.md"
   },
-  "latest_research_audit": "reports/ECHO-007/NEW_SYNTHESIS_AUDIT.md",
-  "direct_study_checklist": "reports/CONCEPT-011/REPORT.md",
+  "latest_research_audit": "docs/WHOLE_ARCHITECTURE.md",
+  "direct_study_checklist": "docs/WHOLE_ARCHITECTURE.md",
   "preserved_FIELD_001": {
     "default_checkpoint": {
       "path": "runs\\FIELD-001\\field-11\\step-03000.pt",
@@ -76,10 +83,10 @@
   "scheduled_followup": false,
   "latest_request_reconciliation": "reports/ECHO-007/REQUEST_RECONCILIATION.md",
   "active_study": {
-    "id": "CONCEPT-011",
-    "status": "complete and qualified; all nine gates and five exact replays",
-    "protocol": "protocols/CONCEPT-011.md",
-    "report": "reports/CONCEPT-011/REPORT.md",
+    "id": "INQUIRY-014",
+    "status": "running sustained local investigation training; final evaluation queued",
+    "protocol": "protocols/INQUIRY-014.md",
+    "source_commit": "1ad20d9",
     "earlier_owners_preserved": true
   },
   "qualified_optional_successor": {
@@ -122,5 +129,11 @@
     "all_concept_cycle_costs": "reports/CONCEPT-011/TOTAL_COSTS.json"
   },
   "publication_record": "reports/CONCEPT-011/PUBLICATION.json",
-  "publication_checkout": "D:/ai/publications/sera-field-20260920"
+  "publication_checkout": "D:/ai/publications/sera-field-20260920",
+  "latest_qualified_owner": {
+    "path": "checkpoints/GROW-013",
+    "weights": "bf34ac9ca9bb29f823dc1b7677555f24353535b0f0b8d7e90fff829c79fa96a4",
+    "report": "reports/GROW-013/REPORT.md",
+    "usage": "docs/EXTENSION_USAGE.md"
+  }
 }

@@ -1,0 +1,45 @@
+{
+  "arm": "learned",
+  "selection": {
+    "sha256": "1ddfbcd7fb548a6059f2705ba4de1cf8b23369694cd8be61c8316229068af1ae",
+    "revision": "1ddfbcd7fb548a6059f2705ba4de1cf8b23369694cd8be61c8316229068af1ae.pt",
+    "parent": "4274636ab60a23ddb8166301ce04930f981ae3285c59c929b0b63b2dd994aa92",
+    "weights": "bf34ac9ca9bb29f823dc1b7677555f24353535b0f0b8d7e90fff829c79fa96a4",
+    "updates": 0,
+    "step": 2048,
+    "score": 0.00442264640538544
+  },
+  "weights_before": "bf34ac9ca9bb29f823dc1b7677555f24353535b0f0b8d7e90fff829c79fa96a4",
+  "supported": {
+    "n": 256,
+    "forward_mse": 0.0045355189400330415,
+    "inverse_outcome_error": 0.0036401189497399095,
+    "counterfactual_mse": 0.0020628799763362433,
+    "planning_mse": 0.00027836191879034825,
+    "direction_correct": 0.99609375,
+    "ranks": {
+      "0": 175,
+      "4": 65,
+      "8": 16,
+      "16": 0
+    },
+    "unmatched_actuation": 6
+  },
+  "omitted": {
+    "n": 128,
+    "forward_mse": 0.06252711979977132,
+    "inverse_outcome_error": 0.04510037162622417,
+    "counterfactual_mse": 0.01042828273199978,
+    "planning_mse": 0.0018338628996873011,
+    "direction_correct": 0.9453125,
+    "ranks": {
+      "0": 60,
+      "4": 46,
+      "8": 19,
+      "16": 3
+    },
+    "unmatched_actuation": 3
+  },
+  "cases_sha256": "180c27c01d616ca1a06a15ebac77327a8617c5f594de4815e6855be2d65faf68",
+  "weights_after": "bf34ac9ca9bb29f823dc1b7677555f24353535b0f0b8d7e90fff829c79fa96a4"
+}

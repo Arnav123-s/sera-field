@@ -1,0 +1,33 @@
+{
+  "selection": {
+    "sha256": "a63c375da96038f2426bc53f44e49f20d560fd5c7e1ebd5fe8715bc816fe8eca",
+    "revision": "a63c375da96038f2426bc53f44e49f20d560fd5c7e1ebd5fe8715bc816fe8eca.pt",
+    "parent": "4274636ab60a23ddb8166301ce04930f981ae3285c59c929b0b63b2dd994aa92",
+    "weights": "bf34ac9ca9bb29f823dc1b7677555f24353535b0f0b8d7e90fff829c79fa96a4",
+    "updates": 0,
+    "step": 2048,
+    "score": 0.00442264640538544,
+    "source_checkpoint_sha256": "1ddfbcd7fb548a6059f2705ba4de1cf8b23369694cd8be61c8316229068af1ae",
+    "role": "qualified_learned_response_extension"
+  },
+  "parameters": {
+    "total": 881029,
+    "trainable": 881029,
+    "persistent_tensor_bytes": 3544108
+  },
+  "specification": {
+    "type": "learned-extension-013",
+    "width": 48,
+    "nodes": 8,
+    "rounds": 4,
+    "backend": "echo",
+    "steps": 32,
+    "precision_kind": "full",
+    "lexical_size": 4096,
+    "base_route_scale": 0.0,
+    "capture_enabled": true,
+    "extension_width": 16
+  },
+  "report": "reports/GROW-013/REPORT.md",
+  "full_optimizer_and_rng_retained": "runs/GROW-013/learned/revisions"
+}

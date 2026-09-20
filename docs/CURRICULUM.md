@@ -1,5 +1,15 @@
 # Broad grounded curriculum
 
+**Current-state note (UNIFIED-012):** The intake narrative below is the preserved
+pre-training snapshot. Subsequent CONNECTED-003, ECHO-007 and CONCEPT studies did
+teach the source tracks and preserve their results. UNIFIED-012 is now teaching
+the coupled continuing owner on reading, arithmetic programs, dictionary,
+grammar, conversation, calculus, programming, Plato, Descartes and simulated
+physical observations. See the [whole-architecture tracker](WHOLE_ARCHITECTURE.md)
+and [current research state](../reports/STATE.json) for integration status.
+The old "no new subject training" paragraph below describes that earlier intake
+turn only, not the present learner.
+
 The user's clarified direction is to teach the entire intended learner: physical simulations are one experience source alongside mathematics, programming, language, other sciences and interpretation. The current trained release covers a finite physical curriculum. The additional tracks below are explicit teaching requirements; listing or downloading them does not mark them trained.
 
 ## Subject tracks and checks

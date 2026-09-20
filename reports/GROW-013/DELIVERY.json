@@ -1,0 +1,50 @@
+{
+  "fresh_process_restart_exact": true,
+  "original_goal_retained": true,
+  "answer": {
+    "concept_id": "bb53723d60d7565c62e506bbd5c9dc6f40a445119fde36ac0b54537df8d7cd72",
+    "original_goal": {
+      "queries": [
+        [
+          1.3577765226364136,
+          0.6475604176521301
+        ],
+        [
+          -1.2392255067825317,
+          1.3784995079040527
+        ]
+      ]
+    },
+    "assumptions": {
+      "scope": "independent two-input simulated response"
+    },
+    "predictions": [
+      [
+        -1.615712966257047,
+        1.3804132771030737
+      ],
+      [
+        -1.615797472982071,
+        1.380339184684325
+      ],
+      [
+        -1.6158490117797926,
+        1.3804011554010525
+      ]
+    ],
+    "explanation": {
+      "concept_id": "bb53723d60d7565c62e506bbd5c9dc6f40a445119fde36ac0b54537df8d7cd72",
+      "route": 0,
+      "direction": 2,
+      "delta": 0.6609205603599548,
+      "answer": "At this operating point, increasing control input by 0.5 increases the modeled response.",
+      "rendering": "retained learned language routing; numerical consequence and supplied sentence renderer"
+    }
+  },
+  "independent_outcomes": [
+    -1.5526621341705322,
+    1.3213577270507812
+  ],
+  "mse": 0.003734424018205059,
+  "owner_weights": "bf34ac9ca9bb29f823dc1b7677555f24353535b0f0b8d7e90fff829c79fa96a4"
+}

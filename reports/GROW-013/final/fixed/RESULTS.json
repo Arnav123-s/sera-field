@@ -1,0 +1,45 @@
+{
+  "arm": "fixed",
+  "selection": {
+    "sha256": "7c9c162a7bdcc1ea589c374e105d26fa0352cd9bdae4cf14db8e227f0a761766",
+    "revision": "7c9c162a7bdcc1ea589c374e105d26fa0352cd9bdae4cf14db8e227f0a761766.pt",
+    "parent": null,
+    "weights": "8a22060444571e48b79ddbef67da297893cce0b5f6f02d948156557fc8961622",
+    "updates": 0,
+    "score": 0.012535124538535078,
+    "step": 0
+  },
+  "weights_before": "8a22060444571e48b79ddbef67da297893cce0b5f6f02d948156557fc8961622",
+  "supported": {
+    "n": 256,
+    "forward_mse": 0.017774048142603003,
+    "inverse_outcome_error": 0.01254302567370283,
+    "counterfactual_mse": 0.004897988966166243,
+    "planning_mse": 0.0010504568482238522,
+    "direction_correct": 0.9765625,
+    "ranks": {
+      "0": 181,
+      "4": 45,
+      "8": 18,
+      "16": 12
+    },
+    "unmatched_actuation": 6
+  },
+  "omitted": {
+    "n": 128,
+    "forward_mse": 0.07326552526337193,
+    "inverse_outcome_error": 0.049417455498564244,
+    "counterfactual_mse": 0.014022132120157493,
+    "planning_mse": 0.0028299713171097496,
+    "direction_correct": 0.9609375,
+    "ranks": {
+      "0": 71,
+      "4": 30,
+      "8": 14,
+      "16": 13
+    },
+    "unmatched_actuation": 3
+  },
+  "cases_sha256": "78272bfc793b74b4421e41b73454374a1a256173d4e17075c0537046ea377deb",
+  "weights_after": "8a22060444571e48b79ddbef67da297893cce0b5f6f02d948156557fc8961622"
+}

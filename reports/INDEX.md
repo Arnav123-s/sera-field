@@ -1,6 +1,20 @@
 # Evidence index
 
-**Current acquired-model release:** [CONCEPT-011 complete report](CONCEPT-011/REPORT.md),
+**Latest qualified coupled extension:** [GROW-013 report](GROW-013/REPORT.md),
+[usage](../docs/EXTENSION_USAGE.md), [weights](../checkpoints/GROW-013/MANIFEST.json),
+[retention](GROW-013/RETENTION.json), [replay](GROW-013/REPLAY.json),
+[delivery](GROW-013/DELIVERY.json), [error tails](GROW-013/ERROR_TAILS.json) and
+[costs](GROW-013/COSTS.json).
+
+**Coupled-field teaching:** [UNIFIED-012 report](UNIFIED-012/REPORT.md),
+[qualification](UNIFIED-012/QUALIFICATION.json), [teaching](UNIFIED-012/TEACHING.json),
+[weights](../checkpoints/UNIFIED-012/MANIFEST.json) and [costs](UNIFIED-012/COSTS.json).
+
+The [whole-architecture tracker](../docs/WHOLE_ARCHITECTURE.md) keeps the research
+objective separate from completed component studies. INQUIRY-014 is the active
+[generated-investigation campaign](../protocols/INQUIRY-014.md).
+
+**Preserved acquired-model release:** [CONCEPT-011 complete report](CONCEPT-011/REPORT.md),
 [usable persistent tasks](../docs/CONCEPT_USAGE.md), [assessed weights](../checkpoints/CONCEPT-011/MANIFEST.json),
 [research alignment](CONCEPT-011/POST_BUILD_AUDIT.md), [all four decisions](CONCEPT-011/CAMPAIGN_SUMMARY.json),
 [total cycle costs](CONCEPT-011/TOTAL_COSTS.json), and [full source/checkpoint inventory](CONCEPT-011/EVIDENCE_INDEX.json).

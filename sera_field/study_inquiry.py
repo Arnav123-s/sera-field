@@ -38,6 +38,9 @@ def load_selected(training_root):
     elif kind == 'concept-language-010':
         from .concept_language import LanguageConceptOwner
         owner = LanguageConceptOwner(**spec)
+    elif kind == 'coupled-field-012':
+        from .coupled_owner import CoupledOwner
+        owner = CoupledOwner(**spec)
     else:
         raise ValueError('Wrong owner')
     owner.load_state_dict(payload['bridge']['owner'])

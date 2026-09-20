@@ -2,6 +2,7 @@
 
 import copy
 import hashlib
+import json
 
 import torch
 from torch import nn
@@ -13,6 +14,10 @@ def weight_hash(model):
     digest = hashlib.sha256()
     for name, tensor in sorted(model.state_dict().items()):
         digest.update(name.encode())
+        if not isinstance(tensor, torch.Tensor):
+            digest.update(b'canonical-extra-state:')
+            digest.update(json.dumps(tensor,sort_keys=True,allow_nan=False).encode())
+            continue
         digest.update(str(tuple(tensor.shape)).encode())
         digest.update(tensor.detach().cpu().contiguous().numpy().tobytes())
     return digest.hexdigest()
@@ -215,4 +220,4 @@ def parameters(model):
     return {"total": sum(p.numel() for p in model.parameters()),
             "trainable": sum(p.numel() for p in model.parameters() if p.requires_grad),
             "persistent_tensor_bytes": sum(t.numel() * t.element_size()
-                                           for t in model.state_dict().values())}
+                                           for t in model.state_dict().values() if isinstance(t,torch.Tensor))}

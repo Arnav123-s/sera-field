@@ -1,0 +1,120 @@
+{
+  "attempts": [
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T16:50:09Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "grow013-campaign-001",
+      "command": [
+        "--",
+        "scripts/complete_grow013.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 11932,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 309817344,
+        "cpu_seconds": 421.59375,
+        "active_processes": 0,
+        "total_processes": 20
+      },
+      "wall_seconds": 426.4354147999984,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T16:57:15Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T16:47:13Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "grow013-engineering-checks-001",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 7492,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 724705280,
+        "cpu_seconds": 35.859375,
+        "active_processes": 0,
+        "total_processes": 18
+      },
+      "wall_seconds": 40.67891660000896,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T16:47:54Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T17:02:17Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "grow013-retention-delivery-001",
+      "command": [
+        "--",
+        "scripts/audit_grow013.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 22012,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 703127552,
+        "cpu_seconds": 23.5625,
+        "active_processes": 0,
+        "total_processes": 12
+      },
+      "wall_seconds": 24.371062100006384,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T17:02:42Z"
+    }
+  ],
+  "wall_seconds": 491.48539350001374,
+  "cpu_seconds": 481.015625,
+  "peak_bytes": 724705280
+}

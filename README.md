@@ -8,13 +8,41 @@ This independent laboratory starts its models and weights from scratch. Its
 training objectives concern evidence, executable programs and observed
 consequences. The earlier SERA project is preserved separately.
 
-The current **CONCEPT-011** release learns an observed device's response and uses
+The latest **GROW-013** owner learns a missing response structure from measurements,
+checks it on separate observations and reuses the acquired relation for prediction,
+inverse questions, counterfactuals, planning and directional explanations. Its
+coupled field combines covariance sheaves, temporal echo learning, a stationary
+boundary transformation and verified condensate memory.
+
+On 256 new simulated systems, the learned extension reached forward MSE **0.00454**
+and **255/256** correct directional answers. It reduced prediction error by **89.5%**
+against the same owner's four-feature route and **74.5%** against its untrained
+extension. All six retention/identity checks passed and final records replayed
+exactly. [Complete results](reports/GROW-013/REPORT.md).
+
+| Start with | Contents |
+|---|---|
+| [Use the learned extension](docs/EXTENSION_USAGE.md) | Acquire from observations and reuse a persistent concept |
+| [GROW-013 results](reports/GROW-013/REPORT.md) | Teaching, five-use evaluation, shifted cases, retention and costs |
+| [UNIFIED-012 results](reports/UNIFIED-012/REPORT.md) | Coupled human/simulation training and verified memory |
+| [Executable equations](docs/COUPLED_EQUATIONS.md) | How covariance, temporal credit, bulk memory and learned growth interact |
+| [Whole-research tracker](docs/WHOLE_ARCHITECTURE.md) | Implementation status and behavioral acceptance across the supplied research |
+| [Evidence index](reports/INDEX.md) | Current and preserved reports, protocols and checkpoints |
+
+The active **INQUIRY-014** campaign trains the same acquired-model owner to generate
+interventions through complete measurement branches, learn from independent
+outcomes using local eligibility, correct its model and return to its original goal.
+Its [frozen protocol](protocols/INQUIRY-014.md) records the teaching and final checks.
+
+## Preserved CONCEPT-011 task interface
+
+The **CONCEPT-011** release learns an observed device's response and uses
 that same acquired model to predict, answer inverse questions, imagine changed
 conditions, choose controls and explain the direction of a change. It keeps its
 original task and source receipts across restarts, chooses a useful next
 measurement and returns to the task after incorporating the actual outcome.
 
-## Start here
+## Earlier task interface and evidence
 
 | Read | What it contains |
 |---|---|
@@ -24,7 +52,7 @@ measurement and returns to the task after incorporating the actual outcome.
 | [Research-to-implementation audit](reports/CONCEPT-011/POST_BUILD_AUDIT.md) | Each requested behavior, its actual mechanism and source alignment |
 | [All evidence and earlier releases](reports/INDEX.md) | Protocols, source identities, checkpoints, failures and replay records |
 
-## What the current owner does
+## CONCEPT-011 measured behavior
 
 | Task | Measured result on 512 new supported systems |
 |---|---:|

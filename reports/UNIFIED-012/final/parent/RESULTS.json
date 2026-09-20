@@ -1,0 +1,52 @@
+{
+  "arm": "parent",
+  "ablation": null,
+  "selection": {
+    "sha256": "7767b021573e7b398f87dd45706dd2a87b1b2e3738545f4c36e4ced80c3b5e48",
+    "revision": "7767b021573e7b398f87dd45706dd2a87b1b2e3738545f4c36e4ced80c3b5e48.pt",
+    "parent": "4d6101aa2150059ffc81b8c4743b172f5f44984b5be0cb81545ab61a8fe7312d",
+    "weights": "afa6bea53feb6e6b74d98ea52195ff531d21cc22e3863e8eb077f21fba007ba7",
+    "updates": 0,
+    "step": 2048,
+    "accuracy": 1.0,
+    "loss": 0.002970927394926548,
+    "source_checkpoint_sha256": "e21d398477730170efc86fa3cc8b70b59c289e24e7377fef32faed4aa057ebdb",
+    "role": "qualified_five_use_owner",
+    "retained_concept_reward_updates": 754
+  },
+  "weights_before": "afa6bea53feb6e6b74d98ea52195ff531d21cc22e3863e8eb077f21fba007ba7",
+  "reading": {
+    "n": 384,
+    "accuracy": 0.6588541666666666,
+    "loss": 0.8973584550822125
+  },
+  "math": {
+    "n": 192,
+    "accuracy": 0.125,
+    "loss": 3.786082119991382
+  },
+  "pairs": {
+    "dailydialog": {
+      "n": 48,
+      "accuracy": 0.25,
+      "loss": 1.8240822808196147
+    },
+    "webster": {
+      "n": 48,
+      "accuracy": 0.6458333333333334,
+      "loss": 0.7441098957036351
+    }
+  },
+  "physics": {
+    "n": 256,
+    "mse": 0.08078491877388272,
+    "median": 0.0037395257968455553
+  },
+  "omitted": {
+    "n": 128,
+    "mse": 0.5268579266012239,
+    "median": 0.23397716879844666
+  },
+  "weights_after": "afa6bea53feb6e6b74d98ea52195ff531d21cc22e3863e8eb077f21fba007ba7",
+  "cases_sha256": "4a2721e93d20257f6d15ce23bbe58a0cbac7be77a41669c02718b78ec394bff2"
+}

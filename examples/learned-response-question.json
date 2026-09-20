@@ -1,0 +1,17 @@
+{
+  "queries": [
+    [
+      -1.485253930091858,
+      -0.7591242790222168
+    ],
+    [
+      1.4657073020935059,
+      0.922243595123291
+    ]
+  ],
+  "question": "What happens when the control input increases?",
+  "point": [
+    0.0,
+    0.0
+  ]
+}

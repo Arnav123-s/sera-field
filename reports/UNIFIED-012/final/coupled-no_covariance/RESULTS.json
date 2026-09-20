@@ -1,0 +1,48 @@
+{
+  "arm": "coupled",
+  "ablation": "no_covariance",
+  "selection": {
+    "sha256": "509632a08bb8c243fb0ded9ab68623eae40f3f28a20a0a04a6fa59955d967f80",
+    "revision": "509632a08bb8c243fb0ded9ab68623eae40f3f28a20a0a04a6fa59955d967f80.pt",
+    "parent": "abddb1aeb01d79e44d514c76e62516dd5c2dff54652e99348302007670bd701f",
+    "weights": "aead9f7363bb421425f4c65fb3b259f53b9723b075e5c542ca152641c01268dc",
+    "updates": 14,
+    "score": 0.9936002698239226,
+    "step": 1024
+  },
+  "weights_before": "aead9f7363bb421425f4c65fb3b259f53b9723b075e5c542ca152641c01268dc",
+  "reading": {
+    "n": 384,
+    "accuracy": 0.6588541666666666,
+    "loss": 0.8923834555980648
+  },
+  "math": {
+    "n": 192,
+    "accuracy": 0.11979166666666667,
+    "loss": 3.7690745356182256
+  },
+  "pairs": {
+    "dailydialog": {
+      "n": 48,
+      "accuracy": 0.25,
+      "loss": 1.7979127171759803
+    },
+    "webster": {
+      "n": 48,
+      "accuracy": 0.6666666666666666,
+      "loss": 0.7538644939365137
+    }
+  },
+  "physics": {
+    "n": 256,
+    "mse": 0.07858371511987894,
+    "median": 0.004679824924096465
+  },
+  "omitted": {
+    "n": 128,
+    "mse": 0.5354165895296319,
+    "median": 0.2415558025240898
+  },
+  "weights_after": "aead9f7363bb421425f4c65fb3b259f53b9723b075e5c542ca152641c01268dc",
+  "cases_sha256": "f7398c4199c1ba9ab1e398eed5461112598a2193c9f7307eec04c35c47102efb"
+}

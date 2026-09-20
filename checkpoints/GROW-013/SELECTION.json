@@ -1,0 +1,11 @@
+{
+  "sha256": "a63c375da96038f2426bc53f44e49f20d560fd5c7e1ebd5fe8715bc816fe8eca",
+  "revision": "a63c375da96038f2426bc53f44e49f20d560fd5c7e1ebd5fe8715bc816fe8eca.pt",
+  "parent": "4274636ab60a23ddb8166301ce04930f981ae3285c59c929b0b63b2dd994aa92",
+  "weights": "bf34ac9ca9bb29f823dc1b7677555f24353535b0f0b8d7e90fff829c79fa96a4",
+  "updates": 0,
+  "step": 2048,
+  "score": 0.00442264640538544,
+  "source_checkpoint_sha256": "1ddfbcd7fb548a6059f2705ba4de1cf8b23369694cd8be61c8316229068af1ae",
+  "role": "qualified_learned_response_extension"
+}
