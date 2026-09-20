@@ -5,6 +5,9 @@
 [teaching](SEMANTIC-015/TEACHING.json), [qualification](SEMANTIC-015/QUALIFICATION.json),
 [retention](SEMANTIC-015/RETENTION.json), [persistent delivery](SEMANTIC-015/DELIVERY.json),
 [its checked credit](SEMANTIC-015/DELIVERY_CREDIT.json) and [costs](SEMANTIC-015/COSTS.json).
+The [post-build research audit](SEMANTIC-015/POST_BUILD_AUDIT.md) connects these
+outcomes to the requested behavior; [publication verification](SEMANTIC-015/PUBLICATION.json)
+pins the public revision and its successful independent Linux checks.
 
 **Latest completed investigation:** [INQUIRY-014 report](INQUIRY-014/REPORT.md),
 [persistent usage](../docs/INQUIRY_USAGE.md), [weights](../checkpoints/INQUIRY-014/MANIFEST.json),
@@ -22,11 +25,26 @@
 [weights](../checkpoints/UNIFIED-012/MANIFEST.json) and [costs](UNIFIED-012/COSTS.json).
 
 The [whole-architecture tracker](../docs/WHOLE_ARCHITECTURE.md) keeps the research
-objective separate from completed component studies. HISTORY-016 is the active
-[connected history procedure study](../protocols/HISTORY-016.md), following its
-[mathematical construction](../docs/CONTINUOUS_HISTORY_EQUATIONS.md) and passing
-141-test baseline. The preceding semantic [startup repair](SEMANTIC-015/REPAIRS.md)
-and all failed-attempt costs are preserved.
+objective separate from completed component studies. HISTORY-016 completed its
+[connected history procedure study](HISTORY-016/REPORT.md),
+[independent qualification decision](HISTORY-016/QUALIFICATION.json),
+[persistent delivery](HISTORY-016/DELIVERY.json),
+[training diagnosis](HISTORY-016/DIAGNOSIS.json),
+[storage measurements](HISTORY-016/OWNER_STORAGE.json) and
+[full costs](HISTORY-016/COSTS.json). The selected initial state remains preserved;
+the learned-history utility and qualified-retention gates were unmet. Its
+[interruption and resume record](HISTORY-016/SUPERVISOR_INTERRUPTION.md) and the
+preceding semantic [startup repair](SEMANTIC-015/REPAIRS.md) preserve failures.
+Its [source-to-execution map](HISTORY-016/SOURCE_ALIGNMENT.md) covers the new unified
+memory synthesis. The next human corpus has [attributed source intake](SOURCE_INTAKE/MULTINLI-1.0.json)
+and [qualified split preparation](SOURCE_INTAKE/MULTINLI-VIEWS.json); preparation is
+recorded separately from model teaching.
+
+**Prepared next integration:** [GENRE-017 checklist](GENRE-017/PREPARATION.md),
+[frozen curriculum](../protocols/GENRE-017.md) and
+[finite neural-field equations](../docs/FINITE_NEURAL_FIELD_ACTION.md).
+The [additional unified synthesis audit](../docs/SDHA_UNIFIED_SOURCE_AUDIT.md)
+preserves the latest source and separates its new requirements from active work.
 
 **Preserved acquired-model release:** [CONCEPT-011 complete report](CONCEPT-011/REPORT.md),
 [usable persistent tasks](../docs/CONCEPT_USAGE.md), [assessed weights](../checkpoints/CONCEPT-011/MANIFEST.json),

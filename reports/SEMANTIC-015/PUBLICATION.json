@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/Arnav123-s/sera-field",
+  "public_commit": "e5371d25cc3ed1f5c8419aef491aef6542ef7b34",
+  "source_local_revision": "8895777a7a80fb9e03f1eb6ed410c5eadbe6d082",
+  "manifested_files": 546,
+  "manifested_bytes": 29491875,
+  "github_workflow_id": 35532750110,
+  "github_workflow_url": "https://github.com/Arnav123-s/sera-field/actions/runs/35532750110",
+  "exact_revision_ci": "success",
+  "snapshot_scope": "Reviewed current files; raw corpora, source attachments, private history and full run trees preserved locally",
+  "history_016_status_at_publication": "active, not represented as completed"
+}

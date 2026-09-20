@@ -1,0 +1,26 @@
+{
+  "n": 256,
+  "before_loss": 0.9206095294648549,
+  "loss": 0.9206095294648549,
+  "before_accuracy": 0.5625,
+  "accuracy": 0.5625,
+  "arm": "equal_rates",
+  "selection": {
+    "sha256": "321efc2de3e32505debe6601e493d0ebdd1040cb7b62b966d28d59e81420804e",
+    "revision": "321efc2de3e32505debe6601e493d0ebdd1040cb7b62b966d28d59e81420804e.pt",
+    "parent": null,
+    "weights": "886b6692dc6e8bfc4ce75964daa4f8198ae526636d92a71237c346fb84fe3134",
+    "updates": 0,
+    "step": 0,
+    "n": 128,
+    "before_loss": 0.8261446764227003,
+    "loss": 0.8261446764227003,
+    "before_accuracy": 0.640625,
+    "accuracy": 0.640625
+  },
+  "cases_sha256": "efb0f772252e4584464bc549e7409bf6477272d427dca070b87124e9fdbe76bd",
+  "weights_before": "886b6692dc6e8bfc4ce75964daa4f8198ae526636d92a71237c346fb84fe3134",
+  "weights_after": "886b6692dc6e8bfc4ce75964daa4f8198ae526636d92a71237c346fb84fe3134",
+  "factual_captures": 0,
+  "final_parameter_updates": 0
+}

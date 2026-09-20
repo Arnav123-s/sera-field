@@ -19,6 +19,25 @@ LEASE = Path("D:/ai/projects/sera/runs/v3-batch-001/active.lock")
 CAP = 2 * 1024 ** 3
 
 
+def write_status(path, state, *, timeout=2.):
+    """Tolerate transient Windows readers without weakening resource limits.
+
+    Atomic replacement may briefly fail while a reader holds a file handle that
+    does not share deletion. Retry only the relevant Windows access/share errors,
+    for a bounded interval. Permanent errors still stop the owned job.
+    """
+    deadline = time.monotonic() + timeout
+    while True:
+        try:
+            write_json(path, state)
+            return
+        except PermissionError as error:
+            if getattr(error, 'winerror', None) not in (5, 32, 33) or time.monotonic() >= deadline:
+                raise
+            state['status_write_retry_count'] = state.get('status_write_retry_count', 0) + 1
+            time.sleep(.05)
+
+
 class BasicLimit(c.Structure):
     _fields_ = [("user", c.c_int64), ("job_user", c.c_int64), ("flags", w.DWORD),
                 ("min_ws", c.c_size_t), ("max_ws", c.c_size_t), ("processes", w.DWORD),
@@ -170,7 +189,7 @@ def main():
             while process.poll() is None:
                 state["resources"] = job.sample()
                 state["wall_seconds"] = time.perf_counter() - started
-                write_json(out / "state.json", state)
+                write_status(out / "state.json", state)
                 try:
                     process.wait(timeout=2)
                 except subprocess.TimeoutExpired:
@@ -199,9 +218,11 @@ def main():
                 state["lease_released"] = False
         state["finished_utc"] = utc()
         state["wall_seconds"] = time.perf_counter() - started
-        write_json(out / "state.json", state)
-        with (ROOT / "runs" / "costs.jsonl").open("a", encoding="utf-8") as ledger:
-            ledger.write(json.dumps({k: v for k, v in state.items() if k != "sources"}) + "\n")
+        try:
+            write_status(out / "state.json", state)
+        finally:
+            with (ROOT / "runs" / "costs.jsonl").open("a", encoding="utf-8") as ledger:
+                ledger.write(json.dumps({k: v for k, v in state.items() if k != "sources"}) + "\n")
     print(json.dumps({k: v for k, v in state.items() if k != "sources"}, indent=2))
     raise SystemExit(returncode)
 

@@ -1,0 +1,44 @@
+{
+  "candidate": {
+    "reading": {
+      "n": 384,
+      "accuracy": 0.6510416666666666
+    },
+    "math": {
+      "n": 192,
+      "accuracy": 0.09895833333333333
+    },
+    "pairs": {
+      "dailydialog": {
+        "n": 48,
+        "accuracy": 0.22916666666666666
+      },
+      "webster": {
+        "n": 48,
+        "accuracy": 0.6458333333333334
+      }
+    }
+  },
+  "parent": {
+    "reading": {
+      "n": 384,
+      "accuracy": 0.6510416666666666
+    },
+    "math": {
+      "n": 192,
+      "accuracy": 0.09895833333333333
+    },
+    "pairs": {
+      "dailydialog": {
+        "n": 48,
+        "accuracy": 0.22916666666666666
+      },
+      "webster": {
+        "n": 48,
+        "accuracy": 0.6458333333333334
+      }
+    }
+  },
+  "exact_metrics": true,
+  "scope": "opened regression only, with no task-specific new history active"
+}

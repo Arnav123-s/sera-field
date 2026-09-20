@@ -51,14 +51,21 @@ across earlier reading, mathematics, dictionary, conversation, grammar, philosop
 calculus, programming and physical simulation. Premises enter an observed field;
 learned conditional continuations support entailment, contradiction and unresolved
 information. Closed-loop curvature tags connect checked progress to retained
-memory. All seven qualification gates and exact replay passed; **141 repository
-tests** passed before the next integration.
+memory. All seven qualification gates and exact replay passed; the subsequent
+complete repository suite passed **154 tests**.
 
-The active **HISTORY-016** study teaches a connected update procedure: fast and
-slow traces, opposing evidence, gauge transport and active bulk dynamics modify
-that same field. Independently improved proposals receive task-scoped retention
-and a protected encoding. [State equations](docs/CONTINUOUS_HISTORY_EQUATIONS.md)
-and [the prospective protocol](protocols/HISTORY-016.md) describe the ongoing work.
+The completed **HISTORY-016** study exercised a connected update procedure across
+**2,048 human episodes**: fast and slow traces, opposing evidence, gauge transport
+and active bulk dynamics feed that same field. Its
+[complete assessment and preserved decision](reports/HISTORY-016/REPORT.md)
+include source integrity, exact replay, restart and checked-credit behavior.
+
+The next **GENRE-017** curriculum connects an exact finite neural-field action to
+the same boundary and compares three equally taught versions on **371,929 human
+pairs per version**, with earlier-subject rehearsal. Its
+[frozen protocol](protocols/GENRE-017.md) and
+[preparation record](reports/GENRE-017/PREPARATION.md) track the work through
+teaching, untouched genre assessments, persistent use and independent auditing.
 
 ## Preserved CONCEPT-011 task interface
 
@@ -128,9 +135,12 @@ credit to the goal, decision, model, source and evidence. Imagined branches keep
 their assumptions. Source receipts and old revisions remain available after
 correction.
 
-The packaged owner has **876,997 parameters**, stored in about **3.53 MB** of
-inference checkpoint data. Full training states, optimizer/RNG state, failed
-candidates, source manifests and cost ledgers are preserved separately. The
+The latest qualified SEMANTIC-015 owner has **891,972 parameters** and
+**3,607,872 bytes of persistent model tensors**. Its
+[checkpoint manifest](checkpoints/SEMANTIC-015/MANIFEST.json) pins the exact
+weights and configuration. The preserved CONCEPT-011 task owner has 876,997
+parameters. Full training states, optimizer/RNG state, failed candidates, source
+manifests and cost ledgers are preserved separately. The
 [mathematical account](docs/CONCEPT_ENGINEERING.md) explains which mechanisms are
 engineered and which mappings SERA learned.
 

@@ -1,0 +1,229 @@
+{
+  "initial": {
+    "sha256": "321efc2de3e32505debe6601e493d0ebdd1040cb7b62b966d28d59e81420804e",
+    "revision": "321efc2de3e32505debe6601e493d0ebdd1040cb7b62b966d28d59e81420804e.pt",
+    "parent": null,
+    "weights": "886b6692dc6e8bfc4ce75964daa4f8198ae526636d92a71237c346fb84fe3134",
+    "updates": 0,
+    "step": 0,
+    "n": 128,
+    "before_loss": 0.8261446764227003,
+    "loss": 0.8261446764227003,
+    "before_accuracy": 0.640625,
+    "accuracy": 0.640625
+  },
+  "last": {
+    "sha256": "0f070a3d06cafd3ce1d62a65efc13589aaab2decf2bde68a95ba8ff94112cd56",
+    "revision": "0f070a3d06cafd3ce1d62a65efc13589aaab2decf2bde68a95ba8ff94112cd56.pt",
+    "parent": "9a7fb83009a9cf2d2d62c1227965ec1fbc82c08eb7d786185508356cd6d551a4",
+    "weights": "ea29401cdd32dc299840fb724650f5c32a4e58ff2e392e7e86b638f8f098f070",
+    "updates": 0
+  },
+  "changed_parameter_tensors": {
+    "field.raw_history_gain": {
+      "elements": 1,
+      "initial_norm": 0.0,
+      "last_norm": 0.01572839543223381,
+      "change_norm": 0.01572839543223381,
+      "maximum_absolute_change": 0.01572839543223381
+    },
+    "field.continuum.raw_fast": {
+      "elements": 1,
+      "initial_norm": 0.0,
+      "last_norm": 0.004569848068058491,
+      "change_norm": 0.004569848068058491,
+      "maximum_absolute_change": 0.004569848068058491
+    },
+    "field.continuum.raw_slow": {
+      "elements": 1,
+      "initial_norm": 1.0,
+      "last_norm": 0.9821217656135559,
+      "change_norm": 0.017878234386444092,
+      "maximum_absolute_change": 0.017878234386444092
+    },
+    "field.continuum.raw_feedback": {
+      "elements": 1,
+      "initial_norm": 1.0,
+      "last_norm": 1.0191802978515625,
+      "change_norm": 0.0191802978515625,
+      "maximum_absolute_change": 0.0191802978515625
+    },
+    "field.continuum.raw_activity": {
+      "elements": 1,
+      "initial_norm": 0.25,
+      "last_norm": 0.24709373712539673,
+      "change_norm": 0.0029062628746032715,
+      "maximum_absolute_change": 0.0029062628746032715
+    },
+    "field.continuum.raw_readout": {
+      "elements": 3,
+      "initial_norm": 0.0,
+      "last_norm": 0.009071111466166282,
+      "change_norm": 0.009071111466166282,
+      "maximum_absolute_change": 0.007182254455983639
+    },
+    "field.continuum.flow.rates.0.weight": {
+      "elements": 64,
+      "initial_norm": 2.334056391502792,
+      "last_norm": 2.34850383248124,
+      "change_norm": 0.5556332638691931,
+      "maximum_absolute_change": 0.16706469655036926
+    },
+    "field.continuum.flow.rates.0.bias": {
+      "elements": 16,
+      "initial_norm": 1.153695904347115,
+      "last_norm": 2.717713476764574,
+      "change_norm": 1.6230619442411076,
+      "maximum_absolute_change": 0.4737326502799988
+    },
+    "field.continuum.flow.rates.2.weight": {
+      "elements": 144,
+      "initial_norm": 0.0,
+      "last_norm": 1.4722420189579175,
+      "change_norm": 1.4722420189579175,
+      "maximum_absolute_change": 0.47421425580978394
+    },
+    "field.continuum.flow.rates.2.bias": {
+      "elements": 9,
+      "initial_norm": 0.0,
+      "last_norm": 0.26523362870075756,
+      "change_norm": 0.26523362870075756,
+      "maximum_absolute_change": 0.26330873370170593
+    }
+  },
+  "initial_history_gain": 0.0,
+  "last_history_gain": 0.0031454197596758604,
+  "training_reward": {
+    "n": 2048,
+    "mean": -2.709770342335105e-06,
+    "min": -0.0015010833740234375,
+    "max": 0.0008949041366577148,
+    "rms": 0.0002133438281600022
+  },
+  "training_probability_l1_change": {
+    "n": 2048,
+    "mean": 0.00014385476470124559,
+    "min": 0.0,
+    "max": 0.0009349286556243896,
+    "rms": 0.0001910253700725442
+  },
+  "positive_query_progress": 1031,
+  "negative_query_progress": 1016,
+  "zero_query_progress": 1,
+  "query_choice_changed": 1,
+  "query_probability_argmax_changed": 1,
+  "regularizer_contribution": {
+    "n": 2048,
+    "mean": 4.963950363276127e-07,
+    "min": 1.1359853670001031e-08,
+    "max": 1.2139451503753662e-05,
+    "rms": 1.3768283074791786e-06
+  },
+  "same_support_fitting_progress": {
+    "n": 8192,
+    "mean": 0.00012401528108554188,
+    "min": -2.112387119268533e-05,
+    "max": 0.0005445284186862409,
+    "rms": 0.00014638425669728563
+  },
+  "signal_retrieval_mse": {
+    "n": 8192,
+    "mean": 0.018332007829627628,
+    "min": 0.0010907374089583755,
+    "max": 0.032046183943748474,
+    "rms": 0.01901786302706916
+  },
+  "development": [
+    {
+      "step": 0,
+      "n": 128,
+      "before_loss": 0.8261446764227003,
+      "loss": 0.8261446764227003,
+      "before_accuracy": 0.640625,
+      "accuracy": 0.640625
+    },
+    {
+      "step": 256,
+      "n": 128,
+      "before_loss": 0.8261446764227003,
+      "loss": 0.8261503467801958,
+      "before_accuracy": 0.640625,
+      "accuracy": 0.640625
+    },
+    {
+      "step": 512,
+      "n": 128,
+      "before_loss": 0.8261446764227003,
+      "loss": 0.8261499787913635,
+      "before_accuracy": 0.640625,
+      "accuracy": 0.640625
+    },
+    {
+      "step": 768,
+      "n": 128,
+      "before_loss": 0.8261446764227003,
+      "loss": 0.826149882748723,
+      "before_accuracy": 0.640625,
+      "accuracy": 0.640625
+    },
+    {
+      "step": 1024,
+      "n": 128,
+      "before_loss": 0.8261446764227003,
+      "loss": 0.8261538578663021,
+      "before_accuracy": 0.640625,
+      "accuracy": 0.640625
+    },
+    {
+      "step": 1280,
+      "n": 128,
+      "before_loss": 0.8261446764227003,
+      "loss": 0.8261545122950338,
+      "before_accuracy": 0.640625,
+      "accuracy": 0.640625
+    },
+    {
+      "step": 1536,
+      "n": 128,
+      "before_loss": 0.8261446764227003,
+      "loss": 0.8261516477214172,
+      "before_accuracy": 0.640625,
+      "accuracy": 0.640625
+    },
+    {
+      "step": 1792,
+      "n": 128,
+      "before_loss": 0.8261446764227003,
+      "loss": 0.8261487833806314,
+      "before_accuracy": 0.640625,
+      "accuracy": 0.640625
+    },
+    {
+      "step": 2048,
+      "n": 128,
+      "before_loss": 0.8261446764227003,
+      "loss": 0.8261472163139842,
+      "before_accuracy": 0.640625,
+      "accuracy": 0.640625
+    }
+  ],
+  "logs": [
+    {
+      "file": "episodes-1553c3d28a304bf2890b8e46920c9837.jsonl",
+      "sha256": "610ebf0a32ea726de8a9b00d48b664e0de8780a6ccee09df3cd03c9f16a92b96"
+    }
+  ],
+  "scope": "Post-assessment descriptive inspection of recorded training/development and exact initial/latest parameters; no final opened, no model update, no new selection.",
+  "mechanism_observations": [
+    "Four normalized annotation-gradient fields are mixed into one shared trace; there is no per-support content-addressed retrieval bank in this procedure.",
+    "The fixed lexical selector uses overlap among source-disjoint examples; it does not establish a shared missing rule.",
+    "The retained new history gain begins at zero, and development selection is allowed to preserve that baseline."
+  ],
+  "unresolved_causal_hypotheses": [
+    "Cross-support gradient interference may make the mixed trace unhelpful to the distinct query.",
+    "Support relevance and query-conditioned retrieval may need to be learned together with consolidation.",
+    "The relative task-gradient and regularizer contributions need a fresh prospective study, not tuning on this final."
+  ],
+  "attempt": "history016-diagnosis-001",
+  "script_sha256": "7206695da7756146e91abb4abf29ecae922cb83bb85b0bb68ad26a37ffb64562"
+}

@@ -35,6 +35,23 @@ def main():
         'The earlier qualified semantic owner remains the usable reference. '
         'The recorded failed gates are: ' + ', '.join(failed) + '.')
     comparison = qualification['comparison']
+    storage = read(root / 'OWNER_STORAGE.json')
+    diagnosis = read(root / 'DIAGNOSIS.json') if (root / 'DIAGNOSIS.json').exists() else None
+    diagnostic_text = (f"The retained training log contains {diagnosis['positive_query_progress']:,} positive, "
+        f"{diagnosis['negative_query_progress']:,} negative and {diagnosis['zero_query_progress']:,} zero query-loss changes. "
+        f"Mean verified training progress was {diagnosis['training_reward']['mean']:.9g}; "
+        f"mean probability-vector L1 change was {diagnosis['training_probability_l1_change']['mean']:.9g}. "
+        f"The last trained history gain was {diagnosis['last_history_gain']:.9g}. "
+        "[DIAGNOSIS.json](DIAGNOSIS.json) records exact initial/latest parameter changes, "
+        "regularization, retrieval errors and the complete development curve. "
+        "It separates observed evidence from hypotheses about cross-support interference and retrieval relevance. "
+        "This inspection opens no new final and changes no selection."
+        if diagnosis else 'The exact teaching logs and complete development curve remain available for descriptive diagnosis.')
+    recovery_scope = ('Clean, corrupted and erasure-recovered retained history are compared '
+        'through the actual returned answer.' if delivery['retained_count'] else
+        'No proposal earned factual retention in this delivery. Therefore the runtime '
+        'corrupted-history and erasure-recovered-answer comparisons were inapplicable; '
+        'the separate mathematical code-recovery tests remain recorded in the test suite.')
     report = f'''# HISTORY-016 — learned history in the continuing situation field
 
 The continuing owner practiced **{complete['episodes']:,} human-annotated episodes**,
@@ -91,7 +108,11 @@ groups are excluded from this final. Repeated support exposures remain counted.
 {table}
 
 Reciprocal and equal-rate routes are inference ablations of the trained candidate,
-not separately trained architecture comparisons. The paired learned-minus-no-history
+not separately trained architecture comparisons. At a selected step of zero,
+the zero history gain makes returned answers equal to the preserved parent even
+when the conditional support dynamics differ. Such a tie documents preservation
+and selection; it is not a comparison among successfully trained active memories.
+The paired learned-minus-no-history
 query-loss difference is **{comparison['paired_query_loss_difference']:.8f}**, with
 a percentile interval **{comparison['percentile_95_interval']}** under the recorded
 distinct-query-group resampling and fixed support pool. The prospectively frozen
@@ -99,14 +120,15 @@ utility gate requires a trained selected step, at least 1% lower log loss and no
 more than a two-point accuracy decrease. The opened final changes no threshold,
 selection, parameter or factual memory.
 
+{diagnostic_text}
+
 ## Actual retention, restart and correction
 
 The fixed eight-case development delivery retained **{delivery['retained_count']}**
 independently improved proposals. It reports every positive and negative grade.
 Its first performed proposal is deliberately mismatched and must be rejected.
 Each query is assessed once; repeated or stale credit is rejected. Retained history
-is used only for its original goal. Clean, corrupted and erasure-recovered history
-are compared through the actual returned answer. Fresh processes resume the same
+is used only for its original goal. {recovery_scope} Fresh processes resume the same
 original goal and evidence record. [DELIVERY.json](DELIVERY.json) supplies each result.
 
 The independent audit checks protected parent parameters and the opened earlier
@@ -115,6 +137,18 @@ records that comparison. Every final case file has an immutable identity and the
 replay matches exactly. Full local revisions retain optimizer/RNG and update cursor.
 
 ## Source alignment and costs
+
+[OWNER_STORAGE.json](OWNER_STORAGE.json) separates the latest paper's footprint
+categories. Persistent parameters occupy **{storage['parameters']['logical_bytes']:,}
+bytes**, and buffers occupy **{storage['buffers']['logical_bytes']:,} bytes**.
+One returned field state has **{storage['single_field_boundary']['returned_state']['logical_bytes']:,}
+logical bytes**, backed by
+**{storage['single_field_boundary']['returned_state']['unique_backing_bytes']:,} bytes**
+of storage. The complete one-pair semantic differentiation tape retains
+**{storage['semantic_differentiation_tape']['unique_backing_bytes']:,} unique backing
+bytes** under its recorded all-parameters-trainable probe. These categories are
+distinct from each other, optimizer state and peak process-tree memory. The
+small returned state alone is not an entire-system footprint comparison.
 
 [Protocol](../../protocols/HISTORY-016.md),
 [equations](../../docs/CONTINUOUS_HISTORY_EQUATIONS.md),

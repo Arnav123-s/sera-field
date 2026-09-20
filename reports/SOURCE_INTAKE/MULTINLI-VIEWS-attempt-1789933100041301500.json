@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "work_kind": "stdlib source views; no model work",
+  "started_unix": 1789933100.0413015,
+  "output": "local/HUMAN-GENRE-data-v1",
+  "manifest_sha256": "40e3b405de1a964045ad9af9c2d36b75dc8924bfb54b097334881d989057e9e3",
+  "counts": {
+    "train": 371929,
+    "development": 20189,
+    "sealed_matched": 9815,
+    "sealed_mismatched": 9830
+  },
+  "wall_seconds": 39.00617970000894,
+  "cpu_seconds": 38.578125
+}

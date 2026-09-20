@@ -1,0 +1,375 @@
+{
+  "checks": {
+    "all_original_goals_and_restarts": true,
+    "mismatched_proposal_rejected": true,
+    "unrelated_scope_unchanged": true,
+    "duplicate_query_credit_rejected": true
+  },
+  "all_checks": true,
+  "attempts": [
+    {
+      "query_id": "33b845eff2f791f179e0e70e5e158b77ec11692f55760bf3f46fc028fac54c0f",
+      "target": 1,
+      "credit": {
+        "accepted": false,
+        "outcome": {
+          "goal": "aa6af7788c710d28b3c791e69a6c5ddbef958c018abf82fb3c357918024770f7",
+          "decision": "47118d76878c299c054a3f328c857ff59fc77893e40a54d30cbeef0114c266f9",
+          "policy_before": "886b6692dc6e8bfc4ce75964daa4f8198ae526636d92a71237c346fb84fe3134",
+          "predictor": "886b6692dc6e8bfc4ce75964daa4f8198ae526636d92a71237c346fb84fe3134",
+          "evidence_id": "human-query-33b845eff2f791f179e0e70e5e158b77ec11692f55760bf3f46fc028fac54c0f",
+          "source_sha256": "55e41fa816188d5a5c43c3e3fab90e261a21ae4b873f5086c44beddd6b482274",
+          "verifier_sha256": "c3e9771a25247fe4ffa9fe54d3c084d699f6445266d3e80865b1f74ad870d121",
+          "assessment_id": "HISTORY-016-delivery-0",
+          "evidence_kind": "human_assessment",
+          "intended_intervention": "2c2602a17162130720d431868de47d8024f2c0ef07821f8aac6959b63fa32f46",
+          "observed_intervention": "deliberate-mismatched-actuation",
+          "before_loss": 0.09350087945590317,
+          "after_loss": 0.09350087945590317,
+          "verified": false,
+          "canonical_contribution": "fc559f5698d3ae64b3d0f28ae1c784c9bc8e06e2d3fd55c321fbb1f5d5d4ace2",
+          "assumptions_id": "02368b71c4d9b54bfd9f174764f3d26588b8d01fd74454e400a53112e2ec3cb3"
+        },
+        "independent_progress": 0.0,
+        "reward": 0.0,
+        "reason": "proposal was not performed as assessed"
+      },
+      "probability": [
+        0.04437318071722984,
+        0.9107372164726257,
+        0.044889628887176514
+      ],
+      "fresh_process_restart_exact": true,
+      "source": {
+        "kind": "human_assessment",
+        "id": "SNLI-1.0-HISTORY-016-development",
+        "sha256": "83f602e4b964d4758bcc033d1bd778bfac3228901c5adc6c8467b8aa90c18c09"
+      },
+      "original_goal_id": "aa6af7788c710d28b3c791e69a6c5ddbef958c018abf82fb3c357918024770f7",
+      "retained": false,
+      "other_scope_unchanged": true,
+      "duplicate_query_credit_rejected": true
+    },
+    {
+      "query_id": "5b83b7d8d26d9bfbcc628e0c21e3446d99da6d3d9c97dc095a091f4b79d49945",
+      "target": 0,
+      "credit": {
+        "accepted": false,
+        "outcome": {
+          "goal": "02101cf786120b5c6299e5e151fa4c45ac43bebccdcfd796145ea447c4655551",
+          "decision": "d3753e5af43c2aeae16a8fc42c34117a0360264fe84f8c8668bff0c077c55b31",
+          "policy_before": "886b6692dc6e8bfc4ce75964daa4f8198ae526636d92a71237c346fb84fe3134",
+          "predictor": "886b6692dc6e8bfc4ce75964daa4f8198ae526636d92a71237c346fb84fe3134",
+          "evidence_id": "human-query-5b83b7d8d26d9bfbcc628e0c21e3446d99da6d3d9c97dc095a091f4b79d49945",
+          "source_sha256": "55e41fa816188d5a5c43c3e3fab90e261a21ae4b873f5086c44beddd6b482274",
+          "verifier_sha256": "c3e9771a25247fe4ffa9fe54d3c084d699f6445266d3e80865b1f74ad870d121",
+          "assessment_id": "HISTORY-016-delivery-1",
+          "evidence_kind": "human_assessment",
+          "intended_intervention": "fc3eeb0e8fdbe12d3fb32c28c0210833bce141e5523c16ec1d2951f9d30ee13b",
+          "observed_intervention": "fc3eeb0e8fdbe12d3fb32c28c0210833bce141e5523c16ec1d2951f9d30ee13b",
+          "before_loss": 0.2410374475245353,
+          "after_loss": 0.2410374475245353,
+          "verified": true,
+          "canonical_contribution": "029ae0a52f1f704d89eac4ca97cc86b19be13aac69093fb44b02c94e4ae1cc91",
+          "assumptions_id": "02368b71c4d9b54bfd9f174764f3d26588b8d01fd74454e400a53112e2ec3cb3"
+        },
+        "independent_progress": 0.0,
+        "reward": 0.0,
+        "reason": "no positive independent query improvement"
+      },
+      "probability": [
+        0.7858121991157532,
+        0.09760969132184982,
+        0.11657819151878357
+      ],
+      "fresh_process_restart_exact": true,
+      "source": {
+        "kind": "human_assessment",
+        "id": "SNLI-1.0-HISTORY-016-development",
+        "sha256": "83f602e4b964d4758bcc033d1bd778bfac3228901c5adc6c8467b8aa90c18c09"
+      },
+      "original_goal_id": "02101cf786120b5c6299e5e151fa4c45ac43bebccdcfd796145ea447c4655551",
+      "retained": false,
+      "other_scope_unchanged": true,
+      "duplicate_query_credit_rejected": true
+    },
+    {
+      "query_id": "52b661c3a9fb210c0664c796ce5c72589e90472e1c70ab6bbb461ebd69420697",
+      "target": 0,
+      "credit": {
+        "accepted": false,
+        "outcome": {
+          "goal": "0f0b3392c286728c7b89061bb774bba4a0d1bf278b2a3e173fe3582e593f91b9",
+          "decision": "096a068a3f47ec426223d639e54c12b23512feb45aa958eb3428740f5479a9fd",
+          "policy_before": "886b6692dc6e8bfc4ce75964daa4f8198ae526636d92a71237c346fb84fe3134",
+          "predictor": "886b6692dc6e8bfc4ce75964daa4f8198ae526636d92a71237c346fb84fe3134",
+          "evidence_id": "human-query-52b661c3a9fb210c0664c796ce5c72589e90472e1c70ab6bbb461ebd69420697",
+          "source_sha256": "55e41fa816188d5a5c43c3e3fab90e261a21ae4b873f5086c44beddd6b482274",
+          "verifier_sha256": "c3e9771a25247fe4ffa9fe54d3c084d699f6445266d3e80865b1f74ad870d121",
+          "assessment_id": "HISTORY-016-delivery-2",
+          "evidence_kind": "human_assessment",
+          "intended_intervention": "0e945767242069bae945ad4776d2e155bbd317f27e04edc672c7d49f5f659929",
+          "observed_intervention": "0e945767242069bae945ad4776d2e155bbd317f27e04edc672c7d49f5f659929",
+          "before_loss": 0.3996517801590597,
+          "after_loss": 0.3996517801590597,
+          "verified": true,
+          "canonical_contribution": "430d7f6bbed02e4251a9e06456845941719ab071fcb11604d411b6866b924da1",
+          "assumptions_id": "02368b71c4d9b54bfd9f174764f3d26588b8d01fd74454e400a53112e2ec3cb3"
+        },
+        "independent_progress": 0.0,
+        "reward": 0.0,
+        "reason": "no positive independent query improvement"
+      },
+      "probability": [
+        0.6705535054206848,
+        0.17891289293766022,
+        0.1505335569381714
+      ],
+      "fresh_process_restart_exact": true,
+      "source": {
+        "kind": "human_assessment",
+        "id": "SNLI-1.0-HISTORY-016-development",
+        "sha256": "83f602e4b964d4758bcc033d1bd778bfac3228901c5adc6c8467b8aa90c18c09"
+      },
+      "original_goal_id": "0f0b3392c286728c7b89061bb774bba4a0d1bf278b2a3e173fe3582e593f91b9",
+      "retained": false,
+      "other_scope_unchanged": true,
+      "duplicate_query_credit_rejected": true
+    },
+    {
+      "query_id": "98c7dbe96478332277409c34632204a0ed17f4102335735f72f8f716dacd94e5",
+      "target": 1,
+      "credit": {
+        "accepted": false,
+        "outcome": {
+          "goal": "9d9a66df8c1089862f926bad8bcf0bd601ef3e765aff376492b5175989b9a0ee",
+          "decision": "3ce8adcc231440ed197229ebdea72a3211bd53d0b76af3ed68ecd9d28a0e8b10",
+          "policy_before": "886b6692dc6e8bfc4ce75964daa4f8198ae526636d92a71237c346fb84fe3134",
+          "predictor": "886b6692dc6e8bfc4ce75964daa4f8198ae526636d92a71237c346fb84fe3134",
+          "evidence_id": "human-query-98c7dbe96478332277409c34632204a0ed17f4102335735f72f8f716dacd94e5",
+          "source_sha256": "55e41fa816188d5a5c43c3e3fab90e261a21ae4b873f5086c44beddd6b482274",
+          "verifier_sha256": "c3e9771a25247fe4ffa9fe54d3c084d699f6445266d3e80865b1f74ad870d121",
+          "assessment_id": "HISTORY-016-delivery-3",
+          "evidence_kind": "human_assessment",
+          "intended_intervention": "e3ca19fc4960bc696bda508aede851c28bfd09a377a7a7572ab641509d50fce2",
+          "observed_intervention": "e3ca19fc4960bc696bda508aede851c28bfd09a377a7a7572ab641509d50fce2",
+          "before_loss": 0.2896883096492427,
+          "after_loss": 0.2896883096492427,
+          "verified": true,
+          "canonical_contribution": "6886c0ab42b817ec62b6bae048776e8b85488b7c097c1d321279ccd020d71978",
+          "assumptions_id": "02368b71c4d9b54bfd9f174764f3d26588b8d01fd74454e400a53112e2ec3cb3"
+        },
+        "independent_progress": 0.0,
+        "reward": 0.0,
+        "reason": "no positive independent query improvement"
+      },
+      "probability": [
+        0.03320368751883507,
+        0.7484968304634094,
+        0.21829944849014282
+      ],
+      "fresh_process_restart_exact": true,
+      "source": {
+        "kind": "human_assessment",
+        "id": "SNLI-1.0-HISTORY-016-development",
+        "sha256": "83f602e4b964d4758bcc033d1bd778bfac3228901c5adc6c8467b8aa90c18c09"
+      },
+      "original_goal_id": "9d9a66df8c1089862f926bad8bcf0bd601ef3e765aff376492b5175989b9a0ee",
+      "retained": false,
+      "other_scope_unchanged": true,
+      "duplicate_query_credit_rejected": true
+    },
+    {
+      "query_id": "e69ff8dda61919bf696043de69d5e90f1bcba6fac2734932d5761c4653b3582b",
+      "target": 1,
+      "credit": {
+        "accepted": false,
+        "outcome": {
+          "goal": "9cc3e9695a341167fab9eecc6783a6728294457469e98f0dc68e0d80e8306142",
+          "decision": "e073a942fdbb595da8b3c5dfe9cff9c60756bfb229cddff61a981067a3596730",
+          "policy_before": "886b6692dc6e8bfc4ce75964daa4f8198ae526636d92a71237c346fb84fe3134",
+          "predictor": "886b6692dc6e8bfc4ce75964daa4f8198ae526636d92a71237c346fb84fe3134",
+          "evidence_id": "human-query-e69ff8dda61919bf696043de69d5e90f1bcba6fac2734932d5761c4653b3582b",
+          "source_sha256": "55e41fa816188d5a5c43c3e3fab90e261a21ae4b873f5086c44beddd6b482274",
+          "verifier_sha256": "c3e9771a25247fe4ffa9fe54d3c084d699f6445266d3e80865b1f74ad870d121",
+          "assessment_id": "HISTORY-016-delivery-4",
+          "evidence_kind": "human_assessment",
+          "intended_intervention": "6d4f617916950e2018e8d48d0503b33f228d49efc6213d8d2785e19c2fb23636",
+          "observed_intervention": "6d4f617916950e2018e8d48d0503b33f228d49efc6213d8d2785e19c2fb23636",
+          "before_loss": 1.7673522960409933,
+          "after_loss": 1.7673522960409933,
+          "verified": true,
+          "canonical_contribution": "19be7f134b59da46ec5093f3a07dbc26e93bd36171e513c0abca8634f6baf0a2",
+          "assumptions_id": "02368b71c4d9b54bfd9f174764f3d26588b8d01fd74454e400a53112e2ec3cb3"
+        },
+        "independent_progress": 0.0,
+        "reward": 0.0,
+        "reason": "no positive independent query improvement"
+      },
+      "probability": [
+        0.5974443554878235,
+        0.1707845777273178,
+        0.23177103698253632
+      ],
+      "fresh_process_restart_exact": true,
+      "source": {
+        "kind": "human_assessment",
+        "id": "SNLI-1.0-HISTORY-016-development",
+        "sha256": "83f602e4b964d4758bcc033d1bd778bfac3228901c5adc6c8467b8aa90c18c09"
+      },
+      "original_goal_id": "9cc3e9695a341167fab9eecc6783a6728294457469e98f0dc68e0d80e8306142",
+      "retained": false,
+      "other_scope_unchanged": true,
+      "duplicate_query_credit_rejected": true
+    },
+    {
+      "query_id": "501faa799e8b070bd56b46ada96327a218e07dee4078fa8ef5f414ac9125136e",
+      "target": 0,
+      "credit": {
+        "accepted": false,
+        "outcome": {
+          "goal": "e314c2bc183b62662016ba57f894d46888151508e0f9ccd065ecfff2127a9e9c",
+          "decision": "9b4c216d6955fc75e190469c2b2325ea8a3100d12f8d8940b4c8361c8fc353cd",
+          "policy_before": "886b6692dc6e8bfc4ce75964daa4f8198ae526636d92a71237c346fb84fe3134",
+          "predictor": "886b6692dc6e8bfc4ce75964daa4f8198ae526636d92a71237c346fb84fe3134",
+          "evidence_id": "human-query-501faa799e8b070bd56b46ada96327a218e07dee4078fa8ef5f414ac9125136e",
+          "source_sha256": "55e41fa816188d5a5c43c3e3fab90e261a21ae4b873f5086c44beddd6b482274",
+          "verifier_sha256": "c3e9771a25247fe4ffa9fe54d3c084d699f6445266d3e80865b1f74ad870d121",
+          "assessment_id": "HISTORY-016-delivery-5",
+          "evidence_kind": "human_assessment",
+          "intended_intervention": "9c8c28daa9f45e7fff996c326b20335cc8e4cd056067284253b19131117d8387",
+          "observed_intervention": "9c8c28daa9f45e7fff996c326b20335cc8e4cd056067284253b19131117d8387",
+          "before_loss": 0.5066212803647088,
+          "after_loss": 0.5066212803647088,
+          "verified": true,
+          "canonical_contribution": "6053b940bc18faa1a5879cfeb083643766764d1bd6d0090eea14c02f8a7de5e7",
+          "assumptions_id": "02368b71c4d9b54bfd9f174764f3d26588b8d01fd74454e400a53112e2ec3cb3"
+        },
+        "independent_progress": 0.0,
+        "reward": 0.0,
+        "reason": "no positive independent query improvement"
+      },
+      "probability": [
+        0.602527916431427,
+        0.16401921212673187,
+        0.23345285654067993
+      ],
+      "fresh_process_restart_exact": true,
+      "source": {
+        "kind": "human_assessment",
+        "id": "SNLI-1.0-HISTORY-016-development",
+        "sha256": "83f602e4b964d4758bcc033d1bd778bfac3228901c5adc6c8467b8aa90c18c09"
+      },
+      "original_goal_id": "e314c2bc183b62662016ba57f894d46888151508e0f9ccd065ecfff2127a9e9c",
+      "retained": false,
+      "other_scope_unchanged": true,
+      "duplicate_query_credit_rejected": true
+    },
+    {
+      "query_id": "d12f463da43b0b6c4aab338c3b5eaeceb32fc4bef77fa804138da00d7075a061",
+      "target": 0,
+      "credit": {
+        "accepted": false,
+        "outcome": {
+          "goal": "8337a056f184f04f6306a1f90bc8e054d9603ab0e14207acfb4efa021a1be1cc",
+          "decision": "08c6cce29cedaf50f0ff706f76c81a4b65740bc74d25ff69c7c7a0221d59dceb",
+          "policy_before": "886b6692dc6e8bfc4ce75964daa4f8198ae526636d92a71237c346fb84fe3134",
+          "predictor": "886b6692dc6e8bfc4ce75964daa4f8198ae526636d92a71237c346fb84fe3134",
+          "evidence_id": "human-query-d12f463da43b0b6c4aab338c3b5eaeceb32fc4bef77fa804138da00d7075a061",
+          "source_sha256": "55e41fa816188d5a5c43c3e3fab90e261a21ae4b873f5086c44beddd6b482274",
+          "verifier_sha256": "c3e9771a25247fe4ffa9fe54d3c084d699f6445266d3e80865b1f74ad870d121",
+          "assessment_id": "HISTORY-016-delivery-6",
+          "evidence_kind": "human_assessment",
+          "intended_intervention": "253a4df2556cdca23371d610c9dc09734efe9e117702d96ee64095d813c1fdb5",
+          "observed_intervention": "253a4df2556cdca23371d610c9dc09734efe9e117702d96ee64095d813c1fdb5",
+          "before_loss": 0.7851620872132223,
+          "after_loss": 0.7851620872132223,
+          "verified": true,
+          "canonical_contribution": "51fcec35e04440a4fe7600363ca5f2461c2c7c99ccb16e8ee0c9d2d0bd76fa7e",
+          "assumptions_id": "02368b71c4d9b54bfd9f174764f3d26588b8d01fd74454e400a53112e2ec3cb3"
+        },
+        "independent_progress": 0.0,
+        "reward": 0.0,
+        "reason": "no positive independent query improvement"
+      },
+      "probability": [
+        0.4560457766056061,
+        0.23012296855449677,
+        0.31383129954338074
+      ],
+      "fresh_process_restart_exact": true,
+      "source": {
+        "kind": "human_assessment",
+        "id": "SNLI-1.0-HISTORY-016-development",
+        "sha256": "83f602e4b964d4758bcc033d1bd778bfac3228901c5adc6c8467b8aa90c18c09"
+      },
+      "original_goal_id": "8337a056f184f04f6306a1f90bc8e054d9603ab0e14207acfb4efa021a1be1cc",
+      "retained": false,
+      "other_scope_unchanged": true,
+      "duplicate_query_credit_rejected": true
+    },
+    {
+      "query_id": "21d28e8294f8bd43334958ab9fc002d3a671380e27a6069bc4f897d8aed805dc",
+      "target": 2,
+      "credit": {
+        "accepted": false,
+        "outcome": {
+          "goal": "30d0ab45a053b01afa068ce99fb44f9934bbb536ce9eae7822cc7ddaf21042d9",
+          "decision": "d86a722870ddb0b0e59b14921d09eccf87944b935b8d657e2e4f51886dd3d10a",
+          "policy_before": "886b6692dc6e8bfc4ce75964daa4f8198ae526636d92a71237c346fb84fe3134",
+          "predictor": "886b6692dc6e8bfc4ce75964daa4f8198ae526636d92a71237c346fb84fe3134",
+          "evidence_id": "human-query-21d28e8294f8bd43334958ab9fc002d3a671380e27a6069bc4f897d8aed805dc",
+          "source_sha256": "55e41fa816188d5a5c43c3e3fab90e261a21ae4b873f5086c44beddd6b482274",
+          "verifier_sha256": "c3e9771a25247fe4ffa9fe54d3c084d699f6445266d3e80865b1f74ad870d121",
+          "assessment_id": "HISTORY-016-delivery-7",
+          "evidence_kind": "human_assessment",
+          "intended_intervention": "b64473e605baacc65c5700a90eec327f84009165f575df91ffb3ef7a86bff0f5",
+          "observed_intervention": "b64473e605baacc65c5700a90eec327f84009165f575df91ffb3ef7a86bff0f5",
+          "before_loss": 0.881449338848202,
+          "after_loss": 0.881449338848202,
+          "verified": true,
+          "canonical_contribution": "e239fc0567676d155a34d801978608a98f0d7504ee69eb8964ae0e4bff3e480d",
+          "assumptions_id": "02368b71c4d9b54bfd9f174764f3d26588b8d01fd74454e400a53112e2ec3cb3"
+        },
+        "independent_progress": 0.0,
+        "reward": 0.0,
+        "reason": "no positive independent query improvement"
+      },
+      "probability": [
+        0.3174024820327759,
+        0.26841530203819275,
+        0.414182186126709
+      ],
+      "fresh_process_restart_exact": true,
+      "source": {
+        "kind": "human_assessment",
+        "id": "SNLI-1.0-HISTORY-016-development",
+        "sha256": "83f602e4b964d4758bcc033d1bd778bfac3228901c5adc6c8467b8aa90c18c09"
+      },
+      "original_goal_id": "30d0ab45a053b01afa068ce99fb44f9934bbb536ce9eae7822cc7ddaf21042d9",
+      "retained": false,
+      "other_scope_unchanged": true,
+      "duplicate_query_credit_rejected": true
+    }
+  ],
+  "retained_count": 0,
+  "selected": {
+    "sha256": "321efc2de3e32505debe6601e493d0ebdd1040cb7b62b966d28d59e81420804e",
+    "revision": "321efc2de3e32505debe6601e493d0ebdd1040cb7b62b966d28d59e81420804e.pt",
+    "parent": null,
+    "weights": "886b6692dc6e8bfc4ce75964daa4f8198ae526636d92a71237c346fb84fe3134",
+    "updates": 0,
+    "step": 0,
+    "n": 128,
+    "before_loss": 0.8261446764227003,
+    "loss": 0.8261446764227003,
+    "before_accuracy": 0.640625,
+    "accuracy": 0.640625
+  },
+  "source_sha256": "9fe4d2e8d79ebbc32789eabcafb1088f16d7e976dfaa23c4249d0d954304fc54",
+  "assessment_scope": {
+    "scope": "human relation annotation conditional on the recorded premise; four source-disjoint supports",
+    "selection": "first eight prospectively ordered development queries; all attempts reported"
+  },
+  "whole_architecture_completed": false
+}
