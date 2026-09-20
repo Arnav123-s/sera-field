@@ -1,0 +1,565 @@
+{
+  "scope": "All supervised direct CONNECTED-003, SCFE-004, ECHO-005, SCFE-006 and delivery attempts, including failures and replay.",
+  "attempts": [
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T02:46:02Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "connected-003-source-preparation",
+      "command": [
+        "--",
+        "-m",
+        "sera_field.study_data",
+        "--output",
+        "local/CONNECTED-003-data-v1"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 21044,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 161693696,
+        "cpu_seconds": 10.125,
+        "active_processes": 0,
+        "total_processes": 2
+      },
+      "wall_seconds": 10.435297600000922,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T02:46:12Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T02:51:41Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "connected-003-contract-tests-001",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "tests/test_grounded_learning.py",
+        "--basetemp",
+        "runs/connected-003-contract-tests-001/pytest"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 18736,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 653008896,
+        "cpu_seconds": 6.59375,
+        "active_processes": 0,
+        "total_processes": 6
+      },
+      "wall_seconds": 7.138579400001618,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T02:51:48Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T02:53:40Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "connected-003-split-audit",
+      "command": [
+        "--",
+        "scripts/audit_connected_splits.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 17792,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 239448064,
+        "cpu_seconds": 12.125,
+        "active_processes": 0,
+        "total_processes": 2
+      },
+      "wall_seconds": 12.197074300005625,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T02:53:52Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T02:56:08Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "connected-003-all-contracts-001",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "--basetemp",
+        "runs/connected-003-all-contracts-001/pytest"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 13832,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 681279488,
+        "cpu_seconds": 13.0625,
+        "active_processes": 0,
+        "total_processes": 6
+      },
+      "wall_seconds": 13.880970199999865,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T02:56:22Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T02:57:16Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "connected-003-inquiry-contracts",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "tests/test_grounded_learning.py",
+        "--basetemp",
+        "runs/connected-003-inquiry-contracts/pytest"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 7888,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 634114048,
+        "cpu_seconds": 6.828125,
+        "active_processes": 0,
+        "total_processes": 6
+      },
+      "wall_seconds": 7.276111300001503,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T02:57:23Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T02:58:47Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "connected-003-teaching-1103",
+      "command": [
+        "--",
+        "-m",
+        "sera_field.study_training",
+        "--output",
+        "runs/CONNECTED-003-teaching-1103"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 9316,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 1515155456,
+        "cpu_seconds": 924.171875,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 938.9568620999999,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T03:14:26Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T03:18:22Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "scfe-004-contracts-001",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "tests/test_clifford_sheaf.py",
+        "tests/test_grounded_learning.py",
+        "--basetemp",
+        "runs/scfe-004-contracts-001/pytest"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 21040,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 632598528,
+        "cpu_seconds": 11.484375,
+        "active_processes": 0,
+        "total_processes": 6
+      },
+      "wall_seconds": 12.62248940000427,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T03:18:34Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T03:19:54Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "scfe-004-teaching-1103",
+      "command": [
+        "--",
+        "-m",
+        "sera_field.study_training",
+        "--owner",
+        "scfe",
+        "--output",
+        "runs/SCFE-004-teaching-1103"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 11892,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 1514835968,
+        "cpu_seconds": 1243.4375,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 1265.4318933000031,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T03:40:59Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T03:41:09Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "connected-scfe-final-contracts-001",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 19792,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 662196224,
+        "cpu_seconds": 24.84375,
+        "active_processes": 0,
+        "total_processes": 6
+      },
+      "wall_seconds": 26.584758499993768,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T03:41:36Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T03:42:09Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "connected-scfe-completion-001",
+      "command": [
+        "--",
+        "scripts/complete_connected_campaign.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 20624,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 665145344,
+        "cpu_seconds": 981.734375,
+        "active_processes": 0,
+        "total_processes": 20
+      },
+      "wall_seconds": 1000.154950499993,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T03:58:49Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T04:00:10Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "echo-005-qualification-001",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "tests/test_hamiltonian_echo.py",
+        "-q"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 17916,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 258048000,
+        "cpu_seconds": 3.65625,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 4.100152800005162,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T04:00:14Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T04:03:26Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "scfe-006-policy-selection-001",
+      "command": [
+        "--",
+        "scripts/select_scfe_policy.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 21020,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 326160384,
+        "cpu_seconds": 387.765625,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 397.2509410999992,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T04:10:04Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T04:11:35Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "scfe-006-policy-replay-001",
+      "command": [
+        "--",
+        "scripts/select_scfe_policy.py",
+        "--replay"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 5100,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 325357568,
+        "cpu_seconds": 85.5625,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 89.20819910000137,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T04:13:05Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T04:14:20Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "connected-delivery-001",
+      "command": [
+        "--",
+        "scripts/deliver_connected.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 11712,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 376451072,
+        "cpu_seconds": 26.859375,
+        "active_processes": 0,
+        "total_processes": 23
+      },
+      "wall_seconds": 29.656916800006,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T04:14:50Z"
+    }
+  ],
+  "wall_seconds": 3814.8951964000153,
+  "cpu_seconds": 3738.25,
+  "peak_committed_bytes": 1515155456,
+  "failed_attempts": 0,
+  "numerical_threads": 1,
+  "memory_cap_bytes": 2147483648,
+  "paid_compute": false,
+  "earlier_costs": "reports/COSTS.json and the full append-only runs/costs.jsonl remain preserved.",
+  "interrupted_delegated_costs": "local/takeover-003/ag-run-state-at-takeover.json preserves a lower-bound sample, not a fabricated complete cost."
+}

@@ -1,0 +1,83 @@
+{
+  "attempts": [
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T06:33:04Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "concept-009-contracts-001",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "tests/test_concept_repair.py",
+        "tests/test_concept_owner.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 2328,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 676978688,
+        "cpu_seconds": 10.390625,
+        "active_processes": 0,
+        "total_processes": 9
+      },
+      "wall_seconds": 11.34336710000207,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T06:33:15Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T06:34:36Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "concept-009-campaign-001",
+      "command": [
+        "--",
+        "scripts/complete_concept009.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 21500,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 533131264,
+        "cpu_seconds": 105.984375,
+        "active_processes": 0,
+        "total_processes": 24
+      },
+      "wall_seconds": 107.87652890000027,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T06:36:24Z"
+    }
+  ],
+  "wall_seconds": 119.21989600000234,
+  "cpu_seconds": 116.375
+}

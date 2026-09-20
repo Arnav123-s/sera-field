@@ -1,0 +1,36 @@
+{
+  "inference_checkpoint": {
+    "sha256": "b8428610ee13211547ee83f9c741cc01c9fcd5581b8a10f25cb6f5b2e14d4ae1",
+    "revision": "b8428610ee13211547ee83f9c741cc01c9fcd5581b8a10f25cb6f5b2e14d4ae1.pt",
+    "parent": "0e09e802635cf73d01d0ff0d6948b8b247f42eb670030bf2a94c40f510c9d41c",
+    "weights": "6bb452bbb714d068925180aacc03cbc48ef296410361ceb990e1c50edd291a85",
+    "updates": 0,
+    "score": 0.9841417740395529,
+    "step": 1024,
+    "source_checkpoint_sha256": "3c56af8d17aefdd745f781d3ea196114b4d3d0a9100cc863668776b12f296743",
+    "role": "qualified_optional_successor"
+  },
+  "decision": {
+    "checks": {
+      "reading_retained": true,
+      "math_retained": true,
+      "pairs_retained": true,
+      "physics_retained": true,
+      "inquiry_retained": true,
+      "trajectories_finite": true,
+      "weights_unchanged_during_evaluation": true,
+      "exact_gradient_control_agreement": true
+    },
+    "promote": true,
+    "mean_normalized_objective_against_exact": 0.9999999937445588,
+    "decision": "qualified_candidate",
+    "completed_utc": "2026-09-20T05:21:47Z",
+    "all_four_replays_exact": true
+  },
+  "parameter_count": 863148,
+  "parameter_bytes": 3452592,
+  "file_bytes": 3466853,
+  "no_raw_corpus_text": true,
+  "complete_resume_state": "runs/ECHO-007/echo/revisions",
+  "default_owner": "checkpoints/SCFE-004 remains preserved"
+}

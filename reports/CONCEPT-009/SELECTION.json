@@ -1,0 +1,10 @@
+{
+  "sha256": "de14292e3ac9a078e73c1741cf29becbdb63317593ff13ddfd25b96e585048e7",
+  "revision": "de14292e3ac9a078e73c1741cf29becbdb63317593ff13ddfd25b96e585048e7.pt",
+  "parent": "1643a4d5a7df2a04222c5e06319a51cdc56584b6a7b1fc3007bd47f084f6324f",
+  "weights": "2c1963ee5f0759fdc167b3208939162f7bfc610cc36b1572ad0ba170a78d5654",
+  "updates": 0,
+  "step": 512,
+  "accuracy": 0.875,
+  "loss": 1.070106029510498
+}

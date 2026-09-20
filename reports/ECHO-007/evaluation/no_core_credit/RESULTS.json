@@ -1,0 +1,72 @@
+{
+  "selection": {
+    "sha256": "615b0b4a3b9d1af149d8474cb5de3b7f135a90f9083bedbad805fb0ad19ab1a7",
+    "revision": "615b0b4a3b9d1af149d8474cb5de3b7f135a90f9083bedbad805fb0ad19ab1a7.pt",
+    "parent": "561c170751674f0d7a071233c331cd75c05d9557070ae3f29d0442644c7f5f13",
+    "weights": "afafe5c970fa92eb17210b5bba304d4d5f6b2a643031c52743b4321bb4df4873",
+    "updates": 0,
+    "score": 0.9715337039013123,
+    "step": 1024
+  },
+  "weights_before": "afafe5c970fa92eb17210b5bba304d4d5f6b2a643031c52743b4321bb4df4873",
+  "reading": {
+    "n": 512,
+    "accuracy": 0.7109375,
+    "multi_sentence_n": 501,
+    "multi_sentence_accuracy": 0.7045908183632734,
+    "top3_evidence_recall": 0.92578125,
+    "lexical_baseline_accuracy": 0.65625,
+    "loss": 0.8198931599035859
+  },
+  "math": {
+    "all_continuations": {
+      "n": 256,
+      "numeric_top1": 0.125,
+      "numeric_top5": 0.3984375,
+      "human_expression_top1": 0.1171875,
+      "human_expression_top5": 0.3515625
+    },
+    "original_one_step": {
+      "n": 0,
+      "numeric_top1": 0.0,
+      "numeric_top5": 0.0,
+      "human_expression_top1": 0.0,
+      "human_expression_top5": 0.0
+    },
+    "scope": "Executable binary arithmetic proposals; teacher-forced continuations reported separately.",
+    "loss": 3.836188241839409
+  },
+  "pairs": {
+    "dailydialog": {
+      "n": 64,
+      "accuracy": 0.359375,
+      "loss": 1.6864124834537506
+    },
+    "webster": {
+      "n": 64,
+      "accuracy": 0.671875,
+      "loss": 0.7263917326927185
+    }
+  },
+  "physics": {
+    "n": 512,
+    "mse": 0.1064208954771857
+  },
+  "motion": {
+    "n": 128,
+    "completed": 128,
+    "mse": 0.04892470619334045
+  },
+  "inquiry": {
+    "n": 256,
+    "before_mse": 0.1431010416023355,
+    "after_mse": 0.06799339138069627,
+    "mean_absolute_progress": 0.07510765022163923,
+    "fraction_improved": 0.625,
+    "relative_mse_reduction": 0.5248574670082166,
+    "original_goals_returned": 256,
+    "failed_actuators": 6,
+    "probe_count": 256
+  },
+  "weights_after": "afafe5c970fa92eb17210b5bba304d4d5f6b2a643031c52743b4321bb4df4873"
+}

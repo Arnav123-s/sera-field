@@ -1,0 +1,65 @@
+{
+  "checkpoint": {
+    "path": "runs\\FIELD-001\\field-11\\step-03000.pt",
+    "sha256": "6a3fef1162b82c60a008ae375085381c041973e589b07b3d128b93bd6fa2d35a",
+    "weight_sha256": "7ab174f88be7ce74f79f3f2e8b78ecc455006845486ffb1df5b3ee36db4ccd3b",
+    "step": 3000
+  },
+  "mass_2_after_1_second": {
+    "position": [
+      0.4994336664676666,
+      0.0,
+      0.0
+    ],
+    "velocity": [
+      1.011171579360962,
+      0.0,
+      0.0
+    ]
+  },
+  "mass_1_after_1_second": {
+    "position": [
+      1.0134060382843018,
+      0.0,
+      0.0
+    ],
+    "velocity": [
+      2.029275417327881,
+      0.0,
+      0.0
+    ]
+  },
+  "inferred_mass_given_force_2_acceleration_1": [
+    1.9334638118743896
+  ],
+  "plan_target": [
+    0.2,
+    0.0,
+    0.0
+  ],
+  "plan_first_force": [
+    1.6566851139068604,
+    0.0,
+    0.0
+  ],
+  "plan_second_force": [
+    -1.6900196075439453,
+    0.0,
+    0.0
+  ],
+  "plan_predicted_position": [
+    0.2004624605178833,
+    0.0,
+    0.0
+  ],
+  "plan_independent_endpoint": [
+    0.2050022333860398,
+    0.0,
+    0.0,
+    -0.00833362340927116,
+    0.0,
+    0.0
+  ],
+  "facts_and_weights_unchanged": true,
+  "evidence_type": "new supplied synthetic diagnostic examples; not an additional final cohort"
+}

@@ -1,0 +1,98 @@
+{
+  "steps": 1536,
+  "presentations": 49152,
+  "distinct_taught_phrases": 120,
+  "selected": {
+    "sha256": "de14292e3ac9a078e73c1741cf29becbdb63317593ff13ddfd25b96e585048e7",
+    "revision": "de14292e3ac9a078e73c1741cf29becbdb63317593ff13ddfd25b96e585048e7.pt",
+    "parent": "1643a4d5a7df2a04222c5e06319a51cdc56584b6a7b1fc3007bd47f084f6324f",
+    "weights": "2c1963ee5f0759fdc167b3208939162f7bfc610cc36b1572ad0ba170a78d5654",
+    "updates": 0,
+    "step": 512,
+    "accuracy": 0.875,
+    "loss": 1.070106029510498
+  },
+  "development": [
+    {
+      "step": 0,
+      "accuracy": 0.5,
+      "loss": 2.2991251945495605,
+      "weights": "4c9b61a2ad676fe857963f1887dd970f9b616042ea0596f1a6d830e2744d5ae0"
+    },
+    {
+      "step": 128,
+      "accuracy": 0.875,
+      "loss": 1.3392667770385742,
+      "weights": "9b17b4264a6cb9b44e096776a0d8213aac07e13dd7282195e427ffb9e790df62"
+    },
+    {
+      "step": 256,
+      "accuracy": 0.875,
+      "loss": 1.1882810592651367,
+      "weights": "2e3c36b2896e16cf46bcaf57bb26c29a07391998590072c124131070b4806d2b"
+    },
+    {
+      "step": 384,
+      "accuracy": 0.875,
+      "loss": 1.0810452699661255,
+      "weights": "e6e9c947efbbac4ca6425954240c9b1b18d61f482cb96c288aa513987229ace5"
+    },
+    {
+      "step": 512,
+      "accuracy": 0.875,
+      "loss": 1.070106029510498,
+      "weights": "2c1963ee5f0759fdc167b3208939162f7bfc610cc36b1572ad0ba170a78d5654"
+    },
+    {
+      "step": 640,
+      "accuracy": 0.875,
+      "loss": 1.0900133848190308,
+      "weights": "a18839aaf421cfc9a9b025edc640280ec905e9436dd79213771af70df23aa241"
+    },
+    {
+      "step": 768,
+      "accuracy": 0.875,
+      "loss": 1.0998612642288208,
+      "weights": "0d22b5648f522591d2b73209a79b8c04ac7d75164def5db8962eee4dd504387a"
+    },
+    {
+      "step": 896,
+      "accuracy": 0.875,
+      "loss": 1.1243150234222412,
+      "weights": "0d88194eb4545a03e0d2b2ef13e47dfabd50e3045879a814b079b0ce739cbd23"
+    },
+    {
+      "step": 1024,
+      "accuracy": 0.875,
+      "loss": 1.15021812915802,
+      "weights": "35c509ee4289f7deb98f2168cc54f03c7cbb60b205e1407b379c27c5c512b613"
+    },
+    {
+      "step": 1152,
+      "accuracy": 0.875,
+      "loss": 1.205420970916748,
+      "weights": "7cacd07a030312e34f54de49381c68666340249532014bf6ed2c7610a4723f4c"
+    },
+    {
+      "step": 1280,
+      "accuracy": 0.875,
+      "loss": 1.2301692962646484,
+      "weights": "f0c58b15eaa914d4c2246b4ff5b43230047bc317a4453271b507d5d9b34b1e01"
+    },
+    {
+      "step": 1408,
+      "accuracy": 0.875,
+      "loss": 1.273343563079834,
+      "weights": "a417d9a2225f48926bc1a79fbbb20762da2c3402ff099f05d1c9d7168700ed04"
+    },
+    {
+      "step": 1536,
+      "accuracy": 0.875,
+      "loss": 1.2887967824935913,
+      "weights": "fa299d685783a14fe913a926c5f1b8c924d60a54bfcb0504aa8664de3b214702"
+    }
+  ],
+  "all_non_routing_parameters_exact": true,
+  "new_physics_training": 0,
+  "new_reward_updates": 0
+}

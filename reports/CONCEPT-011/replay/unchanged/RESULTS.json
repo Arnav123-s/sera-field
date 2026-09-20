@@ -1,0 +1,41 @@
+{
+  "arm": "unchanged",
+  "selection": {
+    "sha256": "de14292e3ac9a078e73c1741cf29becbdb63317593ff13ddfd25b96e585048e7",
+    "revision": "de14292e3ac9a078e73c1741cf29becbdb63317593ff13ddfd25b96e585048e7.pt",
+    "parent": "1643a4d5a7df2a04222c5e06319a51cdc56584b6a7b1fc3007bd47f084f6324f",
+    "weights": "2c1963ee5f0759fdc167b3208939162f7bfc610cc36b1572ad0ba170a78d5654",
+    "updates": 0,
+    "step": 512,
+    "accuracy": 0.875,
+    "loss": 1.070106029510498
+  },
+  "metrics": {
+    "supported": {
+      "forward_mse": 0.09566305729556371,
+      "counterfactual_mse": 0.1350866060305353,
+      "inverse_mse": 2.2322231925962823,
+      "plan_mse": 0.027904984796357807,
+      "direction_correct": 0.591796875,
+      "route_correct": 0.642578125,
+      "residual_flag": 0.078125,
+      "cloud_spread": 0.0033692513801146695
+    },
+    "omitted": {
+      "forward_mse": 0.2578160259456176,
+      "counterfactual_mse": 0.361046593076973,
+      "inverse_mse": 0.8049736164008936,
+      "plan_mse": 0.1211938887925712,
+      "direction_correct": 0.4375,
+      "route_correct": 0.6328125,
+      "residual_flag": 0.3359375,
+      "cloud_spread": 0.004722774843415967
+    }
+  },
+  "weights_immutable": true,
+  "case_counts": {
+    "supported": 512,
+    "omitted": 128
+  },
+  "cases_sha256": "0563055a621732a6b9ccc9881de35bc4ef9d45d5f88ce9c062799b1648b0f93a"
+}

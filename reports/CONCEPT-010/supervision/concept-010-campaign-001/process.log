@@ -1,0 +1,77 @@
+{"lexical_development": {"step": 0, "accuracy": 0.90625, "loss": 0.3901253044605255, "weights": "ad14bd14dfb106ac797784c2a9d6fa92522a596f1d60cfd0fe2356f3a30c88f7"}}
+{"lexical_development": {"step": 128, "accuracy": 0.875, "loss": 0.319172203540802, "weights": "c9dd22cc8f0b72a0f8c91929fc1e7df7b94b6f1f22123284ce43b62d63396a91"}}
+{"lexical_development": {"step": 256, "accuracy": 0.9375, "loss": 0.177243173122406, "weights": "17c12341cff0cd7e868d3c75fc6f5dcadc98978a9fce470d7195f574f2bb450c"}}
+{"lexical_development": {"step": 384, "accuracy": 0.9375, "loss": 0.11929531395435333, "weights": "968bfed9527afc649b7cc61c8de3f238ec9b12d47c2d1411710645531aaae9c0"}}
+{"lexical_development": {"step": 512, "accuracy": 0.9375, "loss": 0.0925687775015831, "weights": "32cd574edc86d251c7777c7775f4624deb98a01ca289d643e782ee6823b5f16d"}}
+{"lexical_development": {"step": 640, "accuracy": 0.96875, "loss": 0.06980165094137192, "weights": "e27510eee4d011413984321c31eda72cd45bb2d951f519b92323c59f0462b081"}}
+{"lexical_development": {"step": 768, "accuracy": 1.0, "loss": 0.05580467730760574, "weights": "10120a45aea88c9c8bd3802c09ae9f5ee288b222bbc19f47b620ea679288b62e"}}
+{"lexical_development": {"step": 896, "accuracy": 1.0, "loss": 0.04577387496829033, "weights": "e36158acbe5cf3404f57bfda9d6afb6b01414e6176e1a4a195962231acb3bfae"}}
+{"lexical_development": {"step": 1024, "accuracy": 1.0, "loss": 0.041803326457738876, "weights": "b2d28e772f55b75b5767884126d62e6c685e41a6bb1781a6b8a56a13c4f8cb82"}}
+{"lexical_development": {"step": 1152, "accuracy": 1.0, "loss": 0.03536377474665642, "weights": "4c6e597dbe3d5ff8e1b87f863c9b7f6078bf6b8e7320936246a9e6e65a60d45d"}}
+{"lexical_development": {"step": 1280, "accuracy": 1.0, "loss": 0.030638832598924637, "weights": "461c8ac73f81476396bbf467fb8ce06f4b3348475fc4a4faadf545edb76fa340"}}
+{"lexical_development": {"step": 1408, "accuracy": 1.0, "loss": 0.028905659914016724, "weights": "0ce233f5e51a3d3e9428004de40a12d52653a1294ed0701448c13bfc2ac258d1"}}
+{"lexical_development": {"step": 1536, "accuracy": 1.0, "loss": 0.02621810883283615, "weights": "ec649d975ac1a4a9ff864cefb70aedcc62075f24421dd18efac7cb8abc704f24"}}
+{"lexical_development": {"step": 1664, "accuracy": 1.0, "loss": 0.024223292246460915, "weights": "cc33ada7eaf7e0dcda76c240f0ec0b163f613911d158405f010ddd52fccc6c77"}}
+{"lexical_development": {"step": 1792, "accuracy": 1.0, "loss": 0.022396443411707878, "weights": "965fddbd3537049e3c9a573c81d17fadb69c0943d944758a6fea668950142c47"}}
+{"lexical_development": {"step": 1920, "accuracy": 1.0, "loss": 0.02179015427827835, "weights": "f70392e939cb413e4f90bfa9c6aab1dbe2636b3f09551d49b724a5dd01bae538"}}
+{"lexical_development": {"step": 2048, "accuracy": 1.0, "loss": 0.0190591998398304, "weights": "ca862b8381f33b9579126801efb67eaee9b19b9ab7fbfdb1d7602a3ab61728fa"}}
+{
+  "decision": {
+    "checks": {
+      "routing": false,
+      "direction": true,
+      "direction_improved": true,
+      "numerical_outputs_retained": true,
+      "old_parameters_retained": true,
+      "forward_mse": true,
+      "inverse_mse": true,
+      "counterfactual_mse": true,
+      "plan_mse": true
+    },
+    "qualified": false,
+    "all_four_replays_exact": true,
+    "completed_utc": "2026-09-20T06:46:58Z"
+  },
+  "supported": {
+    "repair": {
+      "forward_mse": 0.03257389124351237,
+      "counterfactual_mse": 0.04883426692626026,
+      "inverse_mse": 0.09825519585001083,
+      "plan_mse": 0.004414818184502331,
+      "direction_correct": 0.82421875,
+      "route_correct": 0.859375,
+      "residual_flag": 0.07421875,
+      "cloud_spread": 0.003198012192346099
+    },
+    "unchanged": {
+      "forward_mse": 0.03257389124351237,
+      "counterfactual_mse": 0.04883426692626026,
+      "inverse_mse": 0.09825519585001083,
+      "plan_mse": 0.004414818184502331,
+      "direction_correct": 0.681640625,
+      "route_correct": 0.71484375,
+      "residual_flag": 0.07421875,
+      "cloud_spread": 0.003198012192346099
+    },
+    "original": {
+      "forward_mse": 0.03257389124351237,
+      "counterfactual_mse": 0.04883426692626026,
+      "inverse_mse": 0.09825519585001083,
+      "plan_mse": 0.004414818184502331,
+      "direction_correct": 0.564453125,
+      "route_correct": 0.576171875,
+      "residual_flag": 0.07421875,
+      "cloud_spread": 0.003198012192346099
+    },
+    "echo": {
+      "forward_mse": 1.645877967025195,
+      "counterfactual_mse": 2.2116959281025697,
+      "inverse_mse": 65.76757336995306,
+      "plan_mse": 0.9224326897712265,
+      "direction_correct": null,
+      "route_correct": null,
+      "residual_flag": 0.802734375,
+      "cloud_spread": 0.021036606457554424
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "changes": {
+    "sera_field/cli.py": {
+      "at_final": "b1569738ea3aff9e58112801b45e1fb0f92a1c051b45c6bd21bc6ddc8a20d1b4",
+      "at_delivery": "b8991f4cf0e139237c3e39df61604f9f72e392ceaa6175ad6db24431cc7df5f0"
+    },
+    "sera_field/evaluation.py": {
+      "at_final": "f49bc54a2e84b4dce3988258d7ee8fc3d6ef0e3c6ac41542992d1e23a73b43d9",
+      "at_delivery": "b9eea2b95a64b56dc7ef24a61ef17b28c64c2624ded1d2f69a038fb608380ed7"
+    }
+  },
+  "model_training_and_selection_changed": false,
+  "reason": "Canonical JSON replay comparison and CLI horizon/finite-input handling; no fitting or final-based selection",
+  "additional_audit_code": [
+    "sera_field/delivery_audit.py",
+    "tests/test_interface.py",
+    "scripts/package_evidence.py"
+  ]
+}

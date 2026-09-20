@@ -1,0 +1,5 @@
+Alice saw a yellow flower beside the garden gate. She left the gate open for Bob.
+Bob carried a blue notebook to the library. The library closed before sunset.
+
+This short passage is an engineering usage fixture. It was not included in the
+human training corpus or any capability evaluation.

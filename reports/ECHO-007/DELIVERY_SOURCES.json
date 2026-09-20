@@ -1,0 +1,6 @@
+{
+  "scripts/audit_echo007.py": "71e58204df8928d17b99eab7047732bb987f8a5680c01cf53323c14d8576c1a3",
+  "scripts/deliver_echo007.py": "24159e8c3d1ddea1ad387b111fc5261b023bb7ce4b025a9f059cc4971d4c44af",
+  "scripts/index_echo007.py": "89f22b32bd06b32387d6b7133b02830d1638c7efed7524da6d8990dcc0c253c2",
+  "scripts/package_echo007.py": "f808e2cad027a4e61993bfebd37a908cba9254fab8fa4c8b79bcad33f48d0479"
+}

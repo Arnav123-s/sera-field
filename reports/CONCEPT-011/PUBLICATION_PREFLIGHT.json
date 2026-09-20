@@ -1,0 +1,12 @@
+{
+  "clean_current_file_checkout_tests": 106,
+  "passed": true,
+  "first_clean_checkout_failure": "Legacy checkpoint writer assumed an existing runs directory.",
+  "repair": "Validate destination and create checkpoint parent directories; regression uses an isolated new nested path.",
+  "failed_attempt_preserved": "concept-release-public-snapshot-001",
+  "passed_attempt": "concept-release-public-snapshot-002",
+  "all_packaged_owner_hashes_verified": true,
+  "broken_markdown_links": 0,
+  "earlier_studies_retrained": false,
+  "source_attachments_raw_corpora_and_full_history_excluded": true
+}

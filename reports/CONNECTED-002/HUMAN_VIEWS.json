@@ -1,0 +1,1009 @@
+{
+  "schema": "sera-field.curriculum.1",
+  "counts": {
+    "mathematics": {
+      "train": 5918,
+      "development": 720,
+      "sealed": 738
+    },
+    "programming": {
+      "train": 295,
+      "development": 46,
+      "sealed": 33
+    },
+    "language_reading": {
+      "train": 66880,
+      "development": 12410,
+      "sealed": 8116
+    }
+  },
+  "group_counts": {
+    "train": 6554,
+    "development": 825,
+    "sealed": 812
+  },
+  "files": {
+    "train": {
+      "path": "train.jsonl",
+      "sha256": "b4f1901a7399aa3a51ea2907ee98308892e4a22d7a3aa09a811da1eb107001ed"
+    },
+    "development": {
+      "path": "development.jsonl",
+      "sha256": "db9f86b4165d9adddc24e2878e04c1455983891c8aaae8b7a230764a8b4530a4"
+    },
+    "sealed": {
+      "path": "sealed.jsonl",
+      "sha256": "bc2d3190295e6c2dc04e0308fdf56d5647d2858728e51d04aaee2e853dd385d2"
+    }
+  },
+  "excluded_duplicates": [
+    {
+      "identity": "squad-train-56bfa087a10cfb14005511d9",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56be9bb83aeaaa14008c915c"
+    },
+    {
+      "identity": "squad-train-5733f0e34776f41900661573",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5733bd9bd058e614000b6199"
+    },
+    {
+      "identity": "squad-train-56d3123b59d6e41400146205",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56cf66734df3c31400b0d714"
+    },
+    {
+      "identity": "squad-train-56d3227259d6e41400146280",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56cfdb3e234ae51400d9bf7f"
+    },
+    {
+      "identity": "squad-train-56d3a9bb2ccc5a1400d82ddc",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56cf5433aab44d1400b88ff1"
+    },
+    {
+      "identity": "squad-train-56d375b859d6e4140014646b",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56cfe7f4234ae51400d9c060"
+    },
+    {
+      "identity": "squad-train-56d38ba459d6e414001466e7",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56cfeae2234ae51400d9c0b9"
+    },
+    {
+      "identity": "squad-train-56d38ba459d6e414001466e8",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56cfeae2234ae51400d9c0ba"
+    },
+    {
+      "identity": "squad-train-56d38cc659d6e4140014672d",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56cfec4b234ae51400d9c0d0"
+    },
+    {
+      "identity": "squad-train-56d3a9282ccc5a1400d82dca",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56cff6f3234ae51400d9c193"
+    },
+    {
+      "identity": "squad-train-56d5185a9d1b871400ae061c",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56cdd63a62d2951400fa68d9"
+    },
+    {
+      "identity": "squad-train-56d525192593cc1400307ab4",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56cde34662d2951400fa6975"
+    },
+    {
+      "identity": "squad-train-56d6696d1c850414009470fc",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56cec2a1aab44d1400b889e4"
+    },
+    {
+      "identity": "squad-train-56cff6a7234ae51400d9c18e",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56cf571faab44d1400b8906c"
+    },
+    {
+      "identity": "squad-train-56cfdf65234ae51400d9bfce",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56cfdf65234ae51400d9bfcd"
+    },
+    {
+      "identity": "squad-train-573366934776f419006609ed",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573366944776f419006609f5"
+    },
+    {
+      "identity": "squad-train-573366934776f419006609ee",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573366944776f419006609f6"
+    },
+    {
+      "identity": "squad-train-57336693d058e614000b5a2b",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573366944776f419006609f5"
+    },
+    {
+      "identity": "squad-train-573366934776f419006609ef",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573366944776f419006609f7"
+    },
+    {
+      "identity": "squad-train-57336693d058e614000b5a2c",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573366944776f419006609f6"
+    },
+    {
+      "identity": "squad-train-57336693d058e614000b5a2d",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573366944776f419006609f7"
+    },
+    {
+      "identity": "squad-train-57336693d058e614000b5a2e",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573366944776f419006609f8"
+    },
+    {
+      "identity": "squad-train-573366934776f419006609f0",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573366944776f419006609f8"
+    },
+    {
+      "identity": "squad-train-5731cfe0b9d445190005e581",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573353674776f4190066083e"
+    },
+    {
+      "identity": "squad-train-57326292e17f3d1400422929",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573323754776f419006606fe"
+    },
+    {
+      "identity": "squad-train-57326292e17f3d140042292a",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573323754776f419006606ff"
+    },
+    {
+      "identity": "squad-train-573427dc4776f419006619af",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573427dad058e614000b6a34"
+    },
+    {
+      "identity": "squad-train-573427dc4776f419006619b0",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573427dad058e614000b6a35"
+    },
+    {
+      "identity": "squad-train-573427dc4776f419006619b1",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573427dad058e614000b6a36"
+    },
+    {
+      "identity": "squad-train-56d0c933234ae51400d9c43c",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56cff91b234ae51400d9c1bb"
+    },
+    {
+      "identity": "squad-train-56d1d7cbe7d4791d00902292",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56d0ac6c234ae51400d9c414"
+    },
+    {
+      "identity": "squad-train-56d3661659d6e414001462d7",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56d21eb1e7d4791d00902668"
+    },
+    {
+      "identity": "squad-train-56d3665c59d6e414001462e1",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56d2202ce7d4791d0090267a"
+    },
+    {
+      "identity": "squad-train-56d3665c59d6e414001462e3",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56d2202ce7d4791d0090267c"
+    },
+    {
+      "identity": "squad-train-56d22394e7d4791d0090269e",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56d22394e7d4791d0090269c"
+    },
+    {
+      "identity": "squad-train-56d22394e7d4791d0090269f",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56d22394e7d4791d0090269c"
+    },
+    {
+      "identity": "squad-train-56d366bb59d6e414001462ed",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56d22394e7d4791d0090269c"
+    },
+    {
+      "identity": "squad-train-56d366bb59d6e414001462ee",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56d22394e7d4791d0090269c"
+    },
+    {
+      "identity": "squad-train-56db410fe7c41114004b4fc6",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56d385c459d6e4140014662a"
+    },
+    {
+      "identity": "squad-train-56db6ae2e7c41114004b50bd",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56d972eadc89441400fdb48f"
+    },
+    {
+      "identity": "squad-train-56db7c94e7c41114004b51a5",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56d98b11dc89441400fdb534"
+    },
+    {
+      "identity": "squad-train-57301444947a6a140053d070",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57331bdad058e614000b5704"
+    },
+    {
+      "identity": "squad-train-57301444947a6a140053d072",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57331bdad058e614000b5707"
+    },
+    {
+      "identity": "squad-train-56de1377cffd8e1900b4b5b3",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56de0fef4396321400ee2586"
+    },
+    {
+      "identity": "squad-train-56dfb65b7aa994140058e041",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56dfb65b7aa994140058e040"
+    },
+    {
+      "identity": "squad-train-56e2419acd28a01900c67c28",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56de29c64396321400ee2617"
+    },
+    {
+      "identity": "squad-train-56de3e1bcffd8e1900b4b6d6",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56de2d2acffd8e1900b4b627"
+    },
+    {
+      "identity": "squad-train-56de31f34396321400ee2680",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56de2fedcffd8e1900b4b643"
+    },
+    {
+      "identity": "squad-train-56de423fcffd8e1900b4b727",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56de326fcffd8e1900b4b666"
+    },
+    {
+      "identity": "squad-train-56de42becffd8e1900b4b73a",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56de32ffcffd8e1900b4b66f"
+    },
+    {
+      "identity": "squad-train-56e85fee00c9c71400d77671",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56e6ef806fe0821900b8ec42"
+    },
+    {
+      "identity": "squad-train-56e9f4805a205f1900d6d337",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56e80b8000c9c71400d775b5"
+    },
+    {
+      "identity": "squad-train-56f6eff93d8e2e1400e372c9",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56f6ebb4711bf01900a4486a"
+    },
+    {
+      "identity": "squad-train-56f954c09b226e1400dd133b",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-56f78c18a6d7ea1400e17257"
+    },
+    {
+      "identity": "squad-train-5705dec952bb891400689639",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5705de1675f01819005e76c3"
+    },
+    {
+      "identity": "squad-train-5705e3a452bb89140068965a",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5705e3a452bb891400689659"
+    },
+    {
+      "identity": "squad-train-570a49376d058f1900182d34",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5709d00a6d058f1900182bb8"
+    },
+    {
+      "identity": "squad-train-570b1e4aec8fbc190045b83d",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-570b1e4aec8fbc190045b83a"
+    },
+    {
+      "identity": "squad-train-570fa05680d9841400ab35dd",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-570f8a7d5ab6b81900390f03"
+    },
+    {
+      "identity": "squad-train-570fa2a35ab6b81900390f4a",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-570fa2a35ab6b81900390f49"
+    },
+    {
+      "identity": "squad-train-570fa2a35ab6b81900390f4b",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-570fa2a35ab6b81900390f49"
+    },
+    {
+      "identity": "squad-train-570fa2a35ab6b81900390f4d",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-570fa2a35ab6b81900390f4c"
+    },
+    {
+      "identity": "squad-train-570fa35780d9841400ab35ea",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-570fa35780d9841400ab35e9"
+    },
+    {
+      "identity": "squad-train-571aa01210f8ca14003051d3",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-571a48dd10f8ca1400304fcd"
+    },
+    {
+      "identity": "squad-train-571a94b04faf5e1900b8aac4",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-571a8c4810f8ca140030510d"
+    },
+    {
+      "identity": "squad-train-571a94b04faf5e1900b8aac5",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-571a8c4810f8ca1400305110"
+    },
+    {
+      "identity": "squad-train-571a94b04faf5e1900b8aac6",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-571a8c4810f8ca1400305111"
+    },
+    {
+      "identity": "squad-train-571dd9035569731900639060",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-571da1b05569731900639056"
+    },
+    {
+      "identity": "squad-train-571dd9035569731900639061",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-571da1b05569731900639057"
+    },
+    {
+      "identity": "squad-train-571dd9035569731900639063",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-571da1b05569731900639058"
+    },
+    {
+      "identity": "squad-train-571a79d910f8ca1400305086",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-571a6dbe4faf5e1900b8a9a2"
+    },
+    {
+      "identity": "squad-train-571cfbd6dd7acb1400e4c1df",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-571ab7b210f8ca1400305310"
+    },
+    {
+      "identity": "squad-train-571d1e58dd7acb1400e4c225",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-571ae94232177014007e9fdb"
+    },
+    {
+      "identity": "squad-train-572413c70ba9f01400d97b6c",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5722c9db0dadf01500fa1eeb"
+    },
+    {
+      "identity": "squad-train-572431470ba9f01400d97b77",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5723aae60dadf01500fa1f27"
+    },
+    {
+      "identity": "squad-train-57257a9769ff041400e58df4",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5722c9db0dadf01500fa1ee9"
+    },
+    {
+      "identity": "squad-train-5724d4c80ba9f01400d97b87",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5722cbc2f6b826140030fc3a"
+    },
+    {
+      "identity": "squad-train-5723d221f6b826140030fc96",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5722cddcf6b826140030fc50"
+    },
+    {
+      "identity": "squad-train-5725817a69ff041400e58e1d",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5724e0140a492a190043564d"
+    },
+    {
+      "identity": "squad-train-57262ed2271a42140099d71b",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5723d6630dadf01500fa1f48"
+    },
+    {
+      "identity": "squad-train-5724e4370ba9f01400d97b9f",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5723dd7f0dadf01500fa1f52"
+    },
+    {
+      "identity": "squad-train-5724ea4d0a492a1900435666",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5723e4a30dadf01500fa1f81"
+    },
+    {
+      "identity": "squad-train-572663fbf1498d1400e8ddff",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5723f6f7f6b826140030fd0c"
+    },
+    {
+      "identity": "squad-train-5723fd9a0a492a19004355ce",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5723fd980ba9f01400d97b05"
+    },
+    {
+      "identity": "squad-train-57267f57f1498d1400e8e1cb",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57267189708984140094c63f"
+    },
+    {
+      "identity": "squad-train-5726768af1498d1400e8e082",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572407900ba9f01400d97b2e"
+    },
+    {
+      "identity": "squad-train-57264b0f5951b619008f6f31",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57250fc70a492a19004356cb"
+    },
+    {
+      "identity": "squad-train-57262473271a42140099d4ea",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57262473271a42140099d4e9"
+    },
+    {
+      "identity": "squad-train-57262473271a42140099d4eb",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57262473271a42140099d4e9"
+    },
+    {
+      "identity": "squad-train-57262473271a42140099d4ec",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57262473271a42140099d4e9"
+    },
+    {
+      "identity": "squad-train-572802574b864d1900164201",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5725b74c271a42140099d089"
+    },
+    {
+      "identity": "squad-train-5726298fec44d21400f3db09",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5726298fec44d21400f3db08"
+    },
+    {
+      "identity": "squad-train-572649185951b619008f6f0e",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57263f11ec44d21400f3dcba"
+    },
+    {
+      "identity": "squad-train-572649185951b619008f6f10",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57263f11ec44d21400f3dcbc"
+    },
+    {
+      "identity": "squad-train-57264acb708984140094c1ab",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5725b60289a1e219009abd31"
+    },
+    {
+      "identity": "squad-train-5726266789a1e219009ac3e3",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5725b53c38643c19005acb99"
+    },
+    {
+      "identity": "squad-train-572625bf89a1e219009ac3a9",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5725ea96271a42140099d313"
+    },
+    {
+      "identity": "squad-train-57261d0d38643c19005ad02f",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5725ef6e271a42140099d342"
+    },
+    {
+      "identity": "squad-train-57261df0ec44d21400f3d905",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5725f0ec271a42140099d349"
+    },
+    {
+      "identity": "squad-train-57261ed8ec44d21400f3d921",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5725f1dc271a42140099d353"
+    },
+    {
+      "identity": "squad-train-57261ed8ec44d21400f3d923",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5725f1dc271a42140099d355"
+    },
+    {
+      "identity": "squad-train-5726e32d5951b619008f8179",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5725ffe1ec44d21400f3d7f1"
+    },
+    {
+      "identity": "squad-train-5726ce13dd62a815002e90d0",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5726113689a1e219009ac1cc"
+    },
+    {
+      "identity": "squad-train-5726ce13dd62a815002e90d2",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5726113689a1e219009ac1ce"
+    },
+    {
+      "identity": "squad-train-5726ce13dd62a815002e90d3",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5726113689a1e219009ac1d0"
+    },
+    {
+      "identity": "squad-train-5726ce13dd62a815002e90d4",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5726113689a1e219009ac1cf"
+    },
+    {
+      "identity": "squad-train-5726cfd6dd62a815002e9104",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5726199989a1e219009ac25c"
+    },
+    {
+      "identity": "squad-train-5726cfd6dd62a815002e9105",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5726199989a1e219009ac25d"
+    },
+    {
+      "identity": "squad-train-572651775951b619008f6fbf",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5726240738643c19005ad078"
+    },
+    {
+      "identity": "squad-train-5726535d708984140094c277",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57262557ec44d21400f3da05"
+    },
+    {
+      "identity": "squad-train-572655495951b619008f6fef",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57262779271a42140099d5ef"
+    },
+    {
+      "identity": "squad-train-57265ab2f1498d1400e8dcf8",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57262e0289a1e219009ac514"
+    },
+    {
+      "identity": "squad-train-572678ca5951b619008f73af",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572643ee1125e71900ae1918"
+    },
+    {
+      "identity": "squad-train-5726bd4cdd62a815002e8ee4",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5726aeecdd62a815002e8ce6"
+    },
+    {
+      "identity": "squad-train-5726c173f1498d1400e8ea4f",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5726bb79f1498d1400e8e955"
+    },
+    {
+      "identity": "squad-train-5726a86a708984140094cd1e",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5726a86a708984140094cd1d"
+    },
+    {
+      "identity": "squad-train-5726a86a708984140094cd1f",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5726a86a708984140094cd1d"
+    },
+    {
+      "identity": "squad-train-5726aebf708984140094cdc9",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5726ab2ef1498d1400e8e694"
+    },
+    {
+      "identity": "squad-train-5729340aaf94a219006aa186",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5726c788dd62a815002e9009"
+    },
+    {
+      "identity": "squad-train-572b6d5934ae481900deadfa",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5726f152f1498d1400e8f0a0"
+    },
+    {
+      "identity": "squad-train-5729636c3f37b31900478309",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572929766aef051400154b03"
+    },
+    {
+      "identity": "squad-train-57296497af94a219006aa374",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57292b05af94a219006aa14b"
+    },
+    {
+      "identity": "squad-train-5727b47d2ca10214002d945c",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5727b47d2ca10214002d945b"
+    },
+    {
+      "identity": "squad-train-5727839a5951b619008f8be8",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5727839a5951b619008f8be7"
+    },
+    {
+      "identity": "squad-train-572820664b864d19001644f6",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5727a1f84b864d19001638f0"
+    },
+    {
+      "identity": "squad-train-5727bdeeff5b5019007d93f4",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5727bba54b864d1900163bd9"
+    },
+    {
+      "identity": "squad-train-5727cc1b2ca10214002d968c",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5727c9482ca10214002d962c"
+    },
+    {
+      "identity": "squad-train-572c010e750c471900ed4c70",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572857f42ca10214002da2ac"
+    },
+    {
+      "identity": "squad-train-572c010e750c471900ed4c72",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572857f42ca10214002da2ad"
+    },
+    {
+      "identity": "squad-train-572c0112dfb02c14005c6b45",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572857f42ca10214002da2ac"
+    },
+    {
+      "identity": "squad-train-572c0bcb750c471900ed4c94",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572c0bcb750c471900ed4c91"
+    },
+    {
+      "identity": "squad-train-572a119a6aef05140015522c",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572a10fe3f37b31900478691"
+    },
+    {
+      "identity": "squad-train-5729540a1d046914007792b3",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57295328af94a219006aa2a1"
+    },
+    {
+      "identity": "squad-train-572b4999be1ee31400cb8301",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57296e7e6aef051400154e84"
+    },
+    {
+      "identity": "squad-train-572f5b9da23a5019007fc595",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572e83e003f9891900756704"
+    },
+    {
+      "identity": "squad-train-572eb947dfa6aa1500f8d321",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572e7cbbdfa6aa1500f8d022"
+    },
+    {
+      "identity": "squad-train-572eb947dfa6aa1500f8d323",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572e7cbbdfa6aa1500f8d023"
+    },
+    {
+      "identity": "squad-train-572eb943c246551400ce4577",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572e7e6acb0c0d14000f11be"
+    },
+    {
+      "identity": "squad-train-572eb93fdfa6aa1500f8d318",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572e7f49cb0c0d14000f11c5"
+    },
+    {
+      "identity": "squad-train-572ea23fcb0c0d14000f13a8",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572ea23fcb0c0d14000f13a7"
+    },
+    {
+      "identity": "squad-train-57318ba805b4da19006bd28c",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572e847d03f9891900756716"
+    },
+    {
+      "identity": "squad-train-572f5fe6947a6a140053c8db",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572ec5f7cb0c0d14000f1538"
+    },
+    {
+      "identity": "squad-train-572f6096b2c2fd140056808d",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572ec816c246551400ce4659"
+    },
+    {
+      "identity": "squad-train-572f6096b2c2fd140056808e",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572ec816c246551400ce465a"
+    },
+    {
+      "identity": "squad-train-572f6c84b2c2fd1400568103",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572ec92bdfa6aa1500f8d3b7"
+    },
+    {
+      "identity": "squad-train-572f62b404bcaa1900d768b5",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572ecf7bcb0c0d14000f15cb"
+    },
+    {
+      "identity": "squad-train-572f63fc04bcaa1900d768cb",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572ed426dfa6aa1500f8d41e"
+    },
+    {
+      "identity": "squad-train-572f6486b2c2fd14005680af",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572ed6a6dfa6aa1500f8d43d"
+    },
+    {
+      "identity": "squad-train-572f657cb2c2fd14005680c4",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572eda3ec246551400ce4726"
+    },
+    {
+      "identity": "squad-train-573071c5069b5314008320d8",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573071c5069b5314008320d7"
+    },
+    {
+      "identity": "squad-train-57301633a23a5019007fcd42",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57301633a23a5019007fcd41"
+    },
+    {
+      "identity": "squad-train-5733dfd24776f419006613eb",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572fb14eb2c2fd1400568366"
+    },
+    {
+      "identity": "squad-train-5733e19dd058e614000b64ad",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572fb545b2c2fd140056838d"
+    },
+    {
+      "identity": "squad-train-5733ec05d058e614000b65e3",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5733ec05d058e614000b65e2"
+    },
+    {
+      "identity": "squad-train-573417c5d058e614000b692c",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-572fc2ed04bcaa1900d76ca5"
+    },
+    {
+      "identity": "squad-train-57317b1de6313a140071cf86",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57317b1d497a881900248f71"
+    },
+    {
+      "identity": "squad-train-57317b1de6313a140071cf87",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57317b1d497a881900248f72"
+    },
+    {
+      "identity": "squad-train-57317b1de6313a140071cf88",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57317b1d497a881900248f73"
+    },
+    {
+      "identity": "squad-train-57317b1de6313a140071cf89",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57317b1d497a881900248f74"
+    },
+    {
+      "identity": "squad-train-57317b1de6313a140071cf8a",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57317b1d497a881900248f75"
+    },
+    {
+      "identity": "squad-train-5731a5ede17f3d14004222a5",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5731a5edb9d445190005e42f"
+    },
+    {
+      "identity": "squad-train-5731a5ede17f3d14004222a7",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5731a5edb9d445190005e431"
+    },
+    {
+      "identity": "squad-train-5731a5ede17f3d14004222a6",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5731a5edb9d445190005e430"
+    },
+    {
+      "identity": "squad-train-5731a5ede17f3d14004222a9",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5731a5edb9d445190005e433"
+    },
+    {
+      "identity": "squad-train-5731a5ede17f3d14004222a8",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5731a5edb9d445190005e432"
+    },
+    {
+      "identity": "squad-train-57326c8b0fdd8d15006c6abf",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57326c89e99e3014001e679e"
+    },
+    {
+      "identity": "squad-train-57326c8b0fdd8d15006c6ac0",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57326c89e99e3014001e679f"
+    },
+    {
+      "identity": "squad-train-57326c8b0fdd8d15006c6ac1",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57326c89e99e3014001e67a0"
+    },
+    {
+      "identity": "squad-train-57326c8b0fdd8d15006c6ac2",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57326c89e99e3014001e67a1"
+    },
+    {
+      "identity": "squad-train-57327ad70fdd8d15006c6afb",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57327ad70fdd8d15006c6afa"
+    },
+    {
+      "identity": "squad-train-57327bd90fdd8d15006c6b03",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57327bd90fdd8d15006c6b02"
+    },
+    {
+      "identity": "squad-train-57327da60fdd8d15006c6b27",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57327da60fdd8d15006c6b28"
+    },
+    {
+      "identity": "squad-train-57327e1757eb1f1400fd2d32",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57327e1757eb1f1400fd2d31"
+    },
+    {
+      "identity": "squad-train-57327ed206a3a419008aca8d",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57327ed206a3a419008aca8c"
+    },
+    {
+      "identity": "squad-train-57327f3657eb1f1400fd2d39",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57327f3657eb1f1400fd2d38"
+    },
+    {
+      "identity": "squad-train-573297e90d034c1900ab0035",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573297e560535514009162f8"
+    },
+    {
+      "identity": "squad-train-573297e90d034c1900ab0036",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573297e560535514009162f9"
+    },
+    {
+      "identity": "squad-train-573297e90d034c1900ab0037",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573297e560535514009162fa"
+    },
+    {
+      "identity": "squad-train-573297e90d034c1900ab0038",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573297e560535514009162fb"
+    },
+    {
+      "identity": "squad-train-57329bc4cc179a14009dab68",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57329bc4328d981900601fd5"
+    },
+    {
+      "identity": "squad-train-57329bc4cc179a14009dab69",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57329bc4328d981900601fd6"
+    },
+    {
+      "identity": "squad-train-57329bc4cc179a14009dab6a",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57329bc4328d981900601fd7"
+    },
+    {
+      "identity": "squad-train-57329bc4cc179a14009dab6b",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57329bc4328d981900601fd8"
+    },
+    {
+      "identity": "squad-train-57329bc4cc179a14009dab6c",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57329bc4328d981900601fd9"
+    },
+    {
+      "identity": "squad-train-5735d85d012e2f140011a0b8",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5735ab1adc94161900571efe"
+    },
+    {
+      "identity": "squad-train-5735e8736c16ec1900b9288a",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-5734465d879d6814001ca466"
+    },
+    {
+      "identity": "squad-train-5735ec17012e2f140011a0dd",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573447e5879d6814001ca479"
+    },
+    {
+      "identity": "squad-train-573449b1879d6814001ca491",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573449b1acc1501500babd99"
+    },
+    {
+      "identity": "squad-train-573449b1879d6814001ca492",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573449b1acc1501500babd9a"
+    },
+    {
+      "identity": "squad-train-573449b1879d6814001ca493",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573449b1acc1501500babd9b"
+    },
+    {
+      "identity": "squad-train-573449b1879d6814001ca494",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573449b1acc1501500babd9c"
+    },
+    {
+      "identity": "squad-train-573449b1879d6814001ca495",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-573449b1acc1501500babd9d"
+    },
+    {
+      "identity": "squad-train-573610e9012e2f140011a18a",
+      "reason": "duplicate normalized prompt",
+      "first": "squad-train-57345181879d6814001ca509"
+    }
+  ],
+  "final_labels_opened_for_training": false,
+  "new_model_training_performed": false,
+  "qualification": "Human teaching references; source-specific independent task checks still required."
+}

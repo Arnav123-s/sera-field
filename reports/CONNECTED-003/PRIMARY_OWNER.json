@@ -1,0 +1,10 @@
+{
+  "primary_research_owner": "SCFE-004",
+  "training_directory": "runs/SCFE-004-teaching-1103",
+  "checkpoint_selection": "Existing minimum normalized development-loss selection; no new checkpoint selection.",
+  "reason": "The latest user research prioritizes the implemented Clifford/sheaf substrate. Classical or alternative-owner leaderboard rank does not choose the project direction.",
+  "designated_before_final_opening": true,
+  "reward_policy_promotion": "Requires the independently checked final investigation results; no blanket promotion from update counts.",
+  "preserved_comparator": "CONNECTED-003",
+  "preserved_previous_release": "FIELD-001"
+}

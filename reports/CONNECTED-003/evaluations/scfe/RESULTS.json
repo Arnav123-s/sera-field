@@ -1,0 +1,150 @@
+{
+  "reading": {
+    "full": {
+      "n": 1024,
+      "accuracy": 0.76953125,
+      "multi_sentence_n": 1006,
+      "multi_sentence_accuracy": 0.7654075546719682,
+      "top3_evidence_recall": 0.9453125,
+      "lexical_baseline_accuracy": 0.779296875
+    },
+    "no_imagination": {
+      "n": 1024,
+      "accuracy": 0.763671875,
+      "multi_sentence_n": 1006,
+      "multi_sentence_accuracy": 0.7594433399602386,
+      "top3_evidence_recall": 0.9482421875,
+      "lexical_baseline_accuracy": 0.779296875
+    },
+    "no_loop": {
+      "n": 1024,
+      "accuracy": 0.767578125,
+      "multi_sentence_n": 1006,
+      "multi_sentence_accuracy": 0.7634194831013916,
+      "top3_evidence_recall": 0.9404296875,
+      "lexical_baseline_accuracy": 0.779296875
+    }
+  },
+  "physics": {
+    "forward": {
+      "n": 256,
+      "mse": 0.10681791069964675
+    },
+    "motion_transfer": {
+      "n": 64,
+      "completed_rollouts": 64,
+      "mean_position_velocity_mse": 0.05723861186308705,
+      "duration": 1.0,
+      "taught_target": "acceleration; trajectories independently evaluated"
+    },
+    "verified_reward": {
+      "n": 256,
+      "before_mse": 0.11186792412104296,
+      "after_mse": 0.10092360331066175,
+      "mean_absolute_progress": 0.010944320810381214,
+      "fraction_improved": 0.4921875,
+      "relative_mse_reduction": 0.0978325189849708,
+      "original_goals_returned": 256,
+      "failed_actuators": 6,
+      "probe_count": 256
+    },
+    "reward_disconnected": {
+      "n": 256,
+      "before_mse": 0.11186792412104296,
+      "after_mse": 0.07517250142200282,
+      "mean_absolute_progress": 0.03669542269904014,
+      "fraction_improved": 0.59375,
+      "relative_mse_reduction": 0.3280245252368773,
+      "original_goals_returned": 256,
+      "failed_actuators": 6,
+      "probe_count": 256
+    },
+    "random": {
+      "n": 256,
+      "before_mse": 0.11186792412104296,
+      "after_mse": 0.08240381401066088,
+      "mean_absolute_progress": 0.02946411011038208,
+      "fraction_improved": 0.5625,
+      "relative_mse_reduction": 0.2633830058248102,
+      "original_goals_returned": 256,
+      "failed_actuators": 4,
+      "probe_count": 256
+    },
+    "analytic": {
+      "n": 256,
+      "before_mse": 0.11186792412104296,
+      "after_mse": 0.04096092614395275,
+      "mean_absolute_progress": 0.07090699797709021,
+      "fraction_improved": 0.70703125,
+      "relative_mse_reduction": 0.6338456580312303,
+      "original_goals_returned": 256,
+      "failed_actuators": 5,
+      "probe_count": 256
+    },
+    "omitted_mechanism": {
+      "n": 64,
+      "before_mse": 0.4941797532083001,
+      "after_mse": 0.6741163787664846,
+      "mean_absolute_progress": -0.17993662555818446,
+      "fraction_improved": 0.328125,
+      "relative_mse_reduction": -0.36411169091814233,
+      "original_goals_returned": 64,
+      "failed_actuators": 1,
+      "probe_count": 64,
+      "mean_model_spread": 0.026511679352552164
+    }
+  },
+  "retention": {
+    "verified_reward": {
+      "non_policy_parameters_exactly_retained": true,
+      "method": "Predictor frozen during this controlled policy study"
+    },
+    "reward_disconnected": {
+      "non_policy_parameters_exactly_retained": true,
+      "method": "Predictor frozen during this controlled policy study"
+    }
+  },
+  "math": {
+    "all_continuations": {
+      "n": 512,
+      "numeric_top1": 0.109375,
+      "numeric_top5": 0.38671875,
+      "human_expression_top1": 0.09765625,
+      "human_expression_top5": 0.34375
+    },
+    "original_one_step": {
+      "n": 3,
+      "numeric_top1": 0.3333333333333333,
+      "numeric_top5": 0.6666666666666666,
+      "human_expression_top1": 0.3333333333333333,
+      "human_expression_top5": 0.6666666666666666
+    },
+    "scope": "Executable binary arithmetic proposals; teacher-forced continuations reported separately."
+  },
+  "human_associations": {
+    "calculus": {
+      "n": 38,
+      "four_candidate_association_accuracy": 0.5263157894736842
+    },
+    "dailydialog": {
+      "n": 256,
+      "four_candidate_association_accuracy": 0.40234375
+    },
+    "grammar": {
+      "n": 99,
+      "four_candidate_association_accuracy": 0.41414141414141414
+    },
+    "plato": {
+      "n": 48,
+      "four_candidate_association_accuracy": 0.3958333333333333
+    },
+    "programming": {
+      "n": 33,
+      "four_candidate_association_accuracy": 0.8181818181818182
+    },
+    "webster": {
+      "n": 256,
+      "four_candidate_association_accuracy": 0.62109375
+    }
+  }
+}

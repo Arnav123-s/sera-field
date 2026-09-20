@@ -1,0 +1,1290 @@
+{
+  "scope": "Post-final diagnostic on already opened questions; not qualification or a new test.",
+  "accuracy": {
+    "old_head": 0.7124999761581421,
+    "residual_alone": 0.9375,
+    "combined": 0.8500000238418579
+  },
+  "rows": [
+    {
+      "question": "Use the observed relationship to explain the effect of increasing drive.",
+      "expected": 0,
+      "old_head": [
+        1.5925368070602417,
+        -1.6763941049575806
+      ],
+      "residual_alone": [
+        4.398398399353027,
+        -4.3983941078186035
+      ],
+      "combined": [
+        5.990935325622559,
+        -6.0747880935668945
+      ]
+    },
+    {
+      "question": "Use the observed relationship to explain the effect of increasing input.",
+      "expected": 0,
+      "old_head": [
+        2.733822822570801,
+        -2.8576154708862305
+      ],
+      "residual_alone": [
+        4.0503764152526855,
+        -4.05037260055542
+      ],
+      "combined": [
+        6.784199237823486,
+        -6.90798807144165
+      ]
+    },
+    {
+      "question": "Use the observed relationship to explain the effect of increasing control input.",
+      "expected": 0,
+      "old_head": [
+        3.9811134338378906,
+        -4.200867652893066
+      ],
+      "residual_alone": [
+        4.994706630706787,
+        -4.99470329284668
+      ],
+      "combined": [
+        8.975820541381836,
+        -9.195570945739746
+      ]
+    },
+    {
+      "question": "Use the observed relationship to explain the effect of increasing applied input.",
+      "expected": 0,
+      "old_head": [
+        4.379076957702637,
+        -4.5994343757629395
+      ],
+      "residual_alone": [
+        4.330065727233887,
+        -4.330062389373779
+      ],
+      "combined": [
+        8.709142684936523,
+        -8.929496765136719
+      ]
+    },
+    {
+      "question": "Use the observed relationship to explain the effect of increasing control setting.",
+      "expected": 0,
+      "old_head": [
+        3.028548240661621,
+        -3.1798691749572754
+      ],
+      "residual_alone": [
+        4.4921875,
+        -4.492183685302734
+      ],
+      "combined": [
+        7.520735740661621,
+        -7.67205286026001
+      ]
+    },
+    {
+      "question": "Use the observed relationship to explain the effect of increasing applied drive.",
+      "expected": 0,
+      "old_head": [
+        3.0676474571228027,
+        -3.222790479660034
+      ],
+      "residual_alone": [
+        4.667064189910889,
+        -4.667059421539307
+      ],
+      "combined": [
+        7.734711647033691,
+        -7.889849662780762
+      ]
+    },
+    {
+      "question": "Use the observed relationship to explain the effect of increasing actuator input.",
+      "expected": 0,
+      "old_head": [
+        1.9670097827911377,
+        -2.0507116317749023
+      ],
+      "residual_alone": [
+        5.052382946014404,
+        -5.0523786544799805
+      ],
+      "combined": [
+        7.019392967224121,
+        -7.103090286254883
+      ]
+    },
+    {
+      "question": "Use the observed relationship to explain the effect of increasing input setting.",
+      "expected": 0,
+      "old_head": [
+        1.6331324577331543,
+        -1.7253865003585815
+      ],
+      "residual_alone": [
+        4.849405288696289,
+        -4.849399566650391
+      ],
+      "combined": [
+        6.482537746429443,
+        -6.574786186218262
+      ]
+    },
+    {
+      "question": "Holding the other variable fixed, drive is raised. What happens to acceleration?",
+      "expected": 0,
+      "old_head": [
+        3.0927577018737793,
+        -3.2103867530822754
+      ],
+      "residual_alone": [
+        1.4532334804534912,
+        -1.4532314538955688
+      ],
+      "combined": [
+        4.545990943908691,
+        -4.663618087768555
+      ]
+    },
+    {
+      "question": "Holding the other variable fixed, input is raised. What happens to acceleration?",
+      "expected": 0,
+      "old_head": [
+        3.9848408699035645,
+        -4.15199613571167
+      ],
+      "residual_alone": [
+        1.125572681427002,
+        -1.1255712509155273
+      ],
+      "combined": [
+        5.110413551330566,
+        -5.277567386627197
+      ]
+    },
+    {
+      "question": "Holding the other variable fixed, control input is raised. What happens to acceleration?",
+      "expected": 0,
+      "old_head": [
+        5.080799579620361,
+        -5.336437702178955
+      ],
+      "residual_alone": [
+        2.199620008468628,
+        -2.1996195316314697
+      ],
+      "combined": [
+        7.28041934967041,
+        -7.536057472229004
+      ]
+    },
+    {
+      "question": "Holding the other variable fixed, applied input is raised. What happens to acceleration?",
+      "expected": 0,
+      "old_head": [
+        4.839354038238525,
+        -5.055606842041016
+      ],
+      "residual_alone": [
+        1.5829991102218628,
+        -1.5829983949661255
+      ],
+      "combined": [
+        6.422353267669678,
+        -6.638605117797852
+      ]
+    },
+    {
+      "question": "Holding the other variable fixed, control setting is raised. What happens to acceleration?",
+      "expected": 0,
+      "old_head": [
+        4.008460521697998,
+        -4.176656246185303
+      ],
+      "residual_alone": [
+        1.8135857582092285,
+        -1.8135837316513062
+      ],
+      "combined": [
+        5.822046279907227,
+        -5.990240097045898
+      ]
+    },
+    {
+      "question": "Holding the other variable fixed, applied drive is raised. What happens to acceleration?",
+      "expected": 0,
+      "old_head": [
+        4.533157825469971,
+        -4.7184343338012695
+      ],
+      "residual_alone": [
+        1.887357234954834,
+        -1.8873560428619385
+      ],
+      "combined": [
+        6.420515060424805,
+        -6.605790138244629
+      ]
+    },
+    {
+      "question": "Holding the other variable fixed, actuator input is raised. What happens to acceleration?",
+      "expected": 0,
+      "old_head": [
+        3.8213438987731934,
+        -3.977062702178955
+      ],
+      "residual_alone": [
+        2.2890539169311523,
+        -2.2890524864196777
+      ],
+      "combined": [
+        6.110397815704346,
+        -6.266115188598633
+      ]
+    },
+    {
+      "question": "Holding the other variable fixed, input setting is raised. What happens to acceleration?",
+      "expected": 0,
+      "old_head": [
+        3.0927953720092773,
+        -3.197305679321289
+      ],
+      "residual_alone": [
+        2.18332576751709,
+        -2.1833229064941406
+      ],
+      "combined": [
+        5.276121139526367,
+        -5.38062858581543
+      ]
+    },
+    {
+      "question": "Could you describe the acceleration response under greater drive?",
+      "expected": 0,
+      "old_head": [
+        6.894791126251221,
+        -7.225719928741455
+      ],
+      "residual_alone": [
+        1.2278767824172974,
+        -1.2278732061386108
+      ],
+      "combined": [
+        8.122668266296387,
+        -8.453593254089355
+      ]
+    },
+    {
+      "question": "Could you describe the acceleration response under greater input?",
+      "expected": 0,
+      "old_head": [
+        7.2217912673950195,
+        -7.554605960845947
+      ],
+      "residual_alone": [
+        0.8816378712654114,
+        -0.8816349506378174
+      ],
+      "combined": [
+        8.103428840637207,
+        -8.436241149902344
+      ]
+    },
+    {
+      "question": "Could you describe the acceleration response under greater control input?",
+      "expected": 0,
+      "old_head": [
+        7.5158185958862305,
+        -7.89895486831665
+      ],
+      "residual_alone": [
+        2.040024518966675,
+        -2.040022611618042
+      ],
+      "combined": [
+        9.555843353271484,
+        -9.938977241516113
+      ]
+    },
+    {
+      "question": "Could you describe the acceleration response under greater applied input?",
+      "expected": 0,
+      "old_head": [
+        7.583467483520508,
+        -7.952391147613525
+      ],
+      "residual_alone": [
+        1.4222512245178223,
+        -1.4222489595413208
+      ],
+      "combined": [
+        9.005718231201172,
+        -9.374640464782715
+      ]
+    },
+    {
+      "question": "Could you describe the acceleration response under greater control setting?",
+      "expected": 0,
+      "old_head": [
+        6.970321178436279,
+        -7.304565906524658
+      ],
+      "residual_alone": [
+        1.6411042213439941,
+        -1.6411011219024658
+      ],
+      "combined": [
+        8.611425399780273,
+        -8.945667266845703
+      ]
+    },
+    {
+      "question": "Could you describe the acceleration response under greater applied drive?",
+      "expected": 0,
+      "old_head": [
+        7.639376163482666,
+        -8.030882835388184
+      ],
+      "residual_alone": [
+        1.7444310188293457,
+        -1.744428277015686
+      ],
+      "combined": [
+        9.383807182312012,
+        -9.775311470031738
+      ]
+    },
+    {
+      "question": "Could you describe the acceleration response under greater actuator input?",
+      "expected": 0,
+      "old_head": [
+        6.451559066772461,
+        -6.725854873657227
+      ],
+      "residual_alone": [
+        2.141949415206909,
+        -2.141946792602539
+      ],
+      "combined": [
+        8.59350872039795,
+        -8.867801666259766
+      ]
+    },
+    {
+      "question": "Could you describe the acceleration response under greater input setting?",
+      "expected": 0,
+      "old_head": [
+        6.479384899139404,
+        -6.757080554962158
+      ],
+      "residual_alone": [
+        2.064423084259033,
+        -2.0644190311431885
+      ],
+      "combined": [
+        8.543807983398438,
+        -8.821499824523926
+      ]
+    },
+    {
+      "question": "From these observations, which acceleration change would a rise in drive cause?",
+      "expected": 0,
+      "old_head": [
+        -0.2566520869731903,
+        0.5426856279373169
+      ],
+      "residual_alone": [
+        3.138956308364868,
+        -3.13895320892334
+      ],
+      "combined": [
+        2.8823041915893555,
+        -2.5962677001953125
+      ]
+    },
+    {
+      "question": "From these observations, which acceleration change would a rise in input cause?",
+      "expected": 0,
+      "old_head": [
+        1.0867236852645874,
+        -0.8925405144691467
+      ],
+      "residual_alone": [
+        2.8394510746002197,
+        -2.8394479751586914
+      ],
+      "combined": [
+        3.9261746406555176,
+        -3.7319884300231934
+      ]
+    },
+    {
+      "question": "From these observations, which acceleration change would a rise in control input cause?",
+      "expected": 0,
+      "old_head": [
+        2.8883771896362305,
+        -2.8705337047576904
+      ],
+      "residual_alone": [
+        3.7915520668029785,
+        -3.7915501594543457
+      ],
+      "combined": [
+        6.679929256439209,
+        -6.662083625793457
+      ]
+    },
+    {
+      "question": "From these observations, which acceleration change would a rise in applied input cause?",
+      "expected": 0,
+      "old_head": [
+        2.797987937927246,
+        -2.7345142364501953
+      ],
+      "residual_alone": [
+        3.2261838912963867,
+        -3.226181983947754
+      ],
+      "combined": [
+        6.024171829223633,
+        -5.960696220397949
+      ]
+    },
+    {
+      "question": "From these observations, which acceleration change would a rise in control setting cause?",
+      "expected": 0,
+      "old_head": [
+        2.006045341491699,
+        -1.9117876291275024
+      ],
+      "residual_alone": [
+        3.3742470741271973,
+        -3.374244451522827
+      ],
+      "combined": [
+        5.3802924156188965,
+        -5.286032199859619
+      ]
+    },
+    {
+      "question": "From these observations, which acceleration change would a rise in applied drive cause?",
+      "expected": 0,
+      "old_head": [
+        1.9471408128738403,
+        -1.8272802829742432
+      ],
+      "residual_alone": [
+        3.516385078430176,
+        -3.516383171081543
+      ],
+      "combined": [
+        5.463525772094727,
+        -5.343663215637207
+      ]
+    },
+    {
+      "question": "From these observations, which acceleration change would a rise in actuator input cause?",
+      "expected": 0,
+      "old_head": [
+        1.0079967975616455,
+        -0.8128126859664917
+      ],
+      "residual_alone": [
+        3.876152276992798,
+        -3.876150369644165
+      ],
+      "combined": [
+        4.884149074554443,
+        -4.688962936401367
+      ]
+    },
+    {
+      "question": "From these observations, which acceleration change would a rise in input setting cause?",
+      "expected": 0,
+      "old_head": [
+        0.7547170519828796,
+        -0.54793381690979
+      ],
+      "residual_alone": [
+        3.767118453979492,
+        -3.767115592956543
+      ],
+      "combined": [
+        4.5218353271484375,
+        -4.315049171447754
+      ]
+    },
+    {
+      "question": "Make a conditional prediction for a larger drive at the given operating point.",
+      "expected": 0,
+      "old_head": [
+        2.3814210891723633,
+        -2.5432143211364746
+      ],
+      "residual_alone": [
+        3.527431011199951,
+        -3.5274276733398438
+      ],
+      "combined": [
+        5.9088521003723145,
+        -6.070641994476318
+      ]
+    },
+    {
+      "question": "Make a conditional prediction for a larger input at the given operating point.",
+      "expected": 0,
+      "old_head": [
+        3.259762763977051,
+        -3.4718575477600098
+      ],
+      "residual_alone": [
+        3.220219612121582,
+        -3.220217704772949
+      ],
+      "combined": [
+        6.479982376098633,
+        -6.692075252532959
+      ]
+    },
+    {
+      "question": "Make a conditional prediction for a larger control input at the given operating point.",
+      "expected": 0,
+      "old_head": [
+        4.172128200531006,
+        -4.444159984588623
+      ],
+      "residual_alone": [
+        4.083695888519287,
+        -4.083693027496338
+      ],
+      "combined": [
+        8.255824089050293,
+        -8.527853012084961
+      ]
+    },
+    {
+      "question": "Make a conditional prediction for a larger applied input at the given operating point.",
+      "expected": 0,
+      "old_head": [
+        4.940091609954834,
+        -5.210986614227295
+      ],
+      "residual_alone": [
+        3.5271620750427246,
+        -3.52716064453125
+      ],
+      "combined": [
+        8.467253684997559,
+        -8.738147735595703
+      ]
+    },
+    {
+      "question": "Make a conditional prediction for a larger control setting at the given operating point.",
+      "expected": 0,
+      "old_head": [
+        3.902212142944336,
+        -4.141818523406982
+      ],
+      "residual_alone": [
+        3.616999864578247,
+        -3.6169967651367188
+      ],
+      "combined": [
+        7.519211769104004,
+        -7.758815288543701
+      ]
+    },
+    {
+      "question": "Make a conditional prediction for a larger applied drive at the given operating point.",
+      "expected": 0,
+      "old_head": [
+        4.3281755447387695,
+        -4.569931983947754
+      ],
+      "residual_alone": [
+        3.82094144821167,
+        -3.820939302444458
+      ],
+      "combined": [
+        8.149116516113281,
+        -8.390871047973633
+      ]
+    },
+    {
+      "question": "Make a conditional prediction for a larger actuator input at the given operating point.",
+      "expected": 0,
+      "old_head": [
+        2.495030641555786,
+        -2.6265997886657715
+      ],
+      "residual_alone": [
+        4.194686412811279,
+        -4.19468355178833
+      ],
+      "combined": [
+        6.6897172927856445,
+        -6.821283340454102
+      ]
+    },
+    {
+      "question": "Make a conditional prediction for a larger input setting at the given operating point.",
+      "expected": 0,
+      "old_head": [
+        3.279205083847046,
+        -3.482879638671875
+      ],
+      "residual_alone": [
+        4.076382637023926,
+        -4.076379776000977
+      ],
+      "combined": [
+        7.355587959289551,
+        -7.559259414672852
+      ]
+    },
+    {
+      "question": "Use the observed relationship to explain the effect of increasing speed.",
+      "expected": 1,
+      "old_head": [
+        -1.4685254096984863,
+        1.5987588167190552
+      ],
+      "residual_alone": [
+        0.6202586889266968,
+        -0.6202545762062073
+      ],
+      "combined": [
+        -0.8482667207717896,
+        0.9785042405128479
+      ]
+    },
+    {
+      "question": "Use the observed relationship to explain the effect of increasing velocity.",
+      "expected": 1,
+      "old_head": [
+        -0.3514014780521393,
+        0.4595450162887573
+      ],
+      "residual_alone": [
+        0.2502645254135132,
+        -0.2502588629722595
+      ],
+      "combined": [
+        -0.1011369526386261,
+        0.2092861533164978
+      ]
+    },
+    {
+      "question": "Use the observed relationship to explain the effect of increasing motion speed.",
+      "expected": 1,
+      "old_head": [
+        -3.402703285217285,
+        3.667656421661377
+      ],
+      "residual_alone": [
+        -0.20690183341503143,
+        0.20690461993217468
+      ],
+      "combined": [
+        -3.609605073928833,
+        3.874561071395874
+      ]
+    },
+    {
+      "question": "Use the observed relationship to explain the effect of increasing rate of motion.",
+      "expected": 1,
+      "old_head": [
+        -2.356074094772339,
+        2.6009480953216553
+      ],
+      "residual_alone": [
+        1.2129240036010742,
+        -1.2129206657409668
+      ],
+      "combined": [
+        -1.1431500911712646,
+        1.3880274295806885
+      ]
+    },
+    {
+      "question": "Use the observed relationship to explain the effect of increasing speed of motion.",
+      "expected": 1,
+      "old_head": [
+        -5.048346996307373,
+        5.479628086090088
+      ],
+      "residual_alone": [
+        -0.06632742285728455,
+        0.06633003056049347
+      ],
+      "combined": [
+        -5.1146745681762695,
+        5.545958042144775
+      ]
+    },
+    {
+      "question": "Use the observed relationship to explain the effect of increasing moving speed.",
+      "expected": 1,
+      "old_head": [
+        -0.5186724066734314,
+        0.5357930064201355
+      ],
+      "residual_alone": [
+        -0.31192129850387573,
+        0.31192547082901
+      ],
+      "combined": [
+        -0.8305937051773071,
+        0.8477184772491455
+      ]
+    },
+    {
+      "question": "Use the observed relationship to explain the effect of increasing forward velocity.",
+      "expected": 1,
+      "old_head": [
+        0.5083779692649841,
+        -0.4116045832633972
+      ],
+      "residual_alone": [
+        -1.0986607074737549,
+        1.098666787147522
+      ],
+      "combined": [
+        -0.5902827382087708,
+        0.6870622038841248
+      ]
+    },
+    {
+      "question": "Use the observed relationship to explain the effect of increasing movement speed.",
+      "expected": 1,
+      "old_head": [
+        0.16412991285324097,
+        -0.17672526836395264
+      ],
+      "residual_alone": [
+        -0.5825976133346558,
+        0.5826019644737244
+      ],
+      "combined": [
+        -0.4184677004814148,
+        0.40587669610977173
+      ]
+    },
+    {
+      "question": "Holding the other variable fixed, speed is raised. What happens to acceleration?",
+      "expected": 1,
+      "old_head": [
+        1.8030706644058228,
+        -1.8367496728897095
+      ],
+      "residual_alone": [
+        -2.216616630554199,
+        2.2166178226470947
+      ],
+      "combined": [
+        -0.41354596614837646,
+        0.37986814975738525
+      ]
+    },
+    {
+      "question": "Holding the other variable fixed, velocity is raised. What happens to acceleration?",
+      "expected": 1,
+      "old_head": [
+        1.2285642623901367,
+        -1.1507086753845215
+      ],
+      "residual_alone": [
+        -2.577035665512085,
+        2.577038049697876
+      ],
+      "combined": [
+        -1.3484714031219482,
+        1.4263293743133545
+      ]
+    },
+    {
+      "question": "Holding the other variable fixed, motion speed is raised. What happens to acceleration?",
+      "expected": 1,
+      "old_head": [
+        -0.09819210320711136,
+        0.19892993569374084
+      ],
+      "residual_alone": [
+        -2.7843501567840576,
+        2.7843503952026367
+      ],
+      "combined": [
+        -2.882542371749878,
+        2.9832804203033447
+      ]
+    },
+    {
+      "question": "Holding the other variable fixed, rate of motion is raised. What happens to acceleration?",
+      "expected": 1,
+      "old_head": [
+        0.8985292315483093,
+        -0.8292075991630554
+      ],
+      "residual_alone": [
+        -1.398885726928711,
+        1.3988865613937378
+      ],
+      "combined": [
+        -0.5003564953804016,
+        0.5696789622306824
+      ]
+    },
+    {
+      "question": "Holding the other variable fixed, speed of motion is raised. What happens to acceleration?",
+      "expected": 1,
+      "old_head": [
+        -0.948039710521698,
+        1.1157348155975342
+      ],
+      "residual_alone": [
+        -2.6315250396728516,
+        2.6315255165100098
+      ],
+      "combined": [
+        -3.5795648097991943,
+        3.747260332107544
+      ]
+    },
+    {
+      "question": "Holding the other variable fixed, moving speed is raised. What happens to acceleration?",
+      "expected": 1,
+      "old_head": [
+        2.67348051071167,
+        -2.7809534072875977
+      ],
+      "residual_alone": [
+        -2.964045524597168,
+        2.9640471935272217
+      ],
+      "combined": [
+        -0.29056501388549805,
+        0.18309378623962402
+      ]
+    },
+    {
+      "question": "Holding the other variable fixed, forward velocity is raised. What happens to acceleration?",
+      "expected": 1,
+      "old_head": [
+        2.143895149230957,
+        -2.1109185218811035
+      ],
+      "residual_alone": [
+        -3.741264581680298,
+        3.7412681579589844
+      ],
+      "combined": [
+        -1.5973694324493408,
+        1.6303496360778809
+      ]
+    },
+    {
+      "question": "Holding the other variable fixed, movement speed is raised. What happens to acceleration?",
+      "expected": 1,
+      "old_head": [
+        2.506406784057617,
+        -2.5929102897644043
+      ],
+      "residual_alone": [
+        -3.197537422180176,
+        3.197539806365967
+      ],
+      "combined": [
+        -0.6911306381225586,
+        0.6046295166015625
+      ]
+    },
+    {
+      "question": "Could you describe the acceleration response under greater speed?",
+      "expected": 1,
+      "old_head": [
+        5.598424434661865,
+        -5.8093695640563965
+      ],
+      "residual_alone": [
+        -2.74820613861084,
+        2.748208999633789
+      ],
+      "combined": [
+        2.8502182960510254,
+        -3.0611605644226074
+      ]
+    },
+    {
+      "question": "Could you describe the acceleration response under greater velocity?",
+      "expected": 1,
+      "old_head": [
+        5.043400287628174,
+        -5.153740882873535
+      ],
+      "residual_alone": [
+        -3.083747625350952,
+        3.083751678466797
+      ],
+      "combined": [
+        1.9596526622772217,
+        -2.0699892044067383
+      ]
+    },
+    {
+      "question": "Could you describe the acceleration response under greater motion speed?",
+      "expected": 1,
+      "old_head": [
+        3.7533907890319824,
+        -3.826465606689453
+      ],
+      "residual_alone": [
+        -3.38474440574646,
+        3.3847453594207764
+      ],
+      "combined": [
+        0.36864638328552246,
+        -0.44172024726867676
+      ]
+    },
+    {
+      "question": "Could you describe the acceleration response under greater rate of motion?",
+      "expected": 1,
+      "old_head": [
+        3.835502862930298,
+        -3.920032024383545
+      ],
+      "residual_alone": [
+        -1.8195589780807495,
+        1.8195610046386719
+      ],
+      "combined": [
+        2.015944004058838,
+        -2.100471019744873
+      ]
+    },
+    {
+      "question": "Could you describe the acceleration response under greater speed of motion?",
+      "expected": 1,
+      "old_head": [
+        1.6953226327896118,
+        -1.6629992723464966
+      ],
+      "residual_alone": [
+        -3.2163195610046387,
+        3.216320753097534
+      ],
+      "combined": [
+        -1.5209969282150269,
+        1.5533214807510376
+      ]
+    },
+    {
+      "question": "Could you describe the acceleration response under greater moving speed?",
+      "expected": 1,
+      "old_head": [
+        5.760647296905518,
+        -6.018082618713379
+      ],
+      "residual_alone": [
+        -3.620488405227661,
+        3.6204910278320312
+      ],
+      "combined": [
+        2.1401588916778564,
+        -2.3975915908813477
+      ]
+    },
+    {
+      "question": "Could you describe the acceleration response under greater forward velocity?",
+      "expected": 1,
+      "old_head": [
+        5.650109767913818,
+        -5.824085712432861
+      ],
+      "residual_alone": [
+        -4.300831317901611,
+        4.300836086273193
+      ],
+      "combined": [
+        1.349278450012207,
+        -1.523249626159668
+      ]
+    },
+    {
+      "question": "Could you describe the acceleration response under greater movement speed?",
+      "expected": 1,
+      "old_head": [
+        6.36467981338501,
+        -6.6449360847473145
+      ],
+      "residual_alone": [
+        -3.8370633125305176,
+        3.837066888809204
+      ],
+      "combined": [
+        2.527616500854492,
+        -2.8078691959381104
+      ]
+    },
+    {
+      "question": "From these observations, which acceleration change would a rise in speed cause?",
+      "expected": 1,
+      "old_head": [
+        -1.5595473051071167,
+        1.9358259439468384
+      ],
+      "residual_alone": [
+        -0.4915674328804016,
+        0.4915696084499359
+      ],
+      "combined": [
+        -2.051114797592163,
+        2.4273955821990967
+      ]
+    },
+    {
+      "question": "From these observations, which acceleration change would a rise in velocity cause?",
+      "expected": 1,
+      "old_head": [
+        -2.126371383666992,
+        2.5809011459350586
+      ],
+      "residual_alone": [
+        -0.8341482281684875,
+        0.834152102470398
+      ],
+      "combined": [
+        -2.960519552230835,
+        3.415053367614746
+      ]
+    },
+    {
+      "question": "From these observations, which acceleration change would a rise in motion speed cause?",
+      "expected": 1,
+      "old_head": [
+        -2.995490550994873,
+        3.4283270835876465
+      ],
+      "residual_alone": [
+        -1.1888768672943115,
+        1.188877820968628
+      ],
+      "combined": [
+        -4.1843671798706055,
+        4.617204666137695
+      ]
+    },
+    {
+      "question": "From these observations, which acceleration change would a rise in rate of motion cause?",
+      "expected": 1,
+      "old_head": [
+        -2.2445931434631348,
+        2.6385865211486816
+      ],
+      "residual_alone": [
+        0.18069809675216675,
+        -0.18069642782211304
+      ],
+      "combined": [
+        -2.0638949871063232,
+        2.457890033721924
+      ]
+    },
+    {
+      "question": "From these observations, which acceleration change would a rise in speed of motion cause?",
+      "expected": 1,
+      "old_head": [
+        -4.029733180999756,
+        4.510860919952393
+      ],
+      "residual_alone": [
+        -1.0556859970092773,
+        1.0556869506835938
+      ],
+      "combined": [
+        -5.085419178009033,
+        5.566547870635986
+      ]
+    },
+    {
+      "question": "From these observations, which acceleration change would a rise in moving speed cause?",
+      "expected": 1,
+      "old_head": [
+        -0.30186277627944946,
+        0.5562466382980347
+      ],
+      "residual_alone": [
+        -1.3710010051727295,
+        1.37100350856781
+      ],
+      "combined": [
+        -1.6728637218475342,
+        1.9272501468658447
+      ]
+    },
+    {
+      "question": "From these observations, which acceleration change would a rise in forward velocity cause?",
+      "expected": 1,
+      "old_head": [
+        -0.7216394543647766,
+        1.1135485172271729
+      ],
+      "residual_alone": [
+        -2.0688610076904297,
+        2.0688652992248535
+      ],
+      "combined": [
+        -2.7905004024505615,
+        3.1824138164520264
+      ]
+    },
+    {
+      "question": "From these observations, which acceleration change would a rise in movement speed cause?",
+      "expected": 1,
+      "old_head": [
+        -0.26297521591186523,
+        0.5181220173835754
+      ],
+      "residual_alone": [
+        -1.6293575763702393,
+        1.6293604373931885
+      ],
+      "combined": [
+        -1.8923327922821045,
+        2.147482395172119
+      ]
+    },
+    {
+      "question": "Make a conditional prediction for a larger speed at the given operating point.",
+      "expected": 1,
+      "old_head": [
+        1.5392439365386963,
+        -1.6536988019943237
+      ],
+      "residual_alone": [
+        -0.12702855467796326,
+        0.12703101336956024
+      ],
+      "combined": [
+        1.4122153520584106,
+        -1.526667833328247
+      ]
+    },
+    {
+      "question": "Make a conditional prediction for a larger velocity at the given operating point.",
+      "expected": 1,
+      "old_head": [
+        0.3756314814090729,
+        -0.31845831871032715
+      ],
+      "residual_alone": [
+        -0.481117844581604,
+        0.48112189769744873
+      ],
+      "combined": [
+        -0.10548636317253113,
+        0.16266357898712158
+      ]
+    },
+    {
+      "question": "Make a conditional prediction for a larger motion speed at the given operating point.",
+      "expected": 1,
+      "old_head": [
+        -0.45122846961021423,
+        0.4886159598827362
+      ],
+      "residual_alone": [
+        -0.8319364786148071,
+        0.8319377303123474
+      ],
+      "combined": [
+        -1.2831649780273438,
+        1.3205536603927612
+      ]
+    },
+    {
+      "question": "Make a conditional prediction for a larger rate of motion at the given operating point.",
+      "expected": 1,
+      "old_head": [
+        0.12581071257591248,
+        -0.07551679760217667
+      ],
+      "residual_alone": [
+        0.5075076818466187,
+        -0.5075057744979858
+      ],
+      "combined": [
+        0.6333184242248535,
+        -0.5830225944519043
+      ]
+    },
+    {
+      "question": "Make a conditional prediction for a larger speed of motion at the given operating point.",
+      "expected": 1,
+      "old_head": [
+        -1.7102077007293701,
+        1.8556116819381714
+      ],
+      "residual_alone": [
+        -0.7051718235015869,
+        0.7051727771759033
+      ],
+      "combined": [
+        -2.415379524230957,
+        2.560784339904785
+      ]
+    },
+    {
+      "question": "Make a conditional prediction for a larger moving speed at the given operating point.",
+      "expected": 1,
+      "old_head": [
+        1.5859657526016235,
+        -1.7272406816482544
+      ],
+      "residual_alone": [
+        -0.9969043731689453,
+        0.9969068765640259
+      ],
+      "combined": [
+        0.5890613794326782,
+        -0.7303338050842285
+      ]
+    },
+    {
+      "question": "Make a conditional prediction for a larger forward velocity at the given operating point.",
+      "expected": 1,
+      "old_head": [
+        2.1409714221954346,
+        -2.157663345336914
+      ],
+      "residual_alone": [
+        -1.7257362604141235,
+        1.7257405519485474
+      ],
+      "combined": [
+        0.41523516178131104,
+        -0.4319227933883667
+      ]
+    },
+    {
+      "question": "Make a conditional prediction for a larger movement speed at the given operating point.",
+      "expected": 1,
+      "old_head": [
+        1.5299947261810303,
+        -1.643782138824463
+      ],
+      "residual_alone": [
+        -1.2432405948638916,
+        1.2432434558868408
+      ],
+      "combined": [
+        0.28675413131713867,
+        -0.40053868293762207
+      ]
+    }
+  ]
+}

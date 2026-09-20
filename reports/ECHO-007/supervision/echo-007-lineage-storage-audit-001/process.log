@@ -1,0 +1,59 @@
+{
+  "selected_echo_step": 1024,
+  "echo_additional_distinct_human_records": 16305,
+  "echo_new_to_parent_human_records": 3745,
+  "storage": {
+    "echo": {
+      "4": {
+        "saved_tensor_occurrences": 14,
+        "logical_saved_bytes": 12320,
+        "unique_saved_storage_bytes": 12320,
+        "finite_output": true
+      },
+      "16": {
+        "saved_tensor_occurrences": 14,
+        "logical_saved_bytes": 12320,
+        "unique_saved_storage_bytes": 12320,
+        "finite_output": true
+      },
+      "32": {
+        "saved_tensor_occurrences": 14,
+        "logical_saved_bytes": 12320,
+        "unique_saved_storage_bytes": 12320,
+        "finite_output": true
+      },
+      "64": {
+        "saved_tensor_occurrences": 14,
+        "logical_saved_bytes": 12320,
+        "unique_saved_storage_bytes": 12320,
+        "finite_output": true
+      }
+    },
+    "autograd": {
+      "4": {
+        "saved_tensor_occurrences": 55,
+        "logical_saved_bytes": 56720,
+        "unique_saved_storage_bytes": 14672,
+        "finite_output": true
+      },
+      "16": {
+        "saved_tensor_occurrences": 187,
+        "logical_saved_bytes": 192848,
+        "unique_saved_storage_bytes": 40016,
+        "finite_output": true
+      },
+      "32": {
+        "saved_tensor_occurrences": 363,
+        "logical_saved_bytes": 374352,
+        "unique_saved_storage_bytes": 73808,
+        "finite_output": true
+      },
+      "64": {
+        "saved_tensor_occurrences": 715,
+        "logical_saved_bytes": 737360,
+        "unique_saved_storage_bytes": 141392,
+        "finite_output": true
+      }
+    }
+  }
+}

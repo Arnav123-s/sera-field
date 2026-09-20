@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "routing": true,
+    "direction": true,
+    "direction_improved": true,
+    "numerical_outputs_retained": true,
+    "old_parameters_retained": true,
+    "forward_mse": true,
+    "inverse_mse": true,
+    "counterfactual_mse": true,
+    "plan_mse": true
+  },
+  "qualified": true,
+  "all_five_replays_exact": true,
+  "completed_utc": "2026-09-20T06:55:04Z"
+}

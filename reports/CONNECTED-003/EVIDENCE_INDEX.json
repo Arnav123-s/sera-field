@@ -1,0 +1,21 @@
+{
+  "runs\\CONNECTED-SCFE-COMPARISON-001\\field-final\\RESULTS.json": "0ccafcab527be053e9f829c955be3b14d7c38b20ef6e32c9fb06d766ac8e9321",
+  "runs\\CONNECTED-SCFE-COMPARISON-001\\field-final\\EVIDENCE.json": "43d470b2a76cbd8f47197bda2c5c3fe7dbb68a251e72ee93470840d6d8d7a10b",
+  "runs\\CONNECTED-SCFE-COMPARISON-001\\field-final\\FROZEN_CANDIDATES.json": "a983b5bff7071e1ae8dc3df74fd545f64c327b8110cbba1a4392162871b37fb5",
+  "runs\\CONNECTED-SCFE-COMPARISON-001\\field-final\\OPENED_GROUPS.json": "b16257ead449eed8a0cc925e65d6b1bbecb8329a2789b4e71e6eea3a44881378",
+  "runs\\CONNECTED-SCFE-COMPARISON-001\\field-replay\\REPLAY.json": "bfde4380b32babe3683b9c4e593148efe17af239b9ddb1431de571c15d796c4f",
+  "runs\\CONNECTED-SCFE-COMPARISON-001\\scfe-final\\RESULTS.json": "ff453262b487e0ae5b8e56a1b37e0e712c74ed8dbaec702f35cdb5c8e6c72d7a",
+  "runs\\CONNECTED-SCFE-COMPARISON-001\\scfe-final\\EVIDENCE.json": "3ffe22840253a2516a072f2ac2d7649987f15f8192cf772f5d008f82ec3546df",
+  "runs\\CONNECTED-SCFE-COMPARISON-001\\scfe-final\\FROZEN_CANDIDATES.json": "9c858dca13ce22de527c6352cdf0ef62c0152fff621fcb5b3e4ca39222f9ce24",
+  "runs\\CONNECTED-SCFE-COMPARISON-001\\scfe-final\\OPENED_GROUPS.json": "b16257ead449eed8a0cc925e65d6b1bbecb8329a2789b4e71e6eea3a44881378",
+  "runs\\CONNECTED-SCFE-COMPARISON-001\\scfe-replay\\REPLAY.json": "a561e3012cd58e83bd5d3d3bef3c6391596f58c49de0a4a6b4cfd8d01648456a",
+  "runs\\SCFE-006-policy-selection\\final\\RESULTS.json": "1fa94fb0d17d68afa69b2d69dd864499e378de6da663414fe0d93759679c65a9",
+  "runs\\SCFE-006-policy-selection\\REPLAY.json": "ad66d11ce17d6d141f98c9cde47cd3a949ee63e9f2e8ddf0918c79a37564986a",
+  "runs\\SCFE-006-policy-selection\\SELECTION.json": "055cad11585b2a54a529dc4afb86c4eeecd3b7b1462d51a569f50c75f04e50ae",
+  "runs\\SCFE-006-policy-selection\\FROZEN.json": "981cbf7b85f6b19fafb4ffddf2ca3b775634c240caa2f4c57aa87d5c87d0f07a",
+  "checkpoints\\SCFE-004\\MANIFEST.json": "5a3a1f64c3fc6d306abb5ac45b7f33db4b5155845d2ddce742acf4fd8f804493",
+  "checkpoints\\SCFE-004\\SELECTION.json": "0a959c2962380080382ee8d91ceebb711f0a2007dc3ee8bb446d15424ff6edfd",
+  "checkpoints\\SCFE-004\\revisions\\e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3.pt": "e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3",
+  "reports\\CONNECTED-003\\LEARNED_EVIDENCE.json": "bb7e428a9d9a51ce720544749131d3e8281942b0ee307cd9fec269a5175e96c0",
+  "reports\\CONNECTED-003\\usage-examples.json": "55de2e58c9e6db3156778a472fd79a1119306592810eafc0bb4112263e9e5177"
+}

@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "reading_retained": true,
+    "math_retained": true,
+    "pairs_retained": true,
+    "physics_retained": true,
+    "inquiry_retained": true,
+    "trajectories_finite": true,
+    "weights_unchanged_during_evaluation": true,
+    "exact_gradient_control_agreement": true
+  },
+  "promote": true,
+  "mean_normalized_objective_against_exact": 0.9999999937445588,
+  "decision": "qualified_candidate",
+  "completed_utc": "2026-09-20T05:21:47Z",
+  "all_four_replays_exact": true
+}

@@ -1,0 +1,71 @@
+{"loaded_from_public_snapshot": "D:\\ai\\publications\\sera-field-20260920", "checkpoint_schema": [{"path": "checkpoints/FIELD-001/calibrated-11.pt", "top_level_fields": ["metadata", "model", "schema", "specification", "step", "weight_sha256"]}, {"path": "checkpoints/FIELD-001/field-11.pt", "top_level_fields": ["metadata", "model", "optimizer", "sampler_rng", "scheduler", "schema", "specification", "step", "torch_rng", "weight_sha256"]}, {"path": "checkpoints/CONCEPT-011/revisions/7767b021573e7b398f87dd45706dd2a87b1b2e3738545f4c36e4ced80c3b5e48.pt", "top_level_fields": ["bridge", "lineage"]}, {"path": "checkpoints/ECHO-007/revisions/b8428610ee13211547ee83f9c741cc01c9fcd5581b8a10f25cb6f5b2e14d4ae1.pt", "top_level_fields": ["bridge", "lineage"]}, {"path": "checkpoints/SCFE-004/revisions/e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3.pt", "top_level_fields": ["bridge", "lineage"]}]}
+...........................................................F............ [ 67%]
+..................................                                       [100%]
+================================== FAILURES ===================================
+____________ test_checkpoint_reloads_weights_and_optimizer_exactly ____________
+
+tmp_path = WindowsPath('C:/Users/admin/AppData/Local/Temp/pytest-of-octashop/pytest-129/test_checkpoint_reloads_weight0')
+
+    def test_checkpoint_reloads_weights_and_optimizer_exactly(tmp_path):
+        from sera_field.training import load_model, save_checkpoint
+        torch.manual_seed(909)
+        model = Dynamics()
+        optimizer = torch.optim.Adam(model.parameters(), lr=.002)
+        scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, 10)
+        generator = torch.Generator().manual_seed(21)
+        from sera_field.training import ROOT
+        # save_checkpoint records paths relative to the lab; use a private disposable test path there.
+        output = ROOT / "runs" / "checkpoint-contract.pt"
+        if output.exists():
+            output = ROOT / "runs" / f"checkpoint-contract-{tmp_path.name}.pt"
+>       save_checkpoint(output, model, optimizer, scheduler, generator, 0, {"origin": "random initialization"})
+
+tests\test_contracts.py:180: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+sera_field\training.py:66: in save_checkpoint
+    torch.save(value, temp)
+D:\ai\labs\sera-field\.venv\Lib\site-packages\torch\serialization.py:976: in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+D:\ai\labs\sera-field\.venv\Lib\site-packages\torch\serialization.py:838: in _open_zipfile_writer
+    return container(name_or_buffer)  # type: ignore[arg-type]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <torch.serialization._open_zipfile_writer_file object at 0x000001703FF80770>
+name = 'D:\\ai\\publications\\sera-field-20260920\\runs\\checkpoint-contract.tmp'
+
+    def __init__(self, name: str) -> None:
+        self.file_stream = None
+        self.name = name
+        try:
+            self.name.encode("ascii")
+        except UnicodeEncodeError:
+            # PyTorchFileWriter only supports ascii filename.
+            # For filenames with non-ascii characters, we rely on Python
+            # for writing out the file.
+            # pyrefly: ignore [bad-assignment]
+            self.file_stream = io.FileIO(self.name, mode="w")
+            super().__init__(
+                torch._C.PyTorchFileWriter(  # pyrefly: ignore  # no-matching-overload
+                    self.file_stream, get_crc32_options(), _get_storage_alignment()
+                )
+            )
+        else:
+            super().__init__(
+>               torch._C.PyTorchFileWriter(
+                    self.name, get_crc32_options(), _get_storage_alignment()
+                )
+            )
+E           RuntimeError: Parent directory D:\ai\publications\sera-field-20260920\runs does not exist.
+
+D:\ai\labs\sera-field\.venv\Lib\site-packages\torch\serialization.py:802: RuntimeError
+=========================== short test summary info ===========================
+FAILED tests/test_contracts.py::test_checkpoint_reloads_weights_and_optimizer_exactly
+1 failed, 105 passed in 31.48s
+Traceback (most recent call last):
+  File "D:\ai\labs\sera-field\local\check_public_snapshot.py", line 16, in <module>
+    subprocess.run([sys.executable,'-m','pytest'],cwd=root,env=env,check=True)
+  File "C:\Users\admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['D:\\ai\\labs\\sera-field\\.venv\\Scripts\\python.exe', '-m', 'pytest']' returned non-zero exit status 1.

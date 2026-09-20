@@ -1,0 +1,10 @@
+{
+  "attachment": "C:\\Users\\admin\\.codex\\attachments\\cda79d04-fff0-4dca-a284-a69fada13b2a\\Pasted text.txt",
+  "sha256": "d853b18e19bf7fe7982c00ea6b02fa6aa07b2310912d95ca29ea6d0cf1f2e79a",
+  "bytes": 28524,
+  "normalized_duplicate_of": "intake\\addendum-20260920\\thdft-expanded.txt",
+  "normalization": "Remove literal image placeholders, collapse whitespace, strip outer whitespace. Original bytes are preserved.",
+  "new_equations": false,
+  "symbol_placeholders": 19,
+  "latest_distinct_addendum": "intake/addendum-20260920/singular-ecosystem.txt"
+}

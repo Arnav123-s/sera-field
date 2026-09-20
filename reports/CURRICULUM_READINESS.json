@@ -1,0 +1,153 @@
+{
+  "model_training_started": false,
+  "existing_sources": [
+    {
+      "source": "https://rajpurkar.github.io/SQuAD-explorer/dataset/train-v1.1.json",
+      "title": null,
+      "sha256": "3527663986b8295af4f7fcdff1ba1ff3f72d07d61a20f487cb238a6ef92fd955",
+      "verified": true,
+      "url": "https://rajpurkar.github.io/SQuAD-explorer/dataset/train-v1.1.json",
+      "license_record": "CC-BY-SA-4.0"
+    },
+    {
+      "source": "https://rajpurkar.github.io/SQuAD-explorer/dataset/dev-v1.1.json",
+      "title": null,
+      "sha256": "95aa6a52d5d6a735563366753ca50492a658031da74f301ac5238b03966972c9",
+      "verified": true,
+      "url": "https://rajpurkar.github.io/SQuAD-explorer/dataset/dev-v1.1.json",
+      "license_record": "CC-BY-SA-4.0"
+    },
+    {
+      "source": "grammar",
+      "title": "An English Grammar",
+      "sha256": "21595f1f94403d10a6a0f4ec910f27ccc8aba95da89a730bc64029a70161a614",
+      "verified": true,
+      "url": "https://www.gutenberg.org/ebooks/14006.txt.utf-8",
+      "license_record": "Project Gutenberg public domain USA; retain original notice"
+    },
+    {
+      "source": "plato",
+      "title": "The Republic",
+      "sha256": "917c1cb469e1a8eba6083808764d7131da8d79140b575b4214c9d02a73ec4528",
+      "verified": true,
+      "url": "https://www.gutenberg.org/ebooks/1497.txt.utf-8",
+      "license_record": "Project Gutenberg public domain USA; retain original notice"
+    },
+    {
+      "source": "calculus",
+      "title": "Calculus Made Easy",
+      "sha256": "fb6a9195621aeba3302d2359af4ff7cd74b285d9fb57c16431c21c0b85ed5776",
+      "verified": true,
+      "url": "https://www.gutenberg.org/files/33283/33283-t/33283-t.tex",
+      "license_record": "Project Gutenberg public domain USA; retain original notice"
+    },
+    {
+      "source": "descartes",
+      "title": "Discourse on the Method",
+      "sha256": "7768ba8d3895be3d6f1492733ffab983d69875cc743edd23a1840e1530d02924",
+      "verified": true,
+      "url": "https://www.gutenberg.org/ebooks/59.txt.utf-8",
+      "license_record": "Project Gutenberg public domain USA; retain original notice"
+    },
+    {
+      "source": "dailydialog",
+      "title": "DailyDialog",
+      "sha256": "2de93416a95060057d8b95ef9e2ab9b17a317906f1e352414001a1887f081193",
+      "verified": true,
+      "url": "https://aclanthology.org/attachments/I17-1099.Datasets.zip",
+      "license_record": "Check archive README; research-only CC BY-NC-SA 4.0"
+    },
+    {
+      "source": "webster",
+      "title": "Webster's Unabridged Dictionary",
+      "sha256": "86fb9c28c32008ea288ca4bcf34f4f0d3d11ccf9e0898294d98b73671497f1d3",
+      "verified": true,
+      "url": "https://www.gutenberg.org/ebooks/29765.txt.utf-8",
+      "license_record": "Project Gutenberg public domain USA; retain original notice"
+    }
+  ],
+  "new_sources": [
+    {
+      "repository": "google-research/google-research",
+      "commit": "4700efb9afa54286b0e04473ba80a13e8461e25f",
+      "source_path": "mbpp/mbpp.jsonl",
+      "url": "https://raw.githubusercontent.com/google-research/google-research/4700efb9afa54286b0e04473ba80a13e8461e25f/mbpp/mbpp.jsonl",
+      "sha256": "ccf64ceae9c5403bf50a044cb6d505bfd2a2963ee58338ba268fd65beab92a9f",
+      "bytes": 563743,
+      "status": "downloaded for audit only, not yet trained"
+    },
+    {
+      "repository": "google-research/google-research",
+      "commit": "4700efb9afa54286b0e04473ba80a13e8461e25f",
+      "source_path": "mbpp/README.md",
+      "url": "https://raw.githubusercontent.com/google-research/google-research/4700efb9afa54286b0e04473ba80a13e8461e25f/mbpp/README.md",
+      "sha256": "02d63a4ffdad806c3c87b5ea2aa91e946f6eec0c2869643b09831650883f41be",
+      "bytes": 1422,
+      "status": "downloaded for audit only, not yet trained"
+    },
+    {
+      "repository": "google-research/google-research",
+      "commit": "4700efb9afa54286b0e04473ba80a13e8461e25f",
+      "source_path": "mbpp/LICENSE",
+      "url": "https://raw.githubusercontent.com/google-research/google-research/4700efb9afa54286b0e04473ba80a13e8461e25f/mbpp/LICENSE",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "repository": "openai/grade-school-math",
+      "commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "source_path": "grade_school_math/data/train.jsonl",
+      "url": "https://raw.githubusercontent.com/openai/grade-school-math/3101c7d5072418e28b9008a6636bde82a006892c/grade_school_math/data/train.jsonl",
+      "sha256": "17f347dc51477c50d4efb83959dbb7c56297aba886e5544ee2aaed3024813465",
+      "bytes": 4166206,
+      "status": "downloaded for audit only, not yet trained"
+    },
+    {
+      "repository": "openai/grade-school-math",
+      "commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "source_path": "README.md",
+      "url": "https://raw.githubusercontent.com/openai/grade-school-math/3101c7d5072418e28b9008a6636bde82a006892c/README.md",
+      "sha256": "27e1676d572f2289210170ff6dbb8c2ef7d9f6950c0f08c978ea8ee6b39dca29",
+      "bytes": 6112,
+      "status": "downloaded for audit only, not yet trained"
+    },
+    {
+      "repository": "openai/grade-school-math",
+      "commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "source_path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/openai/grade-school-math/3101c7d5072418e28b9008a6636bde82a006892c/LICENSE",
+      "sha256": "86bbb73e855821d7c401912fd4bf82e34313e6e3b6fd6f909f2b6cc9e209a53b",
+      "bytes": 1062,
+      "status": "downloaded for audit only, not yet trained"
+    }
+  ],
+  "math_inspection": {
+    "human_training_records": 7473,
+    "arithmetic_annotations_checked": 23714,
+    "records_with_exact_checked_annotations": 7376,
+    "records_held_for_review": 97
+  },
+  "coding_inspection": {
+    "nontraining_records_skipped": 600,
+    "human_training_records": 374,
+    "syntax_and_assertion_structure_valid": 374
+  },
+  "not_a_capability_assessment": true,
+  "review_detail_path": "runs/curriculum-intake-001/intake-audit.json",
+  "raw_material_publicly_redistributed": false,
+  "numerical_cost": {
+    "status": "PASS",
+    "wall_seconds": 1.336305299999367,
+    "resources": {
+      "limit_bytes": 2147483648,
+      "flags": 8720,
+      "affinity": 1,
+      "peak_committed_bytes": 20176896,
+      "cpu_seconds": 1.125,
+      "active_processes": 0,
+      "total_processes": 2
+    },
+    "numerical_threads": 1,
+    "memory_limit_bytes": 2147483648,
+    "lease_released": true
+  }
+}

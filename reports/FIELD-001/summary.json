@@ -1,0 +1,2061 @@
+{
+  "schema": "sera-field.evaluation.1",
+  "selection_sha256": "e41e51b2f2112aa1992afef0f7f09899a8150fd8e76ca65ee20656f535a47dbe",
+  "final_identities": {
+    "interpolation": "40feef6772d827789ce9df75c1c3ff6dad5e32350e13cab37b643350e923c62e",
+    "rotation": "ce1314e79990e57855cc633828dccf0ec4b9a1686253e658c8b5cdb0cca55c7e",
+    "mass_extension": "4ddaedc01a33befb96400fe060b41effcf0142f3cac3eb03f08fea4a7244e462"
+  },
+  "refinement_final_identity": "33bc281a3dad54db1c37d359b755401b8fd43c6ec5368cc5dc8c0d40a9288e97",
+  "base": {
+    "field-11": {
+      "checkpoint": {
+        "path": "runs\\FIELD-001\\field-11\\step-03000.pt",
+        "sha256": "6a3fef1162b82c60a008ae375085381c041973e589b07b3d128b93bd6fa2d35a",
+        "weight_sha256": "7ab174f88be7ce74f79f3f2e8b78ecc455006845486ffb1df5b3ee36db4ccd3b",
+        "step": 3000
+      },
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "finals": {
+        "interpolation": {
+          "mse": 0.00034292740747332573,
+          "nmse": 0.00042081125062490467,
+          "finite": true
+        },
+        "rotation": {
+          "mse": 0.0004614917270373553,
+          "nmse": 0.0005636032471446215,
+          "finite": true
+        },
+        "mass_extension": {
+          "mse": 0.001200529164634645,
+          "nmse": 0.01092618726762349,
+          "finite": true
+        }
+      },
+      "cross_use": {
+        "forward_position_endpoint": {
+          "mean": 0.010582948103547096,
+          "median": 0.009050246328115463,
+          "p95": 0.022701701149344444,
+          "max": 0.06173761188983917,
+          "count": 128
+        },
+        "forward_velocity_endpoint": {
+          "mean": 0.02133290097117424,
+          "median": 0.018444638699293137,
+          "p95": 0.045098986476659775,
+          "max": 0.1557251513004303,
+          "count": 128
+        },
+        "inverse_mass_relative_error": {
+          "mean": 0.028040235862135887,
+          "median": 0.012128179892897606,
+          "p95": 0.07271543145179749,
+          "max": 0.6553444266319275,
+          "count": 128
+        },
+        "inverse_boundary_hits": 0,
+        "mass_halving_position_endpoint": {
+          "mean": 0.10972130298614502,
+          "median": 0.01842157170176506,
+          "p95": 0.6159805655479431,
+          "max": 2.0619118213653564,
+          "count": 128
+        },
+        "mass_halving_velocity_endpoint": {
+          "mean": 0.22766530513763428,
+          "median": 0.035155218094587326,
+          "p95": 1.226181149482727,
+          "max": 4.120793342590332,
+          "count": 128
+        },
+        "mass_halving_outside_taught_range": 28,
+        "predictor_unchanged": true,
+        "task_specific_training_updates": 0
+      },
+      "planning": {
+        "position_error": {
+          "mean": 0.011875675059854984,
+          "median": 0.0033934859093278646,
+          "p95": 0.02952616475522518,
+          "max": 0.11730508506298065,
+          "count": 24
+        },
+        "velocity_error": {
+          "mean": 0.018601136282086372,
+          "median": 0.008062196895480156,
+          "p95": 0.03129824995994568,
+          "max": 0.22175250947475433,
+          "count": 24
+        },
+        "success_at_5cm_and_5cm_per_s": 23,
+        "count": 24,
+        "force_limit": 8.0,
+        "iterations": 120,
+        "independent_solver": "DOP853",
+        "controls_optimized_not_predictor_weights": true
+      }
+    },
+    "scrambled-11": {
+      "checkpoint": {
+        "path": "runs\\FIELD-001\\scrambled-11\\step-03000.pt",
+        "sha256": "e865d4708eb1495ea37509b081587ca92766dc7683bbbb10f4aca77d02c92b42",
+        "weight_sha256": "10aca925baf87c354320a7975e6fa35f9c4289b65f57701cababc6c72f9e12d1",
+        "step": 3000
+      },
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "finals": {
+        "interpolation": {
+          "mse": 0.0004510760772973299,
+          "nmse": 0.0005535220693295865,
+          "finite": true
+        },
+        "rotation": {
+          "mse": 0.001073721912689507,
+          "nmse": 0.0013112979519850762,
+          "finite": true
+        },
+        "mass_extension": {
+          "mse": 0.0032075427006930113,
+          "nmse": 0.029192303901535117,
+          "finite": true
+        }
+      },
+      "cross_use": {
+        "forward_position_endpoint": {
+          "mean": 0.014879545196890831,
+          "median": 0.00725956168025732,
+          "p95": 0.056290026754140854,
+          "max": 0.14489896595478058,
+          "count": 128
+        },
+        "forward_velocity_endpoint": {
+          "mean": 0.029998160898685455,
+          "median": 0.012791509740054607,
+          "p95": 0.10627669095993042,
+          "max": 0.2928643822669983,
+          "count": 128
+        },
+        "inverse_mass_relative_error": {
+          "mean": 0.02822091057896614,
+          "median": 0.013205813243985176,
+          "p95": 0.07102438807487488,
+          "max": 0.7230420708656311,
+          "count": 128
+        },
+        "inverse_boundary_hits": 0,
+        "mass_halving_position_endpoint": {
+          "mean": 0.11430727690458298,
+          "median": 0.01584763452410698,
+          "p95": 0.5908817052841187,
+          "max": 1.9709306955337524,
+          "count": 128
+        },
+        "mass_halving_velocity_endpoint": {
+          "mean": 0.23455815017223358,
+          "median": 0.031378041952848434,
+          "p95": 1.183676838874817,
+          "max": 3.9551639556884766,
+          "count": 128
+        },
+        "mass_halving_outside_taught_range": 28,
+        "predictor_unchanged": true,
+        "task_specific_training_updates": 0
+      },
+      "planning": {
+        "position_error": {
+          "mean": 0.01262083649635315,
+          "median": 0.006411757320165634,
+          "p95": 0.05966375768184662,
+          "max": 0.09278157353401184,
+          "count": 24
+        },
+        "velocity_error": {
+          "mean": 0.013894620351493359,
+          "median": 0.008645035326480865,
+          "p95": 0.013385056518018246,
+          "max": 0.14079783856868744,
+          "count": 24
+        },
+        "success_at_5cm_and_5cm_per_s": 22,
+        "count": 24,
+        "force_limit": 8.0,
+        "iterations": 120,
+        "independent_solver": "DOP853",
+        "controls_optimized_not_predictor_weights": true
+      }
+    },
+    "dense-11": {
+      "checkpoint": {
+        "path": "runs\\FIELD-001\\dense-11\\step-03000.pt",
+        "sha256": "ad15f9b0917b39bdfb396438d33ea3a2a127d23e3d212f7b8a23473f1ae91e94",
+        "weight_sha256": "b421103706b6123fa3155b9226489852dd148f11aded6cce224929dc95882ef5",
+        "step": 3000
+      },
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "finals": {
+        "interpolation": {
+          "mse": 0.0012735214550048113,
+          "nmse": 0.001562756853197592,
+          "finite": true
+        },
+        "rotation": {
+          "mse": 0.044049639254808426,
+          "nmse": 0.05379624002999654,
+          "finite": true
+        },
+        "mass_extension": {
+          "mse": 0.01350625604391098,
+          "nmse": 0.12292236387706021,
+          "finite": true
+        }
+      },
+      "cross_use": {
+        "forward_position_endpoint": {
+          "mean": 0.07962571084499359,
+          "median": 0.04086483269929886,
+          "p95": 0.2666735053062439,
+          "max": 0.8181419372558594,
+          "count": 128
+        },
+        "forward_velocity_endpoint": {
+          "mean": 0.1596377193927765,
+          "median": 0.08098726719617844,
+          "p95": 0.5455579161643982,
+          "max": 1.6031365394592285,
+          "count": 128
+        },
+        "inverse_mass_relative_error": {
+          "mean": 0.11611953377723694,
+          "median": 0.0563025027513504,
+          "p95": 0.468929260969162,
+          "max": 0.8705974817276001,
+          "count": 128
+        },
+        "inverse_boundary_hits": 1,
+        "mass_halving_position_endpoint": {
+          "mean": 0.29768800735473633,
+          "median": 0.11607009172439575,
+          "p95": 1.1627475023269653,
+          "max": 3.122790575027466,
+          "count": 128
+        },
+        "mass_halving_velocity_endpoint": {
+          "mean": 0.6004211902618408,
+          "median": 0.23227602243423462,
+          "p95": 2.34580397605896,
+          "max": 6.234139919281006,
+          "count": 128
+        },
+        "mass_halving_outside_taught_range": 28,
+        "predictor_unchanged": true,
+        "task_specific_training_updates": 0
+      },
+      "planning": {
+        "position_error": {
+          "mean": 0.12308891862630844,
+          "median": 0.03199325129389763,
+          "p95": 0.5961916446685791,
+          "max": 0.7057330012321472,
+          "count": 24
+        },
+        "velocity_error": {
+          "mean": 0.2257843166589737,
+          "median": 0.08753915876150131,
+          "p95": 0.8547765612602234,
+          "max": 0.9518359303474426,
+          "count": 24
+        },
+        "success_at_5cm_and_5cm_per_s": 9,
+        "count": 24,
+        "force_limit": 8.0,
+        "iterations": 120,
+        "independent_solver": "DOP853",
+        "controls_optimized_not_predictor_weights": true
+      }
+    },
+    "invariant-11": {
+      "checkpoint": {
+        "path": "runs\\FIELD-001\\invariant-11\\step-03000.pt",
+        "sha256": "b5815147e0a33aedc215951e3226bdb3f29ca202cebb3fea3d38c5465c5fe7e4",
+        "weight_sha256": "afd69bdf777fbcd81a9003ab55a8624db48577bc14891cf3c0c71e8dfb70225b",
+        "step": 3000
+      },
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "finals": {
+        "interpolation": {
+          "mse": 6.918537110323086e-05,
+          "nmse": 8.489838346083004e-05,
+          "finite": true
+        },
+        "rotation": {
+          "mse": 7.809934322722256e-05,
+          "nmse": 9.537991878056351e-05,
+          "finite": true
+        },
+        "mass_extension": {
+          "mse": 0.00016058220353443176,
+          "nmse": 0.0014614815527607707,
+          "finite": true
+        }
+      },
+      "cross_use": {
+        "forward_position_endpoint": {
+          "mean": 0.005768115632236004,
+          "median": 0.004998009651899338,
+          "p95": 0.012165012769401073,
+          "max": 0.035246096551418304,
+          "count": 128
+        },
+        "forward_velocity_endpoint": {
+          "mean": 0.01127321831882,
+          "median": 0.009558720514178276,
+          "p95": 0.02529614046216011,
+          "max": 0.09540197998285294,
+          "count": 128
+        },
+        "inverse_mass_relative_error": {
+          "mean": 0.012654401361942291,
+          "median": 0.007253013085573912,
+          "p95": 0.045500967651605606,
+          "max": 0.1015838086605072,
+          "count": 128
+        },
+        "inverse_boundary_hits": 0,
+        "mass_halving_position_endpoint": {
+          "mean": 0.05361287668347359,
+          "median": 0.006619988474994898,
+          "p95": 0.27015358209609985,
+          "max": 1.1740201711654663,
+          "count": 128
+        },
+        "mass_halving_velocity_endpoint": {
+          "mean": 0.11664048582315445,
+          "median": 0.013596992008388042,
+          "p95": 0.5715733766555786,
+          "max": 2.4395158290863037,
+          "count": 128
+        },
+        "mass_halving_outside_taught_range": 28,
+        "predictor_unchanged": true,
+        "task_specific_training_updates": 0
+      },
+      "planning": {
+        "position_error": {
+          "mean": 0.0026380110066384077,
+          "median": 0.001932005980052054,
+          "p95": 0.006474431604146957,
+          "max": 0.007320663891732693,
+          "count": 24
+        },
+        "velocity_error": {
+          "mean": 0.0027746520936489105,
+          "median": 0.002408765722066164,
+          "p95": 0.00479150703176856,
+          "max": 0.011193457059562206,
+          "count": 24
+        },
+        "success_at_5cm_and_5cm_per_s": 24,
+        "count": 24,
+        "force_limit": 8.0,
+        "iterations": 120,
+        "independent_solver": "DOP853",
+        "controls_optimized_not_predictor_weights": true
+      }
+    },
+    "field-29": {
+      "checkpoint": {
+        "path": "runs\\FIELD-001\\field-29\\step-03000.pt",
+        "sha256": "33f97f340b20087d2296a4b4ab9baeef37db9c9868e31a23932e73d350f0d6d7",
+        "weight_sha256": "954dff88261d370f260e4b22a1dec02f68c84d74c9da2cb03f0a1def0063d516",
+        "step": 3000
+      },
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "finals": {
+        "interpolation": {
+          "mse": 0.000599165097810328,
+          "nmse": 0.0007352442780764602,
+          "finite": true
+        },
+        "rotation": {
+          "mse": 0.0005966692115180194,
+          "nmse": 0.0007286906468326706,
+          "finite": true
+        },
+        "mass_extension": {
+          "mse": 0.0020967181771993637,
+          "nmse": 0.019082531375639106,
+          "finite": true
+        }
+      },
+      "cross_use": {
+        "forward_position_endpoint": {
+          "mean": 0.013047512620687485,
+          "median": 0.008750664070248604,
+          "p95": 0.03331725299358368,
+          "max": 0.1142653375864029,
+          "count": 128
+        },
+        "forward_velocity_endpoint": {
+          "mean": 0.025240667164325714,
+          "median": 0.017507649958133698,
+          "p95": 0.058462146669626236,
+          "max": 0.27218544483184814,
+          "count": 128
+        },
+        "inverse_mass_relative_error": {
+          "mean": 0.03122306428849697,
+          "median": 0.013844065368175507,
+          "p95": 0.12725195288658142,
+          "max": 0.44335034489631653,
+          "count": 128
+        },
+        "inverse_boundary_hits": 0,
+        "mass_halving_position_endpoint": {
+          "mean": 0.1339474469423294,
+          "median": 0.018307728692889214,
+          "p95": 0.6819509267807007,
+          "max": 2.353166103363037,
+          "count": 128
+        },
+        "mass_halving_velocity_endpoint": {
+          "mean": 0.275251567363739,
+          "median": 0.037239834666252136,
+          "p95": 1.411355972290039,
+          "max": 4.7636399269104,
+          "count": 128
+        },
+        "mass_halving_outside_taught_range": 28,
+        "predictor_unchanged": true,
+        "task_specific_training_updates": 0
+      },
+      "planning": {
+        "position_error": {
+          "mean": 0.01656308025121689,
+          "median": 0.010605056770145893,
+          "p95": 0.02865767665207386,
+          "max": 0.12099600583314896,
+          "count": 24
+        },
+        "velocity_error": {
+          "mean": 0.02444099448621273,
+          "median": 0.014566062949597836,
+          "p95": 0.039942000061273575,
+          "max": 0.22712990641593933,
+          "count": 24
+        },
+        "success_at_5cm_and_5cm_per_s": 23,
+        "count": 24,
+        "force_limit": 8.0,
+        "iterations": 120,
+        "independent_solver": "DOP853",
+        "controls_optimized_not_predictor_weights": true
+      }
+    },
+    "scrambled-29": {
+      "checkpoint": {
+        "path": "runs\\FIELD-001\\scrambled-29\\step-03000.pt",
+        "sha256": "6f597d67be8400d872d8de1432388b66fb2269b0f97462aff0ecddfcf7c65437",
+        "weight_sha256": "72aafb43c47af2034fdfbba3fd530db195ab8bd544e7aa1c12cf2188e26a48e2",
+        "step": 3000
+      },
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "finals": {
+        "interpolation": {
+          "mse": 0.0007731199730187654,
+          "nmse": 0.0009487068564341137,
+          "finite": true
+        },
+        "rotation": {
+          "mse": 0.0016197096556425095,
+          "nmse": 0.001978093144187009,
+          "finite": true
+        },
+        "mass_extension": {
+          "mse": 0.001550956629216671,
+          "nmse": 0.014115477636014446,
+          "finite": true
+        }
+      },
+      "cross_use": {
+        "forward_position_endpoint": {
+          "mean": 0.019545355811715126,
+          "median": 0.00971844419836998,
+          "p95": 0.05769030749797821,
+          "max": 0.22533908486366272,
+          "count": 128
+        },
+        "forward_velocity_endpoint": {
+          "mean": 0.0390605591237545,
+          "median": 0.019657963886857033,
+          "p95": 0.12357182055711746,
+          "max": 0.41717827320098877,
+          "count": 128
+        },
+        "inverse_mass_relative_error": {
+          "mean": 0.02544517256319523,
+          "median": 0.015085777267813683,
+          "p95": 0.08541340380907059,
+          "max": 0.22811481356620789,
+          "count": 128
+        },
+        "inverse_boundary_hits": 0,
+        "mass_halving_position_endpoint": {
+          "mean": 0.14949461817741394,
+          "median": 0.02134302631020546,
+          "p95": 0.7412269711494446,
+          "max": 2.4110846519470215,
+          "count": 128
+        },
+        "mass_halving_velocity_endpoint": {
+          "mean": 0.3039901554584503,
+          "median": 0.03858216106891632,
+          "p95": 1.4951204061508179,
+          "max": 4.883742809295654,
+          "count": 128
+        },
+        "mass_halving_outside_taught_range": 28,
+        "predictor_unchanged": true,
+        "task_specific_training_updates": 0
+      },
+      "planning": {
+        "position_error": {
+          "mean": 0.014753174968063831,
+          "median": 0.006205103360116482,
+          "p95": 0.05994701758027077,
+          "max": 0.10809970647096634,
+          "count": 24
+        },
+        "velocity_error": {
+          "mean": 0.0162530355155468,
+          "median": 0.006673574447631836,
+          "p95": 0.03499318286776543,
+          "max": 0.16131232678890228,
+          "count": 24
+        },
+        "success_at_5cm_and_5cm_per_s": 22,
+        "count": 24,
+        "force_limit": 8.0,
+        "iterations": 120,
+        "independent_solver": "DOP853",
+        "controls_optimized_not_predictor_weights": true
+      }
+    },
+    "dense-29": {
+      "checkpoint": {
+        "path": "runs\\FIELD-001\\dense-29\\step-03000.pt",
+        "sha256": "170e53ed3bec31dcf058ef87e2739a4131de1507d7d72f64aa8ba50f3920668c",
+        "weight_sha256": "7f1283dfe0b97b55f23f084485867f553dcf13741615f9837600f24a3bcea4cd",
+        "step": 3000
+      },
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "finals": {
+        "interpolation": {
+          "mse": 0.0009335437789559364,
+          "nmse": 0.0011455652612604441,
+          "finite": true
+        },
+        "rotation": {
+          "mse": 0.03060457855463028,
+          "nmse": 0.03737627099323076,
+          "finite": true
+        },
+        "mass_extension": {
+          "mse": 0.012055165134370327,
+          "nmse": 0.10971577840871603,
+          "finite": true
+        }
+      },
+      "cross_use": {
+        "forward_position_endpoint": {
+          "mean": 0.07095799595117569,
+          "median": 0.04238392040133476,
+          "p95": 0.24625861644744873,
+          "max": 0.7577322125434875,
+          "count": 128
+        },
+        "forward_velocity_endpoint": {
+          "mean": 0.14164325594902039,
+          "median": 0.08529841154813766,
+          "p95": 0.4770905375480652,
+          "max": 1.5392111539840698,
+          "count": 128
+        },
+        "inverse_mass_relative_error": {
+          "mean": 0.1156693696975708,
+          "median": 0.042033061385154724,
+          "p95": 0.5207160711288452,
+          "max": 1.2584818601608276,
+          "count": 128
+        },
+        "inverse_boundary_hits": 2,
+        "mass_halving_position_endpoint": {
+          "mean": 0.23800721764564514,
+          "median": 0.10080388188362122,
+          "p95": 0.9495790600776672,
+          "max": 3.2470154762268066,
+          "count": 128
+        },
+        "mass_halving_velocity_endpoint": {
+          "mean": 0.4771491289138794,
+          "median": 0.19744431972503662,
+          "p95": 1.9100364446640015,
+          "max": 6.50600004196167,
+          "count": 128
+        },
+        "mass_halving_outside_taught_range": 28,
+        "predictor_unchanged": true,
+        "task_specific_training_updates": 0
+      },
+      "planning": {
+        "position_error": {
+          "mean": 0.0818924829363823,
+          "median": 0.06921536475419998,
+          "p95": 0.15646326541900635,
+          "max": 0.5831841230392456,
+          "count": 24
+        },
+        "velocity_error": {
+          "mean": 0.12409063428640366,
+          "median": 0.11222966760396957,
+          "p95": 0.26230743527412415,
+          "max": 0.4568391740322113,
+          "count": 24
+        },
+        "success_at_5cm_and_5cm_per_s": 9,
+        "count": 24,
+        "force_limit": 8.0,
+        "iterations": 120,
+        "independent_solver": "DOP853",
+        "controls_optimized_not_predictor_weights": true
+      }
+    },
+    "invariant-29": {
+      "checkpoint": {
+        "path": "runs\\FIELD-001\\invariant-29\\step-03000.pt",
+        "sha256": "56ac3c36ccbdaecb43acbf8ea6617a532391387f03c132c93bc85cb2661b54a5",
+        "weight_sha256": "843ebd7a97be2d83f5842b891cba3b413a95dbf25ea847e0c1d2dee78c6fdb42",
+        "step": 3000
+      },
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "finals": {
+        "interpolation": {
+          "mse": 0.00012684869579970837,
+          "nmse": 0.00015565789480902144,
+          "finite": true
+        },
+        "rotation": {
+          "mse": 0.00016493636940140277,
+          "nmse": 0.00020143085546439464,
+          "finite": true
+        },
+        "mass_extension": {
+          "mse": 0.00020855346519965678,
+          "nmse": 0.0018980748516648654,
+          "finite": true
+        }
+      },
+      "cross_use": {
+        "forward_position_endpoint": {
+          "mean": 0.007427625358104706,
+          "median": 0.0054041496478021145,
+          "p95": 0.018483491614460945,
+          "max": 0.0448482446372509,
+          "count": 128
+        },
+        "forward_velocity_endpoint": {
+          "mean": 0.014732190407812595,
+          "median": 0.010755132883787155,
+          "p95": 0.03768393397331238,
+          "max": 0.1056133434176445,
+          "count": 128
+        },
+        "inverse_mass_relative_error": {
+          "mean": 0.014632297679781914,
+          "median": 0.008053570985794067,
+          "p95": 0.04710150137543678,
+          "max": 0.13958701491355896,
+          "count": 128
+        },
+        "inverse_boundary_hits": 0,
+        "mass_halving_position_endpoint": {
+          "mean": 0.06514716893434525,
+          "median": 0.010287901386618614,
+          "p95": 0.3245464861392975,
+          "max": 1.3061360120773315,
+          "count": 128
+        },
+        "mass_halving_velocity_endpoint": {
+          "mean": 0.13828063011169434,
+          "median": 0.021588468924164772,
+          "p95": 0.6750414371490479,
+          "max": 2.7251882553100586,
+          "count": 128
+        },
+        "mass_halving_outside_taught_range": 28,
+        "predictor_unchanged": true,
+        "task_specific_training_updates": 0
+      },
+      "planning": {
+        "position_error": {
+          "mean": 0.006665803492069244,
+          "median": 0.006677422672510147,
+          "p95": 0.01147114671766758,
+          "max": 0.02033383585512638,
+          "count": 24
+        },
+        "velocity_error": {
+          "mean": 0.0075306338258087635,
+          "median": 0.0045387460850179195,
+          "p95": 0.01530043501406908,
+          "max": 0.04398012533783913,
+          "count": 24
+        },
+        "success_at_5cm_and_5cm_per_s": 24,
+        "count": 24,
+        "force_limit": 8.0,
+        "iterations": 120,
+        "independent_solver": "DOP853",
+        "controls_optimized_not_predictor_weights": true
+      }
+    },
+    "field-47": {
+      "checkpoint": {
+        "path": "runs\\FIELD-001\\field-47\\step-03000.pt",
+        "sha256": "9b1bcd1fb832348f0529ea3447548e3ab6a9611829c66ffdc93eb0647c07b84d",
+        "weight_sha256": "87f6c679bccce80a7ba25590331745084856cd97e189bda5ac51e2883b6b3a38",
+        "step": 3000
+      },
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "finals": {
+        "interpolation": {
+          "mse": 0.0003912542015314102,
+          "nmse": 0.0004801137683096616,
+          "finite": true
+        },
+        "rotation": {
+          "mse": 0.00045729856356047094,
+          "nmse": 0.0005584822874113845,
+          "finite": true
+        },
+        "mass_extension": {
+          "mse": 0.003001445671543479,
+          "nmse": 0.027316585424946544,
+          "finite": true
+        }
+      },
+      "cross_use": {
+        "forward_position_endpoint": {
+          "mean": 0.009833713993430138,
+          "median": 0.006745887920260429,
+          "p95": 0.03118630312383175,
+          "max": 0.09838829934597015,
+          "count": 128
+        },
+        "forward_velocity_endpoint": {
+          "mean": 0.019905781373381615,
+          "median": 0.013692477717995644,
+          "p95": 0.06162094697356224,
+          "max": 0.23307280242443085,
+          "count": 128
+        },
+        "inverse_mass_relative_error": {
+          "mean": 0.021139275282621384,
+          "median": 0.014824153855443,
+          "p95": 0.0686008557677269,
+          "max": 0.17320550978183746,
+          "count": 128
+        },
+        "inverse_boundary_hits": 0,
+        "mass_halving_position_endpoint": {
+          "mean": 0.13693645596504211,
+          "median": 0.01339355856180191,
+          "p95": 0.7471912503242493,
+          "max": 2.4106156826019287,
+          "count": 128
+        },
+        "mass_halving_velocity_endpoint": {
+          "mean": 0.28441131114959717,
+          "median": 0.026127830147743225,
+          "p95": 1.4920475482940674,
+          "max": 4.859021186828613,
+          "count": 128
+        },
+        "mass_halving_outside_taught_range": 28,
+        "predictor_unchanged": true,
+        "task_specific_training_updates": 0
+      },
+      "planning": {
+        "position_error": {
+          "mean": 0.012116583995521069,
+          "median": 0.007047169841825962,
+          "p95": 0.03130509704351425,
+          "max": 0.06451115012168884,
+          "count": 24
+        },
+        "velocity_error": {
+          "mean": 0.01335029024630785,
+          "median": 0.006692984141409397,
+          "p95": 0.02169337496161461,
+          "max": 0.13321329653263092,
+          "count": 24
+        },
+        "success_at_5cm_and_5cm_per_s": 23,
+        "count": 24,
+        "force_limit": 8.0,
+        "iterations": 120,
+        "independent_solver": "DOP853",
+        "controls_optimized_not_predictor_weights": true
+      }
+    },
+    "scrambled-47": {
+      "checkpoint": {
+        "path": "runs\\FIELD-001\\scrambled-47\\step-03000.pt",
+        "sha256": "77906a8315267ae4b60153800b364c3d12f7d8b7059b4adaa05ddf92b7524d3a",
+        "weight_sha256": "7b5817b013c6d4ccd72b458c224bba09da85f6d7132650700c6c4f66aca59398",
+        "step": 3000
+      },
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "finals": {
+        "interpolation": {
+          "mse": 0.0004944855463691056,
+          "nmse": 0.000606790465412737,
+          "finite": true
+        },
+        "rotation": {
+          "mse": 0.001078248955309391,
+          "nmse": 0.001316826666306584,
+          "finite": true
+        },
+        "mass_extension": {
+          "mse": 0.0027831096667796373,
+          "nmse": 0.025329478284537785,
+          "finite": true
+        }
+      },
+      "cross_use": {
+        "forward_position_endpoint": {
+          "mean": 0.014072499237954617,
+          "median": 0.0072471993044018745,
+          "p95": 0.04495765641331673,
+          "max": 0.15555617213249207,
+          "count": 128
+        },
+        "forward_velocity_endpoint": {
+          "mean": 0.02959650754928589,
+          "median": 0.014698915183544159,
+          "p95": 0.10361747443675995,
+          "max": 0.34698542952537537,
+          "count": 128
+        },
+        "inverse_mass_relative_error": {
+          "mean": 0.03159487619996071,
+          "median": 0.0145289096981287,
+          "p95": 0.11536204069852829,
+          "max": 0.7610587477684021,
+          "count": 128
+        },
+        "inverse_boundary_hits": 1,
+        "mass_halving_position_endpoint": {
+          "mean": 0.14850285649299622,
+          "median": 0.019036177545785904,
+          "p95": 0.7928847074508667,
+          "max": 2.469407081604004,
+          "count": 128
+        },
+        "mass_halving_velocity_endpoint": {
+          "mean": 0.30845627188682556,
+          "median": 0.03894120454788208,
+          "p95": 1.6074358224868774,
+          "max": 4.981019973754883,
+          "count": 128
+        },
+        "mass_halving_outside_taught_range": 28,
+        "predictor_unchanged": true,
+        "task_specific_training_updates": 0
+      },
+      "planning": {
+        "position_error": {
+          "mean": 0.010079729370772839,
+          "median": 0.004138434771448374,
+          "p95": 0.0460333451628685,
+          "max": 0.06513268500566483,
+          "count": 24
+        },
+        "velocity_error": {
+          "mean": 0.015746207907795906,
+          "median": 0.012431124225258827,
+          "p95": 0.030275240540504456,
+          "max": 0.08532852679491043,
+          "count": 24
+        },
+        "success_at_5cm_and_5cm_per_s": 22,
+        "count": 24,
+        "force_limit": 8.0,
+        "iterations": 120,
+        "independent_solver": "DOP853",
+        "controls_optimized_not_predictor_weights": true
+      }
+    },
+    "dense-47": {
+      "checkpoint": {
+        "path": "runs\\FIELD-001\\dense-47\\step-03000.pt",
+        "sha256": "b2b517e9f4cdfcf3de1891d00a3dcfba42f1d677f36ccff94c891a7d53181e6e",
+        "weight_sha256": "075c8c77cfe01df019b71a517741af4bfc43894422e438b4828ccc0bd70c6107",
+        "step": 3000
+      },
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "finals": {
+        "interpolation": {
+          "mse": 0.0012160834157839417,
+          "nmse": 0.0014922737929602544,
+          "finite": true
+        },
+        "rotation": {
+          "mse": 0.05492566153407097,
+          "nmse": 0.0670787348473163,
+          "finite": true
+        },
+        "mass_extension": {
+          "mse": 0.013536331243813038,
+          "nmse": 0.12319608256372043,
+          "finite": true
+        }
+      },
+      "cross_use": {
+        "forward_position_endpoint": {
+          "mean": 0.10121175646781921,
+          "median": 0.05987429618835449,
+          "p95": 0.3223550617694855,
+          "max": 0.975249707698822,
+          "count": 128
+        },
+        "forward_velocity_endpoint": {
+          "mean": 0.20417311787605286,
+          "median": 0.12036147713661194,
+          "p95": 0.6379658579826355,
+          "max": 1.95596182346344,
+          "count": 128
+        },
+        "inverse_mass_relative_error": {
+          "mean": 0.1551266461610794,
+          "median": 0.059275150299072266,
+          "p95": 0.6567273139953613,
+          "max": 0.99724942445755,
+          "count": 128
+        },
+        "inverse_boundary_hits": 2,
+        "mass_halving_position_endpoint": {
+          "mean": 0.30996668338775635,
+          "median": 0.14990413188934326,
+          "p95": 1.0662603378295898,
+          "max": 3.2185606956481934,
+          "count": 128
+        },
+        "mass_halving_velocity_endpoint": {
+          "mean": 0.6258141994476318,
+          "median": 0.2969144284725189,
+          "p95": 2.153360366821289,
+          "max": 6.443431377410889,
+          "count": 128
+        },
+        "mass_halving_outside_taught_range": 28,
+        "predictor_unchanged": true,
+        "task_specific_training_updates": 0
+      },
+      "planning": {
+        "position_error": {
+          "mean": 0.14420442283153534,
+          "median": 0.04764622449874878,
+          "p95": 0.7231972217559814,
+          "max": 1.156437873840332,
+          "count": 24
+        },
+        "velocity_error": {
+          "mean": 0.2442210465669632,
+          "median": 0.11350894719362259,
+          "p95": 0.8510828018188477,
+          "max": 1.5523910522460938,
+          "count": 24
+        },
+        "success_at_5cm_and_5cm_per_s": 8,
+        "count": 24,
+        "force_limit": 8.0,
+        "iterations": 120,
+        "independent_solver": "DOP853",
+        "controls_optimized_not_predictor_weights": true
+      }
+    },
+    "invariant-47": {
+      "checkpoint": {
+        "path": "runs\\FIELD-001\\invariant-47\\step-03000.pt",
+        "sha256": "1159f049f35a910d222470c96217b17f72c01f12fb130c36669df0f413c6f479",
+        "weight_sha256": "b2c28bb53f95cdaf44fdd0ae1fabb3124089ce8a761e405801885de8a9d785b5",
+        "step": 3000
+      },
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "finals": {
+        "interpolation": {
+          "mse": 0.00010038973414339125,
+          "nmse": 0.00012318971494883552,
+          "finite": true
+        },
+        "rotation": {
+          "mse": 0.0001123189358622767,
+          "nmse": 0.00013717107644420148,
+          "finite": true
+        },
+        "mass_extension": {
+          "mse": 0.0002010633616009727,
+          "nmse": 0.001829906349820907,
+          "finite": true
+        }
+      },
+      "cross_use": {
+        "forward_position_endpoint": {
+          "mean": 0.005899065174162388,
+          "median": 0.004859108477830887,
+          "p95": 0.013005970045924187,
+          "max": 0.048636987805366516,
+          "count": 128
+        },
+        "forward_velocity_endpoint": {
+          "mean": 0.012135089375078678,
+          "median": 0.009288489818572998,
+          "p95": 0.028143849223852158,
+          "max": 0.1282328963279724,
+          "count": 128
+        },
+        "inverse_mass_relative_error": {
+          "mean": 0.013248451054096222,
+          "median": 0.007979433983564377,
+          "p95": 0.03864947706460953,
+          "max": 0.11787091195583344,
+          "count": 128
+        },
+        "inverse_boundary_hits": 0,
+        "mass_halving_position_endpoint": {
+          "mean": 0.0645383968949318,
+          "median": 0.008640697225928307,
+          "p95": 0.3169408440589905,
+          "max": 1.2884246110916138,
+          "count": 128
+        },
+        "mass_halving_velocity_endpoint": {
+          "mean": 0.14358431100845337,
+          "median": 0.018272515386343002,
+          "p95": 0.6894556879997253,
+          "max": 2.7124130725860596,
+          "count": 128
+        },
+        "mass_halving_outside_taught_range": 28,
+        "predictor_unchanged": true,
+        "task_specific_training_updates": 0
+      },
+      "planning": {
+        "position_error": {
+          "mean": 0.0035701266024261713,
+          "median": 0.0020691552199423313,
+          "p95": 0.011190849356353283,
+          "max": 0.013099325820803642,
+          "count": 24
+        },
+        "velocity_error": {
+          "mean": 0.004195414949208498,
+          "median": 0.0029701024759560823,
+          "p95": 0.007854381576180458,
+          "max": 0.025470132008194923,
+          "count": 24
+        },
+        "success_at_5cm_and_5cm_per_s": 24,
+        "count": 24,
+        "force_limit": 8.0,
+        "iterations": 120,
+        "independent_solver": "DOP853",
+        "controls_optimized_not_predictor_weights": true
+      }
+    }
+  },
+  "refinement": {
+    "fixed-11": {
+      "checkpoint": {
+        "path": "runs\\FIELD-001\\fixed-11\\step-02500.pt",
+        "sha256": "26c953689f34947ed236d2d15d881fa9fa49430d4d9cca0d882bae93fd9bf516",
+        "weight_sha256": "ffd596c82361d935969939ad5b9091588349be69d2c9d52b031a9435ab0cb36d",
+        "step": 2500
+      },
+      "parameters": {
+        "total": 1674,
+        "trainable": 891,
+        "persistent_tensor_bytes": 6696
+      },
+      "finals": {
+        "vacuum_context": {
+          "mse": 0.01951332576572895,
+          "base_mse": 0.0005417204229161143,
+          "count": 360,
+          "reduction_percent": -3502.1026603884566
+        },
+        "new_context": {
+          "mse": 0.022325808182358742,
+          "base_mse": 0.23449577391147614,
+          "count": 664,
+          "reduction_percent": 90.47922791530269
+        }
+      },
+      "base_hash_preserved": true,
+      "retained_without_new_context": {
+        "mse": 0.0004614917270373553,
+        "nmse": 0.0005636032471446215,
+        "finite": true
+      }
+    },
+    "expanded-11": {
+      "checkpoint": {
+        "path": "runs\\FIELD-001\\expanded-11\\step-02500.pt",
+        "sha256": "6b4285738114d4573c3ea5f7750a88a5fea30d5a95c4aae0c8dcfd6402873503",
+        "weight_sha256": "339a43ec49b2c83e6bf785b6d24a80f3d9e2c06524994afe03ea1a47344f2c40",
+        "step": 2500
+      },
+      "parameters": {
+        "total": 2314,
+        "trainable": 1531,
+        "persistent_tensor_bytes": 9256
+      },
+      "finals": {
+        "vacuum_context": {
+          "mse": 0.007554907351732254,
+          "base_mse": 0.0005417204229161143,
+          "count": 360,
+          "reduction_percent": -1294.613721790979
+        },
+        "new_context": {
+          "mse": 0.016324184834957123,
+          "base_mse": 0.23449577391147614,
+          "count": 664,
+          "reduction_percent": 93.03860169304389
+        }
+      },
+      "base_hash_preserved": true,
+      "retained_without_new_context": {
+        "mse": 0.0004614917270373553,
+        "nmse": 0.0005636032471446215,
+        "finite": true
+      }
+    },
+    "selected-11": {
+      "selection": {
+        "method": "expanded",
+        "qualified": true,
+        "new_context_base_mse": 0.3972744047641754,
+        "new_context_selected_mse": 0.0307859405875206,
+        "baseline_development_mse": 0.26937463879585266,
+        "selected": {
+          "path": "runs\\FIELD-001\\expanded-11\\step-02500.pt",
+          "sha256": "6b4285738114d4573c3ea5f7750a88a5fea30d5a95c4aae0c8dcfd6402873503",
+          "weight_sha256": "339a43ec49b2c83e6bf785b6d24a80f3d9e2c06524994afe03ea1a47344f2c40",
+          "step": 2500
+        },
+        "base_preserved": true,
+        "qualified_owner": {
+          "threshold": 46.46259439494906,
+          "accepted": true,
+          "development": {
+            "vacuum": {
+              "base": 0.0004570207674987614,
+              "ungated": 0.00805091392248869,
+              "gated": 0.0004609620664268732
+            },
+            "novel": {
+              "base": 0.39881086349487305,
+              "ungated": 0.04565253481268883,
+              "gated": 0.04565112292766571
+            }
+          },
+          "raw_checkpoint": {
+            "path": "runs\\FIELD-001\\expanded-11\\step-02500.pt",
+            "sha256": "6b4285738114d4573c3ea5f7750a88a5fea30d5a95c4aae0c8dcfd6402873503",
+            "weight_sha256": "339a43ec49b2c83e6bf785b6d24a80f3d9e2c06524994afe03ea1a47344f2c40",
+            "step": 2500
+          },
+          "mechanism": "calibrated context covariance",
+          "base_preserved": true,
+          "checkpoint": {
+            "path": "runs\\FIELD-001\\calibrated-11.pt",
+            "sha256": "ef27122ef2fe7d8ec29b95c9a9adb5deebd3540f9f40054b81faf016f4c72f8f",
+            "weight_sha256": "20c6d56f039df7b6bfdd16afdac4d323a76dff544441b52803637110f061ae7b",
+            "step": 2500
+          }
+        },
+        "qualification_attempts": [
+          {
+            "threshold": 0.005132039077579975,
+            "accepted": false,
+            "development": {
+              "vacuum": {
+                "base": 0.0003975154540967196,
+                "ungated": 0.008122802712023258,
+                "gated": 0.0003975154540967196
+              },
+              "novel": {
+                "base": 0.3972744047641754,
+                "ungated": 0.0307859405875206,
+                "gated": 0.038072701543569565
+              }
+            },
+            "raw_checkpoint": {
+              "path": "runs\\FIELD-001\\expanded-11\\step-02500.pt",
+              "sha256": "6b4285738114d4573c3ea5f7750a88a5fea30d5a95c4aae0c8dcfd6402873503",
+              "weight_sha256": "339a43ec49b2c83e6bf785b6d24a80f3d9e2c06524994afe03ea1a47344f2c40",
+              "step": 2500
+            },
+            "base_preserved": true,
+            "checkpoint": {
+              "path": "runs\\FIELD-001\\qualified-11.pt",
+              "sha256": "bc8887c6f51f69fd0ff95b8a9ee666a29aa3b7195c4262126371352c74739d43",
+              "weight_sha256": "94fa2af4c969ece74dcae4a6b0ec96a2c54e79fbbfd7ee15eaad3ad4b1516ef5",
+              "step": 2500
+            }
+          },
+          {
+            "threshold": 46.46259439494906,
+            "accepted": true,
+            "development": {
+              "vacuum": {
+                "base": 0.0004570207674987614,
+                "ungated": 0.00805091392248869,
+                "gated": 0.0004609620664268732
+              },
+              "novel": {
+                "base": 0.39881086349487305,
+                "ungated": 0.04565253481268883,
+                "gated": 0.04565112292766571
+              }
+            },
+            "raw_checkpoint": {
+              "path": "runs\\FIELD-001\\expanded-11\\step-02500.pt",
+              "sha256": "6b4285738114d4573c3ea5f7750a88a5fea30d5a95c4aae0c8dcfd6402873503",
+              "weight_sha256": "339a43ec49b2c83e6bf785b6d24a80f3d9e2c06524994afe03ea1a47344f2c40",
+              "step": 2500
+            },
+            "mechanism": "calibrated context covariance",
+            "base_preserved": true,
+            "checkpoint": {
+              "path": "runs\\FIELD-001\\calibrated-11.pt",
+              "sha256": "ef27122ef2fe7d8ec29b95c9a9adb5deebd3540f9f40054b81faf016f4c72f8f",
+              "weight_sha256": "20c6d56f039df7b6bfdd16afdac4d323a76dff544441b52803637110f061ae7b",
+              "step": 2500
+            }
+          }
+        ]
+      },
+      "qualified_context_finals": {
+        "vacuum_context": {
+          "mse": 0.0005426076822914183,
+          "count": 360
+        },
+        "new_context": {
+          "mse": 0.016330277547240257,
+          "count": 664
+        }
+      },
+      "investigation": {
+        "goal": "Predict this object's response and explain the missing influence using observed consequences",
+        "support_identity": "d129550b80ae859c4b965fcea6a19ca688f90751b5f70cda65c2ec41db07434e",
+        "probe": {
+          "index": 3,
+          "force": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "disagreement": 0.031473323702812195,
+          "distinct_predictions": 2,
+          "predictions": [
+            [
+              -0.5778947472572327,
+              -0.004162362776696682,
+              0.0007206675363704562
+            ],
+            [
+              -0.8563232421875,
+              0.17424163222312927,
+              -0.1278984397649765
+            ]
+          ],
+          "predictors": [
+            "7ab174f88be7ce74f79f3f2e8b78ecc455006845486ffb1df5b3ee36db4ccd3b",
+            "20c6d56f039df7b6bfdd16afdac4d323a76dff544441b52803637110f061ae7b"
+          ],
+          "policy": "fixed disagreement per cost"
+        },
+        "before_error": 2.8605623811017722e-05,
+        "after_error": 1.6968093632385717e-06,
+        "evidence": {
+          "identity": "c49cc49587c1ab333806800af8a02da33bb4d84d156d339ce3b3547973f40a95",
+          "goal": "Predict this object's response and explain the missing influence using observed consequences",
+          "decision": "chosen-probe",
+          "predictor_before": "7ab174f88be7ce74f79f3f2e8b78ecc455006845486ffb1df5b3ee36db4ccd3b",
+          "predictor_after": "20c6d56f039df7b6bfdd16afdac4d323a76dff544441b52803637110f061ae7b",
+          "source": "synthetic independent DOP853 physical oracle",
+          "observed": true,
+          "before_error": 2.8605623811017722e-05,
+          "after_error": 1.6968093632385717e-06,
+          "intended_force": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "actual_force": [
+            -1.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "credit": {
+          "awarded": true,
+          "credit": 2.690881444777915e-05,
+          "evidence": {
+            "identity": "c49cc49587c1ab333806800af8a02da33bb4d84d156d339ce3b3547973f40a95",
+            "goal": "Predict this object's response and explain the missing influence using observed consequences",
+            "decision": "chosen-probe",
+            "predictor_before": "7ab174f88be7ce74f79f3f2e8b78ecc455006845486ffb1df5b3ee36db4ccd3b",
+            "predictor_after": "20c6d56f039df7b6bfdd16afdac4d323a76dff544441b52803637110f061ae7b",
+            "source": "synthetic independent DOP853 physical oracle",
+            "observed": true,
+            "before_error": 2.8605623811017722e-05,
+            "after_error": 1.6968093632385717e-06,
+            "intended_force": [
+              -1.0,
+              -0.0,
+              -0.0
+            ],
+            "actual_force": [
+              -1.0,
+              -0.0,
+              -0.0
+            ]
+          }
+        },
+        "duplicate_credit": {
+          "awarded": false,
+          "reason": "evidence already credited"
+        },
+        "actuation_fault_detected": true,
+        "returned_answer": {
+          "velocity": [
+            1.082948923110962,
+            -0.6965460777282715,
+            0.4974663257598877
+          ],
+          "independent_velocity": [
+            1.0811158418655396,
+            -0.6954451203346252,
+            0.4967465102672577
+          ],
+          "qualification": "independent simulated intervention in this observed context",
+          "explanation": "The successor uses measured support residuals to condition the same learned physical field. Its new prediction was checked against a separately integrated intervention."
+        }
+      }
+    },
+    "fixed-29": {
+      "checkpoint": {
+        "path": "runs\\FIELD-001\\fixed-29\\step-03000.pt",
+        "sha256": "9e0623a3dac5fcbdda3be16f960f3a4423fadf9887323385dac4e6466f6ebd5b",
+        "weight_sha256": "125155a4177d7d9868f1441d66c75646846770c96c33551b47fe578cf7477a33",
+        "step": 3000
+      },
+      "parameters": {
+        "total": 1674,
+        "trainable": 891,
+        "persistent_tensor_bytes": 6696
+      },
+      "finals": {
+        "vacuum_context": {
+          "mse": 0.030995022505521774,
+          "base_mse": 0.000736940186470747,
+          "count": 360,
+          "reduction_percent": -4105.907490804497
+        },
+        "new_context": {
+          "mse": 0.022619394585490227,
+          "base_mse": 0.23257224261760712,
+          "count": 664,
+          "reduction_percent": 90.27425012937559
+        }
+      },
+      "base_hash_preserved": true,
+      "retained_without_new_context": {
+        "mse": 0.0005966692115180194,
+        "nmse": 0.0007286906468326706,
+        "finite": true
+      }
+    },
+    "expanded-29": {
+      "checkpoint": {
+        "path": "runs\\FIELD-001\\expanded-29\\step-03000.pt",
+        "sha256": "f81d31cdc291f7ae64b4f19e6c19d9891627bba60617f236e14e28162916e5f6",
+        "weight_sha256": "9e4e96f4d260b8802e5d9eb1760f2ebdc87100661834132bd29af11b8f244475",
+        "step": 3000
+      },
+      "parameters": {
+        "total": 2314,
+        "trainable": 1531,
+        "persistent_tensor_bytes": 9256
+      },
+      "finals": {
+        "vacuum_context": {
+          "mse": 0.013113084249198437,
+          "base_mse": 0.000736940186470747,
+          "count": 360,
+          "reduction_percent": -1679.3960066145696
+        },
+        "new_context": {
+          "mse": 0.01651920937001705,
+          "base_mse": 0.23257224261760712,
+          "count": 664,
+          "reduction_percent": 92.8971707095856
+        }
+      },
+      "base_hash_preserved": true,
+      "retained_without_new_context": {
+        "mse": 0.0005966692115180194,
+        "nmse": 0.0007286906468326706,
+        "finite": true
+      }
+    },
+    "selected-29": {
+      "selection": {
+        "method": "expanded",
+        "qualified": true,
+        "new_context_base_mse": 0.3954002559185028,
+        "new_context_selected_mse": 0.029137589037418365,
+        "baseline_development_mse": 0.26814544200897217,
+        "selected": {
+          "path": "runs\\FIELD-001\\expanded-29\\step-03000.pt",
+          "sha256": "f81d31cdc291f7ae64b4f19e6c19d9891627bba60617f236e14e28162916e5f6",
+          "weight_sha256": "9e4e96f4d260b8802e5d9eb1760f2ebdc87100661834132bd29af11b8f244475",
+          "step": 3000
+        },
+        "base_preserved": true,
+        "qualified_owner": {
+          "threshold": 47.11619528148642,
+          "accepted": true,
+          "development": {
+            "vacuum": {
+              "base": 0.000813641760032624,
+              "ungated": 0.014609895646572113,
+              "gated": 0.0008137425174936652
+            },
+            "novel": {
+              "base": 0.3995901942253113,
+              "ungated": 0.04538742080330849,
+              "gated": 0.045391328632831573
+            }
+          },
+          "raw_checkpoint": {
+            "path": "runs\\FIELD-001\\expanded-29\\step-03000.pt",
+            "sha256": "f81d31cdc291f7ae64b4f19e6c19d9891627bba60617f236e14e28162916e5f6",
+            "weight_sha256": "9e4e96f4d260b8802e5d9eb1760f2ebdc87100661834132bd29af11b8f244475",
+            "step": 3000
+          },
+          "mechanism": "calibrated context covariance",
+          "base_preserved": true,
+          "checkpoint": {
+            "path": "runs\\FIELD-001\\calibrated-29.pt",
+            "sha256": "808dcc3f43ec4502af7d752d324e52d91381afad35a43db186fa6e75616318c3",
+            "weight_sha256": "84ffc4fb0fde043ccde163672da7da2f7173555bba1a2c045d5b7f2f02a47107",
+            "step": 3000
+          }
+        },
+        "qualification_attempts": [
+          {
+            "threshold": 0.006115374155342579,
+            "accepted": false,
+            "development": {
+              "vacuum": {
+                "base": 0.0005246681394055486,
+                "ungated": 0.015518528409302235,
+                "gated": 0.0005246681394055486
+              },
+              "novel": {
+                "base": 0.3954002559185028,
+                "ungated": 0.029137589037418365,
+                "gated": 0.03658442571759224
+              }
+            },
+            "raw_checkpoint": {
+              "path": "runs\\FIELD-001\\expanded-29\\step-03000.pt",
+              "sha256": "f81d31cdc291f7ae64b4f19e6c19d9891627bba60617f236e14e28162916e5f6",
+              "weight_sha256": "9e4e96f4d260b8802e5d9eb1760f2ebdc87100661834132bd29af11b8f244475",
+              "step": 3000
+            },
+            "base_preserved": true,
+            "checkpoint": {
+              "path": "runs\\FIELD-001\\qualified-29.pt",
+              "sha256": "a8473a772ad83acdbcd11c9abc7c53eb3596187ab8ef5a112dd1d137c0fe02e0",
+              "weight_sha256": "4858908d943e3192b32ff9b57189b28ee63ed1ca81f7adbfbe7acb00ff55616d",
+              "step": 3000
+            }
+          },
+          {
+            "threshold": 47.11619528148642,
+            "accepted": true,
+            "development": {
+              "vacuum": {
+                "base": 0.000813641760032624,
+                "ungated": 0.014609895646572113,
+                "gated": 0.0008137425174936652
+              },
+              "novel": {
+                "base": 0.3995901942253113,
+                "ungated": 0.04538742080330849,
+                "gated": 0.045391328632831573
+              }
+            },
+            "raw_checkpoint": {
+              "path": "runs\\FIELD-001\\expanded-29\\step-03000.pt",
+              "sha256": "f81d31cdc291f7ae64b4f19e6c19d9891627bba60617f236e14e28162916e5f6",
+              "weight_sha256": "9e4e96f4d260b8802e5d9eb1760f2ebdc87100661834132bd29af11b8f244475",
+              "step": 3000
+            },
+            "mechanism": "calibrated context covariance",
+            "base_preserved": true,
+            "checkpoint": {
+              "path": "runs\\FIELD-001\\calibrated-29.pt",
+              "sha256": "808dcc3f43ec4502af7d752d324e52d91381afad35a43db186fa6e75616318c3",
+              "weight_sha256": "84ffc4fb0fde043ccde163672da7da2f7173555bba1a2c045d5b7f2f02a47107",
+              "step": 3000
+            }
+          }
+        ]
+      },
+      "qualified_context_finals": {
+        "vacuum_context": {
+          "mse": 0.0007520997896790504,
+          "count": 360
+        },
+        "new_context": {
+          "mse": 0.01656864956021309,
+          "count": 664
+        }
+      },
+      "investigation": {
+        "goal": "Predict this object's response and explain the missing influence using observed consequences",
+        "support_identity": "1a5b8062ea0d390e3d29e9a3e28a989a021a110e4929426b9d5975f68568aa1d",
+        "probe": {
+          "index": 9,
+          "force": [
+            -3.0,
+            -0.0,
+            -0.0
+          ],
+          "disagreement": 0.06424745172262192,
+          "distinct_predictions": 2,
+          "predictions": [
+            [
+              -1.7613530158996582,
+              0.003248029388487339,
+              -0.0049282945692539215
+            ],
+            [
+              -2.1568045616149902,
+              0.2615193724632263,
+              -0.18905818462371826
+            ]
+          ],
+          "predictors": [
+            "954dff88261d370f260e4b22a1dec02f68c84d74c9da2cb03f0a1def0063d516",
+            "84ffc4fb0fde043ccde163672da7da2f7173555bba1a2c045d5b7f2f02a47107"
+          ],
+          "policy": "fixed disagreement per cost"
+        },
+        "before_error": 2.6495165002415888e-05,
+        "after_error": 3.043778633582406e-07,
+        "evidence": {
+          "identity": "3fbe96a4d692957529bd47e9be0355c8f4c3d8323fb63126f4746691ac077faf",
+          "goal": "Predict this object's response and explain the missing influence using observed consequences",
+          "decision": "chosen-probe",
+          "predictor_before": "954dff88261d370f260e4b22a1dec02f68c84d74c9da2cb03f0a1def0063d516",
+          "predictor_after": "84ffc4fb0fde043ccde163672da7da2f7173555bba1a2c045d5b7f2f02a47107",
+          "source": "synthetic independent DOP853 physical oracle",
+          "observed": true,
+          "before_error": 2.6495165002415888e-05,
+          "after_error": 3.043778633582406e-07,
+          "intended_force": [
+            -3.0,
+            -0.0,
+            -0.0
+          ],
+          "actual_force": [
+            -3.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "credit": {
+          "awarded": true,
+          "credit": 2.6190787139057647e-05,
+          "evidence": {
+            "identity": "3fbe96a4d692957529bd47e9be0355c8f4c3d8323fb63126f4746691ac077faf",
+            "goal": "Predict this object's response and explain the missing influence using observed consequences",
+            "decision": "chosen-probe",
+            "predictor_before": "954dff88261d370f260e4b22a1dec02f68c84d74c9da2cb03f0a1def0063d516",
+            "predictor_after": "84ffc4fb0fde043ccde163672da7da2f7173555bba1a2c045d5b7f2f02a47107",
+            "source": "synthetic independent DOP853 physical oracle",
+            "observed": true,
+            "before_error": 2.6495165002415888e-05,
+            "after_error": 3.043778633582406e-07,
+            "intended_force": [
+              -3.0,
+              -0.0,
+              -0.0
+            ],
+            "actual_force": [
+              -3.0,
+              -0.0,
+              -0.0
+            ]
+          }
+        },
+        "duplicate_credit": {
+          "awarded": false,
+          "reason": "evidence already credited"
+        },
+        "actuation_fault_detected": true,
+        "returned_answer": {
+          "velocity": [
+            1.0571345090866089,
+            -0.694877028465271,
+            0.49629339575767517
+          ],
+          "independent_velocity": [
+            1.0577090978622437,
+            -0.695475161075592,
+            0.49676796793937683
+          ],
+          "qualification": "independent simulated intervention in this observed context",
+          "explanation": "The successor uses measured support residuals to condition the same learned physical field. Its new prediction was checked against a separately integrated intervention."
+        }
+      }
+    },
+    "fixed-47": {
+      "checkpoint": {
+        "path": "runs\\FIELD-001\\fixed-47\\step-03000.pt",
+        "sha256": "451ba9013c150f4950affc2a7569ebc145c61a743dc97cf2abdee8e06e0d1df1",
+        "weight_sha256": "7d9ce130c34a7caa2f49cb429c226348bedf925f81a9cd104e1edb9c1baa96a5",
+        "step": 3000
+      },
+      "parameters": {
+        "total": 1674,
+        "trainable": 891,
+        "persistent_tensor_bytes": 6696
+      },
+      "finals": {
+        "vacuum_context": {
+          "mse": 0.02465914376080036,
+          "base_mse": 0.0005454350612126291,
+          "count": 360,
+          "reduction_percent": -4421.004518113916
+        },
+        "new_context": {
+          "mse": 0.02190445177257061,
+          "base_mse": 0.23358803987503052,
+          "count": 664,
+          "reduction_percent": 90.62261416111481
+        }
+      },
+      "base_hash_preserved": true,
+      "retained_without_new_context": {
+        "mse": 0.00045729856356047094,
+        "nmse": 0.0005584822874113845,
+        "finite": true
+      }
+    },
+    "expanded-47": {
+      "checkpoint": {
+        "path": "runs\\FIELD-001\\expanded-47\\step-03000.pt",
+        "sha256": "44173c6806fdbef21c28def0fba45221bf8d04bae0ff806dac6fba6d3cbfc64e",
+        "weight_sha256": "0b7fec0469a8726be9b0ddafa602f59888153428e37551c38a07ae0003656667",
+        "step": 3000
+      },
+      "parameters": {
+        "total": 2314,
+        "trainable": 1531,
+        "persistent_tensor_bytes": 9256
+      },
+      "finals": {
+        "vacuum_context": {
+          "mse": 0.01936783641576767,
+          "base_mse": 0.0005454350612126291,
+          "count": 360,
+          "reduction_percent": -3450.896851535078
+        },
+        "new_context": {
+          "mse": 0.019877728074789047,
+          "base_mse": 0.23358803987503052,
+          "count": 664,
+          "reduction_percent": 91.49026290668665
+        }
+      },
+      "base_hash_preserved": true,
+      "retained_without_new_context": {
+        "mse": 0.00045729856356047094,
+        "nmse": 0.0005584822874113845,
+        "finite": true
+      }
+    },
+    "selected-47": {
+      "selection": {
+        "method": "fixed",
+        "qualified": true,
+        "new_context_base_mse": 0.3953724205493927,
+        "new_context_selected_mse": 0.047110021114349365,
+        "baseline_development_mse": 0.2680717706680298,
+        "selected": {
+          "path": "runs\\FIELD-001\\fixed-47\\step-03000.pt",
+          "sha256": "451ba9013c150f4950affc2a7569ebc145c61a743dc97cf2abdee8e06e0d1df1",
+          "weight_sha256": "7d9ce130c34a7caa2f49cb429c226348bedf925f81a9cd104e1edb9c1baa96a5",
+          "step": 3000
+        },
+        "base_preserved": true,
+        "qualified_owner": {
+          "threshold": 48.058915052663906,
+          "accepted": true,
+          "development": {
+            "vacuum": {
+              "base": 0.0004068800189998001,
+              "ungated": 0.022909710183739662,
+              "gated": 0.0004082231898792088
+            },
+            "novel": {
+              "base": 0.3995966613292694,
+              "ungated": 0.05291835963726044,
+              "gated": 0.05291863530874252
+            }
+          },
+          "raw_checkpoint": {
+            "path": "runs\\FIELD-001\\fixed-47\\step-03000.pt",
+            "sha256": "451ba9013c150f4950affc2a7569ebc145c61a743dc97cf2abdee8e06e0d1df1",
+            "weight_sha256": "7d9ce130c34a7caa2f49cb429c226348bedf925f81a9cd104e1edb9c1baa96a5",
+            "step": 3000
+          },
+          "mechanism": "calibrated context covariance",
+          "base_preserved": true,
+          "checkpoint": {
+            "path": "runs\\FIELD-001\\calibrated-47.pt",
+            "sha256": "25c3b074819984f78fdbeda82947d14d6e06b38027974d6cd34a4704b7864534",
+            "weight_sha256": "b82c9f1af11ac9fef323222365698c5d1d8d33aa4fd07caf34a8fd662e1cfa7c",
+            "step": 3000
+          }
+        },
+        "qualification_attempts": [
+          {
+            "threshold": 0.0027702830266207457,
+            "accepted": true,
+            "development": {
+              "vacuum": {
+                "base": 0.00035461282823234797,
+                "ungated": 0.02052372694015503,
+                "gated": 0.00035461282823234797
+              },
+              "novel": {
+                "base": 0.3953724205493927,
+                "ungated": 0.047110021114349365,
+                "gated": 0.04799966141581535
+              }
+            },
+            "raw_checkpoint": {
+              "path": "runs\\FIELD-001\\fixed-47\\step-03000.pt",
+              "sha256": "451ba9013c150f4950affc2a7569ebc145c61a743dc97cf2abdee8e06e0d1df1",
+              "weight_sha256": "7d9ce130c34a7caa2f49cb429c226348bedf925f81a9cd104e1edb9c1baa96a5",
+              "step": 3000
+            },
+            "base_preserved": true,
+            "checkpoint": {
+              "path": "runs\\FIELD-001\\qualified-47.pt",
+              "sha256": "4ba1149635ab255682ce39423d265a35d50c9717b2715504a62b4d726ca58329",
+              "weight_sha256": "e94d28a636cf8c2c567cd081ab0b88c6ae24138258c1a692af409870a6293870",
+              "step": 3000
+            }
+          },
+          {
+            "threshold": 48.058915052663906,
+            "accepted": true,
+            "development": {
+              "vacuum": {
+                "base": 0.0004068800189998001,
+                "ungated": 0.022909710183739662,
+                "gated": 0.0004082231898792088
+              },
+              "novel": {
+                "base": 0.3995966613292694,
+                "ungated": 0.05291835963726044,
+                "gated": 0.05291863530874252
+              }
+            },
+            "raw_checkpoint": {
+              "path": "runs\\FIELD-001\\fixed-47\\step-03000.pt",
+              "sha256": "451ba9013c150f4950affc2a7569ebc145c61a743dc97cf2abdee8e06e0d1df1",
+              "weight_sha256": "7d9ce130c34a7caa2f49cb429c226348bedf925f81a9cd104e1edb9c1baa96a5",
+              "step": 3000
+            },
+            "mechanism": "calibrated context covariance",
+            "base_preserved": true,
+            "checkpoint": {
+              "path": "runs\\FIELD-001\\calibrated-47.pt",
+              "sha256": "25c3b074819984f78fdbeda82947d14d6e06b38027974d6cd34a4704b7864534",
+              "weight_sha256": "b82c9f1af11ac9fef323222365698c5d1d8d33aa4fd07caf34a8fd662e1cfa7c",
+              "step": 3000
+            }
+          }
+        ]
+      },
+      "qualified_context_finals": {
+        "vacuum_context": {
+          "mse": 0.000552118057385087,
+          "count": 360
+        },
+        "new_context": {
+          "mse": 0.02195528894662857,
+          "count": 664
+        }
+      },
+      "investigation": {
+        "goal": "Predict this object's response and explain the missing influence using observed consequences",
+        "support_identity": "fcf3f19c78ed162c166a38d6b49aa524f8afd2d5333c4f8647b80942c137cce9",
+        "probe": {
+          "index": 5,
+          "force": [
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "disagreement": 0.13595415651798248,
+          "distinct_predictions": 2,
+          "predictions": [
+            [
+              0.010342472232878208,
+              -0.005138134118169546,
+              -0.5935227870941162
+            ],
+            [
+              -0.5716275572776794,
+              0.3636763393878937,
+              -0.8563979864120483
+            ]
+          ],
+          "predictors": [
+            "87f6c679bccce80a7ba25590331745084856cd97e189bda5ac51e2883b6b3a38",
+            "b82c9f1af11ac9fef323222365698c5d1d8d33aa4fd07caf34a8fd662e1cfa7c"
+          ],
+          "policy": "fixed disagreement per cost"
+        },
+        "before_error": 2.863245208573062e-05,
+        "after_error": 9.545831744617317e-06,
+        "evidence": {
+          "identity": "968bdf5922baa54769349b07990e9f5306cd604948cc4e631a4d7d828b0a3709",
+          "goal": "Predict this object's response and explain the missing influence using observed consequences",
+          "decision": "chosen-probe",
+          "predictor_before": "87f6c679bccce80a7ba25590331745084856cd97e189bda5ac51e2883b6b3a38",
+          "predictor_after": "b82c9f1af11ac9fef323222365698c5d1d8d33aa4fd07caf34a8fd662e1cfa7c",
+          "source": "synthetic independent DOP853 physical oracle",
+          "observed": true,
+          "before_error": 2.863245208573062e-05,
+          "after_error": 9.545831744617317e-06,
+          "intended_force": [
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "actual_force": [
+            -0.0,
+            -0.0,
+            -1.0
+          ]
+        },
+        "credit": {
+          "awarded": true,
+          "credit": 1.9086620341113303e-05,
+          "evidence": {
+            "identity": "968bdf5922baa54769349b07990e9f5306cd604948cc4e631a4d7d828b0a3709",
+            "goal": "Predict this object's response and explain the missing influence using observed consequences",
+            "decision": "chosen-probe",
+            "predictor_before": "87f6c679bccce80a7ba25590331745084856cd97e189bda5ac51e2883b6b3a38",
+            "predictor_after": "b82c9f1af11ac9fef323222365698c5d1d8d33aa4fd07caf34a8fd662e1cfa7c",
+            "source": "synthetic independent DOP853 physical oracle",
+            "observed": true,
+            "before_error": 2.863245208573062e-05,
+            "after_error": 9.545831744617317e-06,
+            "intended_force": [
+              -0.0,
+              -0.0,
+              -1.0
+            ],
+            "actual_force": [
+              -0.0,
+              -0.0,
+              -1.0
+            ]
+          }
+        },
+        "duplicate_credit": {
+          "awarded": false,
+          "reason": "evidence already credited"
+        },
+        "actuation_fault_detected": true,
+        "returned_answer": {
+          "velocity": [
+            1.088654637336731,
+            -0.6927813291549683,
+            0.48297521471977234
+          ],
+          "independent_velocity": [
+            1.0928293466567993,
+            -0.6954368352890015,
+            0.4850142300128937
+          ],
+          "qualification": "independent simulated intervention in this observed context",
+          "explanation": "The successor uses measured support residuals to condition the same learned physical field. Its new prediction was checked against a separately integrated intervention."
+        }
+      }
+    }
+  },
+  "strong_classical_power_control": {
+    "learned_coefficients": [
+      -3.2684530082427443e-10,
+      -1.0
+    ],
+    "parameters_fitted": 2,
+    "supplied_structure": "isotropic scalar power law, least-squares log fit",
+    "finals": {
+      "interpolation": {
+        "mse": 2.72370241629022e-15,
+        "nmse": 3.3422951772039847e-15,
+        "finite": true
+      },
+      "rotation": {
+        "mse": 2.731929647306901e-15,
+        "nmse": 3.336407415312555e-15,
+        "finite": true
+      },
+      "mass_extension": {
+        "mse": 4.850060363396881e-16,
+        "nmse": 4.414109157096531e-15,
+        "finite": true
+      }
+    },
+    "cross_use": {
+      "forward_position_endpoint": {
+        "mean": 8.29412442726607e-07,
+        "median": 7.473021241821698e-07,
+        "p95": 1.9378189790586475e-06,
+        "max": 3.2325560823665e-06,
+        "count": 128
+      },
+      "forward_velocity_endpoint": {
+        "mean": 7.224255114124389e-07,
+        "median": 6.187118515299517e-07,
+        "p95": 1.6300640481858863e-06,
+        "max": 2.783647005344392e-06,
+        "count": 128
+      },
+      "inverse_mass_relative_error": {
+        "mean": 0.0017659442964941263,
+        "median": 0.0014368518022820354,
+        "p95": 0.0048987832851707935,
+        "max": 0.008224227465689182,
+        "count": 128
+      },
+      "inverse_boundary_hits": 0,
+      "mass_halving_position_endpoint": {
+        "mean": 7.864014150982257e-07,
+        "median": 7.251218221426825e-07,
+        "p95": 1.4745863836651552e-06,
+        "max": 2.4635185127408477e-06,
+        "count": 128
+      },
+      "mass_halving_velocity_endpoint": {
+        "mean": 8.054170166360564e-07,
+        "median": 7.442168907800806e-07,
+        "p95": 1.8145898366128677e-06,
+        "max": 2.7906178274861304e-06,
+        "count": 128
+      },
+      "mass_halving_outside_taught_range": 28,
+      "predictor_unchanged": true,
+      "task_specific_training_updates": 0
+    },
+    "planning": {
+      "position_error": {
+        "mean": 0.0013595992932096124,
+        "median": 0.0004975249757990241,
+        "p95": 0.0010811852989718318,
+        "max": 0.02011164277791977,
+        "count": 24
+      },
+      "velocity_error": {
+        "mean": 0.0022805160842835903,
+        "median": 0.0006834304076619446,
+        "p95": 0.0013812356628477573,
+        "max": 0.0386677049100399,
+        "count": 24
+      },
+      "success_at_5cm_and_5cm_per_s": 24,
+      "count": 24,
+      "force_limit": 8.0,
+      "iterations": 120,
+      "independent_solver": "DOP853",
+      "controls_optimized_not_predictor_weights": true
+    }
+  }
+}

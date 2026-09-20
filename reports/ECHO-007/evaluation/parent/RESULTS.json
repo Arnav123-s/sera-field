@@ -1,0 +1,76 @@
+{
+  "selection": {
+    "score": 0.5011824930760271,
+    "step": 6144,
+    "sha256": "e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3",
+    "revision": "e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3.pt",
+    "parent": "a6d25b800195b156cbd8318ad12fda1491175611ab0d58e3878ee6b39145bcbf",
+    "weights": "528a08f2bb6f5b6e640c416506b14c06bcffe626f749276b24b3817791bd2ae4",
+    "updates": 753,
+    "teacher_checkpoint_sha256": "eff092ad1143fd6745350ffd86d06b23d444b3eb16acd4a322a41cbd659918f1",
+    "source_checkpoint_sha256": "ed7585015a748900a970fbb5dcee7f027fd917c4336e3ff6d6c1687b22c77061",
+    "reward_training_attempts": 768,
+    "purpose": "One taught owner with qualified learned investigation weights; full resumable state remains in source runs."
+  },
+  "weights_before": "528a08f2bb6f5b6e640c416506b14c06bcffe626f749276b24b3817791bd2ae4",
+  "reading": {
+    "n": 512,
+    "accuracy": 0.701171875,
+    "multi_sentence_n": 501,
+    "multi_sentence_accuracy": 0.6946107784431138,
+    "top3_evidence_recall": 0.927734375,
+    "lexical_baseline_accuracy": 0.65625,
+    "loss": 0.8316822946071625
+  },
+  "math": {
+    "all_continuations": {
+      "n": 256,
+      "numeric_top1": 0.1171875,
+      "numeric_top5": 0.38671875,
+      "human_expression_top1": 0.11328125,
+      "human_expression_top5": 0.34375
+    },
+    "original_one_step": {
+      "n": 0,
+      "numeric_top1": 0.0,
+      "numeric_top5": 0.0,
+      "human_expression_top1": 0.0,
+      "human_expression_top5": 0.0
+    },
+    "scope": "Executable binary arithmetic proposals; teacher-forced continuations reported separately.",
+    "loss": 3.8628735840320587
+  },
+  "pairs": {
+    "dailydialog": {
+      "n": 64,
+      "accuracy": 0.296875,
+      "loss": 1.6325707733631134
+    },
+    "webster": {
+      "n": 64,
+      "accuracy": 0.671875,
+      "loss": 0.7242270708084106
+    }
+  },
+  "physics": {
+    "n": 512,
+    "mse": 0.10797669980763658
+  },
+  "motion": {
+    "n": 128,
+    "completed": 128,
+    "mse": 0.05277498829744898
+  },
+  "inquiry": {
+    "n": 256,
+    "before_mse": 0.1473487109473126,
+    "after_mse": 0.06776112751572327,
+    "mean_absolute_progress": 0.07958758343158934,
+    "fraction_improved": 0.66796875,
+    "relative_mse_reduction": 0.5401308428144134,
+    "original_goals_returned": 256,
+    "failed_actuators": 6,
+    "probe_count": 256
+  },
+  "weights_after": "528a08f2bb6f5b6e640c416506b14c06bcffe626f749276b24b3817791bd2ae4"
+}

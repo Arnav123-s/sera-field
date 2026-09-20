@@ -1,0 +1,44 @@
+{
+  "protocol_sha256": "5aa37f810ca6b9c01832a4570fd76b3a78ae1ed18aa48ce32506ce3695ccd925",
+  "selections": {
+    "full": {
+      "sha256": "1fd66b986f885bb0fdbd69322e0bbee0cd444a35eb4fd12c359c02dfa566ee41",
+      "revision": "1fd66b986f885bb0fdbd69322e0bbee0cd444a35eb4fd12c359c02dfa566ee41.pt",
+      "parent": "b8b220f4270ae46cb15b11d2322d6158fbc836325eee2a159c11f32a710289c3",
+      "weights": "aa3618f9851fc2081b0d3b4a943110255ea067d14cec9ff780b0a1df0fc50184",
+      "updates": 0,
+      "step": 4096,
+      "score": 0.1366135412710719
+    },
+    "diagonal": {
+      "sha256": "eea9146e9165c190ff4b5f3a6f6eeac4df0813727221da08ff9d7870b43c9507",
+      "revision": "eea9146e9165c190ff4b5f3a6f6eeac4df0813727221da08ff9d7870b43c9507.pt",
+      "parent": "9a88a419ab34d09bdba66eebc5236541cad611f6575707ab23e4bd913ae66f9a",
+      "weights": "f5b8d2925271ba5db24ce2ed2e61bbff36afe229cc60a0d6525f9baf4e1602fa",
+      "updates": 0,
+      "step": 4096,
+      "score": 0.20902467293199153
+    },
+    "reward": {
+      "sha256": "92408d2afe62dde09b0742308fd24c31f723ec38ac8620415aa47ea5a3a9ce0c",
+      "revision": "92408d2afe62dde09b0742308fd24c31f723ec38ac8620415aa47ea5a3a9ce0c.pt",
+      "parent": "4d8ff9ea995ea8d27c2ea26a1b777ad4f8e69f166fe2a99d0a43618aa2acda8d",
+      "weights": "4c9b61a2ad676fe857963f1887dd970f9b616042ea0596f1a6d830e2744d5ae0",
+      "updates": 754,
+      "step": 768,
+      "score": 0.18000489859514346
+    },
+    "parent": {
+      "sha256": "b8428610ee13211547ee83f9c741cc01c9fcd5581b8a10f25cb6f5b2e14d4ae1",
+      "revision": "b8428610ee13211547ee83f9c741cc01c9fcd5581b8a10f25cb6f5b2e14d4ae1.pt",
+      "parent": "0e09e802635cf73d01d0ff0d6948b8b247f42eb670030bf2a94c40f510c9d41c",
+      "weights": "6bb452bbb714d068925180aacc03cbc48ef296410361ceb990e1c50edd291a85",
+      "updates": 0,
+      "score": 0.9841417740395529,
+      "step": 1024,
+      "source_checkpoint_sha256": "3c56af8d17aefdd745f781d3ea196114b4d3d0a9100cc863668776b12f296743",
+      "role": "qualified_optional_successor"
+    }
+  },
+  "teaching_choice": "full"
+}

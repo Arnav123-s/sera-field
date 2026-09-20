@@ -1,0 +1,14 @@
+{
+  "question": "Explain the acceleration effect of higher control input.",
+  "operating_point": [
+    0.5,
+    1.0
+  ],
+  "predict": [
+    [
+      0.5,
+      1.5
+    ]
+  ],
+  "name": "reuse the acquired relationship"
+}

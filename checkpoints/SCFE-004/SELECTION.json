@@ -1,0 +1,13 @@
+{
+  "score": 0.5011824930760271,
+  "step": 6144,
+  "sha256": "e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3",
+  "revision": "e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3.pt",
+  "parent": "a6d25b800195b156cbd8318ad12fda1491175611ab0d58e3878ee6b39145bcbf",
+  "weights": "528a08f2bb6f5b6e640c416506b14c06bcffe626f749276b24b3817791bd2ae4",
+  "updates": 753,
+  "teacher_checkpoint_sha256": "eff092ad1143fd6745350ffd86d06b23d444b3eb16acd4a322a41cbd659918f1",
+  "source_checkpoint_sha256": "ed7585015a748900a970fbb5dcee7f027fd917c4336e3ff6d6c1687b22c77061",
+  "reward_training_attempts": 768,
+  "purpose": "One taught owner with qualified learned investigation weights; full resumable state remains in source runs."
+}

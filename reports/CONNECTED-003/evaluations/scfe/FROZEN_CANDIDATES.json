@@ -1,0 +1,59 @@
+{
+  "teaching": {
+    "score": 0.5011824930760271,
+    "step": 6144,
+    "sha256": "eff092ad1143fd6745350ffd86d06b23d444b3eb16acd4a322a41cbd659918f1",
+    "revision": "eff092ad1143fd6745350ffd86d06b23d444b3eb16acd4a322a41cbd659918f1.pt",
+    "parent": "eeb9f0512704b9996247b308fe6ac69a63e299f969a68b1d84808b26cc891fad",
+    "weights": "cdb4936fad6098b3572f3b7dba935e3cbe9356b6357fe28f1d951d92573c13b3",
+    "updates": 0
+  },
+  "reward_arms": {
+    "verified_reward": {
+      "sha256": "92145f6577697b3c81713a6da6b0e13dde85eb89415ed40ce3bc2917425ccc68",
+      "revision": "92145f6577697b3c81713a6da6b0e13dde85eb89415ed40ce3bc2917425ccc68.pt",
+      "parent": "d9aad86e9d22147208986966857676ace8caccae711578f9e2da54ff02a7d6e8",
+      "weights": "7b50c94039b1841a99d606ae516ade1a9d88bdab7ca34674c0e247a49772822f",
+      "updates": 2011
+    },
+    "reward_disconnected": {
+      "sha256": "8da484a605ad1c9c0a79bdd6e3cc30084a642ee77e5af4d2b7cd19378fb13ed7",
+      "revision": "8da484a605ad1c9c0a79bdd6e3cc30084a642ee77e5af4d2b7cd19378fb13ed7.pt",
+      "parent": "64716518bca53d1cdce717cf316d80260614841b839979eea82dea79b371bb7a",
+      "weights": "cdb4936fad6098b3572f3b7dba935e3cbe9356b6357fe28f1d951d92573c13b3",
+      "updates": 0
+    }
+  },
+  "data_manifest": "7d7549e003282013dd3bacb277c6734da9de7915a1676405449cf7edd4ea892a",
+  "split_audit": "4632132f332b804135e722403a6090e03c7ebb134bdfa121c80982ac3a54dd20",
+  "evaluator": "dc7e6c5c9430341c41c16139538613606b90b1d31900b9bd6b6ee579bbd69e65",
+  "runtime_sources": {
+    "grounded_owner": "749448dcb575b7d8ffaeba349a003206db889729ef10db5982f99932bb2f64af",
+    "clifford_sheaf": "90dfb74e31578939119a3ab34c4ae3c6c8b1bd0d6b99503a110d917ea1f838a9",
+    "scfe_owner": "8e5248fc464cb534a281f5f14046771404e39d2e37cb301f853de43e00e49e30",
+    "study_world": "59f6994418078d0d65fe03476ec2f7b2cd36c3a57af698aa5b84c47370d95ac7",
+    "study_inquiry": "ab4a5ae9d380b05f75a8ddeae0b65f995a947254af58e762eb881ca08c018bbb",
+    "study_evaluation": "dc7e6c5c9430341c41c16139538613606b90b1d31900b9bd6b6ee579bbd69e65",
+    "study_registration": "5bb3a24b06f9b2f1bde93b9976d02b63121329497c1aa38e022dcd64dd2b2795",
+    "study_data": "f7d173967d9f16fda350737a28455bf69e33a9c102a614d255b47865ff89f09c",
+    "study_training": "0aebffc078e65103cb99bbc50fb6bb73a934e1e7dd700e32b92a2364a9d328ad",
+    "learned_motion": "038b8e8b65005ec97a3993dba0a916efc04da65055650bbe44992aee10c29690",
+    "model": "8d0600822db34ab3149a0577ad07921ef153abf55305cd93ebc7430cbdc07cd3",
+    "gauge": "054719a6a8bdd0506298d40a60b10b46b7b1406246c5a844d674a45983b4ac45",
+    "situation_core": "45cd7a5873fcd18d536784d461f1be03c55c5da7a24efcb4d9641b0e9f8d385d",
+    "credit_bridge": "5438e751e7717ae6ff6a6f319fe2b5dfa8fbf6075ed651cd05a5de043330c851",
+    "records": "334d0c7f8f8c7ed561154efd6a697a1c254034e2571d6a565ce42bfaee987154"
+  },
+  "cohorts": {
+    "reading": 1024,
+    "mathematics": 512,
+    "pairs_per_track": 256,
+    "physics_forward": 256,
+    "inquiry": 256,
+    "omitted": 64,
+    "motion_transfer": 64
+  },
+  "comparison": "Reward arms matched at 2048 attempted episodes; field ablations are inference sensitivities.",
+  "cohort_construction": "Stable group hash then row hash; partial touched groups are excluded from future independent comparisons.",
+  "reserved": "Wholly unselected human final groups and physics split future-comparison-004 remain untouched by scoring."
+}

@@ -1,0 +1,545 @@
+{
+  "all_concept_attempts": [
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T06:12:14Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "concept-008-contracts-001",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "tests/test_concept_owner.py",
+        "tests/test_echo_study.py",
+        "tests/test_grounded_learning.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 21320,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 700620800,
+        "cpu_seconds": 15.640625,
+        "active_processes": 0,
+        "total_processes": 12
+      },
+      "wall_seconds": 20.92427150000003,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T06:12:34Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T06:15:08Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "concept-008-integrated-contracts-001",
+      "command": [
+        "--",
+        "-m",
+        "pytest"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 10448,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 701440000,
+        "cpu_seconds": 21.4375,
+        "active_processes": 0,
+        "total_processes": 12
+      },
+      "wall_seconds": 22.636856699995406,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T06:15:30Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T06:16:10Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "concept-008-campaign-001",
+      "command": [
+        "--",
+        "scripts/complete_concept008.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 1896,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 353296384,
+        "cpu_seconds": 708.046875,
+        "active_processes": 0,
+        "total_processes": 59
+      },
+      "wall_seconds": 717.3038354999953,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T06:28:07Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T06:33:04Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "concept-009-contracts-001",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "tests/test_concept_repair.py",
+        "tests/test_concept_owner.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 2328,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 676978688,
+        "cpu_seconds": 10.390625,
+        "active_processes": 0,
+        "total_processes": 9
+      },
+      "wall_seconds": 11.34336710000207,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T06:33:15Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T06:34:36Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "concept-009-campaign-001",
+      "command": [
+        "--",
+        "scripts/complete_concept009.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 21500,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 533131264,
+        "cpu_seconds": 105.984375,
+        "active_processes": 0,
+        "total_processes": 24
+      },
+      "wall_seconds": 107.87652890000027,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T06:36:24Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T06:43:36Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "concept-010-contracts-001",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "tests/test_concept_language.py",
+        "tests/test_concept_owner.py",
+        "tests/test_concept_repair.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 9900,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 707883008,
+        "cpu_seconds": 16.421875,
+        "active_processes": 0,
+        "total_processes": 12
+      },
+      "wall_seconds": 17.575563300000795,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T06:43:53Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T06:44:23Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "concept-010-campaign-001",
+      "command": [
+        "--",
+        "scripts/complete_concept010.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 1356,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 532037632,
+        "cpu_seconds": 151.765625,
+        "active_processes": 0,
+        "total_processes": 30
+      },
+      "wall_seconds": 154.97374180000043,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T06:46:58Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T06:48:23Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "concept-010-diagnosis-001",
+      "command": [
+        "--",
+        "scripts/audit_route_interference.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 20036,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 251052032,
+        "cpu_seconds": 2.140625,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 2.3874884999968344,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T06:48:26Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T06:50:42Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "concept-011-contracts-001",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "tests/test_concept_direct.py",
+        "tests/test_concept_language.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 8820,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 691945472,
+        "cpu_seconds": 9.859375,
+        "active_processes": 0,
+        "total_processes": 6
+      },
+      "wall_seconds": 10.460661700002674,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T06:50:52Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T06:51:45Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "concept-011-campaign-001",
+      "command": [
+        "--",
+        "scripts/complete_concept011.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 9164,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 531165184,
+        "cpu_seconds": 195.328125,
+        "active_processes": 0,
+        "total_processes": 36
+      },
+      "wall_seconds": 198.82649520000268,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T06:55:04Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T06:56:03Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "concept-release-contracts-001",
+      "command": [
+        "--",
+        "-m",
+        "pytest"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 2600,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 720691200,
+        "cpu_seconds": 31.0,
+        "active_processes": 0,
+        "total_processes": 18
+      },
+      "wall_seconds": 32.7743324999974,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T06:56:36Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T06:57:44Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "concept-release-delivery-001",
+      "command": [
+        "--",
+        "scripts/deliver_concept011.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 17044,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 343257088,
+        "cpu_seconds": 20.234375,
+        "active_processes": 0,
+        "total_processes": 36
+      },
+      "wall_seconds": 22.151935899993987,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T06:58:06Z"
+    },
+    {
+      "status": "FAILED",
+      "started_utc": "2026-09-20T07:07:12Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "concept-release-public-snapshot-001",
+      "command": [
+        "--",
+        "local/check_public_snapshot.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 21072,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 970432512,
+        "cpu_seconds": 32.359375,
+        "active_processes": 0,
+        "total_processes": 21
+      },
+      "wall_seconds": 34.39464700000099,
+      "returncode": 1,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T07:07:46Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T07:09:12Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "concept-release-public-snapshot-002",
+      "command": [
+        "--",
+        "local/check_public_snapshot.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 2684,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 969601024,
+        "cpu_seconds": 32.203125,
+        "active_processes": 0,
+        "total_processes": 23
+      },
+      "wall_seconds": 34.20454790000076,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T07:09:46Z"
+    }
+  ],
+  "wall_seconds": 1387.8342734999896,
+  "cpu_seconds": 1352.8125,
+  "peak_process_tree_bytes": 970432512,
+  "numerical_cpu_threads": 1,
+  "memory_cap_bytes": 2147483648,
+  "paid_compute": false,
+  "scope": "All CONCEPT-008 through CONCEPT-011 supervision, including tests, failed qualifications, repairs, replays and delivery; earlier campaigns have separate preserved ledgers."
+}

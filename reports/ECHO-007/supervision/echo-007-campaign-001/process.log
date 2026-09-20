@@ -1,0 +1,273 @@
+{"arm": "echo", "step": 128, "kind": "pair:grammar", "loss": 1.073729157447815, "correct_or_physics_mse": 9, "attempts": 24}
+{"arm": "echo", "step": 256, "kind": "pair:calculus", "loss": 0.07826761901378632, "correct_or_physics_mse": 24, "attempts": 24}
+{"arm": "echo", "step": 384, "kind": "physics", "loss": 0.08379699289798737, "correct_or_physics_mse": 0.07985540479421616, "attempts": 24}
+{"arm": "echo", "step": 512, "kind": "pair:dailydialog", "loss": 1.3814281225204468, "correct_or_physics_mse": 9, "attempts": 24}
+{"arm": "echo", "step": 640, "kind": "pair:programming", "loss": 0.03689800947904587, "correct_or_physics_mse": 24, "attempts": 24}
+{"arm": "echo", "step": 768, "kind": "physics", "loss": 0.09721861779689789, "correct_or_physics_mse": 0.09790009260177612, "attempts": 24}
+{"arm": "echo", "step": 896, "kind": "pair:webster", "loss": 1.0929358005523682, "correct_or_physics_mse": 13, "attempts": 24}
+{"arm": "echo", "step": 1024, "kind": "pair:grammar", "loss": 1.1568771600723267, "correct_or_physics_mse": 13, "attempts": 24}
+{"arm": "echo", "step": 1152, "kind": "physics", "loss": 0.11292911320924759, "correct_or_physics_mse": 0.12052956223487854, "attempts": 24}
+{"arm": "echo", "step": 1280, "kind": "pair:plato", "loss": 0.5398055911064148, "correct_or_physics_mse": 20, "attempts": 24}
+{"arm": "echo", "step": 1408, "kind": "pair:dailydialog", "loss": 1.2469173669815063, "correct_or_physics_mse": 9, "attempts": 24}
+{"arm": "echo", "step": 1536, "kind": "physics", "loss": 0.09830072522163391, "correct_or_physics_mse": 0.09850481152534485, "attempts": 24}
+{"arm": "echo", "step": 1664, "kind": "pair:descartes", "loss": 0.011949840001761913, "correct_or_physics_mse": 24, "attempts": 24}
+{"arm": "echo", "step": 1792, "kind": "pair:webster", "loss": 0.9555127620697021, "correct_or_physics_mse": 15, "attempts": 24}
+{"arm": "echo", "step": 1920, "kind": "physics", "loss": 0.09739576280117035, "correct_or_physics_mse": 0.09846414625644684, "attempts": 24}
+{"arm": "echo", "step": 2048, "kind": "pair:calculus", "loss": 0.044129978865385056, "correct_or_physics_mse": 24, "attempts": 24}
+{"arm": "autograd", "step": 128, "kind": "pair:grammar", "loss": 1.0737290382385254, "correct_or_physics_mse": 9, "attempts": 24}
+{"arm": "autograd", "step": 256, "kind": "pair:calculus", "loss": 0.0782676413655281, "correct_or_physics_mse": 24, "attempts": 24}
+{"arm": "autograd", "step": 384, "kind": "physics", "loss": 0.08379698544740677, "correct_or_physics_mse": 0.07985540479421616, "attempts": 24}
+{"arm": "autograd", "step": 512, "kind": "pair:dailydialog", "loss": 1.3814281225204468, "correct_or_physics_mse": 9, "attempts": 24}
+{"arm": "autograd", "step": 640, "kind": "pair:programming", "loss": 0.03689802810549736, "correct_or_physics_mse": 24, "attempts": 24}
+{"arm": "autograd", "step": 768, "kind": "physics", "loss": 0.0972186028957367, "correct_or_physics_mse": 0.09790010005235672, "attempts": 24}
+{"arm": "autograd", "step": 896, "kind": "pair:webster", "loss": 1.0929358005523682, "correct_or_physics_mse": 13, "attempts": 24}
+{"arm": "autograd", "step": 1024, "kind": "pair:grammar", "loss": 1.1568771600723267, "correct_or_physics_mse": 13, "attempts": 24}
+{"arm": "autograd", "step": 1152, "kind": "physics", "loss": 0.11292910575866699, "correct_or_physics_mse": 0.12052956968545914, "attempts": 24}
+{"arm": "autograd", "step": 1280, "kind": "pair:plato", "loss": 0.5398056507110596, "correct_or_physics_mse": 20, "attempts": 24}
+{"arm": "autograd", "step": 1408, "kind": "pair:dailydialog", "loss": 1.2469176054000854, "correct_or_physics_mse": 9, "attempts": 24}
+{"arm": "autograd", "step": 1536, "kind": "physics", "loss": 0.09830072522163391, "correct_or_physics_mse": 0.09850478172302246, "attempts": 24}
+{"arm": "autograd", "step": 1664, "kind": "pair:descartes", "loss": 0.011949840933084488, "correct_or_physics_mse": 24, "attempts": 24}
+{"arm": "autograd", "step": 1792, "kind": "pair:webster", "loss": 0.9555128216743469, "correct_or_physics_mse": 15, "attempts": 24}
+{"arm": "autograd", "step": 1920, "kind": "physics", "loss": 0.09739575535058975, "correct_or_physics_mse": 0.09846413880586624, "attempts": 24}
+{"arm": "autograd", "step": 2048, "kind": "pair:calculus", "loss": 0.04412996396422386, "correct_or_physics_mse": 24, "attempts": 24}
+{"arm": "no_core_credit", "step": 128, "kind": "pair:grammar", "loss": 1.1096875667572021, "correct_or_physics_mse": 11, "attempts": 24}
+{"arm": "no_core_credit", "step": 256, "kind": "pair:calculus", "loss": 0.117768794298172, "correct_or_physics_mse": 23, "attempts": 24}
+{"arm": "no_core_credit", "step": 384, "kind": "physics", "loss": 0.08363266289234161, "correct_or_physics_mse": 0.0796017274260521, "attempts": 24}
+{"arm": "no_core_credit", "step": 512, "kind": "pair:dailydialog", "loss": 1.416490912437439, "correct_or_physics_mse": 9, "attempts": 24}
+{"arm": "no_core_credit", "step": 640, "kind": "pair:programming", "loss": 0.06872700899839401, "correct_or_physics_mse": 24, "attempts": 24}
+{"arm": "no_core_credit", "step": 768, "kind": "physics", "loss": 0.09309054166078568, "correct_or_physics_mse": 0.09403999894857407, "attempts": 24}
+{"arm": "no_core_credit", "step": 896, "kind": "pair:webster", "loss": 1.0918787717819214, "correct_or_physics_mse": 12, "attempts": 24}
+{"arm": "no_core_credit", "step": 1024, "kind": "pair:grammar", "loss": 1.2148975133895874, "correct_or_physics_mse": 10, "attempts": 24}
+{"arm": "no_core_credit", "step": 1152, "kind": "physics", "loss": 0.1132437214255333, "correct_or_physics_mse": 0.12085197865962982, "attempts": 24}
+{"arm": "no_core_credit", "step": 1280, "kind": "pair:plato", "loss": 0.607196033000946, "correct_or_physics_mse": 17, "attempts": 24}
+{"arm": "no_core_credit", "step": 1408, "kind": "pair:dailydialog", "loss": 1.2581757307052612, "correct_or_physics_mse": 9, "attempts": 24}
+{"arm": "no_core_credit", "step": 1536, "kind": "physics", "loss": 0.10496272891759872, "correct_or_physics_mse": 0.1046547144651413, "attempts": 24}
+{"arm": "no_core_credit", "step": 1664, "kind": "pair:descartes", "loss": 0.007210513111203909, "correct_or_physics_mse": 24, "attempts": 24}
+{"arm": "no_core_credit", "step": 1792, "kind": "pair:webster", "loss": 0.9669392704963684, "correct_or_physics_mse": 13, "attempts": 24}
+{"arm": "no_core_credit", "step": 1920, "kind": "physics", "loss": 0.09612803906202316, "correct_or_physics_mse": 0.0974113792181015, "attempts": 24}
+{"arm": "no_core_credit", "step": 2048, "kind": "pair:calculus", "loss": 0.06579602509737015, "correct_or_physics_mse": 24, "attempts": 24}
+{"completed_final_component": "reading", "records": 512}
+{"completed_final_component": "mathematics", "records": 256}
+{"completed_final_component": "human-pairs", "records": 128}
+{"completed_final_component": "physics", "records": 512}
+{"completed_final_component": "motion", "records": 128}
+{"completed_final_component": "inquiry", "records": 256}
+{
+  "arm": "echo",
+  "replay": false,
+  "reading": 0.7109375,
+  "physics": {
+    "n": 512,
+    "mse": 0.1064129319456697
+  },
+  "inquiry": {
+    "n": 256,
+    "before_mse": 0.14148889780847185,
+    "after_mse": 0.06769343117071003,
+    "mean_absolute_progress": 0.07379546663776182,
+    "fraction_improved": 0.62109375,
+    "relative_mse_reduction": 0.5215636546809201,
+    "original_goals_returned": 256,
+    "failed_actuators": 6,
+    "probe_count": 256
+  }
+}
+{"completed_final_component": "reading", "records": 512}
+{"completed_final_component": "mathematics", "records": 256}
+{"completed_final_component": "human-pairs", "records": 128}
+{"completed_final_component": "physics", "records": 512}
+{"completed_final_component": "motion", "records": 128}
+{"completed_final_component": "inquiry", "records": 256}
+{
+  "arm": "echo",
+  "replay": true,
+  "reading": 0.7109375,
+  "physics": {
+    "n": 512,
+    "mse": 0.1064129319456697
+  },
+  "inquiry": {
+    "n": 256,
+    "before_mse": 0.14148889780847185,
+    "after_mse": 0.06769343117071003,
+    "mean_absolute_progress": 0.07379546663776182,
+    "fraction_improved": 0.62109375,
+    "relative_mse_reduction": 0.5215636546809201,
+    "original_goals_returned": 256,
+    "failed_actuators": 6,
+    "probe_count": 256
+  }
+}
+{"completed_final_component": "reading", "records": 512}
+{"completed_final_component": "mathematics", "records": 256}
+{"completed_final_component": "human-pairs", "records": 128}
+{"completed_final_component": "physics", "records": 512}
+{"completed_final_component": "motion", "records": 128}
+{"completed_final_component": "inquiry", "records": 256}
+{
+  "arm": "autograd",
+  "replay": false,
+  "reading": 0.7109375,
+  "physics": {
+    "n": 512,
+    "mse": 0.10641293151411446
+  },
+  "inquiry": {
+    "n": 256,
+    "before_mse": 0.14148890116860002,
+    "after_mse": 0.06769343012626905,
+    "mean_absolute_progress": 0.07379547104233097,
+    "fraction_improved": 0.62109375,
+    "relative_mse_reduction": 0.5215636734247822,
+    "original_goals_returned": 256,
+    "failed_actuators": 6,
+    "probe_count": 256
+  }
+}
+{"completed_final_component": "reading", "records": 512}
+{"completed_final_component": "mathematics", "records": 256}
+{"completed_final_component": "human-pairs", "records": 128}
+{"completed_final_component": "physics", "records": 512}
+{"completed_final_component": "motion", "records": 128}
+{"completed_final_component": "inquiry", "records": 256}
+{
+  "arm": "autograd",
+  "replay": true,
+  "reading": 0.7109375,
+  "physics": {
+    "n": 512,
+    "mse": 0.10641293151411446
+  },
+  "inquiry": {
+    "n": 256,
+    "before_mse": 0.14148890116860002,
+    "after_mse": 0.06769343012626905,
+    "mean_absolute_progress": 0.07379547104233097,
+    "fraction_improved": 0.62109375,
+    "relative_mse_reduction": 0.5215636734247822,
+    "original_goals_returned": 256,
+    "failed_actuators": 6,
+    "probe_count": 256
+  }
+}
+{"completed_final_component": "reading", "records": 512}
+{"completed_final_component": "mathematics", "records": 256}
+{"completed_final_component": "human-pairs", "records": 128}
+{"completed_final_component": "physics", "records": 512}
+{"completed_final_component": "motion", "records": 128}
+{"completed_final_component": "inquiry", "records": 256}
+{
+  "arm": "no_core_credit",
+  "replay": false,
+  "reading": 0.7109375,
+  "physics": {
+    "n": 512,
+    "mse": 0.1064208954771857
+  },
+  "inquiry": {
+    "n": 256,
+    "before_mse": 0.1431010416023355,
+    "after_mse": 0.06799339138069627,
+    "mean_absolute_progress": 0.07510765022163923,
+    "fraction_improved": 0.625,
+    "relative_mse_reduction": 0.5248574670082166,
+    "original_goals_returned": 256,
+    "failed_actuators": 6,
+    "probe_count": 256
+  }
+}
+{"completed_final_component": "reading", "records": 512}
+{"completed_final_component": "mathematics", "records": 256}
+{"completed_final_component": "human-pairs", "records": 128}
+{"completed_final_component": "physics", "records": 512}
+{"completed_final_component": "motion", "records": 128}
+{"completed_final_component": "inquiry", "records": 256}
+{
+  "arm": "no_core_credit",
+  "replay": true,
+  "reading": 0.7109375,
+  "physics": {
+    "n": 512,
+    "mse": 0.1064208954771857
+  },
+  "inquiry": {
+    "n": 256,
+    "before_mse": 0.1431010416023355,
+    "after_mse": 0.06799339138069627,
+    "mean_absolute_progress": 0.07510765022163923,
+    "fraction_improved": 0.625,
+    "relative_mse_reduction": 0.5248574670082166,
+    "original_goals_returned": 256,
+    "failed_actuators": 6,
+    "probe_count": 256
+  }
+}
+{"completed_final_component": "reading", "records": 512}
+{"completed_final_component": "mathematics", "records": 256}
+{"completed_final_component": "human-pairs", "records": 128}
+{"completed_final_component": "physics", "records": 512}
+{"completed_final_component": "motion", "records": 128}
+{"completed_final_component": "inquiry", "records": 256}
+{
+  "arm": "parent",
+  "replay": false,
+  "reading": 0.701171875,
+  "physics": {
+    "n": 512,
+    "mse": 0.10797669980763658
+  },
+  "inquiry": {
+    "n": 256,
+    "before_mse": 0.1473487109473126,
+    "after_mse": 0.06776112751572327,
+    "mean_absolute_progress": 0.07958758343158934,
+    "fraction_improved": 0.66796875,
+    "relative_mse_reduction": 0.5401308428144134,
+    "original_goals_returned": 256,
+    "failed_actuators": 6,
+    "probe_count": 256
+  }
+}
+{"completed_final_component": "reading", "records": 512}
+{"completed_final_component": "mathematics", "records": 256}
+{"completed_final_component": "human-pairs", "records": 128}
+{"completed_final_component": "physics", "records": 512}
+{"completed_final_component": "motion", "records": 128}
+{"completed_final_component": "inquiry", "records": 256}
+{
+  "arm": "parent",
+  "replay": true,
+  "reading": 0.701171875,
+  "physics": {
+    "n": 512,
+    "mse": 0.10797669980763658
+  },
+  "inquiry": {
+    "n": 256,
+    "before_mse": 0.1473487109473126,
+    "after_mse": 0.06776112751572327,
+    "mean_absolute_progress": 0.07958758343158934,
+    "fraction_improved": 0.66796875,
+    "relative_mse_reduction": 0.5401308428144134,
+    "original_goals_returned": 256,
+    "failed_actuators": 6,
+    "probe_count": 256
+  }
+}
+{
+  "checks": {
+    "reading_retained": true,
+    "math_retained": true,
+    "pairs_retained": true,
+    "physics_retained": true,
+    "inquiry_retained": true,
+    "trajectories_finite": true,
+    "weights_unchanged_during_evaluation": true,
+    "exact_gradient_control_agreement": true
+  },
+  "promote": true,
+  "mean_normalized_objective_against_exact": 0.9999999937445588,
+  "decision": "qualified_candidate",
+  "completed_utc": "2026-09-20T05:21:47Z",
+  "all_four_replays_exact": true
+}

@@ -1,0 +1,150 @@
+{
+  "reading": {
+    "full": {
+      "n": 1024,
+      "accuracy": 0.771484375,
+      "multi_sentence_n": 1006,
+      "multi_sentence_accuracy": 0.7673956262425448,
+      "top3_evidence_recall": 0.951171875,
+      "lexical_baseline_accuracy": 0.779296875
+    },
+    "no_imagination": {
+      "n": 1024,
+      "accuracy": 0.7587890625,
+      "multi_sentence_n": 1006,
+      "multi_sentence_accuracy": 0.7544731610337972,
+      "top3_evidence_recall": 0.9462890625,
+      "lexical_baseline_accuracy": 0.779296875
+    },
+    "no_loop": {
+      "n": 1024,
+      "accuracy": 0.7587890625,
+      "multi_sentence_n": 1006,
+      "multi_sentence_accuracy": 0.7544731610337972,
+      "top3_evidence_recall": 0.951171875,
+      "lexical_baseline_accuracy": 0.779296875
+    }
+  },
+  "physics": {
+    "forward": {
+      "n": 256,
+      "mse": 0.10687614796052003
+    },
+    "motion_transfer": {
+      "n": 64,
+      "completed_rollouts": 64,
+      "mean_position_velocity_mse": 0.05402111918674997,
+      "duration": 1.0,
+      "taught_target": "acceleration; trajectories independently evaluated"
+    },
+    "verified_reward": {
+      "n": 256,
+      "before_mse": 0.10996667284399564,
+      "after_mse": 0.06427019210161689,
+      "mean_absolute_progress": 0.04569648074237875,
+      "fraction_improved": 0.578125,
+      "relative_mse_reduction": 0.41554845264079354,
+      "original_goals_returned": 256,
+      "failed_actuators": 6,
+      "probe_count": 256
+    },
+    "reward_disconnected": {
+      "n": 256,
+      "before_mse": 0.10996667284399564,
+      "after_mse": 0.07234765277036104,
+      "mean_absolute_progress": 0.0376190200736346,
+      "fraction_improved": 0.62890625,
+      "relative_mse_reduction": 0.3420947374392501,
+      "original_goals_returned": 256,
+      "failed_actuators": 6,
+      "probe_count": 256
+    },
+    "random": {
+      "n": 256,
+      "before_mse": 0.10996667284399564,
+      "after_mse": 0.0792650426921,
+      "mean_absolute_progress": 0.030701630151895642,
+      "fraction_improved": 0.5859375,
+      "relative_mse_reduction": 0.2791903161010477,
+      "original_goals_returned": 256,
+      "failed_actuators": 4,
+      "probe_count": 256
+    },
+    "analytic": {
+      "n": 256,
+      "before_mse": 0.10996667284399564,
+      "after_mse": 0.03931713942856163,
+      "mean_absolute_progress": 0.07064953341543401,
+      "fraction_improved": 0.7109375,
+      "relative_mse_reduction": 0.642463135314288,
+      "original_goals_returned": 256,
+      "failed_actuators": 5,
+      "probe_count": 256
+    },
+    "omitted_mechanism": {
+      "n": 64,
+      "before_mse": 0.5165191725536715,
+      "after_mse": 0.6773469479521737,
+      "mean_absolute_progress": -0.16082777539850213,
+      "fraction_improved": 0.359375,
+      "relative_mse_reduction": -0.31136845241071964,
+      "original_goals_returned": 64,
+      "failed_actuators": 1,
+      "probe_count": 64,
+      "mean_model_spread": 0.03031179093522951
+    }
+  },
+  "retention": {
+    "verified_reward": {
+      "non_policy_parameters_exactly_retained": true,
+      "method": "Predictor frozen during this controlled policy study"
+    },
+    "reward_disconnected": {
+      "non_policy_parameters_exactly_retained": true,
+      "method": "Predictor frozen during this controlled policy study"
+    }
+  },
+  "math": {
+    "all_continuations": {
+      "n": 512,
+      "numeric_top1": 0.134765625,
+      "numeric_top5": 0.380859375,
+      "human_expression_top1": 0.126953125,
+      "human_expression_top5": 0.34765625
+    },
+    "original_one_step": {
+      "n": 3,
+      "numeric_top1": 0.0,
+      "numeric_top5": 1.0,
+      "human_expression_top1": 0.0,
+      "human_expression_top5": 1.0
+    },
+    "scope": "Executable binary arithmetic proposals; teacher-forced continuations reported separately."
+  },
+  "human_associations": {
+    "calculus": {
+      "n": 38,
+      "four_candidate_association_accuracy": 0.42105263157894735
+    },
+    "dailydialog": {
+      "n": 256,
+      "four_candidate_association_accuracy": 0.42578125
+    },
+    "grammar": {
+      "n": 99,
+      "four_candidate_association_accuracy": 0.47474747474747475
+    },
+    "plato": {
+      "n": 48,
+      "four_candidate_association_accuracy": 0.4166666666666667
+    },
+    "programming": {
+      "n": 33,
+      "four_candidate_association_accuracy": 0.8484848484848485
+    },
+    "webster": {
+      "n": 256,
+      "four_candidate_association_accuracy": 0.59765625
+    }
+  }
+}

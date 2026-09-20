@@ -1,0 +1,888 @@
+{
+  "scope": "Engineering usage fixtures, separate from sealed capability assessment",
+  "first": {
+    "checkpoint": {
+      "sha256": "7767b021573e7b398f87dd45706dd2a87b1b2e3738545f4c36e4ced80c3b5e48",
+      "revision": "7767b021573e7b398f87dd45706dd2a87b1b2e3738545f4c36e4ced80c3b5e48.pt",
+      "parent": "4d6101aa2150059ffc81b8c4743b172f5f44984b5be0cb81545ab61a8fe7312d",
+      "weights": "afa6bea53feb6e6b74d98ea52195ff531d21cc22e3863e8eb077f21fba007ba7",
+      "updates": 0,
+      "step": 2048,
+      "accuracy": 1.0,
+      "loss": 0.002970927394926548,
+      "source_checkpoint_sha256": "e21d398477730170efc86fa3cc8b70b59c289e24e7377fef32faed4aa057ebdb",
+      "role": "qualified_five_use_owner",
+      "retained_concept_reward_updates": 754
+    },
+    "result": {
+      "concept_id": "11469a09a5259a951cd1c6d4f13cb56fdadd1b7eaef26dbcfe7dc55d62d6343f",
+      "original_goal": {
+        "name": "Understand this observed device and choose a drive setting",
+        "predict": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "inverse": {
+          "velocity": 0.5,
+          "acceleration": 0.6
+        },
+        "counterfactual": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            -1,
+            2
+          ]
+        ],
+        "plan": {
+          "target": [
+            0.2,
+            0.45
+          ],
+          "velocity": 0,
+          "duration": 0.8
+        },
+        "question": "What happens when speed increases?",
+        "operating_point": [
+          0.5,
+          1
+        ]
+      },
+      "requested_task": {
+        "name": "Understand this observed device and choose a drive setting",
+        "predict": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "inverse": {
+          "velocity": 0.5,
+          "acceleration": 0.6
+        },
+        "counterfactual": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            -1,
+            2
+          ]
+        ],
+        "plan": {
+          "target": [
+            0.2,
+            0.45
+          ],
+          "velocity": 0,
+          "duration": 0.8
+        },
+        "question": "What happens when speed increases?",
+        "operating_point": [
+          0.5,
+          1
+        ]
+      },
+      "qualification": "Conditional on the recorded observations and supplied response basis",
+      "predict": {
+        "hypotheses": [
+          [
+            1.1998866200447083,
+            0.6998150646686554,
+            1.699958175420761
+          ],
+          [
+            1.1998853981494904,
+            0.6997652351856232,
+            1.7000055611133575
+          ],
+          [
+            1.1998656392097473,
+            0.6997595429420471,
+            1.6999717354774475
+          ]
+        ],
+        "mean": [
+          1.1998792191346486,
+          0.6997799475987753,
+          1.699978490670522
+        ]
+      },
+      "counterfactual": {
+        "hypotheses": [
+          [
+            2.1999951004981995,
+            1.6999235451221466,
+            2.7000666558742523
+          ],
+          [
+            2.200007826089859,
+            1.6998876631259918,
+            2.700127989053726
+          ],
+          [
+            2.1999886631965637,
+            1.6998825669288635,
+            2.700094759464264
+          ]
+        ],
+        "mean": [
+          2.199997196594874,
+          1.6998979250590007,
+          2.7000964681307473
+        ]
+      },
+      "inverse": {
+        "hypotheses": [
+          0.6125349349628906,
+          0.6101285082724099,
+          0.6127565425930075
+        ],
+        "mean": 0.6118066619427693,
+        "assumption": "locally identifiable input gain and retained response basis"
+      },
+      "plan": {
+        "input": 0.5,
+        "predicted_endpoint": [
+          0.20257860861759236,
+          0.4794305135525922
+        ],
+        "alternatives": [
+          {
+            "input": 0.5,
+            "conditional_loss": 0.00043657890700640273,
+            "endpoints": [
+              [
+                0.20246946574322183,
+                0.47908604394065535
+              ],
+              [
+                0.20283362554813808,
+                0.48022891802799683
+              ],
+              [
+                0.20243273456141717,
+                0.4789765786891243
+              ]
+            ]
+          },
+          {
+            "input": 0.40000000000000036,
+            "conditional_loss": 0.0010612147670829143,
+            "endpoints": [
+              [
+                0.1737755063425966,
+                0.4117413869983839
+              ],
+              [
+                0.17410347015852484,
+                0.4127971497027209
+              ],
+              [
+                0.17374121744543236,
+                0.4116380777751867
+              ]
+            ]
+          },
+          {
+            "input": 0.6000000000000001,
+            "conditional_loss": 0.005136497759733705,
+            "endpoints": [
+              [
+                0.23108472097122829,
+                0.5460671889532493
+              ],
+              [
+                0.23147974303432883,
+                0.5472725613423308
+              ],
+              [
+                0.23104593450935568,
+                0.5459533554702477
+              ]
+            ]
+          },
+          {
+            "input": 0.30000000000000027,
+            "conditional_loss": 0.0070927716129761545,
+            "endpoints": [
+              [
+                0.14500231185470155,
+                0.344029538090883
+              ],
+              [
+                0.14528867217092625,
+                0.34497306467838135
+              ],
+              [
+                0.14497085741875726,
+                0.34393420857694407
+              ]
+            ]
+          },
+          {
+            "input": 0.7000000000000002,
+            "conditional_loss": 0.01508012422460688,
+            "endpoints": [
+              [
+                0.2596217975453482,
+                0.612688452293775
+              ],
+              [
+                0.2600424207607346,
+                0.6139322109040132
+              ],
+              [
+                0.25958133771416925,
+                0.6125720032135363
+              ]
+            ]
+          }
+        ],
+        "assumptions": {
+          "constant_input": true,
+          "duration": 0.8,
+          "initial_velocity": 0,
+          "bounds": [
+            -2,
+            2
+          ]
+        }
+      },
+      "explanation": {
+        "concept_id": "11469a09a5259a951cd1c6d4f13cb56fdadd1b7eaef26dbcfe7dc55d62d6343f",
+        "question": "What happens when speed increases?",
+        "learned_route": 1,
+        "direction": 0,
+        "explanation": "At the stated operating point, increasing velocity by 0.5 decreases the predicted acceleration.",
+        "operating_point": [
+          0.5,
+          1.0
+        ],
+        "status": "conditional learned classification",
+        "rendering": "supplied sentence form; route and direction selected by trained weights"
+      },
+      "next_investigation": {
+        "requested_velocity": 2.0,
+        "requested_control_input": -2.0,
+        "status": "proposed; obtain an actual outcome before adding evidence"
+      }
+    }
+  },
+  "followup": {
+    "checkpoint": {
+      "sha256": "7767b021573e7b398f87dd45706dd2a87b1b2e3738545f4c36e4ced80c3b5e48",
+      "revision": "7767b021573e7b398f87dd45706dd2a87b1b2e3738545f4c36e4ced80c3b5e48.pt",
+      "parent": "4d6101aa2150059ffc81b8c4743b172f5f44984b5be0cb81545ab61a8fe7312d",
+      "weights": "afa6bea53feb6e6b74d98ea52195ff531d21cc22e3863e8eb077f21fba007ba7",
+      "updates": 0,
+      "step": 2048,
+      "accuracy": 1.0,
+      "loss": 0.002970927394926548,
+      "source_checkpoint_sha256": "e21d398477730170efc86fa3cc8b70b59c289e24e7377fef32faed4aa057ebdb",
+      "role": "qualified_five_use_owner",
+      "retained_concept_reward_updates": 754
+    },
+    "result": {
+      "concept_id": "11469a09a5259a951cd1c6d4f13cb56fdadd1b7eaef26dbcfe7dc55d62d6343f",
+      "original_goal": {
+        "counterfactual": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            -1,
+            2
+          ]
+        ],
+        "inverse": {
+          "acceleration": 0.6,
+          "velocity": 0.5
+        },
+        "name": "Understand this observed device and choose a drive setting",
+        "operating_point": [
+          0.5,
+          1
+        ],
+        "plan": {
+          "duration": 0.8,
+          "target": [
+            0.2,
+            0.45
+          ],
+          "velocity": 0
+        },
+        "predict": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "question": "What happens when speed increases?"
+      },
+      "requested_task": {
+        "question": "Explain the acceleration effect of higher control input.",
+        "operating_point": [
+          0.5,
+          1.0
+        ],
+        "predict": [
+          [
+            0.5,
+            1.5
+          ]
+        ],
+        "name": "reuse the acquired relationship"
+      },
+      "qualification": "Conditional on the recorded observations and supplied response basis",
+      "predict": {
+        "hypotheses": [
+          [
+            1.4875613376498222
+          ],
+          [
+            1.489980436861515
+          ],
+          [
+            1.4873526096343994
+          ]
+        ],
+        "mean": [
+          1.488298128048579
+        ]
+      },
+      "explanation": {
+        "concept_id": "11469a09a5259a951cd1c6d4f13cb56fdadd1b7eaef26dbcfe7dc55d62d6343f",
+        "question": "Explain the acceleration effect of higher control input.",
+        "learned_route": 0,
+        "direction": 2,
+        "explanation": "At the stated operating point, increasing control input by 0.5 increases the predicted acceleration.",
+        "operating_point": [
+          0.5,
+          1.0
+        ],
+        "status": "conditional learned classification",
+        "rendering": "supplied sentence form; route and direction selected by trained weights"
+      },
+      "next_investigation": {
+        "requested_velocity": 2.0,
+        "requested_control_input": -2.0,
+        "status": "proposed; obtain an actual outcome before adding evidence"
+      }
+    }
+  },
+  "independent_receipt": {
+    "kind": "independent_simulation",
+    "source": "concept_world.World delivery fixture",
+    "source_sha256": "bc634633a4a227da70456e4d1fbdd3fb74961684c755f267f2b45681a9dbf731",
+    "measurement_id": "delivery-followup",
+    "requested": [
+      2.0,
+      -2.0
+    ],
+    "performed": [
+      2.0,
+      -2.0
+    ],
+    "measured": [
+      2.0,
+      -2.0,
+      -2.8
+    ]
+  },
+  "revised": {
+    "checkpoint": {
+      "sha256": "7767b021573e7b398f87dd45706dd2a87b1b2e3738545f4c36e4ced80c3b5e48",
+      "revision": "7767b021573e7b398f87dd45706dd2a87b1b2e3738545f4c36e4ced80c3b5e48.pt",
+      "parent": "4d6101aa2150059ffc81b8c4743b172f5f44984b5be0cb81545ab61a8fe7312d",
+      "weights": "afa6bea53feb6e6b74d98ea52195ff531d21cc22e3863e8eb077f21fba007ba7",
+      "updates": 0,
+      "step": 2048,
+      "accuracy": 1.0,
+      "loss": 0.002970927394926548,
+      "source_checkpoint_sha256": "e21d398477730170efc86fa3cc8b70b59c289e24e7377fef32faed4aa057ebdb",
+      "role": "qualified_five_use_owner",
+      "retained_concept_reward_updates": 754
+    },
+    "result": {
+      "concept_id": "6d9627189deebc55b5a2d881f0d9b1a116a94006b1d053bb911f12568fc088e6",
+      "original_goal": {
+        "counterfactual": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            -1,
+            2
+          ]
+        ],
+        "inverse": {
+          "acceleration": 0.6,
+          "velocity": 0.5
+        },
+        "name": "Understand this observed device and choose a drive setting",
+        "operating_point": [
+          0.5,
+          1
+        ],
+        "plan": {
+          "duration": 0.8,
+          "target": [
+            0.2,
+            0.45
+          ],
+          "velocity": 0
+        },
+        "predict": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "question": "What happens when speed increases?"
+      },
+      "requested_task": {
+        "counterfactual": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            -1,
+            2
+          ]
+        ],
+        "inverse": {
+          "acceleration": 0.6,
+          "velocity": 0.5
+        },
+        "name": "Understand this observed device and choose a drive setting",
+        "operating_point": [
+          0.5,
+          1
+        ],
+        "plan": {
+          "duration": 0.8,
+          "target": [
+            0.2,
+            0.45
+          ],
+          "velocity": 0
+        },
+        "predict": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "question": "What happens when speed increases?"
+      },
+      "qualification": "Conditional on the recorded observations and supplied response basis",
+      "predict": {
+        "hypotheses": [
+          [
+            1.184179425239563,
+            0.6938009783625603,
+            1.6745578721165657
+          ],
+          [
+            1.183911070227623,
+            0.693672776222229,
+            1.674149364233017
+          ],
+          [
+            1.1845841109752655,
+            0.6938972696661949,
+            1.675270952284336
+          ]
+        ],
+        "mean": [
+          1.1842248688141506,
+          0.6937903414169947,
+          1.6746593962113063
+        ]
+      },
+      "counterfactual": {
+        "hypotheses": [
+          [
+            2.160886824131012,
+            1.6705083772540092,
+            2.6512652710080147
+          ],
+          [
+            2.1602109521627426,
+            1.6699726581573486,
+            2.6504492461681366
+          ],
+          [
+            2.1619690358638763,
+            1.6712821945548058,
+            2.652655877172947
+          ]
+        ],
+        "mean": [
+          2.16102227071921,
+          1.6705877433220546,
+          2.651456798116366
+        ]
+      },
+      "inverse": {
+        "hypotheses": [
+          0.6425549365356007,
+          0.6424336380071447,
+          0.6428611409440462
+        ],
+        "mean": 0.6426165718289306,
+        "assumption": "locally identifiable input gain and retained response basis"
+      },
+      "plan": {
+        "input": 0.5,
+        "predicted_endpoint": [
+          0.19768048184352194,
+          0.46513370778519647
+        ],
+        "alternatives": [
+          {
+            "input": 0.5,
+            "conditional_loss": 0.00011720899753924657,
+            "endpoints": [
+              [
+                0.19768988032142687,
+                0.46516440975969753
+              ],
+              [
+                0.1977038794844021,
+                0.465225670670279
+              ],
+              [
+                0.19764768572473684,
+                0.4650110429256128
+              ]
+            ]
+          },
+          {
+            "input": 0.40000000000000036,
+            "conditional_loss": 0.00169441909963432,
+            "endpoints": [
+              [
+                0.17000128867455014,
+                0.40015128081407264
+              ],
+              [
+                0.17002334226554106,
+                0.40022985928057886
+              ],
+              [
+                0.1699465642442353,
+                0.39997179600210453
+              ]
+            ]
+          },
+          {
+            "input": 0.6000000000000001,
+            "conditional_loss": 0.003526079242316999,
+            "endpoints": [
+              [
+                0.2253588142869765,
+                0.530086596672646
+              ],
+              [
+                0.22536443788063892,
+                0.5301290520514605
+              ],
+              [
+                0.22532973076162105,
+                0.5299620414517469
+              ]
+            ]
+          },
+          {
+            "input": 0.30000000000000027,
+            "conditional_loss": 0.00827702391546521,
+            "endpoints": [
+              [
+                0.14229300512579915,
+                0.3350469725470894
+              ],
+              [
+                0.14232279086571575,
+                0.33514137269608774
+              ],
+              [
+                0.1422263341082722,
+                0.33484407733615
+              ]
+            ]
+          },
+          {
+            "input": 0.7000000000000002,
+            "conditional_loss": 0.011901805993465173,
+            "endpoints": [
+              [
+                0.25300812470128203,
+                0.5949180780057004
+              ],
+              [
+                0.2530050527175687,
+                0.5949402477323508
+              ],
+              [
+                0.25299273148412665,
+                0.5948250141623398
+              ]
+            ]
+          }
+        ],
+        "assumptions": {
+          "constant_input": true,
+          "duration": 0.8,
+          "initial_velocity": 0,
+          "bounds": [
+            -2,
+            2
+          ]
+        }
+      },
+      "explanation": {
+        "concept_id": "6d9627189deebc55b5a2d881f0d9b1a116a94006b1d053bb911f12568fc088e6",
+        "question": "What happens when speed increases?",
+        "learned_route": 1,
+        "direction": 0,
+        "explanation": "At the stated operating point, increasing velocity by 0.5 decreases the predicted acceleration.",
+        "operating_point": [
+          0.5,
+          1.0
+        ],
+        "status": "conditional learned classification",
+        "rendering": "supplied sentence form; route and direction selected by trained weights"
+      },
+      "next_investigation": {
+        "requested_velocity": 2.0,
+        "requested_control_input": -2.0,
+        "status": "proposed; obtain an actual outcome before adding evidence"
+      }
+    }
+  },
+  "checks": {
+    "original_goal_retained": true,
+    "concept_reused_for_new_task": true,
+    "independent_outcome_added": true,
+    "exact_initial_and_revised_restart": true,
+    "duplicate_rejected": true,
+    "older_revision_preserved": true,
+    "earlier_reading_and_math_exact": true
+  },
+  "retained_interfaces": {
+    "read": {
+      "exact_previous_output": true,
+      "result": {
+        "question": "What did Alice see?",
+        "source": "D:\\ai\\labs\\sera-field\\examples\\reading-practice.txt",
+        "source_sha256": "a284d754f3cba84e4deff3de2299b801950976793c7e2807448808bf4ed6f723",
+        "learned_evidence_ranking": [
+          {
+            "text": "Alice saw a yellow flower beside the garden gate.",
+            "offset": [
+              0,
+              49
+            ],
+            "ranking_softmax": 0.5874587297439575
+          },
+          {
+            "text": "This short passage is an engineering usage fixture.",
+            "offset": [
+              161,
+              212
+            ],
+            "ranking_softmax": 0.15916110575199127
+          },
+          {
+            "text": "It was not included in the\nhuman training corpus or any capability evaluation.",
+            "offset": [
+              212,
+              292
+            ],
+            "ranking_softmax": 0.09664247184991837
+          },
+          {
+            "text": "The library closed before sunset.",
+            "offset": [
+              125,
+              159
+            ],
+            "ranking_softmax": 0.07446297258138657
+          },
+          {
+            "text": "She left the gate open for Bob.",
+            "offset": [
+              49,
+              81
+            ],
+            "ranking_softmax": 0.04692942276597023
+          }
+        ],
+        "qualification": "Ranked source passages; preserve the source conditions and context."
+      }
+    },
+    "math": {
+      "exact_previous_output": true,
+      "result": {
+        "question": "I have 5 apples and buy 3 more. How many apples do I have?",
+        "observed_numbers_and_supplied_constants": [
+          "5",
+          "3",
+          "1",
+          "2",
+          "10",
+          "100",
+          "1/2"
+        ],
+        "learned_executable_proposals": [
+          {
+            "program": [
+              "*",
+              "2",
+              "5"
+            ],
+            "result": "10",
+            "probability": 0.17966341972351074,
+            "indices": [
+              2,
+              0,
+              3
+            ],
+            "assumptions": "binary rational expression over the supplied observed-number inventory"
+          },
+          {
+            "program": [
+              "+",
+              "5",
+              "5"
+            ],
+            "result": "10",
+            "probability": 0.11508249491453171,
+            "indices": [
+              0,
+              0,
+              0
+            ],
+            "assumptions": "binary rational expression over the supplied observed-number inventory"
+          },
+          {
+            "program": [
+              "*",
+              "2",
+              "3"
+            ],
+            "result": "6",
+            "probability": 0.09923578798770905,
+            "indices": [
+              2,
+              1,
+              3
+            ],
+            "assumptions": "binary rational expression over the supplied observed-number inventory"
+          },
+          {
+            "program": [
+              "+",
+              "3",
+              "5"
+            ],
+            "result": "8",
+            "probability": 0.07322312146425247,
+            "indices": [
+              0,
+              0,
+              1
+            ],
+            "assumptions": "binary rational expression over the supplied observed-number inventory"
+          },
+          {
+            "program": [
+              "*",
+              "5",
+              "5"
+            ],
+            "result": "25",
+            "probability": 0.05275152996182442,
+            "indices": [
+              2,
+              0,
+              0
+            ],
+            "assumptions": "binary rational expression over the supplied observed-number inventory"
+          }
+        ],
+        "qualification": "Each arithmetic execution is exact; applicability to the question requires checking."
+      }
+    }
+  }
+}

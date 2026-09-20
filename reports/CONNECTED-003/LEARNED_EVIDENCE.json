@@ -1,0 +1,850 @@
+{
+  "field": {
+    "specification": {
+      "type": "grounded-field-003",
+      "width": 48,
+      "nodes": 8,
+      "rounds": 4
+    },
+    "initial": {
+      "sha256": "8960ac571eb7d3cced3826f36acdae12253e615bb28f0f029ea466ee73239160",
+      "revision": "8960ac571eb7d3cced3826f36acdae12253e615bb28f0f029ea466ee73239160.pt",
+      "parent": null,
+      "weights": "239fab11a5db5059fe0bb57858c2818b119eb368ea1350eca5b9d726139c5c75",
+      "updates": 0,
+      "development": {
+        "step": 0,
+        "score": 1.0,
+        "metrics": {
+          "reading": {
+            "loss": 1.4703878909349442,
+            "accuracy": 0.3828125,
+            "n": 384
+          },
+          "math": {
+            "loss": 5.272931098937988,
+            "accuracy": 0.0,
+            "n": 256
+          },
+          "pair:programming": {
+            "loss": 1.3850007730981577,
+            "accuracy": 0.2608695652173913,
+            "n": 46
+          },
+          "pair:grammar": {
+            "loss": 1.383257657289505,
+            "accuracy": 0.25,
+            "n": 64
+          },
+          "pair:plato": {
+            "loss": 1.3801929354667664,
+            "accuracy": 0.34375,
+            "n": 64
+          },
+          "pair:calculus": {
+            "loss": 1.3759649097919464,
+            "accuracy": 0.4375,
+            "n": 64
+          },
+          "pair:dailydialog": {
+            "loss": 1.3880757689476013,
+            "accuracy": 0.21875,
+            "n": 64
+          },
+          "pair:webster": {
+            "loss": 1.3651494979858398,
+            "accuracy": 0.5,
+            "n": 64
+          },
+          "physics": {
+            "loss": 1.9888010323047638,
+            "n": 256
+          }
+        },
+        "weights": "239fab11a5db5059fe0bb57858c2818b119eb368ea1350eca5b9d726139c5c75"
+      }
+    },
+    "selected": {
+      "score": 0.49918964335204075,
+      "step": 7168,
+      "sha256": "cdc8a6f256d7e3e59ada1e0650afb5a068a45dedb9b1b8f3ffa147f8e2a2d14e",
+      "revision": "cdc8a6f256d7e3e59ada1e0650afb5a068a45dedb9b1b8f3ffa147f8e2a2d14e.pt",
+      "parent": "7e89c685fdee4f93f486067851677eaf437475f2bdb3d1f7b5ae4eb34cd7aff2",
+      "weights": "55ae0c64f45574121601777c8b2b82161eec456651a5bcac5cd8c66d7b965881",
+      "updates": 0
+    },
+    "selected_example_exposures": {
+      "human_reading": 57360,
+      "human_mathematics": 28680,
+      "calculus": 6144,
+      "physical_simulation": 42984,
+      "dailydialog": 6144,
+      "descartes": 6144,
+      "grammar": 6144,
+      "plato": 6144,
+      "programming": 6144,
+      "webster": 6144
+    },
+    "selected_unique_human_records": 84943,
+    "selected_unique_simulated_systems": 42984,
+    "selected_development": {
+      "step": 7168,
+      "score": 0.49918964335204075,
+      "metrics": {
+        "reading": {
+          "loss": 0.7061737564702829,
+          "accuracy": 0.7630208333333334,
+          "n": 384
+        },
+        "math": {
+          "loss": 3.841396287083626,
+          "accuracy": 0.109375,
+          "n": 256
+        },
+        "pair:programming": {
+          "loss": 0.5399079245069752,
+          "accuracy": 0.8043478260869565,
+          "n": 46
+        },
+        "pair:grammar": {
+          "loss": 1.2823708355426788,
+          "accuracy": 0.328125,
+          "n": 64
+        },
+        "pair:plato": {
+          "loss": 1.1005671322345734,
+          "accuracy": 0.546875,
+          "n": 64
+        },
+        "pair:calculus": {
+          "loss": 0.9759922921657562,
+          "accuracy": 0.609375,
+          "n": 64
+        },
+        "pair:dailydialog": {
+          "loss": 1.3310419619083405,
+          "accuracy": 0.4375,
+          "n": 64
+        },
+        "pair:webster": {
+          "loss": 0.8345312178134918,
+          "accuracy": 0.640625,
+          "n": 64
+        },
+        "physics": {
+          "loss": 0.11073163896799088,
+          "n": 256
+        }
+      },
+      "weights": "55ae0c64f45574121601777c8b2b82161eec456651a5bcac5cd8c66d7b965881"
+    },
+    "entire_run": {
+      "attempted_batches": 12288,
+      "example_exposures": {
+        "human_reading": 98304,
+        "human_mathematics": 49152,
+        "calculus": 10536,
+        "physical_simulation": 73728,
+        "dailydialog": 10536,
+        "descartes": 10536,
+        "grammar": 10536,
+        "plato": 10536,
+        "programming": 10536,
+        "webster": 10512
+      },
+      "unique_human_records": 102408,
+      "unique_simulated_systems": 73728,
+      "selection": {
+        "score": 0.49918964335204075,
+        "step": 7168,
+        "sha256": "cdc8a6f256d7e3e59ada1e0650afb5a068a45dedb9b1b8f3ffa147f8e2a2d14e",
+        "revision": "cdc8a6f256d7e3e59ada1e0650afb5a068a45dedb9b1b8f3ffa147f8e2a2d14e.pt",
+        "parent": "7e89c685fdee4f93f486067851677eaf437475f2bdb3d1f7b5ae4eb34cd7aff2",
+        "weights": "55ae0c64f45574121601777c8b2b82161eec456651a5bcac5cd8c66d7b965881",
+        "updates": 0
+      },
+      "initial_weights": "239fab11a5db5059fe0bb57858c2818b119eb368ea1350eca5b9d726139c5c75",
+      "final_weights": "406ec1d28115060df4095cd7c9bc8e8a31f585783da4be93f7425b32faca14c4",
+      "final_evaluation_opened": false,
+      "reward_training_pending": true
+    },
+    "selected_ancestry": [
+      {
+        "revision": "cdc8a6f256d7e3e59ada1e0650afb5a068a45dedb9b1b8f3ffa147f8e2a2d14e.pt",
+        "step": 7168,
+        "parent": "7e89c685fdee4f93f486067851677eaf437475f2bdb3d1f7b5ae4eb34cd7aff2"
+      },
+      {
+        "revision": "7e89c685fdee4f93f486067851677eaf437475f2bdb3d1f7b5ae4eb34cd7aff2.pt",
+        "step": 6656,
+        "parent": "2c18049a03157780d0832576e7ba97a2a00a4fa0cb49ea71b40e587954ec40ef"
+      },
+      {
+        "revision": "2c18049a03157780d0832576e7ba97a2a00a4fa0cb49ea71b40e587954ec40ef.pt",
+        "step": 6144,
+        "parent": "56f9bb278d3ce5efab2a9b486e1f3a651cc2a041e7c3f343c8a878867e2a8970"
+      },
+      {
+        "revision": "56f9bb278d3ce5efab2a9b486e1f3a651cc2a041e7c3f343c8a878867e2a8970.pt",
+        "step": 5632,
+        "parent": "4b164a385c2dec2042afe39b5b026202011738e20bef5dd053f95c3e695b851b"
+      },
+      {
+        "revision": "4b164a385c2dec2042afe39b5b026202011738e20bef5dd053f95c3e695b851b.pt",
+        "step": 5120,
+        "parent": "10df223726cceed2f9e11de5fd563ace0d88b0213feda18b02a8c98839e2d70a"
+      },
+      {
+        "revision": "10df223726cceed2f9e11de5fd563ace0d88b0213feda18b02a8c98839e2d70a.pt",
+        "step": 4608,
+        "parent": "1ca3e56de041056cbd263e6a660b6c374fcf1095c812ff9a8ff94b3702c62c7b"
+      },
+      {
+        "revision": "1ca3e56de041056cbd263e6a660b6c374fcf1095c812ff9a8ff94b3702c62c7b.pt",
+        "step": 4096,
+        "parent": "178f333fd8776a19874dad6fa9f1b56d4b75d52d6fbd3f9f520229a5b715f2f6"
+      },
+      {
+        "revision": "178f333fd8776a19874dad6fa9f1b56d4b75d52d6fbd3f9f520229a5b715f2f6.pt",
+        "step": 3584,
+        "parent": "b957d6fd857bf6306c241c8b750e537436ab6e1f9985fe8444daa0f6379fac00"
+      },
+      {
+        "revision": "b957d6fd857bf6306c241c8b750e537436ab6e1f9985fe8444daa0f6379fac00.pt",
+        "step": 3072,
+        "parent": "73938ecb2f83a449e1b760e25a071dfd655ddb0e6a7a105968b235960ba0f4f5"
+      },
+      {
+        "revision": "73938ecb2f83a449e1b760e25a071dfd655ddb0e6a7a105968b235960ba0f4f5.pt",
+        "step": 2560,
+        "parent": "f2cbcfb185372171c64489cf65f410e7d540cbf8c00bb5c6581865f402ec490c"
+      },
+      {
+        "revision": "f2cbcfb185372171c64489cf65f410e7d540cbf8c00bb5c6581865f402ec490c.pt",
+        "step": 2048,
+        "parent": "0a22665a16c208ac40db4cf06421bd6bacc9c495128892a04647ec9ba08eb3b1"
+      },
+      {
+        "revision": "0a22665a16c208ac40db4cf06421bd6bacc9c495128892a04647ec9ba08eb3b1.pt",
+        "step": 1536,
+        "parent": "c09482450867e55f083abd72b3e53df504362d0efb30b067116e71b52c495d13"
+      },
+      {
+        "revision": "c09482450867e55f083abd72b3e53df504362d0efb30b067116e71b52c495d13.pt",
+        "step": 1024,
+        "parent": "459878784ee59467fb404eec2c6b375ca108adb64ee493af9af78360ef9943b8"
+      },
+      {
+        "revision": "459878784ee59467fb404eec2c6b375ca108adb64ee493af9af78360ef9943b8.pt",
+        "step": 512,
+        "parent": "8960ac571eb7d3cced3826f36acdae12253e615bb28f0f029ea466ee73239160"
+      },
+      {
+        "revision": "8960ac571eb7d3cced3826f36acdae12253e615bb28f0f029ea466ee73239160.pt",
+        "step": 0,
+        "parent": null
+      }
+    ],
+    "parameters": 889213,
+    "parameter_bytes": 3556852,
+    "field_parameter_bytes": 104620,
+    "optimizer_tensor_bytes": 6846116,
+    "core_links_l2_change": 0.2849365472793579,
+    "core_prior_l2_change": 0.6301378607749939,
+    "single_field_state_bytes": 96,
+    "state_scope": "One field state only, excluding inputs, branches, vocabulary, optimizer, tapes and Python storage.",
+    "final": {
+      "reading": {
+        "full": {
+          "n": 1024,
+          "accuracy": 0.771484375,
+          "multi_sentence_n": 1006,
+          "multi_sentence_accuracy": 0.7673956262425448,
+          "top3_evidence_recall": 0.951171875,
+          "lexical_baseline_accuracy": 0.779296875
+        },
+        "no_imagination": {
+          "n": 1024,
+          "accuracy": 0.7587890625,
+          "multi_sentence_n": 1006,
+          "multi_sentence_accuracy": 0.7544731610337972,
+          "top3_evidence_recall": 0.9462890625,
+          "lexical_baseline_accuracy": 0.779296875
+        },
+        "no_loop": {
+          "n": 1024,
+          "accuracy": 0.7587890625,
+          "multi_sentence_n": 1006,
+          "multi_sentence_accuracy": 0.7544731610337972,
+          "top3_evidence_recall": 0.951171875,
+          "lexical_baseline_accuracy": 0.779296875
+        }
+      },
+      "physics": {
+        "forward": {
+          "n": 256,
+          "mse": 0.10687614796052003
+        },
+        "motion_transfer": {
+          "n": 64,
+          "completed_rollouts": 64,
+          "mean_position_velocity_mse": 0.05402111918674997,
+          "duration": 1.0,
+          "taught_target": "acceleration; trajectories independently evaluated"
+        },
+        "verified_reward": {
+          "n": 256,
+          "before_mse": 0.10996667284399564,
+          "after_mse": 0.06427019210161689,
+          "mean_absolute_progress": 0.04569648074237875,
+          "fraction_improved": 0.578125,
+          "relative_mse_reduction": 0.41554845264079354,
+          "original_goals_returned": 256,
+          "failed_actuators": 6,
+          "probe_count": 256
+        },
+        "reward_disconnected": {
+          "n": 256,
+          "before_mse": 0.10996667284399564,
+          "after_mse": 0.07234765277036104,
+          "mean_absolute_progress": 0.0376190200736346,
+          "fraction_improved": 0.62890625,
+          "relative_mse_reduction": 0.3420947374392501,
+          "original_goals_returned": 256,
+          "failed_actuators": 6,
+          "probe_count": 256
+        },
+        "random": {
+          "n": 256,
+          "before_mse": 0.10996667284399564,
+          "after_mse": 0.0792650426921,
+          "mean_absolute_progress": 0.030701630151895642,
+          "fraction_improved": 0.5859375,
+          "relative_mse_reduction": 0.2791903161010477,
+          "original_goals_returned": 256,
+          "failed_actuators": 4,
+          "probe_count": 256
+        },
+        "analytic": {
+          "n": 256,
+          "before_mse": 0.10996667284399564,
+          "after_mse": 0.03931713942856163,
+          "mean_absolute_progress": 0.07064953341543401,
+          "fraction_improved": 0.7109375,
+          "relative_mse_reduction": 0.642463135314288,
+          "original_goals_returned": 256,
+          "failed_actuators": 5,
+          "probe_count": 256
+        },
+        "omitted_mechanism": {
+          "n": 64,
+          "before_mse": 0.5165191725536715,
+          "after_mse": 0.6773469479521737,
+          "mean_absolute_progress": -0.16082777539850213,
+          "fraction_improved": 0.359375,
+          "relative_mse_reduction": -0.31136845241071964,
+          "original_goals_returned": 64,
+          "failed_actuators": 1,
+          "probe_count": 64,
+          "mean_model_spread": 0.03031179093522951
+        }
+      },
+      "retention": {
+        "verified_reward": {
+          "non_policy_parameters_exactly_retained": true,
+          "method": "Predictor frozen during this controlled policy study"
+        },
+        "reward_disconnected": {
+          "non_policy_parameters_exactly_retained": true,
+          "method": "Predictor frozen during this controlled policy study"
+        }
+      },
+      "math": {
+        "all_continuations": {
+          "n": 512,
+          "numeric_top1": 0.134765625,
+          "numeric_top5": 0.380859375,
+          "human_expression_top1": 0.126953125,
+          "human_expression_top5": 0.34765625
+        },
+        "original_one_step": {
+          "n": 3,
+          "numeric_top1": 0.0,
+          "numeric_top5": 1.0,
+          "human_expression_top1": 0.0,
+          "human_expression_top5": 1.0
+        },
+        "scope": "Executable binary arithmetic proposals; teacher-forced continuations reported separately."
+      },
+      "human_associations": {
+        "calculus": {
+          "n": 38,
+          "four_candidate_association_accuracy": 0.42105263157894735
+        },
+        "dailydialog": {
+          "n": 256,
+          "four_candidate_association_accuracy": 0.42578125
+        },
+        "grammar": {
+          "n": 99,
+          "four_candidate_association_accuracy": 0.47474747474747475
+        },
+        "plato": {
+          "n": 48,
+          "four_candidate_association_accuracy": 0.4166666666666667
+        },
+        "programming": {
+          "n": 33,
+          "four_candidate_association_accuracy": 0.8484848484848485
+        },
+        "webster": {
+          "n": 256,
+          "four_candidate_association_accuracy": 0.59765625
+        }
+      }
+    },
+    "replay": {
+      "all_metrics_and_raw_records_exact": true,
+      "original": "D:\\ai\\labs\\sera-field\\runs\\CONNECTED-SCFE-COMPARISON-001\\field-final"
+    },
+    "reward_training": {
+      "verified_reward": {
+        "attempts_including_retries": 2048,
+        "accepted_assessments": 2011,
+        "rejected_assessments": 37,
+        "positive_reward_events": 1168,
+        "negative_reward_events": 843,
+        "novel_contribution_bonus_events": 15,
+        "actual_weight_changes": 2011
+      },
+      "reward_disconnected": {
+        "attempts_including_retries": 2048,
+        "accepted_assessments": 2011,
+        "rejected_assessments": 37,
+        "positive_reward_events": 1169,
+        "negative_reward_events": 842,
+        "novel_contribution_bonus_events": 15,
+        "actual_weight_changes": 0
+      }
+    }
+  },
+  "scfe": {
+    "specification": {
+      "type": "clifford-sheaf-field-004",
+      "width": 48,
+      "nodes": 8,
+      "rounds": 4
+    },
+    "initial": {
+      "sha256": "c26c5ace4826d49635aba9b38d784ab59a873ceec06487bbf7455a4d9104b8e0",
+      "revision": "c26c5ace4826d49635aba9b38d784ab59a873ceec06487bbf7455a4d9104b8e0.pt",
+      "parent": null,
+      "weights": "99190b1225e9cf2fc7e19aba149d2bd8768511de508e133df5ca3aa174926cea",
+      "updates": 0,
+      "development": {
+        "step": 0,
+        "score": 1.0,
+        "metrics": {
+          "reading": {
+            "loss": 1.4703971048196156,
+            "accuracy": 0.3828125,
+            "n": 384
+          },
+          "math": {
+            "loss": 5.2729171216487885,
+            "accuracy": 0.0,
+            "n": 256
+          },
+          "pair:programming": {
+            "loss": 1.3850016231122224,
+            "accuracy": 0.2608695652173913,
+            "n": 46
+          },
+          "pair:grammar": {
+            "loss": 1.3832632899284363,
+            "accuracy": 0.25,
+            "n": 64
+          },
+          "pair:plato": {
+            "loss": 1.3801950216293335,
+            "accuracy": 0.359375,
+            "n": 64
+          },
+          "pair:calculus": {
+            "loss": 1.3759633004665375,
+            "accuracy": 0.4375,
+            "n": 64
+          },
+          "pair:dailydialog": {
+            "loss": 1.3880899548530579,
+            "accuracy": 0.21875,
+            "n": 64
+          },
+          "pair:webster": {
+            "loss": 1.3651366829872131,
+            "accuracy": 0.5,
+            "n": 64
+          },
+          "physics": {
+            "loss": 1.9886560887098312,
+            "n": 256
+          }
+        },
+        "weights": "99190b1225e9cf2fc7e19aba149d2bd8768511de508e133df5ca3aa174926cea"
+      }
+    },
+    "selected": {
+      "score": 0.5011824930760271,
+      "step": 6144,
+      "sha256": "eff092ad1143fd6745350ffd86d06b23d444b3eb16acd4a322a41cbd659918f1",
+      "revision": "eff092ad1143fd6745350ffd86d06b23d444b3eb16acd4a322a41cbd659918f1.pt",
+      "parent": "eeb9f0512704b9996247b308fe6ac69a63e299f969a68b1d84808b26cc891fad",
+      "weights": "cdb4936fad6098b3572f3b7dba935e3cbe9356b6357fe28f1d951d92573c13b3",
+      "updates": 0
+    },
+    "selected_example_exposures": {
+      "human_reading": 49152,
+      "human_mathematics": 24576,
+      "calculus": 5280,
+      "physical_simulation": 36864,
+      "dailydialog": 5280,
+      "descartes": 5280,
+      "grammar": 5256,
+      "plato": 5256,
+      "programming": 5256,
+      "webster": 5256
+    },
+    "selected_unique_human_records": 75001,
+    "selected_unique_simulated_systems": 36864,
+    "selected_development": {
+      "step": 6144,
+      "score": 0.5011824930760271,
+      "metrics": {
+        "reading": {
+          "loss": 0.7102518137544394,
+          "accuracy": 0.7578125,
+          "n": 384
+        },
+        "math": {
+          "loss": 3.875873640179634,
+          "accuracy": 0.109375,
+          "n": 256
+        },
+        "pair:programming": {
+          "loss": 0.4338344905687415,
+          "accuracy": 0.8478260869565217,
+          "n": 46
+        },
+        "pair:grammar": {
+          "loss": 1.3098843395709991,
+          "accuracy": 0.296875,
+          "n": 64
+        },
+        "pair:plato": {
+          "loss": 1.07738596200943,
+          "accuracy": 0.53125,
+          "n": 64
+        },
+        "pair:calculus": {
+          "loss": 0.9683834463357925,
+          "accuracy": 0.640625,
+          "n": 64
+        },
+        "pair:dailydialog": {
+          "loss": 1.3664891719818115,
+          "accuracy": 0.34375,
+          "n": 64
+        },
+        "pair:webster": {
+          "loss": 0.8742205202579498,
+          "accuracy": 0.59375,
+          "n": 64
+        },
+        "physics": {
+          "loss": 0.1161537291482091,
+          "n": 256
+        }
+      },
+      "weights": "cdb4936fad6098b3572f3b7dba935e3cbe9356b6357fe28f1d951d92573c13b3"
+    },
+    "entire_run": {
+      "attempted_batches": 12288,
+      "example_exposures": {
+        "human_reading": 98304,
+        "human_mathematics": 49152,
+        "calculus": 10536,
+        "physical_simulation": 73728,
+        "dailydialog": 10536,
+        "descartes": 10536,
+        "grammar": 10536,
+        "plato": 10536,
+        "programming": 10536,
+        "webster": 10512
+      },
+      "unique_human_records": 102408,
+      "unique_simulated_systems": 73728,
+      "selection": {
+        "score": 0.5011824930760271,
+        "step": 6144,
+        "sha256": "eff092ad1143fd6745350ffd86d06b23d444b3eb16acd4a322a41cbd659918f1",
+        "revision": "eff092ad1143fd6745350ffd86d06b23d444b3eb16acd4a322a41cbd659918f1.pt",
+        "parent": "eeb9f0512704b9996247b308fe6ac69a63e299f969a68b1d84808b26cc891fad",
+        "weights": "cdb4936fad6098b3572f3b7dba935e3cbe9356b6357fe28f1d951d92573c13b3",
+        "updates": 0
+      },
+      "initial_weights": "99190b1225e9cf2fc7e19aba149d2bd8768511de508e133df5ca3aa174926cea",
+      "final_weights": "b4d489b3bfd39cd4929eb52a73ae99a3778f3a80cf33ead8b005ecfc8f5af21c",
+      "final_evaluation_opened": false,
+      "reward_training_pending": true
+    },
+    "selected_ancestry": [
+      {
+        "revision": "eff092ad1143fd6745350ffd86d06b23d444b3eb16acd4a322a41cbd659918f1.pt",
+        "step": 6144,
+        "parent": "eeb9f0512704b9996247b308fe6ac69a63e299f969a68b1d84808b26cc891fad"
+      },
+      {
+        "revision": "eeb9f0512704b9996247b308fe6ac69a63e299f969a68b1d84808b26cc891fad.pt",
+        "step": 5632,
+        "parent": "ce19c448ee30b05f79fe6b70da0e697d282abbd76e1ebec05d9593819fa59324"
+      },
+      {
+        "revision": "ce19c448ee30b05f79fe6b70da0e697d282abbd76e1ebec05d9593819fa59324.pt",
+        "step": 5120,
+        "parent": "eb0882842f50e07de074745fae4b7f26a1832d0da23b58088ecc9f244ce2597b"
+      },
+      {
+        "revision": "eb0882842f50e07de074745fae4b7f26a1832d0da23b58088ecc9f244ce2597b.pt",
+        "step": 4608,
+        "parent": "34cc928b077db846892a92aa18c8eaadb208863df12312e4051be74fa2121733"
+      },
+      {
+        "revision": "34cc928b077db846892a92aa18c8eaadb208863df12312e4051be74fa2121733.pt",
+        "step": 4096,
+        "parent": "c423e10039e4a23416101639768a87bc6be7c01b15aaaa73e3da8c421478e21e"
+      },
+      {
+        "revision": "c423e10039e4a23416101639768a87bc6be7c01b15aaaa73e3da8c421478e21e.pt",
+        "step": 3584,
+        "parent": "ce26bffb7423591b3cba8792db113d1214776a01ed9c7fa421bdcecdb4c2d829"
+      },
+      {
+        "revision": "ce26bffb7423591b3cba8792db113d1214776a01ed9c7fa421bdcecdb4c2d829.pt",
+        "step": 3072,
+        "parent": "885bedacb9b5919fa877a3e62c1e4dd611a155b33d00e83ce765c6a7dcec4515"
+      },
+      {
+        "revision": "885bedacb9b5919fa877a3e62c1e4dd611a155b33d00e83ce765c6a7dcec4515.pt",
+        "step": 2560,
+        "parent": "585b36461067f0da7f42277a65fb1dd7068b1b57f8d7dbd6bb33907d44852bd6"
+      },
+      {
+        "revision": "585b36461067f0da7f42277a65fb1dd7068b1b57f8d7dbd6bb33907d44852bd6.pt",
+        "step": 2048,
+        "parent": "436ee9d422643744ca81a592f5fe93145e1f554be9bb11038a6613381b2b856b"
+      },
+      {
+        "revision": "436ee9d422643744ca81a592f5fe93145e1f554be9bb11038a6613381b2b856b.pt",
+        "step": 1536,
+        "parent": "5717cce5c6b300d2072f757c50d369b94487c4bc123fb4344984c2b959b52256"
+      },
+      {
+        "revision": "5717cce5c6b300d2072f757c50d369b94487c4bc123fb4344984c2b959b52256.pt",
+        "step": 1024,
+        "parent": "01f3d21943f0c283a2a9735fdc315fe124133584d8e3cfdd0f019fd5ce33a599"
+      },
+      {
+        "revision": "01f3d21943f0c283a2a9735fdc315fe124133584d8e3cfdd0f019fd5ce33a599.pt",
+        "step": 512,
+        "parent": "c26c5ace4826d49635aba9b38d784ab59a873ceec06487bbf7455a4d9104b8e0"
+      },
+      {
+        "revision": "c26c5ace4826d49635aba9b38d784ab59a873ceec06487bbf7455a4d9104b8e0.pt",
+        "step": 0,
+        "parent": null
+      }
+    ],
+    "parameters": 863148,
+    "parameter_bytes": 3452592,
+    "field_parameter_bytes": 360,
+    "optimizer_tensor_bytes": 6846448,
+    "core_links_l2_change": 0.33157020807266235,
+    "core_prior_l2_change": 0.6534477472305298,
+    "single_field_state_bytes": 256,
+    "state_scope": "One field state only, excluding inputs, branches, vocabulary, optimizer, tapes and Python storage.",
+    "final": {
+      "reading": {
+        "full": {
+          "n": 1024,
+          "accuracy": 0.76953125,
+          "multi_sentence_n": 1006,
+          "multi_sentence_accuracy": 0.7654075546719682,
+          "top3_evidence_recall": 0.9453125,
+          "lexical_baseline_accuracy": 0.779296875
+        },
+        "no_imagination": {
+          "n": 1024,
+          "accuracy": 0.763671875,
+          "multi_sentence_n": 1006,
+          "multi_sentence_accuracy": 0.7594433399602386,
+          "top3_evidence_recall": 0.9482421875,
+          "lexical_baseline_accuracy": 0.779296875
+        },
+        "no_loop": {
+          "n": 1024,
+          "accuracy": 0.767578125,
+          "multi_sentence_n": 1006,
+          "multi_sentence_accuracy": 0.7634194831013916,
+          "top3_evidence_recall": 0.9404296875,
+          "lexical_baseline_accuracy": 0.779296875
+        }
+      },
+      "physics": {
+        "forward": {
+          "n": 256,
+          "mse": 0.10681791069964675
+        },
+        "motion_transfer": {
+          "n": 64,
+          "completed_rollouts": 64,
+          "mean_position_velocity_mse": 0.05723861186308705,
+          "duration": 1.0,
+          "taught_target": "acceleration; trajectories independently evaluated"
+        },
+        "verified_reward": {
+          "n": 256,
+          "before_mse": 0.11186792412104296,
+          "after_mse": 0.10092360331066175,
+          "mean_absolute_progress": 0.010944320810381214,
+          "fraction_improved": 0.4921875,
+          "relative_mse_reduction": 0.0978325189849708,
+          "original_goals_returned": 256,
+          "failed_actuators": 6,
+          "probe_count": 256
+        },
+        "reward_disconnected": {
+          "n": 256,
+          "before_mse": 0.11186792412104296,
+          "after_mse": 0.07517250142200282,
+          "mean_absolute_progress": 0.03669542269904014,
+          "fraction_improved": 0.59375,
+          "relative_mse_reduction": 0.3280245252368773,
+          "original_goals_returned": 256,
+          "failed_actuators": 6,
+          "probe_count": 256
+        },
+        "random": {
+          "n": 256,
+          "before_mse": 0.11186792412104296,
+          "after_mse": 0.08240381401066088,
+          "mean_absolute_progress": 0.02946411011038208,
+          "fraction_improved": 0.5625,
+          "relative_mse_reduction": 0.2633830058248102,
+          "original_goals_returned": 256,
+          "failed_actuators": 4,
+          "probe_count": 256
+        },
+        "analytic": {
+          "n": 256,
+          "before_mse": 0.11186792412104296,
+          "after_mse": 0.04096092614395275,
+          "mean_absolute_progress": 0.07090699797709021,
+          "fraction_improved": 0.70703125,
+          "relative_mse_reduction": 0.6338456580312303,
+          "original_goals_returned": 256,
+          "failed_actuators": 5,
+          "probe_count": 256
+        },
+        "omitted_mechanism": {
+          "n": 64,
+          "before_mse": 0.4941797532083001,
+          "after_mse": 0.6741163787664846,
+          "mean_absolute_progress": -0.17993662555818446,
+          "fraction_improved": 0.328125,
+          "relative_mse_reduction": -0.36411169091814233,
+          "original_goals_returned": 64,
+          "failed_actuators": 1,
+          "probe_count": 64,
+          "mean_model_spread": 0.026511679352552164
+        }
+      },
+      "retention": {
+        "verified_reward": {
+          "non_policy_parameters_exactly_retained": true,
+          "method": "Predictor frozen during this controlled policy study"
+        },
+        "reward_disconnected": {
+          "non_policy_parameters_exactly_retained": true,
+          "method": "Predictor frozen during this controlled policy study"
+        }
+      },
+      "math": {
+        "all_continuations": {
+          "n": 512,
+          "numeric_top1": 0.109375,
+          "numeric_top5": 0.38671875,
+          "human_expression_top1": 0.09765625,
+          "human_expression_top5": 0.34375
+        },
+        "original_one_step": {
+          "n": 3,
+          "numeric_top1": 0.3333333333333333,
+          "numeric_top5": 0.6666666666666666,
+          "human_expression_top1": 0.3333333333333333,
+          "human_expression_top5": 0.6666666666666666
+        },
+        "scope": "Executable binary arithmetic proposals; teacher-forced continuations reported separately."
+      },
+      "human_associations": {
+        "calculus": {
+          "n": 38,
+          "four_candidate_association_accuracy": 0.5263157894736842
+        },
+        "dailydialog": {
+          "n": 256,
+          "four_candidate_association_accuracy": 0.40234375
+        },
+        "grammar": {
+          "n": 99,
+          "four_candidate_association_accuracy": 0.41414141414141414
+        },
+        "plato": {
+          "n": 48,
+          "four_candidate_association_accuracy": 0.3958333333333333
+        },
+        "programming": {
+          "n": 33,
+          "four_candidate_association_accuracy": 0.8181818181818182
+        },
+        "webster": {
+          "n": 256,
+          "four_candidate_association_accuracy": 0.62109375
+        }
+      }
+    },
+    "replay": {
+      "all_metrics_and_raw_records_exact": true,
+      "original": "D:\\ai\\labs\\sera-field\\runs\\CONNECTED-SCFE-COMPARISON-001\\scfe-final"
+    },
+    "reward_training": {
+      "verified_reward": {
+        "attempts_including_retries": 2048,
+        "accepted_assessments": 2011,
+        "rejected_assessments": 37,
+        "positive_reward_events": 1102,
+        "negative_reward_events": 909,
+        "novel_contribution_bonus_events": 15,
+        "actual_weight_changes": 2011
+      },
+      "reward_disconnected": {
+        "attempts_including_retries": 2048,
+        "accepted_assessments": 2011,
+        "rejected_assessments": 37,
+        "positive_reward_events": 1105,
+        "negative_reward_events": 906,
+        "novel_contribution_bonus_events": 15,
+        "actual_weight_changes": 0
+      }
+    }
+  }
+}

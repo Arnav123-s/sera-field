@@ -1,0 +1,42 @@
+{
+  "inference_checkpoint": {
+    "sha256": "7767b021573e7b398f87dd45706dd2a87b1b2e3738545f4c36e4ced80c3b5e48",
+    "revision": "7767b021573e7b398f87dd45706dd2a87b1b2e3738545f4c36e4ced80c3b5e48.pt",
+    "parent": "4d6101aa2150059ffc81b8c4743b172f5f44984b5be0cb81545ab61a8fe7312d",
+    "weights": "afa6bea53feb6e6b74d98ea52195ff531d21cc22e3863e8eb077f21fba007ba7",
+    "updates": 0,
+    "step": 2048,
+    "accuracy": 1.0,
+    "loss": 0.002970927394926548,
+    "source_checkpoint_sha256": "e21d398477730170efc86fa3cc8b70b59c289e24e7377fef32faed4aa057ebdb",
+    "role": "qualified_five_use_owner",
+    "retained_concept_reward_updates": 754
+  },
+  "decision": {
+    "checks": {
+      "routing": true,
+      "direction": true,
+      "direction_improved": true,
+      "numerical_outputs_retained": true,
+      "old_parameters_retained": true,
+      "forward_mse": true,
+      "inverse_mse": true,
+      "counterfactual_mse": true,
+      "plan_mse": true
+    },
+    "qualified": true,
+    "all_five_replays_exact": true,
+    "completed_utc": "2026-09-20T06:55:04Z"
+  },
+  "parameter_count": 876997,
+  "parameter_bytes": 3507988,
+  "file_bytes": 3526715,
+  "no_raw_corpus_text": true,
+  "no_optimizer_or_training_buffer": true,
+  "complete_resume_state": "runs/CONCEPT-011/revisions",
+  "older_packages": "preserved unchanged",
+  "source_parent": "runs/CONCEPT-009",
+  "inherited_new_concept_training": "runs/CONCEPT-008/full",
+  "inherited_qualified_policy": "runs/CONCEPT-008/reward",
+  "retained_human_record_union": 78746
+}

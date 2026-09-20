@@ -1,0 +1,26 @@
+{
+  "output": "local\\CONNECTED-002-human-views-v1",
+  "counts": {
+    "mathematics": {
+      "train": 5918,
+      "development": 720,
+      "sealed": 738
+    },
+    "programming": {
+      "train": 295,
+      "development": 46,
+      "sealed": 33
+    },
+    "language_reading": {
+      "train": 66880,
+      "development": 12410,
+      "sealed": 8116
+    }
+  },
+  "groups": {
+    "train": 6554,
+    "development": 825,
+    "sealed": 812
+  },
+  "excluded": 193
+}

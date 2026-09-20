@@ -1,0 +1,19 @@
+{
+  "kind": "independent_simulation",
+  "source": "concept_world.World delivery fixture",
+  "source_sha256": "bc634633a4a227da70456e4d1fbdd3fb74961684c755f267f2b45681a9dbf731",
+  "measurement_id": "delivery-followup",
+  "requested": [
+    2.0,
+    -2.0
+  ],
+  "performed": [
+    2.0,
+    -2.0
+  ],
+  "measured": [
+    2.0,
+    -2.0,
+    -2.8
+  ]
+}

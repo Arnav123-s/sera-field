@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sera-field"
+version = "0.1.0"
+description = "Learned situations, conditional imagination and evidence-qualified model refinement"
+authors = [{name = "Arnav123-s"}]
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.3,<3", "torch>=2.10,<2.11", "scipy>=1.16,<2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[tool.setuptools.packages.find]
+include = ["sera_field*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

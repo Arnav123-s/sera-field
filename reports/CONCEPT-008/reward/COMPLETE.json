@@ -1,0 +1,69 @@
+{
+  "episodes": 2048,
+  "reward_updates": 2007,
+  "selected": {
+    "sha256": "92408d2afe62dde09b0742308fd24c31f723ec38ac8620415aa47ea5a3a9ce0c",
+    "revision": "92408d2afe62dde09b0742308fd24c31f723ec38ac8620415aa47ea5a3a9ce0c.pt",
+    "parent": "4d8ff9ea995ea8d27c2ea26a1b777ad4f8e69f166fe2a99d0a43618aa2acda8d",
+    "weights": "4c9b61a2ad676fe857963f1887dd970f9b616042ea0596f1a6d830e2744d5ae0",
+    "updates": 754,
+    "step": 768,
+    "score": 0.18000489859514346
+  },
+  "development": [
+    {
+      "step": 0,
+      "before_mse": 1.3734115814640973,
+      "after_mse": 0.19381483672827926,
+      "weights": "aa3618f9851fc2081b0d3b4a943110255ea067d14cec9ff780b0a1df0fc50184"
+    },
+    {
+      "step": 256,
+      "before_mse": 1.3734115814640973,
+      "after_mse": 0.5765978667132003,
+      "weights": "03a1594c195244a348269cadb98794dd08e911a4e9178658bf05d223255f7d95"
+    },
+    {
+      "step": 512,
+      "before_mse": 1.3734115814640973,
+      "after_mse": 0.22905196783540305,
+      "weights": "3a4cebe4d68e6dd365ebf153303ef01c1fe3921a7724090ceea3f30da17e272b"
+    },
+    {
+      "step": 768,
+      "before_mse": 1.3734115814640973,
+      "after_mse": 0.18000489859514346,
+      "weights": "4c9b61a2ad676fe857963f1887dd970f9b616042ea0596f1a6d830e2744d5ae0"
+    },
+    {
+      "step": 1024,
+      "before_mse": 1.3734115814640973,
+      "after_mse": 0.18056217641105832,
+      "weights": "748fef7f01257b0b3f0242f4d8ddc99f1f5f7bbc8dc0bf1100fec3a318085df5"
+    },
+    {
+      "step": 1280,
+      "before_mse": 1.3734115814640973,
+      "after_mse": 0.18056217641105832,
+      "weights": "2c1246aadaf8ff00c32857e88b2ca0bd54647e3eca8aa04f7bb74d102b923661"
+    },
+    {
+      "step": 1536,
+      "before_mse": 1.3734115814640973,
+      "after_mse": 0.18056217641105832,
+      "weights": "aa8b2dedfeddd698b53b7be139e23acd17601750ce13db956281bbcca3c6c764"
+    },
+    {
+      "step": 1792,
+      "before_mse": 1.3734115814640973,
+      "after_mse": 0.18056217641105832,
+      "weights": "dae0f4e51be239a818560f11d6abd0978d10dcf6d1be840e5cee22020d67ce00"
+    },
+    {
+      "step": 2048,
+      "before_mse": 1.3734115814640973,
+      "after_mse": 0.18116805119325363,
+      "weights": "6f78e2b42823e1a7badc6e983dfc16381b8e6ec7d3819a52ad5b853bc4eed889"
+    }
+  ]
+}

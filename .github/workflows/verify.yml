@@ -1,0 +1,27 @@
+name: Verify SERA Field
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    container:
+      image: python:3.12-slim
+      options: --cpus 1 --memory 2g
+    env:
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+      NUMEXPR_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install --no-cache-dir torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+      - run: python -m pip install --no-cache-dir numpy==2.3.5 scipy==1.16.3 pytest==9.0.2
+      - run: python -m pip install --no-deps -e .
+      - run: python -m pytest
+      - run: python scripts/verify_packaged.py

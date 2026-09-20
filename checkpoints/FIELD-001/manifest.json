@@ -1,0 +1,260 @@
+{
+  "default_seed": 11,
+  "selection_basis": "Fixed seed named before final evaluation",
+  "files": {
+    "field-11.pt": {
+      "path": "runs\\FIELD-001\\field-11\\step-03000.pt",
+      "sha256": "6a3fef1162b82c60a008ae375085381c041973e589b07b3d128b93bd6fa2d35a",
+      "weight_sha256": "7ab174f88be7ce74f79f3f2e8b78ecc455006845486ffb1df5b3ee36db4ccd3b",
+      "step": 3000,
+      "release_path": "checkpoints/FIELD-001/field-11.pt"
+    },
+    "calibrated-11.pt": {
+      "path": "runs\\FIELD-001\\calibrated-11.pt",
+      "sha256": "ef27122ef2fe7d8ec29b95c9a9adb5deebd3540f9f40054b81faf016f4c72f8f",
+      "weight_sha256": "20c6d56f039df7b6bfdd16afdac4d323a76dff544441b52803637110f061ae7b",
+      "step": 2500,
+      "release_path": "checkpoints/FIELD-001/calibrated-11.pt"
+    }
+  },
+  "earlier_SERA_weights_imported": false,
+  "initializations": {
+    "field-11": {
+      "initial_sha256": "cebb424006d75ac1c4266fd304526846f0d57879c8a69fab90032ef3c02500fe",
+      "initial_weight_sha256": "5212fa8127566185daca3c64ba3811e37e7a90e4daf060c5b144d7a87b3d67eb",
+      "selected_weight_sha256": "7ab174f88be7ce74f79f3f2e8b78ecc455006845486ffb1df5b3ee36db4ccd3b",
+      "updates": 3000,
+      "selected_step": 3000,
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "random_initialization_reconstructed_exactly": true,
+      "connection_weight_change_l2": 2.560612678527832
+    },
+    "scrambled-11": {
+      "initial_sha256": "678ec78f1f30727adc4ba1558e5a7905af25c7c150e26fad921e4d5713bd239e",
+      "initial_weight_sha256": "5212fa8127566185daca3c64ba3811e37e7a90e4daf060c5b144d7a87b3d67eb",
+      "selected_weight_sha256": "10aca925baf87c354320a7975e6fa35f9c4289b65f57701cababc6c72f9e12d1",
+      "updates": 3000,
+      "selected_step": 3000,
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "random_initialization_reconstructed_exactly": true
+    },
+    "dense-11": {
+      "initial_sha256": "f98c9e08bb56c1bb62e12a316320fd27d292244a38a00c4ce8cf7ff17554ea2c",
+      "initial_weight_sha256": "6d9bcbf060d712ec47804bde6e25e7b95f4b5f91fd4fe19ab721b71c9f63411b",
+      "selected_weight_sha256": "b421103706b6123fa3155b9226489852dd148f11aded6cce224929dc95882ef5",
+      "updates": 3000,
+      "selected_step": 3000,
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "random_initialization_reconstructed_exactly": true
+    },
+    "field-29": {
+      "initial_sha256": "a04eb75a611ce29dcf190e5e170cc09f15f519a9092ca0dc0cbfdd16a1032166",
+      "initial_weight_sha256": "15713d4ab64f50b19ae7428ae9f483a02d63e274a5b39687a042690a364f3124",
+      "selected_weight_sha256": "954dff88261d370f260e4b22a1dec02f68c84d74c9da2cb03f0a1def0063d516",
+      "updates": 3000,
+      "selected_step": 3000,
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "random_initialization_reconstructed_exactly": true,
+      "connection_weight_change_l2": 3.2155985832214355
+    },
+    "scrambled-29": {
+      "initial_sha256": "212c2228e0a86858f991b8d0b67c5bfc930a68824c4c0e4a6b970d03ade3fc74",
+      "initial_weight_sha256": "15713d4ab64f50b19ae7428ae9f483a02d63e274a5b39687a042690a364f3124",
+      "selected_weight_sha256": "72aafb43c47af2034fdfbba3fd530db195ab8bd544e7aa1c12cf2188e26a48e2",
+      "updates": 3000,
+      "selected_step": 3000,
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "random_initialization_reconstructed_exactly": true
+    },
+    "dense-29": {
+      "initial_sha256": "471a57a637ce4cf8b8b034d5f211372539f863fb402d44b50e7d5b07eb6ea1ee",
+      "initial_weight_sha256": "479bf21b6083692ac898e7e85e7fe5dcecf61c7fca660a6d878813ddcac531d0",
+      "selected_weight_sha256": "7f1283dfe0b97b55f23f084485867f553dcf13741615f9837600f24a3bcea4cd",
+      "updates": 3000,
+      "selected_step": 3000,
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "random_initialization_reconstructed_exactly": true
+    },
+    "field-47": {
+      "initial_sha256": "c9b795e1a8675723d4bd844839cdff22ebbb60f617bed8396f56d20d8baa4344",
+      "initial_weight_sha256": "fe260d0a27690daa1f27f204c494a8bdcbf466f950487cf6e99086eda4649cd5",
+      "selected_weight_sha256": "87f6c679bccce80a7ba25590331745084856cd97e189bda5ac51e2883b6b3a38",
+      "updates": 3000,
+      "selected_step": 3000,
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "random_initialization_reconstructed_exactly": true,
+      "connection_weight_change_l2": 2.743447780609131
+    },
+    "scrambled-47": {
+      "initial_sha256": "b9fdceb28e1fc60104093bd116256f004fb1bd97dfbe80b08961e8a432d5b1c5",
+      "initial_weight_sha256": "fe260d0a27690daa1f27f204c494a8bdcbf466f950487cf6e99086eda4649cd5",
+      "selected_weight_sha256": "7b5817b013c6d4ccd72b458c224bba09da85f6d7132650700c6c4f66aca59398",
+      "updates": 3000,
+      "selected_step": 3000,
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "random_initialization_reconstructed_exactly": true
+    },
+    "dense-47": {
+      "initial_sha256": "02cecddfc3b5bb824896a51812ca80cf7190bc026af5b3dbe9b16c52a23f4663",
+      "initial_weight_sha256": "d85d4423a3dc760d573bc00aa84354385eb67767f348a99e3d4af3170c402e9a",
+      "selected_weight_sha256": "075c8c77cfe01df019b71a517741af4bfc43894422e438b4828ccc0bd70c6107",
+      "updates": 3000,
+      "selected_step": 3000,
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "random_initialization_reconstructed_exactly": true
+    },
+    "fixed-11": {
+      "initial_sha256": "e6d2cb1e49bde2937ceec1a02332b9f8354fd1e061204666eb29697d645c11f0",
+      "initial_weight_sha256": "c1a1e7c07283733de1dff78660336f7bcb21ecaed92d2d206fad6ec58aab185a",
+      "selected_weight_sha256": "ffd596c82361d935969939ad5b9091588349be69d2c9d52b031a9435ab0cb36d",
+      "updates": 3000,
+      "selected_step": 2500,
+      "parameters": {
+        "total": 1674,
+        "trainable": 891,
+        "persistent_tensor_bytes": 6696
+      },
+      "base_weight_identity_preserved": true
+    },
+    "expanded-11": {
+      "initial_sha256": "b73c0aa3e1ed0afad0a2037f36ec52894fbfb297f6b9c9c227172f5eed97e984",
+      "initial_weight_sha256": "c27629d7f68bb630eb8e93ccfc845b827b00f1b118738f54408382e4a57b0fdc",
+      "selected_weight_sha256": "339a43ec49b2c83e6bf785b6d24a80f3d9e2c06524994afe03ea1a47344f2c40",
+      "updates": 3000,
+      "selected_step": 2500,
+      "parameters": {
+        "total": 2314,
+        "trainable": 1531,
+        "persistent_tensor_bytes": 9256
+      },
+      "base_weight_identity_preserved": true
+    },
+    "fixed-29": {
+      "initial_sha256": "2b9c8518a1e0a771ef77cd58a14812c7ddf01247fad7916fff874fe9be8b277f",
+      "initial_weight_sha256": "99e0319bc1f45b464bba57bbaa22d3e41cf528f3bfc1c81026128f714656780e",
+      "selected_weight_sha256": "125155a4177d7d9868f1441d66c75646846770c96c33551b47fe578cf7477a33",
+      "updates": 3000,
+      "selected_step": 3000,
+      "parameters": {
+        "total": 1674,
+        "trainable": 891,
+        "persistent_tensor_bytes": 6696
+      },
+      "base_weight_identity_preserved": true
+    },
+    "expanded-29": {
+      "initial_sha256": "874687c8e0c8779ad4a12bcb0b9e1823ae39fca06d3d48dffe8115c1b71d657d",
+      "initial_weight_sha256": "595961ef032325b399219aba6980219620cd971999ab8c5d8f5770e3b6091e73",
+      "selected_weight_sha256": "9e4e96f4d260b8802e5d9eb1760f2ebdc87100661834132bd29af11b8f244475",
+      "updates": 3000,
+      "selected_step": 3000,
+      "parameters": {
+        "total": 2314,
+        "trainable": 1531,
+        "persistent_tensor_bytes": 9256
+      },
+      "base_weight_identity_preserved": true
+    },
+    "fixed-47": {
+      "initial_sha256": "1007636c51f60f42d73c4d386cf788ddd73aa963fc79d9ede40dd9e5df115178",
+      "initial_weight_sha256": "687958e4a05d6aca7c6cbacdf75338fac94a30637fc610c9d57bacef2f002bb1",
+      "selected_weight_sha256": "7d9ce130c34a7caa2f49cb429c226348bedf925f81a9cd104e1edb9c1baa96a5",
+      "updates": 3000,
+      "selected_step": 3000,
+      "parameters": {
+        "total": 1674,
+        "trainable": 891,
+        "persistent_tensor_bytes": 6696
+      },
+      "base_weight_identity_preserved": true
+    },
+    "expanded-47": {
+      "initial_sha256": "2b15492c59094d97b7f5ab47201373c2c1a77bed507cba70aa05337821daf41b",
+      "initial_weight_sha256": "4990444dbb46636cf3cd2420439d1687d643cd314be0af11a9c5dc3666c12615",
+      "selected_weight_sha256": "0b7fec0469a8726be9b0ddafa602f59888153428e37551c38a07ae0003656667",
+      "updates": 3000,
+      "selected_step": 3000,
+      "parameters": {
+        "total": 2314,
+        "trainable": 1531,
+        "persistent_tensor_bytes": 9256
+      },
+      "base_weight_identity_preserved": true
+    },
+    "invariant-11": {
+      "initial_sha256": "58fd439d64e58568cde3d09ce9437ba00d4526f864aaef79f1702c41fa9df17a",
+      "initial_weight_sha256": "6d9bcbf060d712ec47804bde6e25e7b95f4b5f91fd4fe19ab721b71c9f63411b",
+      "selected_weight_sha256": "afd69bdf777fbcd81a9003ab55a8624db48577bc14891cf3c0c71e8dfb70225b",
+      "updates": 3000,
+      "selected_step": 3000,
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "random_initialization_reconstructed_exactly": true
+    },
+    "invariant-29": {
+      "initial_sha256": "ef86395f651ffa6299b2491b025d9558ae94e135050bcaf57b2f5951933f1814",
+      "initial_weight_sha256": "479bf21b6083692ac898e7e85e7fe5dcecf61c7fca660a6d878813ddcac531d0",
+      "selected_weight_sha256": "843ebd7a97be2d83f5842b891cba3b413a95dbf25ea847e0c1d2dee78c6fdb42",
+      "updates": 3000,
+      "selected_step": 3000,
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "random_initialization_reconstructed_exactly": true
+    },
+    "invariant-47": {
+      "initial_sha256": "aa9497b602cb205698c0356c86afdb15aaa2e567d4a92992ca78d8fbc6262e05",
+      "initial_weight_sha256": "d85d4423a3dc760d573bc00aa84354385eb67767f348a99e3d4af3170c402e9a",
+      "selected_weight_sha256": "b2c28bb53f95cdaf44fdd0ae1fabb3124089ce8a761e405801885de8a9d785b5",
+      "updates": 3000,
+      "selected_step": 3000,
+      "parameters": {
+        "total": 783,
+        "trainable": 783,
+        "persistent_tensor_bytes": 3132
+      },
+      "random_initialization_reconstructed_exactly": true
+    }
+  }
+}

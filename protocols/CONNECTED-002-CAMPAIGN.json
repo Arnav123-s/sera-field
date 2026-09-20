@@ -1,0 +1,49 @@
+{
+  "schema": "sera-field.sustained-campaign.1",
+  "campaign": "CONNECTED-002",
+  "status": "engineering_base_verified_subject_integrations_required",
+  "purpose": "Teach and evaluate the connected understanding-imagination-investigation-credit loop across human language, mathematics, coding, sciences and interpretation.",
+  "fresh_seeds": [1103, 2903, 4703],
+  "pretrained_weights_allowed": false,
+  "old_field_finals_allowed_for_selection": false,
+  "primary_owner_updates_per_seed_maximum": 262144,
+  "stages": [
+    {"id": "language_situations", "updates_maximum": 49152, "tracks": ["language", "dictionary", "grammar", "conversation"], "gate": "Input-to-situation grounding and learned candidate construction connected; human held-out wording retained."},
+    {"id": "physical_imagination", "updates_maximum": 32768, "tracks": ["physical_simulations", "interventions"], "gate": "Multiple observed systems; independent integrator/outcome; actuator checks; no hidden mechanism labels."},
+    {"id": "mathematical_methods", "updates_maximum": 32768, "tracks": ["arithmetic", "algebra", "geometry", "proof"], "gate": "Exact checker or scoped proof assessment; human worked problems; multiple routes with conditions."},
+    {"id": "programming", "updates_maximum": 32768, "tracks": ["code_execution", "repair", "planning"], "gate": "Bounded interpreter/sandbox and independent hidden tests; source references are teaching, not learner output."},
+    {"id": "broader_science", "updates_maximum": 32768, "tracks": ["chemistry", "biology", "science_reading"], "gate": "Qualified human source and assessed tasks for each subject; confidence separate from model adequacy."},
+    {"id": "interpretation_perspective", "updates_maximum": 32768, "tracks": ["literature", "philosophy", "perspective", "practical_constraints"], "gate": "Human source support and independent rubric; multiple defensible interpretations; no self-grading credit."},
+    {"id": "mixed_self_study", "updates_maximum": 49152, "tracks": ["all", "retention", "transfer", "learning_procedures"], "gate": "Learned goal/proposal/evidence choice, return to original task, qualified novelty and durable reward updates."}
+  ],
+  "training_schedule": {
+    "teacher_then_autonomous": true,
+    "earlier_subject_replay_fraction_minimum": 0.2,
+    "checkpoint_every_updates_maximum": 512,
+    "development_every_updates": 2048,
+    "patience_development_checks": 6,
+    "plateau_action": "Preserve candidate and exposure, diagnose on development only, repair a genuine defect or move to the next subject. Do not pad updates or farm rewards.",
+    "phase_order_changes": "Record a prospective amendment with evidence before continuing; no final-based tuning.",
+    "early_stopping": "A measured gate/plateau can shorten a stage; totals are maximum finite allocations, not required padding."
+  },
+  "evaluation": {
+    "select_on_development_only": true,
+    "sealed_final_openings_per_frozen_candidate": 1,
+    "reserve_future_comparison_cohort": true,
+    "required_controls": ["reward_disconnected", "imagination_disconnected", "loop_disconnected", "matched_exposure_no_update", "simple_independent_task_methods"],
+    "primary_outcomes": ["independently_verified_task_completion", "distinct_valid_methods", "useful_evidence_cost", "returned_original_goal", "cross_domain_transfer", "retention", "next_ability_acquisition_efficiency"],
+    "control_budget": "Freeze matched source/exposure/update and assessment budgets for each mechanistic comparison; do not compare a 262144-update learner with an untrained control as proof of mechanism.",
+    "human_interpretation_gate": "Keep interpretation credit pending without independent qualified assessment; corpus retrieval is evidence, not a semantic grading oracle."
+  },
+  "resource_policy": {
+    "numerical_threads": 1,
+    "process_tree_committed_limit_bytes": 2147483648,
+    "shared_lease": "D:/ai/projects/sera/runs/v3-batch-001/active.lock",
+    "elapsed_time_limit_seconds": null,
+    "paid_compute_or_overages": false,
+    "new_scheduled_followups": false,
+    "occupied_lease_action": "Wait or do read-only preparation; never take or stop another owner's job.",
+    "runtime_estimate": "Measure one sustained development segment before forecasting total runtime; no unsupported duration promise."
+  },
+  "release_gate": "Independent replay, protected-reference hashes, complete source/exposure/cost/negative ledger, and row-by-row paper/behavior audit; no automatic production promotion."
+}

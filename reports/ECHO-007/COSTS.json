@@ -1,0 +1,203 @@
+{
+  "scope": "All supervised ECHO-007 numerical work, including contracts, training, development, controls, final replay, delivery and storage/lineage audit.",
+  "attempts": [
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T05:00:55Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "echo-007-gradient-contracts-001",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "tests/test_reversible_field.py",
+        "-q"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 4944,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 262774784,
+        "cpu_seconds": 4.15625,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 4.8775233999986085,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T05:01:00Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T05:05:27Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "echo-007-integration-contracts-001",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 13260,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 669913088,
+        "cpu_seconds": 30.046875,
+        "active_processes": 0,
+        "total_processes": 9
+      },
+      "wall_seconds": 35.50756470000488,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T05:06:03Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T05:07:51Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "echo-007-campaign-001",
+      "command": [
+        "--",
+        "scripts/complete_echo007.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 6504,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 1520812032,
+        "cpu_seconds": 823.078125,
+        "active_processes": 0,
+        "total_processes": 35
+      },
+      "wall_seconds": 835.9499624000018,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T05:21:47Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T05:22:23Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "echo-007-lineage-storage-audit-001",
+      "command": [
+        "--",
+        "scripts/audit_echo007.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 19928,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 329236480,
+        "cpu_seconds": 2.15625,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 2.3706908999956795,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T05:22:26Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T05:22:36Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "echo-007-delivery-001",
+      "command": [
+        "--",
+        "scripts/deliver_echo007.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 1108,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 273260544,
+        "cpu_seconds": 11.3125,
+        "active_processes": 0,
+        "total_processes": 20
+      },
+      "wall_seconds": 12.234097699998529,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T05:22:48Z"
+    }
+  ],
+  "wall_seconds": 890.9398390999995,
+  "cpu_seconds": 870.75,
+  "peak_committed_bytes": 1520812032,
+  "failed_process_attempts": 0,
+  "numerical_threads": 1,
+  "memory_cap_bytes": 2147483648,
+  "paid_compute": false,
+  "previous_work": "reports/CONNECTED-003/COSTS.json and reports/COSTS.json remain preserved."
+}

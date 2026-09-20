@@ -1,0 +1,27 @@
+{"loaded_from_public_snapshot": "D:\\ai\\publications\\sera-field-20260920", "checkpoint_schema": [{"path": "checkpoints/FIELD-001/calibrated-11.pt", "top_level_fields": ["metadata", "model", "schema", "specification", "step", "weight_sha256"]}, {"path": "checkpoints/FIELD-001/field-11.pt", "top_level_fields": ["metadata", "model", "optimizer", "sampler_rng", "scheduler", "schema", "specification", "step", "torch_rng", "weight_sha256"]}, {"path": "checkpoints/CONCEPT-011/revisions/7767b021573e7b398f87dd45706dd2a87b1b2e3738545f4c36e4ced80c3b5e48.pt", "top_level_fields": ["bridge", "lineage"]}, {"path": "checkpoints/ECHO-007/revisions/b8428610ee13211547ee83f9c741cc01c9fcd5581b8a10f25cb6f5b2e14d4ae1.pt", "top_level_fields": ["bridge", "lineage"]}, {"path": "checkpoints/SCFE-004/revisions/e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3.pt", "top_level_fields": ["bridge", "lineage"]}]}
+........................................................................ [ 67%]
+..................................                                       [100%]
+106 passed in 31.19s
+{
+  "status": "PASS",
+  "packaged_owners": [
+    {
+      "selection": "checkpoints/CONCEPT-011/SELECTION.json",
+      "sha256": "7767b021573e7b398f87dd45706dd2a87b1b2e3738545f4c36e4ced80c3b5e48",
+      "bytes": 3526715,
+      "weights": "afa6bea53feb6e6b74d98ea52195ff531d21cc22e3863e8eb077f21fba007ba7"
+    },
+    {
+      "selection": "checkpoints/ECHO-007/SELECTION.json",
+      "sha256": "b8428610ee13211547ee83f9c741cc01c9fcd5581b8a10f25cb6f5b2e14d4ae1",
+      "bytes": 3466853,
+      "weights": "6bb452bbb714d068925180aacc03cbc48ef296410361ceb990e1c50edd291a85"
+    },
+    {
+      "selection": "checkpoints/SCFE-004/SELECTION.json",
+      "sha256": "e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3",
+      "bytes": 3466597,
+      "weights": "528a08f2bb6f5b6e640c416506b14c06bcffe626f749276b24b3817791bd2ae4"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+....................                                                     [100%]
+============================== warnings summary ===============================
+tests/test_concept_owner.py::test_five_uses_share_immutable_acquired_state
+  D:\ai\labs\sera-field\sera_field\concept_owner.py:161: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_new.cpp:256.)
+    labels=owner.directional_logits(c,torch.tensor([query],dtype=torch.float32),torch.tensor([route]))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+20 passed, 1 warning in 19.67s

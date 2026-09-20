@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-09-20T00:28:46Z",
+  "sources": {
+    "protocols/FIELD-001-ADDENDUM.md": "1c97fc77cade8aed7a0ceeda9fd47094cf56dda86133b768d044b5e9c352c01d",
+    "protocols/FIELD-001-QUALIFICATION.md": "f7f70170226abebe7996523f5ce9103c5badd933cd67043b3244b798f0d35fb9",
+    "protocols/FIELD-001.md": "224093fc012dbfba82327ba91fc9f875e5033159cb0088e0168e2894b21fb8b6",
+    "pyproject.toml": "7012a49f25ce7fc4e442247271aee3a7025171a534362cfb37bf32563a636f99",
+    "scripts/recover_orphan.py": "c75799fc2ad4bc30b87dc0c372749a382d75584e7c7a59bde23ccd6050d315db",
+    "scripts/supervise.py": "2afbba6b9c129915a861f8c0991c61618330c68e5db0458314146952b2e89b19",
+    "sera_field/__init__.py": "411ad79310c9e2bcf2038fc35e8c746306d4803502b3fa8aeb9af9e7a896ce80",
+    "sera_field/cli.py": "b1569738ea3aff9e58112801b45e1fb0f92a1c051b45c6bd21bc6ddc8a20d1b4",
+    "sera_field/control_study.py": "c0b8e9e083e83e828dcde921661d2be0b0bcf32e6211977b43ba9cb030bd0f3f",
+    "sera_field/evaluation.py": "f49bc54a2e84b4dce3988258d7ee8fc3d6ef0e3c6ac41542992d1e23a73b43d9",
+    "sera_field/gauge.py": "054719a6a8bdd0506298d40a60b10b46b7b1406246c5a844d674a45983b4ac45",
+    "sera_field/investigation.py": "15f1ebf2cace225317cbbef1cea56fb4a5639d698c46d6e8933023682d0e8df3",
+    "sera_field/model.py": "ef2e835249e34492d7a0bc2689bd056807c63de646ac8edb25e229ec20dd6dc4",
+    "sera_field/observatory.py": "8c94c507c802545341cb841e78f0e8f3e9040b62dfe00b4bec8412de09625ddf",
+    "sera_field/qualification.py": "8c9cb0fba65badb27b525f8c19a033bf9382de3c5db2df372f5dad333c3781cc",
+    "sera_field/records.py": "334d0c7f8f8c7ed561154efd6a697a1c254034e2571d6a565ce42bfaee987154",
+    "sera_field/tasks.py": "6d3df01752bb51cee5de7f758b3afe5d68f1f48fae839a370f7a2573ea01bad3",
+    "sera_field/training.py": "3f7d986378faac25548d25220f544fcc570f2f1f650032d1a7dbf87f17017623",
+    "tests/test_contracts.py": "85b4f41976af78f90b45d97da727e16d039167b38df250a037c3a8324ac53a20"
+  },
+  "prior_selection_sha256": "53cb09a36923772f6050011bb83c97cd6806a81024f9a67dfeb701d258cdd1a6",
+  "finals_opened": false
+}

@@ -1,0 +1,42 @@
+{
+  "arm": "echo",
+  "selection": {
+    "sha256": "b8428610ee13211547ee83f9c741cc01c9fcd5581b8a10f25cb6f5b2e14d4ae1",
+    "revision": "b8428610ee13211547ee83f9c741cc01c9fcd5581b8a10f25cb6f5b2e14d4ae1.pt",
+    "parent": "0e09e802635cf73d01d0ff0d6948b8b247f42eb670030bf2a94c40f510c9d41c",
+    "weights": "6bb452bbb714d068925180aacc03cbc48ef296410361ceb990e1c50edd291a85",
+    "updates": 0,
+    "score": 0.9841417740395529,
+    "step": 1024,
+    "source_checkpoint_sha256": "3c56af8d17aefdd745f781d3ea196114b4d3d0a9100cc863668776b12f296743",
+    "role": "qualified_optional_successor"
+  },
+  "metrics": {
+    "supported": {
+      "forward_mse": 1.7701499617641834,
+      "counterfactual_mse": 2.4130659951459545,
+      "inverse_mse": 53.75732485178217,
+      "plan_mse": 0.9644575973827179,
+      "direction_correct": null,
+      "route_correct": null,
+      "residual_flag": 0.80859375,
+      "cloud_spread": 0.02199842976453841
+    },
+    "omitted": {
+      "forward_mse": 2.1239277247213346,
+      "counterfactual_mse": 2.4824909943200772,
+      "inverse_mse": 73.80717180205892,
+      "plan_mse": 1.3599041695274292,
+      "direction_correct": null,
+      "route_correct": null,
+      "residual_flag": 1.0,
+      "cloud_spread": 0.023413895930131663
+    }
+  },
+  "weights_immutable": true,
+  "case_counts": {
+    "supported": 512,
+    "omitted": 128
+  },
+  "cases_sha256": "371e15800bdb921d97a24a0b5b40b29d067d58681f684b6b3523956ad83cc2aa"
+}

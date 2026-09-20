@@ -1,0 +1,635 @@
+{
+  "scope": "All supervised numerical jobs, including failed replay, tests and demos",
+  "attempts": [
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T00:51:12Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "cli-smoke-001",
+      "command": [
+        "--",
+        "-m",
+        "sera_field.cli",
+        "infer-mass",
+        "--checkpoint",
+        "checkpoints/FIELD-001/field-11.pt",
+        "--force",
+        "2,0,0",
+        "--acceleration",
+        "1,0,0"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 4860,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 277528576,
+        "cpu_seconds": 2.125,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 2.3896896000005654,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T00:51:14Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T00:31:21Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "compatibility-001",
+      "command": [
+        "--",
+        "-m",
+        "sera_field.compatibility"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 16368,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 318066688,
+        "cpu_seconds": 2.828125,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 2.94245619999856,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T00:31:24Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T00:06:59Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "contracts-001",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "--junitxml=runs/contracts-001/junit.xml"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 4624,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 286703616,
+        "cpu_seconds": 2.609375,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 6.243237100003171,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T00:07:05Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T00:10:39Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "contracts-002",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "--junitxml=runs/contracts-002/junit.xml"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 6596,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 286167040,
+        "cpu_seconds": 2.703125,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 2.8759326999970654,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T00:10:42Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T00:16:39Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "contracts-003",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "--junitxml=runs/contracts-003/junit.xml"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 19636,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 346279936,
+        "cpu_seconds": 3.9375,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 4.350965500001621,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T00:16:44Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T00:25:01Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "contracts-004",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "--junitxml=runs/contracts-004/junit.xml"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 21044,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 345649152,
+        "cpu_seconds": 4.015625,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 4.3274068999999145,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T00:25:05Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T00:28:58Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "contracts-005",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "--junitxml=runs/contracts-005/junit.xml"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 20896,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 345911296,
+        "cpu_seconds": 4.140625,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 4.447865999998612,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T00:29:03Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T00:32:47Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "contracts-006",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "--junitxml=runs/contracts-006/junit.xml"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 20096,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 346783744,
+        "cpu_seconds": 4.15625,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 4.343706599996949,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T00:32:52Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T00:49:56Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "contracts-007",
+      "command": [
+        "--",
+        "-m",
+        "pytest"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 20828,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 346144768,
+        "cpu_seconds": 10.875,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 11.169456900002842,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T00:50:07Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T00:42:57Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "delivery-audit-001",
+      "command": [
+        "--",
+        "-m",
+        "sera_field.delivery_audit"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 20556,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 368214016,
+        "cpu_seconds": 39.0,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 39.409056199998304,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T00:43:37Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T00:32:56Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "final-001",
+      "command": [
+        "--",
+        "-m",
+        "sera_field.evaluation"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 8916,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 444850176,
+        "cpu_seconds": 240.78125,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 242.94575530000293,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T00:36:59Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T00:25:15Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "invariant-control-001",
+      "command": [
+        "--",
+        "-m",
+        "sera_field.control_study"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 20720,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 335351808,
+        "cpu_seconds": 17.09375,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 17.631056900001568,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T00:25:32Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T00:28:43Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "qualification-001",
+      "command": [
+        "--",
+        "-m",
+        "sera_field.qualification"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 6596,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 284762112,
+        "cpu_seconds": 2.46875,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 2.668810300001496,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T00:28:46Z"
+    },
+    {
+      "status": "FAILED",
+      "started_utc": "2026-09-20T00:37:38Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "replay-001",
+      "command": [
+        "--",
+        "-m",
+        "sera_field.evaluation",
+        "--replay"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 6360,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 434982912,
+        "cpu_seconds": 254.359375,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 256.25587839999935,
+      "returncode": 1,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T00:41:54Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T00:44:11Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "replay-002",
+      "command": [
+        "--",
+        "-m",
+        "sera_field.evaluation",
+        "--replay"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 20920,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 445771776,
+        "cpu_seconds": 255.21875,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 258.36120899999514,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T00:48:30Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T00:17:19Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "training-001",
+      "command": [
+        "--",
+        "-m",
+        "sera_field.training"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 21460,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 339095552,
+        "cpu_seconds": 345.8125,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 349.0292905000024,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T00:23:08Z"
+    }
+  ],
+  "wall_seconds": 1209.3917741000005,
+  "cpu_seconds": 1192.125,
+  "peak_process_tree_committed_bytes": 445771776,
+  "limit_bytes": 2147483648,
+  "numerical_threads": 1,
+  "paid_compute": false,
+  "excludes": "Unmetered reading, engineering, downloads and file packaging; wall sum is job time, not total project duration"
+}

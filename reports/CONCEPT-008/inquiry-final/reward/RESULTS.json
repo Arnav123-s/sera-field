@@ -1,0 +1,9 @@
+{
+  "metrics": {
+    "before_mse": 1.441967260281217,
+    "after_mse": 0.17147222024846087
+  },
+  "cases_sha256": "6ac63a5070bbce8bb4a57d801d18f98120a2c7ae1ccf3f23b37beb2bf19cdd1f",
+  "all_goals_returned": true,
+  "failed_actuators": 6
+}

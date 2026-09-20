@@ -1,0 +1,8 @@
+{
+  "human-pairs.jsonl": "79eb906beced7895a13f8b17bbc6c84c861634dc381d37a319fb9d939a77a9f1",
+  "inquiry.jsonl": "6332340e04f573eb8b50155c1224daf010dd3043397b7b9eeb50419d1ce94d32",
+  "mathematics.jsonl": "a39b1dfa86ee37ea05d21c9e0913c3b1758070ae0fd825a1e8dfa22b1b7cdeb2",
+  "motion.jsonl": "59bc5e33adc861cbf40da1f66a02cd0fe7c9e50f83570119dd01fc72ca39ed9b",
+  "physics.jsonl": "dbe4c057321c21e9be777c848fffe6c3fb7416c16e4f205b0db5c8d6935ef0e7",
+  "reading.jsonl": "196a880fb35942146ee94e0bdc92c4bbaf804d3a91f91b9a2b89761cefd67653"
+}

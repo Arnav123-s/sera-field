@@ -1,0 +1,123 @@
+{
+  "steps": 2048,
+  "presentations": 65536,
+  "distinct_taught_phrases": 388,
+  "selected": {
+    "sha256": "e21d398477730170efc86fa3cc8b70b59c289e24e7377fef32faed4aa057ebdb",
+    "revision": "e21d398477730170efc86fa3cc8b70b59c289e24e7377fef32faed4aa057ebdb.pt",
+    "parent": "4d6101aa2150059ffc81b8c4743b172f5f44984b5be0cb81545ab61a8fe7312d",
+    "weights": "afa6bea53feb6e6b74d98ea52195ff531d21cc22e3863e8eb077f21fba007ba7",
+    "updates": 0,
+    "step": 2048,
+    "accuracy": 1.0,
+    "loss": 0.002970927394926548
+  },
+  "development": [
+    {
+      "step": 0,
+      "accuracy": 0.5,
+      "loss": 0.6931473016738892,
+      "weights": "ad14bd14dfb106ac797784c2a9d6fa92522a596f1d60cfd0fe2356f3a30c88f7"
+    },
+    {
+      "step": 128,
+      "accuracy": 1.0,
+      "loss": 0.08372991532087326,
+      "weights": "38da297eabd43960d94a613cca2d006995175ab32b57e0cfc80d1ef8096066fb"
+    },
+    {
+      "step": 256,
+      "accuracy": 1.0,
+      "loss": 0.03951073810458183,
+      "weights": "239b621c45cfff9a3a18e7775c728d47af95a2c318b1e71bcf3e0dd60b4b99de"
+    },
+    {
+      "step": 384,
+      "accuracy": 1.0,
+      "loss": 0.024893037974834442,
+      "weights": "9e6a191c158ef2eb6cca4de92f0aa2a804db623091e77b30e28a7209182ebc98"
+    },
+    {
+      "step": 512,
+      "accuracy": 1.0,
+      "loss": 0.017385512590408325,
+      "weights": "6fa8af37e2a44d9dba8ed57a253e34b2f1f2d1022231429bfee8b6ed3d97e186"
+    },
+    {
+      "step": 640,
+      "accuracy": 1.0,
+      "loss": 0.013613011687994003,
+      "weights": "04b141b415ba249d8a556edb2550f9b7a30e3c73e8c26a884ba02239f0425801"
+    },
+    {
+      "step": 768,
+      "accuracy": 1.0,
+      "loss": 0.010778599418699741,
+      "weights": "14f401d3c2364027f5f0e0205312fe61390b58d1ea3e305e97efd515a03cd786"
+    },
+    {
+      "step": 896,
+      "accuracy": 1.0,
+      "loss": 0.008737561292946339,
+      "weights": "5cbbd03178dbeed6ba40e2f6317664d0efae501faaf8cffc69478258e36a5d2c"
+    },
+    {
+      "step": 1024,
+      "accuracy": 1.0,
+      "loss": 0.00749242166057229,
+      "weights": "b2302041ecdca4a68e8607afdfb519de811c683505d41915e0b6a38458892ab6"
+    },
+    {
+      "step": 1152,
+      "accuracy": 1.0,
+      "loss": 0.006420470308512449,
+      "weights": "c772a5e3f558a98b0f741b2baa65c6809a23c85e6f45428eeac5340f02104176"
+    },
+    {
+      "step": 1280,
+      "accuracy": 1.0,
+      "loss": 0.005691089667379856,
+      "weights": "8b6171fa93a171690aa93aa292ce4183e5d9005722ce87a8e9073ee4469d9b72"
+    },
+    {
+      "step": 1408,
+      "accuracy": 1.0,
+      "loss": 0.005066493526101112,
+      "weights": "87f8e63cb8229a0ee1f757a247b18c0db982f866e3c76cd50f83328a0b5f3185"
+    },
+    {
+      "step": 1536,
+      "accuracy": 1.0,
+      "loss": 0.004449815955013037,
+      "weights": "b94b954de51149e3e94f6a7b0e8db3d2826e6b0cd0dd1d63903c4c49130371f9"
+    },
+    {
+      "step": 1664,
+      "accuracy": 1.0,
+      "loss": 0.0038288007490336895,
+      "weights": "931600a6e5d64f50d4847c31b864f4674da40d97c7d63ea04030bb5d4305cf10"
+    },
+    {
+      "step": 1792,
+      "accuracy": 1.0,
+      "loss": 0.0036136647686362267,
+      "weights": "c2390a8c0c5a150c60c50af251cec23573fb274dd859bbaeb6a5e5a6f6a5fd45"
+    },
+    {
+      "step": 1920,
+      "accuracy": 1.0,
+      "loss": 0.003222459927201271,
+      "weights": "e2e34c0821c738ca6ca16dc0a67eede748f84d307e275312336c6966e55ae134"
+    },
+    {
+      "step": 2048,
+      "accuracy": 1.0,
+      "loss": 0.002970927394926548,
+      "weights": "afa6bea53feb6e6b74d98ea52195ff531d21cc22e3863e8eb077f21fba007ba7"
+    }
+  ],
+  "all_parent_parameters_exact": true,
+  "new_reward_updates": 0,
+  "new_physics_training": 0,
+  "routing_construction": "direct learned lexical map; old routing parameters preserved but bypassed for this interface"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checks": {
+    "evidence_hashes": 83,
+    "frozen_executable_identities": 68,
+    "raw_final_files_verified": 24,
+    "unchanged_attachment_copies": 2,
+    "delivery_scripts_parsed": 4,
+    "local_document_links": 96,
+    "packaged_owner_and_five_interface_identities": true,
+    "protected_production_clean_and_unchanged": true,
+    "shared_numerical_lease_absent": true
+  },
+  "failures": [],
+  "scope": "Read-only hashing, metadata, syntax and link audit; no repeated training or opened-final tuning."
+}

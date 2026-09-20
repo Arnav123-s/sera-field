@@ -1,0 +1,14 @@
+{
+  "sha256": "7767b021573e7b398f87dd45706dd2a87b1b2e3738545f4c36e4ced80c3b5e48",
+  "revision": "7767b021573e7b398f87dd45706dd2a87b1b2e3738545f4c36e4ced80c3b5e48.pt",
+  "parent": "4d6101aa2150059ffc81b8c4743b172f5f44984b5be0cb81545ab61a8fe7312d",
+  "weights": "afa6bea53feb6e6b74d98ea52195ff531d21cc22e3863e8eb077f21fba007ba7",
+  "updates": 0,
+  "step": 2048,
+  "accuracy": 1.0,
+  "loss": 0.002970927394926548,
+  "source_checkpoint_sha256": "e21d398477730170efc86fa3cc8b70b59c289e24e7377fef32faed4aa057ebdb",
+  "role": "qualified_five_use_owner",
+  "retained_concept_reward_updates": 754
+}
+Persistent creation, five-use answers, task reuse, measured revision, duplicate rejection and exact restarts passed.

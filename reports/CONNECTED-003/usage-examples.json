@@ -1,0 +1,569 @@
+{
+  "scope": "Usage fixtures, not additional capability scores",
+  "source_sha256": "a284d754f3cba84e4deff3de2299b801950976793c7e2807448808bf4ed6f723",
+  "tasks": {
+    "reading": {
+      "checkpoint": {
+        "score": 0.5011824930760271,
+        "step": 6144,
+        "sha256": "e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3",
+        "revision": "e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3.pt",
+        "parent": "a6d25b800195b156cbd8318ad12fda1491175611ab0d58e3878ee6b39145bcbf",
+        "weights": "528a08f2bb6f5b6e640c416506b14c06bcffe626f749276b24b3817791bd2ae4",
+        "updates": 753,
+        "teacher_checkpoint_sha256": "eff092ad1143fd6745350ffd86d06b23d444b3eb16acd4a322a41cbd659918f1",
+        "source_checkpoint_sha256": "ed7585015a748900a970fbb5dcee7f027fd917c4336e3ff6d6c1687b22c77061",
+        "reward_training_attempts": 768,
+        "purpose": "One taught owner with qualified learned investigation weights; full resumable state remains in source runs."
+      },
+      "result": {
+        "question": "What did Alice see?",
+        "source": "D:\\ai\\labs\\sera-field\\examples\\reading-practice.txt",
+        "source_sha256": "a284d754f3cba84e4deff3de2299b801950976793c7e2807448808bf4ed6f723",
+        "learned_evidence_ranking": [
+          {
+            "text": "Alice saw a yellow flower beside the garden gate.",
+            "offset": [
+              0,
+              49
+            ],
+            "ranking_softmax": 0.373609721660614
+          },
+          {
+            "text": "This short passage is an engineering usage fixture.",
+            "offset": [
+              161,
+              212
+            ],
+            "ranking_softmax": 0.28423094749450684
+          },
+          {
+            "text": "It was not included in the\nhuman training corpus or any capability evaluation.",
+            "offset": [
+              212,
+              292
+            ],
+            "ranking_softmax": 0.14406932890415192
+          },
+          {
+            "text": "The library closed before sunset.",
+            "offset": [
+              125,
+              159
+            ],
+            "ranking_softmax": 0.08974678814411163
+          },
+          {
+            "text": "She left the gate open for Bob.",
+            "offset": [
+              49,
+              81
+            ],
+            "ranking_softmax": 0.06457594782114029
+          }
+        ],
+        "qualification": "Ranked source passages; preserve the source conditions and context."
+      }
+    },
+    "arithmetic": {
+      "checkpoint": {
+        "score": 0.5011824930760271,
+        "step": 6144,
+        "sha256": "e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3",
+        "revision": "e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3.pt",
+        "parent": "a6d25b800195b156cbd8318ad12fda1491175611ab0d58e3878ee6b39145bcbf",
+        "weights": "528a08f2bb6f5b6e640c416506b14c06bcffe626f749276b24b3817791bd2ae4",
+        "updates": 753,
+        "teacher_checkpoint_sha256": "eff092ad1143fd6745350ffd86d06b23d444b3eb16acd4a322a41cbd659918f1",
+        "source_checkpoint_sha256": "ed7585015a748900a970fbb5dcee7f027fd917c4336e3ff6d6c1687b22c77061",
+        "reward_training_attempts": 768,
+        "purpose": "One taught owner with qualified learned investigation weights; full resumable state remains in source runs."
+      },
+      "result": {
+        "question": "I have 5 apples and buy 3 more. How many apples do I have?",
+        "observed_numbers_and_supplied_constants": [
+          "5",
+          "3",
+          "1",
+          "2",
+          "10",
+          "100",
+          "1/2"
+        ],
+        "learned_executable_proposals": [
+          {
+            "program": [
+              "*",
+              "2",
+              "5"
+            ],
+            "result": "10",
+            "probability": 0.17383453249931335,
+            "indices": [
+              2,
+              0,
+              3
+            ],
+            "assumptions": "binary rational expression over the supplied observed-number inventory"
+          },
+          {
+            "program": [
+              "+",
+              "5",
+              "5"
+            ],
+            "result": "10",
+            "probability": 0.10857521742582321,
+            "indices": [
+              0,
+              0,
+              0
+            ],
+            "assumptions": "binary rational expression over the supplied observed-number inventory"
+          },
+          {
+            "program": [
+              "*",
+              "2",
+              "3"
+            ],
+            "result": "6",
+            "probability": 0.0984070748090744,
+            "indices": [
+              2,
+              1,
+              3
+            ],
+            "assumptions": "binary rational expression over the supplied observed-number inventory"
+          },
+          {
+            "program": [
+              "+",
+              "3",
+              "5"
+            ],
+            "result": "8",
+            "probability": 0.0689755231142044,
+            "indices": [
+              0,
+              0,
+              1
+            ],
+            "assumptions": "binary rational expression over the supplied observed-number inventory"
+          },
+          {
+            "program": [
+              "/",
+              "5",
+              "2"
+            ],
+            "result": "5/2",
+            "probability": 0.05843833461403847,
+            "indices": [
+              3,
+              0,
+              3
+            ],
+            "assumptions": "binary rational expression over the supplied observed-number inventory"
+          }
+        ],
+        "qualification": "Each arithmetic execution is exact; applicability to the question requires checking."
+      }
+    },
+    "imagination": {
+      "checkpoint": {
+        "score": 0.5011824930760271,
+        "step": 6144,
+        "sha256": "e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3",
+        "revision": "e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3.pt",
+        "parent": "a6d25b800195b156cbd8318ad12fda1491175611ab0d58e3878ee6b39145bcbf",
+        "weights": "528a08f2bb6f5b6e640c416506b14c06bcffe626f749276b24b3817791bd2ae4",
+        "updates": 753,
+        "teacher_checkpoint_sha256": "eff092ad1143fd6745350ffd86d06b23d444b3eb16acd4a322a41cbd659918f1",
+        "source_checkpoint_sha256": "ed7585015a748900a970fbb5dcee7f027fd917c4336e3ff6d6c1687b22c77061",
+        "reward_training_attempts": 768,
+        "purpose": "One taught owner with qualified learned investigation weights; full resumable state remains in source runs."
+      },
+      "result": {
+        "conditional_acceleration_mean": [
+          2.0080983638763428,
+          1.6485490798950195,
+          2.3676469326019287
+        ],
+        "imagined_alternatives": [
+          [
+            2.0045969486236572,
+            1.6422481536865234,
+            2.366945743560791
+          ],
+          [
+            2.037271022796631,
+            1.6986902952194214,
+            2.3758513927459717
+          ],
+          [
+            1.9824265241622925,
+            1.6047089099884033,
+            2.3601441383361816
+          ]
+        ],
+        "qualification": "Conditional on the supplied observations and learned finite physical basis."
+      }
+    },
+    "investigation": {
+      "checkpoint": {
+        "score": 0.5011824930760271,
+        "step": 6144,
+        "sha256": "e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3",
+        "revision": "e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3.pt",
+        "parent": "a6d25b800195b156cbd8318ad12fda1491175611ab0d58e3878ee6b39145bcbf",
+        "weights": "528a08f2bb6f5b6e640c416506b14c06bcffe626f749276b24b3817791bd2ae4",
+        "updates": 753,
+        "teacher_checkpoint_sha256": "eff092ad1143fd6745350ffd86d06b23d444b3eb16acd4a322a41cbd659918f1",
+        "source_checkpoint_sha256": "ed7585015a748900a970fbb5dcee7f027fd917c4336e3ff6d6c1687b22c77061",
+        "reward_training_attempts": 768,
+        "purpose": "One taught owner with qualified learned investigation weights; full resumable state remains in source runs."
+      },
+      "result": {
+        "conditional_acceleration_mean": [
+          2.0080983638763428,
+          1.6485490798950195,
+          2.3676469326019287
+        ],
+        "imagined_alternatives": [
+          [
+            2.0045969486236572,
+            1.6422481536865234,
+            2.366945743560791
+          ],
+          [
+            2.037271022796631,
+            1.6986902952194214,
+            2.3758513927459717
+          ],
+          [
+            1.9824265241622925,
+            1.6047089099884033,
+            2.3601441383361816
+          ]
+        ],
+        "qualification": "Conditional on the supplied observations and learned finite physical basis.",
+        "original_goal_queries": [
+          [
+            0.0,
+            2.0
+          ],
+          [
+            1.0,
+            2.0
+          ],
+          [
+            -1.0,
+            2.0
+          ]
+        ],
+        "proposed_next_measurement": {
+          "velocity": -2.0,
+          "force_per_mass": 2.0
+        },
+        "learned_probe_scores": [
+          0.06629786640405655,
+          0.0681142583489418,
+          0.06998002529144287,
+          0.06577370315790176,
+          0.06756874918937683,
+          0.06941770017147064,
+          0.06503637880086899,
+          0.06680243462324142,
+          0.06863053143024445,
+          0.06414853036403656,
+          0.06587939709424973,
+          0.06767727434635162,
+          0.06317874789237976,
+          0.06486573815345764,
+          0.06662869453430176
+        ],
+        "next_step": "Measure the actual response, append its [velocity, force/mass, acceleration] row and re-imagine the original queries.",
+        "evidence_status": "Proposed observation; no measurement has been performed."
+      }
+    },
+    "trajectory": {
+      "checkpoint": {
+        "score": 0.5011824930760271,
+        "step": 6144,
+        "sha256": "e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3",
+        "revision": "e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3.pt",
+        "parent": "a6d25b800195b156cbd8318ad12fda1491175611ab0d58e3878ee6b39145bcbf",
+        "weights": "528a08f2bb6f5b6e640c416506b14c06bcffe626f749276b24b3817791bd2ae4",
+        "updates": 753,
+        "teacher_checkpoint_sha256": "eff092ad1143fd6745350ffd86d06b23d444b3eb16acd4a322a41cbd659918f1",
+        "source_checkpoint_sha256": "ed7585015a748900a970fbb5dcee7f027fd917c4336e3ff6d6c1687b22c77061",
+        "reward_training_attempts": 768,
+        "purpose": "One taught owner with qualified learned investigation weights; full resumable state remains in source runs."
+      },
+      "result": {
+        "status": "completed",
+        "position_velocity_hypotheses": [
+          [
+            0.4606305735938978,
+            0.8705175103832711
+          ],
+          [
+            0.4763677115933562,
+            0.9029521174841453
+          ],
+          [
+            0.4584603933389386,
+            0.8645926281170992
+          ]
+        ],
+        "position_velocity_mean": [
+          0.46515289284206424,
+          0.8793540853281718
+        ],
+        "sampled_trajectory": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              0.0019684225556447564,
+              0.06283425447249712
+            ],
+            [
+              0.0020251584745620338,
+              0.0646558294780981
+            ],
+            [
+              0.0019639351806669254,
+              0.06268926683684514
+            ]
+          ],
+          [
+            [
+              0.007834342464903297,
+              0.1247115457257779
+            ],
+            [
+              0.008062782631635098,
+              0.12839036539368343
+            ],
+            [
+              0.00781598330365301,
+              0.1244102710384465
+            ]
+          ],
+          [
+            [
+              0.017536419688576034,
+              0.18558355333807225
+            ],
+            [
+              0.018053727935385573,
+              0.19115416345951738
+            ],
+            [
+              0.017493920214183396,
+              0.1851090744749029
+            ]
+          ],
+          [
+            [
+              0.031010413967639202,
+              0.24540580346103194
+            ],
+            [
+              0.03193587188865708,
+              0.2529013880222791
+            ],
+            [
+              0.03093228481808527,
+              0.24473605046769886
+            ]
+          ],
+          [
+            [
+              0.04818942733028094,
+              0.30413773116996706
+            ],
+            [
+              0.04964434207769344,
+              0.3135898878585376
+            ],
+            [
+              0.04806265141278982,
+              0.30324596959464906
+            ]
+          ],
+          [
+            [
+              0.06900414961823757,
+              0.36174271488385895
+            ],
+            [
+              0.07111174814121685,
+              0.37318124606302827
+            ],
+            [
+              0.0688139062878842,
+              0.36059805068521
+            ]
+          ],
+          [
+            [
+              0.09338310531838417,
+              0.4181880839125291
+            ],
+            [
+              0.09626841606708278,
+              0.4316408047913912
+            ],
+            [
+              0.09311252645651413,
+              0.41675597825193783
+            ]
+          ],
+          [
+            [
+              0.12125290005994915,
+              0.4734451004488677
+            ],
+            [
+              0.1250426232752622,
+              0.4889376658673224
+            ],
+            [
+              0.12088285846845838,
+              0.47168788796870803
+            ]
+          ],
+          [
+            [
+              0.15253846522727052,
+              0.5274889175474123
+            ],
+            [
+              0.157360833015988,
+              0.5450446684817649
+            ],
+            [
+              0.1520473953664311,
+              0.525366322119765
+            ]
+          ],
+          [
+            [
+              0.1871632992403201,
+              0.5802985148153605
+            ],
+            [
+              0.19314792669460368,
+              0.5999383453974758
+            ],
+            [
+              0.18652704997581798,
+              0.5777681572032201
+            ]
+          ],
+          [
+            [
+              0.22504970416785974,
+              0.6318566136878542
+            ],
+            [
+              0.2323274328279309,
+              0.6535988592250642
+            ],
+            [
+              0.22424142286120988,
+              0.6288745060773027
+            ]
+          ],
+          [
+            [
+              0.2661190164586316,
+              0.6821495742665525
+            ],
+            [
+              0.27482175143876403,
+              0.706009920456206
+            ],
+            [
+              0.26510906343734436,
+              0.6786705971879629
+            ]
+          ],
+          [
+            [
+              0.31029183070204647,
+              0.7311672757704035
+            ],
+            [
+              0.32055237280334353,
+              0.7571586890267614
+            ],
+            [
+              0.30904772288404714,
+              0.7271456335141011
+            ]
+          ],
+          [
+            [
+              0.3574882154591492,
+              0.7789029826821299
+            ],
+            [
+              0.36944008957935076,
+              0.8070356612381085
+            ],
+            [
+              0.35597459768127865,
+              0.7742926339145846
+            ]
+          ],
+          [
+            [
+              0.40762792033508466,
+              0.8253531986758285
+            ],
+            [
+              0.42140520145719684,
+              0.855634543890932
+            ],
+            [
+              0.40580656274844135,
+              0.82010825956309
+            ]
+          ],
+          [
+            [
+              0.4606305735938978,
+              0.8705175103832711
+            ],
+            [
+              0.4763677115933562,
+              0.9029521174841453
+            ],
+            [
+              0.4584603933389386,
+              0.8645926281170992
+            ]
+          ]
+        ],
+        "duration": 1.0,
+        "integration": "RK4 using only learned coefficients"
+      }
+    }
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "sources": {
+    "script": "5d58111537a3034061d6c90d8d91cda1d7a0789f751eb3bed28c9d3486cd33c2",
+    "protocol": "79d5130d50a1fd5653321cf8672ac9df600cc65b9e7e208643435e7ff36938dc",
+    "runtime": {
+      "teaching": {
+        "score": 0.5011824930760271,
+        "step": 6144,
+        "sha256": "eff092ad1143fd6745350ffd86d06b23d444b3eb16acd4a322a41cbd659918f1",
+        "revision": "eff092ad1143fd6745350ffd86d06b23d444b3eb16acd4a322a41cbd659918f1.pt",
+        "parent": "eeb9f0512704b9996247b308fe6ac69a63e299f969a68b1d84808b26cc891fad",
+        "weights": "cdb4936fad6098b3572f3b7dba935e3cbe9356b6357fe28f1d951d92573c13b3",
+        "updates": 0
+      },
+      "reward_arms": {
+        "verified_reward": {
+          "sha256": "92145f6577697b3c81713a6da6b0e13dde85eb89415ed40ce3bc2917425ccc68",
+          "revision": "92145f6577697b3c81713a6da6b0e13dde85eb89415ed40ce3bc2917425ccc68.pt",
+          "parent": "d9aad86e9d22147208986966857676ace8caccae711578f9e2da54ff02a7d6e8",
+          "weights": "7b50c94039b1841a99d606ae516ade1a9d88bdab7ca34674c0e247a49772822f",
+          "updates": 2011
+        },
+        "reward_disconnected": {
+          "sha256": "8da484a605ad1c9c0a79bdd6e3cc30084a642ee77e5af4d2b7cd19378fb13ed7",
+          "revision": "8da484a605ad1c9c0a79bdd6e3cc30084a642ee77e5af4d2b7cd19378fb13ed7.pt",
+          "parent": "64716518bca53d1cdce717cf316d80260614841b839979eea82dea79b371bb7a",
+          "weights": "cdb4936fad6098b3572f3b7dba935e3cbe9356b6357fe28f1d951d92573c13b3",
+          "updates": 0
+        }
+      },
+      "data_manifest": "7d7549e003282013dd3bacb277c6734da9de7915a1676405449cf7edd4ea892a",
+      "split_audit": "4632132f332b804135e722403a6090e03c7ebb134bdfa121c80982ac3a54dd20",
+      "evaluator": "dc7e6c5c9430341c41c16139538613606b90b1d31900b9bd6b6ee579bbd69e65",
+      "runtime_sources": {
+        "grounded_owner": "749448dcb575b7d8ffaeba349a003206db889729ef10db5982f99932bb2f64af",
+        "clifford_sheaf": "90dfb74e31578939119a3ab34c4ae3c6c8b1bd0d6b99503a110d917ea1f838a9",
+        "scfe_owner": "8e5248fc464cb534a281f5f14046771404e39d2e37cb301f853de43e00e49e30",
+        "study_world": "59f6994418078d0d65fe03476ec2f7b2cd36c3a57af698aa5b84c47370d95ac7",
+        "study_inquiry": "ab4a5ae9d380b05f75a8ddeae0b65f995a947254af58e762eb881ca08c018bbb",
+        "study_evaluation": "dc7e6c5c9430341c41c16139538613606b90b1d31900b9bd6b6ee579bbd69e65",
+        "study_registration": "5bb3a24b06f9b2f1bde93b9976d02b63121329497c1aa38e022dcd64dd2b2795",
+        "study_data": "f7d173967d9f16fda350737a28455bf69e33a9c102a614d255b47865ff89f09c",
+        "study_training": "0aebffc078e65103cb99bbc50fb6bb73a934e1e7dd700e32b92a2364a9d328ad",
+        "learned_motion": "038b8e8b65005ec97a3993dba0a916efc04da65055650bbe44992aee10c29690",
+        "model": "8d0600822db34ab3149a0577ad07921ef153abf55305cd93ebc7430cbdc07cd3",
+        "gauge": "054719a6a8bdd0506298d40a60b10b46b7b1406246c5a844d674a45983b4ac45",
+        "situation_core": "45cd7a5873fcd18d536784d461f1be03c55c5da7a24efcb4d9641b0e9f8d385d",
+        "credit_bridge": "5438e751e7717ae6ff6a6f319fe2b5dfa8fbf6075ed651cd05a5de043330c851",
+        "records": "334d0c7f8f8c7ed561154efd6a697a1c254034e2571d6a565ce42bfaee987154"
+      },
+      "cohorts": {
+        "reading": 1024,
+        "mathematics": 512,
+        "pairs_per_track": 256,
+        "physics_forward": 256,
+        "inquiry": 256,
+        "omitted": 64,
+        "motion_transfer": 64
+      },
+      "comparison": "Reward arms matched at 2048 attempted episodes; field ablations are inference sensitivities.",
+      "cohort_construction": "Stable group hash then row hash; partial touched groups are excluded from future independent comparisons.",
+      "reserved": "Wholly unselected human final groups and physics split future-comparison-004 remain untouched by scoring."
+    },
+    "development": {
+      "split": "SCFE-006-development-v1",
+      "seed": 73113,
+      "cases": 512
+    },
+    "final": {
+      "split": "SCFE-006-final-v1",
+      "seed": 73113,
+      "cases": 512
+    }
+  },
+  "candidates": [
+    {
+      "path": "runs/CONNECTED-SCFE-rewards-scfe/verified_reward/revisions/989e6f17aff28c36affaa7704146dde239688ec4c46ed17c574fdc0920149a99.pt",
+      "sha256": "989e6f17aff28c36affaa7704146dde239688ec4c46ed17c574fdc0920149a99",
+      "weights": "cdb4936fad6098b3572f3b7dba935e3cbe9356b6357fe28f1d951d92573c13b3",
+      "attempts": 0
+    },
+    {
+      "path": "runs/CONNECTED-SCFE-rewards-scfe/verified_reward/revisions/6211d68eea184bf80a6e4bdd67ac3ed4cb0e6fe251c05817fdc6f065a5796a65.pt",
+      "sha256": "6211d68eea184bf80a6e4bdd67ac3ed4cb0e6fe251c05817fdc6f065a5796a65",
+      "weights": "d2963fa237f9ff66e8052196024a37b7899249e23af3a519d042a47951daabdc",
+      "attempts": 128
+    },
+    {
+      "path": "runs/CONNECTED-SCFE-rewards-scfe/verified_reward/revisions/f4ad9ce070a6cd063fc68046e7587ac5de247e508c56c529c1f15abe8c5b21f4.pt",
+      "sha256": "f4ad9ce070a6cd063fc68046e7587ac5de247e508c56c529c1f15abe8c5b21f4",
+      "weights": "610bee27aafec1f78e2a1710b8db76427065ac8887e48b8b5b3a09817a0a7083",
+      "attempts": 256
+    },
+    {
+      "path": "runs/CONNECTED-SCFE-rewards-scfe/verified_reward/revisions/47dc52e152abb50e3ba73a53d861783b65091c2a4c1d7981a3ab58b626c8abb4.pt",
+      "sha256": "47dc52e152abb50e3ba73a53d861783b65091c2a4c1d7981a3ab58b626c8abb4",
+      "weights": "23dffc8a63dc32416745a56566646fdaa20015efcaf43a31b8f82f666d3a86a3",
+      "attempts": 384
+    },
+    {
+      "path": "runs/CONNECTED-SCFE-rewards-scfe/verified_reward/revisions/8a330c4365ce45eb0b718b2bff701e9ab09653390f5f4a5102c3ca49cb8e6683.pt",
+      "sha256": "8a330c4365ce45eb0b718b2bff701e9ab09653390f5f4a5102c3ca49cb8e6683",
+      "weights": "d8847c8a736af3fd5a5824d54910413c0023e35387ce58cb168b84f1548c7f73",
+      "attempts": 512
+    },
+    {
+      "path": "runs/CONNECTED-SCFE-rewards-scfe/verified_reward/revisions/a6d25b800195b156cbd8318ad12fda1491175611ab0d58e3878ee6b39145bcbf.pt",
+      "sha256": "a6d25b800195b156cbd8318ad12fda1491175611ab0d58e3878ee6b39145bcbf",
+      "weights": "2754975c63276f581e88ceec6d5c88a2721ed177502af7be48b397f5968abd9a",
+      "attempts": 640
+    },
+    {
+      "path": "runs/CONNECTED-SCFE-rewards-scfe/verified_reward/revisions/ed7585015a748900a970fbb5dcee7f027fd917c4336e3ff6d6c1687b22c77061.pt",
+      "sha256": "ed7585015a748900a970fbb5dcee7f027fd917c4336e3ff6d6c1687b22c77061",
+      "weights": "528a08f2bb6f5b6e640c416506b14c06bcffe626f749276b24b3817791bd2ae4",
+      "attempts": 768
+    },
+    {
+      "path": "runs/CONNECTED-SCFE-rewards-scfe/verified_reward/revisions/228d68c7005b6e012a9b246da48e85e48cadcf4dedaba89e20c21ad5dc3fa7f3.pt",
+      "sha256": "228d68c7005b6e012a9b246da48e85e48cadcf4dedaba89e20c21ad5dc3fa7f3",
+      "weights": "c05b62214a1eb3bee41a9642e501f705bcbf703850d73b944d2c9f8b7faa92ae",
+      "attempts": 896
+    },
+    {
+      "path": "runs/CONNECTED-SCFE-rewards-scfe/verified_reward/revisions/cfbb822e09b6a0c95a6ccb8a59a47d30e3c4cf0752d97e7c5720b425356d88ad.pt",
+      "sha256": "cfbb822e09b6a0c95a6ccb8a59a47d30e3c4cf0752d97e7c5720b425356d88ad",
+      "weights": "daaa6b21018f786f70d6051f3ed4069cd3c42389d363a6316c5e17aa049c5a9e",
+      "attempts": 1024
+    },
+    {
+      "path": "runs/CONNECTED-SCFE-rewards-scfe/verified_reward/revisions/77ceeffcf117c83114284706faf8a566e0691431c27d3dd777514a4ce46c8359.pt",
+      "sha256": "77ceeffcf117c83114284706faf8a566e0691431c27d3dd777514a4ce46c8359",
+      "weights": "6700da0189db18f504ba483aa58af6e4de3367cd93b9e7fa298961de76894c91",
+      "attempts": 1152
+    },
+    {
+      "path": "runs/CONNECTED-SCFE-rewards-scfe/verified_reward/revisions/37fc17a31ef431fee4aeb204b10ca8fef85d4958f7a3bbe2ef78f94f2cc75c27.pt",
+      "sha256": "37fc17a31ef431fee4aeb204b10ca8fef85d4958f7a3bbe2ef78f94f2cc75c27",
+      "weights": "5d806d46ce535e32f32b35768efed59559d861da9a07105f81924ed51b2bd4b7",
+      "attempts": 1280
+    },
+    {
+      "path": "runs/CONNECTED-SCFE-rewards-scfe/verified_reward/revisions/3117ccc5982611564fee1f8dea16d2ec87e0146dfaab875762b5eeb5fababb92.pt",
+      "sha256": "3117ccc5982611564fee1f8dea16d2ec87e0146dfaab875762b5eeb5fababb92",
+      "weights": "cda0d0f77348724d63051f26b0c211df98386400f07cc877e4080d77fe2e816c",
+      "attempts": 1408
+    },
+    {
+      "path": "runs/CONNECTED-SCFE-rewards-scfe/verified_reward/revisions/f85b09273a8788c1127ea8b411e0342689020db172a5e9ac28b5fea0b765e967.pt",
+      "sha256": "f85b09273a8788c1127ea8b411e0342689020db172a5e9ac28b5fea0b765e967",
+      "weights": "025265a04f1920a39b60afad4d261485c594265ec1cc930bc8c51d918783c358",
+      "attempts": 1536
+    },
+    {
+      "path": "runs/CONNECTED-SCFE-rewards-scfe/verified_reward/revisions/aaad9faa31830033de0b0df9d1ec99cf00603a722121c3c0adcaef5d4ed1a6f0.pt",
+      "sha256": "aaad9faa31830033de0b0df9d1ec99cf00603a722121c3c0adcaef5d4ed1a6f0",
+      "weights": "592ec6c89ac166cc6f6a89ac48785c655aafb697d4688b93059e039c0848a507",
+      "attempts": 1664
+    },
+    {
+      "path": "runs/CONNECTED-SCFE-rewards-scfe/verified_reward/revisions/06340c5722afb3a9eb04ce957bd0435852bb1a0d3c2042008f6f93eccabcab5e.pt",
+      "sha256": "06340c5722afb3a9eb04ce957bd0435852bb1a0d3c2042008f6f93eccabcab5e",
+      "weights": "dff5fdf64d491c1f1a406a92a02abd6648c167d7d0355724e8868afb747e273d",
+      "attempts": 1792
+    },
+    {
+      "path": "runs/CONNECTED-SCFE-rewards-scfe/verified_reward/revisions/a45af19d9c273dd1259781437b315536aaca7d61d2a41211911b7d64c0898172.pt",
+      "sha256": "a45af19d9c273dd1259781437b315536aaca7d61d2a41211911b7d64c0898172",
+      "weights": "d6e4d624e59f4023fa0c55c1e39af29a3620c99944adb612fee1ada5733e607f",
+      "attempts": 1920
+    },
+    {
+      "path": "runs/CONNECTED-SCFE-rewards-scfe/verified_reward/revisions/92145f6577697b3c81713a6da6b0e13dde85eb89415ed40ce3bc2917425ccc68.pt",
+      "sha256": "92145f6577697b3c81713a6da6b0e13dde85eb89415ed40ce3bc2917425ccc68",
+      "weights": "7b50c94039b1841a99d606ae516ade1a9d88bdab7ca34674c0e247a49772822f",
+      "attempts": 2048
+    }
+  ]
+}

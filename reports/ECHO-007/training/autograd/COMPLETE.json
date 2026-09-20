@@ -1,0 +1,293 @@
+{
+  "arm": "autograd",
+  "steps": 2048,
+  "exposures": {
+    "human_reading": 16392,
+    "human_mathematics": 8208,
+    "calculus": 1776,
+    "physical_simulation": 12264,
+    "dailydialog": 1752,
+    "descartes": 1752,
+    "grammar": 1752,
+    "plato": 1752,
+    "programming": 1752,
+    "webster": 1752
+  },
+  "unique_human_records": 30346,
+  "physical_systems": 12264,
+  "selected": {
+    "sha256": "312be8218a683737c3f6cdf4b37c57a8e21f3f4b9166bdad969e1682701ec935",
+    "revision": "312be8218a683737c3f6cdf4b37c57a8e21f3f4b9166bdad969e1682701ec935.pt",
+    "parent": "9f5b89b2d111c7e92e5dc78b7c4a053f162c1425754fb595ec848d1501ad4bcf",
+    "weights": "a93eca6b7cebf4a86d4c079640a179716604d9b8730c334a97794873ae970df3",
+    "updates": 0,
+    "score": 0.9841417720157204,
+    "step": 1024
+  },
+  "initial_weights": "528a08f2bb6f5b6e640c416506b14c06bcffe626f749276b24b3817791bd2ae4",
+  "final_weights": "5fc975aea220acf8496a82fa875b1ac525e1de1eafdabc475592be2b79df98f0",
+  "selected_field_change_l2": {
+    "links": 0.03761301189661026,
+    "prior": 0.07721367478370667,
+    "raw_stiffness": 0.019312560558319092,
+    "raw_condensation": 0.0014962553977966309
+  },
+  "investigation_parameters_exactly_retained": true,
+  "development": [
+    {
+      "step": 0,
+      "score": 1.0,
+      "metrics": {
+        "reading": {
+          "loss": 0.5015433803200722,
+          "accuracy": 0.8359375,
+          "n": 128
+        },
+        "math": {
+          "loss": 4.000252991914749,
+          "accuracy": 0.0859375,
+          "n": 128
+        },
+        "pair:calculus": {
+          "loss": 0.7728120386600494,
+          "accuracy": 0.75,
+          "n": 32
+        },
+        "pair:dailydialog": {
+          "loss": 1.4157506227493286,
+          "accuracy": 0.375,
+          "n": 32
+        },
+        "pair:grammar": {
+          "loss": 1.3007108569145203,
+          "accuracy": 0.34375,
+          "n": 32
+        },
+        "pair:plato": {
+          "loss": 1.1491639614105225,
+          "accuracy": 0.59375,
+          "n": 32
+        },
+        "pair:programming": {
+          "loss": 0.22711004316806793,
+          "accuracy": 0.9375,
+          "n": 32
+        },
+        "pair:webster": {
+          "loss": 1.0444307029247284,
+          "accuracy": 0.625,
+          "n": 32
+        },
+        "physics": {
+          "loss": 0.10077084973454475,
+          "n": 128
+        }
+      },
+      "weights": "528a08f2bb6f5b6e640c416506b14c06bcffe626f749276b24b3817791bd2ae4"
+    },
+    {
+      "step": 512,
+      "score": 0.9885313679798154,
+      "metrics": {
+        "reading": {
+          "loss": 0.5274916253983974,
+          "accuracy": 0.828125,
+          "n": 128
+        },
+        "math": {
+          "loss": 4.009830057621002,
+          "accuracy": 0.0859375,
+          "n": 128
+        },
+        "pair:calculus": {
+          "loss": 0.781328096985817,
+          "accuracy": 0.6875,
+          "n": 32
+        },
+        "pair:dailydialog": {
+          "loss": 1.439517617225647,
+          "accuracy": 0.28125,
+          "n": 32
+        },
+        "pair:grammar": {
+          "loss": 1.3773647546768188,
+          "accuracy": 0.28125,
+          "n": 32
+        },
+        "pair:plato": {
+          "loss": 1.2307378649711609,
+          "accuracy": 0.53125,
+          "n": 32
+        },
+        "pair:programming": {
+          "loss": 0.1659296341240406,
+          "accuracy": 0.96875,
+          "n": 32
+        },
+        "pair:webster": {
+          "loss": 1.0188086330890656,
+          "accuracy": 0.5625,
+          "n": 32
+        },
+        "physics": {
+          "loss": 0.09298061206936836,
+          "n": 128
+        }
+      },
+      "weights": "fc8bf995f8de927eb678160a3fda0380275431219c284dcb1d9ba399b6b0c530"
+    },
+    {
+      "step": 1024,
+      "score": 0.9841417720157204,
+      "metrics": {
+        "reading": {
+          "loss": 0.5221123583614826,
+          "accuracy": 0.828125,
+          "n": 128
+        },
+        "math": {
+          "loss": 3.997631222009659,
+          "accuracy": 0.09375,
+          "n": 128
+        },
+        "pair:calculus": {
+          "loss": 0.7723454833030701,
+          "accuracy": 0.6875,
+          "n": 32
+        },
+        "pair:dailydialog": {
+          "loss": 1.4316843152046204,
+          "accuracy": 0.34375,
+          "n": 32
+        },
+        "pair:grammar": {
+          "loss": 1.4096623659133911,
+          "accuracy": 0.28125,
+          "n": 32
+        },
+        "pair:plato": {
+          "loss": 1.2097432017326355,
+          "accuracy": 0.53125,
+          "n": 32
+        },
+        "pair:programming": {
+          "loss": 0.16530394554138184,
+          "accuracy": 0.9375,
+          "n": 32
+        },
+        "pair:webster": {
+          "loss": 1.008954644203186,
+          "accuracy": 0.5625,
+          "n": 32
+        },
+        "physics": {
+          "loss": 0.09298202581703663,
+          "n": 128
+        }
+      },
+      "weights": "a93eca6b7cebf4a86d4c079640a179716604d9b8730c334a97794873ae970df3"
+    },
+    {
+      "step": 1536,
+      "score": 0.9975680143630197,
+      "metrics": {
+        "reading": {
+          "loss": 0.5230065360665321,
+          "accuracy": 0.8203125,
+          "n": 128
+        },
+        "math": {
+          "loss": 4.015938639640808,
+          "accuracy": 0.078125,
+          "n": 128
+        },
+        "pair:calculus": {
+          "loss": 0.7649905532598495,
+          "accuracy": 0.71875,
+          "n": 32
+        },
+        "pair:dailydialog": {
+          "loss": 1.3892133831977844,
+          "accuracy": 0.375,
+          "n": 32
+        },
+        "pair:grammar": {
+          "loss": 1.3978677988052368,
+          "accuracy": 0.28125,
+          "n": 32
+        },
+        "pair:plato": {
+          "loss": 1.2882532477378845,
+          "accuracy": 0.46875,
+          "n": 32
+        },
+        "pair:programming": {
+          "loss": 0.17006126791238785,
+          "accuracy": 0.9375,
+          "n": 32
+        },
+        "pair:webster": {
+          "loss": 0.9835295379161835,
+          "accuracy": 0.53125,
+          "n": 32
+        },
+        "physics": {
+          "loss": 0.09747865796089172,
+          "n": 128
+        }
+      },
+      "weights": "647e5438f6f9005f27452e514f14f6deb5f602e3bfb5e3434c91d9e7e8fd7dad"
+    },
+    {
+      "step": 2048,
+      "score": 0.9905755827712825,
+      "metrics": {
+        "reading": {
+          "loss": 0.518210070207715,
+          "accuracy": 0.828125,
+          "n": 128
+        },
+        "math": {
+          "loss": 4.017796337604523,
+          "accuracy": 0.0859375,
+          "n": 128
+        },
+        "pair:calculus": {
+          "loss": 0.7687014192342758,
+          "accuracy": 0.65625,
+          "n": 32
+        },
+        "pair:dailydialog": {
+          "loss": 1.4255950450897217,
+          "accuracy": 0.34375,
+          "n": 32
+        },
+        "pair:grammar": {
+          "loss": 1.377423346042633,
+          "accuracy": 0.3125,
+          "n": 32
+        },
+        "pair:plato": {
+          "loss": 1.1996018290519714,
+          "accuracy": 0.5,
+          "n": 32
+        },
+        "pair:programming": {
+          "loss": 0.19906560331583023,
+          "accuracy": 0.90625,
+          "n": 32
+        },
+        "pair:webster": {
+          "loss": 0.9782112240791321,
+          "accuracy": 0.53125,
+          "n": 32
+        },
+        "physics": {
+          "loss": 0.09456503577530384,
+          "n": 128
+        }
+      },
+      "weights": "5fc975aea220acf8496a82fa875b1ac525e1de1eafdabc475592be2b79df98f0"
+    }
+  ]
+}

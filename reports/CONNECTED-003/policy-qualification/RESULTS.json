@@ -1,0 +1,74 @@
+{
+  "metrics": {
+    "selected": {
+      "n": 512,
+      "before_mse": 0.10963885751334601,
+      "after_mse": 0.06633476734414501,
+      "mean_absolute_progress": 0.043304090169201004,
+      "fraction_improved": 0.578125,
+      "relative_mse_reduction": 0.3949702792545948,
+      "original_goals_returned": 512,
+      "failed_actuators": 12,
+      "probe_count": 512
+    },
+    "unchanged": {
+      "n": 512,
+      "before_mse": 0.10963885751334601,
+      "after_mse": 0.08030163477394581,
+      "mean_absolute_progress": 0.029337222739400204,
+      "fraction_improved": 0.58203125,
+      "relative_mse_reduction": 0.26758052213221095,
+      "original_goals_returned": 512,
+      "failed_actuators": 12,
+      "probe_count": 512
+    },
+    "last_update": {
+      "n": 512,
+      "before_mse": 0.10963885751334601,
+      "after_mse": 0.10137717505520527,
+      "mean_absolute_progress": 0.00826168245814074,
+      "fraction_improved": 0.490234375,
+      "relative_mse_reduction": 0.07535359858282975,
+      "original_goals_returned": 512,
+      "failed_actuators": 12,
+      "probe_count": 512
+    },
+    "analytic": {
+      "n": 512,
+      "before_mse": 0.10963885751334601,
+      "after_mse": 0.04841755957241389,
+      "mean_absolute_progress": 0.06122129794093212,
+      "fraction_improved": 0.703125,
+      "relative_mse_reduction": 0.558390513449849,
+      "original_goals_returned": 512,
+      "failed_actuators": 6,
+      "probe_count": 512
+    },
+    "random": {
+      "n": 512,
+      "before_mse": 0.10963885751334601,
+      "after_mse": 0.08327553163880452,
+      "mean_absolute_progress": 0.026363325874541488,
+      "fraction_improved": 0.576171875,
+      "relative_mse_reduction": 0.2404560433451467,
+      "original_goals_returned": 512,
+      "failed_actuators": 7,
+      "probe_count": 512
+    }
+  },
+  "selected_training_attempts": 768,
+  "paired_mean_improvement_95_percent_bootstrap": [
+    0.00594711669470982,
+    0.023011979821500363
+  ],
+  "relative_mse_reduction_vs_unchanged": 0.1739300509773981,
+  "qualified_for_promotion": true,
+  "selection_sha256": "055cad11585b2a54a529dc4afb86c4eeecd3b7b1462d51a569f50c75f04e50ae",
+  "raw": {
+    "analytic.jsonl": "c40532c7ae502378590b157d52d11d34e77f1592bc837115b7bdc9befbe4c0e0",
+    "last_update.jsonl": "75db41cbc0fd596dad7ea96a197ae474cc2fdbffea756cf2b30ebec1c23a352b",
+    "random.jsonl": "e8bad8d42adc77c6a64552b797082680ffa1fa0a4e07e17579ee56acee049419",
+    "selected.jsonl": "ef9bbc91a179f453e33392b62ce2fa2f31831de1a51db00d03ef86ae1622c4e6",
+    "unchanged.jsonl": "78382fc89d607fb6e80cb12f0418bc7895d6c224ef7230f8fa9997c562c1d63c"
+  }
+}

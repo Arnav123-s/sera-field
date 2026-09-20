@@ -1,0 +1,19 @@
+{
+  "teaching_choice": "full",
+  "checks": {
+    "forward_mse": true,
+    "inverse_mse": true,
+    "counterfactual_mse": true,
+    "plan_mse": true,
+    "direction": false,
+    "language_route": false,
+    "immutable": true,
+    "old_parameters_exact": true
+  },
+  "qualified": false,
+  "reward_qualified": true,
+  "reward_final_mse": 0.17147222024846087,
+  "unchanged_final_mse": 0.1720334587146226,
+  "all_eight_replays_exact": true,
+  "completed_utc": "2026-09-20T06:28:07Z"
+}

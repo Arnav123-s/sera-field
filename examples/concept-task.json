@@ -1,0 +1,17 @@
+{
+  "goal": {
+    "name": "Understand this observed device and choose a drive setting",
+    "predict": [[0,1],[1,1],[-1,1]],
+    "inverse": {"velocity": 0.5, "acceleration": 0.6},
+    "counterfactual": [[0,2],[1,2],[-1,2]],
+    "plan": {"target": [0.2,0.45], "velocity": 0, "duration": 0.8},
+    "question": "What happens when speed increases?",
+    "operating_point": [0.5,1]
+  },
+  "observations": [
+    {"source":"engineering simulation fixture", "kind":"independent_simulation", "measurement_id":"a", "measured":[0,0,0.2]},
+    {"source":"engineering simulation fixture", "kind":"independent_simulation", "measurement_id":"b", "measured":[0,1,1.2]},
+    {"source":"engineering simulation fixture", "kind":"independent_simulation", "measurement_id":"c", "measured":[1,0,-0.3]},
+    {"source":"engineering simulation fixture", "kind":"independent_simulation", "measurement_id":"d", "measured":[-1,0,0.7]}
+  ]
+}

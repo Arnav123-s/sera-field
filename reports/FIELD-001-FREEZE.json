@@ -1,0 +1,44 @@
+{
+  "created_utc": "2026-09-20T00:17:21Z",
+  "sources": {
+    "protocols/FIELD-001.md": "224093fc012dbfba82327ba91fc9f875e5033159cb0088e0168e2894b21fb8b6",
+    "pyproject.toml": "7012a49f25ce7fc4e442247271aee3a7025171a534362cfb37bf32563a636f99",
+    "scripts/recover_orphan.py": "c75799fc2ad4bc30b87dc0c372749a382d75584e7c7a59bde23ccd6050d315db",
+    "scripts/supervise.py": "2afbba6b9c129915a861f8c0991c61618330c68e5db0458314146952b2e89b19",
+    "sera_field/__init__.py": "411ad79310c9e2bcf2038fc35e8c746306d4803502b3fa8aeb9af9e7a896ce80",
+    "sera_field/cli.py": "b1569738ea3aff9e58112801b45e1fb0f92a1c051b45c6bd21bc6ddc8a20d1b4",
+    "sera_field/evaluation.py": "44e6cab880ce96a3c018bc25f4121cc9caab9785b5482a53b75a9b4327274ec7",
+    "sera_field/gauge.py": "054719a6a8bdd0506298d40a60b10b46b7b1406246c5a844d674a45983b4ac45",
+    "sera_field/investigation.py": "15f1ebf2cace225317cbbef1cea56fb4a5639d698c46d6e8933023682d0e8df3",
+    "sera_field/model.py": "6f7e4d5c09dd55dbcfa2cb3af8a33ac083685dd911dfff6c4dab0144ce3b8d03",
+    "sera_field/observatory.py": "1323f80480ee351ec027a6aebeca0054063797a349324cff7a028b563d325bb7",
+    "sera_field/records.py": "334d0c7f8f8c7ed561154efd6a697a1c254034e2571d6a565ce42bfaee987154",
+    "sera_field/tasks.py": "6d3df01752bb51cee5de7f758b3afe5d68f1f48fae839a370f7a2573ea01bad3",
+    "sera_field/training.py": "d24ed84db8b2065d259693c2a20ddd82280d3cd27c31a279e605eed1f90dc613",
+    "tests/test_contracts.py": "2fdca9ce7b406c03a283ca6a542520c601f9f14b8d73d0bbb23a3d2fad918fae"
+  },
+  "config": {
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "steps": 3000,
+    "batch": 128,
+    "base_train_seed": 19092026,
+    "base_dev_seed": 29092026,
+    "base_final_seed": 39092026,
+    "refine_train_seed": 49092026,
+    "refine_dev_seed": 59092026,
+    "refine_final_seed": 69092026,
+    "train_count": 8192,
+    "dev_count": 1024,
+    "refine_dev_count": 512,
+    "lr_start": 0.002,
+    "lr_end": 0.0002,
+    "width": 12,
+    "extra_channels": 16
+  },
+  "finals_opened": false,
+  "training_from_scratch": true
+}

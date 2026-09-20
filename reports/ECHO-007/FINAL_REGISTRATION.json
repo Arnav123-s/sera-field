@@ -1,0 +1,50 @@
+{
+  "protocol_sha256": "211cbf1c6661975520fe74e9da842bddc3793c951b07c17f9e2607aaa0896cfa",
+  "study_freeze_sha256": "de0ff02972cb59e9c780456f9f56dc55db47dea7af8061917584ad4c65aed185",
+  "selections": {
+    "echo": {
+      "selection_sha256": "8a7fed993e468779b256482308255d1181dc99c2c5e45a53caf4a919e60921e6",
+      "sha256": "3c56af8d17aefdd745f781d3ea196114b4d3d0a9100cc863668776b12f296743",
+      "revision": "3c56af8d17aefdd745f781d3ea196114b4d3d0a9100cc863668776b12f296743.pt",
+      "parent": "0e09e802635cf73d01d0ff0d6948b8b247f42eb670030bf2a94c40f510c9d41c",
+      "weights": "6bb452bbb714d068925180aacc03cbc48ef296410361ceb990e1c50edd291a85",
+      "updates": 0,
+      "score": 0.9841417740395529,
+      "step": 1024
+    },
+    "autograd": {
+      "selection_sha256": "e912e7f816381f958ee622dcf545c54be67533d1dc76c56a4d089a3382c4c380",
+      "sha256": "312be8218a683737c3f6cdf4b37c57a8e21f3f4b9166bdad969e1682701ec935",
+      "revision": "312be8218a683737c3f6cdf4b37c57a8e21f3f4b9166bdad969e1682701ec935.pt",
+      "parent": "9f5b89b2d111c7e92e5dc78b7c4a053f162c1425754fb595ec848d1501ad4bcf",
+      "weights": "a93eca6b7cebf4a86d4c079640a179716604d9b8730c334a97794873ae970df3",
+      "updates": 0,
+      "score": 0.9841417720157204,
+      "step": 1024
+    },
+    "no_core_credit": {
+      "selection_sha256": "957d466babf4f38e523ea313dc7cfb79153a0d09b7c3c07e03ecb30ef09f6fee",
+      "sha256": "615b0b4a3b9d1af149d8474cb5de3b7f135a90f9083bedbad805fb0ad19ab1a7",
+      "revision": "615b0b4a3b9d1af149d8474cb5de3b7f135a90f9083bedbad805fb0ad19ab1a7.pt",
+      "parent": "561c170751674f0d7a071233c331cd75c05d9557070ae3f29d0442644c7f5f13",
+      "weights": "afafe5c970fa92eb17210b5bba304d4d5f6b2a643031c52743b4321bb4df4873",
+      "updates": 0,
+      "score": 0.9715337039013123,
+      "step": 1024
+    },
+    "parent": {
+      "selection_sha256": "0a959c2962380080382ee8d91ceebb711f0a2007dc3ee8bb446d15424ff6edfd",
+      "score": 0.5011824930760271,
+      "step": 6144,
+      "sha256": "e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3",
+      "revision": "e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3.pt",
+      "parent": "a6d25b800195b156cbd8318ad12fda1491175611ab0d58e3878ee6b39145bcbf",
+      "weights": "528a08f2bb6f5b6e640c416506b14c06bcffe626f749276b24b3817791bd2ae4",
+      "updates": 753,
+      "teacher_checkpoint_sha256": "eff092ad1143fd6745350ffd86d06b23d444b3eb16acd4a322a41cbd659918f1",
+      "source_checkpoint_sha256": "ed7585015a748900a970fbb5dcee7f027fd917c4336e3ff6d6c1687b22c77061",
+      "reward_training_attempts": 768,
+      "purpose": "One taught owner with qualified learned investigation weights; full resumable state remains in source runs."
+    }
+  }
+}
