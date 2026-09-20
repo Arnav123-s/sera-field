@@ -1,0 +1,35 @@
+{
+  "selection": {
+    "sha256": "db851135bbca7235e743423fa14408196c0e3b829d51113180958ace3270c8f8",
+    "revision": "db851135bbca7235e743423fa14408196c0e3b829d51113180958ace3270c8f8.pt",
+    "parent": "4be5a015d7b7c194dc8770bf5118ea441b121758364462a0b2712cc29b49ddad",
+    "weights": "25d8ee69aeb6cffc621f4b51d42e652e6ac5bad825f0cc7d2f511775509ba37a",
+    "updates": 60,
+    "semantic_step": 13312,
+    "n": 512,
+    "accuracy": 0.60546875,
+    "loss": 0.8834963142871857,
+    "source_checkpoint_sha256": "725f5df52c584c71f590c6b098f91d7ab8b5c5526b107954a68f11c025f84b72",
+    "role": "qualified_human_semantic_owner"
+  },
+  "parameters": {
+    "total": 891972,
+    "trainable": 891972,
+    "persistent_tensor_bytes": 3607872
+  },
+  "specification": {
+    "type": "curvature-semantic-015",
+    "width": 48,
+    "nodes": 8,
+    "rounds": 4,
+    "backend": "echo",
+    "steps": 32,
+    "precision_kind": "full",
+    "lexical_size": 4096,
+    "base_route_scale": 0.0,
+    "capture_enabled": true,
+    "extension_width": 16
+  },
+  "report": "reports/SEMANTIC-015/REPORT.md",
+  "full_training_state": "runs/SEMANTIC-015/coupled/revisions"
+}

@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/Arnav123-s/sera-field",
+  "published_commit": "e73bccb1a7b1b6f83a2c984956c74a83e0e7e4fb",
+  "source_local_revision": "90c1a92696748fd4dddaf44866f1065f763b4d7a",
+  "manifested_files": 495,
+  "manifested_git_blob_bytes": 25015323,
+  "staged_blob_hashes_verified": true,
+  "ci_conclusion": "success",
+  "ci_url": "https://github.com/Arnav123-s/sera-field/actions/runs/35528090160",
+  "private_sources_and_full_run_trees_preserved_locally": true
+}

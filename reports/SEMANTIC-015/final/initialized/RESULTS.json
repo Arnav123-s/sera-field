@@ -1,0 +1,37 @@
+{
+  "n": 4096,
+  "accuracy": 0.34619140625,
+  "loss": 1.098284462466836,
+  "arm": "initialized",
+  "selection": {
+    "sha256": "75a4c362458d908602da9e8c792b1d8b86a9e37442c6bb7e790d127e35a91440",
+    "revision": "75a4c362458d908602da9e8c792b1d8b86a9e37442c6bb7e790d127e35a91440.pt",
+    "parent": null,
+    "weights": "e08d3d0f68cc1a3eadf6bfe031776222b66809ef85cc750175cef906bfb7ee43",
+    "updates": 0,
+    "semantic_step": 0,
+    "accuracy": 0.341796875,
+    "loss": 1.098313357681036
+  },
+  "weights_before": "e08d3d0f68cc1a3eadf6bfe031776222b66809ef85cc750175cef906bfb7ee43",
+  "weights_after": "e08d3d0f68cc1a3eadf6bfe031776222b66809ef85cc750175cef906bfb7ee43",
+  "cases_sha256": "538efb1ac2ac38fc6e59c3dab1211f96b01d74f356b25ad136e0ae7a139fe2db",
+  "confusion": [
+    [
+      399,
+      155,
+      858
+    ],
+    [
+      362,
+      124,
+      814
+    ],
+    [
+      356,
+      133,
+      895
+    ]
+  ],
+  "branch_disagreement": 0.03564453125
+}

@@ -1,0 +1,38 @@
+{
+  "n": 4096,
+  "accuracy": 0.384033203125,
+  "loss": 1.108465344645083,
+  "arm": "hypothesis_only",
+  "selection": {
+    "sha256": "725f5df52c584c71f590c6b098f91d7ab8b5c5526b107954a68f11c025f84b72",
+    "revision": "725f5df52c584c71f590c6b098f91d7ab8b5c5526b107954a68f11c025f84b72.pt",
+    "parent": "4be5a015d7b7c194dc8770bf5118ea441b121758364462a0b2712cc29b49ddad",
+    "weights": "25d8ee69aeb6cffc621f4b51d42e652e6ac5bad825f0cc7d2f511775509ba37a",
+    "updates": 60,
+    "semantic_step": 13312,
+    "n": 512,
+    "accuracy": 0.60546875,
+    "loss": 0.8834963142871857
+  },
+  "weights_before": "25d8ee69aeb6cffc621f4b51d42e652e6ac5bad825f0cc7d2f511775509ba37a",
+  "weights_after": "25d8ee69aeb6cffc621f4b51d42e652e6ac5bad825f0cc7d2f511775509ba37a",
+  "cases_sha256": "0e1217b1c3a5cac9dda002245e1a545a3e77c0fb872c15be2ff00063704424a3",
+  "confusion": [
+    [
+      669,
+      710,
+      33
+    ],
+    [
+      491,
+      780,
+      29
+    ],
+    [
+      613,
+      647,
+      124
+    ]
+  ],
+  "branch_disagreement": 0.012451171875
+}

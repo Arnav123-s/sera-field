@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "attempt": "history016-tests-001",
+  "repository_tests_passed": 141,
+  "wall_seconds": 43.034155500005,
+  "cpu_seconds": 40.96875,
+  "peak_bytes": 726040576,
+  "source_commit": "6fd54a7",
+  "model_sources_unchanged": true,
+  "scope": "full repository tests, including flow, conserved dynamics, perfect-tensor noise/erasure recovery, evidence scoping and persistent interfaces; not a trained capability result"
+}

@@ -1,0 +1,197 @@
+{
+  "fresh_process_restart_exact": true,
+  "original_goal_preserved": true,
+  "conditional_text_read_did_not_write_observation": true,
+  "human_pair_id": "b553f2734989dadc19b8f2170ef8cb61ef54712614d3cb6e48ae5d0d6edec55c",
+  "human_annotation": 2,
+  "interpretation": {
+    "premise": "Two women are embracing while holding to go packages.",
+    "status": "conditional_on_the_supplied_premise",
+    "interpretations": [
+      {
+        "statement": "The sisters are hugging goodbye while holding to go packages after just eating lunch.",
+        "relation": "additional_information_needed",
+        "probabilities": {
+          "follows_from_premise": 0.165829598903656,
+          "conflicts_with_premise": 0.2728830575942993,
+          "additional_information_needed": 0.5612874031066895
+        },
+        "conditional_branches": [
+          "additional_information_needed",
+          "additional_information_needed",
+          "additional_information_needed"
+        ],
+        "branch_agreement": true
+      }
+    ],
+    "predictor": "25d8ee69aeb6cffc621f4b51d42e652e6ac5bad825f0cc7d2f511775509ba37a",
+    "retained_original_goal": {
+      "queries": [
+        [
+          -1.8343560695648193,
+          1.1267199516296387
+        ],
+        [
+          -1.4663954973220825,
+          0.010158405639231205
+        ],
+        [
+          -1.3662378787994385,
+          0.9227398633956909
+        ],
+        [
+          -1.7800496816635132,
+          -1.0224049091339111
+        ]
+      ]
+    }
+  },
+  "initial_original_goal_mse": 0.009773741729256314,
+  "returned_original_goal_mse": 0.014191512652201244,
+  "returned_answer": {
+    "original_goal": {
+      "queries": [
+        [
+          -1.8343560695648193,
+          1.1267199516296387
+        ],
+        [
+          -1.4663954973220825,
+          0.010158405639231205
+        ],
+        [
+          -1.3662378787994385,
+          0.9227398633956909
+        ],
+        [
+          -1.7800496816635132,
+          -1.0224049091339111
+        ]
+      ]
+    },
+    "conditional_predictions": [
+      [
+        2.2158255577087402,
+        0.7876198291778564,
+        1.6840438842773438,
+        -0.08161868155002594
+      ],
+      [
+        2.208065986633301,
+        0.7852537035942078,
+        1.6814260482788086,
+        -0.08608701825141907
+      ],
+      [
+        2.2063212394714355,
+        0.7847412824630737,
+        1.6808624267578125,
+        -0.0870908796787262
+      ]
+    ],
+    "predictor": "226fa8e57707ae4c3bcbcbc9cf160a4882b2835ac883c24fd3965a7e3d089778",
+    "assessment": {
+      "selected_rank": 0,
+      "calibration_mse": [
+        0.004331528674811125,
+        0.0020040355157107115,
+        0.0004340127925388515,
+        0.0010022432543337345
+      ],
+      "scale_diagnostics": [
+        {
+          "rank": 4,
+          "scales": [
+            2.0,
+            1.0,
+            0.5
+          ],
+          "d_gamma_d_scale": [
+            [
+              1.957242564950232,
+              3.7002054515100378,
+              6.328810458311491
+            ]
+          ],
+          "integrated_gaussian_flow": [
+            5.053948258720584
+          ],
+          "minimum_eigenvalue": [
+            0.015285445912777055
+          ],
+          "scope": "finite Gaussian coefficient action; scalar k^2 regulator",
+          "observed_feature_rank": 4
+        },
+        {
+          "rank": 8,
+          "scales": [
+            2.0,
+            1.0,
+            0.5
+          ],
+          "d_gamma_d_scale": [
+            [
+              3.909786796716843,
+              7.375106866569011,
+              12.61379099305389
+            ]
+          ],
+          "integrated_gaussian_flow": [
+            10.076535281807535
+          ],
+          "minimum_eigenvalue": [
+            0.014849728072839874
+          ],
+          "scope": "finite Gaussian coefficient action; scalar k^2 regulator",
+          "observed_feature_rank": 5
+        },
+        {
+          "rank": 16,
+          "scales": [
+            2.0,
+            1.0,
+            0.5
+          ],
+          "d_gamma_d_scale": [
+            [
+              7.696329620616227,
+              14.476602871787748,
+              25.80169733800891
+            ]
+          ],
+          "integrated_gaussian_flow": [
+            19.919149380182983
+          ],
+          "minimum_eigenvalue": [
+            0.014612236270763928
+          ],
+          "scope": "finite Gaussian coefficient action; scalar k^2 regulator",
+          "observed_feature_rank": 5
+        }
+      ],
+      "gap_detected": false,
+      "qualification": "separate calibration observations; final outcomes withheld"
+    },
+    "assumptions": {
+      "scope": "bounded response, velocity and control in [-2,2]"
+    },
+    "source": {
+      "kind": "independent_simulation",
+      "id": "SEMANTIC-015-delivery-v1"
+    },
+    "pending_measurement": null
+  },
+  "independent_outcomes": [
+    2.009233236312866,
+    0.7316195368766785,
+    1.5668632984161377,
+    -0.07061430811882019
+  ],
+  "source": {
+    "kind": "independent_simulation",
+    "id": "SEMANTIC-015-delivery-v1"
+  },
+  "teacher_sha256": "e6880af7d518f138b02bc4f739bc79fa9ae8c03246d54aeeaf62075871514df0",
+  "interface_sha256": "813eb2f21edcb997f0fd1c78b752e6b562d3ea8b7cbbab272638c3d2ffdb8479",
+  "scope": "same-owner interface and persistence checks; separate text and measurement inputs, no cross-domain-transfer claim"
+}

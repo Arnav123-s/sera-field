@@ -1,0 +1,12 @@
+{
+  "source_manifest_sha256": "6bd98932ddb753820d68203e4bdb38e21d840699d6f74ba94577a7719b00bba2",
+  "producer_sha256": "ba17d0311a2d37beeda2f025c216372c9c0c38cb9ae7c4bfa1fa4fa415297e20",
+  "stage": "stdlib source preparation; no model inference or training",
+  "wall_seconds_upper_bound_from_script_creation": 38.187490463256836,
+  "cpu_seconds": null,
+  "cpu_note": "Not instrumented in this preparation invocation; do not represent this as zero cost. All model work uses the numerical supervisor.",
+  "train_episodes": 2048,
+  "development_episodes": 128,
+  "sealed_query_groups": 256,
+  "model_final_outcomes_opened": false
+}

@@ -8,7 +8,14 @@ This independent laboratory starts its models and weights from scratch. Its
 training objectives concern evidence, executable programs and observed
 consequences. The earlier SERA project is preserved separately.
 
-The latest **GROW-013** owner learns a missing response structure from measurements,
+The latest **SEMANTIC-015** owner interprets human-written premises and proposed
+statements through one learned situation field. After teaching on **471,139 human
+sentence pairs**, it reached **59.20% accuracy on 4,096 reserved examples**, up from
+**34.62%** at initialization. The same owner retains measured physical acquisition,
+conditional imagination, earlier reading and executable task routes.
+[Teaching, comparisons and independent qualification](reports/SEMANTIC-015/REPORT.md).
+
+Its retained **GROW-013** route learns a missing response structure from measurements,
 checks it on separate observations and reuses the acquired relation for prediction,
 inverse questions, counterfactuals, planning and directional explanations. Its
 coupled field combines covariance sheaves, temporal echo learning, a stationary
@@ -22,6 +29,8 @@ exactly. [Complete results](reports/GROW-013/REPORT.md).
 
 | Start with | Contents |
 |---|---|
+| [Interpret human statements](docs/SEMANTIC_USAGE.md) | Conditional meanings, imagined continuations and a persistent measured task |
+| [SEMANTIC-015 results](reports/SEMANTIC-015/REPORT.md) | Full human curriculum, all controls, retained abilities, rewards and costs |
 | [Use the learned extension](docs/EXTENSION_USAGE.md) | Acquire from observations and reuse a persistent concept |
 | [Run an investigation](docs/INQUIRY_USAGE.md) | Propose a measurement, check its actual outcome and resume the original question |
 | [INQUIRY-014 results](reports/INQUIRY-014/REPORT.md) | Complete investigation training, selected policy, independent checks and costs |
@@ -37,11 +46,19 @@ Three measurements reduced mean answer error by **51.8%** on 128 new supported
 systems. Its persistent interface preserves the original goal and pending
 investigation across restarts. [Training and selected-policy evidence](reports/INQUIRY-014/REPORT.md).
 
-The active **SEMANTIC-015** curriculum teaches **471,139 human-written sentence
-pairs** with earlier subject rehearsal. Premises enter an observed field state;
+The completed **SEMANTIC-015** curriculum adds **58,880 rehearsal presentations**
+across earlier reading, mathematics, dictionary, conversation, grammar, philosophy,
+calculus, programming and physical simulation. Premises enter an observed field;
 learned conditional continuations support entailment, contradiction and unresolved
-information. Actual closed-loop curvature tags connect checked semantic progress
-to the same owner's retained memory. [Frozen teaching and assessment protocol](protocols/SEMANTIC-015.md).
+information. Closed-loop curvature tags connect checked progress to retained
+memory. All seven qualification gates and exact replay passed; **141 repository
+tests** passed before the next integration.
+
+The active **HISTORY-016** study teaches a connected update procedure: fast and
+slow traces, opposing evidence, gauge transport and active bulk dynamics modify
+that same field. Independently improved proposals receive task-scoped retention
+and a protected encoding. [State equations](docs/CONTINUOUS_HISTORY_EQUATIONS.md)
+and [the prospective protocol](protocols/HISTORY-016.md) describe the ongoing work.
 
 ## Preserved CONCEPT-011 task interface
 

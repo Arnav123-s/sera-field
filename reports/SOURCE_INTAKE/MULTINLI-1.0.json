@@ -1,0 +1,109 @@
+{
+  "url": "https://cims.nyu.edu/~sbowman/multinli/multinli_1.0.zip",
+  "original_source_page": "https://cims.nyu.edu/~sbowman/multinli/",
+  "paper": "https://aclanthology.org/N18-1101/",
+  "status": "PASS",
+  "work_kind": "stdlib source intake; no model inference or training",
+  "started_unix": 1789931181.001156,
+  "sha256": "049f507b9e36b1fcb756cfd5aeb3b7a0cfcb84bf023793652987f7e7e0957822",
+  "bytes": 226850426,
+  "entries": [
+    {
+      "name": "multinli_1.0/",
+      "bytes": 0,
+      "compressed_bytes": 0
+    },
+    {
+      "name": "multinli_1.0/multinli_1.0_dev_mismatched.jsonl",
+      "bytes": 13460535,
+      "compressed_bytes": 2904993
+    },
+    {
+      "name": "multinli_1.0/paper.pdf",
+      "bytes": 196418,
+      "compressed_bytes": 194514
+    },
+    {
+      "name": "__MACOSX/",
+      "bytes": 0,
+      "compressed_bytes": 0
+    },
+    {
+      "name": "__MACOSX/multinli_1.0/",
+      "bytes": 0,
+      "compressed_bytes": 0
+    },
+    {
+      "name": "__MACOSX/multinli_1.0/._paper.pdf",
+      "bytes": 1128,
+      "compressed_bytes": 856
+    },
+    {
+      "name": "multinli_1.0/.DS_Store",
+      "bytes": 6148,
+      "compressed_bytes": 178
+    },
+    {
+      "name": "__MACOSX/multinli_1.0/._.DS_Store",
+      "bytes": 120,
+      "compressed_bytes": 52
+    },
+    {
+      "name": "multinli_1.0/multinli_1.0_train.jsonl",
+      "bytes": 492421641,
+      "compressed_bytes": 110428503
+    },
+    {
+      "name": "multinli_1.0/multinli_1.0_dev_mismatched.txt",
+      "bytes": 11170082,
+      "compressed_bytes": 2750490
+    },
+    {
+      "name": "multinli_1.0/Icon\r",
+      "bytes": 0,
+      "compressed_bytes": 0
+    },
+    {
+      "name": "__MACOSX/multinli_1.0/._Icon\r",
+      "bytes": 384959,
+      "compressed_bytes": 314668
+    },
+    {
+      "name": "multinli_1.0/multinli_1.0_dev_matched.txt",
+      "bytes": 10634146,
+      "compressed_bytes": 2644499
+    },
+    {
+      "name": "multinli_1.0/multinli_1.0_dev_matched.jsonl",
+      "bytes": 12925073,
+      "compressed_bytes": 2795920
+    },
+    {
+      "name": "multinli_1.0/multinli_1.0_train.txt",
+      "bytes": 408734216,
+      "compressed_bytes": 104811610
+    },
+    {
+      "name": "multinli_1.0/README.txt",
+      "bytes": 1160,
+      "compressed_bytes": 636
+    },
+    {
+      "name": "__MACOSX/multinli_1.0/._README.txt",
+      "bytes": 384,
+      "compressed_bytes": 285
+    },
+    {
+      "name": "__MACOSX/._multinli_1.0",
+      "bytes": 120,
+      "compressed_bytes": 50
+    }
+  ],
+  "attribution": "Adina Williams, Nikita Nangia and Samuel R. Bowman, NAACL 2018",
+  "human_provenance": "Human source premises and crowdworker-authored hypotheses; manual relation annotations",
+  "license_scope": "OANC terms and source-specific fiction permissions/CC/public-domain terms; see the original paper",
+  "corpus_text_redistributed": false,
+  "learned_capability_claim": false,
+  "wall_seconds": 30.75319180000224,
+  "cpu_seconds": 1.140625
+}

@@ -1,0 +1,13 @@
+{
+  "sha256": "db851135bbca7235e743423fa14408196c0e3b829d51113180958ace3270c8f8",
+  "revision": "db851135bbca7235e743423fa14408196c0e3b829d51113180958ace3270c8f8.pt",
+  "parent": "4be5a015d7b7c194dc8770bf5118ea441b121758364462a0b2712cc29b49ddad",
+  "weights": "25d8ee69aeb6cffc621f4b51d42e652e6ac5bad825f0cc7d2f511775509ba37a",
+  "updates": 60,
+  "semantic_step": 13312,
+  "n": 512,
+  "accuracy": 0.60546875,
+  "loss": 0.8834963142871857,
+  "source_checkpoint_sha256": "725f5df52c584c71f590c6b098f91d7ab8b5c5526b107954a68f11c025f84b72",
+  "role": "qualified_human_semantic_owner"
+}

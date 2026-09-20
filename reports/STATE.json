@@ -1,9 +1,9 @@
 {
-  "completed": "UNIFIED-012 coupled teaching, GROW-013 learned extension and INQUIRY-014 investigated acquisition: evaluated, independently replayed, retention-qualified and delivered",
+  "completed": "UNIFIED-012, GROW-013, INQUIRY-014 and SEMANTIC-015: taught, evaluated, independently replayed, qualified and delivered",
   "full_vision": "Persistent grounded understanding, imagination, investigation and learning across language and domains",
   "full_vision_completed": false,
   "work_delegated": false,
-  "publication": "Latest verified public revision 8cfe29fa46bd78740a625423011403037b8cc376; GitHub Linux verification passed. New inquiry delivery is ready for publication.",
+  "publication": "Latest verified public revision e73bccb1a7b1b6f83a2c984956c74a83e0e7e4fb; exact-revision GitHub Linux verification passed, including INQUIRY-014 persistent delivery.",
   "default_checkpoint": {
     "path": "checkpoints/SCFE-004/revisions/e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3.pt",
     "sha256": "e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3",
@@ -17,16 +17,16 @@
   "sealed_finals_opened": true,
   "ongoing_owned_jobs": [
     {
-      "attempt": "semantic015-campaign-002",
-      "state": "runs/semantic015-campaign-002/state.json",
-      "command": "scripts/complete_semantic015.py",
+      "attempt": "history016-campaign-001",
+      "state": "runs/history016-campaign-001/state.json",
+      "command": "scripts/complete_history016.py",
       "shared_lease": true
     }
   ],
   "numerical_lease_released": false,
-  "resume_training": "Inspect semantic015-campaign-002 state and shared lease before any numerical launch. It teaches the complete frozen human curriculum, registers finals, evaluates five controls and replays. The prior startup attempt failed before updates; deterministic repeated-source-view handling was repaired and tested.",
+  "resume_training": "Inspect history016-campaign-001 and its shared lease. Preserve its exact revisions; do not duplicate. After the campaign, deliver_history016.py then audit_history016.py --test-attempt history016-tests-001 --campaign-attempt history016-campaign-001, each in a fresh supervisor attempt.",
   "next_executable_user_task": ".\\.venv\\Scripts\\python.exe scripts/supervise.py --attempt my-device-001 -- -m sera_field.session_cli --session local/my-device new --input examples/concept-task.json",
-  "next_research_gate": "Complete SEMANTIC-015 human semantic training, independent retention/physical regression and qualified export. Continue the integrated structural and unified memory requirements in docs/WHOLE_ARCHITECTURE.md and docs/SDHA_INTAKE.md.",
+  "next_research_gate": "Complete HISTORY-016 connected procedure learning and the prescribed delivery/independent audit. Preserve and diagnose any unmet gates using new protocols; continue the whole-research tracker.",
   "preserved_reference_head": "0dcbcb902706f3d299cd38a433fcf1f26a357efd",
   "preserved_reference_checkpoint_sha256": "b29d8cccea6a7b8b9e0f0bbc28432d146a6388bca7716a828c446b3b42036d95",
   "scope_audit": "docs/WHOLE_ARCHITECTURE.md",
@@ -83,10 +83,10 @@
   "scheduled_followup": false,
   "latest_request_reconciliation": "reports/ECHO-007/REQUEST_RECONCILIATION.md",
   "active_study": {
-    "id": "SEMANTIC-015",
-    "status": "running sustained human semantic curriculum and curvature capture",
-    "protocol": "protocols/SEMANTIC-015.md",
-    "source_commit": "7b47b95",
+    "id": "HISTORY-016",
+    "status": "running human-episode teaching of connected history updates",
+    "protocol": "protocols/HISTORY-016.md",
+    "source_commit": "6fd54a7",
     "earlier_owners_preserved": true
   },
   "qualified_optional_successor": {
@@ -128,13 +128,33 @@
     "delivery": "reports/CONCEPT-011/delivery/RESULTS.json",
     "all_concept_cycle_costs": "reports/CONCEPT-011/TOTAL_COSTS.json"
   },
-  "publication_record": "reports/CONCEPT-011/PUBLICATION.json",
+  "publication_record": "reports/INQUIRY-014/PUBLICATION.json",
   "publication_checkout": "D:/ai/publications/sera-field-20260920",
+  "prepared_integration": {
+    "id": "HISTORY-016",
+    "status": "141 tests passed; teaching active on qualified SEMANTIC-015 parent",
+    "protocol": "protocols/HISTORY-016.md",
+    "equations": "docs/CONTINUOUS_HISTORY_EQUATIONS.md",
+    "preflight": "reports/HISTORY-016/PREFLIGHT.md",
+    "teaching_started": true,
+    "next_after_active_campaign": "Frozen controls and replay, persistent delivery, independent qualification and preserved decision."
+  },
   "latest_qualified_owner": {
-    "path": "checkpoints/INQUIRY-014",
-    "weights": "27887710f83f4dd1341bc720020e1c0c902c4ee5cb4e5d0ee94451a4a2578c7b",
-    "report": "reports/INQUIRY-014/REPORT.md",
-    "usage": "docs/INQUIRY_USAGE.md",
-    "selected_policy_step": 0
+    "path": "checkpoints/SEMANTIC-015",
+    "weights": "25d8ee69aeb6cffc621f4b51d42e652e6ac5bad825f0cc7d2f511775509ba37a",
+    "checkpoint_sha256": "db851135bbca7235e743423fa14408196c0e3b829d51113180958ace3270c8f8",
+    "report": "reports/SEMANTIC-015/REPORT.md",
+    "usage": "docs/SEMANTIC_USAGE.md",
+    "selected_semantic_step": 13312
+  },
+  "semantic_015": {
+    "human_primary_pairs": 471139,
+    "rehearsal_presentations": 58880,
+    "final_n": 4096,
+    "final_accuracy": 0.592041015625,
+    "all_seven_gates": true,
+    "replay_exact": true,
+    "independent_audit": "reports/SEMANTIC-015/QUALIFICATION.json",
+    "source_intake_next": "reports/SOURCE_INTAKE/MULTINLI-1.0.json"
   }
 }

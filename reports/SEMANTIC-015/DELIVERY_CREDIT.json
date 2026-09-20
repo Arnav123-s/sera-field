@@ -1,0 +1,27 @@
+{
+  "decision": "748ae14c0d397362d75ccae9f650217d8f7917a86285ee5c6eb9fcf7f1ea575f",
+  "accepted": true,
+  "reward": -0.004374997377762595,
+  "bonus": 0.0,
+  "before": "25d8ee69aeb6cffc621f4b51d42e652e6ac5bad825f0cc7d2f511775509ba37a",
+  "after": "226fa8e57707ae4c3bcbcbc9cf160a4882b2835ac883c24fd3965a7e3d089778",
+  "weights_changed": true,
+  "outcome": {
+    "goal": "2b3a6ed0675a216fb5ca418a01d3bc50cf66a5754e9b146a67d59fca899a4c1d",
+    "decision": "748ae14c0d397362d75ccae9f650217d8f7917a86285ee5c6eb9fcf7f1ea575f",
+    "policy_before": "25d8ee69aeb6cffc621f4b51d42e652e6ac5bad825f0cc7d2f511775509ba37a",
+    "predictor": "25d8ee69aeb6cffc621f4b51d42e652e6ac5bad825f0cc7d2f511775509ba37a",
+    "evidence_id": "5d78dd073e02d409618a583f4205a0cd4b410701dc9a4c3113bf220b1e4201ff",
+    "source_sha256": "1ad5f0010ff669fb5aaa70f38c0b22fb6a8aa384114ddafa9440dfa122940f48",
+    "verifier_sha256": "52adf93175c4f4e8aae7230838bf1a4fdcfda585e4a640773a432600c0c1f77f",
+    "assessment_id": "4bfbfefb34f7b4cc43085b63095d1bcc28c97d34308a6b5cb9795429cf859360",
+    "evidence_kind": "independent_simulation",
+    "intended_intervention": "d06fadee9eab7f9cbd7951d4b3dfda20c2260f51d00b79974bb16de735ad2268",
+    "observed_intervention": "d06fadee9eab7f9cbd7951d4b3dfda20c2260f51d00b79974bb16de735ad2268",
+    "before_loss": 0.00977374892681837,
+    "after_loss": 0.014191506430506706,
+    "verified": true,
+    "canonical_contribution": "9c0e229a91efada87178c779e17c0c694ca834fbb9411f5648170540a62e35ba",
+    "assumptions_id": "fb6f061170fef345af82b6285bb7e4cf94dc29b9fc042eada60c577ae355f3cb"
+  }
+}

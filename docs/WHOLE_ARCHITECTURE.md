@@ -19,7 +19,7 @@ synthesis). The original LaTeX source and all preceding versions are preserved.
 | Clifford and gauge geometry | Actual graded products, rotors, sheaf discrepancy and trained field | Preserve equivariance contracts; distinguish changes of frame from interventions |
 | Covariance sheaf | UNIFIED-012 trains SPD log-group stalks with orthogonal congruence in the task path | Broader transfer assessment of the coupled representation |
 | Temporal echo learning | UNIFIED-012 trains time-varying sources and intermediate losses; gradients, timing and resume are checked | Broader sequential tasks beyond the present finite flow |
-| Conserved condensate memory | UNIFIED-012 couples Flory-Huggins/Cahn-Hilliard relaxation, verified capture and retrieval; SEMANTIC-015 connects tested closed-loop curvature tags | Complete human semantic training and behavioral assessment of curvature capture |
+| Conserved condensate memory | UNIFIED-012 couples Flory-Huggins/Cahn-Hilliard relaxation, capture and retrieval; SEMANTIC-015 completed human teaching and curvature-tag evaluation | HISTORY-016 is testing learned dual-timescale and active conserved history in that same owner |
 | Topological memory code | Actual Chern calculation and bounded density codec with scalar-mass noise tests | General Hamiltonian perturbations, revision and semantic retention tests |
 | Tagging and local credit | Source/goal/predictor-bound capture; exact restricted recurrent eligibility in INQUIRY-014 | Complete sustained local-credit assessment and connect true curvature tags |
 | Stationary dissipative credit | GROW-013 trains the stable stationary FHN source transformation; implicit gradients checked | Broader nonstationary/dissipative mechanisms need separate contracts |
@@ -40,6 +40,12 @@ traces, nonreciprocal concentration dynamics, explicit error-correcting storage,
 and qualified gauge-flow transport. These are requirements for the same continuing
 state and correction process after the current integration; they are not marked
 implemented by the preceding component results.
+
+Its [HISTORY-016 implementation](CONTINUOUS_HISTORY_EQUATIONS.md) extends that
+qualified semantic/physical owner under a [frozen protocol](../protocols/HISTORY-016.md).
+The numerical tests passed and human episode teaching is active. The
+[source follow-up](SDHA_SOURCE_FOLLOWUP.md) also tracks the
+distinct correlator-to-action construction and a broader human language corpus.
 
 ## Current evidence after implementation
 
@@ -69,9 +75,12 @@ The existing independent assessor remains responsible for credit.
 Earlier supplied-source capture retains a learned boundary field. Recurrent
 derivative eligibility is distinct from that activation. SEMANTIC-015 now adds
 an actual loop-holonomy tag in a typed memory region that feeds the same boundary
-before covariance and temporal processing. Its covariance, derivatives, conditional
-preview, connected learning and exact resume passed tests; human training and
-behavioral evaluation are active. Generalized learned concept construction and
+before covariance and temporal processing. Human training completed 471,139 primary
+pairs plus 58,880 rehearsal presentations. The reserved 4,096-pair cohort reached
+59.20% accuracy, with all seven qualification gates and exact replay passing.
+The disconnected-curvature arm was close on this cohort; memory benefit is assessed
+by that comparison. HISTORY-016's 141-test baseline passed and its human episode
+teaching is active. Generalized learned concept construction and
 broader observer/literary/practical behavior remain on the open checklist.
 
 ## Coupled finite construction
@@ -98,7 +107,8 @@ recorded separately. No training imports external pretrained weights.
 - [x] Implement and qualify bounded residual-driven representation extension and five-use return.
 - [x] Connect and assess the specified stationary-credit mechanism.
 - [x] Complete training/evaluation of measurement-based investigation and local eligibility.
-- [ ] Complete human semantic teaching and actual curvature-memory evaluation.
+- [x] Complete human semantic teaching and actual curvature-memory evaluation.
+- [ ] Train and qualify connected dual-timescale, active-bulk and protected-history learning.
 - [ ] Complete broad interpretation, alternative discovery and continued-learning tests.
 - [ ] Re-audit every research requirement against actual executable evidence.
 - [ ] Publish source, measured results, costs and exact resumable state.

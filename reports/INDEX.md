@@ -1,5 +1,11 @@
 # Evidence index
 
+**Latest qualified human interpretation:** [SEMANTIC-015 report](SEMANTIC-015/REPORT.md),
+[usage](../docs/SEMANTIC_USAGE.md), [weights](../checkpoints/SEMANTIC-015/MANIFEST.json),
+[teaching](SEMANTIC-015/TEACHING.json), [qualification](SEMANTIC-015/QUALIFICATION.json),
+[retention](SEMANTIC-015/RETENTION.json), [persistent delivery](SEMANTIC-015/DELIVERY.json),
+[its checked credit](SEMANTIC-015/DELIVERY_CREDIT.json) and [costs](SEMANTIC-015/COSTS.json).
+
 **Latest completed investigation:** [INQUIRY-014 report](INQUIRY-014/REPORT.md),
 [persistent usage](../docs/INQUIRY_USAGE.md), [weights](../checkpoints/INQUIRY-014/MANIFEST.json),
 [teaching](INQUIRY-014/TEACHING.json), [qualification](INQUIRY-014/QUALIFICATION.json),
@@ -16,9 +22,11 @@
 [weights](../checkpoints/UNIFIED-012/MANIFEST.json) and [costs](UNIFIED-012/COSTS.json).
 
 The [whole-architecture tracker](../docs/WHOLE_ARCHITECTURE.md) keeps the research
-objective separate from completed component studies. SEMANTIC-015 is the active
-[human meaning and curvature-memory curriculum](../protocols/SEMANTIC-015.md).
-Its [startup repair](SEMANTIC-015/REPAIRS.md) and all failed-attempt costs are preserved.
+objective separate from completed component studies. HISTORY-016 is the active
+[connected history procedure study](../protocols/HISTORY-016.md), following its
+[mathematical construction](../docs/CONTINUOUS_HISTORY_EQUATIONS.md) and passing
+141-test baseline. The preceding semantic [startup repair](SEMANTIC-015/REPAIRS.md)
+and all failed-attempt costs are preserved.
 
 **Preserved acquired-model release:** [CONCEPT-011 complete report](CONCEPT-011/REPORT.md),
 [usable persistent tasks](../docs/CONCEPT_USAGE.md), [assessed weights](../checkpoints/CONCEPT-011/MANIFEST.json),
