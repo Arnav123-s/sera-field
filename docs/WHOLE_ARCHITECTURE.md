@@ -19,13 +19,13 @@ synthesis). The original LaTeX source and all preceding versions are preserved.
 | Clifford and gauge geometry | Actual graded products, rotors, sheaf discrepancy and trained field | Preserve equivariance contracts; distinguish changes of frame from interventions |
 | Covariance sheaf | UNIFIED-012 trains SPD log-group stalks with orthogonal congruence in the task path | Broader transfer assessment of the coupled representation |
 | Temporal echo learning | UNIFIED-012 trains time-varying sources and intermediate losses; gradients, timing and resume are checked | Broader sequential tasks beyond the present finite flow |
-| Conserved condensate memory | UNIFIED-012 couples Flory-Huggins/Cahn-Hilliard relaxation, verified capture and retrieval | Curvature-specific tags, continuing consolidation and scoped correction behavior |
+| Conserved condensate memory | UNIFIED-012 couples Flory-Huggins/Cahn-Hilliard relaxation, verified capture and retrieval; SEMANTIC-015 connects tested closed-loop curvature tags | Complete human semantic training and behavioral assessment of curvature capture |
 | Topological memory code | Actual Chern calculation and bounded density codec with scalar-mass noise tests | General Hamiltonian perturbations, revision and semantic retention tests |
 | Tagging and local credit | Source/goal/predictor-bound capture; exact restricted recurrent eligibility in INQUIRY-014 | Complete sustained local-credit assessment and connect true curvature tags |
 | Stationary dissipative credit | GROW-013 trains the stable stationary FHN source transformation; implicit gradients checked | Broader nonstationary/dissipative mechanisms need separate contracts |
 | Scale-dependent adequacy | GROW-013 records a finite Gaussian action, regulator and flow with independent calibration | Learn a qualified capacity decision and test actual structural attachment |
 | Learned structural extension | GROW-013 learns residual features, qualifies acquired coefficients and returns five uses | Literal sheaf-cell/ambient-space growth and general concept construction |
-| Measurement and alternative routes | INQUIRY-014 implements explicit fusion spaces and complete measurement outcomes | Complete active sustained investigation and local-credit evaluation |
+| Measurement and alternative routes | INQUIRY-014 completes explicit fusion spaces, all measurement outcomes, sustained local-credit training, independent replay and persistent delivery | Improve procedure learning on fresh training/development tasks; step zero won this selection |
 | Five uses of one relationship | CONCEPT-011 and GROW-013 pass finite acceptance and persistent-delivery checks | Broader acquired relationships and original-goal tasks |
 | Diverse useful discoveries | Guarded investigation and verified credit | Learned distinct proposals, canonical deduplication, complementary coverage and independent outcomes |
 | Perspective, poetry, practical understanding | Human source teaching retained | Source-grounded interpretation and observer/goal distinctions, without attributing feelings from scores |
@@ -34,6 +34,12 @@ synthesis). The original LaTeX source and all preceding versions are preserved.
 Every requirement needs an implemented connection and behavioral evidence.
 A source title, mathematical unit test or shared checkpoint alone does not close
 a behavioral requirement. The full objective remains open.
+
+The subsequent [SDHA memory addendum](SDHA_INTAKE.md) adds learned dual-timescale
+traces, nonreciprocal concentration dynamics, explicit error-correcting storage,
+and qualified gauge-flow transport. These are requirements for the same continuing
+state and correction process after the current integration; they are not marked
+implemented by the preceding component results.
 
 ## Current evidence after implementation
 
@@ -53,16 +59,20 @@ extension rule activates learned feature coordinates; literal sheaf-cell topolog
 mutation and unrestricted ambient-space growth remain separate open requirements.
 
 INQUIRY-014 connects all Ising measurement outcomes and exact forward local
-eligibility for a specified diagonal recurrent controller. Mathematical and
-actual three-probe intervention tests passed; its sustained teaching and final
-evaluation are active. A measurement branch is an action proposal, not a fact.
+eligibility for a specified diagonal recurrent controller. Both sustained teaching
+arms, six final controls, exact replay, the independent audit and a fresh-process
+persistent task have completed. Step zero won development selection; measured
+answer improvement came from acquiring observations rather than an improved
+selected policy. A measurement branch is an action proposal, not a fact.
 The existing independent assessor remains responsible for credit.
 
-The supplied-source capture tag currently retains a learned boundary field.
-Recurrent derivative eligibility is implemented separately from that activation;
-no activation has been relabelled as a derivative or a semantic proof. Full
-curvature-specific capture, generalized learned concept construction and the
-broader observer/literary/practical behavior tests stay on the open checklist.
+Earlier supplied-source capture retains a learned boundary field. Recurrent
+derivative eligibility is distinct from that activation. SEMANTIC-015 now adds
+an actual loop-holonomy tag in a typed memory region that feeds the same boundary
+before covariance and temporal processing. Its covariance, derivatives, conditional
+preview, connected learning and exact resume passed tests; human training and
+behavioral evaluation are active. Generalized learned concept construction and
+broader observer/literary/practical behavior remain on the open checklist.
 
 ## Coupled finite construction
 
@@ -87,7 +97,8 @@ recorded separately. No training imports external pretrained weights.
 - [x] Teach and evaluate that coupled owner across existing human and simulation tracks.
 - [x] Implement and qualify bounded residual-driven representation extension and five-use return.
 - [x] Connect and assess the specified stationary-credit mechanism.
-- [ ] Complete training/evaluation of measurement-based investigation and local eligibility.
+- [x] Complete training/evaluation of measurement-based investigation and local eligibility.
+- [ ] Complete human semantic teaching and actual curvature-memory evaluation.
 - [ ] Complete broad interpretation, alternative discovery and continued-learning tests.
 - [ ] Re-audit every research requirement against actual executable evidence.
 - [ ] Publish source, measured results, costs and exact resumable state.

@@ -1,9 +1,9 @@
 {
-  "completed": "UNIFIED-012 coupled field and GROW-013 learned residual extension: trained, independently replayed, retention-qualified and exported",
+  "completed": "UNIFIED-012 coupled teaching, GROW-013 learned extension and INQUIRY-014 investigated acquisition: evaluated, independently replayed, retention-qualified and delivered",
   "full_vision": "Persistent grounded understanding, imagination, investigation and learning across language and domains",
   "full_vision_completed": false,
   "work_delegated": false,
-  "publication": "Public current-file release at https://github.com/Arnav123-s/sera-field; initial published code revision 908b7803990fc8f2ae61867216d5ec78347dee5e passed GitHub Linux verification.",
+  "publication": "Latest verified public revision 8cfe29fa46bd78740a625423011403037b8cc376; GitHub Linux verification passed. New inquiry delivery is ready for publication.",
   "default_checkpoint": {
     "path": "checkpoints/SCFE-004/revisions/e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3.pt",
     "sha256": "e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3",
@@ -17,16 +17,16 @@
   "sealed_finals_opened": true,
   "ongoing_owned_jobs": [
     {
-      "attempt": "inquiry014-campaign-001",
-      "state": "runs/inquiry014-campaign-001/state.json",
-      "command": "scripts/complete_inquiry014.py",
+      "attempt": "semantic015-campaign-002",
+      "state": "runs/semantic015-campaign-002/state.json",
+      "command": "scripts/complete_semantic015.py",
       "shared_lease": true
     }
   ],
   "numerical_lease_released": false,
-  "resume_training": "Inspect the owned inquiry014-campaign-001 state and lease. While active, do not duplicate its worker. The supervisor runs both teaching arms, final registration, six controls/ablations and exact replay sequentially. A later invocation resumes committed episode state and skips completed arms.",
+  "resume_training": "Inspect semantic015-campaign-002 state and shared lease before any numerical launch. It teaches the complete frozen human curriculum, registers finals, evaluates five controls and replays. The prior startup attempt failed before updates; deterministic repeated-source-view handling was repaired and tested.",
   "next_executable_user_task": ".\\.venv\\Scripts\\python.exe scripts/supervise.py --attempt my-device-001 -- -m sera_field.session_cli --session local/my-device new --input examples/concept-task.json",
-  "next_research_gate": "Finish INQUIRY-014 and its retention/identity audit, then continue open curvature-specific memory, representation topology, raw-language situation and broad discovery requirements in docs/WHOLE_ARCHITECTURE.md.",
+  "next_research_gate": "Complete SEMANTIC-015 human semantic training, independent retention/physical regression and qualified export. Continue the integrated structural and unified memory requirements in docs/WHOLE_ARCHITECTURE.md and docs/SDHA_INTAKE.md.",
   "preserved_reference_head": "0dcbcb902706f3d299cd38a433fcf1f26a357efd",
   "preserved_reference_checkpoint_sha256": "b29d8cccea6a7b8b9e0f0bbc28432d146a6388bca7716a828c446b3b42036d95",
   "scope_audit": "docs/WHOLE_ARCHITECTURE.md",
@@ -83,10 +83,10 @@
   "scheduled_followup": false,
   "latest_request_reconciliation": "reports/ECHO-007/REQUEST_RECONCILIATION.md",
   "active_study": {
-    "id": "INQUIRY-014",
-    "status": "running sustained local investigation training; final evaluation queued",
-    "protocol": "protocols/INQUIRY-014.md",
-    "source_commit": "1ad20d9",
+    "id": "SEMANTIC-015",
+    "status": "running sustained human semantic curriculum and curvature capture",
+    "protocol": "protocols/SEMANTIC-015.md",
+    "source_commit": "7b47b95",
     "earlier_owners_preserved": true
   },
   "qualified_optional_successor": {
@@ -131,9 +131,10 @@
   "publication_record": "reports/CONCEPT-011/PUBLICATION.json",
   "publication_checkout": "D:/ai/publications/sera-field-20260920",
   "latest_qualified_owner": {
-    "path": "checkpoints/GROW-013",
-    "weights": "bf34ac9ca9bb29f823dc1b7677555f24353535b0f0b8d7e90fff829c79fa96a4",
-    "report": "reports/GROW-013/REPORT.md",
-    "usage": "docs/EXTENSION_USAGE.md"
+    "path": "checkpoints/INQUIRY-014",
+    "weights": "27887710f83f4dd1341bc720020e1c0c902c4ee5cb4e5d0ee94451a4a2578c7b",
+    "report": "reports/INQUIRY-014/REPORT.md",
+    "usage": "docs/INQUIRY_USAGE.md",
+    "selected_policy_step": 0
   }
 }

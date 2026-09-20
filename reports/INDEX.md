@@ -1,5 +1,10 @@
 # Evidence index
 
+**Latest completed investigation:** [INQUIRY-014 report](INQUIRY-014/REPORT.md),
+[persistent usage](../docs/INQUIRY_USAGE.md), [weights](../checkpoints/INQUIRY-014/MANIFEST.json),
+[teaching](INQUIRY-014/TEACHING.json), [qualification](INQUIRY-014/QUALIFICATION.json),
+[delivery](INQUIRY-014/DELIVERY.json) and [costs](INQUIRY-014/COSTS.json).
+
 **Latest qualified coupled extension:** [GROW-013 report](GROW-013/REPORT.md),
 [usage](../docs/EXTENSION_USAGE.md), [weights](../checkpoints/GROW-013/MANIFEST.json),
 [retention](GROW-013/RETENTION.json), [replay](GROW-013/REPLAY.json),
@@ -11,8 +16,9 @@
 [weights](../checkpoints/UNIFIED-012/MANIFEST.json) and [costs](UNIFIED-012/COSTS.json).
 
 The [whole-architecture tracker](../docs/WHOLE_ARCHITECTURE.md) keeps the research
-objective separate from completed component studies. INQUIRY-014 is the active
-[generated-investigation campaign](../protocols/INQUIRY-014.md).
+objective separate from completed component studies. SEMANTIC-015 is the active
+[human meaning and curvature-memory curriculum](../protocols/SEMANTIC-015.md).
+Its [startup repair](SEMANTIC-015/REPAIRS.md) and all failed-attempt costs are preserved.
 
 **Preserved acquired-model release:** [CONCEPT-011 complete report](CONCEPT-011/REPORT.md),
 [usable persistent tasks](../docs/CONCEPT_USAGE.md), [assessed weights](../checkpoints/CONCEPT-011/MANIFEST.json),

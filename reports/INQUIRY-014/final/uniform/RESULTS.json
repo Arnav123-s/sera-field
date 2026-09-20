@@ -1,0 +1,27 @@
+{
+  "arm": "uniform",
+  "selection": {
+    "role": "identical initialized owner"
+  },
+  "weights_before": "27887710f83f4dd1341bc720020e1c0c902c4ee5cb4e5d0ee94451a4a2578c7b",
+  "cases_sha256": "ac719634e0e260b0f027b2114f91ff583f9d5c40632bf4c4208f5e3881c98fed",
+  "supported": {
+    "n": 128,
+    "initial_mse": 0.02162022176940326,
+    "final_mse": 0.013367133979711454,
+    "all_goals_returned": true,
+    "performed_probes": 384,
+    "mean_distinct_proposals": 12.0,
+    "actuation_mismatches": 3
+  },
+  "omitted": {
+    "n": 64,
+    "initial_mse": 0.07036148747600635,
+    "final_mse": 0.050005582546946314,
+    "all_goals_returned": true,
+    "performed_probes": 192,
+    "mean_distinct_proposals": 12.0,
+    "actuation_mismatches": 1
+  },
+  "weights_after": "27887710f83f4dd1341bc720020e1c0c902c4ee5cb4e5d0ee94451a4a2578c7b"
+}

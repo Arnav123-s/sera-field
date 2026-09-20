@@ -1,0 +1,81 @@
+{
+  "gates": {
+    "protected_parent_parameters": true,
+    "source_identities": true,
+    "teaching_integrity": true,
+    "final_integrity": true,
+    "retention": true
+  },
+  "all_gates": true,
+  "selected": {
+    "sha256": "afa55b90dc581d97cde8a6183ad389b63006f0273955488c8cb65ea6e507c19a",
+    "revision": "afa55b90dc581d97cde8a6183ad389b63006f0273955488c8cb65ea6e507c19a.pt",
+    "parent": null,
+    "weights": "27887710f83f4dd1341bc720020e1c0c902c4ee5cb4e5d0ee94451a4a2578c7b",
+    "updates": 0,
+    "score": 0.006864338330219155,
+    "step": 0
+  },
+  "source_checks": {
+    "protocol": true,
+    "parent": true,
+    "sera_field/inquiry_study.py": true,
+    "sera_field/inquiry_owner.py": true,
+    "sera_field/fusion_inquiry.py": true,
+    "sera_field/credit_bridge.py": true,
+    "sera_field/learned_extension.py": true,
+    "sera_field/extension_world.py": true,
+    "sera_field/coupled_owner.py": true,
+    "sera_field/condensate.py": true,
+    "selected_learned": true,
+    "selected_disconnected": true
+  },
+  "final_checks": {
+    "learned_identity": true,
+    "learned_immutable": true,
+    "learned_cohort": true,
+    "learned_no_final_updates": true,
+    "learned_finite_returned": true,
+    "disconnected_identity": true,
+    "disconnected_immutable": true,
+    "disconnected_cohort": true,
+    "disconnected_no_final_updates": true,
+    "disconnected_finite_returned": true,
+    "initialized_identity": true,
+    "initialized_immutable": true,
+    "initialized_cohort": true,
+    "initialized_no_final_updates": true,
+    "initialized_finite_returned": true,
+    "uniform_identity": true,
+    "uniform_immutable": true,
+    "uniform_cohort": true,
+    "uniform_no_final_updates": true,
+    "uniform_finite_returned": true,
+    "information_identity": true,
+    "information_immutable": true,
+    "information_cohort": true,
+    "information_no_final_updates": true,
+    "information_finite_returned": true,
+    "retained_parent_memory_identity": true,
+    "retained_parent_memory_immutable": true,
+    "retained_parent_memory_cohort": true,
+    "retained_parent_memory_no_final_updates": true,
+    "retained_parent_memory_finite_returned": true,
+    "exact_replay": true
+  },
+  "policy_learning_effect": {
+    "supported": {
+      "selected_final_mse": 0.010413886627389957,
+      "initialized_final_mse": 0.010413886627389957,
+      "information_final_mse": 0.005964437594563776,
+      "relative_improvement_vs_initialized": 0.0
+    },
+    "omitted": {
+      "selected_final_mse": 0.05546504501407412,
+      "initialized_final_mse": 0.05546504501407412,
+      "information_final_mse": 0.04320907089755721,
+      "relative_improvement_vs_initialized": 0.0
+    }
+  },
+  "whole_architecture_completed": false
+}

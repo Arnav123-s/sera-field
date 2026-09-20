@@ -1,0 +1,33 @@
+{
+  "arm": "learned",
+  "selection": {
+    "sha256": "afa55b90dc581d97cde8a6183ad389b63006f0273955488c8cb65ea6e507c19a",
+    "revision": "afa55b90dc581d97cde8a6183ad389b63006f0273955488c8cb65ea6e507c19a.pt",
+    "parent": null,
+    "weights": "27887710f83f4dd1341bc720020e1c0c902c4ee5cb4e5d0ee94451a4a2578c7b",
+    "updates": 0,
+    "score": 0.006864338330219155,
+    "step": 0
+  },
+  "weights_before": "27887710f83f4dd1341bc720020e1c0c902c4ee5cb4e5d0ee94451a4a2578c7b",
+  "cases_sha256": "a83c47e1e91a77f8e3a97abca1fd43d33646af7c4e18a5ebe2a51ca282f992f1",
+  "supported": {
+    "n": 128,
+    "initial_mse": 0.02162022176940326,
+    "final_mse": 0.010413886627389957,
+    "all_goals_returned": true,
+    "performed_probes": 384,
+    "mean_distinct_proposals": 12.0,
+    "actuation_mismatches": 3
+  },
+  "omitted": {
+    "n": 64,
+    "initial_mse": 0.07036148747600635,
+    "final_mse": 0.05546504501407412,
+    "all_goals_returned": true,
+    "performed_probes": 192,
+    "mean_distinct_proposals": 12.0,
+    "actuation_mismatches": 1
+  },
+  "weights_after": "27887710f83f4dd1341bc720020e1c0c902c4ee5cb4e5d0ee94451a4a2578c7b"
+}

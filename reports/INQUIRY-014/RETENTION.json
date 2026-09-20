@@ -1,0 +1,50 @@
+{
+  "metrics": {
+    "reading": {
+      "n": 384,
+      "accuracy": 0.6588541666666666
+    },
+    "math": {
+      "n": 192,
+      "accuracy": 0.11979166666666667
+    },
+    "pairs": {
+      "dailydialog": {
+        "n": 48,
+        "accuracy": 0.25
+      },
+      "webster": {
+        "n": 48,
+        "accuracy": 0.6666666666666666
+      }
+    }
+  },
+  "reference": {
+    "reading": {
+      "n": 384,
+      "accuracy": 0.6588541666666666,
+      "loss": 0.8929402328397676
+    },
+    "math": {
+      "n": 192,
+      "accuracy": 0.11979166666666667,
+      "loss": 3.769034011910359
+    },
+    "pairs": {
+      "dailydialog": {
+        "n": 48,
+        "accuracy": 0.25
+      },
+      "webster": {
+        "n": 48,
+        "accuracy": 0.6666666666666666
+      }
+    }
+  },
+  "checks": {
+    "reading": true,
+    "math": true,
+    "pairs": true
+  },
+  "scope": "Opened UNIFIED-012 cohort, prospectively used only for retention"
+}

@@ -1,0 +1,233 @@
+{
+  "fresh_process_restart_exact": true,
+  "original_goal_preserved": true,
+  "initial_mse": 0.02649296772850728,
+  "returned_mse": 0.017317825408792963,
+  "returned_answer": {
+    "original_goal": {
+      "queries": [
+        [
+          1.3480770587921143,
+          1.6237376928329468
+        ],
+        [
+          1.3796099424362183,
+          -1.9984534978866577
+        ],
+        [
+          -0.343225359916687,
+          -0.17931011319160461
+        ],
+        [
+          -0.26303935050964355,
+          0.36135944724082947
+        ]
+      ]
+    },
+    "conditional_predictions": [
+      [
+        0.2830495834350586,
+        -1.9494155645370483,
+        0.41064703464508057,
+        0.680364727973938
+      ],
+      [
+        0.28180012106895447,
+        -1.9497761726379395,
+        0.41160085797309875,
+        0.6809860467910767
+      ],
+      [
+        0.28153783082962036,
+        -1.9498333930969238,
+        0.4118751585483551,
+        0.681181788444519
+      ]
+    ],
+    "predictor": "3a50950d40f2c9362f0db270689a9f4707751ce297f16c65cd65048d3f7f9433",
+    "assessment": {
+      "selected_rank": 0,
+      "calibration_mse": [
+        0.011728092096745968,
+        0.023520126938819885,
+        0.0024041596334427595,
+        0.00025730542256496847
+      ],
+      "scale_diagnostics": [
+        {
+          "rank": 4,
+          "scales": [
+            2.0,
+            1.0,
+            0.5
+          ],
+          "d_gamma_d_scale": [
+            [
+              1.9266178648721854,
+              3.531169027853889,
+              5.735539540096189
+            ]
+          ],
+          "integrated_gaussian_flow": [
+            4.814860206982019
+          ],
+          "minimum_eigenvalue": [
+            0.022575542776424963
+          ],
+          "scope": "finite Gaussian coefficient action; scalar k^2 regulator",
+          "observed_feature_rank": 4
+        },
+        {
+          "rank": 8,
+          "scales": [
+            2.0,
+            1.0,
+            0.5
+          ],
+          "d_gamma_d_scale": [
+            [
+              3.8061039057424413,
+              6.953314930417148,
+              11.654103913792305
+            ]
+          ],
+          "integrated_gaussian_flow": [
+            9.53154541535001
+          ],
+          "minimum_eigenvalue": [
+            0.015718403487335938
+          ],
+          "scope": "finite Gaussian coefficient action; scalar k^2 regulator",
+          "observed_feature_rank": 7
+        },
+        {
+          "rank": 16,
+          "scales": [
+            2.0,
+            1.0,
+            0.5
+          ],
+          "d_gamma_d_scale": [
+            [
+              7.531903735225906,
+              13.959786487532458,
+              24.58727960166015
+            ]
+          ],
+          "integrated_gaussian_flow": [
+            19.229212375342193
+          ],
+          "minimum_eigenvalue": [
+            0.014794269298770988
+          ],
+          "scope": "finite Gaussian coefficient action; scalar k^2 regulator",
+          "observed_feature_rank": 7
+        }
+      ],
+      "gap_detected": false,
+      "qualification": "separate calibration observations; final outcomes withheld"
+    },
+    "assumptions": {
+      "scope": "bounded response, velocity and control in [-2,2]"
+    },
+    "source": {
+      "kind": "independent_simulation",
+      "id": "INQUIRY-014-delivery-v1"
+    },
+    "pending_measurement": null
+  },
+  "independent_outcomes": [
+    0.21577459573745728,
+    -1.7151237726211548,
+    0.3620719015598297,
+    0.7670029997825623
+  ],
+  "performed_interventions": 3,
+  "mismatched_credit_rejected": true,
+  "all_branches_preserved": true,
+  "credits": [
+    {
+      "decision": "e87ada8713824d472710f3dd4ce73f83530381ce9d7fc7869fa58b9d7e6d803d",
+      "accepted": true,
+      "reward": 0.01724595838528649,
+      "bonus": 0.001567814398662408,
+      "before": "27887710f83f4dd1341bc720020e1c0c902c4ee5cb4e5d0ee94451a4a2578c7b",
+      "after": "0b65bea088fd3fce27da103e8644acadb75134ba5000b92bc2c2dab3692e96f7",
+      "weights_changed": true,
+      "outcome": {
+        "goal": "ec14b8b12b01950f12aedc2bdcded798ce26ab9cda9d5e58b2bd68f11cb7cd5e",
+        "decision": "e87ada8713824d472710f3dd4ce73f83530381ce9d7fc7869fa58b9d7e6d803d",
+        "policy_before": "27887710f83f4dd1341bc720020e1c0c902c4ee5cb4e5d0ee94451a4a2578c7b",
+        "predictor": "27887710f83f4dd1341bc720020e1c0c902c4ee5cb4e5d0ee94451a4a2578c7b",
+        "evidence_id": "c70d771d78fe6c638226813479404a6a7fd504c3a7bf03417caf46d2ef9d555a",
+        "source_sha256": "ffeb34d6fecdf6a049bdfe3780d07ae99fbcec235942d8c6d8db7d719ac9aecc",
+        "verifier_sha256": "52adf93175c4f4e8aae7230838bf1a4fdcfda585e4a640773a432600c0c1f77f",
+        "assessment_id": "2bb9a67b152315460522d962b70669c793f1dcca9166aafaed5b8cd774b09997",
+        "evidence_kind": "independent_simulation",
+        "intended_intervention": "20775d38afc25452b6b1d3feba31e8be61d05e2686cdc9311a2b489296a38940",
+        "observed_intervention": "20775d38afc25452b6b1d3feba31e8be61d05e2686cdc9311a2b489296a38940",
+        "before_loss": 0.026492971926927567,
+        "after_loss": 0.010399467311799526,
+        "verified": true,
+        "canonical_contribution": "1dd6b69a316457d62fcf3a69bd1ee6786ea8634bfe5921c02ab84685d20d95cf",
+        "assumptions_id": "fb6f061170fef345af82b6285bb7e4cf94dc29b9fc042eada60c577ae355f3cb"
+      }
+    },
+    {
+      "decision": "bd966ca8d17b45f064492c06b6a934ab9866b6cb89a488a6141539e001fa392e",
+      "accepted": false,
+      "reason": "intervention was not performed as assumed",
+      "outcome": {
+        "goal": "ec14b8b12b01950f12aedc2bdcded798ce26ab9cda9d5e58b2bd68f11cb7cd5e",
+        "decision": "bd966ca8d17b45f064492c06b6a934ab9866b6cb89a488a6141539e001fa392e",
+        "policy_before": "cccbb8d8e5739dcbcb57e5517d23098ecd145502137577832014eeb385ac2245",
+        "predictor": "cccbb8d8e5739dcbcb57e5517d23098ecd145502137577832014eeb385ac2245",
+        "evidence_id": "08bfe32f652799b5ec6b90e4e3ef00696043ba5d44d1008dc90053872c2b97e9",
+        "source_sha256": "ffeb34d6fecdf6a049bdfe3780d07ae99fbcec235942d8c6d8db7d719ac9aecc",
+        "verifier_sha256": "52adf93175c4f4e8aae7230838bf1a4fdcfda585e4a640773a432600c0c1f77f",
+        "assessment_id": "8c30a93e9ab4df7e9ba1bcae57fd3ba708bd586ac5ebb35b8925799333d98f79",
+        "evidence_kind": "independent_simulation",
+        "intended_intervention": "c8a4d18b73d3de3f8ec3722a34c51f07798da2badcb33c0845327951cef1191f",
+        "observed_intervention": "57dc15f57181170218ca22a1a12099dc7c74a6f45e96b4b8f1e3c87e653c716f",
+        "before_loss": 0.010399461723864079,
+        "after_loss": 0.014430505223572254,
+        "verified": true,
+        "canonical_contribution": "711d96a5a0a0706ad9b66ceb3e45a29e5f93b3e8dc9d2217c769384352889723",
+        "assumptions_id": "fb6f061170fef345af82b6285bb7e4cf94dc29b9fc042eada60c577ae355f3cb"
+      }
+    },
+    {
+      "decision": "f22b6e0f862bd33c7974aaecef0b05e0667d036221ffce8a9308de8fcc0a302d",
+      "accepted": true,
+      "reward": -0.0028462534178792975,
+      "bonus": 0.0,
+      "before": "cccbb8d8e5739dcbcb57e5517d23098ecd145502137577832014eeb385ac2245",
+      "after": "3a50950d40f2c9362f0db270689a9f4707751ce297f16c65cd65048d3f7f9433",
+      "weights_changed": true,
+      "outcome": {
+        "goal": "ec14b8b12b01950f12aedc2bdcded798ce26ab9cda9d5e58b2bd68f11cb7cd5e",
+        "decision": "f22b6e0f862bd33c7974aaecef0b05e0667d036221ffce8a9308de8fcc0a302d",
+        "policy_before": "cccbb8d8e5739dcbcb57e5517d23098ecd145502137577832014eeb385ac2245",
+        "predictor": "cccbb8d8e5739dcbcb57e5517d23098ecd145502137577832014eeb385ac2245",
+        "evidence_id": "c2c54e7bc24df8389abab433ca1e11a892d6e23166550892f8877eb03865e9e0",
+        "source_sha256": "ffeb34d6fecdf6a049bdfe3780d07ae99fbcec235942d8c6d8db7d719ac9aecc",
+        "verifier_sha256": "52adf93175c4f4e8aae7230838bf1a4fdcfda585e4a640773a432600c0c1f77f",
+        "assessment_id": "5e290c962f4486027961e7889f2aa41b4c997a6ef0acc7e3ae58558275461dc2",
+        "evidence_kind": "independent_simulation",
+        "intended_intervention": "d5f1626b43e42f29a2e793c38278126c38e7ee5410e4f9723134b70f9d334cbd",
+        "observed_intervention": "d5f1626b43e42f29a2e793c38278126c38e7ee5410e4f9723134b70f9d334cbd",
+        "before_loss": 0.014430505223572254,
+        "after_loss": 0.01731783151626587,
+        "verified": true,
+        "canonical_contribution": "a5ffea51071e6f613ba927d824f2aaa8d12ff8b0e85c9aa7d76ed83ad1602cb7",
+        "assumptions_id": "fb6f061170fef345af82b6285bb7e4cf94dc29b9fc042eada60c577ae355f3cb"
+      }
+    }
+  ],
+  "source": {
+    "kind": "independent_simulation",
+    "id": "INQUIRY-014-delivery-v1"
+  },
+  "teacher_source_sha256": "e6880af7d518f138b02bc4f739bc79fa9ae8c03246d54aeeaf62075871514df0",
+  "session_source_sha256": "52adf93175c4f4e8aae7230838bf1a4fdcfda585e4a640773a432600c0c1f77f"
+}

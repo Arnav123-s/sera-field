@@ -57,7 +57,7 @@ SERA remain preserved. This checkout has its own public publication history.
 
 Included: source, tests, frozen prospective protocols, engineering and usage
 guides, compact research results, costs and identity manifests, qualified
-UNIFIED-012/GROW-013 inference weights, and earlier packaged checkpoints.
+UNIFIED-012/GROW-013/INQUIRY-014 inference weights, and earlier packaged checkpoints.
 Work marked active in the research state has not been represented as completed.
 File identities below describe the Git blob bytes, before platform line endings.
 

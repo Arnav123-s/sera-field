@@ -23,16 +23,25 @@ exactly. [Complete results](reports/GROW-013/REPORT.md).
 | Start with | Contents |
 |---|---|
 | [Use the learned extension](docs/EXTENSION_USAGE.md) | Acquire from observations and reuse a persistent concept |
+| [Run an investigation](docs/INQUIRY_USAGE.md) | Propose a measurement, check its actual outcome and resume the original question |
+| [INQUIRY-014 results](reports/INQUIRY-014/REPORT.md) | Complete investigation training, selected policy, independent checks and costs |
 | [GROW-013 results](reports/GROW-013/REPORT.md) | Teaching, five-use evaluation, shifted cases, retention and costs |
 | [UNIFIED-012 results](reports/UNIFIED-012/REPORT.md) | Coupled human/simulation training and verified memory |
 | [Executable equations](docs/COUPLED_EQUATIONS.md) | How covariance, temporal credit, bulk memory and learned growth interact |
 | [Whole-research tracker](docs/WHOLE_ARCHITECTURE.md) | Implementation status and behavioral acceptance across the supplied research |
 | [Evidence index](reports/INDEX.md) | Current and preserved reports, protocols and checkpoints |
 
-The active **INQUIRY-014** campaign trains the same acquired-model owner to generate
-interventions through complete measurement branches, learn from independent
-outcomes using local eligibility, correct its model and return to its original goal.
-Its [frozen protocol](protocols/INQUIRY-014.md) records the teaching and final checks.
+The completed **INQUIRY-014** investigation carries measurement alternatives,
+performed outcomes, checked credit and model correction through that same owner.
+Three measurements reduced mean answer error by **51.8%** on 128 new supported
+systems. Its persistent interface preserves the original goal and pending
+investigation across restarts. [Training and selected-policy evidence](reports/INQUIRY-014/REPORT.md).
+
+The active **SEMANTIC-015** curriculum teaches **471,139 human-written sentence
+pairs** with earlier subject rehearsal. Premises enter an observed field state;
+learned conditional continuations support entailment, contradiction and unresolved
+information. Actual closed-loop curvature tags connect checked semantic progress
+to the same owner's retained memory. [Frozen teaching and assessment protocol](protocols/SEMANTIC-015.md).
 
 ## Preserved CONCEPT-011 task interface
 
