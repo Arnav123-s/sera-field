@@ -1538,8 +1538,8 @@
     },
     {
       "path": "reports/STATE.json",
-      "bytes": 6922,
-      "sha256": "0de3e2396decbaa0e1a1ccbff9542d759f687e4bca64c166cb8060509215f226"
+      "bytes": 7052,
+      "sha256": "6a72ffe354d84bbd885bada8593a71df29ee986e1e9671ff7327354087f5d61e"
     },
     {
       "path": "requirements.lock",
@@ -1965,9 +1965,17 @@
       "path": "tests/test_study_evaluation.py",
       "bytes": 4399,
       "sha256": "1410f5ba31464e6b1824647f900b656ce6364558c6dcaf68a9151bf05b7e0018"
+    },
+    {
+      "path": "reports/CONCEPT-011/PUBLICATION.json",
+      "bytes": 979,
+      "sha256": "994022d93e9fcc5bb53f7739c8c8247ff1860d04d24cab32d455e45b2235f2a6"
     }
   ],
-  "file_count": 391,
-  "total_bytes": 13833829,
-  "hash_convention": "SHA-256 of exact Git blob bytes after declared line-ending normalization"
+  "file_count": 392,
+  "total_bytes": 13834938,
+  "hash_convention": "SHA-256 of exact Git blob bytes after declared line-ending normalization",
+  "post_snapshot_changes": [
+    "Publication and passing Linux CI recorded; numerical source and model weights unchanged"
+  ]
 }

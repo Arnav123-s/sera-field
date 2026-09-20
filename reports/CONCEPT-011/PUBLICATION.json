@@ -1,0 +1,15 @@
+{
+  "remote_head": "908b7803990fc8f2ae61867216d5ec78347dee5e",
+  "source_local_head": "af4cd165aa9d5df5d46bd8ed4da3bcf7e0f70105",
+  "manifest_sha256": "24b9f5300b38e46b20279794f4046d5836b0d5fea48e8a10ea220db66b871fb5",
+  "reviewed_files": 392,
+  "all_content_hashes_match": true,
+  "production_head_unchanged": "0dcbcb902706f3d299cd38a433fcf1f26a357efd",
+  "production_owner_sha256": "b29d8cccea6a7b8b9e0f0bbc28432d146a6388bca7716a828c446b3b42036d95",
+  "workflow_run": 35496284376,
+  "repository": "https://github.com/Arnav123-s/sera-field",
+  "initial_release_ci": "success",
+  "initial_release_ci_url": "https://github.com/Arnav123-s/sera-field/actions/runs/35496284376",
+  "publication_method": "Reviewed current-file snapshot; original private Git history and raw source/run trees retained locally",
+  "final_documentation_commit": "This record describes the verified initial code release; subsequent publication-metadata commits retain the same tested code and weights."
+}

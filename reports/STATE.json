@@ -3,7 +3,7 @@
   "full_vision": "Persistent grounded understanding, imagination, investigation and learning across language and domains",
   "full_vision_completed": false,
   "work_delegated": false,
-  "publication": "Prepared public release; publication verification pending",
+  "publication": "Public current-file release at https://github.com/Arnav123-s/sera-field; initial published code revision 908b7803990fc8f2ae61867216d5ec78347dee5e passed GitHub Linux verification.",
   "default_checkpoint": {
     "path": "checkpoints/SCFE-004/revisions/e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3.pt",
     "sha256": "e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3",
@@ -120,5 +120,7 @@
     "tests_passed": 106,
     "delivery": "reports/CONCEPT-011/delivery/RESULTS.json",
     "all_concept_cycle_costs": "reports/CONCEPT-011/TOTAL_COSTS.json"
-  }
+  },
+  "publication_record": "reports/CONCEPT-011/PUBLICATION.json",
+  "publication_checkout": "D:/ai/publications/sera-field-20260920"
 }
