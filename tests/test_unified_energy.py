@@ -84,3 +84,17 @@ def test_whole_energy_respects_local_frame_changes_with_fixed_bulk_coordinates(m
         for key in parts:
             assert torch.allclose(parts[key], transformed_parts[key], atol=2e-13, rtol=0), key
         assert torch.allclose(energy, transformed_energy, atol=2e-13, rtol=0)
+
+
+def test_rhs_partial_derivatives_hold_other_current_coordinates_and_port_fixed():
+    core, state, _ = fixture()
+    fast = state['fast'].requires_grad_()
+    state['q'] = state['q'] + torch.nn.functional.pad(fast, (0, 5))
+    source = .1*fast.square()
+    # These values share an earlier computation. Their dynamical partials must
+    # nevertheless equal the partials at the same independent numerical point.
+    actual, _ = core.rhs(state, source, create_graph=True)
+    independent = {k:v.detach().clone() for k,v in state.items()}
+    expected, _ = core.rhs(independent, source.detach(), create_graph=False)
+    for key in actual:
+        assert torch.allclose(actual[key], expected[key], atol=2e-13, rtol=0), key

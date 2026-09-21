@@ -128,10 +128,12 @@
       "report": "reports/CORE-022/REPORT.md",
       "completed_report": true,
       "costs": "reports/CORE-022/COSTS.json",
-      "stage": "complete-core engineering; full owner and curriculum not yet launched",
+      "stage": "coupled owner integrated; remaining complete-core behavior engineering precedes curriculum",
       "engineering": "reports/CORE-022/ENGINEERING.json",
       "training_started": false,
-      "whole_owner_integration_complete": false
+      "whole_owner_integration_complete": false,
+      "coupled_core_tests": 31,
+      "repository_tests": 226
     }
   },
   "preserved_usable_interfaces": {
@@ -187,10 +189,18 @@
     "repository": "https://github.com/Arnav123-s/sera-field",
     "previous_verified_record": "reports/HISTORY-016/PUBLICATION.json",
     "latest_verified_release": {
-      "latest_verified_release": "reports/PUBLICATION_20260920_NATIVE_JOINT.json",
-      "commit": "db663574faf2665e02847c1b5abcfc6280d41f27",
+      "latest_verified_release": "reports/PUBLICATION_20260920_BALANCED_CORE.json",
+      "commit": "627ee2052c1b1e1e51d1a3e4509393fff3cc23f5",
       "repository": "https://github.com/Arnav123-s/sera-field"
     },
     "current_snapshot_identity": "PUBLICATION_MANIFEST.json"
+  },
+  "latest_empirical_synthesis": {
+    "title": "An Empirical and Theoretical Synthesis of the SERA Field Architecture",
+    "sha256": "9ba551b71722b1e90ff0530cae537f4b9af01e01591c65aa4f1b4a30813056b5",
+    "bytes": 20335,
+    "read_completely": true,
+    "source_preserved": true,
+    "audit": "docs/EMPIRICAL_SYNTHESIS_20260921.md"
   }
 }

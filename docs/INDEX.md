@@ -13,8 +13,10 @@ those versions separate.
 | [Whole architecture tracker](WHOLE_ARCHITECTURE.md) | Each research requirement, implemented connection and next acceptance test |
 | [Behavioral acceptance](BEHAVIOR_ACCEPTANCE.md) | What counts as grounded understanding, useful imagination, correction and learning from reward |
 | [Curriculum](CURRICULUM.md) | Human language, other subjects, simulations and their supervision contracts |
-| [Latest source audit](SDHA_UNIFIED_SOURCE_AUDIT.md) | The supplied unified synthesis and its mathematical scope |
+| [Unified source audit](SDHA_UNIFIED_SOURCE_AUDIT.md) | The supplied unified synthesis and its mathematical scope |
+| [New empirical synthesis](EMPIRICAL_SYNTHESIS_20260921.md) | Reconciled historical claims and the five-use coherent-correction requirement |
 | [Complete-core work order](COMPLETE_CORE_WORK_ORDER.md) | Build and verify all connections before fresh behavioral teaching and later incremental learning |
+| [Coupled owner integration](CORE_022_OWNER.md) | Shared energy, learning credit, conditional outcomes, protected state and actual stalk attachment |
 
 ## Run a task
 

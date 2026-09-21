@@ -1,0 +1,271 @@
+[
+  {
+    "attempt": "core022-equations-001",
+    "status": "PASS",
+    "tests": 9,
+    "failures": 0,
+    "errors": 0,
+    "xml": "verification/core022-equations-001.xml",
+    "source_identities": {
+      "sera_field/fibonacci_space.py": "4143302e46b2cb03066301dbcd590d2fbdba4586316916795f2358d54a9a4997",
+      "sera_field/joint_session.py": "80ee38ac61d1fea5a9aede7342bebe5abc020d4bcec2104103025c07dde5511c",
+      "sera_field/unified_energy.py": "e0adbb008bdc53aa120ab60c8b18c37894783750304d05b15d6b6cce688fa1b8",
+      "tests/test_fibonacci_space.py": "7fe8f8a3aa3ec749abcd3ecb44e4e1c643e739ec1a3193cb4ad02bb59c9ced09",
+      "tests/test_unified_energy.py": "9e394f72061724872e52202d5526ef11ebcdcfa6a3d584e6af89a39300e9a6c2"
+    }
+  },
+  {
+    "attempt": "core022-equations-002",
+    "status": "PASS",
+    "tests": 10,
+    "failures": 0,
+    "errors": 0,
+    "xml": "verification/core022-equations-002.xml",
+    "source_identities": {
+      "sera_field/fibonacci_space.py": "4143302e46b2cb03066301dbcd590d2fbdba4586316916795f2358d54a9a4997",
+      "sera_field/joint_session.py": "80ee38ac61d1fea5a9aede7342bebe5abc020d4bcec2104103025c07dde5511c",
+      "sera_field/unified_energy.py": "e0adbb008bdc53aa120ab60c8b18c37894783750304d05b15d6b6cce688fa1b8",
+      "tests/test_fibonacci_space.py": "7fe8f8a3aa3ec749abcd3ecb44e4e1c643e739ec1a3193cb4ad02bb59c9ced09",
+      "tests/test_unified_energy.py": "7b216fc5617345eb8998782abf8f0a242e8c8e8040eeb242d7ee541fde40068e"
+    }
+  },
+  {
+    "attempt": "core022-owner-001",
+    "status": "FAILED",
+    "tests": 11,
+    "failures": 4,
+    "errors": 0,
+    "xml": "verification/core022-owner-001.xml",
+    "source_identities": {
+      "sera_field/core_owner.py": "88f28fc2880d7b12fd40c5e17c12432c3c4fcdd7a0b8e047be02a994092f6902",
+      "sera_field/fibonacci_space.py": "4143302e46b2cb03066301dbcd590d2fbdba4586316916795f2358d54a9a4997",
+      "sera_field/joint_session.py": "80ee38ac61d1fea5a9aede7342bebe5abc020d4bcec2104103025c07dde5511c",
+      "sera_field/unified_energy.py": "e0adbb008bdc53aa120ab60c8b18c37894783750304d05b15d6b6cce688fa1b8",
+      "tests/test_core_owner.py": "9f4547b713942df3097bded67ae60136fe1bfa98706e71d30505e24e3b6ad10e",
+      "tests/test_fibonacci_space.py": "7fe8f8a3aa3ec749abcd3ecb44e4e1c643e739ec1a3193cb4ad02bb59c9ced09",
+      "tests/test_unified_energy.py": "81f3bdc0e4179fb2456b2779c3eda5b7334a16af59ea6e3ea7e2ebe0a6442706"
+    }
+  },
+  {
+    "attempt": "core022-owner-002",
+    "status": "PASS",
+    "tests": 11,
+    "failures": 0,
+    "errors": 0,
+    "xml": "verification/core022-owner-002.xml",
+    "source_identities": {
+      "sera_field/core_owner.py": "88f28fc2880d7b12fd40c5e17c12432c3c4fcdd7a0b8e047be02a994092f6902",
+      "sera_field/fibonacci_space.py": "4143302e46b2cb03066301dbcd590d2fbdba4586316916795f2358d54a9a4997",
+      "sera_field/joint_session.py": "80ee38ac61d1fea5a9aede7342bebe5abc020d4bcec2104103025c07dde5511c",
+      "sera_field/unified_energy.py": "3027f92fdd58108a9e8aff8fb9ce5cc12f7c809c765d3087ec13d95fba6980d7",
+      "tests/test_core_owner.py": "9f4547b713942df3097bded67ae60136fe1bfa98706e71d30505e24e3b6ad10e",
+      "tests/test_fibonacci_space.py": "7fe8f8a3aa3ec749abcd3ecb44e4e1c643e739ec1a3193cb4ad02bb59c9ced09",
+      "tests/test_unified_energy.py": "81f3bdc0e4179fb2456b2779c3eda5b7334a16af59ea6e3ea7e2ebe0a6442706"
+    }
+  },
+  {
+    "attempt": "core022-session-001",
+    "status": "FAILED",
+    "tests": 20,
+    "failures": 1,
+    "errors": 0,
+    "xml": "verification/core022-session-001.xml",
+    "source_identities": {
+      "sera_field/core_owner.py": "88f28fc2880d7b12fd40c5e17c12432c3c4fcdd7a0b8e047be02a994092f6902",
+      "sera_field/core_session.py": "e538b209e068a41060eb5d1dc6c1843166e06f764bf015433696d75adf343f49",
+      "sera_field/fibonacci_space.py": "4143302e46b2cb03066301dbcd590d2fbdba4586316916795f2358d54a9a4997",
+      "sera_field/joint_session.py": "d1c96034dcb9592eb434722146599e9e5c6bbcf3ca7445f148b4512c6a7197f5",
+      "sera_field/unified_energy.py": "3027f92fdd58108a9e8aff8fb9ce5cc12f7c809c765d3087ec13d95fba6980d7",
+      "tests/test_core_owner.py": "593b5ab37809bc01757e0e3910f5c6861c953f830824cd360941781537f2799d",
+      "tests/test_core_session.py": "00ed4b243a14a9418dd4e94732e71288fef8f42cec829a83995659520d8e5d22",
+      "tests/test_fibonacci_space.py": "7fe8f8a3aa3ec749abcd3ecb44e4e1c643e739ec1a3193cb4ad02bb59c9ced09",
+      "tests/test_unified_energy.py": "81f3bdc0e4179fb2456b2779c3eda5b7334a16af59ea6e3ea7e2ebe0a6442706"
+    }
+  },
+  {
+    "attempt": "core022-session-002",
+    "status": "PASS",
+    "tests": 20,
+    "failures": 0,
+    "errors": 0,
+    "xml": "verification/core022-session-002.xml",
+    "source_identities": {
+      "sera_field/core_owner.py": "88f28fc2880d7b12fd40c5e17c12432c3c4fcdd7a0b8e047be02a994092f6902",
+      "sera_field/core_session.py": "e538b209e068a41060eb5d1dc6c1843166e06f764bf015433696d75adf343f49",
+      "sera_field/fibonacci_space.py": "4143302e46b2cb03066301dbcd590d2fbdba4586316916795f2358d54a9a4997",
+      "sera_field/joint_session.py": "eafa1660c57ad457b56dd27ebe6b68d169364db31b7fd86e3b799cb90f866de3",
+      "sera_field/unified_energy.py": "3027f92fdd58108a9e8aff8fb9ce5cc12f7c809c765d3087ec13d95fba6980d7",
+      "tests/test_core_owner.py": "593b5ab37809bc01757e0e3910f5c6861c953f830824cd360941781537f2799d",
+      "tests/test_core_session.py": "00ed4b243a14a9418dd4e94732e71288fef8f42cec829a83995659520d8e5d22",
+      "tests/test_fibonacci_space.py": "7fe8f8a3aa3ec749abcd3ecb44e4e1c643e739ec1a3193cb4ad02bb59c9ced09",
+      "tests/test_unified_energy.py": "81f3bdc0e4179fb2456b2779c3eda5b7334a16af59ea6e3ea7e2ebe0a6442706"
+    }
+  },
+  {
+    "attempt": "core022-storage-001",
+    "status": "FAILED",
+    "tests": 11,
+    "failures": 1,
+    "errors": 0,
+    "xml": "verification/core022-storage-001.xml",
+    "source_identities": {
+      "sera_field/core_owner.py": "88f28fc2880d7b12fd40c5e17c12432c3c4fcdd7a0b8e047be02a994092f6902",
+      "sera_field/core_session.py": "c7773938d13882591e56108f02026ddf97965c6f52a4fe05e01aef1cb52f308c",
+      "sera_field/core_storage.py": "f12c44ee3524b2194f866b56e488aba7cb4e7174e0fec33f2eb861682d6bf5b1",
+      "sera_field/fibonacci_space.py": "4143302e46b2cb03066301dbcd590d2fbdba4586316916795f2358d54a9a4997",
+      "sera_field/joint_session.py": "bd4db23d6ac0aa1bb5b3b7b4012b24c8f1aca504f100f96ec15be256ea4b25ea",
+      "sera_field/unified_energy.py": "3027f92fdd58108a9e8aff8fb9ce5cc12f7c809c765d3087ec13d95fba6980d7",
+      "tests/test_core_owner.py": "593b5ab37809bc01757e0e3910f5c6861c953f830824cd360941781537f2799d",
+      "tests/test_core_session.py": "00ed4b243a14a9418dd4e94732e71288fef8f42cec829a83995659520d8e5d22",
+      "tests/test_core_storage.py": "9c38f4e104591aab75198c2e9b0939f1a1b57ef1a2619b119f7f9badb2c1fa08",
+      "tests/test_fibonacci_space.py": "7fe8f8a3aa3ec749abcd3ecb44e4e1c643e739ec1a3193cb4ad02bb59c9ced09",
+      "tests/test_unified_energy.py": "81f3bdc0e4179fb2456b2779c3eda5b7334a16af59ea6e3ea7e2ebe0a6442706"
+    }
+  },
+  {
+    "attempt": "core022-storage-002",
+    "status": "PASS",
+    "tests": 11,
+    "failures": 0,
+    "errors": 0,
+    "xml": "verification/core022-storage-002.xml",
+    "source_identities": {
+      "sera_field/core_owner.py": "88f28fc2880d7b12fd40c5e17c12432c3c4fcdd7a0b8e047be02a994092f6902",
+      "sera_field/core_session.py": "c7773938d13882591e56108f02026ddf97965c6f52a4fe05e01aef1cb52f308c",
+      "sera_field/core_storage.py": "f12c44ee3524b2194f866b56e488aba7cb4e7174e0fec33f2eb861682d6bf5b1",
+      "sera_field/fibonacci_space.py": "4143302e46b2cb03066301dbcd590d2fbdba4586316916795f2358d54a9a4997",
+      "sera_field/joint_session.py": "bd4db23d6ac0aa1bb5b3b7b4012b24c8f1aca504f100f96ec15be256ea4b25ea",
+      "sera_field/unified_energy.py": "3027f92fdd58108a9e8aff8fb9ce5cc12f7c809c765d3087ec13d95fba6980d7",
+      "tests/test_core_owner.py": "593b5ab37809bc01757e0e3910f5c6861c953f830824cd360941781537f2799d",
+      "tests/test_core_session.py": "00ed4b243a14a9418dd4e94732e71288fef8f42cec829a83995659520d8e5d22",
+      "tests/test_core_storage.py": "9eeb0965739c09f8e4bb34651ad5e0746983d724894f4fb88564a2e9439e3191",
+      "tests/test_fibonacci_space.py": "7fe8f8a3aa3ec749abcd3ecb44e4e1c643e739ec1a3193cb4ad02bb59c9ced09",
+      "tests/test_unified_energy.py": "81f3bdc0e4179fb2456b2779c3eda5b7334a16af59ea6e3ea7e2ebe0a6442706"
+    }
+  },
+  {
+    "attempt": "core022-echo-001",
+    "status": "PASS",
+    "tests": 18,
+    "failures": 0,
+    "errors": 0,
+    "xml": "verification/core022-echo-001.xml",
+    "source_identities": {
+      "sera_field/core_echo.py": "f1ace033133d9919d7407c8bad748175ffe1c8d9485e8471fde4785bee4e19bf",
+      "sera_field/core_owner.py": "e98866425bdd961082a7d867a833c9cf097dd92242c87fd5d73fa5ba8f4c435a",
+      "sera_field/core_session.py": "c7773938d13882591e56108f02026ddf97965c6f52a4fe05e01aef1cb52f308c",
+      "sera_field/core_storage.py": "f12c44ee3524b2194f866b56e488aba7cb4e7174e0fec33f2eb861682d6bf5b1",
+      "sera_field/fibonacci_space.py": "4143302e46b2cb03066301dbcd590d2fbdba4586316916795f2358d54a9a4997",
+      "sera_field/joint_session.py": "bd4db23d6ac0aa1bb5b3b7b4012b24c8f1aca504f100f96ec15be256ea4b25ea",
+      "sera_field/unified_energy.py": "f0757e6bc90bda2ebcb861ea08588e2042e152a51197438f9f9fed0c4cc67195",
+      "tests/test_core_echo.py": "f5976805ec9029ca314f34076c1a173a8268d20f52f60b7afc607e2dc36ee247",
+      "tests/test_core_owner.py": "593b5ab37809bc01757e0e3910f5c6861c953f830824cd360941781537f2799d",
+      "tests/test_core_session.py": "00ed4b243a14a9418dd4e94732e71288fef8f42cec829a83995659520d8e5d22",
+      "tests/test_core_storage.py": "9eeb0965739c09f8e4bb34651ad5e0746983d724894f4fb88564a2e9439e3191",
+      "tests/test_fibonacci_space.py": "7fe8f8a3aa3ec749abcd3ecb44e4e1c643e739ec1a3193cb4ad02bb59c9ced09",
+      "tests/test_unified_energy.py": "81f3bdc0e4179fb2456b2779c3eda5b7334a16af59ea6e3ea7e2ebe0a6442706"
+    }
+  },
+  {
+    "attempt": "core022-attachment-001",
+    "status": "FAILED",
+    "tests": 14,
+    "failures": 1,
+    "errors": 0,
+    "xml": "verification/core022-attachment-001.xml",
+    "source_identities": {
+      "sera_field/core_echo.py": "d15e6e441f79adbf69651eb295a33feec0ad034f2ea2f93ab13754c995aee5e7",
+      "sera_field/core_owner.py": "bd74f44dc702e3de0fb921aa5f1ea8679ef048e503833d34f5149d13ec602c30",
+      "sera_field/core_session.py": "837f54abd2706dec976e017924329ef12ce7c812bb05b875662294e78fed0cba",
+      "sera_field/core_storage.py": "f12c44ee3524b2194f866b56e488aba7cb4e7174e0fec33f2eb861682d6bf5b1",
+      "sera_field/fibonacci_space.py": "4143302e46b2cb03066301dbcd590d2fbdba4586316916795f2358d54a9a4997",
+      "sera_field/joint_session.py": "bd4db23d6ac0aa1bb5b3b7b4012b24c8f1aca504f100f96ec15be256ea4b25ea",
+      "sera_field/unified_energy.py": "a89eb0c84e8855fbd63e37c2ebfbcd5fe80616ae1bd626faff7e9d2062cd3656",
+      "tests/test_core_attachment.py": "762a04b5fc675cfd7b2b9fcaba59af2b8f3d8ee310c654f740ce79f080fbd856",
+      "tests/test_core_echo.py": "f5976805ec9029ca314f34076c1a173a8268d20f52f60b7afc607e2dc36ee247",
+      "tests/test_core_owner.py": "593b5ab37809bc01757e0e3910f5c6861c953f830824cd360941781537f2799d",
+      "tests/test_core_session.py": "00ed4b243a14a9418dd4e94732e71288fef8f42cec829a83995659520d8e5d22",
+      "tests/test_core_storage.py": "9eeb0965739c09f8e4bb34651ad5e0746983d724894f4fb88564a2e9439e3191",
+      "tests/test_fibonacci_space.py": "7fe8f8a3aa3ec749abcd3ecb44e4e1c643e739ec1a3193cb4ad02bb59c9ced09",
+      "tests/test_unified_energy.py": "81f3bdc0e4179fb2456b2779c3eda5b7334a16af59ea6e3ea7e2ebe0a6442706"
+    }
+  },
+  {
+    "attempt": "core022-refinement-001",
+    "status": "PASS",
+    "tests": 16,
+    "failures": 0,
+    "errors": 0,
+    "xml": "verification/core022-refinement-001.xml",
+    "source_identities": {
+      "sera_field/core_adequacy.py": "c4f6fcd996c1ff14b76409585f5fbdce1060b2b11cbced5b953969e4d9a64ce2",
+      "sera_field/core_echo.py": "d15e6e441f79adbf69651eb295a33feec0ad034f2ea2f93ab13754c995aee5e7",
+      "sera_field/core_owner.py": "bd74f44dc702e3de0fb921aa5f1ea8679ef048e503833d34f5149d13ec602c30",
+      "sera_field/core_session.py": "2ab0f8295676270ef4ce84a55a8c736f78ea960cacfa140d9a6ecb64055fe5c7",
+      "sera_field/core_storage.py": "f12c44ee3524b2194f866b56e488aba7cb4e7174e0fec33f2eb861682d6bf5b1",
+      "sera_field/fibonacci_space.py": "4143302e46b2cb03066301dbcd590d2fbdba4586316916795f2358d54a9a4997",
+      "sera_field/joint_session.py": "bd4db23d6ac0aa1bb5b3b7b4012b24c8f1aca504f100f96ec15be256ea4b25ea",
+      "sera_field/unified_energy.py": "a89eb0c84e8855fbd63e37c2ebfbcd5fe80616ae1bd626faff7e9d2062cd3656",
+      "tests/test_core_attachment.py": "a76788825d371198628ddda641010f55adc0fa47f02dac9aa01ffe03cb4fd70e",
+      "tests/test_core_echo.py": "f5976805ec9029ca314f34076c1a173a8268d20f52f60b7afc607e2dc36ee247",
+      "tests/test_core_owner.py": "593b5ab37809bc01757e0e3910f5c6861c953f830824cd360941781537f2799d",
+      "tests/test_core_refinement.py": "bea8295929c2d2f9e89c764b411d694c19dc99fac59f4dbdc259326aece5eaf6",
+      "tests/test_core_session.py": "00ed4b243a14a9418dd4e94732e71288fef8f42cec829a83995659520d8e5d22",
+      "tests/test_core_storage.py": "9eeb0965739c09f8e4bb34651ad5e0746983d724894f4fb88564a2e9439e3191",
+      "tests/test_fibonacci_space.py": "7fe8f8a3aa3ec749abcd3ecb44e4e1c643e739ec1a3193cb4ad02bb59c9ced09",
+      "tests/test_unified_energy.py": "81f3bdc0e4179fb2456b2779c3eda5b7334a16af59ea6e3ea7e2ebe0a6442706"
+    }
+  },
+  {
+    "attempt": "core022-continuation-001",
+    "status": "PASS",
+    "tests": 31,
+    "failures": 0,
+    "errors": 0,
+    "xml": "verification/core022-continuation-001.xml",
+    "source_identities": {
+      "sera_field/core_adequacy.py": "c4f6fcd996c1ff14b76409585f5fbdce1060b2b11cbced5b953969e4d9a64ce2",
+      "sera_field/core_echo.py": "d15e6e441f79adbf69651eb295a33feec0ad034f2ea2f93ab13754c995aee5e7",
+      "sera_field/core_owner.py": "017508a7a9cb8ee1c18345b0093fd68da16276994c25c3029a9683568cdcc2e9",
+      "sera_field/core_session.py": "2ab0f8295676270ef4ce84a55a8c736f78ea960cacfa140d9a6ecb64055fe5c7",
+      "sera_field/core_storage.py": "f12c44ee3524b2194f866b56e488aba7cb4e7174e0fec33f2eb861682d6bf5b1",
+      "sera_field/fibonacci_space.py": "4143302e46b2cb03066301dbcd590d2fbdba4586316916795f2358d54a9a4997",
+      "sera_field/joint_session.py": "bd4db23d6ac0aa1bb5b3b7b4012b24c8f1aca504f100f96ec15be256ea4b25ea",
+      "sera_field/unified_energy.py": "a89eb0c84e8855fbd63e37c2ebfbcd5fe80616ae1bd626faff7e9d2062cd3656",
+      "tests/test_core_attachment.py": "a76788825d371198628ddda641010f55adc0fa47f02dac9aa01ffe03cb4fd70e",
+      "tests/test_core_echo.py": "f5976805ec9029ca314f34076c1a173a8268d20f52f60b7afc607e2dc36ee247",
+      "tests/test_core_owner.py": "0b3cf64c9d121ec9e0ff42b88a04d7f3d37400252e6358f1d256e2b2283f7368",
+      "tests/test_core_refinement.py": "bea8295929c2d2f9e89c764b411d694c19dc99fac59f4dbdc259326aece5eaf6",
+      "tests/test_core_session.py": "00ed4b243a14a9418dd4e94732e71288fef8f42cec829a83995659520d8e5d22",
+      "tests/test_core_storage.py": "9eeb0965739c09f8e4bb34651ad5e0746983d724894f4fb88564a2e9439e3191",
+      "tests/test_fibonacci_space.py": "7fe8f8a3aa3ec749abcd3ecb44e4e1c643e739ec1a3193cb4ad02bb59c9ced09",
+      "tests/test_unified_energy.py": "81f3bdc0e4179fb2456b2779c3eda5b7334a16af59ea6e3ea7e2ebe0a6442706"
+    }
+  },
+  {
+    "attempt": "core022-regression-001",
+    "status": "PASS",
+    "tests": 226,
+    "failures": 0,
+    "errors": 0,
+    "xml": "verification/core022-regression-001.xml",
+    "source_identities": {
+      "sera_field/core_adequacy.py": "c4f6fcd996c1ff14b76409585f5fbdce1060b2b11cbced5b953969e4d9a64ce2",
+      "sera_field/core_echo.py": "d15e6e441f79adbf69651eb295a33feec0ad034f2ea2f93ab13754c995aee5e7",
+      "sera_field/core_owner.py": "017508a7a9cb8ee1c18345b0093fd68da16276994c25c3029a9683568cdcc2e9",
+      "sera_field/core_session.py": "2ab0f8295676270ef4ce84a55a8c736f78ea960cacfa140d9a6ecb64055fe5c7",
+      "sera_field/core_storage.py": "f12c44ee3524b2194f866b56e488aba7cb4e7174e0fec33f2eb861682d6bf5b1",
+      "sera_field/fibonacci_space.py": "4143302e46b2cb03066301dbcd590d2fbdba4586316916795f2358d54a9a4997",
+      "sera_field/joint_session.py": "bd4db23d6ac0aa1bb5b3b7b4012b24c8f1aca504f100f96ec15be256ea4b25ea",
+      "sera_field/unified_energy.py": "a89eb0c84e8855fbd63e37c2ebfbcd5fe80616ae1bd626faff7e9d2062cd3656",
+      "tests/test_core_attachment.py": "a76788825d371198628ddda641010f55adc0fa47f02dac9aa01ffe03cb4fd70e",
+      "tests/test_core_echo.py": "f5976805ec9029ca314f34076c1a173a8268d20f52f60b7afc607e2dc36ee247",
+      "tests/test_core_owner.py": "0b3cf64c9d121ec9e0ff42b88a04d7f3d37400252e6358f1d256e2b2283f7368",
+      "tests/test_core_refinement.py": "bea8295929c2d2f9e89c764b411d694c19dc99fac59f4dbdc259326aece5eaf6",
+      "tests/test_core_session.py": "00ed4b243a14a9418dd4e94732e71288fef8f42cec829a83995659520d8e5d22",
+      "tests/test_core_storage.py": "9eeb0965739c09f8e4bb34651ad5e0746983d724894f4fb88564a2e9439e3191",
+      "tests/test_fibonacci_space.py": "7fe8f8a3aa3ec749abcd3ecb44e4e1c643e739ec1a3193cb4ad02bb59c9ced09",
+      "tests/test_unified_energy.py": "81f3bdc0e4179fb2456b2779c3eda5b7334a16af59ea6e3ea7e2ebe0a6442706"
+    }
+  }
+]

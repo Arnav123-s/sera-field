@@ -1,0 +1,60 @@
+{
+  "events": 96,
+  "maximum_coordinate_magnitude": {
+    "q": 0.3326881527900696,
+    "p": 0.3697388172149658,
+    "log_covariance": 0.00678549287840724,
+    "fast": 0.002291858196258545,
+    "slow": 0.00021804498101118952,
+    "bulk": 0.0003186259709764272,
+    "reservoir": 0.042275577783584595,
+    "marks": 0.050909265875816345,
+    "flow_context": 0.07194548845291138
+  },
+  "checkpoints": [
+    {
+      "event": 1,
+      "state_hash": "bf785f69c377fd57539483c9d84927144c7be7ceb847489c4eefc19bbd65f64a",
+      "energy_defect": [
+        -1.3033314871790935e-08
+      ],
+      "active_work": [
+        8.154758083620553e-17
+      ]
+    },
+    {
+      "event": 16,
+      "state_hash": "5ee798918f95c4c51039f04b548bb17c53bcb7cb6a3ffba580e21d7ff8e66af2",
+      "energy_defect": [
+        -2.9261281042636256e-07
+      ],
+      "active_work": [
+        2.9110565954310053e-12
+      ]
+    },
+    {
+      "event": 48,
+      "state_hash": "17e6e30dbfc7b7329cc5f2ac2e0ef6ca829cf2d3e0809636c93ce2a5263f214a",
+      "energy_defect": [
+        -3.269296087182738e-07
+      ],
+      "active_work": [
+        3.539358389703651e-11
+      ]
+    },
+    {
+      "event": 96,
+      "state_hash": "cd203d72ab5e86089418c3ac01f06feea53b0bff9996ee8c9579a1f3c4a40bf2",
+      "energy_defect": [
+        -2.349153191971709e-07
+      ],
+      "active_work": [
+        2.2203526517383665e-10
+      ]
+    }
+  ],
+  "wall_seconds": 9.819556800008286,
+  "conditional_queries_preserve_state": true,
+  "positive_covariance_and_finite_state": true,
+  "scope": "random fresh owner; supplied bounded engineering stream, not acquired understanding"
+}

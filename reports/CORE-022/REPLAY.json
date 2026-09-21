@@ -1,0 +1,9 @@
+{
+  "fresh_process_exact_next_update": true,
+  "expected_identity": "bdeab18ef91af29715c84b73f2d339e63001ad6273d76866ed20e0e19e726e2b",
+  "actual_identity": "bdeab18ef91af29715c84b73f2d339e63001ad6273d76866ed20e0e19e726e2b",
+  "protected_retained_state_used": true,
+  "weights_after": "4bab793b0ffaa271f716232971ac1fe49d1d11932d805a0c9de2e28e0935cdbc",
+  "updated": true,
+  "scope": "one pending fresh-owner fixture; curriculum has not started"
+}

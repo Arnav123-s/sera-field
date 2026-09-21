@@ -18,6 +18,25 @@ from .records import write_json, sha256
 
 
 class JointSession:
+    def checkpoint_extra(self, path):
+        return {}
+
+    def restore_extra(self, path, extra):
+        if extra:
+            raise ValueError('Unexpected session extension')
+
+    @property
+    def owner_dtype(self):
+        """Input precision belongs to the owner, not to a particular memory."""
+        return next(self.owner.parameters()).dtype
+
+    @classmethod
+    def owner_from_specification(cls, specification):
+        configuration = dict(specification)
+        if configuration.pop('type') != 'native-memory-field-019':
+            raise ValueError('Unexpected owner type')
+        return NativeOwner(NativeConfig(**configuration))
+
     def __init__(self, owner, goal, *, source):
         if not source or not isinstance(goal.get('hypothesis'), str) or not goal['hypothesis'].strip():
             raise ValueError('Original human question and source identity required')
@@ -37,7 +56,7 @@ class JointSession:
         return identity(pack(self.state))
 
     def tensors(self, events):
-        converted = []; dtype = self.owner.memory.raw_fast.dtype
+        converted = []; dtype = self.owner_dtype
         for event in events:
             if event['kind'] == 'text':
                 converted.append({'kind': 'text', 'texts': [event['text']]})
@@ -59,7 +78,7 @@ class JointSession:
         return torch.tensor([[(f, v) in measured for f, v in GRID]])
 
     def scores(self, state, events=None):
-        dtype = self.owner.memory.raw_fast.dtype
+        dtype = self.owner_dtype
         return investigation_logits(self.owner, state, torch.tensor([[self.goal['force'], self.goal['velocity']]], dtype=dtype),
                                      torch.tensor(GRID, dtype=dtype), used=self.used_mask(events))
 
@@ -68,7 +87,7 @@ class JointSession:
         self.checked_owner()
         f = self.goal['force'] if force is None else finite(force)
         v = self.goal['velocity'] if velocity is None else finite(velocity)
-        goals = torch.tensor([[f, v]], dtype=self.owner.memory.raw_fast.dtype)
+        goals = torch.tensor([[f, v]], dtype=self.owner_dtype)
         result = answers(self.owner, self.state, [self.goal['hypothesis']], goals)
         return {'original_goal': copy.deepcopy(self.goal), 'source': self.source, 'weights': self.weights,
                 'state': self.state_id(), 'query': [f, v],
@@ -221,6 +240,9 @@ class JointSession:
         payload = {'owner': revision, 'goal': self.goal, 'source': self.source,
                    'events': self.events, 'credits': self.credits, 'pending': self.pending,
                    'transition': self.transition, 'state': pack(self.state)}
+        extra = self.checkpoint_extra(path)
+        if extra:
+            payload['extensions'] = extra
         record = {'identity': identity(payload), 'payload': payload}
         destination = path / 'revisions' / ('session-' + record['identity'] + '.json')
         if destination.exists() and json.loads(destination.read_text()) != record:
@@ -243,10 +265,19 @@ class JointSession:
         if revision.resolve().parent != (path / 'revisions').resolve() or sha256(revision) != selected['sha256']:
             raise ValueError('Changed session owner revision')
         payload = torch.load(revision, map_location='cpu', weights_only=False)
-        specification = dict(payload['specification'])
-        if specification.pop('type') != 'native-memory-field-019':
-            raise ValueError('Unexpected owner type')
-        owner = NativeOwner(NativeConfig(**specification)); owner.load_state_dict(payload['owner'])
+        owner = cls.owner_from_specification(payload['specification'])
+        # A fresh constructor defaults to float32; preserve an explicitly saved
+        # real precision before loading, rather than silently rounding tensors.
+        precision = next(v.dtype for v in payload['owner'].values() if v.is_floating_point())
+        if precision == torch.float64:
+            owner.double()
+        elif precision == torch.float32:
+            owner.float()
+        else:
+            raise ValueError('Unsupported saved real precision')
+        # Module.to(real_dtype) also converts complex buffers to real and
+        # destroys braid phases. float()/double() touch real tensors only.
+        owner.load_state_dict(payload['owner'])
         if weight_hash(owner) != selected['weights']:
             raise ValueError('Changed owner tensors')
         task = cls(owner, data['goal'], source=data['source'])
@@ -256,5 +287,6 @@ class JointSession:
         with torch.no_grad(): task.state = detached_state(task.rebuild())
         if pack(task.state) != data['state']:
             raise ValueError('Stored state does not reproduce under its owner and history')
+        task.restore_extra(path, data.get('extensions', {}))
         torch.set_rng_state(payload['rng']); random.setstate(payload['python_rng'])
         return task

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="20" time="10.881" timestamp="2026-09-20T20:32:05.878045-07:00" hostname="ashp"><testcase classname="tests.test_core_owner" name="test_fusion_channels_are_normalized_positive_and_differentiable" time="0.008" /><testcase classname="tests.test_core_owner" name="test_observed_and_hypothetical_routes_use_one_fresh_energy_owner" time="0.207" /><testcase classname="tests.test_core_owner" name="test_language_loss_reaches_fusion_flow_geometry_and_all_memory_coordinates" time="0.300" /><testcase classname="tests.test_core_owner" name="test_numerical_context_uses_the_same_state_and_changed_observation_changes_answer" time="0.453" /><testcase classname="tests.test_core_owner" name="test_exact_state_and_next_update_after_checkpoint_restore" time="1.647" /><testcase classname="tests.test_core_owner" name="test_multievent_learning_derivative_matches_finite_differences" time="2.897" /><testcase classname="tests.test_core_session" name="test_pending_question_evidence_credit_and_next_update_resume_exactly" time="0.250"><failure message="ValueError: Changed owner tensors">tmp_path = WindowsPath('C:/Users/admin/AppData/Local/Temp/pytest-of-octashop/pytest-148/test_pending_question_evidence0')
+
+    def test_pending_question_evidence_credit_and_next_update_resume_exactly(tmp_path):
+        task = prepared(); original_goal = copy.deepcopy(task.goal)
+        decision = task.propose(); weights = weight_hash(task.owner); state = task.state_id()
+        task.save(tmp_path)
+        expected_rng = torch.rand(2); expected_python = random.random()
+&gt;       restored = CoreSession.load(tmp_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_core_session.py:45: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+cls = &lt;class 'sera_field.core_session.CoreSession'&gt;
+path = WindowsPath('C:/Users/admin/AppData/Local/Temp/pytest-of-octashop/pytest-148/test_pending_question_evidence0')
+
+    @classmethod
+    def load(cls, path):
+        path = Path(path); current = json.loads((path / 'CURRENT.json').read_text())
+        record_path = path / 'revisions' / current['revision']
+        if record_path.resolve().parent != (path / 'revisions').resolve():
+            raise ValueError('Invalid session path')
+        record = json.loads(record_path.read_text()); data = record['payload']
+        if identity(data) != record['identity'] or record['identity'] != current['identity']:
+            raise ValueError('Changed session identity')
+        selected = data['owner']; revision = path / 'revisions' / selected['revision']
+        if revision.resolve().parent != (path / 'revisions').resolve() or sha256(revision) != selected['sha256']:
+            raise ValueError('Changed session owner revision')
+        payload = torch.load(revision, map_location='cpu', weights_only=False)
+        owner = cls.owner_from_specification(payload['specification'])
+        # A fresh constructor defaults to float32; preserve an explicitly saved
+        # real precision before loading, rather than silently rounding tensors.
+        precision = next(v.dtype for v in payload['owner'].values() if v.is_floating_point())
+        owner.to(dtype=precision); owner.load_state_dict(payload['owner'])
+        if weight_hash(owner) != selected['weights']:
+&gt;           raise ValueError('Changed owner tensors')
+E           ValueError: Changed owner tensors
+
+sera_field\joint_session.py:264: ValueError</failure></testcase><testcase classname="tests.test_core_session" name="test_unread_outcome_and_wrong_intervention_do_not_farm_credit" time="0.815" /><testcase classname="tests.test_core_session" name="test_changed_predictor_rejects_stale_reward" time="0.402" /><testcase classname="tests.test_joint_session" name="test_credit_changes_existing_owner_reencodes_history_and_exactly_restores" time="0.694" /><testcase classname="tests.test_joint_session" name="test_pending_decision_survives_restart_without_becoming_observation" time="0.400" /><testcase classname="tests.test_joint_session" name="test_wrong_control_is_observed_but_does_not_update_decision_weights" time="0.350" /><testcase classname="tests.test_joint_session" name="test_stale_or_overflow_credit_preserves_all_state" time="0.387" /><testcase classname="tests.test_joint_session" name="test_external_predictor_change_cannot_receive_stale_reward" time="0.262" /><testcase classname="tests.test_unified_energy" name="test_passive_and_active_continuous_balances_and_conserved_bulk" time="0.015" /><testcase classname="tests.test_unified_energy" name="test_mixed_derivatives_show_reciprocal_boundary_memory_coupling" time="0.007" /><testcase classname="tests.test_unified_energy" name="test_pure_discrete_step_preserves_mass_and_reports_convergence" time="0.035" /><testcase classname="tests.test_unified_energy" name="test_step_trains_energy_rates_memory_and_input_together" time="0.032" /><testcase classname="tests.test_unified_energy" name="test_whole_energy_respects_local_frame_changes_with_fixed_bulk_coordinates" time="0.009" /><testcase classname="tests.test_unified_energy" name="test_rhs_partial_derivatives_hold_other_current_coordinates_and_port_fixed" time="0.016" /></testsuite></testsuites>

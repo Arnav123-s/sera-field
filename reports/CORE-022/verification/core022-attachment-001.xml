@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="14" time="23.320" timestamp="2026-09-20T20:43:29.538569-07:00" hostname="ashp"><testcase classname="tests.test_core_attachment" name="test_actual_attachment_preserves_old_sections_and_answers_before_learning" time="0.598"><failure message="AssertionError: reservoir&#10;assert False&#10; +  where False = &lt;built-in method allclose of type object at 0x00007FFB1DA1EA70&gt;(tensor([4.2788e-07], dtype=torch.float64), tensor([7.1772e-07], dtype=torch.float64), atol=5e-14, rtol=0)&#10; +    where &lt;built-in method allclose of type object at 0x00007FFB1DA1EA70&gt; = torch.allclose">def test_actual_attachment_preserves_old_sections_and_answers_before_learning():
+        torch.manual_seed(22025)
+        owner = CoreOwner(NativeConfig(nodes=3, rounds=1)).double()
+        texts, query = ['A person holds a book.'], ['Someone is reading.']
+        old_parameters = copy.deepcopy(owner.state_dict())
+        with torch.no_grad():
+            old_state, _ = owner.remember_texts(texts)
+            before = owner.semantic(texts, query)
+        owner.install_extension(4)
+        with torch.no_grad():
+            new_state, _ = owner.remember_texts(texts)
+            after = owner.semantic(texts, query)
+        for name in old_parameters:
+            assert torch.equal(old_parameters[name], owner.state_dict()[name]), name
+        for name in old_state:
+&gt;           assert torch.allclose(old_state[name], new_state[name], atol=5e-14, rtol=0), name
+E           AssertionError: reservoir
+E           assert False
+E            +  where False = &lt;built-in method allclose of type object at 0x00007FFB1DA1EA70&gt;(tensor([4.2788e-07], dtype=torch.float64), tensor([7.1772e-07], dtype=torch.float64), atol=5e-14, rtol=0)
+E            +    where &lt;built-in method allclose of type object at 0x00007FFB1DA1EA70&gt; = torch.allclose
+
+tests\test_core_attachment.py:24: AssertionError</failure></testcase><testcase classname="tests.test_core_attachment" name="test_new_memory_coordinates_and_decoder_receive_gradients_and_reach_old_field" time="1.092" /><testcase classname="tests.test_core_owner" name="test_fusion_channels_are_normalized_positive_and_differentiable" time="0.004" /><testcase classname="tests.test_core_owner" name="test_observed_and_hypothetical_routes_use_one_fresh_energy_owner" time="0.384" /><testcase classname="tests.test_core_owner" name="test_language_loss_reaches_fusion_flow_geometry_and_all_memory_coordinates" time="0.937" /><testcase classname="tests.test_core_owner" name="test_numerical_context_uses_the_same_state_and_changed_observation_changes_answer" time="1.278" /><testcase classname="tests.test_core_owner" name="test_exact_state_and_next_update_after_checkpoint_restore" time="2.928" /><testcase classname="tests.test_core_owner" name="test_multievent_learning_derivative_matches_finite_differences" time="6.842" /><testcase classname="tests.test_core_echo" name="test_metric_canonical_forward_reverse_preserves_frozen_coordinates" time="0.099" /><testcase classname="tests.test_core_echo" name="test_echo_matches_whole_coupled_energy_derivatives_with_intermediate_loss" time="0.290" /><testcase classname="tests.test_core_echo" name="test_actual_split_respects_mass_and_reports_its_energy_defect" time="0.321" /><testcase classname="tests.test_core_session" name="test_pending_question_evidence_credit_and_next_update_resume_exactly" time="4.758" /><testcase classname="tests.test_core_session" name="test_unread_outcome_and_wrong_intervention_do_not_farm_credit" time="1.444" /><testcase classname="tests.test_core_session" name="test_changed_predictor_rejects_stale_reward" time="0.706" /></testsuite></testsuites>

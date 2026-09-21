@@ -1,7 +1,7 @@
 # Evidence index
 
 **Complete-core build in progress:** [CORE-022 engineering](CORE-022/REPORT.md),
-[source identities and ten checks](CORE-022/ENGINEERING.json),
+[current source identities and checks](CORE-022/ENGINEERING.json),
 [equations](../docs/CORE_022_EQUATIONS.md) and
 [complete work order](../docs/COMPLETE_CORE_WORK_ORDER.md). The new build precedes
 its from-scratch curriculum; no new complete-core training is claimed here.

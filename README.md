@@ -41,6 +41,9 @@ investigations with exact restart. Returned numerical error fell 54% versus its
 starting owner on 747 fresh cases. Comparisons and retention are in the report.
 The [next work order](docs/COMPLETE_CORE_WORK_ORDER.md) completes the core before
 from-scratch behavioral teaching and later incremental learning.
+The [current build](docs/CORE_022_OWNER.md) connects a common energy, temporal
+credit, conditional alternatives, protected retained state and representation
+growth through one fresh owner. [Engineering results](reports/CORE-022/REPORT.md).
 
 ## Run locally
 

@@ -1,8 +1,9 @@
 # A coupled energy and explicit conditional fusion space
 
 This is the engineering construction for the complete-core work order. It is
-implemented in `unified_energy.py` and `fibonacci_space.py`; their independent
-contracts are checked before integration into the fresh owner. Existing trained
+implemented in `unified_energy.py` and `fibonacci_space.py`, and connected through
+`core_owner.py`. Their independent contracts and actual learning paths are checked.
+Existing trained
 owners retain their original equations and weights.
 
 ## Shared finite energy
@@ -63,14 +64,70 @@ or a semantic truth theorem. The earlier
 provide its provenance and scope.
 
 The implementation differentiates H with respect to every coordinate, including
-memory. It uses a pure two-stage Heun step, with an explicit numerical energy
-defect. Continuous identities do not imply exact discrete conservation. Tests
+memory. The full-vector-field Heun routine remains a diagnostic reference. The
+owner uses a symmetric split: a canonical half interval, a two-stage Heun interval
+for irreversible coordinates, then a canonical half interval. Every part uses
+the same H. The reported numerical energy defect covers the entire split.
+Continuous identities do not imply exact discrete conservation. Tests
 check step refinement, mass, unchanged inputs, full local-frame transformations,
 nonzero mixed boundary/memory derivatives and joint parameter/input gradients.
 
 The finite neural mixture couples represented coordinates globally. This full
 energy is therefore not assigned the strictly local dependency bound proved for
 a separate fixed-operator finite-hop sheaf filter.
+
+### Canonical credit through the actual coupled energy
+
+During each reversible interval, hold L, f, s, c and the observed source fixed.
+Then H=T(p,L)+V(q;L,f,s,c,u,theta) is separable in the canonical q,p pair. A
+symmetric kick/drift/kick map is inverted with the negative step. Fixed arguments
+theta (including the current slow coordinates) accumulate auxiliary momenta
+through minus the appropriate partial derivatives of V and T. The T derivative
+with respect to L is included; a Euclidean momentum drift would be incorrect.
+
+For terminal derivatives g_q and g_p, apply two opposite impulses
+
+    q_final -> q_final +/- epsilon g_p
+    p_final -> p_final -/+ epsilon g_q
+
+and integrate backward. The difference of the recovered p, q and auxiliary
+momenta gives the corresponding input and parameter derivatives. Epsilon is
+1e-4 and the echo is evaluated in float64. Tests compare every coupled argument
+against differentiation of the identical discrete map, including a timed source
+change and an intermediate loss. The method uses two reverse passes; it does not
+claim zero computation or exactness for arbitrary impulse magnitude. Encoder,
+stationary, irreversible and output operations retain their own local chain rules.
+
+Current coordinates can share computation history. Independent clone nodes are
+therefore necessary when taking a partial of H: hold the other current arguments
+fixed inside that partial, while retaining the outer learning derivative through
+the preceding history. The preserved first integration failure and its repair
+are recorded in [the repair log](../reports/CORE-022/REPAIRS.md).
+
+### Literal finite attachment in the common state
+
+One admitted refinement can add a stalk of dimension 1+k at an existing boundary
+vertex, with k in 1..16. Intrinsic coordinates are the old q, free eta and edge
+disagreement w. The existing full-rank chart reconstructs the new stalk as
+
+    y = (B q_vertex - A eta + w, eta),  R_new = [I,A].
+
+B selects the scalar Clifford blade and A is a supplied constant chart. The
+resulting enlarged sheaf has an additional edge whose coboundary is w. The common
+energy adds .05*(||eta-W phi(q,f,s,u)||^2+||w||^2), with eight declared invariant
+features phi and a newly initialized W. Eta and w have dissipative derivatives
+and contribute their passive loss to the same reservoir. Their old/new cross
+derivatives are included in canonical credit. An actual input port writes eta;
+the same conditional decoder reads it. No different response model is fitted.
+
+W and the new decoder start at zero, preserving old predictions at attachment.
+The new port initializes free coordinates from retained observations. New
+dissipation legitimately increases the accounted reservoir; preserving an old
+answer does not require hiding that cost. Subsequent learning can use the new
+coordinates and couple them back into the boundary. Tests verify old-section
+preservation, added dimensions, gradients, optimizer migration and exact resume.
+The geometry/rank bounds are supplied. Useful learned growth is a subsequent
+behavioral assessment, and structural change alone earns no reward.
 
 ## Fibonacci branch contract
 
@@ -96,8 +153,14 @@ no measurement retains rho. These can be different states. Input validation
 checks trace, Hermiticity and positivity within the declared numerical tolerance;
 it does not normalize an invalid input into apparent consistency.
 
-These are conditional calculation instruments. They do not verify their own
-physical predictions or write imagined outcomes into factual memory. Their
-connection to learned diverse proposals and independent investigation must be
-completed and assessed through the whole owner before a learned capability is
-assigned to them.
+In the current owner, a learned mixture of pinned braid words encodes retained
+history and a query. Absent, unread and read instruments are followed by another
+learned channel. This makes their differing consequences operational. Every
+outcome is preserved and its conditional field branch evolves using the same
+energy. Tests verify that averaging the read continuations reproduces the unread
+channel, that absent and unread continuations differ, and that neither modifies
+the actual observed state. Independent outcome assessment still supplies credit;
+an internal conditional calculation does not verify its own physical prediction.
+
+The [owner integration note](CORE_022_OWNER.md) describes persistent investigation,
+protected retained coordinates and the local scale-dependent adequacy interface.

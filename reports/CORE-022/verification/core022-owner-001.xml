@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="4" skipped="0" tests="11" time="3.913" timestamp="2026-09-20T20:24:46.178365-07:00" hostname="ashp"><testcase classname="tests.test_core_owner" name="test_fusion_channels_are_normalized_positive_and_differentiable" time="0.008" /><testcase classname="tests.test_core_owner" name="test_observed_and_hypothetical_routes_use_one_fresh_energy_owner" time="0.211" /><testcase classname="tests.test_core_owner" name="test_language_loss_reaches_fusion_flow_geometry_and_all_memory_coordinates" time="0.205"><failure message="RuntimeError: trying to differentiate twice a function that was marked with @once_differentiable">def test_language_loss_reaches_fusion_flow_geometry_and_all_memory_coordinates():
+        owner = fresh()
+        logits = owner.semantic(['A child looks at a red ball.'], ['Someone sees a ball.'])
+&gt;       loss = -logits.log_softmax(-1)[..., 0].mean(); loss.backward()
+                                                       ^^^^^^^^^^^^^^^
+
+tests\test_core_owner.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.venv\Lib\site-packages\torch\_tensor.py:630: in backward
+    torch.autograd.backward(
+.venv\Lib\site-packages\torch\autograd\__init__.py:364: in backward
+    _engine_run_backward(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+t_outputs = (tensor(1.0998, grad_fn=&lt;NegBackward0&gt;),)
+args = ((tensor(1.),), False, False, ())
+kwargs = {'accumulate_grad': True, 'allow_unreachable': True}
+attach_logging_hooks = False
+
+    def _engine_run_backward(
+        t_outputs: Sequence[Union[torch.Tensor, GradientEdge]],
+        *args: Any,
+        **kwargs: Any,
+    ) -&gt; tuple[torch.Tensor, ...]:
+        attach_logging_hooks = log.getEffectiveLevel() &lt;= logging.DEBUG
+        if attach_logging_hooks:
+            unregister_hooks = _register_logging_hooks_on_whole_graph(t_outputs)
+        try:
+&gt;           return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+                t_outputs, *args, **kwargs
+            )  # Calls into the C++ engine to run the backward pass
+E           RuntimeError: trying to differentiate twice a function that was marked with @once_differentiable
+
+.venv\Lib\site-packages\torch\autograd\graph.py:865: RuntimeError</failure></testcase><testcase classname="tests.test_core_owner" name="test_numerical_context_uses_the_same_state_and_changed_observation_changes_answer" time="0.385"><failure message="RuntimeError: trying to differentiate twice a function that was marked with @once_differentiable">def test_numerical_context_uses_the_same_state_and_changed_observation_changes_answer():
+        owner = fresh()
+        support = torch.tensor([[[.2, -.3, .1], [.4, .1, .3]]])
+        queries = torch.tensor([[[.3, .2]]])
+        first = owner.physical(support, queries)
+        second = owner.physical(support+torch.tensor([0., 0., .4]), queries)
+        assert first.shape == (1, 1, 3) and not torch.allclose(first, second)
+&gt;       first.square().sum().backward()
+
+tests\test_core_owner.py:65: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.venv\Lib\site-packages\torch\_tensor.py:630: in backward
+    torch.autograd.backward(
+.venv\Lib\site-packages\torch\autograd\__init__.py:364: in backward
+    _engine_run_backward(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+t_outputs = (tensor(0.0191, grad_fn=&lt;SumBackward0&gt;),)
+args = ((tensor(1.),), False, False, ())
+kwargs = {'accumulate_grad': True, 'allow_unreachable': True}
+attach_logging_hooks = False
+
+    def _engine_run_backward(
+        t_outputs: Sequence[Union[torch.Tensor, GradientEdge]],
+        *args: Any,
+        **kwargs: Any,
+    ) -&gt; tuple[torch.Tensor, ...]:
+        attach_logging_hooks = log.getEffectiveLevel() &lt;= logging.DEBUG
+        if attach_logging_hooks:
+            unregister_hooks = _register_logging_hooks_on_whole_graph(t_outputs)
+        try:
+&gt;           return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+                t_outputs, *args, **kwargs
+            )  # Calls into the C++ engine to run the backward pass
+E           RuntimeError: trying to differentiate twice a function that was marked with @once_differentiable
+
+.venv\Lib\site-packages\torch\autograd\graph.py:865: RuntimeError</failure></testcase><testcase classname="tests.test_core_owner" name="test_exact_state_and_next_update_after_checkpoint_restore" time="1.241"><failure message="RuntimeError: trying to differentiate twice a function that was marked with @once_differentiable">tmp_path = WindowsPath('C:/Users/admin/AppData/Local/Temp/pytest-of-octashop/pytest-146/test_exact_state_and_next_upda0')
+
+    def test_exact_state_and_next_update_after_checkpoint_restore(tmp_path):
+        owner = fresh(); optimizer = torch.optim.AdamW(owner.parameters(), lr=.0001)
+        before = copy.deepcopy(owner.state_dict()); rng = torch.get_rng_state()
+        path = tmp_path/'engineering.pt'
+        torch.save({'owner': before, 'optimizer': optimizer.state_dict(), 'rng': rng}, path)
+        def update(model, opt):
+            opt.zero_grad(set_to_none=True)
+            loss = model.semantic(['A person stands outside.'], ['Someone is outdoors.']).square().mean()
+            loss.backward(); opt.step()
+            return model.state_dict()
+&gt;       expected = copy.deepcopy(update(owner, optimizer))
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_core_owner.py:80: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_core_owner.py:78: in update
+    loss.backward(); opt.step()
+    ^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\torch\_tensor.py:630: in backward
+    torch.autograd.backward(
+.venv\Lib\site-packages\torch\autograd\__init__.py:364: in backward
+    _engine_run_backward(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+t_outputs = (tensor(0.0039, grad_fn=&lt;MeanBackward0&gt;),)
+args = ((tensor(1.),), False, False, ())
+kwargs = {'accumulate_grad': True, 'allow_unreachable': True}
+attach_logging_hooks = False
+
+    def _engine_run_backward(
+        t_outputs: Sequence[Union[torch.Tensor, GradientEdge]],
+        *args: Any,
+        **kwargs: Any,
+    ) -&gt; tuple[torch.Tensor, ...]:
+        attach_logging_hooks = log.getEffectiveLevel() &lt;= logging.DEBUG
+        if attach_logging_hooks:
+            unregister_hooks = _register_logging_hooks_on_whole_graph(t_outputs)
+        try:
+&gt;           return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+                t_outputs, *args, **kwargs
+            )  # Calls into the C++ engine to run the backward pass
+E           RuntimeError: trying to differentiate twice a function that was marked with @once_differentiable
+
+.venv\Lib\site-packages\torch\autograd\graph.py:865: RuntimeError</failure></testcase><testcase classname="tests.test_unified_energy" name="test_passive_and_active_continuous_balances_and_conserved_bulk" time="0.016" /><testcase classname="tests.test_unified_energy" name="test_mixed_derivatives_show_reciprocal_boundary_memory_coupling" time="0.007" /><testcase classname="tests.test_unified_energy" name="test_pure_discrete_step_preserves_mass_and_reports_convergence" time="0.034" /><testcase classname="tests.test_unified_energy" name="test_step_trains_energy_rates_memory_and_input_together" time="0.031" /><testcase classname="tests.test_unified_energy" name="test_whole_energy_respects_local_frame_changes_with_fixed_bulk_coordinates" time="0.009" /><testcase classname="tests.test_unified_energy" name="test_rhs_partial_derivatives_hold_other_current_coordinates_and_port_fixed" time="0.018"><failure message="AssertionError: fast&#10;assert False&#10; +  where False = &lt;built-in method allclose of type object at 0x00007FFB1DA1EA70&gt;(tensor([[[-0.0095,  0.0331,  0.0013],\n         [ 0.0148,  0.0085, -0.0027],\n         [-0.0092, -0.0125, -0.0170],\n    ... 0.0098, -0.0298, -0.0052],\n         [ 0.0005,  0.0227,  0.0186]]], dtype=torch.float64,\n       grad_fn=&lt;MulBackward0&gt;), tensor([[[-9.8699e-05,  1.4456e-03, -1.9296e-03],\n         [ 1.9272e-04,  2.1408e-03, -1.7899e-04],\n         [ 1.9654e...      [ 3.5191e-04, -7.0932e-04, -7.6360e-05],\n         [ 1.4066e-03,  8.2826e-04, -7.4639e-04]]], dtype=torch.float64), atol=2e-13, rtol=0)&#10; +    where &lt;built-in method allclose of type object at 0x00007FFB1DA1EA70&gt; = torch.allclose">def test_rhs_partial_derivatives_hold_other_current_coordinates_and_port_fixed():
+        core, state, _ = fixture()
+        fast = state['fast'].requires_grad_()
+        state['q'] = state['q'] + torch.nn.functional.pad(fast, (0, 5))
+        source = .1*fast.square()
+        # These values share an earlier computation. Their dynamical partials must
+        # nevertheless equal the partials at the same independent numerical point.
+        actual, _ = core.rhs(state, source, create_graph=True)
+        independent = {k:v.detach().clone() for k,v in state.items()}
+        expected, _ = core.rhs(independent, source.detach(), create_graph=False)
+        for key in actual:
+&gt;           assert torch.allclose(actual[key], expected[key], atol=2e-13, rtol=0), key
+E           AssertionError: fast
+E           assert False
+E            +  where False = &lt;built-in method allclose of type object at 0x00007FFB1DA1EA70&gt;(tensor([[[-0.0095,  0.0331,  0.0013],\n         [ 0.0148,  0.0085, -0.0027],\n         [-0.0092, -0.0125, -0.0170],\n    ... 0.0098, -0.0298, -0.0052],\n         [ 0.0005,  0.0227,  0.0186]]], dtype=torch.float64,\n       grad_fn=&lt;MulBackward0&gt;), tensor([[[-9.8699e-05,  1.4456e-03, -1.9296e-03],\n         [ 1.9272e-04,  2.1408e-03, -1.7899e-04],\n         [ 1.9654e...      [ 3.5191e-04, -7.0932e-04, -7.6360e-05],\n         [ 1.4066e-03,  8.2826e-04, -7.4639e-04]]], dtype=torch.float64), atol=2e-13, rtol=0)
+E            +    where &lt;built-in method allclose of type object at 0x00007FFB1DA1EA70&gt; = torch.allclose
+
+tests\test_unified_energy.py:100: AssertionError</failure></testcase></testsuite></testsuites>

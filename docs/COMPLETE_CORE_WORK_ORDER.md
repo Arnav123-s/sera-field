@@ -77,6 +77,12 @@ The exact source/lesson counts, selectors, schedules, splits and numerical budge
 are frozen before teaching. The source ledger distinguishes human-authored
 material, supplied labels, simulated experience and generated practice.
 
+The [new empirical synthesis](EMPIRICAL_SYNTHESIS_20260921.md) adds an explicit
+single-acquired-relationship and contradiction assessment across five uses.
+Its historical claims are reconciled there with the current local evidence.
+Single-observation and targeted-acquisition conditions remain separate; a
+measurement that identifies only an equivalence class must retain alternatives.
+
 | Track | Teaching experience | Whole-system behavior to assess |
 |---|---|---|
 | Language and conversation | Preserved dictionaries, grammar, human conversations and source-grounded descriptions | Reference and roles, alternative readings, negation, who observed what, changed context and targeted missing information |

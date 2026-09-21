@@ -1,0 +1,15 @@
+# Preserved engineering diagnoses and repairs
+
+Every attempt, source snapshot, XML result and supervised cost remains preserved.
+These are build checks before the CORE-022 curriculum; no final cohort was used.
+
+| Attempt | Observed failure | Diagnosis and repair | Independent follow-up |
+|---|---|---|---|
+| core022-owner-001 | Three learning/restart tests raised a prohibited second derivative; a shared-history partial test also failed | Current state arguments shared history, so the computed energy partial followed dependencies that must be fixed. Independent clone nodes hold current arguments fixed within the partial and preserve the outer learning chain. | owner-002 passed; session-002 additionally passed multi-event central differences. |
+| core022-session-001 | Saved owner failed its weight identity after load | `Module.to(real_dtype)` discarded imaginary components of registered braid buffers. `float()`/`double()` convert only real tensors. | session-002 passed exact pending-decision and next-update recovery. |
+| core022-storage-001 | The new lattice-charge fixture expected the opposite sign | The independent lower-band, ordered-plaquette computation uses charge -1 for the specified negative mass interval. Corrected the fixture's convention, leaving the codec unchanged. Actual byte recovery already passed. | storage-002 passed all 11 selected checks. |
+| core022-attachment-001 | Initial attachment fixture demanded an unchanged reservoir | New free-coordinate relaxation adds genuine passive loss while old field/answers remain preserved. Corrected the acceptance test to retain that additional cost rather than erase it. | refinement-001 passed section/answer preservation, actual coupling, migration and restart. |
+
+The echo integration and later full-outcome continuation checks passed on their
+first attempts. [Full costs and all attempts](COSTS.json) separate failed work
+from the successful regression. No result is relabeled as trained behavior.
