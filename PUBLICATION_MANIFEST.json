@@ -1,5 +1,5 @@
 {
-  "source_local_revision": "b3f3f7e481734bdb69dad996ea865ccca36455f1",
+  "source_local_revision": "cbf678dbd509ef985956beda5518acded0134d85",
   "repository": "https://github.com/Arnav123-s/sera-field",
   "scope": "Reviewed current Git blobs; private history, raw attachments/corpora/runs excluded",
   "excluded_tracked_files": [
@@ -29,7 +29,7 @@
     {
       "path": "PUBLICATION_SCOPE.md",
       "bytes": 1617,
-      "sha256": "afc42d4041ff04ec93c76b051e2a85e2a6fa2c5c9be96af6c6b98b2ae20e15aa"
+      "sha256": "d529cf5fb03aa40851f3399030572c925659bc9d0fe95901a82b5b910b4a8dea"
     },
     {
       "path": "README.md",
@@ -388,8 +388,8 @@
     },
     {
       "path": "docs/WHOLE_ARCHITECTURE.md",
-      "bytes": 17156,
-      "sha256": "bbae30d47a5695497571a7aa4b7fb9911b4859c0ce5f522f781df38e26882b48"
+      "bytes": 18618,
+      "sha256": "7b98f2c2ada6de38e0056062fbad0418d0394398bff9589eefd6b8e555ad55e8"
     },
     {
       "path": "examples/concept-task.json",
@@ -2889,7 +2889,7 @@
     {
       "path": "reports/PUBLICATION.json",
       "bytes": 204,
-      "sha256": "54008e3d68a3a618ecaed90975e715260c7af0a6de3d2081eba6dc567290059c"
+      "sha256": "d8c352690d711b3e7e57c115a3e52885a8f1c2eaefddc23bcb556bcb8472076f"
     },
     {
       "path": "reports/PUBLICATION_20260920_BALANCED_CORE.json",
@@ -2900,6 +2900,11 @@
       "path": "reports/PUBLICATION_20260920_NATIVE_JOINT.json",
       "bytes": 1018,
       "sha256": "cf030b3768be0d9111d24fd2c8e83532c12ec435f6cfb1dbd1cfffe46f1a7c91"
+    },
+    {
+      "path": "reports/PUBLICATION_20260921_COUPLED_OWNER.json",
+      "bytes": 1384,
+      "sha256": "1084459b6cd948d01de14457b9e01f1b55dc09ad256810dcab537baff6347c29"
     },
     {
       "path": "reports/REQUESTED_BEHAVIOR_AUDIT.md",
@@ -3049,7 +3054,7 @@
     {
       "path": "reports/STATE.json",
       "bytes": 9043,
-      "sha256": "1e944908071b7b82cfbbe986901a06be9c4cb6d2a4939dce9dfa3e1c973a3d08"
+      "sha256": "761bb0a243f4ee7249721aff07e8b7160a0f35f2ed14e2169897f062ec8003ce"
     },
     {
       "path": "reports/UNIFIED-012/COSTS.json",
@@ -4242,6 +4247,6 @@
       "sha256": "6ca5a6f00b57860588e537debfef578535bbbeda6506c5ff1d68dce60c0838b8"
     }
   ],
-  "file_count": 846,
-  "total_bytes": 43164127
+  "file_count": 847,
+  "total_bytes": 43166973
 }
