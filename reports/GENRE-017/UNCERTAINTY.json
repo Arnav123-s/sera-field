@@ -1,0 +1,283 @@
+{
+  "matched": {
+    "rows": 4096,
+    "source_groups": 2627,
+    "comparisons": {
+      "exact_clean": {
+        "accuracy_improvement": {
+          "mean": 0.0,
+          "interval_95": [
+            -0.0029078223081404576,
+            0.0029535554120895834
+          ]
+        },
+        "log_loss_improvement": {
+          "mean": -8.63894537994625e-06,
+          "interval_95": [
+            -0.00033422393516912007,
+            0.0003283346597228896
+          ]
+        }
+      },
+      "gaussian_noisy": {
+        "accuracy_improvement": {
+          "mean": 0.0,
+          "interval_95": [
+            -0.009698566928435164,
+            0.009661312503325832
+          ]
+        },
+        "log_loss_improvement": {
+          "mean": 0.0015785750954484534,
+          "interval_95": [
+            -0.002418410441213653,
+            0.005741028173115048
+          ]
+        }
+      },
+      "parent": {
+        "accuracy_improvement": {
+          "mean": 0.10009765625,
+          "interval_95": [
+            0.08247574111112069,
+            0.11729168070296132
+          ]
+        },
+        "log_loss_improvement": {
+          "mean": 0.11290829731280638,
+          "interval_95": [
+            0.09836026877926377,
+            0.1263395790498905
+          ]
+        }
+      },
+      "no_imagination": {
+        "accuracy_improvement": {
+          "mean": 0.0400390625,
+          "interval_95": [
+            0.025514273391547864,
+            0.05478267830056216
+          ]
+        },
+        "log_loss_improvement": {
+          "mean": 0.28809239245333895,
+          "interval_95": [
+            0.263544059628026,
+            0.31253468253555033
+          ]
+        }
+      },
+      "no_action": {
+        "accuracy_improvement": {
+          "mean": 0.0009765625,
+          "interval_95": [
+            -0.0012401487207485504,
+            0.0036621317322000926
+          ]
+        },
+        "log_loss_improvement": {
+          "mean": -0.00015224810688607704,
+          "interval_95": [
+            -0.0003829229472022688,
+            8.77827224152249e-05
+          ]
+        }
+      }
+    }
+  },
+  "mismatched": {
+    "rows": 4096,
+    "source_groups": 2640,
+    "comparisons": {
+      "exact_clean": {
+        "accuracy_improvement": {
+          "mean": 0.0009765625,
+          "interval_95": [
+            -0.0014783612100141951,
+            0.0034188451828324664
+          ]
+        },
+        "log_loss_improvement": {
+          "mean": 0.0003174351933226127,
+          "interval_95": [
+            1.5222362337097286e-05,
+            0.0006329682226883653
+          ]
+        }
+      },
+      "gaussian_noisy": {
+        "accuracy_improvement": {
+          "mean": 0.002685546875,
+          "interval_95": [
+            -0.0063448297212071875,
+            0.011693842687108729
+          ]
+        },
+        "log_loss_improvement": {
+          "mean": 0.003081292502309152,
+          "interval_95": [
+            -0.0001844488499766816,
+            0.006748599850590298
+          ]
+        }
+      },
+      "parent": {
+        "accuracy_improvement": {
+          "mean": 0.0986328125,
+          "interval_95": [
+            0.08081613954744689,
+            0.115535628634279
+          ]
+        },
+        "log_loss_improvement": {
+          "mean": 0.12723715140656333,
+          "interval_95": [
+            0.11368430584639795,
+            0.14042851836253795
+          ]
+        }
+      },
+      "no_imagination": {
+        "accuracy_improvement": {
+          "mean": 0.04052734375,
+          "interval_95": [
+            0.02607687917257195,
+            0.0551338835276821
+          ]
+        },
+        "log_loss_improvement": {
+          "mean": 0.262409393980479,
+          "interval_95": [
+            0.23916967791301885,
+            0.2856281703133768
+          ]
+        }
+      },
+      "no_action": {
+        "accuracy_improvement": {
+          "mean": 0.000732421875,
+          "interval_95": [
+            -0.0014400322672981803,
+            0.0027176439752476427
+          ]
+        },
+        "log_loss_improvement": {
+          "mean": 8.671128751924773e-05,
+          "interval_95": [
+            -0.0001412217190334769,
+            0.0003186269784777371
+          ]
+        }
+      }
+    }
+  },
+  "equal_cohort_mean": {
+    "exact_clean": {
+      "accuracy_improvement": {
+        "mean": 0.00048828125,
+        "interval_95": [
+          -0.0014427840446075758,
+          0.002316909300529119
+        ]
+      },
+      "log_loss_improvement": {
+        "mean": 0.00015439812397133323,
+        "interval_95": [
+          -6.589668797972181e-05,
+          0.0003886073288393409
+        ]
+      }
+    },
+    "gaussian_noisy": {
+      "accuracy_improvement": {
+        "mean": 0.0013427734375,
+        "interval_95": [
+          -0.005362472784259671,
+          0.007922350999469304
+        ]
+      },
+      "log_loss_improvement": {
+        "mean": 0.0023299337988786917,
+        "interval_95": [
+          -0.0003525138494598734,
+          0.00509824326713465
+        ]
+      }
+    },
+    "parent": {
+      "accuracy_improvement": {
+        "mean": 0.099365234375,
+        "interval_95": [
+          0.08718589003080135,
+          0.11179695786146888
+        ]
+      },
+      "log_loss_improvement": {
+        "mean": 0.12007272435968463,
+        "interval_95": [
+          0.11049592419829157,
+          0.12973406731977155
+        ]
+      }
+    },
+    "no_imagination": {
+      "accuracy_improvement": {
+        "mean": 0.040283203125,
+        "interval_95": [
+          0.03006234127699594,
+          0.05067723077141346
+        ]
+      },
+      "log_loss_improvement": {
+        "mean": 0.2752508932169089,
+        "interval_95": [
+          0.2577360810121694,
+          0.29180539171310776
+        ]
+      }
+    },
+    "no_action": {
+      "accuracy_improvement": {
+        "mean": 0.0008544921875,
+        "interval_95": [
+          -0.000714643325826883,
+          0.0025373175118536886
+        ]
+      },
+      "log_loss_improvement": {
+        "mean": -3.276840968347017e-05,
+        "interval_95": [
+          -0.00019685110485842815,
+          0.0001386431970751804
+        ]
+      }
+    }
+  },
+  "replicates": 2000,
+  "seed": 171170,
+  "input_case_sha256": {
+    "matched": {
+      "exact_noisy": "3878bba4829ec1105bf8bad3e8d026f76eb7a4e55bf22510bda62323e561b8a6",
+      "exact_clean": "3a5da6f3f697ae07de25fe5a836d2a130d8aec65234ed5d73a6fa9a815d64fc3",
+      "gaussian_noisy": "625041bad419bc4c7dd3dfc276d9d6e4763b2a1c11c3e90efcb8268aaa3f8020",
+      "parent": "2a002d1eec286d279dac0f810a2dbca070e2b33ebc90eb034e8965154dc4f78c",
+      "no_imagination": "9a7e39381a1dc2aeed39c7953d1f0ea525417700ec48214d17db0d6f99c16b86",
+      "no_action": "bcf898364504ca45a220cfe6419e175c409cc2cd32b6ee10a79a8001fad20d7d"
+    },
+    "mismatched": {
+      "exact_noisy": "2c658b056d220a5ca617f018a46336de9f024e2d594d15df5e0a79ffe49e2f27",
+      "exact_clean": "bdaba7e54a7a0fc2e8cd6660b93c31ab336be45124fbb6ac16917f1c60ffbe83",
+      "gaussian_noisy": "ca0c1b2a03fa7e904e793b21e57e502122021c4c684a33a0601d204b01e44088",
+      "parent": "95e00601113e875b64f625b84dbb173e0619ae891508326c5eef18ac7ff9f90d",
+      "no_imagination": "ab643e8058c73017ad643f1cddfaccd8c7c70052ce059c73ca1227b5a2049d7c",
+      "no_action": "740e89d8f8cd2b576483b3dc2b61801ed108657b6630fde574f087453d98006e"
+    }
+  },
+  "protocol_sha256": "da142dfec201f16fa34b605426deaf6b85faee45acae8ea87c9bc5dc931a2ac6",
+  "script_sha256": "54da5c6ab8f74c365cf09f814e68b353a691cb78d31f72b6d162f884b56146e8",
+  "final_registration_sha256": "c3f212d79055752754ba424a33b649a8f851cfbea9f4605e24cb82dc411c61cf",
+  "numerical_attempt": "f238480403324c48bd6fa601471b4860",
+  "scope": "paired source-premise sampling for fixed models; not training-seed uncertainty",
+  "effect_on_selection_or_qualification": "none",
+  "model_updates": 0
+}

@@ -1,0 +1,39 @@
+{
+  "gates": {
+    "source_identity": true,
+    "complete_matched_teaching": true,
+    "same_order_and_evidence": true,
+    "selected_updated_state": true,
+    "learned_choice_weights_changed": true,
+    "mixed_goal_improvement": true,
+    "human_retention": true,
+    "physical_retention": true,
+    "credit_contrast": false,
+    "exact_replay": true,
+    "persistent_weight_update_and_restart": true,
+    "engineering_tests": true
+  },
+  "all_frozen_gates": false,
+  "post_training_design_quality": {
+    "all_family_order_cells_taught": false
+  },
+  "all_gates": false,
+  "selected": {
+    "revision": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45.pt",
+    "sha256": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45",
+    "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+    "step": 1024,
+    "score": 0.7419909966649572,
+    "metrics": {
+      "before_mse": 0.09615632228690174,
+      "after_mse": 0.07608514542761213,
+      "next_query_mse": 0.08196941659605628,
+      "credit": 0.0190711774725969,
+      "signed_progress": 0.020071177291413278,
+      "n": 128,
+      "accuracy": 0.5546875,
+      "measurement_rate": 1.0
+    }
+  },
+  "scope": "Finite supplied mixed histories and investigation grid; reward contrast measures the complete trained candidate."
+}

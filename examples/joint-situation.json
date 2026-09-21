@@ -1,0 +1,34 @@
+{
+  "source": "Illustrative workspace: a supplied sentence and normalized simulated apparatus; no semantic link between them is asserted.",
+  "goal": {
+    "hypothesis": "Someone is holding a flower.",
+    "force": 0.4,
+    "velocity": -0.2
+  },
+  "observations": [
+    {
+      "kind": "text",
+      "id": "observed-description-1",
+      "source": "illustrative input",
+      "text": "A person is holding a red flower beside a window."
+    },
+    {
+      "kind": "measurement",
+      "id": "measurement-1",
+      "source": "Illustrative simulator: a = 0.8 F - 0.3 v + 0.1; source metadata is not an encoder input.",
+      "performed": true,
+      "force": -0.8,
+      "velocity": -0.5,
+      "response": -0.39
+    },
+    {
+      "kind": "measurement",
+      "id": "measurement-2",
+      "source": "Same illustrative simulator",
+      "performed": true,
+      "force": 0.7,
+      "velocity": 0.4,
+      "response": 0.54
+    }
+  ]
+}

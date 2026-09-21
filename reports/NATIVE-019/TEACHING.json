@@ -1,0 +1,197 @@
+{
+  "native": {
+    "checks": {
+      "every_step": true,
+      "declared_exposures": true,
+      "full_budget": true,
+      "actual_human_training_ids": true,
+      "no_parent": true
+    },
+    "presentations": {
+      "semantic": 131072,
+      "physics": 32768,
+      "pairs": 32768,
+      "reading": 32768,
+      "math": 32768
+    },
+    "unique_records": {
+      "semantic": 131072,
+      "physics": 32768,
+      "pairs": 11588,
+      "reading": 32768,
+      "math": 13120
+    },
+    "sequence": "722746f592a3771d1ef7eb55c336280901610596de6d21beb27e2705f5fa180f",
+    "logs": [
+      {
+        "path": "runs\\NATIVE-019\\native\\updates-48ecae7e918b4c919d682bd42a47b6e7.jsonl",
+        "sha256": "c80f5c0114df3738e4e30cea5a19991dfc083034befb270af8176ebac4b1f7a0"
+      }
+    ],
+    "replayed_uncommitted_steps": 0,
+    "selected": {
+      "revision": "406649900b47b00c5e8339b42cc2b93c96f3dd3efc37f4c7f4ad6e2854c4fd3a.pt",
+      "sha256": "406649900b47b00c5e8339b42cc2b93c96f3dd3efc37f4c7f4ad6e2854c4fd3a",
+      "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+      "step": 8192,
+      "score": 0.5460253147727442,
+      "tracks": {
+        "semantic": {
+          "n": 256,
+          "accuracy": 0.59765625,
+          "loss": 0.8880621415155474
+        },
+        "reading": {
+          "n": 128,
+          "accuracy": 0.3125,
+          "loss": 1.4853494627168402
+        },
+        "math": {
+          "n": 128,
+          "accuracy": 0.5703125,
+          "loss": 0.9650708180197398
+        },
+        "pairs": {
+          "n": 607,
+          "accuracy": 0.29983525535420097,
+          "loss": 1.5948199039063136
+        },
+        "physics": {
+          "n": 128,
+          "mse": 0.052828215662657385
+        }
+      }
+    },
+    "initial_weights": "08e8cb9661885b423fab4ced3fd3d7fd50efe1931f1c5e818bab77740ed0bf89"
+  },
+  "delayed": {
+    "checks": {
+      "every_step": true,
+      "declared_exposures": true,
+      "full_budget": true,
+      "actual_human_training_ids": true,
+      "no_parent": true
+    },
+    "presentations": {
+      "semantic": 131072,
+      "physics": 32768,
+      "pairs": 32768,
+      "reading": 32768,
+      "math": 32768
+    },
+    "unique_records": {
+      "semantic": 131072,
+      "physics": 32768,
+      "pairs": 11588,
+      "reading": 32768,
+      "math": 13120
+    },
+    "sequence": "722746f592a3771d1ef7eb55c336280901610596de6d21beb27e2705f5fa180f",
+    "logs": [
+      {
+        "path": "runs\\NATIVE-019\\delayed\\updates-48ecae7e918b4c919d682bd42a47b6e7.jsonl",
+        "sha256": "5a6f2a5136877b46b14b242204182ad383e15d63df4bcb0560cd7e3c1effd7ea"
+      }
+    ],
+    "replayed_uncommitted_steps": 0,
+    "selected": {
+      "revision": "b1cf4d1bd0486ad075d7afb436918b015ff45ad463e2c9e2a611131a73a798db.pt",
+      "sha256": "b1cf4d1bd0486ad075d7afb436918b015ff45ad463e2c9e2a611131a73a798db",
+      "weights": "4aec809ad5d938bad9b706a8ce9ddad58541aa64cbf65120e507de9849051cd8",
+      "step": 8192,
+      "score": 0.5519369271803318,
+      "tracks": {
+        "semantic": {
+          "n": 256,
+          "accuracy": 0.5859375,
+          "loss": 0.8977905838837614
+        },
+        "reading": {
+          "n": 128,
+          "accuracy": 0.4140625,
+          "loss": 1.4685126301483251
+        },
+        "math": {
+          "n": 128,
+          "accuracy": 0.5234375,
+          "loss": 1.0023066144276527
+        },
+        "pairs": {
+          "n": 607,
+          "accuracy": 0.28665568369028005,
+          "loss": 1.5845544558245523
+        },
+        "physics": {
+          "n": 128,
+          "mse": 0.05308445823857255
+        }
+      }
+    },
+    "initial_weights": "08e8cb9661885b423fab4ced3fd3d7fd50efe1931f1c5e818bab77740ed0bf89"
+  },
+  "trace": {
+    "checks": {
+      "every_step": true,
+      "declared_exposures": true,
+      "full_budget": true,
+      "actual_human_training_ids": true,
+      "no_parent": true
+    },
+    "presentations": {
+      "semantic": 131072,
+      "physics": 32768,
+      "pairs": 32768,
+      "reading": 32768,
+      "math": 32768
+    },
+    "unique_records": {
+      "semantic": 131072,
+      "physics": 32768,
+      "pairs": 11588,
+      "reading": 32768,
+      "math": 13120
+    },
+    "sequence": "722746f592a3771d1ef7eb55c336280901610596de6d21beb27e2705f5fa180f",
+    "logs": [
+      {
+        "path": "runs\\NATIVE-019\\trace\\updates-48ecae7e918b4c919d682bd42a47b6e7.jsonl",
+        "sha256": "f67a9e4ca59264afb5b1330b297cdaea89879607ccd08f36b2e9c85f4e30b9bc"
+      }
+    ],
+    "replayed_uncommitted_steps": 0,
+    "selected": {
+      "revision": "829c569ad7ba5dfe4b3f57c577383036dfdae6199561fb98a6e4d82a650a1435.pt",
+      "sha256": "829c569ad7ba5dfe4b3f57c577383036dfdae6199561fb98a6e4d82a650a1435",
+      "weights": "23ab91911027b986620ae8eca753744e7e462a0805ea2df67e2545544bd4fa18",
+      "step": 8192,
+      "score": 0.5378045235091944,
+      "tracks": {
+        "semantic": {
+          "n": 256,
+          "accuracy": 0.5625,
+          "loss": 0.911171484796796
+        },
+        "reading": {
+          "n": 128,
+          "accuracy": 0.3125,
+          "loss": 1.4955589309392963
+        },
+        "math": {
+          "n": 128,
+          "accuracy": 0.5546875,
+          "loss": 0.9895808418659726
+        },
+        "pairs": {
+          "n": 607,
+          "accuracy": 0.3130148270181219,
+          "loss": 1.5707929259614137
+        },
+        "physics": {
+          "n": 128,
+          "mse": 0.056724673463577346
+        }
+      }
+    },
+    "initial_weights": "08e8cb9661885b423fab4ced3fd3d7fd50efe1931f1c5e818bab77740ed0bf89"
+  }
+}

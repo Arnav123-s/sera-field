@@ -1,0 +1,404 @@
+{
+  "attempts": [
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-21T00:22:00Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "genre017-audit-001",
+      "command": [
+        "--",
+        "scripts/audit_genre017.py",
+        "--test-attempt",
+        "genre017-tests-001",
+        "--campaign-attempt",
+        "genre017-campaign-001"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 25420,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 635928576,
+        "cpu_seconds": 132.828125,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 133.79458409998915,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-21T00:24:14Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T20:59:11Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "genre017-campaign-001",
+      "command": [
+        "--",
+        "scripts/complete_genre017.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 1544,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 811737088,
+        "cpu_seconds": 12032.84375,
+        "active_processes": 0,
+        "total_processes": 35
+      },
+      "wall_seconds": 12136.663021,
+      "status_write_retry_count": 2,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-21T00:21:27Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-21T00:21:27Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "genre017-delivery-001",
+      "command": [
+        "--",
+        "scripts/deliver_genre017.py",
+        "--owner",
+        "runs/GENRE-017/exact_noisy"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 18112,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 556556288,
+        "cpu_seconds": 30.109375,
+        "active_processes": 0,
+        "total_processes": 27
+      },
+      "wall_seconds": 32.239873700003955,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-21T00:22:00Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-21T00:24:14Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "genre017-storage-001",
+      "command": [
+        "--",
+        "scripts/inspect_owner_storage.py",
+        "--kind",
+        "genre",
+        "--owner",
+        "runs/GENRE-017/exact_noisy",
+        "--training",
+        "runs/GENRE-017/exact_noisy",
+        "--output",
+        "reports/GENRE-017/OWNER_STORAGE.json"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 16060,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 269807616,
+        "cpu_seconds": 2.609375,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 2.874507200001972,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-21T00:24:17Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-20T20:24:16Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "genre017-tests-001",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 21852,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 734511104,
+        "cpu_seconds": 42.5625,
+        "active_processes": 0,
+        "total_processes": 18
+      },
+      "wall_seconds": 47.6664380000002,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-20T20:25:03Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-21T00:24:36Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "genre017-uncertainty-001",
+      "command": [
+        "--",
+        "scripts/uncertainty_genre017.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 4624,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 90181632,
+        "cpu_seconds": 1.265625,
+        "active_processes": 0,
+        "total_processes": 2
+      },
+      "wall_seconds": 1.3469917999900645,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-21T00:24:37Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-21T00:24:35Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "genre017-uncertainty-tests-001",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_genre_uncertainty.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 24792,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 74428416,
+        "cpu_seconds": 0.421875,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 0.6148296000028495,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-21T00:24:35Z"
+    }
+  ],
+  "wall_seconds": 12355.200245399988,
+  "cpu_seconds": 12242.640625,
+  "peak_bytes": 811737088,
+  "source_preparation": {
+    "archive_sha256": "049f507b9e36b1fcb756cfd5aeb3b7a0cfcb84bf023793652987f7e7e0957822",
+    "producer_sha256": "89cef470bd7ac6e426974633192a5078e09e89cd7e5f1fbd96ed5e8980e64434",
+    "protocol_sha256": "7d13c3a8134052bc399a76dd5cb7f8953d181a953cccec1ef2bd312ad923a991",
+    "prior_manifest_sha256": "58afec26bb658d2444664f025f64230447839a6ce7d94b2740611c699d03da2f",
+    "prior_views": {
+      "train": "38353b05999165de0bd3f212cc8284fad2551e544cd7496410d300cb11f8d7a0",
+      "development": "1ccc468fec43b3e00501b4ba3b5289e9e49f4eb9f23fb7fb532d62e795600fd4",
+      "sealed": "57f30d3c38b0743658f3c4cc3649b2b0bb9091bdbdc4ab6f70442438cfc044f2"
+    },
+    "partitions": {
+      "train": {
+        "rows": 371929,
+        "groups": 121376,
+        "genres": {
+          "government": 73209,
+          "telephone": 79181,
+          "fiction": 73165,
+          "travel": 73250,
+          "slate": 73124
+        },
+        "labels": {
+          "neutral": 123971,
+          "entailment": 123949,
+          "contradiction": 124009
+        },
+        "sha256": "94dec53fb3968c9b1526c6a7ff61a60baae4d8ff736101e7ff332b71ba3b483c",
+        "group_sha256": "2fdaad648878772df8786d93b961b18377320aa8666e0aa2c5913270600fb4d3"
+      },
+      "development": {
+        "rows": 20189,
+        "groups": 6571,
+        "genres": {
+          "travel": 3847,
+          "fiction": 4119,
+          "slate": 4041,
+          "government": 4059,
+          "telephone": 4123
+        },
+        "labels": {
+          "contradiction": 6731,
+          "entailment": 6728,
+          "neutral": 6730
+        },
+        "sha256": "7045f561eae4dc007f0aadc57c74aa2da17cfd6bff1b2d6058b1a36154a17e32",
+        "group_sha256": "97c0c5ac4d49502a554ef814eab8970680db3c0914f6833b4f15b30ba36b67c1"
+      },
+      "sealed_matched": {
+        "rows": 9815,
+        "groups": 3334,
+        "genres": {
+          "slate": 1955,
+          "government": 1945,
+          "telephone": 1966,
+          "travel": 1976,
+          "fiction": 1973
+        },
+        "labels": {
+          "neutral": 3123,
+          "contradiction": 3213,
+          "entailment": 3479
+        },
+        "sha256": "2d76b7ce4972f1415b8f92d8f1ad476cd6c361a6f3c348a28f4afbf5a6e07342",
+        "group_sha256": "def25c2ed37769c4fc438b3c970df45ba413ad9af885e729315837643e6d7775"
+      },
+      "sealed_mismatched": {
+        "rows": 9830,
+        "groups": 3335,
+        "genres": {
+          "letters": 1977,
+          "verbatim": 1945,
+          "facetoface": 1974,
+          "oup": 1961,
+          "nineeleven": 1973
+        },
+        "labels": {
+          "contradiction": 3240,
+          "entailment": 3461,
+          "neutral": 3129
+        },
+        "sha256": "b6894ba3c1d0de08fd7b1c602cfc9df18827c54257f7387aa292521245c1f599",
+        "group_sha256": "a0a38ed627bcb9263d261c8e6b8e2c32f7866755c1e3381ec6ab7354db90917c"
+      }
+    },
+    "raw_counts": {
+      "train": 392702,
+      "sealed_matched": 10000,
+      "sealed_mismatched": 10000
+    },
+    "exclusions": {
+      "conflicting_human_pair_labels": 188,
+      "released_evaluation_premise": 368,
+      "duplicate_text_and_label": 30,
+      "no_consensus_label": 353
+    },
+    "exclusions_sha256": "aac85f318d28bd994068f05446cbf4f2be7995175df13d515d6effd68e527bdb",
+    "group_overlaps": {
+      "train:development": 0,
+      "train:sealed_matched": 0,
+      "train:sealed_mismatched": 0,
+      "development:sealed_matched": 0,
+      "development:sealed_mismatched": 0,
+      "sealed_matched:sealed_mismatched": 0
+    },
+    "labels": {
+      "entailment": 0,
+      "contradiction": 1,
+      "neutral": 2
+    },
+    "human_source": "Adina Williams, Nikita Nangia and Samuel R. Bowman, NAACL 2018",
+    "source_page": "https://cims.nyu.edu/~sbowman/multinli/",
+    "license_scope": "OANC terms and source-specific fiction permissions/CC/public-domain terms; see the original paper",
+    "model_predictions_opened": false,
+    "costs": {
+      "wall_seconds": 38.99759170001198,
+      "cpu_seconds": 38.578125
+    }
+  }
+}

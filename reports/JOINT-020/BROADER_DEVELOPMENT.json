@@ -1,0 +1,71 @@
+{
+  "scope": "Previously available source development checks, not new sealed tests.",
+  "tracks": {
+    "credited": {
+      "semantic": {
+        "n": 256,
+        "accuracy": 0.5859375,
+        "loss": 0.8875278135819826
+      },
+      "reading": {
+        "n": 128,
+        "accuracy": 0.34375,
+        "loss": 1.4885594750521705
+      },
+      "math": {
+        "n": 128,
+        "accuracy": 0.578125,
+        "loss": 0.9780017023731489
+      },
+      "pairs": {
+        "n": 607,
+        "accuracy": 0.29489291598023065,
+        "loss": 1.6165808299328146
+      }
+    },
+    "withheld": {
+      "semantic": {
+        "n": 256,
+        "accuracy": 0.5859375,
+        "loss": 0.8872317914356245
+      },
+      "reading": {
+        "n": 128,
+        "accuracy": 0.359375,
+        "loss": 1.483167445519939
+      },
+      "math": {
+        "n": 128,
+        "accuracy": 0.578125,
+        "loss": 0.9789586707192939
+      },
+      "pairs": {
+        "n": 607,
+        "accuracy": 0.29983525535420097,
+        "loss": 1.6130555839213747
+      }
+    },
+    "initial": {
+      "semantic": {
+        "n": 256,
+        "accuracy": 0.59765625,
+        "loss": 0.8880621415155474
+      },
+      "reading": {
+        "n": 128,
+        "accuracy": 0.3125,
+        "loss": 1.4853494627168402
+      },
+      "math": {
+        "n": 128,
+        "accuracy": 0.5703125,
+        "loss": 0.9650708180197398
+      },
+      "pairs": {
+        "n": 607,
+        "accuracy": 0.29983525535420097,
+        "loss": 1.5948199039063136
+      }
+    }
+  }
+}

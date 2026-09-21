@@ -1,0 +1,7 @@
+{
+  "n": 748,
+  "accuracy": 0.5294117647058824,
+  "loss": 0.9506433759971444,
+  "cases_sha256": "2387424076d24523c814b94752bd7a8da5d1ca3cee032f24424e564a0cadbbeb",
+  "checkpoint": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb"
+}

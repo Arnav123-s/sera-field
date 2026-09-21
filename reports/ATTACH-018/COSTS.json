@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-09-21T00:24:29Z",
+  "numerical_threads": 1,
+  "memory_limit_bytes": 2147483648,
+  "attempt": "attach018-checks-001",
+  "command": [
+    "--",
+    "scripts/verify_attachment018.py"
+  ],
+  "lease_acquired": true,
+  "paid_compute": false,
+  "verified_limits_before_launch": {
+    "limit_bytes": 2147483648,
+    "flags": 8720,
+    "affinity": 1,
+    "peak_committed_bytes": 0,
+    "cpu_seconds": 0.0,
+    "active_processes": 0,
+    "total_processes": 0
+  },
+  "awake_requested": true,
+  "worker_pid": 21992,
+  "resources": {
+    "limit_bytes": 2147483648,
+    "flags": 8720,
+    "affinity": 1,
+    "peak_committed_bytes": 515407872,
+    "cpu_seconds": 5.109375,
+    "active_processes": 0,
+    "total_processes": 6
+  },
+  "wall_seconds": 5.726077300001634,
+  "returncode": 0,
+  "lease_released": true,
+  "finished_utc": "2026-09-21T00:24:35Z"
+}

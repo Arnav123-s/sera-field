@@ -1,0 +1,296 @@
+{
+  "checks": {
+    "initial_fresh_process_restore": true,
+    "graded_fresh_process_restore": true,
+    "original_goal_retained": true,
+    "credit_bound_to_decision": true,
+    "same_initial_packaged_tensors": true
+  },
+  "all_checks": true,
+  "input_sha256": "7b1fea4ee232396e8fda6aad66b89fa123368d4d58c9b0c0ca559ab4ac82899d",
+  "start": {
+    "original_goal": {
+      "hypothesis": "Someone is holding a flower.",
+      "force": 0.4,
+      "velocity": -0.2
+    },
+    "source": "Illustrative workspace: a supplied sentence and normalized simulated apparatus; no semantic link between them is asserted.",
+    "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+    "state": "324d95bc4bead090ee5536810330599bc985c50f9d56ad366196db30cfc36b7d",
+    "query": [
+      0.4,
+      -0.2
+    ],
+    "physical": 0.5288002490997314,
+    "physical_branches": [
+      0.5291801691055298,
+      0.5284320712089539,
+      0.5287885665893555
+    ],
+    "human_probabilities": [
+      0.18279367685317993,
+      0.5890496373176575,
+      0.2281566709280014
+    ],
+    "observed_events": 4,
+    "saved_revision": "28e20fd007f8c6079497ffaed699026a973d50956ad90ed298a4feff9c103f49"
+  },
+  "transition": {
+    "decision": "2c51a9ba38f59d5c0288863e245fc3ef3c6ec0aa1ab4650e1b782a07a499764a",
+    "pending": {
+      "id": "2c51a9ba38f59d5c0288863e245fc3ef3c6ec0aa1ab4650e1b782a07a499764a",
+      "goal": {
+        "hypothesis": "Someone is holding a flower.",
+        "force": 0.4,
+        "velocity": -0.2
+      },
+      "source": "Illustrative workspace: a supplied sentence and normalized simulated apparatus; no semantic link between them is asserted.",
+      "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+      "state": "324d95bc4bead090ee5536810330599bc985c50f9d56ad366196db30cfc36b7d",
+      "observed_prefix": 3,
+      "events_sha256": "084ea144f8742db4431c6556bf8a1e3ed2a21a87c921e2eb919242bb7f0e68a9",
+      "action": 2,
+      "requested": [
+        -1.0,
+        1.0
+      ],
+      "probabilities": [
+        0.09063022583723068,
+        0.12273246049880981,
+        0.1329917311668396,
+        0.0925150141119957,
+        0.12202249467372894,
+        0.12541218101978302,
+        0.09075130522251129,
+        0.09769409894943237,
+        0.10737774521112442,
+        0.017872735857963562
+      ],
+      "policy": "learned shared choice; deterministic highest-score delivery"
+    },
+    "before": {
+      "original_goal": {
+        "hypothesis": "Someone is holding a flower.",
+        "force": 0.4,
+        "velocity": -0.2
+      },
+      "source": "Illustrative workspace: a supplied sentence and normalized simulated apparatus; no semantic link between them is asserted.",
+      "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+      "state": "324d95bc4bead090ee5536810330599bc985c50f9d56ad366196db30cfc36b7d",
+      "query": [
+        0.4,
+        -0.2
+      ],
+      "physical": 0.5288002490997314,
+      "physical_branches": [
+        0.5291801691055298,
+        0.5284320712089539,
+        0.5287885665893555
+      ],
+      "human_probabilities": [
+        0.18279367685317993,
+        0.5890496373176575,
+        0.2281566709280014
+      ],
+      "observed_events": 4
+    },
+    "after": {
+      "original_goal": {
+        "hypothesis": "Someone is holding a flower.",
+        "force": 0.4,
+        "velocity": -0.2
+      },
+      "source": "Illustrative workspace: a supplied sentence and normalized simulated apparatus; no semantic link between them is asserted.",
+      "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+      "state": "d0214c054bd68045148b3552d1b8936a447705c088b2c8ff8f2a0fc66a0bd977",
+      "query": [
+        0.4,
+        -0.2
+      ],
+      "physical": 0.5147934556007385,
+      "physical_branches": [
+        0.5147892832756042,
+        0.514382541179657,
+        0.5152086615562439
+      ],
+      "human_probabilities": [
+        0.16989894211292267,
+        0.6065168380737305,
+        0.2235841602087021
+      ],
+      "observed_events": 5
+    },
+    "evidence": "fd6efe999b0e0a4207c5fbcd40023098c849b82741d07e589458308626a33ae8",
+    "evidence_id": "performed-cli-probe",
+    "performed_as_requested": true,
+    "stopped": false,
+    "saved_revision": "0be52b3f2398cebedcb46d73d1ece5689d3cd583235be7852a6baa157c30864f"
+  },
+  "credit": {
+    "decision": "2c51a9ba38f59d5c0288863e245fc3ef3c6ec0aa1ab4650e1b782a07a499764a",
+    "original_goal": {
+      "hypothesis": "Someone is holding a flower.",
+      "force": 0.4,
+      "velocity": -0.2
+    },
+    "source": "Illustrative workspace: a supplied sentence and normalized simulated apparatus; no semantic link between them is asserted.",
+    "before_weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+    "after_weights": "0bc6c5e602d37ba20cd5b47a6af6b445a20191b636dfbbfed9f317dd94e05937",
+    "transition": {
+      "decision": "2c51a9ba38f59d5c0288863e245fc3ef3c6ec0aa1ab4650e1b782a07a499764a",
+      "pending": {
+        "id": "2c51a9ba38f59d5c0288863e245fc3ef3c6ec0aa1ab4650e1b782a07a499764a",
+        "goal": {
+          "hypothesis": "Someone is holding a flower.",
+          "force": 0.4,
+          "velocity": -0.2
+        },
+        "source": "Illustrative workspace: a supplied sentence and normalized simulated apparatus; no semantic link between them is asserted.",
+        "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+        "state": "324d95bc4bead090ee5536810330599bc985c50f9d56ad366196db30cfc36b7d",
+        "observed_prefix": 3,
+        "events_sha256": "084ea144f8742db4431c6556bf8a1e3ed2a21a87c921e2eb919242bb7f0e68a9",
+        "action": 2,
+        "requested": [
+          -1.0,
+          1.0
+        ],
+        "probabilities": [
+          0.09063022583723068,
+          0.12273246049880981,
+          0.1329917311668396,
+          0.0925150141119957,
+          0.12202249467372894,
+          0.12541218101978302,
+          0.09075130522251129,
+          0.09769409894943237,
+          0.10737774521112442,
+          0.017872735857963562
+        ],
+        "policy": "learned shared choice; deterministic highest-score delivery"
+      },
+      "before": {
+        "original_goal": {
+          "hypothesis": "Someone is holding a flower.",
+          "force": 0.4,
+          "velocity": -0.2
+        },
+        "source": "Illustrative workspace: a supplied sentence and normalized simulated apparatus; no semantic link between them is asserted.",
+        "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+        "state": "324d95bc4bead090ee5536810330599bc985c50f9d56ad366196db30cfc36b7d",
+        "query": [
+          0.4,
+          -0.2
+        ],
+        "physical": 0.5288002490997314,
+        "physical_branches": [
+          0.5291801691055298,
+          0.5284320712089539,
+          0.5287885665893555
+        ],
+        "human_probabilities": [
+          0.18279367685317993,
+          0.5890496373176575,
+          0.2281566709280014
+        ],
+        "observed_events": 4
+      },
+      "after": {
+        "original_goal": {
+          "hypothesis": "Someone is holding a flower.",
+          "force": 0.4,
+          "velocity": -0.2
+        },
+        "source": "Illustrative workspace: a supplied sentence and normalized simulated apparatus; no semantic link between them is asserted.",
+        "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+        "state": "d0214c054bd68045148b3552d1b8936a447705c088b2c8ff8f2a0fc66a0bd977",
+        "query": [
+          0.4,
+          -0.2
+        ],
+        "physical": 0.5147934556007385,
+        "physical_branches": [
+          0.5147892832756042,
+          0.514382541179657,
+          0.5152086615562439
+        ],
+        "human_probabilities": [
+          0.16989894211292267,
+          0.6065168380737305,
+          0.2235841602087021
+        ],
+        "observed_events": 5
+      },
+      "evidence": "fd6efe999b0e0a4207c5fbcd40023098c849b82741d07e589458308626a33ae8",
+      "evidence_id": "performed-cli-probe",
+      "performed_as_requested": true,
+      "stopped": false
+    },
+    "independent_response": 0.48,
+    "independent_source": "separate illustrative goal computation",
+    "verifier": "scalar formula",
+    "independent_evidence_id": "illustrative-goal-receipt",
+    "signed_progress": 0.001170879759555277,
+    "policy_credit": 0.00017087975955527705,
+    "updated": true,
+    "gradient_norm": 0.0041252742521464825,
+    "update_rule": "checked on-decision weighted log likelihood; no entropy-only update",
+    "history_reencoded_under_updated_owner": true,
+    "returned_answer": {
+      "original_goal": {
+        "hypothesis": "Someone is holding a flower.",
+        "force": 0.4,
+        "velocity": -0.2
+      },
+      "source": "Illustrative workspace: a supplied sentence and normalized simulated apparatus; no semantic link between them is asserted.",
+      "weights": "0bc6c5e602d37ba20cd5b47a6af6b445a20191b636dfbbfed9f317dd94e05937",
+      "state": "b9c8df05a7a03b08fe343379bc5bc8010a24ad9dcef10eedeb09eb8bc70d2a89",
+      "query": [
+        0.4,
+        -0.2
+      ],
+      "physical": 0.5140456557273865,
+      "physical_branches": [
+        0.5140342116355896,
+        0.5136358737945557,
+        0.5144667029380798
+      ],
+      "human_probabilities": [
+        0.16979873180389404,
+        0.6064951419830322,
+        0.22370611131191254
+      ],
+      "observed_events": 5
+    },
+    "id": "1d01ab537c77c2ff167df2a4c47f97cff12024c26136f0d0d61881e9b0c93eb9",
+    "saved_revision": "b0ddef67c1191d51bbf0bd24ff069d84a580012ff20c3c8b017c76045e6dc82b"
+  },
+  "restored": {
+    "original_goal": {
+      "hypothesis": "Someone is holding a flower.",
+      "force": 0.4,
+      "velocity": -0.2
+    },
+    "source": "Illustrative workspace: a supplied sentence and normalized simulated apparatus; no semantic link between them is asserted.",
+    "weights": "0bc6c5e602d37ba20cd5b47a6af6b445a20191b636dfbbfed9f317dd94e05937",
+    "state": "b9c8df05a7a03b08fe343379bc5bc8010a24ad9dcef10eedeb09eb8bc70d2a89",
+    "query": [
+      0.4,
+      -0.2
+    ],
+    "physical": 0.5140456557273865,
+    "physical_branches": [
+      0.5140342116355896,
+      0.5136358737945557,
+      0.5144667029380798
+    ],
+    "human_probabilities": [
+      0.16979873180389404,
+      0.6064951419830322,
+      0.22370611131191254
+    ],
+    "observed_events": 5,
+    "saved_revision": "b0880cdd57bbcd5e2a716d6b6bcc81519e007237819f8284df012cddaeef1fde"
+  },
+  "scope": "Illustrative CLI operation checks, separate from final scientific evidence."
+}

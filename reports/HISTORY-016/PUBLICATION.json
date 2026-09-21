@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/Arnav123-s/sera-field",
+  "public_commit": "d11bb905cff580e7f5fa43bf8d9fce147e6623ed",
+  "source_local_revision": "c4133f140698af0e1c7a27d6e8e386f06763e798",
+  "manifested_files": 594,
+  "manifested_bytes": 29734812,
+  "github_workflow_id": 35537469198,
+  "github_workflow_url": "https://github.com/Arnav123-s/sera-field/actions/runs/35537469198",
+  "exact_revision_ci": "success",
+  "snapshot_scope": "Reviewed source, tests, completed HISTORY-016 evidence and diagnostics, new source audit and GENRE-017 implementation. Raw attachments, corpora, private history and full run trees remain local.",
+  "history_016_status_at_publication": "completed; unqualified candidate and negative findings preserved",
+  "genre_017_status_at_publication": "matched training active; no final outcome claimed",
+  "latest_source_sha256": "701f8abbf20aa87693d05feec79e0f63790b183f5b55fdf48cea429b72eef775"
+}

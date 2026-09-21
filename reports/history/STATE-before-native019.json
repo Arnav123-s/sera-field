@@ -1,0 +1,214 @@
+{
+  "completed": "UNIFIED-012, GROW-013, INQUIRY-014 and SEMANTIC-015: taught, evaluated, independently replayed, qualified and delivered; HISTORY-016 completed and preserved with its unqualified learned-history decision",
+  "full_vision": "Persistent grounded understanding, imagination, investigation and learning across language and domains",
+  "full_vision_completed": false,
+  "work_delegated": false,
+  "publication": "Verified public revision d11bb905cff580e7f5fa43bf8d9fce147e6623ed; exact-revision GitHub Linux verification passed. Completed HISTORY-016 results, preserved semantic owner, latest source audit and active GENRE-017 implementation are published.",
+  "default_checkpoint": {
+    "path": "checkpoints/SCFE-004/revisions/e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3.pt",
+    "sha256": "e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3",
+    "weight_sha256": "528a08f2bb6f5b6e640c416506b14c06bcffe626f749276b24b3817791bd2ae4",
+    "teacher_step": 6144,
+    "reward_training_attempts": 768,
+    "reward_weight_updates": 753,
+    "manifest": "checkpoints/SCFE-004/MANIFEST.json"
+  },
+  "selection_sha256": "0a959c2962380080382ee8d91ceebb711f0a2007dc3ee8bb446d15424ff6edfd",
+  "sealed_finals_opened": true,
+  "ongoing_owned_jobs": [
+    {
+      "attempt": "genre017-campaign-001",
+      "state": "runs/genre017-campaign-001/state.json",
+      "command": "scripts/complete_genre017.py",
+      "director": "scripts/finish_genre017.py",
+      "shared_lease": true
+    }
+  ],
+  "numerical_lease_released": false,
+  "resume_training": "Inspect genre017-campaign-001 and scripts/finish_genre017.py before acting. The finite director owns the active sequence; do not duplicate it. Preserve exact revisions and use its phase records if an interruption occurs.",
+  "next_executable_user_task": ".\\.venv\\Scripts\\python.exe scripts/supervise.py --attempt my-device-001 -- -m sera_field.session_cli --session local/my-device new --input examples/concept-task.json",
+  "next_research_gate": "Finish the preserved GENRE-017 director; then test and teach fresh NATIVE-019, with perception, memory and imagination trained together from the first lesson.",
+  "preserved_reference_head": "0dcbcb902706f3d299cd38a433fcf1f26a357efd",
+  "preserved_reference_checkpoint_sha256": "b29d8cccea6a7b8b9e0f0bbc28432d146a6388bca7716a828c446b3b42036d95",
+  "scope_audit": "docs/WHOLE_ARCHITECTURE.md",
+  "whole_behavior_acceptance": "docs/BEHAVIOR_ACCEPTANCE.md",
+  "curriculum": "docs/CURRICULUM.md",
+  "additional_subject_training_started": true,
+  "reward_driven_policy_updates_in_FIELD_001": 0,
+  "connected_engineering": {
+    "status": "Complete: fresh teaching, checked reward training, final evaluation, repair, fresh-process replays and packaged interfaces",
+    "tests_passed": 84,
+    "integrated_suite_tests": 80,
+    "additional_echo_tests": 4,
+    "cli_interfaces_executed": 5,
+    "report": "reports/CONNECTED-003/REPORT.md",
+    "engineering": "docs/CONNECTED_003_ENGINEERING.md",
+    "paper_coverage": "reports/CONNECTED-003/POST_BUILD_AUDIT.md",
+    "evidence_index": "reports/CONNECTED-003/EVIDENCE_INDEX.json",
+    "costs": "reports/CONNECTED-003/COSTS.json",
+    "qualified_policy": "reports/CONNECTED-003/policy-qualification/RESULTS.json",
+    "qualification_replay": "reports/CONNECTED-003/policy-qualification/REPLAY.json",
+    "echo_scope": "The earlier prior-only ECHO-005 operator remains preserved. ECHO-007 now trains complete reversible field credit inside the actual owner and is packaged as a qualified optional successor."
+  },
+  "delegated_campaign": {
+    "workspace": "D:/ai/agy/sera/labs/sera-field-002",
+    "status": "paused_by_user_preserved",
+    "campaign": "CONNECTED-002",
+    "scheduled_followup": false,
+    "branch": "ag",
+    "trained_subject_results_pending": true,
+    "protocol": "protocols/CONNECTED-002-CAMPAIGN.json",
+    "review": "reports/CONNECTED-002/DELEGATION_REVIEW_001.md"
+  },
+  "latest_research_audit": "docs/WHOLE_ARCHITECTURE.md",
+  "direct_study_checklist": "docs/WHOLE_ARCHITECTURE.md",
+  "preserved_FIELD_001": {
+    "default_checkpoint": {
+      "path": "runs\\FIELD-001\\field-11\\step-03000.pt",
+      "sha256": "6a3fef1162b82c60a008ae375085381c041973e589b07b3d128b93bd6fa2d35a",
+      "weight_sha256": "7ab174f88be7ce74f79f3f2e8b78ecc455006845486ffb1df5b3ee36db4ccd3b",
+      "step": 3000,
+      "release_path": "checkpoints/FIELD-001/field-11.pt"
+    },
+    "qualified_successor": {
+      "path": "runs\\FIELD-001\\calibrated-11.pt",
+      "sha256": "ef27122ef2fe7d8ec29b95c9a9adb5deebd3540f9f40054b81faf016f4c72f8f",
+      "weight_sha256": "20c6d56f039df7b6bfdd16afdac4d323a76dff544441b52803637110f061ae7b",
+      "step": 2500,
+      "release_path": "checkpoints/FIELD-001/calibrated-11.pt"
+    },
+    "selection_sha256": "e41e51b2f2112aa1992afef0f7f09899a8150fd8e76ca65ee20656f535a47dbe",
+    "report": "reports/FIELD-001.md",
+    "resume_training": "Completed and preserved; do not restart."
+  },
+  "scheduled_followup": false,
+  "latest_request_reconciliation": "reports/ECHO-007/REQUEST_RECONCILIATION.md",
+  "active_study": {
+    "id": "GENRE-017",
+    "status": "running matched human teaching; all three arms precede untouched final assessments",
+    "protocol": "protocols/GENRE-017.md",
+    "earlier_owners_preserved": true
+  },
+  "qualified_optional_successor": {
+    "sha256": "b8428610ee13211547ee83f9c741cc01c9fcd5581b8a10f25cb6f5b2e14d4ae1",
+    "revision": "b8428610ee13211547ee83f9c741cc01c9fcd5581b8a10f25cb6f5b2e14d4ae1.pt",
+    "parent": "0e09e802635cf73d01d0ff0d6948b8b247f42eb670030bf2a94c40f510c9d41c",
+    "weights": "6bb452bbb714d068925180aacc03cbc48ef296410361ceb990e1c50edd291a85",
+    "updates": 0,
+    "score": 0.9841417740395529,
+    "step": 1024,
+    "source_checkpoint_sha256": "3c56af8d17aefdd745f781d3ea196114b4d3d0a9100cc863668776b12f296743",
+    "role": "qualified_optional_successor",
+    "path": "checkpoints/ECHO-007/revisions/b8428610ee13211547ee83f9c741cc01c9fcd5581b8a10f25cb6f5b2e14d4ae1.pt",
+    "manifest": "checkpoints/ECHO-007/MANIFEST.json",
+    "report": "reports/ECHO-007/REPORT.md",
+    "complete_resume_state": "runs/ECHO-007/echo/revisions"
+  },
+  "echo_007": {
+    "tests_passed": 93,
+    "matched_training_arms": 3,
+    "teaching_updates_per_arm": 2048,
+    "selected_teaching_step": 1024,
+    "independent_final_replays": 4,
+    "all_final_records_exact": true,
+    "cli_interfaces_executed": 5,
+    "new_reward_updates": 0,
+    "retained_reward_parameters_exact": true,
+    "training_records": "reports/ECHO-007/LEARNED_STATE.json",
+    "source_evidence": "reports/ECHO-007/EVIDENCE_INDEX.json",
+    "costs": "reports/ECHO-007/COSTS.json",
+    "field_storage": "reports/ECHO-007/FIELD_STORAGE.json",
+    "whole_vision_completed": false
+  },
+  "persistent_task_owner": {
+    "path": "checkpoints/CONCEPT-011",
+    "weights": "afa6bea53feb6e6b74d98ea52195ff531d21cc22e3863e8eb077f21fba007ba7",
+    "manifest": "checkpoints/CONCEPT-011/MANIFEST.json",
+    "tests_passed": 106,
+    "delivery": "reports/CONCEPT-011/delivery/RESULTS.json",
+    "all_concept_cycle_costs": "reports/CONCEPT-011/TOTAL_COSTS.json"
+  },
+  "publication_record": "reports/HISTORY-016/PUBLICATION.json",
+  "publication_checkout": "D:/ai/publications/sera-field-20260920",
+  "prepared_integration": {
+    "id": "GENRE-017",
+    "status": "running; finite director continues through delivery, audit, storage inspection and reporting",
+    "protocol": "protocols/GENRE-017.md",
+    "preparation": "reports/GENRE-017/PREPARATION.md",
+    "source": "local/HUMAN-GENRE-data-v1",
+    "primary_pairs_per_arm": 371929,
+    "training_arms": 3,
+    "numerical_work_started": true,
+    "parent_rule": "qualified HISTORY-016 if its gates pass; otherwise preserved qualified SEMANTIC-015",
+    "next_after_history_audit": "Run complete_genre017.py under a fresh supervisor attempt; all three arms must finish before registration and sealed assessment.",
+    "test_attempt": "genre017-tests-001",
+    "training_started": true,
+    "parent": "checkpoints/SEMANTIC-015"
+  },
+  "latest_qualified_owner": {
+    "path": "checkpoints/SEMANTIC-015",
+    "weights": "25d8ee69aeb6cffc621f4b51d42e652e6ac5bad825f0cc7d2f511775509ba37a",
+    "checkpoint_sha256": "db851135bbca7235e743423fa14408196c0e3b829d51113180958ace3270c8f8",
+    "report": "reports/SEMANTIC-015/REPORT.md",
+    "usage": "docs/SEMANTIC_USAGE.md",
+    "selected_semantic_step": 13312
+  },
+  "semantic_015": {
+    "human_primary_pairs": 471139,
+    "rehearsal_presentations": 58880,
+    "final_n": 4096,
+    "final_accuracy": 0.592041015625,
+    "all_seven_gates": true,
+    "replay_exact": true,
+    "independent_audit": "reports/SEMANTIC-015/QUALIFICATION.json",
+    "source_intake_next": "reports/SOURCE_INTAKE/MULTINLI-1.0.json"
+  },
+  "latest_supplied_synthesis": {
+    "title": "The Singularity-Driven Holographic Architecture: A Unified Topological-Physical Substrate for General Intelligence",
+    "sha256": "701f8abbf20aa87693d05feec79e0f63790b183f5b55fdf48cea429b72eef775",
+    "read_completely": true,
+    "audit": "docs/SDHA_UNIFIED_SOURCE_AUDIT.md",
+    "source_preserved": true,
+    "active_protocol_unchanged": true
+  },
+  "history_016": {
+    "report": "reports/HISTORY-016/REPORT.md",
+    "episodes": 2048,
+    "support_presentations": 8192,
+    "selected_step": 0,
+    "qualified": false,
+    "preserved_reference": "checkpoints/SEMANTIC-015",
+    "diagnosis": "reports/HISTORY-016/DIAGNOSIS.json",
+    "replay_exact": true,
+    "independent_delivery_checks_passed": true,
+    "retained_new_histories": 0,
+    "supervised_wall_seconds": 4816.104429299987,
+    "supervised_cpu_seconds": 4747.046875,
+    "full_costs": "reports/HISTORY-016/COSTS.json"
+  },
+  "native_developmental_study": {
+    "id": "NATIVE-019",
+    "status": "implemented; awaiting exclusive numerical lease after GENRE-017",
+    "protocol": "protocols/NATIVE-019.md",
+    "architecture": "docs/NATIVE_ARCHITECTURE.md",
+    "source_preparation": "reports/NATIVE-019/SOURCE_PREPARATION.json",
+    "parent_checkpoint": null,
+    "pretrained_weights": null,
+    "matching_arms": [
+      "native",
+      "delayed",
+      "trace"
+    ],
+    "updates_per_arm": 8192,
+    "source_disjoint_final_pairs": 1496,
+    "director": "scripts/finish_native019.py",
+    "numerical_tests_executed": false,
+    "training_started": false,
+    "prospective_amendment": "protocols/NATIVE-019-AMENDMENT.md"
+  },
+  "readme_organization": {
+    "entry": "README.md",
+    "preserved_detail": "docs/README_HISTORY_20260920.md",
+    "evidence": "reports/INDEX.md"
+  }
+}

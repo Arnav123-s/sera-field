@@ -1,0 +1,8 @@
+{
+  "premise": "A person is holding a red flower beside a window.",
+  "hypotheses": [
+    "Someone holds a flower.",
+    "Nobody is holding anything.",
+    "The flower was bought this morning."
+  ]
+}

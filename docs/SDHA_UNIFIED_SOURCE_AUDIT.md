@@ -6,6 +6,11 @@ A Unified Topological-Physical Substrate for General Intelligence**. Its origina
 SHA-256 `701f8abbf20aa87693d05feec79e0f63790b183f5b55fdf48cea429b72eef775`.
 This audit is an engineering interpretation, not a rewrite of the original source.
 
+The later attachment `c12b6149-c8a8-41a1-ae6a-acb71d78af45/Pasted text.txt`
+was checked on 2026-09-20. Its complete SHA-256 is identical to the preserved
+source above. It adds no changed text or new requirement. I retain this receipt
+without duplicating the private source or restarting completed experiments.
+
 The document combines the earlier THDFT/SCFE proposal with the subsequent SDHA
 memory synthesis. It does not replace the current local owner with its historical
 Stage-47 description. At intake, the qualified field owner is SEMANTIC-015,

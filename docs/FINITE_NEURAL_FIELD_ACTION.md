@@ -57,3 +57,42 @@ conditional generator; these are different derivatives. This conditional action
 does not supply a normalized marginal distribution for an arbitrary raw textbook.
 The [prospective protocol](../protocols/GENRE-017.md) binds implementation,
 teaching, independent metrics, retention and publication to that precise scope.
+
+## Actual route through the continuing owner
+
+```mermaid
+flowchart TD
+    T[Human premise and proposed statement] --> W[Trained word and local encoders]
+    O[Observed physical responses] --> P[Retained observation encoder]
+    W --> B[Boundary source in the shared field]
+    P --> B
+    B --> A[Conditional finite ensemble action]
+    A --> H[Scoped history drive]
+    H --> C[Curvature recall and stationary transformation]
+    C --> M[Conserved memory recall and covariance transport]
+    M --> E[Graded field and timed reversible propagation]
+    E --> R[Task readouts and acquired response relation]
+    R --> Q[Conditional meanings or imagined consequences]
+    Q --> V[Independent human annotation or observed outcome]
+    V --> U[Qualified learning and retained evidence]
+```
+
+The arrows describe the implemented computation order, not a claim that the
+composition is one isolated physical Hamiltonian. They are implemented by
+`GenreOwner` and `EnsembleField`, extending the same retained owner. A valid
+conditional hypothesis remains distinct from an observation received at V.
+
+The semantic task first encodes the observed premise, then evaluates three
+learned conditional continuations from that state. Their three-way probabilities
+are averaged for the returned interpretation. The physical task uses this same
+field before acquiring coefficients and optional residual features from actual
+observations. The encoder/readout shapes, finite candidate structure and human
+annotations are supplied; gradients teach the mappings and new action parameters.
+
+In GENRE-017, semantic and finite-action parameters receive gradients throughout
+the curriculum. The shared word/local encoder is enabled after the first 1,024
+primary updates at one-tenth their learning rate. Earlier-subject rehearsal is
+interleaved. Existing field parameters and stored factual memories are protected;
+their presence does not mean every memory mechanism was newly trained in this
+study. The independent audit compares both their identities and actual retained
+task performance.

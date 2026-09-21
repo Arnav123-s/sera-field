@@ -1,0 +1,84 @@
+{
+  "metrics": {
+    "candidate": {
+      "reading": {
+        "n": 384,
+        "accuracy": 0.65625
+      },
+      "math": {
+        "n": 192,
+        "accuracy": 0.09895833333333333
+      },
+      "pairs": {
+        "dailydialog": {
+          "n": 48,
+          "accuracy": 0.2708333333333333
+        },
+        "webster": {
+          "n": 48,
+          "accuracy": 0.6041666666666666
+        }
+      },
+      "semantic": {
+        "n": 4096,
+        "accuracy": 0.51708984375,
+        "loss": 0.9852639520540833
+      }
+    },
+    "parent": {
+      "reading": {
+        "n": 384,
+        "accuracy": 0.6510416666666666
+      },
+      "math": {
+        "n": 192,
+        "accuracy": 0.09895833333333333
+      },
+      "pairs": {
+        "dailydialog": {
+          "n": 48,
+          "accuracy": 0.22916666666666666
+        },
+        "webster": {
+          "n": 48,
+          "accuracy": 0.6458333333333334
+        }
+      },
+      "semantic": {
+        "n": 4096,
+        "accuracy": 0.592041015625,
+        "loss": 0.8813004223629832
+      }
+    }
+  },
+  "physical": {
+    "candidate": {
+      "n": 128,
+      "forward_mse": 0.005103748860613492,
+      "inverse_outcome_error": 0.003057984559298531,
+      "counterfactual_mse": 0.0019796583883020043,
+      "planning_mse": 0.0004221746528787846,
+      "direction_correct": 0.9921875,
+      "cases_sha256": "3890020e8bb43efb03e9e14c443e7225d3fba7d0156536547b70a2ae8f92eddf"
+    },
+    "parent": {
+      "n": 128,
+      "forward_mse": 0.0051109671989291285,
+      "inverse_outcome_error": 0.0030574371800812673,
+      "counterfactual_mse": 0.001981138353037517,
+      "planning_mse": 0.0004221746528787846,
+      "direction_correct": 0.9921875,
+      "cases_sha256": "ff0d57372116071b7216fffdd74a660bd304f0871c2a76e71cdbca8bf39c77e0"
+    }
+  },
+  "checks": {
+    "reading": true,
+    "math": true,
+    "semantic": false,
+    "pairs": true,
+    "forward_mse": true,
+    "counterfactual_mse": true,
+    "planning_mse": true,
+    "direction": true
+  }
+}

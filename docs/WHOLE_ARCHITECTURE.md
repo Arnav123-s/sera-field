@@ -5,6 +5,44 @@ imagination, investigation, correction and retained knowledge interact. A releas
 of one component does not complete this objective. Earlier studies, failures and
 owners remain immutable references.
 
+The current priority is the user's developmental requirement: memory, perception
+and imagination should learn together from initialization. The
+[NATIVE-019 owner](NATIVE_ARCHITECTURE.md) is implemented without a parent checkpoint
+or frozen inherited learner. Its [prospective protocol](../protocols/NATIVE-019.md)
+compares immediate richer history, delayed richer history and a basic retained trace on one interleaved human/simulation
+course. The preceding GENRE-017 director completed. The native course now passed
+all 11 qualification checks, including actual first-lesson gradient replay,
+learned parameter changes, use of history, independent finals and persistent
+delivery. Every arm completed 262,144 presentations and selected update 8,192.
+The primary scored 53.34% across 1,496 reserved human pairs and physical MSE
+0.0530 on 512 systems. Its final predictions replayed exactly. The paired
+native-versus-delayed language intervals overlap zero: this course supports
+useful jointly trained memory, not a universal claim that adding memory later
+prevents learning.
+This tests a specific coupled learning procedure; it does not retroactively
+attribute HISTORY-016's result to when memory was introduced.
+
+The next [JOINT-020 course](../protocols/JOINT-020.md) joins retained human text,
+observed measurements, conditional action scoring, independently checked reward,
+actual updates of the same weights, and return to both original questions. Two
+matched teaching arms receive identical lessons and measurements; one additionally
+learns from verified investigation credit. Both 2,048-update courses, reserved
+assessment and exact replay are complete. Sixteen persistent investigations
+caused real reward-weight updates and restored their goals, owner and optimizer.
+The candidate improved returned mixed-task answers and retained ordinary native
+human/physical performance. Its reward-specific interval overlapped zero. A
+separate design audit also found family/order confounding, so the candidate stays
+preserved while counterbalanced teaching is prepared. The original final results
+and all costs remain intact; the next refinement needs untouched evaluations.
+
+**Current-owner scope.** NATIVE-019 contains the Clifford/sheaf boundary and
+fast/slow/active-bulk continuum from initialization. Earlier covariance/echo,
+neural-action and protected storage implementations remain in their preserved
+owners. They are not silently counted as active in the native update. JOINT-020
+reuses the native parameters; it adds a training and evidence protocol, not all
+the other proposed operators. Whole-research completion requires those explicit
+connections and their behavioral tests as well.
+
 The preceding cited private source is `intake/thdft-cited-20260920/proposal.txt`, SHA-256
 `5764e1e09f0375085b5e73697f6f5a4fbaf896e6f6d5437a500d6f36044e50ff`.
 It adds 59 bibliography links and citation formatting to the same twelve-section
@@ -17,8 +55,16 @@ The latest additional synthesis is preserved at
 Its [source audit](SDHA_UNIFIED_SOURCE_AUDIT.md) maps the repeated mechanisms and
 new geodesic, causal-propagation, topology-growth and active-retry requirements.
 The history study completed without changing its frozen protocol. The next
-[finite neural-action integration](FINITE_NEURAL_FIELD_ACTION.md) is prospectively
-specified and implemented; its numerical tests passed and matched teaching is next.
+[finite neural-action integration](FINITE_NEURAL_FIELD_ACTION.md) completed its
+matched teaching, reserved assessment, replay, persistent delivery and independent
+audit. New-genre learning passed its gate; earlier semantic retention did not,
+so the qualified parent and candidate remain separately preserved. The separate
+[attachment engineering contract](../protocols/ATTACH-018-ENGINEERING.md) has an
+explicit-graph implementation and eight passing prospective tests.
+It changes actual stalk dimensions; learned useful growth still needs the
+subsequent behavioral integration. [Coupled-dynamics alternatives](UNIFIED_DYNAMICS_ALTERNATIVES.md)
+record primary research and a finite shared-energy derivation without altering
+the current experiment.
 
 ## Required connections
 
@@ -29,20 +75,23 @@ specified and implemented; its numerical tests passed and matched teaching is ne
 | Covariance sheaf | UNIFIED-012 trains SPD log-group stalks with orthogonal congruence in the task path | Broader transfer assessment of the coupled representation |
 | Temporal echo learning | UNIFIED-012 trains time-varying sources and intermediate losses; gradients, timing and resume are checked | Broader sequential tasks beyond the present finite flow |
 | Conserved condensate memory | UNIFIED-012 and SEMANTIC-015 couple conserved memory to the same boundary; HISTORY-016 completed 2,048 update-learning episodes, controls, replay and delivery | Preserve the history result and qualify a more informative learned retrieval/update procedure; step zero won the completed selection |
+| Memory present during initial learning | NATIVE-019 trains input maps, field, observed fast/slow/bulk updates and conditional answers from the first lesson; all 11 native gates passed | Test longer and mixed histories, learning methods suited to the dynamics, retained prior abilities and use in a complete investigation |
 | Topological memory code | Actual Chern calculation and bounded density codec with scalar-mass noise tests | General Hamiltonian perturbations, revision and semantic retention tests |
 | Tagging and local credit | Source/goal/predictor-bound capture; exact restricted recurrent eligibility in INQUIRY-014 | Complete sustained local-credit assessment and connect true curvature tags |
 | Stationary dissipative credit | GROW-013 trains the stable stationary FHN source transformation; implicit gradients checked | Broader nonstationary/dissipative mechanisms need separate contracts |
 | Scale-dependent adequacy | GROW-013 records a finite Gaussian action, regulator and flow with independent calibration | Learn a qualified capacity decision and test actual structural attachment |
 | Learned structural extension | GROW-013 learns residual features, qualifies acquired coefficients and returns five uses | Literal sheaf-cell/ambient-space growth and general concept construction |
 | Measurement and alternative routes | INQUIRY-014 completes explicit fusion spaces, all measurement outcomes, sustained local-credit training, independent replay and persistent delivery | Improve procedure learning on fresh training/development tasks; step zero won this selection |
+| Fibonacci-specific boundary imagination | Earlier finite Ising protocols and conditional branch protection remain preserved | Implement the specified Fibonacci F/R data and outcome corrections; assess its task contribution and classical cost before assigning this requirement |
 | Five uses of one relationship | CONCEPT-011 and GROW-013 pass finite acceptance and persistent-delivery checks | Broader acquired relationships and original-goal tasks |
 | Diverse useful discoveries | Guarded investigation and verified credit | Learned distinct proposals, canonical deduplication, complementary coverage and independent outcomes |
 | Perspective, poetry, practical understanding | Human source teaching retained | Source-grounded interpretation and observer/goal distinctions, without attributing feelings from scores |
 | Continued learning and improved procedures | Scoped updates and protected retention | Sequence learning, transfer, retention and independent learning-efficiency assessment |
 | Goal-conditioned geometric paths | Existing acquired-model planning and covariance geometry | Explicit learned metric, trajectory action and intervention-qualified return; distinguish geometry from literal gravity |
 | Causal propagation | Local field operators and recorded intervention boundaries | Finite dependency-cone tests under the stated dynamics; diffusion alone is not a strict physical light cone |
-| Correlator-derived neural action | GENRE-017 exact finite ensemble, action force and fourth-cumulant expansion are implemented through the actual field; tests passed | Complete matched broader human teaching and qualification |
+| Correlator-derived neural action | GENRE-017 completed exact finite-ensemble teaching, action-force checks, controls and replay; new-genre accuracy improved while earlier semantic retention declined | Preserve the result; investigate retention under a fresh protocol without tuning the opened finals |
 | Growth followed by retry | Bounded learned feature refinement and retained original goals | Literal structure attachment, preserved old sections and independently checked active retry |
+| One unified trained dynamics | Native boundary and memory learn jointly; JOINT-020 connects checked reward to their existing shared weights | Couple the other named operators under explicit mathematical contracts, then train and evaluate the complete learner as a whole |
 
 Every requirement needs an implemented connection and behavioral evidence.
 A source title, mathematical unit test or shared checkpoint alone does not close
@@ -128,8 +177,10 @@ recorded separately. No training imports external pretrained weights.
 - [x] Complete training/evaluation of measurement-based investigation and local eligibility.
 - [x] Complete human semantic teaching and actual curvature-memory evaluation.
 - [x] Implement, train and independently assess connected dual-timescale and active-bulk history.
-- [ ] Qualify a useful learned history update with independently improved query answers and retained knowledge.
-- [ ] Complete the tested finite neural-action curriculum and its independent decision.
+- [x] Qualify a useful native history connection jointly trained from the first lesson (NATIVE-019).
+- [x] Assess a complete retained situation, investigation, reward-weight update and restart through that owner (JOINT-020).
+- [ ] Qualify the reward procedure after counterbalanced chronology/family teaching and a fresh comparison.
+- [x] Complete the tested finite neural-action curriculum and its independent decision.
 - [ ] Complete broad interpretation, alternative discovery and continued-learning tests.
 - [ ] Re-audit every research requirement against actual executable evidence.
 - [ ] Publish source, measured results, costs and exact resumable state.

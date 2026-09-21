@@ -1,0 +1,131 @@
+{
+  "owner": "runs\\GENRE-017\\exact_noisy",
+  "selection": {
+    "sha256": "2b92dacecb31ae2e1f084aee5cdc0d357327b2c6a4ffb482178467cc7242f5d0",
+    "revision": "2b92dacecb31ae2e1f084aee5cdc0d357327b2c6a4ffb482178467cc7242f5d0.pt",
+    "parent": "7db1799f0fb0cc496c2dd2aa4db628d288ea92317d8347fd5b736523ffff3e22",
+    "weights": "e9ba737c4f171e108e10039657aea47c84d2962b0d3c0cc3769f593807eeffa8",
+    "updates": 0,
+    "semantic_step": 11623,
+    "n": 512,
+    "accuracy": 0.517578125,
+    "loss": 0.9936923664063215
+  },
+  "selected_revision_file_bytes": 12036363,
+  "revision_role": "local study revision; may contain training state",
+  "parameters": {
+    "logical_bytes": 3569980,
+    "unique_backing_bytes": 3569980,
+    "tensor_count": 104,
+    "elements": 892495
+  },
+  "buffers": {
+    "logical_bytes": 166929,
+    "unique_backing_bytes": 166929,
+    "tensor_count": 18,
+    "elements": 18138
+  },
+  "persistent_tensors": {
+    "logical_bytes": 3736909,
+    "unique_backing_bytes": 3736909,
+    "tensor_count": 122,
+    "elements": 910633
+  },
+  "buffer_categories": {
+    "field.history_": {
+      "logical_bytes": 126945,
+      "unique_backing_bytes": 126945,
+      "tensor_count": 8,
+      "elements": 8120
+    },
+    "field.curvature_memory.": {
+      "logical_bytes": 19992,
+      "unique_backing_bytes": 19992,
+      "tensor_count": 5,
+      "elements": 5009
+    },
+    "field.memory.": {
+      "logical_bytes": 19992,
+      "unique_backing_bytes": 19992,
+      "tensor_count": 5,
+      "elements": 5009
+    }
+  },
+  "specification": {
+    "type": "finite-neural-action-017",
+    "width": 48,
+    "nodes": 8,
+    "rounds": 4,
+    "backend": "echo",
+    "steps": 32,
+    "precision_kind": "full",
+    "lexical_size": 4096,
+    "base_route_scale": 0.0,
+    "capture_enabled": true,
+    "extension_width": 16,
+    "action_kind": "exact",
+    "teaching_noise": 0.03
+  },
+  "scope": "Logical tensor bytes and unique backing allocations; not peak process memory or an asymptotic complexity claim.",
+  "resumable_training": {
+    "revision": {
+      "sha256": "2b92dacecb31ae2e1f084aee5cdc0d357327b2c6a4ffb482178467cc7242f5d0",
+      "revision": "2b92dacecb31ae2e1f084aee5cdc0d357327b2c6a4ffb482178467cc7242f5d0.pt",
+      "parent": "7db1799f0fb0cc496c2dd2aa4db628d288ea92317d8347fd5b736523ffff3e22",
+      "weights": "e9ba737c4f171e108e10039657aea47c84d2962b0d3c0cc3769f593807eeffa8",
+      "updates": 0
+    },
+    "file_bytes": 12036363,
+    "all_saved_tensors": {
+      "logical_bytes": 10215561,
+      "unique_backing_bytes": 10215561,
+      "tensor_count": 186,
+      "elements": 2534088
+    },
+    "optimizer_tensors": {
+      "logical_bytes": 6473596,
+      "unique_backing_bytes": 6473596,
+      "tensor_count": 63,
+      "elements": 1618399
+    },
+    "scope": "Latest committed training state, separately loaded; not summed into inference storage."
+  },
+  "single_field_boundary": {
+    "batch": 1,
+    "input": {
+      "logical_bytes": 96,
+      "unique_backing_bytes": 96,
+      "tensor_count": 1,
+      "elements": 24
+    },
+    "returned_state": {
+      "logical_bytes": 256,
+      "unique_backing_bytes": 1024,
+      "tensor_count": 1,
+      "elements": 64
+    },
+    "returned_features": {
+      "logical_bytes": 36,
+      "unique_backing_bytes": 36,
+      "tensor_count": 1,
+      "elements": 9
+    },
+    "scope": "Returned state only; excludes internal workspaces, parameters and caller storage."
+  },
+  "semantic_differentiation_tape": {
+    "logical_bytes": 495152,
+    "unique_backing_bytes": 393360,
+    "tensor_count": 937,
+    "elements": 102655,
+    "batch": 1,
+    "request": {
+      "premise": "A person is holding a flower.",
+      "hypothesis": "Someone is holding a flower."
+    },
+    "finite_output": true,
+    "scope": "Saved tensors for one complete semantic forward, including encoder, three branches and readout; all parameters require gradients, no backward/update performed."
+  },
+  "weights_after": "e9ba737c4f171e108e10039657aea47c84d2962b0d3c0cc3769f593807eeffa8",
+  "attempt": "genre017-storage-001",
+  "script_sha256": "62989eee6e1f7de4a07a9c3832a42e609265514f17f5cc82fdc91076358b5d52"
+}

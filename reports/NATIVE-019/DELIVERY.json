@@ -1,0 +1,2303 @@
+{
+  "checkpoint": {
+    "revision": "406649900b47b00c5e8339b42cc2b93c96f3dd3efc37f4c7f4ad6e2854c4fd3a.pt",
+    "sha256": "406649900b47b00c5e8339b42cc2b93c96f3dd3efc37f4c7f4ad6e2854c4fd3a",
+    "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+    "step": 8192,
+    "score": 0.5460253147727442,
+    "tracks": {
+      "semantic": {
+        "n": 256,
+        "accuracy": 0.59765625,
+        "loss": 0.8880621415155474
+      },
+      "reading": {
+        "n": 128,
+        "accuracy": 0.3125,
+        "loss": 1.4853494627168402
+      },
+      "math": {
+        "n": 128,
+        "accuracy": 0.5703125,
+        "loss": 0.9650708180197398
+      },
+      "pairs": {
+        "n": 607,
+        "accuracy": 0.29983525535420097,
+        "loss": 1.5948199039063136
+      },
+      "physics": {
+        "n": 128,
+        "mse": 0.052828215662657385
+      }
+    }
+  },
+  "checks": {
+    "0:branch_isolation": true,
+    "0:exact_restart": true,
+    "0:actual_intervention": true,
+    "0:original_goal": true,
+    "0:duplicate_rejected": true,
+    "fresh_process_cli": true,
+    "1:branch_isolation": true,
+    "1:exact_restart": true,
+    "1:actual_intervention": true,
+    "1:original_goal": true,
+    "1:duplicate_rejected": true,
+    "2:branch_isolation": true,
+    "2:exact_restart": true,
+    "2:actual_intervention": true,
+    "2:original_goal": true,
+    "2:duplicate_rejected": true,
+    "3:branch_isolation": true,
+    "3:exact_restart": true,
+    "3:actual_intervention": true,
+    "3:original_goal": true,
+    "3:duplicate_rejected": true,
+    "4:branch_isolation": true,
+    "4:exact_restart": true,
+    "4:actual_intervention": true,
+    "4:original_goal": true,
+    "4:duplicate_rejected": true,
+    "5:branch_isolation": true,
+    "5:exact_restart": true,
+    "5:actual_intervention": true,
+    "5:original_goal": true,
+    "5:duplicate_rejected": true,
+    "6:branch_isolation": true,
+    "6:exact_restart": true,
+    "6:actual_intervention": true,
+    "6:original_goal": true,
+    "6:duplicate_rejected": true,
+    "7:branch_isolation": true,
+    "7:exact_restart": true,
+    "7:actual_intervention": true,
+    "7:original_goal": true,
+    "7:duplicate_rejected": true,
+    "8:branch_isolation": true,
+    "8:exact_restart": true,
+    "8:actual_intervention": true,
+    "8:original_goal": true,
+    "8:duplicate_rejected": true,
+    "9:branch_isolation": true,
+    "9:exact_restart": true,
+    "9:actual_intervention": true,
+    "9:original_goal": true,
+    "9:duplicate_rejected": true,
+    "10:branch_isolation": true,
+    "10:exact_restart": true,
+    "10:actual_intervention": true,
+    "10:original_goal": true,
+    "10:duplicate_rejected": true,
+    "11:branch_isolation": true,
+    "11:exact_restart": true,
+    "11:actual_intervention": true,
+    "11:original_goal": true,
+    "11:duplicate_rejected": true,
+    "12:branch_isolation": true,
+    "12:exact_restart": true,
+    "12:actual_intervention": true,
+    "12:original_goal": true,
+    "12:duplicate_rejected": true,
+    "13:branch_isolation": true,
+    "13:exact_restart": true,
+    "13:actual_intervention": true,
+    "13:original_goal": true,
+    "13:duplicate_rejected": true,
+    "14:branch_isolation": true,
+    "14:exact_restart": true,
+    "14:actual_intervention": true,
+    "14:original_goal": true,
+    "14:duplicate_rejected": true,
+    "15:branch_isolation": true,
+    "15:exact_restart": true,
+    "15:actual_intervention": true,
+    "15:original_goal": true,
+    "15:duplicate_rejected": true
+  },
+  "cases": [
+    {
+      "id": "a27117bc69757f9b69046205aecd42e6d4707337875329c5733ab9da5bbd4456",
+      "before": {
+        "original_goal": {
+          "force": -0.9899240588158433,
+          "velocity": -0.6265210375353523
+        },
+        "source": "98e042f7bab720d787da60d93978fa92bc382adaae5459187df64545cea557f5",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "1d1cbfd23292fcf4660279bc1692cc7926d01453b7acb9ccca9474f9da8107a3",
+        "queries": [
+          [
+            -0.9899240588158433,
+            -0.6265210375353523
+          ]
+        ],
+        "predictions": [
+          -1.086778998374939
+        ],
+        "conditional_branches": [
+          [
+            -1.0864001512527466,
+            -1.088135838508606,
+            -1.0858010053634644
+          ]
+        ],
+        "observed_count": 4
+      },
+      "conditional": {
+        "original_goal": {
+          "force": -0.9899240588158433,
+          "velocity": -0.6265210375353523
+        },
+        "source": "98e042f7bab720d787da60d93978fa92bc382adaae5459187df64545cea557f5",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "1d1cbfd23292fcf4660279bc1692cc7926d01453b7acb9ccca9474f9da8107a3",
+        "queries": [
+          [
+            -1.2899240588158434,
+            -0.6265210375353523
+          ],
+          [
+            -0.6899240588158433,
+            -0.6265210375353523
+          ]
+        ],
+        "predictions": [
+          -1.2332509756088257,
+          -0.8696610331535339
+        ],
+        "conditional_branches": [
+          [
+            -1.232374906539917,
+            -1.2350248098373413,
+            -1.2323533296585083
+          ],
+          [
+            -0.8698724508285522,
+            -0.8705810904502869,
+            -0.8685296773910522
+          ]
+        ],
+        "observed_count": 4
+      },
+      "proposal": {
+        "id": "30d40d1f2aa71fb0a675644c6587fa7797137c4cd7d7dde510f2dea4dbc45fc0",
+        "goal": {
+          "force": -0.9899240588158433,
+          "velocity": -0.6265210375353523
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "1d1cbfd23292fcf4660279bc1692cc7926d01453b7acb9ccca9474f9da8107a3",
+        "requested": {
+          "force": -1.0,
+          "velocity": -1.0
+        },
+        "policy": "fixed maximum branch disagreement on a supplied finite grid",
+        "predicted_response": -0.9065654873847961
+      },
+      "actual_evidence": {
+        "id": "a27117bc69757f9b69046205aecd42e6d4707337875329c5733ab9da5bbd4456:new-probe",
+        "source": "6d6b670b4cbdbfce4a8bc96ab220b548f88a5e5f3e0d853cf0a53d09d46ded71",
+        "performed": true,
+        "force": -1.0,
+        "velocity": -1.0,
+        "response": -1.453777788735659
+      },
+      "credit": {
+        "decision": "30d40d1f2aa71fb0a675644c6587fa7797137c4cd7d7dde510f2dea4dbc45fc0",
+        "original_goal": {
+          "force": -0.9899240588158433,
+          "velocity": -0.6265210375353523
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "before_state": "1d1cbfd23292fcf4660279bc1692cc7926d01453b7acb9ccca9474f9da8107a3",
+        "after_state": "630053dd9d9278b609b41ddf224a1b787e29470561b8c0a1a7def78b5f9c2cbc",
+        "before": -1.086778998374939,
+        "after": -1.4736868143081665,
+        "evidence": "790e9397f84312d2d198c564b3fa664f959573421580145a29b597c3afe937c0",
+        "evidence_id": "a27117bc69757f9b69046205aecd42e6d4707337875329c5733ab9da5bbd4456:new-probe",
+        "performed_as_requested": true,
+        "independent_response": -1.6542749450876246,
+        "outcome_source": "a27117bc69757f9b69046205aecd42e6d4707337875329c5733ab9da5bbd4456:withheld-original-goal",
+        "verifier": "d2a7b14ef4c913174302313abd56ce007f49f2ed4d630b56dd8dd2ffa7e1dfea",
+        "signed_progress": 0.2894395765569087,
+        "positive_credit": 0.2894395765569087,
+        "id": "3ffc3b9a0c5ad077b82c655fd50cb9e91cd80db53ff48dedc91ff241645b2ad8"
+      },
+      "returned_answer": {
+        "original_goal": {
+          "force": -0.9899240588158433,
+          "velocity": -0.6265210375353523
+        },
+        "source": "98e042f7bab720d787da60d93978fa92bc382adaae5459187df64545cea557f5",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "45594a920b5c153b283d9dc143c19cdd5f1374fc7e7822468987919a7b56d9ab",
+        "queries": [
+          [
+            -0.9899240588158433,
+            -0.6265210375353523
+          ]
+        ],
+        "predictions": [
+          -1.4736868143081665
+        ],
+        "conditional_branches": [
+          [
+            -1.4729679822921753,
+            -1.4754139184951782,
+            -1.4726786613464355
+          ]
+        ],
+        "observed_count": 5
+      },
+      "revision": "10546c7d7b4c7bc00164b8ccbcd0e2ff2d186d093faa50fa890379ddeaed522f"
+    },
+    {
+      "id": "611b6660531ba102f22c41cbfb0bbdb674057c96df99884c64e7c4424ec8f9e7",
+      "before": {
+        "original_goal": {
+          "force": 0.09441695481962875,
+          "velocity": -0.6775111258709476
+        },
+        "source": "b265ca557c71d84d3449a45d3e5d8af98b0be8025c4191cd4519d5c1314cf010",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "1981627a00ac09b6dbdb31dc895f20729407204c12d88cedfa2aa5180508e196",
+        "queries": [
+          [
+            0.09441695481962875,
+            -0.6775111258709476
+          ]
+        ],
+        "predictions": [
+          0.4753904640674591
+        ],
+        "conditional_branches": [
+          [
+            0.47475555539131165,
+            0.47479525208473206,
+            0.476620614528656
+          ]
+        ],
+        "observed_count": 4
+      },
+      "conditional": {
+        "original_goal": {
+          "force": 0.09441695481962875,
+          "velocity": -0.6775111258709476
+        },
+        "source": "b265ca557c71d84d3449a45d3e5d8af98b0be8025c4191cd4519d5c1314cf010",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "1981627a00ac09b6dbdb31dc895f20729407204c12d88cedfa2aa5180508e196",
+        "queries": [
+          [
+            -0.20558304518037124,
+            -0.6775111258709476
+          ],
+          [
+            0.39441695481962874,
+            -0.6775111258709476
+          ]
+        ],
+        "predictions": [
+          0.16160982847213745,
+          0.7449304461479187
+        ],
+        "conditional_branches": [
+          [
+            0.16060654819011688,
+            0.16120772063732147,
+            0.1630152016878128
+          ],
+          [
+            0.7448839545249939,
+            0.7441298365592957,
+            0.7457774877548218
+          ]
+        ],
+        "observed_count": 4
+      },
+      "proposal": {
+        "id": "bebb3e9857eb332ffae4b2f5f7a481d8789872852afac370e2c8d63b11429bad",
+        "goal": {
+          "force": 0.09441695481962875,
+          "velocity": -0.6775111258709476
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "1981627a00ac09b6dbdb31dc895f20729407204c12d88cedfa2aa5180508e196",
+        "requested": {
+          "force": 1.0,
+          "velocity": 1.0
+        },
+        "policy": "fixed maximum branch disagreement on a supplied finite grid",
+        "predicted_response": 0.7161731719970703
+      },
+      "actual_evidence": {
+        "id": "611b6660531ba102f22c41cbfb0bbdb674057c96df99884c64e7c4424ec8f9e7:new-probe",
+        "source": "edd189b0f148b065c37e703cd18934b1f5a7d129eba445609c64d66d5c2671dc",
+        "performed": true,
+        "force": 1.0,
+        "velocity": 1.0,
+        "response": 0.3723674996448426
+      },
+      "credit": {
+        "decision": "bebb3e9857eb332ffae4b2f5f7a481d8789872852afac370e2c8d63b11429bad",
+        "original_goal": {
+          "force": 0.09441695481962875,
+          "velocity": -0.6775111258709476
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "before_state": "1981627a00ac09b6dbdb31dc895f20729407204c12d88cedfa2aa5180508e196",
+        "after_state": "c324bb561f8d0e95724c17038d085017c0d9304f5f0b6b45558cc3e135bccc24",
+        "before": 0.4753904640674591,
+        "after": 0.3947094678878784,
+        "evidence": "8138d6c3c81eb62d7d7585538c5ba366835715dbe163bb4c3eb7ea86900de858",
+        "evidence_id": "611b6660531ba102f22c41cbfb0bbdb674057c96df99884c64e7c4424ec8f9e7:new-probe",
+        "performed_as_requested": true,
+        "independent_response": 0.5069741011410287,
+        "outcome_source": "611b6660531ba102f22c41cbfb0bbdb674057c96df99884c64e7c4424ec8f9e7:withheld-original-goal",
+        "verifier": "d2a7b14ef4c913174302313abd56ce007f49f2ed4d630b56dd8dd2ffa7e1dfea",
+        "signed_progress": -0.011605821748669377,
+        "positive_credit": 0.0,
+        "id": "7eb9d7b55e9a9097a7c11afacf9b87809cb7140199e5cbc1c74a5908fa09dbe8"
+      },
+      "returned_answer": {
+        "original_goal": {
+          "force": 0.09441695481962875,
+          "velocity": -0.6775111258709476
+        },
+        "source": "b265ca557c71d84d3449a45d3e5d8af98b0be8025c4191cd4519d5c1314cf010",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "4e7875a51d0624c78eeb45258967bc50c6ba284d01be4fbef7b29d3d72f0b2e8",
+        "queries": [
+          [
+            0.09441695481962875,
+            -0.6775111258709476
+          ]
+        ],
+        "predictions": [
+          0.3947094678878784
+        ],
+        "conditional_branches": [
+          [
+            0.3942374885082245,
+            0.39405301213264465,
+            0.3958379328250885
+          ]
+        ],
+        "observed_count": 5
+      },
+      "revision": "e324df1b268801c5433a3d25193166d465500faee94be365d64481bdf2ae0660"
+    },
+    {
+      "id": "fd5a58c27099cdbc213258b558061e226199a1a9bf9ea2bb5353c0f025f42423",
+      "before": {
+        "original_goal": {
+          "force": -0.8626613538826773,
+          "velocity": -0.05625018840399432
+        },
+        "source": "c5191fe7e4c96cf4e858f7e70c7c356cc733595a716955a5f5f26609981b0fc6",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "b09c4415670ffeaa44a9bec9fb8d99b235cebfc27a805b0b9d4912bcf24f5ce9",
+        "queries": [
+          [
+            -0.8626613538826773,
+            -0.05625018840399432
+          ]
+        ],
+        "predictions": [
+          -0.5540682673454285
+        ],
+        "conditional_branches": [
+          [
+            -0.5546261668205261,
+            -0.5542119741439819,
+            -0.5533667802810669
+          ]
+        ],
+        "observed_count": 4
+      },
+      "conditional": {
+        "original_goal": {
+          "force": -0.8626613538826773,
+          "velocity": -0.05625018840399432
+        },
+        "source": "c5191fe7e4c96cf4e858f7e70c7c356cc733595a716955a5f5f26609981b0fc6",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "b09c4415670ffeaa44a9bec9fb8d99b235cebfc27a805b0b9d4912bcf24f5ce9",
+        "queries": [
+          [
+            -1.1626613538826773,
+            -0.05625018840399432
+          ],
+          [
+            -0.5626613538826772,
+            -0.05625018840399432
+          ]
+        ],
+        "predictions": [
+          -0.7447690367698669,
+          -0.35083556175231934
+        ],
+        "conditional_branches": [
+          [
+            -0.7449663281440735,
+            -0.7450137734413147,
+            -0.7443270087242126
+          ],
+          [
+            -0.35183605551719666,
+            -0.3509269952774048,
+            -0.34974363446235657
+          ]
+        ],
+        "observed_count": 4
+      },
+      "proposal": {
+        "id": "9f0710d784e0360375e73210bf7fb8c4227b7346339c72339fbf9b3c9fd91064",
+        "goal": {
+          "force": -0.8626613538826773,
+          "velocity": -0.05625018840399432
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "b09c4415670ffeaa44a9bec9fb8d99b235cebfc27a805b0b9d4912bcf24f5ce9",
+        "requested": {
+          "force": 0.0,
+          "velocity": 0.0
+        },
+        "policy": "fixed maximum branch disagreement on a supplied finite grid",
+        "predicted_response": 0.044768352061510086
+      },
+      "actual_evidence": {
+        "id": "fd5a58c27099cdbc213258b558061e226199a1a9bf9ea2bb5353c0f025f42423:new-probe",
+        "source": "c3578d2748e0838476a620e34f7ac70ce18117a7873ef5b963d952e98efadf2c",
+        "performed": true,
+        "force": 0.0,
+        "velocity": 0.0,
+        "response": -0.16301088967306632
+      },
+      "credit": {
+        "decision": "9f0710d784e0360375e73210bf7fb8c4227b7346339c72339fbf9b3c9fd91064",
+        "original_goal": {
+          "force": -0.8626613538826773,
+          "velocity": -0.05625018840399432
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "before_state": "b09c4415670ffeaa44a9bec9fb8d99b235cebfc27a805b0b9d4912bcf24f5ce9",
+        "after_state": "3664a5f153b29813f72beffe6aaa9548c2cdad74e8f1525b790ec0d566a7f622",
+        "before": -0.5540682673454285,
+        "after": -0.5286033749580383,
+        "evidence": "5402ef7f095d32f3bdf17a36657043e3eea5bda323c173a351b880861d322f53",
+        "evidence_id": "fd5a58c27099cdbc213258b558061e226199a1a9bf9ea2bb5353c0f025f42423:new-probe",
+        "performed_as_requested": true,
+        "independent_response": -0.6490713415956237,
+        "outcome_source": "fd5a58c27099cdbc213258b558061e226199a1a9bf9ea2bb5353c0f025f42423:withheld-original-goal",
+        "verifier": "d2a7b14ef4c913174302313abd56ce007f49f2ed4d630b56dd8dd2ffa7e1dfea",
+        "signed_progress": -0.0054869468688062755,
+        "positive_credit": 0.0,
+        "id": "9d239d5ed0b64c83c8dfbf801c47c75d78ebc5b20e142fd865ec5fe46fa62bbb"
+      },
+      "returned_answer": {
+        "original_goal": {
+          "force": -0.8626613538826773,
+          "velocity": -0.05625018840399432
+        },
+        "source": "c5191fe7e4c96cf4e858f7e70c7c356cc733595a716955a5f5f26609981b0fc6",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "71af42507a54807c719190e8463d8b1fa3b0adeda87703d735aa015f1b05dd0a",
+        "queries": [
+          [
+            -0.8626613538826773,
+            -0.05625018840399432
+          ]
+        ],
+        "predictions": [
+          -0.5286033749580383
+        ],
+        "conditional_branches": [
+          [
+            -0.5291950106620789,
+            -0.5287426710128784,
+            -0.5278725028038025
+          ]
+        ],
+        "observed_count": 5
+      },
+      "revision": "2ef9b666c0789aacd4a255509c1f66a8fcc45e1a72bccf0cdf3bb1770758931d"
+    },
+    {
+      "id": "a0229e0746756704b24ec27a2e329f901487d4850bf93199b7f89f684357b450",
+      "before": {
+        "original_goal": {
+          "force": 0.4133765072948641,
+          "velocity": 0.9599116308536568
+        },
+        "source": "1b688da86aa7e9a3a3f1d83367ff29cdb7be6d02b2fb1df121d7792f229edc21",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "bd1ef5e0014a116ae5943466bbcc927fdacf0efc362d17ba2dbce82bdaa3dbb3",
+        "queries": [
+          [
+            0.4133765072948641,
+            0.9599116308536568
+          ]
+        ],
+        "predictions": [
+          -0.028576133772730827
+        ],
+        "conditional_branches": [
+          [
+            -0.028159093111753464,
+            -0.028853632509708405,
+            -0.028715671971440315
+          ]
+        ],
+        "observed_count": 4
+      },
+      "conditional": {
+        "original_goal": {
+          "force": 0.4133765072948641,
+          "velocity": 0.9599116308536568
+        },
+        "source": "1b688da86aa7e9a3a3f1d83367ff29cdb7be6d02b2fb1df121d7792f229edc21",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "bd1ef5e0014a116ae5943466bbcc927fdacf0efc362d17ba2dbce82bdaa3dbb3",
+        "queries": [
+          [
+            0.11337650729486409,
+            0.9599116308536568
+          ],
+          [
+            0.7133765072948641,
+            0.9599116308536568
+          ]
+        ],
+        "predictions": [
+          -0.2519795000553131,
+          0.14567750692367554
+        ],
+        "conditional_branches": [
+          [
+            -0.25232577323913574,
+            -0.25211870670318604,
+            -0.25149407982826233
+          ],
+          [
+            0.1469251662492752,
+            0.14515666663646698,
+            0.14495070278644562
+          ]
+        ],
+        "observed_count": 4
+      },
+      "proposal": {
+        "id": "c6e77b4f84fea3052b305e7012cddf0393d1a3a62fd702ac21d9ef5f31d51fb5",
+        "goal": {
+          "force": 0.4133765072948641,
+          "velocity": 0.9599116308536568
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "bd1ef5e0014a116ae5943466bbcc927fdacf0efc362d17ba2dbce82bdaa3dbb3",
+        "requested": {
+          "force": 0.0,
+          "velocity": -1.0
+        },
+        "policy": "fixed maximum branch disagreement on a supplied finite grid",
+        "predicted_response": 0.4428013265132904
+      },
+      "actual_evidence": {
+        "id": "a0229e0746756704b24ec27a2e329f901487d4850bf93199b7f89f684357b450:new-probe",
+        "source": "51fc93d05e5d36ab6fe78789c227bbc3803e41dcc34fabe81f5f9f675676711c",
+        "performed": true,
+        "force": 0.0,
+        "velocity": -1.0,
+        "response": 0.6508604106614637
+      },
+      "credit": {
+        "decision": "c6e77b4f84fea3052b305e7012cddf0393d1a3a62fd702ac21d9ef5f31d51fb5",
+        "original_goal": {
+          "force": 0.4133765072948641,
+          "velocity": 0.9599116308536568
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "before_state": "bd1ef5e0014a116ae5943466bbcc927fdacf0efc362d17ba2dbce82bdaa3dbb3",
+        "after_state": "89bd0274da12f5c976e77459048a76ebd9a9b36fbaf985c79f4b20255ae8e59e",
+        "before": -0.028576133772730827,
+        "after": 0.05120139941573143,
+        "evidence": "17913b2219a01a76a653392dda41cb39f0b1e31e906a5fdffbbeecbc82c1b1da",
+        "evidence_id": "a0229e0746756704b24ec27a2e329f901487d4850bf93199b7f89f684357b450:new-probe",
+        "performed_as_requested": true,
+        "independent_response": -0.3239661748520308,
+        "outcome_source": "a0229e0746756704b24ec27a2e329f901487d4850bf93199b7f89f684357b450:withheld-original-goal",
+        "verifier": "d2a7b14ef4c913174302313abd56ce007f49f2ed4d630b56dd8dd2ffa7e1dfea",
+        "signed_progress": -0.05349543241312636,
+        "positive_credit": 0.0,
+        "id": "81f32c45fd9ede87cf5add3790f6ced43b6f19d1df431e68f4bc447eece9b7e7"
+      },
+      "returned_answer": {
+        "original_goal": {
+          "force": 0.4133765072948641,
+          "velocity": 0.9599116308536568
+        },
+        "source": "1b688da86aa7e9a3a3f1d83367ff29cdb7be6d02b2fb1df121d7792f229edc21",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "4aedca41eda416308e781270eec5bcfac01268013ec344016b3d8a5834a09e30",
+        "queries": [
+          [
+            0.4133765072948641,
+            0.9599116308536568
+          ]
+        ],
+        "predictions": [
+          0.05120139941573143
+        ],
+        "conditional_branches": [
+          [
+            0.051793988794088364,
+            0.05087484046816826,
+            0.05093536153435707
+          ]
+        ],
+        "observed_count": 5
+      },
+      "revision": "13fd3c4715e52c03ea3a810b6c49d5014b7704a5e2dad35897c2246275281df4"
+    },
+    {
+      "id": "aea505cbd6a559373b0a2e24394657091e3af10d77e504e8c3d385b4c9189533",
+      "before": {
+        "original_goal": {
+          "force": 0.6626521800897416,
+          "velocity": -0.7152360101702169
+        },
+        "source": "245b0eb1e8c2c3afac7eaa7323d366ccc9a644719684d5c9e8c692c8e4b8ee12",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "2a14509e7271a9859f0ed93ec789dae5c0778e3e21a63a579f18f4e2ca34a0f0",
+        "queries": [
+          [
+            0.6626521800897416,
+            -0.7152360101702169
+          ]
+        ],
+        "predictions": [
+          0.8899310231208801
+        ],
+        "conditional_branches": [
+          [
+            0.8901673555374146,
+            0.8889754414558411,
+            0.8906502723693848
+          ]
+        ],
+        "observed_count": 4
+      },
+      "conditional": {
+        "original_goal": {
+          "force": 0.6626521800897416,
+          "velocity": -0.7152360101702169
+        },
+        "source": "245b0eb1e8c2c3afac7eaa7323d366ccc9a644719684d5c9e8c692c8e4b8ee12",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "2a14509e7271a9859f0ed93ec789dae5c0778e3e21a63a579f18f4e2ca34a0f0",
+        "queries": [
+          [
+            0.3626521800897416,
+            -0.7152360101702169
+          ],
+          [
+            0.9626521800897416,
+            -0.7152360101702169
+          ]
+        ],
+        "predictions": [
+          0.6152684688568115,
+          1.154581904411316
+        ],
+        "conditional_branches": [
+          [
+            0.6148463487625122,
+            0.6144843697547913,
+            0.6164746284484863
+          ],
+          [
+            1.1553608179092407,
+            1.1535574197769165,
+            1.154827356338501
+          ]
+        ],
+        "observed_count": 4
+      },
+      "proposal": {
+        "id": "0100a9e83c8b724dbf8de51eac5a4bb793f2e5d6f879bef6968f70711d168c15",
+        "goal": {
+          "force": 0.6626521800897416,
+          "velocity": -0.7152360101702169
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "2a14509e7271a9859f0ed93ec789dae5c0778e3e21a63a579f18f4e2ca34a0f0",
+        "requested": {
+          "force": 1.0,
+          "velocity": 1.0
+        },
+        "policy": "fixed maximum branch disagreement on a supplied finite grid",
+        "predicted_response": 0.5364526510238647
+      },
+      "actual_evidence": {
+        "id": "aea505cbd6a559373b0a2e24394657091e3af10d77e504e8c3d385b4c9189533:new-probe",
+        "source": "33782e5fe151fc9cbacfab358c6a130abadf433ec5c3d57b7ece84914e763bf0",
+        "performed": true,
+        "force": 1.0,
+        "velocity": 1.0,
+        "response": 0.6467250865584766
+      },
+      "credit": {
+        "decision": "0100a9e83c8b724dbf8de51eac5a4bb793f2e5d6f879bef6968f70711d168c15",
+        "original_goal": {
+          "force": 0.6626521800897416,
+          "velocity": -0.7152360101702169
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "before_state": "2a14509e7271a9859f0ed93ec789dae5c0778e3e21a63a579f18f4e2ca34a0f0",
+        "after_state": "3826ab375133713cc6b88753886da9bae49fc9b0de1819d15d6211b3b363f7e4",
+        "before": 0.8899310231208801,
+        "after": 0.9363425374031067,
+        "evidence": "78c3141bcf3620b0e27540d0b54ec1d9568f2fbed6e61fc6b29afd5e5cc0321c",
+        "evidence_id": "aea505cbd6a559373b0a2e24394657091e3af10d77e504e8c3d385b4c9189533:new-probe",
+        "performed_as_requested": true,
+        "independent_response": 1.0147770087108445,
+        "outcome_source": "aea505cbd6a559373b0a2e24394657091e3af10d77e504e8c3d385b4c9189533:withheld-original-goal",
+        "verifier": "d2a7b14ef4c913174302313abd56ce007f49f2ed4d630b56dd8dd2ffa7e1dfea",
+        "signed_progress": 0.009434553828605249,
+        "positive_credit": 0.009434553828605249,
+        "id": "8abe508d5edea245a307309b69c720d0cdf4b63cbf44dcf2946174f8400b4505"
+      },
+      "returned_answer": {
+        "original_goal": {
+          "force": 0.6626521800897416,
+          "velocity": -0.7152360101702169
+        },
+        "source": "245b0eb1e8c2c3afac7eaa7323d366ccc9a644719684d5c9e8c692c8e4b8ee12",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "4ff6a23a907f1ce93d8c2dba735689b0cffd556d1bc42b74d7eaede19fdacafa",
+        "queries": [
+          [
+            0.6626521800897416,
+            -0.7152360101702169
+          ]
+        ],
+        "predictions": [
+          0.9363425374031067
+        ],
+        "conditional_branches": [
+          [
+            0.9369457364082336,
+            0.9353740215301514,
+            0.9367080330848694
+          ]
+        ],
+        "observed_count": 5
+      },
+      "revision": "a7e85d9d9c1d624e4da9def79c4cec14a466954f75efe2636d703b02c68b7d9c"
+    },
+    {
+      "id": "04c6ad50a3e1f7d48ea4d597dd134ad11c0a405e7d55909d67b131c5c1d40a68",
+      "before": {
+        "original_goal": {
+          "force": 0.6724676768254796,
+          "velocity": -0.8441883662782474
+        },
+        "source": "6b55c5bb9977e35cf68910479476fe4206d4e012cf53d05a1b137e3888180a15",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "4eed05e1c33e5855f7e4502e392cff84eacadabb9a1952b0b873c21027a280f4",
+        "queries": [
+          [
+            0.6724676768254796,
+            -0.8441883662782474
+          ]
+        ],
+        "predictions": [
+          1.2208021879196167
+        ],
+        "conditional_branches": [
+          [
+            1.2214769124984741,
+            1.2198210954666138,
+            1.221108317375183
+          ]
+        ],
+        "observed_count": 4
+      },
+      "conditional": {
+        "original_goal": {
+          "force": 0.6724676768254796,
+          "velocity": -0.8441883662782474
+        },
+        "source": "6b55c5bb9977e35cf68910479476fe4206d4e012cf53d05a1b137e3888180a15",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "4eed05e1c33e5855f7e4502e392cff84eacadabb9a1952b0b873c21027a280f4",
+        "queries": [
+          [
+            0.3724676768254796,
+            -0.8441883662782474
+          ],
+          [
+            0.9724676768254796,
+            -0.8441883662782474
+          ]
+        ],
+        "predictions": [
+          0.914021909236908,
+          1.5155415534973145
+        ],
+        "conditional_branches": [
+          [
+            0.9141972661018372,
+            0.9131274819374084,
+            0.9147409200668335
+          ],
+          [
+            1.5165562629699707,
+            1.5145806074142456,
+            1.515487790107727
+          ]
+        ],
+        "observed_count": 4
+      },
+      "proposal": {
+        "id": "3d3f0140aa8f5d733c1c4cc240e57c91e40a07227eba99ce828d9bf68e7f278b",
+        "goal": {
+          "force": 0.6724676768254796,
+          "velocity": -0.8441883662782474
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "4eed05e1c33e5855f7e4502e392cff84eacadabb9a1952b0b873c21027a280f4",
+        "requested": {
+          "force": 1.0,
+          "velocity": 1.0
+        },
+        "policy": "fixed maximum branch disagreement on a supplied finite grid",
+        "predicted_response": 0.9628930687904358
+      },
+      "actual_evidence": {
+        "id": "04c6ad50a3e1f7d48ea4d597dd134ad11c0a405e7d55909d67b131c5c1d40a68:new-probe",
+        "source": "d7c68bc755968b63d46a3d5c217cfd0cf9b2e1aaf0ebc6c6b58001db38cae19c",
+        "performed": true,
+        "force": 1.0,
+        "velocity": 1.0,
+        "response": 0.6370849930745979
+      },
+      "credit": {
+        "decision": "3d3f0140aa8f5d733c1c4cc240e57c91e40a07227eba99ce828d9bf68e7f278b",
+        "original_goal": {
+          "force": 0.6724676768254796,
+          "velocity": -0.8441883662782474
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "before_state": "4eed05e1c33e5855f7e4502e392cff84eacadabb9a1952b0b873c21027a280f4",
+        "after_state": "f93deb617fcc6754916edf19560f22381f669b24b42a275586033ad611e2f2e7",
+        "before": 1.2208021879196167,
+        "after": 1.1811403036117554,
+        "evidence": "7f15675214d32f6c2aca3bd35037149ac14548a23f8f169364f1ddd50b4c7b0a",
+        "evidence_id": "04c6ad50a3e1f7d48ea4d597dd134ad11c0a405e7d55909d67b131c5c1d40a68:new-probe",
+        "performed_as_requested": true,
+        "independent_response": 1.1773807784097572,
+        "outcome_source": "04c6ad50a3e1f7d48ea4d597dd134ad11c0a405e7d55909d67b131c5c1d40a68:withheld-original-goal",
+        "verifier": "d2a7b14ef4c913174302313abd56ce007f49f2ed4d630b56dd8dd2ffa7e1dfea",
+        "signed_progress": 0.0018712847740784584,
+        "positive_credit": 0.0018712847740784584,
+        "id": "c31c89dcb788280537083c473b58fbc41508c14eb12a999184f78c880fb1b0c6"
+      },
+      "returned_answer": {
+        "original_goal": {
+          "force": 0.6724676768254796,
+          "velocity": -0.8441883662782474
+        },
+        "source": "6b55c5bb9977e35cf68910479476fe4206d4e012cf53d05a1b137e3888180a15",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "0c66c2be20257fed4233079f1cd8ce9e9872ff24b0838d903221da15e0de3c32",
+        "queries": [
+          [
+            0.6724676768254796,
+            -0.8441883662782474
+          ]
+        ],
+        "predictions": [
+          1.1811403036117554
+        ],
+        "conditional_branches": [
+          [
+            1.181968331336975,
+            1.1801379919052124,
+            1.1813145875930786
+          ]
+        ],
+        "observed_count": 5
+      },
+      "revision": "b0c6ae58ab1e7d9ff920a67591bb67e5ba8dd0f89e33a9fabb254805235dee28"
+    },
+    {
+      "id": "1ff707bd431dd36f3bb77439dbf6d522bdca67b37fe66f5731d92049d0b26b8a",
+      "before": {
+        "original_goal": {
+          "force": 0.5925154046534788,
+          "velocity": -0.5174001166959334
+        },
+        "source": "05b3160244cab753247ebd4e4495a27436a1ded965ab1bb79f479fa8bda3688e",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "8e60af35d44a66d8eaf83f88330af0ca93a04fb65b5ec2d3a78db640ce79abb2",
+        "queries": [
+          [
+            0.5925154046534788,
+            -0.5174001166959334
+          ]
+        ],
+        "predictions": [
+          0.8071841597557068
+        ],
+        "conditional_branches": [
+          [
+            0.8069519996643066,
+            0.806435227394104,
+            0.8081651926040649
+          ]
+        ],
+        "observed_count": 4
+      },
+      "conditional": {
+        "original_goal": {
+          "force": 0.5925154046534788,
+          "velocity": -0.5174001166959334
+        },
+        "source": "05b3160244cab753247ebd4e4495a27436a1ded965ab1bb79f479fa8bda3688e",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "8e60af35d44a66d8eaf83f88330af0ca93a04fb65b5ec2d3a78db640ce79abb2",
+        "queries": [
+          [
+            0.29251540465347886,
+            -0.5174001166959334
+          ],
+          [
+            0.8925154046534789,
+            -0.5174001166959334
+          ]
+        ],
+        "predictions": [
+          0.5480904579162598,
+          1.0759869813919067
+        ],
+        "conditional_branches": [
+          [
+            0.547166645526886,
+            0.5475444793701172,
+            0.5495603084564209
+          ],
+          [
+            1.0764275789260864,
+            1.0751057863235474,
+            1.0764274597167969
+          ]
+        ],
+        "observed_count": 4
+      },
+      "proposal": {
+        "id": "673db3486a29147d3fae267f72a97763c18700cb670ef8e2e01db722dbcec93b",
+        "goal": {
+          "force": 0.5925154046534788,
+          "velocity": -0.5174001166959334
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "8e60af35d44a66d8eaf83f88330af0ca93a04fb65b5ec2d3a78db640ce79abb2",
+        "requested": {
+          "force": 0.0,
+          "velocity": 0.0
+        },
+        "policy": "fixed maximum branch disagreement on a supplied finite grid",
+        "predicted_response": 0.23038560152053833
+      },
+      "actual_evidence": {
+        "id": "1ff707bd431dd36f3bb77439dbf6d522bdca67b37fe66f5731d92049d0b26b8a:new-probe",
+        "source": "e1c6868dd66d9cdbf7b1412938658d55e5f2ebebc91eb4e155c97a528a8f3821",
+        "performed": true,
+        "force": 0.0,
+        "velocity": 0.0,
+        "response": 0.2086065347333914
+      },
+      "credit": {
+        "decision": "673db3486a29147d3fae267f72a97763c18700cb670ef8e2e01db722dbcec93b",
+        "original_goal": {
+          "force": 0.5925154046534788,
+          "velocity": -0.5174001166959334
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "before_state": "8e60af35d44a66d8eaf83f88330af0ca93a04fb65b5ec2d3a78db640ce79abb2",
+        "after_state": "bc1195ccd97d25db6bd2085a217986ac926f7f5db31687bbd8a638260d0fef92",
+        "before": 0.8071841597557068,
+        "after": 0.7759383320808411,
+        "evidence": "7720a3dd9233d7ea7504f2c2b6dc19c8419a083620f7b2116a5870952d05585d",
+        "evidence_id": "1ff707bd431dd36f3bb77439dbf6d522bdca67b37fe66f5731d92049d0b26b8a:new-probe",
+        "performed_as_requested": true,
+        "independent_response": 0.9105706964624061,
+        "outcome_source": "1ff707bd431dd36f3bb77439dbf6d522bdca67b37fe66f5731d92049d0b26b8a:withheld-original-goal",
+        "verifier": "d2a7b14ef4c913174302313abd56ce007f49f2ed4d630b56dd8dd2ffa7e1dfea",
+        "signed_progress": -0.007437097566764816,
+        "positive_credit": 0.0,
+        "id": "b9b5540b0f9d6cf2121fdcc76698266af47aff524e5b86d831d5c27de0a2c8d7"
+      },
+      "returned_answer": {
+        "original_goal": {
+          "force": 0.5925154046534788,
+          "velocity": -0.5174001166959334
+        },
+        "source": "05b3160244cab753247ebd4e4495a27436a1ded965ab1bb79f479fa8bda3688e",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "11486e7cd150a01d5b331e4e6d739581661d2cd55130d40765677a3bce38deba",
+        "queries": [
+          [
+            0.5925154046534788,
+            -0.5174001166959334
+          ]
+        ],
+        "predictions": [
+          0.7759383320808411
+        ],
+        "conditional_branches": [
+          [
+            0.7757360935211182,
+            0.7751923203468323,
+            0.7768865823745728
+          ]
+        ],
+        "observed_count": 5
+      },
+      "revision": "96b83a57d4604d4c79510716aeaf0a94e463941b0e309710add99150e812762b"
+    },
+    {
+      "id": "4d3299b04c70bfb82daf87ef0cf99f192ef4edd8239e39b4590f9bfd76da1cff",
+      "before": {
+        "original_goal": {
+          "force": 0.572771889813271,
+          "velocity": -0.18309748415213045
+        },
+        "source": "0ddb33dc6c17000655afae6bea97fdd2a7c3a884ddacccdb349523d1d69866fc",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "b364561e8344406c011d53199dc892ebe639811ee04003791c076428f5321289",
+        "queries": [
+          [
+            0.572771889813271,
+            -0.18309748415213045
+          ]
+        ],
+        "predictions": [
+          0.6167598366737366
+        ],
+        "conditional_branches": [
+          [
+            0.6168181300163269,
+            0.6160200834274292,
+            0.6174414157867432
+          ]
+        ],
+        "observed_count": 4
+      },
+      "conditional": {
+        "original_goal": {
+          "force": 0.572771889813271,
+          "velocity": -0.18309748415213045
+        },
+        "source": "0ddb33dc6c17000655afae6bea97fdd2a7c3a884ddacccdb349523d1d69866fc",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "b364561e8344406c011d53199dc892ebe639811ee04003791c076428f5321289",
+        "queries": [
+          [
+            0.272771889813271,
+            -0.18309748415213045
+          ],
+          [
+            0.872771889813271,
+            -0.18309748415213045
+          ]
+        ],
+        "predictions": [
+          0.24658405780792236,
+          0.9074024558067322
+        ],
+        "conditional_branches": [
+          [
+            0.2457970231771469,
+            0.24608133733272552,
+            0.24787382781505585
+          ],
+          [
+            0.9082332849502563,
+            0.9065152406692505,
+            0.9074587821960449
+          ]
+        ],
+        "observed_count": 4
+      },
+      "proposal": {
+        "id": "b5cf459af833ad222b0deac584f11b23839a5f4609b7652601798e94d50d752e",
+        "goal": {
+          "force": 0.572771889813271,
+          "velocity": -0.18309748415213045
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "b364561e8344406c011d53199dc892ebe639811ee04003791c076428f5321289",
+        "requested": {
+          "force": 0.0,
+          "velocity": -1.0
+        },
+        "policy": "fixed maximum branch disagreement on a supplied finite grid",
+        "predicted_response": 0.3098825216293335
+      },
+      "actual_evidence": {
+        "id": "4d3299b04c70bfb82daf87ef0cf99f192ef4edd8239e39b4590f9bfd76da1cff:new-probe",
+        "source": "615c0056a49cbed303fb2c5a2b427f595480b9101d461085d00ce43645713a4b",
+        "performed": true,
+        "force": 0.0,
+        "velocity": -1.0,
+        "response": 0.23470857726108313
+      },
+      "credit": {
+        "decision": "b5cf459af833ad222b0deac584f11b23839a5f4609b7652601798e94d50d752e",
+        "original_goal": {
+          "force": 0.572771889813271,
+          "velocity": -0.18309748415213045
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "before_state": "b364561e8344406c011d53199dc892ebe639811ee04003791c076428f5321289",
+        "after_state": "732acb7d773092ee2ffd4beb012985a5c246c9044445652d7e0c2db822d97696",
+        "before": 0.6167598366737366,
+        "after": 0.4502672255039215,
+        "evidence": "5c4a280170faf5699f9800766d131c1d565d00ec465ceb4d36f04f51c885391d",
+        "evidence_id": "4d3299b04c70bfb82daf87ef0cf99f192ef4edd8239e39b4590f9bfd76da1cff:new-probe",
+        "performed_as_requested": true,
+        "independent_response": 0.49673103626360815,
+        "outcome_source": "4d3299b04c70bfb82daf87ef0cf99f192ef4edd8239e39b4590f9bfd76da1cff:withheld-original-goal",
+        "verifier": "d2a7b14ef4c913174302313abd56ce007f49f2ed4d630b56dd8dd2ffa7e1dfea",
+        "signed_progress": 0.012248027217582473,
+        "positive_credit": 0.012248027217582473,
+        "id": "d98c65d274ed54e77f83b50194018012e0577320c977f3b8753df52a1f2fcd0c"
+      },
+      "returned_answer": {
+        "original_goal": {
+          "force": 0.572771889813271,
+          "velocity": -0.18309748415213045
+        },
+        "source": "0ddb33dc6c17000655afae6bea97fdd2a7c3a884ddacccdb349523d1d69866fc",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "4add19e4259de6ea9089e7a4befd2ac8def5a49f6341fc99f135391c18e466ba",
+        "queries": [
+          [
+            0.572771889813271,
+            -0.18309748415213045
+          ]
+        ],
+        "predictions": [
+          0.4502672255039215
+        ],
+        "conditional_branches": [
+          [
+            0.4502636790275574,
+            0.44952765107154846,
+            0.4510103762149811
+          ]
+        ],
+        "observed_count": 5
+      },
+      "revision": "22604861ecc4075ad7520487cb30e257fa260d4bdd1700c6fde2789a81452e47"
+    },
+    {
+      "id": "a79c773edfb8d5292ca5813771fa1526f3ebce55f0ce88ff91349c75eb2d7824",
+      "before": {
+        "original_goal": {
+          "force": -0.6610736140056408,
+          "velocity": -0.6498659356317089
+        },
+        "source": "1662fadb60b79b9e60241143c56fedd9364877e0de5b73de1c93e4e350699d58",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "12537518d30b06eab0f4702e9ece4762a2a776801c2678ad0e96a9901378433e",
+        "queries": [
+          [
+            -0.6610736140056408,
+            -0.6498659356317089
+          ]
+        ],
+        "predictions": [
+          -0.6331643462181091
+        ],
+        "conditional_branches": [
+          [
+            -0.6338499188423157,
+            -0.6337907910346985,
+            -0.6318522095680237
+          ]
+        ],
+        "observed_count": 4
+      },
+      "conditional": {
+        "original_goal": {
+          "force": -0.6610736140056408,
+          "velocity": -0.6498659356317089
+        },
+        "source": "1662fadb60b79b9e60241143c56fedd9364877e0de5b73de1c93e4e350699d58",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "12537518d30b06eab0f4702e9ece4762a2a776801c2678ad0e96a9901378433e",
+        "queries": [
+          [
+            -0.9610736140056408,
+            -0.6498659356317089
+          ],
+          [
+            -0.3610736140056408,
+            -0.6498659356317089
+          ]
+        ],
+        "predictions": [
+          -0.8897841572761536,
+          -0.31114327907562256
+        ],
+        "conditional_branches": [
+          [
+            -0.8899013996124268,
+            -0.8907902836799622,
+            -0.8886609077453613
+          ],
+          [
+            -0.3122794032096863,
+            -0.311549574136734,
+            -0.3096008598804474
+          ]
+        ],
+        "observed_count": 4
+      },
+      "proposal": {
+        "id": "d2b58493da9f82c4f3ba275a3a756e2deb475607c58ffa7f78051ec5dee754ea",
+        "goal": {
+          "force": -0.6610736140056408,
+          "velocity": -0.6498659356317089
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "12537518d30b06eab0f4702e9ece4762a2a776801c2678ad0e96a9901378433e",
+        "requested": {
+          "force": 0.0,
+          "velocity": -1.0
+        },
+        "policy": "fixed maximum branch disagreement on a supplied finite grid",
+        "predicted_response": 0.33477768301963806
+      },
+      "actual_evidence": {
+        "id": "a79c773edfb8d5292ca5813771fa1526f3ebce55f0ce88ff91349c75eb2d7824:new-probe",
+        "source": "1ad74d8975ff6ab50ad4ad5e580219eafc4cf7bfbd5fe191f19abaacf1e07915",
+        "performed": true,
+        "force": 0.0,
+        "velocity": -1.0,
+        "response": 0.5064480075074193
+      },
+      "credit": {
+        "decision": "d2b58493da9f82c4f3ba275a3a756e2deb475607c58ffa7f78051ec5dee754ea",
+        "original_goal": {
+          "force": -0.6610736140056408,
+          "velocity": -0.6498659356317089
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "before_state": "12537518d30b06eab0f4702e9ece4762a2a776801c2678ad0e96a9901378433e",
+        "after_state": "643c8653b99a29bb4bf8c927c597dcea359643447ee4cb0d787db0ee4dcb25ea",
+        "before": -0.6331643462181091,
+        "after": -0.36982449889183044,
+        "evidence": "366103c5b027aaae2261e7a672160f742b1bcd27cf5cdd9e71908cc1a26658cd",
+        "evidence_id": "a79c773edfb8d5292ca5813771fa1526f3ebce55f0ce88ff91349c75eb2d7824:new-probe",
+        "performed_as_requested": true,
+        "independent_response": -0.40237197854773044,
+        "outcome_source": "a79c773edfb8d5292ca5813771fa1526f3ebce55f0ce88ff91349c75eb2d7824:withheld-original-goal",
+        "verifier": "d2a7b14ef4c913174302313abd56ce007f49f2ed4d630b56dd8dd2ffa7e1dfea",
+        "signed_progress": 0.052205778542948035,
+        "positive_credit": 0.052205778542948035,
+        "id": "662258df81323384c5c812cb95dfcf2b935759d26fe16df16c116e74d73acbd1"
+      },
+      "returned_answer": {
+        "original_goal": {
+          "force": -0.6610736140056408,
+          "velocity": -0.6498659356317089
+        },
+        "source": "1662fadb60b79b9e60241143c56fedd9364877e0de5b73de1c93e4e350699d58",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "409750a3241bd4a9c43323f25c98f2eb86d806432985add5c3c9c8e6eacef4a8",
+        "queries": [
+          [
+            -0.6610736140056408,
+            -0.6498659356317089
+          ]
+        ],
+        "predictions": [
+          -0.36982449889183044
+        ],
+        "conditional_branches": [
+          [
+            -0.3705956041812897,
+            -0.37040674686431885,
+            -0.3684712052345276
+          ]
+        ],
+        "observed_count": 5
+      },
+      "revision": "1338b33990a79694510da5ec8c6df8725e990fb4abcb008a6fa5241903aaf15b"
+    },
+    {
+      "id": "8b2410a173457f012ebcbdbed158b7d16e858b5f3e53b3d051db2f2b0733ce74",
+      "before": {
+        "original_goal": {
+          "force": -0.8994028736830633,
+          "velocity": 0.31906526219077813
+        },
+        "source": "21e1ff22597672039d824b38fbfc4720293abe232b4db46903b29060ab8f5667",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "4af3ce9db327499ceaec19f272c8448ae61b39f35dce3c4024e18a174fb7a2fc",
+        "queries": [
+          [
+            -0.8994028736830633,
+            0.31906526219077813
+          ]
+        ],
+        "predictions": [
+          -0.982917070388794
+        ],
+        "conditional_branches": [
+          [
+            -0.983778715133667,
+            -0.9828170537948608,
+            -0.982155442237854
+          ]
+        ],
+        "observed_count": 4
+      },
+      "conditional": {
+        "original_goal": {
+          "force": -0.8994028736830633,
+          "velocity": 0.31906526219077813
+        },
+        "source": "21e1ff22597672039d824b38fbfc4720293abe232b4db46903b29060ab8f5667",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "4af3ce9db327499ceaec19f272c8448ae61b39f35dce3c4024e18a174fb7a2fc",
+        "queries": [
+          [
+            -1.1994028736830633,
+            0.31906526219077813
+          ],
+          [
+            -0.5994028736830632,
+            0.31906526219077813
+          ]
+        ],
+        "predictions": [
+          -1.073283076286316,
+          -0.8385491371154785
+        ],
+        "conditional_branches": [
+          [
+            -1.0738556385040283,
+            -1.0731366872787476,
+            -1.0728570222854614
+          ],
+          [
+            -0.8397262096405029,
+            -0.8385202884674072,
+            -0.8374008536338806
+          ]
+        ],
+        "observed_count": 4
+      },
+      "proposal": {
+        "id": "88f9335e4bac3544d952a9b9d17ba6071d6cdd790b5ea1c720631bc4c9f5aeac",
+        "goal": {
+          "force": -0.8994028736830633,
+          "velocity": 0.31906526219077813
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "4af3ce9db327499ceaec19f272c8448ae61b39f35dce3c4024e18a174fb7a2fc",
+        "requested": {
+          "force": 0.5,
+          "velocity": -1.0
+        },
+        "policy": "fixed maximum branch disagreement on a supplied finite grid",
+        "predicted_response": 0.2770133912563324
+      },
+      "actual_evidence": {
+        "id": "8b2410a173457f012ebcbdbed158b7d16e858b5f3e53b3d051db2f2b0733ce74:new-probe",
+        "source": "43ceaa91a8e98ef1991876292b36da8c9e71c618d4ca60cc5dbd2fe35e9d05c6",
+        "performed": true,
+        "force": 0.5,
+        "velocity": -1.0,
+        "response": 0.3752249055073744
+      },
+      "credit": {
+        "decision": "88f9335e4bac3544d952a9b9d17ba6071d6cdd790b5ea1c720631bc4c9f5aeac",
+        "original_goal": {
+          "force": -0.8994028736830633,
+          "velocity": 0.31906526219077813
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "before_state": "4af3ce9db327499ceaec19f272c8448ae61b39f35dce3c4024e18a174fb7a2fc",
+        "after_state": "e18541d521276fe063ff24ad6c9cf843a1882c378ceeeae6cb967972968b9a18",
+        "before": -0.982917070388794,
+        "after": -0.8978099226951599,
+        "evidence": "6cedb679fb5464a745a526f541920abb086e726419b96c67267e4bcfd8acbb02",
+        "evidence_id": "8b2410a173457f012ebcbdbed158b7d16e858b5f3e53b3d051db2f2b0733ce74:new-probe",
+        "performed_as_requested": true,
+        "independent_response": -1.0248906453866165,
+        "outcome_source": "8b2410a173457f012ebcbdbed158b7d16e858b5f3e53b3d051db2f2b0733ce74:withheld-original-goal",
+        "verifier": "d2a7b14ef4c913174302313abd56ce007f49f2ed4d630b56dd8dd2ffa7e1dfea",
+        "signed_progress": -0.014387729081685046,
+        "positive_credit": 0.0,
+        "id": "4947efe17df930d01ce0ab3df99fa9199b53e5581c34ee86bd852fd3651f8262"
+      },
+      "returned_answer": {
+        "original_goal": {
+          "force": -0.8994028736830633,
+          "velocity": 0.31906526219077813
+        },
+        "source": "21e1ff22597672039d824b38fbfc4720293abe232b4db46903b29060ab8f5667",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "01635ab634439862ef493d53830e315298397f7af995dbe3bd74f24139866999",
+        "queries": [
+          [
+            -0.8994028736830633,
+            0.31906526219077813
+          ]
+        ],
+        "predictions": [
+          -0.8978099226951599
+        ],
+        "conditional_branches": [
+          [
+            -0.8986701965332031,
+            -0.8977549076080322,
+            -0.8970045447349548
+          ]
+        ],
+        "observed_count": 5
+      },
+      "revision": "5fbf91d4e45da50acefc0bc4151e731374a169cd9d05c0221205a2811bc8abae"
+    },
+    {
+      "id": "f80e9da700ba24b5e474fa5fe84115a738cbc7be9971171c7155c21c569410bd",
+      "before": {
+        "original_goal": {
+          "force": 0.25791896338053744,
+          "velocity": -0.5179358413376112
+        },
+        "source": "26f1d9194fb5448acb88da7c3ddc2f6de215fa854f6a9f8af5f7d9eaa9a54f57",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "3682870e8ac45ef0fdd64c7f963b9e9364d3231077700a6ae7e1931bcfb60fcb",
+        "queries": [
+          [
+            0.25791896338053744,
+            -0.5179358413376112
+          ]
+        ],
+        "predictions": [
+          0.3447318375110626
+        ],
+        "conditional_branches": [
+          [
+            0.34414878487586975,
+            0.3441046178340912,
+            0.3459421694278717
+          ]
+        ],
+        "observed_count": 4
+      },
+      "conditional": {
+        "original_goal": {
+          "force": 0.25791896338053744,
+          "velocity": -0.5179358413376112
+        },
+        "source": "26f1d9194fb5448acb88da7c3ddc2f6de215fa854f6a9f8af5f7d9eaa9a54f57",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "3682870e8ac45ef0fdd64c7f963b9e9364d3231077700a6ae7e1931bcfb60fcb",
+        "queries": [
+          [
+            -0.04208103661946255,
+            -0.5179358413376112
+          ],
+          [
+            0.5579189633805375,
+            -0.5179358413376112
+          ]
+        ],
+        "predictions": [
+          0.16972947120666504,
+          0.5801407098770142
+        ],
+        "conditional_branches": [
+          [
+            0.16857238113880157,
+            0.16933542490005493,
+            0.1712806075811386
+          ],
+          [
+            0.5803030729293823,
+            0.579308271408081,
+            0.5808107852935791
+          ]
+        ],
+        "observed_count": 4
+      },
+      "proposal": {
+        "id": "0793f5b0f7485503e6f493f564ae43569d037a5d85dd8fa0af50c18b3bceab69",
+        "goal": {
+          "force": 0.25791896338053744,
+          "velocity": -0.5179358413376112
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "3682870e8ac45ef0fdd64c7f963b9e9364d3231077700a6ae7e1931bcfb60fcb",
+        "requested": {
+          "force": 1.0,
+          "velocity": 1.0
+        },
+        "policy": "fixed maximum branch disagreement on a supplied finite grid",
+        "predicted_response": 0.3818390369415283
+      },
+      "actual_evidence": {
+        "id": "f80e9da700ba24b5e474fa5fe84115a738cbc7be9971171c7155c21c569410bd:new-probe",
+        "source": "cb2c85dde019abb2be9a3ddba40f6cc7eb534898995339595b15992147eca834",
+        "performed": true,
+        "force": 1.0,
+        "velocity": 1.0,
+        "response": 0.5227101447419114
+      },
+      "credit": {
+        "decision": "0793f5b0f7485503e6f493f564ae43569d037a5d85dd8fa0af50c18b3bceab69",
+        "original_goal": {
+          "force": 0.25791896338053744,
+          "velocity": -0.5179358413376112
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "before_state": "3682870e8ac45ef0fdd64c7f963b9e9364d3231077700a6ae7e1931bcfb60fcb",
+        "after_state": "4711abf550022a3a0c8ea5d4f0537b28d988f0901b17610059ad7f1cd3b19171",
+        "before": 0.3447318375110626,
+        "after": 0.36850297451019287,
+        "evidence": "55671d35c8f8bc8d65d69d270340f862f8e1390703779389079a92ef4957ad2a",
+        "evidence_id": "f80e9da700ba24b5e474fa5fe84115a738cbc7be9971171c7155c21c569410bd:new-probe",
+        "performed_as_requested": true,
+        "independent_response": 0.3338423359045354,
+        "outcome_source": "f80e9da700ba24b5e474fa5fe84115a738cbc7be9971171c7155c21c569410bd:withheld-original-goal",
+        "verifier": "d2a7b14ef4c913174302313abd56ce007f49f2ed4d630b56dd8dd2ffa7e1dfea",
+        "signed_progress": -0.001082778623313435,
+        "positive_credit": 0.0,
+        "id": "6c374170936e5a765e04fd23d3cea640b9e6d259cbaea93ada73250957a7e547"
+      },
+      "returned_answer": {
+        "original_goal": {
+          "force": 0.25791896338053744,
+          "velocity": -0.5179358413376112
+        },
+        "source": "26f1d9194fb5448acb88da7c3ddc2f6de215fa854f6a9f8af5f7d9eaa9a54f57",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "ba045c34c46d6a4a5cd03b2deafbc721ba43a88b20e2ea047f8143fa4f76c7ac",
+        "queries": [
+          [
+            0.25791896338053744,
+            -0.5179358413376112
+          ]
+        ],
+        "predictions": [
+          0.36850297451019287
+        ],
+        "conditional_branches": [
+          [
+            0.36827781796455383,
+            0.36781224608421326,
+            0.3694188594818115
+          ]
+        ],
+        "observed_count": 5
+      },
+      "revision": "0553ca8225abbdc5edd7402f7ee3ae693acd673e883725bf73089e1325f61bf2"
+    },
+    {
+      "id": "98890ce20ede07f0a52ad204cbcf9d4fd8eb4e3346c5cb6fc9a557d3e1b59c81",
+      "before": {
+        "original_goal": {
+          "force": -0.34396198535140177,
+          "velocity": -0.45742421751319084
+        },
+        "source": "7b7edc4a5adf812c0b7b9552b05449077396ed05d016b3804e4947df0a005412",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "9d1e51a576af291e70631ea40588e5624b4799fc728f9e6d3753855a91788735",
+        "queries": [
+          [
+            -0.34396198535140177,
+            -0.45742421751319084
+          ]
+        ],
+        "predictions": [
+          -0.12413104623556137
+        ],
+        "conditional_branches": [
+          [
+            -0.1255355179309845,
+            -0.12434151768684387,
+            -0.12251608073711395
+          ]
+        ],
+        "observed_count": 4
+      },
+      "conditional": {
+        "original_goal": {
+          "force": -0.34396198535140177,
+          "velocity": -0.45742421751319084
+        },
+        "source": "7b7edc4a5adf812c0b7b9552b05449077396ed05d016b3804e4947df0a005412",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "9d1e51a576af291e70631ea40588e5624b4799fc728f9e6d3753855a91788735",
+        "queries": [
+          [
+            -0.6439619853514018,
+            -0.45742421751319084
+          ],
+          [
+            -0.04396198535140178,
+            -0.45742421751319084
+          ]
+        ],
+        "predictions": [
+          -0.36314699053764343,
+          0.0870184525847435
+        ],
+        "conditional_branches": [
+          [
+            -0.36428412795066833,
+            -0.3633880913257599,
+            -0.3617687523365021
+          ],
+          [
+            0.0857485681772232,
+            0.08666472136974335,
+            0.08864207565784454
+          ]
+        ],
+        "observed_count": 4
+      },
+      "proposal": {
+        "id": "438936516b6d317b64738440afc1613ca46d975706174839de9d6353a00983b6",
+        "goal": {
+          "force": -0.34396198535140177,
+          "velocity": -0.45742421751319084
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "9d1e51a576af291e70631ea40588e5624b4799fc728f9e6d3753855a91788735",
+        "requested": {
+          "force": 1.0,
+          "velocity": 1.0
+        },
+        "policy": "fixed maximum branch disagreement on a supplied finite grid",
+        "predicted_response": 0.31181201338768005
+      },
+      "actual_evidence": {
+        "id": "98890ce20ede07f0a52ad204cbcf9d4fd8eb4e3346c5cb6fc9a557d3e1b59c81:new-probe",
+        "source": "275ae81cb5aa79e28c9b415d28a77e43d8fcaf58012d8d57dfef7c3397ac1f4e",
+        "performed": true,
+        "force": 1.0,
+        "velocity": 1.0,
+        "response": -0.0484936123664496
+      },
+      "credit": {
+        "decision": "438936516b6d317b64738440afc1613ca46d975706174839de9d6353a00983b6",
+        "original_goal": {
+          "force": -0.34396198535140177,
+          "velocity": -0.45742421751319084
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "before_state": "9d1e51a576af291e70631ea40588e5624b4799fc728f9e6d3753855a91788735",
+        "after_state": "fe7ea26b5de00718ba70aaf0a0c9af81f4f03c1ad5b527240c796d69c6d23cc3",
+        "before": -0.12413104623556137,
+        "after": -0.24978049099445343,
+        "evidence": "12fed1b91500441d2560b9bf3d8e26ed240a70a46e66c13091b0a94857813883",
+        "evidence_id": "98890ce20ede07f0a52ad204cbcf9d4fd8eb4e3346c5cb6fc9a557d3e1b59c81:new-probe",
+        "performed_as_requested": true,
+        "independent_response": -0.17677030339908453,
+        "outcome_source": "98890ce20ede07f0a52ad204cbcf9d4fd8eb4e3346c5cb6fc9a557d3e1b59c81:withheld-original-goal",
+        "verifier": "d2a7b14ef4c913174302313abd56ce007f49f2ed4d630b56dd8dd2ffa7e1dfea",
+        "signed_progress": -0.002559596097983434,
+        "positive_credit": 0.0,
+        "id": "951e34d7e447a3cc3403d2ff05eca9ac3d115d2799b2de547e22001a3841ac57"
+      },
+      "returned_answer": {
+        "original_goal": {
+          "force": -0.34396198535140177,
+          "velocity": -0.45742421751319084
+        },
+        "source": "7b7edc4a5adf812c0b7b9552b05449077396ed05d016b3804e4947df0a005412",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "e4056615e95214a3cf9817b8b4e2aef7edcdfe75a237f92630754093de0b0a16",
+        "queries": [
+          [
+            -0.34396198535140177,
+            -0.45742421751319084
+          ]
+        ],
+        "predictions": [
+          -0.24978049099445343
+        ],
+        "conditional_branches": [
+          [
+            -0.25111353397369385,
+            -0.25002041459083557,
+            -0.24820756912231445
+          ]
+        ],
+        "observed_count": 5
+      },
+      "revision": "4faaa3c3bfeb5f514d303e12351372de2eda92b35c9e7957654c4b54d5ec302f"
+    },
+    {
+      "id": "c4ff6da94f2c617c5085f9a3877913ff253c64cb9d13f21781fa6fe43221eb9c",
+      "before": {
+        "original_goal": {
+          "force": -0.3730012900274742,
+          "velocity": 0.22549830843177943
+        },
+        "source": "d006de2b9eee294e6ae7df9a69c3d5083e81c3a178693b8b85486bf231f1b77c",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "6cd52d64f2daffb3c7179151ecbb2bdb723a8f5a15b3b21599cadb7965524212",
+        "queries": [
+          [
+            -0.3730012900274742,
+            0.22549830843177943
+          ]
+        ],
+        "predictions": [
+          -0.7291246056556702
+        ],
+        "conditional_branches": [
+          [
+            -0.7304844856262207,
+            -0.729134202003479,
+            -0.7277551293373108
+          ]
+        ],
+        "observed_count": 4
+      },
+      "conditional": {
+        "original_goal": {
+          "force": -0.3730012900274742,
+          "velocity": 0.22549830843177943
+        },
+        "source": "d006de2b9eee294e6ae7df9a69c3d5083e81c3a178693b8b85486bf231f1b77c",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "6cd52d64f2daffb3c7179151ecbb2bdb723a8f5a15b3b21599cadb7965524212",
+        "queries": [
+          [
+            -0.6730012900274742,
+            0.22549830843177943
+          ],
+          [
+            -0.07300129002747419,
+            0.22549830843177943
+          ]
+        ],
+        "predictions": [
+          -1.0172393321990967,
+          -0.4059334993362427
+        ],
+        "conditional_branches": [
+          [
+            -1.0183130502700806,
+            -1.0171666145324707,
+            -1.0162384510040283
+          ],
+          [
+            -0.40724286437034607,
+            -0.406110554933548,
+            -0.40444710850715637
+          ]
+        ],
+        "observed_count": 4
+      },
+      "proposal": {
+        "id": "7d7919a560e633bccf49b1bcc339e83a658ca54af6c894197819e4273cf1104d",
+        "goal": {
+          "force": -0.3730012900274742,
+          "velocity": 0.22549830843177943
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "6cd52d64f2daffb3c7179151ecbb2bdb723a8f5a15b3b21599cadb7965524212",
+        "requested": {
+          "force": 0.0,
+          "velocity": -1.0
+        },
+        "policy": "fixed maximum branch disagreement on a supplied finite grid",
+        "predicted_response": 0.25473836064338684
+      },
+      "actual_evidence": {
+        "id": "c4ff6da94f2c617c5085f9a3877913ff253c64cb9d13f21781fa6fe43221eb9c:new-probe",
+        "source": "c4937e46ea9c00d5a106a053c7a592e98bb72a5c658a2e3c91222496595fa670",
+        "performed": true,
+        "force": 0.0,
+        "velocity": -1.0,
+        "response": 0.415716334838492
+      },
+      "credit": {
+        "decision": "7d7919a560e633bccf49b1bcc339e83a658ca54af6c894197819e4273cf1104d",
+        "original_goal": {
+          "force": -0.3730012900274742,
+          "velocity": 0.22549830843177943
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "before_state": "6cd52d64f2daffb3c7179151ecbb2bdb723a8f5a15b3b21599cadb7965524212",
+        "after_state": "805378f8305ca78c503f64ba130090fa3b6d8a9473818c3dc97bdc2a831ad72e",
+        "before": -0.7291246056556702,
+        "after": -0.534879744052887,
+        "evidence": "1b8d9bfbfa727b5d83933783c61b0680b09f261d32ac48c1b137e6b49c0b527d",
+        "evidence_id": "c4ff6da94f2c617c5085f9a3877913ff253c64cb9d13f21781fa6fe43221eb9c:new-probe",
+        "performed_as_requested": true,
+        "independent_response": -1.2023675742413742,
+        "outcome_source": "c4ff6da94f2c617c5085f9a3877913ff253c64cb9d13f21781fa6fe43221eb9c:withheld-original-goal",
+        "verifier": "d2a7b14ef4c913174302313abd56ce007f49f2ed4d630b56dd8dd2ffa7e1dfea",
+        "signed_progress": -0.22158109613392513,
+        "positive_credit": 0.0,
+        "id": "c5056cdeac3cf4a4f718ee41aeb4a2570b50e0ffff78a37b996a2c44be765fe3"
+      },
+      "returned_answer": {
+        "original_goal": {
+          "force": -0.3730012900274742,
+          "velocity": 0.22549830843177943
+        },
+        "source": "d006de2b9eee294e6ae7df9a69c3d5083e81c3a178693b8b85486bf231f1b77c",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "14d1487f2296daf078ab2e3531a8d9e0eca24bc3e788035f81f9f339433dc2d4",
+        "queries": [
+          [
+            -0.3730012900274742,
+            0.22549830843177943
+          ]
+        ],
+        "predictions": [
+          -0.534879744052887
+        ],
+        "conditional_branches": [
+          [
+            -0.5363333821296692,
+            -0.5348593592643738,
+            -0.5334465503692627
+          ]
+        ],
+        "observed_count": 5
+      },
+      "revision": "314213f446626acf8138cd4ae5847971ff95957cd5e70b1a8f2a506343017426"
+    },
+    {
+      "id": "d681bbe42f31b462b5d9edb48aecfe70ca284bc542818f449659e8ca7c65373a",
+      "before": {
+        "original_goal": {
+          "force": -0.9666491499809875,
+          "velocity": 0.24200766666564322
+        },
+        "source": "aa899fdb03a89e0dc0da7d874cf25e247256ebfaa0326115cf8ba76d5ac4740f",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "2fc877f45e44517df5e47263ca26d61bd22b8845e5c3550763984aa5352af539",
+        "queries": [
+          [
+            -0.9666491499809875,
+            0.24200766666564322
+          ]
+        ],
+        "predictions": [
+          -1.2820477485656738
+        ],
+        "conditional_branches": [
+          [
+            -1.283005952835083,
+            -1.2818048000335693,
+            -1.2813326120376587
+          ]
+        ],
+        "observed_count": 4
+      },
+      "conditional": {
+        "original_goal": {
+          "force": -0.9666491499809875,
+          "velocity": 0.24200766666564322
+        },
+        "source": "aa899fdb03a89e0dc0da7d874cf25e247256ebfaa0326115cf8ba76d5ac4740f",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "2fc877f45e44517df5e47263ca26d61bd22b8845e5c3550763984aa5352af539",
+        "queries": [
+          [
+            -1.2666491499809875,
+            0.24200766666564322
+          ],
+          [
+            -0.6666491499809875,
+            0.24200766666564322
+          ]
+        ],
+        "predictions": [
+          -1.4637013673782349,
+          -1.0169217586517334
+        ],
+        "conditional_branches": [
+          [
+            -1.4644094705581665,
+            -1.4634368419647217,
+            -1.4632576704025269
+          ],
+          [
+            -1.0181694030761719,
+            -1.0167508125305176,
+            -1.0158450603485107
+          ]
+        ],
+        "observed_count": 4
+      },
+      "proposal": {
+        "id": "1d399026faaa34a8e69a2a73a408002ea50df0a77389110f8f027c5942ba65e7",
+        "goal": {
+          "force": -0.9666491499809875,
+          "velocity": 0.24200766666564322
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "2fc877f45e44517df5e47263ca26d61bd22b8845e5c3550763984aa5352af539",
+        "requested": {
+          "force": 1.0,
+          "velocity": 1.0
+        },
+        "policy": "fixed maximum branch disagreement on a supplied finite grid",
+        "predicted_response": 0.9263995289802551
+      },
+      "actual_evidence": {
+        "id": "d681bbe42f31b462b5d9edb48aecfe70ca284bc542818f449659e8ca7c65373a:new-probe",
+        "source": "32d84db73eb7d502019e3d03137f50b985cc0443e0675ec44526d2970c58698b",
+        "performed": true,
+        "force": 1.0,
+        "velocity": 1.0,
+        "response": 1.483813693463913
+      },
+      "credit": {
+        "decision": "1d399026faaa34a8e69a2a73a408002ea50df0a77389110f8f027c5942ba65e7",
+        "original_goal": {
+          "force": -0.9666491499809875,
+          "velocity": 0.24200766666564322
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "before_state": "2fc877f45e44517df5e47263ca26d61bd22b8845e5c3550763984aa5352af539",
+        "after_state": "6e47ac6e4e51488657dfb16344fec4211452be20a9d368e603c12f90363ac5d7",
+        "before": -1.2820477485656738,
+        "after": -1.3154641389846802,
+        "evidence": "61d6c56dc288ef54bebdbf152673b891cd5188d201c321beeb8c8ac06830e98e",
+        "evidence_id": "d681bbe42f31b462b5d9edb48aecfe70ca284bc542818f449659e8ca7c65373a:new-probe",
+        "performed_as_requested": true,
+        "independent_response": -1.7632066061861877,
+        "outcome_source": "d681bbe42f31b462b5d9edb48aecfe70ca284bc542818f449659e8ca7c65373a:withheld-original-goal",
+        "verifier": "d2a7b14ef4c913174302313abd56ce007f49f2ed4d630b56dd8dd2ffa7e1dfea",
+        "signed_progress": 0.031040529330984903,
+        "positive_credit": 0.031040529330984903,
+        "id": "f6f08ba4cea83a49abd5f535563360574a8f049cef542bb81affa1dea9d5788d"
+      },
+      "returned_answer": {
+        "original_goal": {
+          "force": -0.9666491499809875,
+          "velocity": 0.24200766666564322
+        },
+        "source": "aa899fdb03a89e0dc0da7d874cf25e247256ebfaa0326115cf8ba76d5ac4740f",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "8bd41d69157743c2e53b4d5c4df1b8023a140e21239bd8e8c2877aa1802b6a03",
+        "queries": [
+          [
+            -0.9666491499809875,
+            0.24200766666564322
+          ]
+        ],
+        "predictions": [
+          -1.3154641389846802
+        ],
+        "conditional_branches": [
+          [
+            -1.3167645931243896,
+            -1.315067172050476,
+            -1.3145606517791748
+          ]
+        ],
+        "observed_count": 5
+      },
+      "revision": "f32216cd517725e54cacbc17d1155735d7c677fe5bb79d45a37b9f7da8f6f61c"
+    },
+    {
+      "id": "cf6420ade1b0307736cdd616bb68ef3cab157270cb7b7072827fb5593501620a",
+      "before": {
+        "original_goal": {
+          "force": 0.8157419116124314,
+          "velocity": -0.8011214654339642
+        },
+        "source": "477bd6a2f8244dc12a0bab93b8b5d180960aa91d18604cca5e4516e2315eb3fe",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "e6663aa4ce73b09159242c2e0760b206fbd4e4b177772a16a082bf6c87e63680",
+        "queries": [
+          [
+            0.8157419116124314,
+            -0.8011214654339642
+          ]
+        ],
+        "predictions": [
+          1.0029419660568237
+        ],
+        "conditional_branches": [
+          [
+            1.0027340650558472,
+            1.0019557476043701,
+            1.0041359663009644
+          ]
+        ],
+        "observed_count": 4
+      },
+      "conditional": {
+        "original_goal": {
+          "force": 0.8157419116124314,
+          "velocity": -0.8011214654339642
+        },
+        "source": "477bd6a2f8244dc12a0bab93b8b5d180960aa91d18604cca5e4516e2315eb3fe",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "e6663aa4ce73b09159242c2e0760b206fbd4e4b177772a16a082bf6c87e63680",
+        "queries": [
+          [
+            0.5157419116124313,
+            -0.8011214654339642
+          ],
+          [
+            1.1157419116124314,
+            -0.8011214654339642
+          ]
+        ],
+        "predictions": [
+          0.717839777469635,
+          1.2066869735717773
+        ],
+        "conditional_branches": [
+          [
+            0.717057466506958,
+            0.7170295715332031,
+            0.7194324135780334
+          ],
+          [
+            1.207057237625122,
+            1.2055853605270386,
+            1.2074185609817505
+          ]
+        ],
+        "observed_count": 4
+      },
+      "proposal": {
+        "id": "902e34a68067e910e662b96ee51d5e89354385e8f6ccc4ab0f3d5f67182be289",
+        "goal": {
+          "force": 0.8157419116124314,
+          "velocity": -0.8011214654339642
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "e6663aa4ce73b09159242c2e0760b206fbd4e4b177772a16a082bf6c87e63680",
+        "requested": {
+          "force": -1.0,
+          "velocity": -1.0
+        },
+        "policy": "fixed maximum branch disagreement on a supplied finite grid",
+        "predicted_response": -0.578326940536499
+      },
+      "actual_evidence": {
+        "id": "cf6420ade1b0307736cdd616bb68ef3cab157270cb7b7072827fb5593501620a:new-probe",
+        "source": "4b3042e6e6198214025921ba0b8057222a1e543592aeff2710ffaf0e7d6253d7",
+        "performed": true,
+        "force": -1.0,
+        "velocity": -1.0,
+        "response": -0.24689601704576916
+      },
+      "credit": {
+        "decision": "902e34a68067e910e662b96ee51d5e89354385e8f6ccc4ab0f3d5f67182be289",
+        "original_goal": {
+          "force": 0.8157419116124314,
+          "velocity": -0.8011214654339642
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "before_state": "e6663aa4ce73b09159242c2e0760b206fbd4e4b177772a16a082bf6c87e63680",
+        "after_state": "4b759821700111500d50f1cb155120ef903ff26fc307fe5d065f2d9f4c80b730",
+        "before": 1.0029419660568237,
+        "after": 1.1119898557662964,
+        "evidence": "91e7611e24e392857fb380291651850e7b9a19dd74a48221d67296c9642bc587",
+        "evidence_id": "cf6420ade1b0307736cdd616bb68ef3cab157270cb7b7072827fb5593501620a:new-probe",
+        "performed_as_requested": true,
+        "independent_response": 1.2790603573471855,
+        "outcome_source": "cf6420ade1b0307736cdd616bb68ef3cab157270cb7b7072827fb5593501620a:withheld-original-goal",
+        "verifier": "d2a7b14ef4c913174302313abd56ce007f49f2ed4d630b56dd8dd2ffa7e1dfea",
+        "signed_progress": 0.048328813510287456,
+        "positive_credit": 0.048328813510287456,
+        "id": "82bbcb6e4da1cfdedb014b673e43dee4c36c2519afe1e9a1b1125e2d9f83da9a"
+      },
+      "returned_answer": {
+        "original_goal": {
+          "force": 0.8157419116124314,
+          "velocity": -0.8011214654339642
+        },
+        "source": "477bd6a2f8244dc12a0bab93b8b5d180960aa91d18604cca5e4516e2315eb3fe",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "d9d2c0f2c0ac252312b22b7bc4d41b9a97251643a141465c4f00424cbc409794",
+        "queries": [
+          [
+            0.8157419116124314,
+            -0.8011214654339642
+          ]
+        ],
+        "predictions": [
+          1.1119898557662964
+        ],
+        "conditional_branches": [
+          [
+            1.1117379665374756,
+            1.110985517501831,
+            1.1132458448410034
+          ]
+        ],
+        "observed_count": 5
+      },
+      "revision": "a3023ac1cc34c2616c9f4f3dec36fa10c9eb7aa5baf23f10e9af9abdfc30dee9"
+    },
+    {
+      "id": "fdc5c509054215ee4feb5c47dd645447226a1641ef3095be9dd35ed2809457d7",
+      "before": {
+        "original_goal": {
+          "force": 0.3391482529962826,
+          "velocity": 0.4917926480835426
+        },
+        "source": "4f4e34448d1131e300f83a85b1b6f13f77fb31d85caab5ff7a75af36d32258b4",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "2daf7c8e03d9c8a51597f358eb162641a2149b3838f0448a8a1a80b38e0f2beb",
+        "queries": [
+          [
+            0.3391482529962826,
+            0.4917926480835426
+          ]
+        ],
+        "predictions": [
+          0.32422932982444763
+        ],
+        "conditional_branches": [
+          [
+            0.3239818811416626,
+            0.32386302947998047,
+            0.32484301924705505
+          ]
+        ],
+        "observed_count": 4
+      },
+      "conditional": {
+        "original_goal": {
+          "force": 0.3391482529962826,
+          "velocity": 0.4917926480835426
+        },
+        "source": "4f4e34448d1131e300f83a85b1b6f13f77fb31d85caab5ff7a75af36d32258b4",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "2daf7c8e03d9c8a51597f358eb162641a2149b3838f0448a8a1a80b38e0f2beb",
+        "queries": [
+          [
+            0.039148252996282606,
+            0.4917926480835426
+          ],
+          [
+            0.6391482529962826,
+            0.4917926480835426
+          ]
+        ],
+        "predictions": [
+          0.09480667859315872,
+          0.5866169333457947
+        ],
+        "conditional_branches": [
+          [
+            0.09379957616329193,
+            0.09464430809020996,
+            0.09597615897655487
+          ],
+          [
+            0.5873157978057861,
+            0.5860403776168823,
+            0.5864946842193604
+          ]
+        ],
+        "observed_count": 4
+      },
+      "proposal": {
+        "id": "52929e71611d82ca3d5ef593c47ed0f2edc4acfc852e2e793d6127618989c987",
+        "goal": {
+          "force": 0.3391482529962826,
+          "velocity": 0.4917926480835426
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "2daf7c8e03d9c8a51597f358eb162641a2149b3838f0448a8a1a80b38e0f2beb",
+        "requested": {
+          "force": 0.0,
+          "velocity": 0.0
+        },
+        "policy": "fixed maximum branch disagreement on a supplied finite grid",
+        "predicted_response": 0.20149140059947968
+      },
+      "actual_evidence": {
+        "id": "fdc5c509054215ee4feb5c47dd645447226a1641ef3095be9dd35ed2809457d7:new-probe",
+        "source": "b75afa4904b3764d7db243cf8eae85e7244866eeb3dfbfd040a75074669246a4",
+        "performed": true,
+        "force": 0.0,
+        "velocity": 0.0,
+        "response": 0.08675922766428235
+      },
+      "credit": {
+        "decision": "52929e71611d82ca3d5ef593c47ed0f2edc4acfc852e2e793d6127618989c987",
+        "original_goal": {
+          "force": 0.3391482529962826,
+          "velocity": 0.4917926480835426
+        },
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "before_state": "2daf7c8e03d9c8a51597f358eb162641a2149b3838f0448a8a1a80b38e0f2beb",
+        "after_state": "1894fb6499afb94efb096e2370285a1aeda5e2dfd6583268b92a452a457129ba",
+        "before": 0.32422932982444763,
+        "after": 0.2762435972690582,
+        "evidence": "95e9d2fc48998a2735d75413eba1e70ab40231ed19cc80a3a75f09df9a262de0",
+        "evidence_id": "fdc5c509054215ee4feb5c47dd645447226a1641ef3095be9dd35ed2809457d7:new-probe",
+        "performed_as_requested": true,
+        "independent_response": 0.295786417319772,
+        "outcome_source": "fdc5c509054215ee4feb5c47dd645447226a1641ef3095be9dd35ed2809457d7:withheld-original-goal",
+        "verifier": "d2a7b14ef4c913174302313abd56ce007f49f2ed4d630b56dd8dd2ffa7e1dfea",
+        "signed_progress": 0.00042707745621405215,
+        "positive_credit": 0.00042707745621405215,
+        "id": "a3deadf119fe732e6a1f36999970506858aeaac5fc63b3344f93779b2a6f2b0f"
+      },
+      "returned_answer": {
+        "original_goal": {
+          "force": 0.3391482529962826,
+          "velocity": 0.4917926480835426
+        },
+        "source": "4f4e34448d1131e300f83a85b1b6f13f77fb31d85caab5ff7a75af36d32258b4",
+        "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "state": "cad5ee6b6637bfcc17c328520c4f1d9dff0849b934ac2956e9bcb78865c3cf8c",
+        "queries": [
+          [
+            0.3391482529962826,
+            0.4917926480835426
+          ]
+        ],
+        "predictions": [
+          0.2762435972690582
+        ],
+        "conditional_branches": [
+          [
+            0.27597928047180176,
+            0.2758961617946625,
+            0.27685537934303284
+          ]
+        ],
+        "observed_count": 5
+      },
+      "revision": "41e9f830b0d6ea26a41f50e86d817fa55d3992e996fd59f0610b71086d9c1096"
+    }
+  ],
+  "before_goal_mse": 0.06577107209061064,
+  "after_goal_mse": 0.05781112567290218,
+  "positive_credit_cases": 8,
+  "negative_credit_cases": 8,
+  "new_policy_weight_updates": 0,
+  "policy": "fixed disagreement selector; graded state correction",
+  "scope": "Sixteen already-open development tasks; delivery audit, not new sealed generalization."
+}

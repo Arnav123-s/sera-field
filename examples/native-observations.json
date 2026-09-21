@@ -1,0 +1,10 @@
+{
+  "source": "Illustrative simulated observations: acceleration = 0.8 force - 0.3 velocity + 0.1",
+  "goal": {"force": 0.4, "velocity": -0.2},
+  "observations": [
+    {"id": "example-1", "source": "illustrative-simulator", "performed": true, "force": -1.0, "velocity": 0.0, "response": -0.7},
+    {"id": "example-2", "source": "illustrative-simulator", "performed": true, "force": 1.0, "velocity": 0.0, "response": 0.9},
+    {"id": "example-3", "source": "illustrative-simulator", "performed": true, "force": 0.0, "velocity": -1.0, "response": 0.4},
+    {"id": "example-4", "source": "illustrative-simulator", "performed": true, "force": 0.0, "velocity": 1.0, "response": -0.2}
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "checks": {
+    "packaged_integrity": true,
+    "documented_meaning_example": true,
+    "fresh_process_example_restart": true,
+    "four_supplied_observations": true,
+    "same_selected_weights": true,
+    "checkpoint_bytes_unchanged": true
+  },
+  "all_checks": true,
+  "scope": "Documented illustrative inputs; operational verification, not a new scientific cohort.",
+  "package": {
+    "revision": "754b984d3965f42299dd2085149cd367ebf7cb4732b5ea4b1cf8d69f1def4ab5.pt",
+    "sha256": "754b984d3965f42299dd2085149cd367ebf7cb4732b5ea4b1cf8d69f1def4ab5",
+    "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+    "step": 8192,
+    "score": 0.5460253147727442,
+    "tracks": {
+      "semantic": {
+        "n": 256,
+        "accuracy": 0.59765625,
+        "loss": 0.8880621415155474
+      },
+      "reading": {
+        "n": 128,
+        "accuracy": 0.3125,
+        "loss": 1.4853494627168402
+      },
+      "math": {
+        "n": 128,
+        "accuracy": 0.5703125,
+        "loss": 0.9650708180197398
+      },
+      "pairs": {
+        "n": 607,
+        "accuracy": 0.29983525535420097,
+        "loss": 1.5948199039063136
+      },
+      "physics": {
+        "n": 128,
+        "mse": 0.052828215662657385
+      }
+    }
+  },
+  "packaged_owners": [
+    {
+      "selection": "checkpoints/CONCEPT-011/SELECTION.json",
+      "sha256": "7767b021573e7b398f87dd45706dd2a87b1b2e3738545f4c36e4ced80c3b5e48",
+      "bytes": 3526715,
+      "weights": "afa6bea53feb6e6b74d98ea52195ff531d21cc22e3863e8eb077f21fba007ba7"
+    },
+    {
+      "selection": "checkpoints/ECHO-007/SELECTION.json",
+      "sha256": "b8428610ee13211547ee83f9c741cc01c9fcd5581b8a10f25cb6f5b2e14d4ae1",
+      "bytes": 3466853,
+      "weights": "6bb452bbb714d068925180aacc03cbc48ef296410361ceb990e1c50edd291a85"
+    },
+    {
+      "selection": "checkpoints/GROW-013/SELECTION.json",
+      "sha256": "a63c375da96038f2426bc53f44e49f20d560fd5c7e1ebd5fe8715bc816fe8eca",
+      "bytes": 3569325,
+      "weights": "bf34ac9ca9bb29f823dc1b7677555f24353535b0f0b8d7e90fff829c79fa96a4"
+    },
+    {
+      "selection": "checkpoints/INQUIRY-014/SELECTION.json",
+      "sha256": "f7fd909677c3eec0052ef9cc81a55f449b9f4e7c346dc49661b5e03ec107fa26",
+      "bytes": 3571161,
+      "weights": "27887710f83f4dd1341bc720020e1c0c902c4ee5cb4e5d0ee94451a4a2578c7b"
+    },
+    {
+      "selection": "checkpoints/JOINT-020/SELECTION.json",
+      "sha256": "7d79a3e76d052f856b7cea309fd4b862908b2f0b487c33044d613432c0df1fe5",
+      "bytes": 3345289,
+      "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1"
+    },
+    {
+      "selection": "checkpoints/NATIVE-019/SELECTION.json",
+      "sha256": "754b984d3965f42299dd2085149cd367ebf7cb4732b5ea4b1cf8d69f1def4ab5",
+      "bytes": 3308489,
+      "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb"
+    },
+    {
+      "selection": "checkpoints/SCFE-004/SELECTION.json",
+      "sha256": "e8503ce2066b5778a65f1526f67de993a8b4160d6ae3d68e3c1c257ae1205eb3",
+      "bytes": 3466597,
+      "weights": "528a08f2bb6f5b6e640c416506b14c06bcffe626f749276b24b3817791bd2ae4"
+    },
+    {
+      "selection": "checkpoints/SEMANTIC-015/SELECTION.json",
+      "sha256": "db851135bbca7235e743423fa14408196c0e3b829d51113180958ace3270c8f8",
+      "bytes": 3655833,
+      "weights": "25d8ee69aeb6cffc621f4b51d42e652e6ac5bad825f0cc7d2f511775509ba37a"
+    },
+    {
+      "selection": "checkpoints/UNIFIED-012/SELECTION.json",
+      "sha256": "c54755e41c10bfe1fd28b4b7430125cc531e96b3d69bda4120e1b86a8f9bd7b5",
+      "bytes": 3551189,
+      "weights": "aead9f7363bb421425f4c65fb3b259f53b9723b075e5c542ca152641c01268dc"
+    }
+  ],
+  "input_sha256": {
+    "native-meaning.json": "66f53b898dcc871576c6897d53246cc72d2fdf05c223ef89fabcca1555c7feb0",
+    "native-observations.json": "f10b8f440d4220d7b0a1b03e9ec07d27545a6cb6d8c307370065596fac7b8e70"
+  },
+  "meaning": {
+    "checkpoint": {
+      "revision": "754b984d3965f42299dd2085149cd367ebf7cb4732b5ea4b1cf8d69f1def4ab5.pt",
+      "sha256": "754b984d3965f42299dd2085149cd367ebf7cb4732b5ea4b1cf8d69f1def4ab5",
+      "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+      "step": 8192,
+      "score": 0.5460253147727442,
+      "tracks": {
+        "semantic": {
+          "n": 256,
+          "accuracy": 0.59765625,
+          "loss": 0.8880621415155474
+        },
+        "reading": {
+          "n": 128,
+          "accuracy": 0.3125,
+          "loss": 1.4853494627168402
+        },
+        "math": {
+          "n": 128,
+          "accuracy": 0.5703125,
+          "loss": 0.9650708180197398
+        },
+        "pairs": {
+          "n": 607,
+          "accuracy": 0.29983525535420097,
+          "loss": 1.5948199039063136
+        },
+        "physics": {
+          "n": 128,
+          "mse": 0.052828215662657385
+        }
+      }
+    },
+    "premise_status": "supplied conditional premise",
+    "relations": [
+      {
+        "hypothesis": "Someone holds a flower.",
+        "entailment_contradiction_unresolved": [
+          0.04930944740772247,
+          0.9082326889038086,
+          0.04245784506201744
+        ]
+      },
+      {
+        "hypothesis": "Nobody is holding anything.",
+        "entailment_contradiction_unresolved": [
+          0.01668686233460903,
+          0.9534626007080078,
+          0.02985060214996338
+        ]
+      },
+      {
+        "hypothesis": "The flower was bought this morning.",
+        "entailment_contradiction_unresolved": [
+          0.10955525189638138,
+          0.5012186169624329,
+          0.38922610878944397
+        ]
+      }
+    ]
+  },
+  "measured_task": {
+    "original_goal": {
+      "force": 0.4,
+      "velocity": -0.2
+    },
+    "source": "Illustrative simulated observations: acceleration = 0.8 force - 0.3 velocity + 0.1",
+    "owner_weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+    "state": "e5f55db677792caa4b5d15a8d8ff3900660b3e06106ac916a6383c5ac38d23f2",
+    "queries": [
+      [
+        0.4,
+        -0.2
+      ]
+    ],
+    "predictions": [
+      0.4493250548839569
+    ],
+    "conditional_branches": [
+      [
+        0.4490007162094116,
+        0.44873788952827454,
+        0.4502365291118622
+      ]
+    ],
+    "observed_count": 4,
+    "saved_revision": "178923d74a7bd839a854e12639b51125a9228b2fd9ceef4d6c0512ecf8979581"
+  },
+  "repository_tests": "verification/repository-tests.xml"
+}

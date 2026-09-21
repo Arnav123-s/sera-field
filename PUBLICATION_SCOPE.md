@@ -1,12 +1,14 @@
 # Reviewed publication scope
 
 This release is a reviewed current-file snapshot of the independent SERA Field
-laboratory at source revision `c4133f140698af0e1c7a27d6e8e386f06763e798`. The complete local history and original
+laboratory at source revision `510b801044b2f3b1c369e649895644d7e8bfc5f8`. The complete local history and original
 SERA remain preserved. This checkout has its own public publication history.
 
 Included: source, tests, frozen prospective protocols, engineering and usage
-guides, compact research results, costs and identity manifests, qualified
-UNIFIED-012/GROW-013/INQUIRY-014/SEMANTIC-015 inference weights, and earlier packaged checkpoints.
+guides, compact research results, costs and identity manifests, and packaged
+inference weights with their individually recorded assessment and research roles.
+The fresh NATIVE-019 lineage and earlier usable checkpoints remain separately
+addressable. The documentation guide separates current interfaces from history.
 Work marked active in the research state has not been represented as completed.
 File identities below describe the Git blob bytes, before platform line endings.
 

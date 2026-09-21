@@ -1,0 +1,851 @@
+{
+  "checks": {
+    "fresh_process_restart_exact": true,
+    "original_goal_preserved": true,
+    "conditional_text_read_only": true,
+    "text_preserves_original_goal": true,
+    "one_actual_round": true
+  },
+  "human_interpretations": [
+    {
+      "id": "f32a75a1f2b72a6901357f73235878ec4dbd0c7b9e57f57d0e272974f3365176",
+      "genre": "travel",
+      "human_annotation": 1,
+      "returned": {
+        "premise": "At the end of Rue des Francs-Bourgeois is what many consider to be the city's most handsome residential square, the Place des Vosges, with its stone and red brick facades.",
+        "status": "conditional_on_the_supplied_premise",
+        "interpretations": [
+          {
+            "statement": "Place des Vosges is constructed entirely of gray marble.",
+            "relation": "additional_information_needed",
+            "probabilities": {
+              "follows_from_premise": 0.25433894991874695,
+              "conflicts_with_premise": 0.27665284276008606,
+              "additional_information_needed": 0.4690081775188446
+            },
+            "conditional_branches": [
+              "additional_information_needed",
+              "additional_information_needed",
+              "additional_information_needed"
+            ],
+            "branch_agreement": true
+          }
+        ],
+        "predictor": "e9ba737c4f171e108e10039657aea47c84d2962b0d3c0cc3769f593807eeffa8",
+        "retained_original_goal": {
+          "queries": [
+            [
+              -0.9373840093612671,
+              -1.8029580116271973
+            ],
+            [
+              1.911879539489746,
+              -1.6359350681304932
+            ],
+            [
+              -1.389970064163208,
+              0.3494527041912079
+            ],
+            [
+              -1.6018106937408447,
+              -0.19893522560596466
+            ]
+          ]
+        }
+      },
+      "read_only": true,
+      "original_goal_retained": true
+    },
+    {
+      "id": "6322576c3ea737f7e32ecae71b3af45fcb3fd034e29c2c1a8bd6edae3b81cc7c",
+      "genre": "fiction",
+      "human_annotation": 0,
+      "returned": {
+        "premise": "I burst through a set of cabin doors, and fell to the ground-",
+        "status": "conditional_on_the_supplied_premise",
+        "interpretations": [
+          {
+            "statement": "I burst through the doors and fell down.",
+            "relation": "conflicts_with_premise",
+            "probabilities": {
+              "follows_from_premise": 0.23432455956935883,
+              "conflicts_with_premise": 0.6137985587120056,
+              "additional_information_needed": 0.15187691152095795
+            },
+            "conditional_branches": [
+              "conflicts_with_premise",
+              "conflicts_with_premise",
+              "conflicts_with_premise"
+            ],
+            "branch_agreement": true
+          }
+        ],
+        "predictor": "e9ba737c4f171e108e10039657aea47c84d2962b0d3c0cc3769f593807eeffa8",
+        "retained_original_goal": {
+          "queries": [
+            [
+              -0.9373840093612671,
+              -1.8029580116271973
+            ],
+            [
+              1.911879539489746,
+              -1.6359350681304932
+            ],
+            [
+              -1.389970064163208,
+              0.3494527041912079
+            ],
+            [
+              -1.6018106937408447,
+              -0.19893522560596466
+            ]
+          ]
+        }
+      },
+      "read_only": true,
+      "original_goal_retained": true
+    },
+    {
+      "id": "28bb3ec34906455917735fb9cee52e1d70678be23c967460c3238bdd78220110",
+      "genre": "slate",
+      "human_annotation": 2,
+      "returned": {
+        "premise": "It's not that the questions they asked weren't interesting or legitimate (though most did fall under the category of already asked and answered).",
+        "status": "conditional_on_the_supplied_premise",
+        "interpretations": [
+          {
+            "statement": "All of the questions were interesting according to a focus group consulted on the subject.",
+            "relation": "additional_information_needed",
+            "probabilities": {
+              "follows_from_premise": 0.2593320310115814,
+              "conflicts_with_premise": 0.30873677134513855,
+              "additional_information_needed": 0.43193116784095764
+            },
+            "conditional_branches": [
+              "additional_information_needed",
+              "additional_information_needed",
+              "additional_information_needed"
+            ],
+            "branch_agreement": true
+          }
+        ],
+        "predictor": "e9ba737c4f171e108e10039657aea47c84d2962b0d3c0cc3769f593807eeffa8",
+        "retained_original_goal": {
+          "queries": [
+            [
+              -0.9373840093612671,
+              -1.8029580116271973
+            ],
+            [
+              1.911879539489746,
+              -1.6359350681304932
+            ],
+            [
+              -1.389970064163208,
+              0.3494527041912079
+            ],
+            [
+              -1.6018106937408447,
+              -0.19893522560596466
+            ]
+          ]
+        }
+      },
+      "read_only": true,
+      "original_goal_retained": true
+    }
+  ],
+  "initial_original_goal_mse": 0.007232728417648986,
+  "returned_original_goal_mse": 0.005761704744285747,
+  "returned_answer": {
+    "original_goal": {
+      "queries": [
+        [
+          -0.9373840093612671,
+          -1.8029580116271973
+        ],
+        [
+          1.911879539489746,
+          -1.6359350681304932
+        ],
+        [
+          -1.389970064163208,
+          0.3494527041912079
+        ],
+        [
+          -1.6018106937408447,
+          -0.19893522560596466
+        ]
+      ]
+    },
+    "conditional_predictions": [
+      [
+        0.15743184089660645,
+        -1.6545497179031372,
+        1.6702189445495605,
+        1.1578552722930908
+      ],
+      [
+        0.15882205963134766,
+        -1.65379798412323,
+        1.6704823970794678,
+        1.1576664447784424
+      ],
+      [
+        0.1599656045436859,
+        -1.6534847021102905,
+        1.6707148551940918,
+        1.1575655937194824
+      ]
+    ],
+    "predictor": "8beedbe47d0e12e51f1158a67ec03215342fec473a6d21fbe33da184fbc1a10d",
+    "assessment": {
+      "selected_rank": 16,
+      "calibration_mse": [
+        0.06040732190012932,
+        0.20649121701717377,
+        0.13166889548301697,
+        0.008727275766432285
+      ],
+      "scale_diagnostics": [
+        {
+          "rank": 4,
+          "scales": [
+            2.0,
+            1.0,
+            0.5
+          ],
+          "d_gamma_d_scale": [
+            [
+              1.979842048897379,
+              3.845746182563706,
+              6.941042787328646
+            ]
+          ],
+          "integrated_gaussian_flow": [
+            5.272114182164254
+          ],
+          "minimum_eigenvalue": [
+            0.014808025239088106
+          ],
+          "scope": "finite Gaussian coefficient action; scalar k^2 regulator",
+          "observed_feature_rank": 4
+        },
+        {
+          "rank": 8,
+          "scales": [
+            2.0,
+            1.0,
+            0.5
+          ],
+          "d_gamma_d_scale": [
+            [
+              3.9091388068039015,
+              7.414029137285966,
+              13.039849369955775
+            ]
+          ],
+          "integrated_gaussian_flow": [
+            10.164437502491419
+          ],
+          "minimum_eigenvalue": [
+            0.014679172101607758
+          ],
+          "scope": "finite Gaussian coefficient action; scalar k^2 regulator",
+          "observed_feature_rank": 5
+        },
+        {
+          "rank": 16,
+          "scales": [
+            2.0,
+            1.0,
+            0.5
+          ],
+          "d_gamma_d_scale": [
+            [
+              7.7413608352829835,
+              14.540018199318787,
+              25.730709881159278
+            ]
+          ],
+          "integrated_gaussian_flow": [
+            19.988568521343062
+          ],
+          "minimum_eigenvalue": [
+            0.014615721214450119
+          ],
+          "scope": "finite Gaussian coefficient action; scalar k^2 regulator",
+          "observed_feature_rank": 5
+        }
+      ],
+      "gap_detected": true,
+      "qualification": "separate calibration observations; final outcomes withheld"
+    },
+    "assumptions": {
+      "scope": "bounded response with velocity and control in [-2,2]"
+    },
+    "source": {
+      "kind": "independent_simulation",
+      "id": "GENRE-017-persistent-delivery"
+    },
+    "pending_measurement": null
+  },
+  "independent_outcomes": [
+    0.15371370315551758,
+    -1.804114818572998,
+    1.6912059783935547,
+    1.164054036140442
+  ],
+  "credit_history": [
+    {
+      "proposal": {
+        "decision": "40abfd0da9c7f0a7883145314698c352cf9a4f76afd456c1d8bc35dd159d9692",
+        "goal": "0f77ed144617a8a922f8cf3491943579729909261d490834f88d5cfde1f06391",
+        "predictor": "e9ba737c4f171e108e10039657aea47c84d2962b0d3c0cc3769f593807eeffa8",
+        "requested": [
+          -0.21338661877065673,
+          -1.6437249599182793
+        ],
+        "method": "6cff6d8ccb885850d7e7b49e2b0dc34a03fd7f06e43ead60b8501675f8d45049",
+        "branches": [
+          {
+            "circuit": 0,
+            "outcomes": [
+              -1,
+              -1,
+              -1
+            ],
+            "probability": 0.041666666666666664,
+            "method": "45a81e5c5fabd3cdcaf826b4636108bea52815a4921f1a08f29f42a669ff4a36",
+            "probe": [
+              -1.1192115113200358,
+              0.21338661877065668
+            ]
+          },
+          {
+            "circuit": 0,
+            "outcomes": [
+              -1,
+              -1,
+              1
+            ],
+            "probability": 0.041666666666666664,
+            "method": "56a58a5fa35f9211c854e754d2c9e5acab4cf34caf7275f2e9f72b5e2d2c933f",
+            "probe": [
+              1.1192115113200358,
+              -0.21338661877065668
+            ]
+          },
+          {
+            "circuit": 0,
+            "outcomes": [
+              -1,
+              1,
+              -1
+            ],
+            "probability": 0.041666666666666664,
+            "method": "904bd79d9d11eac310a0d5e1a087a176e9dead7f598531eae6bff568cfd6bbcb",
+            "probe": [
+              1.1192115113200358,
+              0.21338661877065668
+            ]
+          },
+          {
+            "circuit": 0,
+            "outcomes": [
+              -1,
+              1,
+              1
+            ],
+            "probability": 0.041666666666666664,
+            "method": "fb13dff5e62d46bb1d51bcff9bc1357d7a49b26cabdb5d57a6bf37b3d05f437e",
+            "probe": [
+              -1.1192115113200358,
+              -0.21338661877065668
+            ]
+          },
+          {
+            "circuit": 0,
+            "outcomes": [
+              1,
+              -1,
+              -1
+            ],
+            "probability": 0.041666666666666664,
+            "method": "904bd79d9d11eac310a0d5e1a087a176e9dead7f598531eae6bff568cfd6bbcb",
+            "probe": [
+              1.1192115113200358,
+              0.21338661877065668
+            ]
+          },
+          {
+            "circuit": 0,
+            "outcomes": [
+              1,
+              -1,
+              1
+            ],
+            "probability": 0.041666666666666664,
+            "method": "fb13dff5e62d46bb1d51bcff9bc1357d7a49b26cabdb5d57a6bf37b3d05f437e",
+            "probe": [
+              -1.1192115113200358,
+              -0.21338661877065668
+            ]
+          },
+          {
+            "circuit": 0,
+            "outcomes": [
+              1,
+              1,
+              -1
+            ],
+            "probability": 0.041666666666666664,
+            "method": "45a81e5c5fabd3cdcaf826b4636108bea52815a4921f1a08f29f42a669ff4a36",
+            "probe": [
+              -1.1192115113200358,
+              0.21338661877065668
+            ]
+          },
+          {
+            "circuit": 0,
+            "outcomes": [
+              1,
+              1,
+              1
+            ],
+            "probability": 0.041666666666666664,
+            "method": "56a58a5fa35f9211c854e754d2c9e5acab4cf34caf7275f2e9f72b5e2d2c933f",
+            "probe": [
+              1.1192115113200358,
+              -0.21338661877065668
+            ]
+          },
+          {
+            "circuit": 1,
+            "outcomes": [
+              -1,
+              -1,
+              -1
+            ],
+            "probability": 0.04166666666666666,
+            "method": "acc5994ace6f5e6b3b1c3f6ae170117a7f02b27cc734dc19089a36a1b5e5dbd4",
+            "probe": [
+              -1.6437249599182788,
+              1.1192115113200358
+            ]
+          },
+          {
+            "circuit": 1,
+            "outcomes": [
+              -1,
+              -1,
+              1
+            ],
+            "probability": 0.04166666666666666,
+            "method": "93d7c8a0a9352208a2404b712d826f18471446221b0fee2cff329201aa8d833b",
+            "probe": [
+              1.6437249599182788,
+              1.1192115113200358
+            ]
+          },
+          {
+            "circuit": 1,
+            "outcomes": [
+              -1,
+              1,
+              -1
+            ],
+            "probability": 0.04166666666666666,
+            "method": "191cb4b9d5435377633a32efffb6e60fe75482c1685692f73d5c7d1039f78f5c",
+            "probe": [
+              -1.6437249599182788,
+              -1.1192115113200358
+            ]
+          },
+          {
+            "circuit": 1,
+            "outcomes": [
+              -1,
+              1,
+              1
+            ],
+            "probability": 0.04166666666666666,
+            "method": "1ff3ac6fdf617767143fa1681f29abd164b76b2565975e4d5174f921b2222bc0",
+            "probe": [
+              1.6437249599182788,
+              -1.1192115113200358
+            ]
+          },
+          {
+            "circuit": 1,
+            "outcomes": [
+              1,
+              -1,
+              -1
+            ],
+            "probability": 0.04166666666666666,
+            "method": "191cb4b9d5435377633a32efffb6e60fe75482c1685692f73d5c7d1039f78f5c",
+            "probe": [
+              -1.6437249599182788,
+              -1.1192115113200358
+            ]
+          },
+          {
+            "circuit": 1,
+            "outcomes": [
+              1,
+              -1,
+              1
+            ],
+            "probability": 0.04166666666666666,
+            "method": "1ff3ac6fdf617767143fa1681f29abd164b76b2565975e4d5174f921b2222bc0",
+            "probe": [
+              1.6437249599182788,
+              -1.1192115113200358
+            ]
+          },
+          {
+            "circuit": 1,
+            "outcomes": [
+              1,
+              1,
+              -1
+            ],
+            "probability": 0.04166666666666666,
+            "method": "acc5994ace6f5e6b3b1c3f6ae170117a7f02b27cc734dc19089a36a1b5e5dbd4",
+            "probe": [
+              -1.6437249599182788,
+              1.1192115113200358
+            ]
+          },
+          {
+            "circuit": 1,
+            "outcomes": [
+              1,
+              1,
+              1
+            ],
+            "probability": 0.04166666666666666,
+            "method": "93d7c8a0a9352208a2404b712d826f18471446221b0fee2cff329201aa8d833b",
+            "probe": [
+              1.6437249599182788,
+              1.1192115113200358
+            ]
+          },
+          {
+            "circuit": 2,
+            "outcomes": [
+              -1,
+              -1,
+              -1
+            ],
+            "probability": 0.041666666666666664,
+            "method": "376764e2e1521fc1468164096b0c82af78d0b2bb9f95862b87df6175fa4ef3af",
+            "probe": [
+              0.21338661877065673,
+              -1.6437249599182793
+            ]
+          },
+          {
+            "circuit": 2,
+            "outcomes": [
+              -1,
+              -1,
+              1
+            ],
+            "probability": 0.041666666666666664,
+            "method": "38e0ecebbfd5c7ad3f1a04f307b2a954dc5610c11c388be1a9d2485b8a121edf",
+            "probe": [
+              0.21338661877065673,
+              1.6437249599182793
+            ]
+          },
+          {
+            "circuit": 2,
+            "outcomes": [
+              -1,
+              1,
+              -1
+            ],
+            "probability": 0.041666666666666664,
+            "method": "abba33fffe1f44d070e31fe360fe7a1827b4d2e7771cf4916bac54b199f01e58",
+            "probe": [
+              -0.21338661877065673,
+              1.6437249599182793
+            ]
+          },
+          {
+            "circuit": 2,
+            "outcomes": [
+              -1,
+              1,
+              1
+            ],
+            "probability": 0.041666666666666664,
+            "method": "d8954f9f0c615c2da421d484d1e6e90ef9c46f8e5e1e2dac6a6ccab77713304d",
+            "probe": [
+              -0.21338661877065673,
+              -1.6437249599182793
+            ]
+          },
+          {
+            "circuit": 2,
+            "outcomes": [
+              1,
+              -1,
+              -1
+            ],
+            "probability": 0.041666666666666664,
+            "method": "abba33fffe1f44d070e31fe360fe7a1827b4d2e7771cf4916bac54b199f01e58",
+            "probe": [
+              -0.21338661877065673,
+              1.6437249599182793
+            ]
+          },
+          {
+            "circuit": 2,
+            "outcomes": [
+              1,
+              -1,
+              1
+            ],
+            "probability": 0.041666666666666664,
+            "method": "d8954f9f0c615c2da421d484d1e6e90ef9c46f8e5e1e2dac6a6ccab77713304d",
+            "probe": [
+              -0.21338661877065673,
+              -1.6437249599182793
+            ]
+          },
+          {
+            "circuit": 2,
+            "outcomes": [
+              1,
+              1,
+              -1
+            ],
+            "probability": 0.041666666666666664,
+            "method": "376764e2e1521fc1468164096b0c82af78d0b2bb9f95862b87df6175fa4ef3af",
+            "probe": [
+              0.21338661877065673,
+              -1.6437249599182793
+            ]
+          },
+          {
+            "circuit": 2,
+            "outcomes": [
+              1,
+              1,
+              1
+            ],
+            "probability": 0.041666666666666664,
+            "method": "38e0ecebbfd5c7ad3f1a04f307b2a954dc5610c11c388be1a9d2485b8a121edf",
+            "probe": [
+              0.21338661877065673,
+              1.6437249599182793
+            ]
+          }
+        ],
+        "distinct_proposals": 12,
+        "conditional_responses": [
+          -0.34141239523887634,
+          -0.34055495262145996,
+          -0.3398450016975403
+        ],
+        "original_goal_predictions": [
+          0.17293836176395416,
+          -1.6362355947494507,
+          1.6733263731002808,
+          1.1564234495162964
+        ],
+        "rank_before": 16,
+        "measurement_branches": 24,
+        "charge_projections": 72
+      },
+      "receipt": {
+        "source": {
+          "kind": "independent_simulation",
+          "id": "GENRE-017-persistent-delivery"
+        },
+        "assumptions": {
+          "scope": "bounded response with velocity and control in [-2,2]"
+        },
+        "decision": "40abfd0da9c7f0a7883145314698c352cf9a4f76afd456c1d8bc35dd159d9692",
+        "measurement_id": "genre-delivery-0",
+        "assessment_id": "independent-genre-goal-0",
+        "performed": [
+          -0.21338661877065673,
+          -1.6437249599182793
+        ],
+        "response": -0.3436396659188852,
+        "goal_measurements": [
+          [
+            -0.9373840093612671,
+            -1.8029580116271973,
+            0.15371370315551758
+          ],
+          [
+            1.911879539489746,
+            -1.6359350681304932,
+            -1.804114818572998
+          ],
+          [
+            -1.389970064163208,
+            0.3494527041912079,
+            1.6912059783935547
+          ],
+          [
+            -1.6018106937408447,
+            -0.19893522560596466,
+            1.164054036140442
+          ]
+        ]
+      },
+      "actuation_matched": true,
+      "independent_goal_inputs": true,
+      "credit": {
+        "decision": "40abfd0da9c7f0a7883145314698c352cf9a4f76afd456c1d8bc35dd159d9692",
+        "accepted": true,
+        "reward": 0.0016075530583890478,
+        "bonus": 0.00014614118712627706,
+        "before": "e9ba737c4f171e108e10039657aea47c84d2962b0d3c0cc3769f593807eeffa8",
+        "after": "eab32aa6b4afb98fc466042c19a26fe354193fbb0b0592e59f878337a6253bf2",
+        "weights_changed": true,
+        "outcome": {
+          "goal": "0f77ed144617a8a922f8cf3491943579729909261d490834f88d5cfde1f06391",
+          "decision": "40abfd0da9c7f0a7883145314698c352cf9a4f76afd456c1d8bc35dd159d9692",
+          "policy_before": "e9ba737c4f171e108e10039657aea47c84d2962b0d3c0cc3769f593807eeffa8",
+          "predictor": "e9ba737c4f171e108e10039657aea47c84d2962b0d3c0cc3769f593807eeffa8",
+          "evidence_id": "33039d74175f3b935374b87c5d1a9fcd62d4a4ba34c9689e72797b5e58d245d1",
+          "source_sha256": "707375b2d5bec03b7af4e9ffef13edc09863b3e50859fa4adcf501fc277ae5b7",
+          "verifier_sha256": "52adf93175c4f4e8aae7230838bf1a4fdcfda585e4a640773a432600c0c1f77f",
+          "assessment_id": "93690a3625f2df4e29e37d494f8754a4e98f890c63fdcacd634420b4efeeb4aa",
+          "evidence_kind": "independent_simulation",
+          "intended_intervention": "c7e64a9ce3bc8948c0c7268f893f517c4505833cb7637b0ca0397e1a85a4016d",
+          "observed_intervention": "c7e64a9ce3bc8948c0c7268f893f517c4505833cb7637b0ca0397e1a85a4016d",
+          "before_loss": 0.007232732139527798,
+          "after_loss": 0.005760750267654657,
+          "verified": true,
+          "canonical_contribution": "a254300853829c910d0c89808f21e57f6183b947018115b600a93c919f45d096",
+          "assumptions_id": "ba1b71badca393945ceeef3b1fc02771485a11fad028db23ce09117364addf70"
+        }
+      },
+      "capture": {
+        "goal": "0f77ed144617a8a922f8cf3491943579729909261d490834f88d5cfde1f06391",
+        "decision": "40abfd0da9c7f0a7883145314698c352cf9a4f76afd456c1d8bc35dd159d9692",
+        "predictor": "e9ba737c4f171e108e10039657aea47c84d2962b0d3c0cc3769f593807eeffa8",
+        "policy_before": "e9ba737c4f171e108e10039657aea47c84d2962b0d3c0cc3769f593807eeffa8",
+        "evidence_id": "33039d74175f3b935374b87c5d1a9fcd62d4a4ba34c9689e72797b5e58d245d1",
+        "assessment_id": "93690a3625f2df4e29e37d494f8754a4e98f890c63fdcacd634420b4efeeb4aa",
+        "source_sha256": "707375b2d5bec03b7af4e9ffef13edc09863b3e50859fa4adcf501fc277ae5b7",
+        "verifier_sha256": "52adf93175c4f4e8aae7230838bf1a4fdcfda585e4a640773a432600c0c1f77f",
+        "assumptions_id": "ba1b71badca393945ceeef3b1fc02771485a11fad028db23ce09117364addf70",
+        "slot": 5,
+        "tag": "62e58ecd12c43ee0fff3918c261278fc9dfab7b66b60eec901dcc81209f2b507",
+        "codec_max_error": 0.0014897286891937256,
+        "relaxation": {
+          "accepted_steps": 12,
+          "mass_error": 0.0,
+          "energy_before": -13.82836627960205,
+          "energy_after": -13.829419136047363
+        },
+        "overwrites_slot_revision": false
+      },
+      "assessment": {
+        "selected_rank": 16,
+        "calibration_mse": [
+          0.060405220836400986,
+          0.2064850926399231,
+          0.1317206621170044,
+          0.008727742359042168
+        ],
+        "scale_diagnostics": [
+          {
+            "rank": 4,
+            "scales": [
+              2.0,
+              1.0,
+              0.5
+            ],
+            "d_gamma_d_scale": [
+              [
+                1.979841309526163,
+                3.8457409394694464,
+                6.941015079150875
+              ]
+            ],
+            "integrated_gaussian_flow": [
+              5.272105707065476
+            ],
+            "minimum_eigenvalue": [
+              0.014808017200561848
+            ],
+            "scope": "finite Gaussian coefficient action; scalar k^2 regulator",
+            "observed_feature_rank": 4
+          },
+          {
+            "rank": 8,
+            "scales": [
+              2.0,
+              1.0,
+              0.5
+            ],
+            "d_gamma_d_scale": [
+              [
+                3.909138551400395,
+                7.414025191679535,
+                13.039821498315217
+              ]
+            ],
+            "integrated_gaussian_flow": [
+              10.16443029031243
+            ],
+            "minimum_eigenvalue": [
+              0.01467918017877659
+            ],
+            "scope": "finite Gaussian coefficient action; scalar k^2 regulator",
+            "observed_feature_rank": 5
+          },
+          {
+            "rank": 16,
+            "scales": [
+              2.0,
+              1.0,
+              0.5
+            ],
+            "d_gamma_d_scale": [
+              [
+                7.741358826234556,
+                14.540010541122477,
+                25.730680580919444
+              ]
+            ],
+            "integrated_gaussian_flow": [
+              19.988557123538005
+            ],
+            "minimum_eigenvalue": [
+              0.014615723526364598
+            ],
+            "scope": "finite Gaussian coefficient action; scalar k^2 regulator",
+            "observed_feature_rank": 5
+          }
+        ],
+        "gap_detected": true,
+        "qualification": "separate calibration observations; final outcomes withheld"
+      },
+      "checked_predictions_before_credit": [
+        0.15874464809894562,
+        -1.6539567708969116,
+        1.6704740524291992,
+        1.1576948165893555
+      ],
+      "returned_mse": 0.005761704744285747
+    }
+  ],
+  "source": {
+    "kind": "independent_simulation",
+    "id": "GENRE-017-persistent-delivery"
+  },
+  "teacher_sha256": "e6880af7d518f138b02bc4f739bc79fa9ae8c03246d54aeeaf62075871514df0",
+  "interface_sha256": "386da371535efc51839772ad1972b057e74c680826a367f582d6653bc9fb94c9",
+  "scope": "same-owner source-grounded interface and persistence; not a separate generalization estimate"
+}

@@ -1,0 +1,485 @@
+{
+  "exact_noisy": {
+    "complete": {
+      "arm": "exact_noisy",
+      "exposures": {
+        "human_genre": 371929,
+        "rehearsal:reading": 4240,
+        "rehearsal:math": 4224,
+        "rehearsal:calculus": 4224,
+        "rehearsal:dailydialog": 4224,
+        "rehearsal:descartes": 4224,
+        "rehearsal:grammar": 4224,
+        "rehearsal:plato": 4224,
+        "rehearsal:programming": 4224,
+        "rehearsal:webster": 4224,
+        "rehearsal:semantic": 4224,
+        "rehearsal:physics": 4224
+      },
+      "updates": 14528,
+      "primary_updates": 11623,
+      "selected": {
+        "sha256": "2b92dacecb31ae2e1f084aee5cdc0d357327b2c6a4ffb482178467cc7242f5d0",
+        "revision": "2b92dacecb31ae2e1f084aee5cdc0d357327b2c6a4ffb482178467cc7242f5d0.pt",
+        "parent": "7db1799f0fb0cc496c2dd2aa4db628d288ea92317d8347fd5b736523ffff3e22",
+        "weights": "e9ba737c4f171e108e10039657aea47c84d2962b0d3c0cc3769f593807eeffa8",
+        "updates": 0,
+        "semantic_step": 11623,
+        "n": 512,
+        "accuracy": 0.517578125,
+        "loss": 0.9936923664063215
+      },
+      "development": [
+        {
+          "semantic_step": 0,
+          "n": 512,
+          "accuracy": 0.423828125,
+          "loss": 1.0923178028315306
+        },
+        {
+          "semantic_step": 1024,
+          "n": 512,
+          "accuracy": 0.45703125,
+          "loss": 1.0450350232422352
+        },
+        {
+          "semantic_step": 2048,
+          "n": 512,
+          "accuracy": 0.478515625,
+          "loss": 1.0226660147309303
+        },
+        {
+          "semantic_step": 3072,
+          "n": 512,
+          "accuracy": 0.4921875,
+          "loss": 1.0193641111254692
+        },
+        {
+          "semantic_step": 4096,
+          "n": 512,
+          "accuracy": 0.50390625,
+          "loss": 1.019275126978755
+        },
+        {
+          "semantic_step": 5120,
+          "n": 512,
+          "accuracy": 0.5078125,
+          "loss": 1.0154699981212616
+        },
+        {
+          "semantic_step": 6144,
+          "n": 512,
+          "accuracy": 0.515625,
+          "loss": 1.017170887440443
+        },
+        {
+          "semantic_step": 7168,
+          "n": 512,
+          "accuracy": 0.494140625,
+          "loss": 1.0034853275865316
+        },
+        {
+          "semantic_step": 8192,
+          "n": 512,
+          "accuracy": 0.49609375,
+          "loss": 1.0011591203510761
+        },
+        {
+          "semantic_step": 9216,
+          "n": 512,
+          "accuracy": 0.50390625,
+          "loss": 1.0023168306797743
+        },
+        {
+          "semantic_step": 10240,
+          "n": 512,
+          "accuracy": 0.509765625,
+          "loss": 1.0013496857136488
+        },
+        {
+          "semantic_step": 11264,
+          "n": 512,
+          "accuracy": 0.517578125,
+          "loss": 0.9957266505807638
+        },
+        {
+          "semantic_step": 11623,
+          "n": 512,
+          "accuracy": 0.517578125,
+          "loss": 0.9936923664063215
+        }
+      ],
+      "parent": {
+        "selection": {
+          "sha256": "db851135bbca7235e743423fa14408196c0e3b829d51113180958ace3270c8f8",
+          "revision": "db851135bbca7235e743423fa14408196c0e3b829d51113180958ace3270c8f8.pt",
+          "parent": "4be5a015d7b7c194dc8770bf5118ea441b121758364462a0b2712cc29b49ddad",
+          "weights": "25d8ee69aeb6cffc621f4b51d42e652e6ac5bad825f0cc7d2f511775509ba37a",
+          "updates": 60,
+          "semantic_step": 13312,
+          "n": 512,
+          "accuracy": 0.60546875,
+          "loss": 0.8834963142871857,
+          "source_checkpoint_sha256": "725f5df52c584c71f590c6b098f91d7ab8b5c5526b107954a68f11c025f84b72",
+          "role": "qualified_human_semantic_owner"
+        },
+        "parent_rule": "qualified-semantic-015; unqualified history candidate preserved",
+        "history_decision_sha256": "73417ad68bb8cc602982f7aa5d1fbe23fd0da51a3c12c9c2953718c14b41f7e4"
+      },
+      "source_id": "5760a4edd904d8c6d9e72f3a3808482ec2386503402ce399d30c4612732b38c8",
+      "factual_captures": 0,
+      "new_procedure": "conditional field and semantic gradients from human supervision"
+    },
+    "counts": {
+      "human_genre": 371929,
+      "reading": 4240,
+      "math": 4224,
+      "calculus": 4224,
+      "dailydialog": 4224,
+      "descartes": 4224,
+      "grammar": 4224,
+      "plato": 4224,
+      "programming": 4224,
+      "webster": 4224,
+      "semantic": 4224,
+      "physics": 4224
+    },
+    "checks": {
+      "exact_cursor": true,
+      "all_primary_once": true,
+      "declared_primary": true,
+      "declared_rehearsal": true
+    },
+    "matched_exposure_sequence": "ddd87817b6a022820deab545c83809203f8234be9cfaa10bd1ea9c6603288560",
+    "replayed_uncommitted_steps": 0,
+    "logs": [
+      {
+        "path": "runs\\GENRE-017\\exact_noisy\\updates-8283e14ac89745c58209a3faf61642c4.jsonl",
+        "sha256": "b3eb8bdb29c63c831a51c2539d55da5d5a0d7ba05604efb72ee8e78341442236",
+        "bytes": 28021520
+      }
+    ]
+  },
+  "exact_clean": {
+    "complete": {
+      "arm": "exact_clean",
+      "exposures": {
+        "human_genre": 371929,
+        "rehearsal:reading": 4240,
+        "rehearsal:math": 4224,
+        "rehearsal:calculus": 4224,
+        "rehearsal:dailydialog": 4224,
+        "rehearsal:descartes": 4224,
+        "rehearsal:grammar": 4224,
+        "rehearsal:plato": 4224,
+        "rehearsal:programming": 4224,
+        "rehearsal:webster": 4224,
+        "rehearsal:semantic": 4224,
+        "rehearsal:physics": 4224
+      },
+      "updates": 14528,
+      "primary_updates": 11623,
+      "selected": {
+        "sha256": "588a33de6e4f2a131d350b656ae0526a61701d8f6ca22f750897435cfe79d453",
+        "revision": "588a33de6e4f2a131d350b656ae0526a61701d8f6ca22f750897435cfe79d453.pt",
+        "parent": "aa08bf0efab1df582781bbd8df0d46ec7c5179f113070b6a4b201f89bb0c3156",
+        "weights": "33b67a3271b9610ff355fbc53c06c94b714dd1c4ffa6e261ea802ca76430fcf5",
+        "updates": 0,
+        "semantic_step": 11623,
+        "n": 512,
+        "accuracy": 0.517578125,
+        "loss": 0.9942389409989119
+      },
+      "development": [
+        {
+          "semantic_step": 0,
+          "n": 512,
+          "accuracy": 0.423828125,
+          "loss": 1.0923178028315306
+        },
+        {
+          "semantic_step": 1024,
+          "n": 512,
+          "accuracy": 0.455078125,
+          "loss": 1.0457769483327866
+        },
+        {
+          "semantic_step": 2048,
+          "n": 512,
+          "accuracy": 0.474609375,
+          "loss": 1.0227263420820236
+        },
+        {
+          "semantic_step": 3072,
+          "n": 512,
+          "accuracy": 0.48828125,
+          "loss": 1.0198231004178524
+        },
+        {
+          "semantic_step": 4096,
+          "n": 512,
+          "accuracy": 0.505859375,
+          "loss": 1.0194390155375004
+        },
+        {
+          "semantic_step": 5120,
+          "n": 512,
+          "accuracy": 0.505859375,
+          "loss": 1.0154897551983595
+        },
+        {
+          "semantic_step": 6144,
+          "n": 512,
+          "accuracy": 0.515625,
+          "loss": 1.016950061544776
+        },
+        {
+          "semantic_step": 7168,
+          "n": 512,
+          "accuracy": 0.490234375,
+          "loss": 1.0037189796566963
+        },
+        {
+          "semantic_step": 8192,
+          "n": 512,
+          "accuracy": 0.494140625,
+          "loss": 1.0011359322816133
+        },
+        {
+          "semantic_step": 9216,
+          "n": 512,
+          "accuracy": 0.505859375,
+          "loss": 1.002076629549265
+        },
+        {
+          "semantic_step": 10240,
+          "n": 512,
+          "accuracy": 0.501953125,
+          "loss": 1.00236383266747
+        },
+        {
+          "semantic_step": 11264,
+          "n": 512,
+          "accuracy": 0.515625,
+          "loss": 0.9962688460946083
+        },
+        {
+          "semantic_step": 11623,
+          "n": 512,
+          "accuracy": 0.517578125,
+          "loss": 0.9942389409989119
+        }
+      ],
+      "parent": {
+        "selection": {
+          "sha256": "db851135bbca7235e743423fa14408196c0e3b829d51113180958ace3270c8f8",
+          "revision": "db851135bbca7235e743423fa14408196c0e3b829d51113180958ace3270c8f8.pt",
+          "parent": "4be5a015d7b7c194dc8770bf5118ea441b121758364462a0b2712cc29b49ddad",
+          "weights": "25d8ee69aeb6cffc621f4b51d42e652e6ac5bad825f0cc7d2f511775509ba37a",
+          "updates": 60,
+          "semantic_step": 13312,
+          "n": 512,
+          "accuracy": 0.60546875,
+          "loss": 0.8834963142871857,
+          "source_checkpoint_sha256": "725f5df52c584c71f590c6b098f91d7ab8b5c5526b107954a68f11c025f84b72",
+          "role": "qualified_human_semantic_owner"
+        },
+        "parent_rule": "qualified-semantic-015; unqualified history candidate preserved",
+        "history_decision_sha256": "73417ad68bb8cc602982f7aa5d1fbe23fd0da51a3c12c9c2953718c14b41f7e4"
+      },
+      "source_id": "5760a4edd904d8c6d9e72f3a3808482ec2386503402ce399d30c4612732b38c8",
+      "factual_captures": 0,
+      "new_procedure": "conditional field and semantic gradients from human supervision"
+    },
+    "counts": {
+      "human_genre": 371929,
+      "reading": 4240,
+      "math": 4224,
+      "calculus": 4224,
+      "dailydialog": 4224,
+      "descartes": 4224,
+      "grammar": 4224,
+      "plato": 4224,
+      "programming": 4224,
+      "webster": 4224,
+      "semantic": 4224,
+      "physics": 4224
+    },
+    "checks": {
+      "exact_cursor": true,
+      "all_primary_once": true,
+      "declared_primary": true,
+      "declared_rehearsal": true
+    },
+    "matched_exposure_sequence": "ddd87817b6a022820deab545c83809203f8234be9cfaa10bd1ea9c6603288560",
+    "replayed_uncommitted_steps": 0,
+    "logs": [
+      {
+        "path": "runs\\GENRE-017\\exact_clean\\updates-8283e14ac89745c58209a3faf61642c4.jsonl",
+        "sha256": "26d36921e03e4de6be5cdf9d2c1ed5879605358d49851e45dc0eeef925587a9c",
+        "bytes": 28021522
+      }
+    ]
+  },
+  "gaussian_noisy": {
+    "complete": {
+      "arm": "gaussian_noisy",
+      "exposures": {
+        "human_genre": 371929,
+        "rehearsal:reading": 4240,
+        "rehearsal:math": 4224,
+        "rehearsal:calculus": 4224,
+        "rehearsal:dailydialog": 4224,
+        "rehearsal:descartes": 4224,
+        "rehearsal:grammar": 4224,
+        "rehearsal:plato": 4224,
+        "rehearsal:programming": 4224,
+        "rehearsal:webster": 4224,
+        "rehearsal:semantic": 4224,
+        "rehearsal:physics": 4224
+      },
+      "updates": 14528,
+      "primary_updates": 11623,
+      "selected": {
+        "sha256": "016cff8f13109e669270e8ef3509c636435dd1bbc98c1c2d59a953131d98efd5",
+        "revision": "016cff8f13109e669270e8ef3509c636435dd1bbc98c1c2d59a953131d98efd5.pt",
+        "parent": "6e3988c3f40a54af9d86405252e0c9bcc681ffcfe04a27b8166b87266cfc2136",
+        "weights": "e708f411c69ba242b8457dd88a39628a4f5183d6e2fa17a011829440ebb8b593",
+        "updates": 0,
+        "semantic_step": 11264,
+        "n": 512,
+        "accuracy": 0.517578125,
+        "loss": 0.9961539562791586
+      },
+      "development": [
+        {
+          "semantic_step": 0,
+          "n": 512,
+          "accuracy": 0.423828125,
+          "loss": 1.0923178028315306
+        },
+        {
+          "semantic_step": 1024,
+          "n": 512,
+          "accuracy": 0.45703125,
+          "loss": 1.0450382102280855
+        },
+        {
+          "semantic_step": 2048,
+          "n": 512,
+          "accuracy": 0.478515625,
+          "loss": 1.0226752627640963
+        },
+        {
+          "semantic_step": 3072,
+          "n": 512,
+          "accuracy": 0.494140625,
+          "loss": 1.0193750653415918
+        },
+        {
+          "semantic_step": 4096,
+          "n": 512,
+          "accuracy": 0.501953125,
+          "loss": 1.019252685829997
+        },
+        {
+          "semantic_step": 5120,
+          "n": 512,
+          "accuracy": 0.5078125,
+          "loss": 1.01547696813941
+        },
+        {
+          "semantic_step": 6144,
+          "n": 512,
+          "accuracy": 0.515625,
+          "loss": 1.0172116942703724
+        },
+        {
+          "semantic_step": 7168,
+          "n": 512,
+          "accuracy": 0.494140625,
+          "loss": 1.0035936255007982
+        },
+        {
+          "semantic_step": 8192,
+          "n": 512,
+          "accuracy": 0.494140625,
+          "loss": 1.0012287069112062
+        },
+        {
+          "semantic_step": 9216,
+          "n": 512,
+          "accuracy": 0.509765625,
+          "loss": 1.002452414482832
+        },
+        {
+          "semantic_step": 10240,
+          "n": 512,
+          "accuracy": 0.5078125,
+          "loss": 1.0017053540796041
+        },
+        {
+          "semantic_step": 11264,
+          "n": 512,
+          "accuracy": 0.517578125,
+          "loss": 0.9961539562791586
+        },
+        {
+          "semantic_step": 11623,
+          "n": 512,
+          "accuracy": 0.515625,
+          "loss": 0.99416933208704
+        }
+      ],
+      "parent": {
+        "selection": {
+          "sha256": "db851135bbca7235e743423fa14408196c0e3b829d51113180958ace3270c8f8",
+          "revision": "db851135bbca7235e743423fa14408196c0e3b829d51113180958ace3270c8f8.pt",
+          "parent": "4be5a015d7b7c194dc8770bf5118ea441b121758364462a0b2712cc29b49ddad",
+          "weights": "25d8ee69aeb6cffc621f4b51d42e652e6ac5bad825f0cc7d2f511775509ba37a",
+          "updates": 60,
+          "semantic_step": 13312,
+          "n": 512,
+          "accuracy": 0.60546875,
+          "loss": 0.8834963142871857,
+          "source_checkpoint_sha256": "725f5df52c584c71f590c6b098f91d7ab8b5c5526b107954a68f11c025f84b72",
+          "role": "qualified_human_semantic_owner"
+        },
+        "parent_rule": "qualified-semantic-015; unqualified history candidate preserved",
+        "history_decision_sha256": "73417ad68bb8cc602982f7aa5d1fbe23fd0da51a3c12c9c2953718c14b41f7e4"
+      },
+      "source_id": "5760a4edd904d8c6d9e72f3a3808482ec2386503402ce399d30c4612732b38c8",
+      "factual_captures": 0,
+      "new_procedure": "conditional field and semantic gradients from human supervision"
+    },
+    "counts": {
+      "human_genre": 371929,
+      "reading": 4240,
+      "math": 4224,
+      "calculus": 4224,
+      "dailydialog": 4224,
+      "descartes": 4224,
+      "grammar": 4224,
+      "plato": 4224,
+      "programming": 4224,
+      "webster": 4224,
+      "semantic": 4224,
+      "physics": 4224
+    },
+    "checks": {
+      "exact_cursor": true,
+      "all_primary_once": true,
+      "declared_primary": true,
+      "declared_rehearsal": true
+    },
+    "matched_exposure_sequence": "ddd87817b6a022820deab545c83809203f8234be9cfaa10bd1ea9c6603288560",
+    "replayed_uncommitted_steps": 0,
+    "logs": [
+      {
+        "path": "runs\\GENRE-017\\gaussian_noisy\\updates-8283e14ac89745c58209a3faf61642c4.jsonl",
+        "sha256": "1ca0a4fb4adca37e7e5b70a7a4cc3660d358380edaffce5adaf3c718cdd499dc",
+        "bytes": 28021412
+      }
+    ]
+  }
+}

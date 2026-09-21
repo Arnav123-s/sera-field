@@ -56,8 +56,10 @@ laboratory at source revision `{source}`. The complete local history and origina
 SERA remain preserved. This checkout has its own public publication history.
 
 Included: source, tests, frozen prospective protocols, engineering and usage
-guides, compact research results, costs and identity manifests, qualified
-UNIFIED-012/GROW-013/INQUIRY-014/SEMANTIC-015 inference weights, and earlier packaged checkpoints.
+guides, compact research results, costs and identity manifests, and packaged
+inference weights with their individually recorded assessment and research roles.
+The fresh NATIVE-019 lineage and earlier usable checkpoints remain separately
+addressable. The documentation guide separates current interfaces from history.
 Work marked active in the research state has not been represented as completed.
 File identities below describe the Git blob bytes, before platform line endings.
 

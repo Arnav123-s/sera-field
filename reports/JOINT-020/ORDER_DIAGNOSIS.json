@@ -1,0 +1,135 @@
+{
+  "training_contingency": {
+    "linear|measurements_first": 8192,
+    "quadratic|text_first": 8192
+  },
+  "all_family_order_cells_taught": false,
+  "development_crossed_orders": {
+    "credited": {
+      "checkpoint": {
+        "revision": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45.pt",
+        "sha256": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45",
+        "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+        "step": 1024,
+        "score": 0.7419909966649572,
+        "metrics": {
+          "before_mse": 0.09615632228690174,
+          "after_mse": 0.07608514542761213,
+          "next_query_mse": 0.08196941659605628,
+          "credit": 0.0190711774725969,
+          "signed_progress": 0.020071177291413278,
+          "n": 128,
+          "accuracy": 0.5546875,
+          "measurement_rate": 1.0
+        }
+      },
+      "orders": {
+        "measurements_first": {
+          "before_mse": 0.1098741509106933,
+          "after_mse": 0.0844256182088543,
+          "next_query_mse": 0.09012653328051456,
+          "credit": 0.024448533497434255,
+          "signed_progress": 0.02544853322295637,
+          "n": 128,
+          "accuracy": 0.5625,
+          "measurement_rate": 1.0
+        },
+        "text_first": {
+          "before_mse": 0.08009545194381573,
+          "after_mse": 0.06460958630731284,
+          "next_query_mse": 0.06796156298770484,
+          "credit": 0.014485866087852628,
+          "signed_progress": 0.015485865889161232,
+          "n": 128,
+          "accuracy": 0.5625,
+          "measurement_rate": 1.0
+        }
+      }
+    },
+    "withheld": {
+      "checkpoint": {
+        "revision": "00219054284e04cb361c6af64ece7e633c6d3f5f0475af501d25a52ef91fc412.pt",
+        "sha256": "00219054284e04cb361c6af64ece7e633c6d3f5f0475af501d25a52ef91fc412",
+        "weights": "3fd1760fb67dbb31e6411e7635f1a3114d41394da6ae8cef790e77161ed42c03",
+        "step": 1024,
+        "score": 0.7431585249914495,
+        "metrics": {
+          "before_mse": 0.09450930369251864,
+          "after_mse": 0.08246540807891695,
+          "next_query_mse": 0.08727671935699988,
+          "credit": 0.011043895216971578,
+          "signed_progress": 0.012043895210922528,
+          "n": 128,
+          "accuracy": 0.5625,
+          "measurement_rate": 1.0
+        }
+      },
+      "orders": {
+        "measurements_first": {
+          "before_mse": 0.10867920147424215,
+          "after_mse": 0.09413337470854571,
+          "next_query_mse": 0.08522952672887918,
+          "credit": 0.013545824498123693,
+          "signed_progress": 0.014545824077941916,
+          "n": 128,
+          "accuracy": 0.5625,
+          "measurement_rate": 1.0
+        },
+        "text_first": {
+          "before_mse": 0.07873103480929444,
+          "after_mse": 0.07058772550013526,
+          "next_query_mse": 0.07476493119910899,
+          "credit": 0.007143308304875973,
+          "signed_progress": 0.00814330809441799,
+          "n": 128,
+          "accuracy": 0.5703125,
+          "measurement_rate": 1.0
+        }
+      }
+    },
+    "initial": {
+      "checkpoint": {
+        "revision": "a621f67c1338756911dfe879ee6200881686e6fafd264192a979f1c406f7d0de.pt",
+        "sha256": "a621f67c1338756911dfe879ee6200881686e6fafd264192a979f1c406f7d0de",
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "step": 0,
+        "score": 0.6963889359477837,
+        "metrics": {
+          "before_mse": 0.2033891981724878,
+          "after_mse": 0.15029743507659,
+          "next_query_mse": 0.18752038496971402,
+          "credit": 0.05209176008838767,
+          "signed_progress": 0.05309175973479796,
+          "n": 128,
+          "accuracy": 0.5234375,
+          "measurement_rate": 1.0
+        }
+      },
+      "orders": {
+        "measurements_first": {
+          "before_mse": 0.28547594580493296,
+          "after_mse": 0.20591186908584902,
+          "next_query_mse": 0.24556550157058155,
+          "credit": 0.078564073952748,
+          "signed_progress": 0.07956407359984041,
+          "n": 128,
+          "accuracy": 0.515625,
+          "measurement_rate": 1.0
+        },
+        "text_first": {
+          "before_mse": 0.14342163416380327,
+          "after_mse": 0.1115437839708413,
+          "next_query_mse": 0.1275837134197797,
+          "credit": 0.030877850319484423,
+          "signed_progress": 0.031877849919055734,
+          "n": 128,
+          "accuracy": 0.4921875,
+          "measurement_rate": 1.0
+        }
+      }
+    }
+  },
+  "finding": "The original deterministic schedule confounded order with the two physical families.",
+  "scope": "Post-training design diagnosis on development worlds; no weights, selection or final results changed.",
+  "next_required_repair": "Counterbalance physical family and chronology before a fresh matched teaching/evaluation protocol."
+}

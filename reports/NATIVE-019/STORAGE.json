@@ -1,0 +1,12 @@
+{
+  "parameters": 814000,
+  "parameter_bytes": 3256000,
+  "buffer_bytes": 0,
+  "returned_state_bytes": 992,
+  "optimizer_tensor_bytes": 6512152,
+  "torch_rng_tensor_bytes": 5056,
+  "training_revision_bytes": 9868940,
+  "process_tree_resources": "COSTS.json",
+  "per_arm_cpu_measured": false,
+  "cost_scope": "The supervisor measures the full three-arm campaign, all evaluations and replays together. Equal updates do not imply equal FLOPs."
+}

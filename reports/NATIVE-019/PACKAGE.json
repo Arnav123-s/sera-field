@@ -1,0 +1,110 @@
+{
+  "exact_tensor_identity": true,
+  "tensors_checked": 38,
+  "selected_training": {
+    "revision": "406649900b47b00c5e8339b42cc2b93c96f3dd3efc37f4c7f4ad6e2854c4fd3a.pt",
+    "sha256": "406649900b47b00c5e8339b42cc2b93c96f3dd3efc37f4c7f4ad6e2854c4fd3a",
+    "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+    "step": 8192,
+    "score": 0.5460253147727442,
+    "tracks": {
+      "semantic": {
+        "n": 256,
+        "accuracy": 0.59765625,
+        "loss": 0.8880621415155474
+      },
+      "reading": {
+        "n": 128,
+        "accuracy": 0.3125,
+        "loss": 1.4853494627168402
+      },
+      "math": {
+        "n": 128,
+        "accuracy": 0.5703125,
+        "loss": 0.9650708180197398
+      },
+      "pairs": {
+        "n": 607,
+        "accuracy": 0.29983525535420097,
+        "loss": 1.5948199039063136
+      },
+      "physics": {
+        "n": 128,
+        "mse": 0.052828215662657385
+      }
+    }
+  },
+  "package": {
+    "inference": {
+      "revision": "754b984d3965f42299dd2085149cd367ebf7cb4732b5ea4b1cf8d69f1def4ab5.pt",
+      "sha256": "754b984d3965f42299dd2085149cd367ebf7cb4732b5ea4b1cf8d69f1def4ab5",
+      "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+      "step": 8192,
+      "score": 0.5460253147727442,
+      "tracks": {
+        "semantic": {
+          "n": 256,
+          "accuracy": 0.59765625,
+          "loss": 0.8880621415155474
+        },
+        "reading": {
+          "n": 128,
+          "accuracy": 0.3125,
+          "loss": 1.4853494627168402
+        },
+        "math": {
+          "n": 128,
+          "accuracy": 0.5703125,
+          "loss": 0.9650708180197398
+        },
+        "pairs": {
+          "n": 607,
+          "accuracy": 0.29983525535420097,
+          "loss": 1.5948199039063136
+        },
+        "physics": {
+          "n": 128,
+          "mse": 0.052828215662657385
+        }
+      }
+    },
+    "source_training": {
+      "revision": "406649900b47b00c5e8339b42cc2b93c96f3dd3efc37f4c7f4ad6e2854c4fd3a.pt",
+      "sha256": "406649900b47b00c5e8339b42cc2b93c96f3dd3efc37f4c7f4ad6e2854c4fd3a",
+      "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+      "step": 8192,
+      "score": 0.5460253147727442,
+      "tracks": {
+        "semantic": {
+          "n": 256,
+          "accuracy": 0.59765625,
+          "loss": 0.8880621415155474
+        },
+        "reading": {
+          "n": 128,
+          "accuracy": 0.3125,
+          "loss": 1.4853494627168402
+        },
+        "math": {
+          "n": 128,
+          "accuracy": 0.5703125,
+          "loss": 0.9650708180197398
+        },
+        "pairs": {
+          "n": 607,
+          "accuracy": 0.29983525535420097,
+          "loss": 1.5948199039063136
+        },
+        "physics": {
+          "n": 128,
+          "mse": 0.052828215662657385
+        }
+      }
+    },
+    "qualified_native_memory": true,
+    "role": "qualified native-memory research owner",
+    "earlier_default_owner_replaced": false,
+    "parent_checkpoint": null,
+    "pretrained_weights": null
+  }
+}

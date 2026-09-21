@@ -1,0 +1,834 @@
+{
+  "credited": {
+    "matched": {
+      "route": "credited",
+      "cohort": "matched",
+      "checkpoint": {
+        "revision": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45.pt",
+        "sha256": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45",
+        "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+        "step": 1024,
+        "score": 0.7419909966649572,
+        "metrics": {
+          "before_mse": 0.09615632228690174,
+          "after_mse": 0.07608514542761213,
+          "next_query_mse": 0.08196941659605628,
+          "credit": 0.0190711774725969,
+          "signed_progress": 0.020071177291413278,
+          "n": 128,
+          "accuracy": 0.5546875,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.07235925637398191,
+        "after_mse": 0.060563374207644134,
+        "next_query_mse": 0.07189306261200178,
+        "credit": 0.01079588199540787,
+        "signed_progress": 0.011795881924293483,
+        "n": 371,
+        "accuracy": 0.5094339622641509,
+        "measurement_rate": 1.0
+      },
+      "ids_sha256": "dea351cdc72355055c1e6495190974e4d970c78bd6d8bd3eee65af63e918b26e",
+      "cases_sha256": "84ff33a5d623af216ac18f4df2a3cf10975a7a68333d035ec297924d1e6c3cf7",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    },
+    "mismatched": {
+      "route": "credited",
+      "cohort": "mismatched",
+      "checkpoint": {
+        "revision": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45.pt",
+        "sha256": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45",
+        "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+        "step": 1024,
+        "score": 0.7419909966649572,
+        "metrics": {
+          "before_mse": 0.09615632228690174,
+          "after_mse": 0.07608514542761213,
+          "next_query_mse": 0.08196941659605628,
+          "credit": 0.0190711774725969,
+          "signed_progress": 0.020071177291413278,
+          "n": 128,
+          "accuracy": 0.5546875,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.10508537301423257,
+        "after_mse": 0.08565031503416314,
+        "next_query_mse": 0.08294633410180448,
+        "credit": 0.01843505636623044,
+        "signed_progress": 0.019435056276010346,
+        "n": 372,
+        "accuracy": 0.49193548387096775,
+        "measurement_rate": 1.0
+      },
+      "ids_sha256": "ed44b5b2abd214c87b7191458f11560804d46d71bf864fe4cf9180d69b65e574",
+      "cases_sha256": "cfc24f0982f541e1a51ee3181a7acabe0e244aaf039e6ef90f737b692f360842",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    },
+    "shifted": {
+      "route": "credited",
+      "cohort": "shifted",
+      "checkpoint": {
+        "revision": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45.pt",
+        "sha256": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45",
+        "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+        "step": 1024,
+        "score": 0.7419909966649572,
+        "metrics": {
+          "before_mse": 0.09615632228690174,
+          "after_mse": 0.07608514542761213,
+          "next_query_mse": 0.08196941659605628,
+          "credit": 0.0190711774725969,
+          "signed_progress": 0.020071177291413278,
+          "n": 128,
+          "accuracy": 0.5546875,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.18466365675585195,
+        "after_mse": 0.15672515390605213,
+        "next_query_mse": 0.13474014311033056,
+        "credit": 0.026938502786379104,
+        "signed_progress": 0.027938502281401156,
+        "n": 256,
+        "accuracy": 0.5390625,
+        "measurement_rate": 1.0
+      },
+      "ids_sha256": "a3d138498ace0e94f22bad18ae5bbdee508c3278cbc5c7bbdbeb2d9e6635eb59",
+      "cases_sha256": "0203207e37b92f2ab338471e6b59e2c23618ce89eec71fc26b7777d058f08da6",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    }
+  },
+  "withheld": {
+    "matched": {
+      "route": "withheld",
+      "cohort": "matched",
+      "checkpoint": {
+        "revision": "00219054284e04cb361c6af64ece7e633c6d3f5f0475af501d25a52ef91fc412.pt",
+        "sha256": "00219054284e04cb361c6af64ece7e633c6d3f5f0475af501d25a52ef91fc412",
+        "weights": "3fd1760fb67dbb31e6411e7635f1a3114d41394da6ae8cef790e77161ed42c03",
+        "step": 1024,
+        "score": 0.7431585249914495,
+        "metrics": {
+          "before_mse": 0.09450930369251864,
+          "after_mse": 0.08246540807891695,
+          "next_query_mse": 0.08727671935699988,
+          "credit": 0.011043895216971578,
+          "signed_progress": 0.012043895210922528,
+          "n": 128,
+          "accuracy": 0.5625,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.07148952111737868,
+        "after_mse": 0.07059525633915406,
+        "next_query_mse": 0.06777678555045086,
+        "credit": -0.00010034407384196583,
+        "signed_progress": 0.0008942650632952864,
+        "n": 371,
+        "accuracy": 0.5040431266846361,
+        "measurement_rate": 0.9946091644204852
+      },
+      "ids_sha256": "dea351cdc72355055c1e6495190974e4d970c78bd6d8bd3eee65af63e918b26e",
+      "cases_sha256": "4239685d02b7183558149f2f340e6e97faf00b60f37874224431cac817184f50",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    },
+    "mismatched": {
+      "route": "withheld",
+      "cohort": "mismatched",
+      "checkpoint": {
+        "revision": "00219054284e04cb361c6af64ece7e633c6d3f5f0475af501d25a52ef91fc412.pt",
+        "sha256": "00219054284e04cb361c6af64ece7e633c6d3f5f0475af501d25a52ef91fc412",
+        "weights": "3fd1760fb67dbb31e6411e7635f1a3114d41394da6ae8cef790e77161ed42c03",
+        "step": 1024,
+        "score": 0.7431585249914495,
+        "metrics": {
+          "before_mse": 0.09450930369251864,
+          "after_mse": 0.08246540807891695,
+          "next_query_mse": 0.08727671935699988,
+          "credit": 0.011043895216971578,
+          "signed_progress": 0.012043895210922528,
+          "n": 128,
+          "accuracy": 0.5625,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.10311888867514742,
+        "after_mse": 0.08428357957584051,
+        "next_query_mse": 0.09316837517251092,
+        "credit": 0.017837998944038015,
+        "signed_progress": 0.018835310730680482,
+        "n": 372,
+        "accuracy": 0.4731182795698925,
+        "measurement_rate": 0.9973118279569892
+      },
+      "ids_sha256": "ed44b5b2abd214c87b7191458f11560804d46d71bf864fe4cf9180d69b65e574",
+      "cases_sha256": "100534c5453f6a5c79af93dc65893b544d4c3c70a0fc90c5ea2ce1804a1177ac",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    },
+    "shifted": {
+      "route": "withheld",
+      "cohort": "shifted",
+      "checkpoint": {
+        "revision": "00219054284e04cb361c6af64ece7e633c6d3f5f0475af501d25a52ef91fc412.pt",
+        "sha256": "00219054284e04cb361c6af64ece7e633c6d3f5f0475af501d25a52ef91fc412",
+        "weights": "3fd1760fb67dbb31e6411e7635f1a3114d41394da6ae8cef790e77161ed42c03",
+        "step": 1024,
+        "score": 0.7431585249914495,
+        "metrics": {
+          "before_mse": 0.09450930369251864,
+          "after_mse": 0.08246540807891695,
+          "next_query_mse": 0.08727671935699988,
+          "credit": 0.011043895216971578,
+          "signed_progress": 0.012043895210922528,
+          "n": 128,
+          "accuracy": 0.5625,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.1830237753668129,
+        "after_mse": 0.18234389079079,
+        "next_query_mse": 0.13968561747707398,
+        "credit": -0.0003122996247384435,
+        "signed_progress": 0.0006798875533409188,
+        "n": 256,
+        "accuracy": 0.5390625,
+        "measurement_rate": 0.9921875
+      },
+      "ids_sha256": "a3d138498ace0e94f22bad18ae5bbdee508c3278cbc5c7bbdbeb2d9e6635eb59",
+      "cases_sha256": "415347b4d9f4c896a94c547170862c0517f9df7164ab395ef03244236cb7a91a",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    }
+  },
+  "initial": {
+    "matched": {
+      "route": "initial",
+      "cohort": "matched",
+      "checkpoint": {
+        "revision": "a621f67c1338756911dfe879ee6200881686e6fafd264192a979f1c406f7d0de.pt",
+        "sha256": "a621f67c1338756911dfe879ee6200881686e6fafd264192a979f1c406f7d0de",
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "step": 0,
+        "score": 0.6963889359477837,
+        "metrics": {
+          "before_mse": 0.2033891981724878,
+          "after_mse": 0.15029743507659,
+          "next_query_mse": 0.18752038496971402,
+          "credit": 0.05209176008838767,
+          "signed_progress": 0.05309175973479796,
+          "n": 128,
+          "accuracy": 0.5234375,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.1965125599275035,
+        "after_mse": 0.15242687006593278,
+        "next_query_mse": 0.15101201583083632,
+        "credit": 0.043091080843243805,
+        "signed_progress": 0.044085689746079536,
+        "n": 371,
+        "accuracy": 0.4582210242587601,
+        "measurement_rate": 0.9946091644204852
+      },
+      "ids_sha256": "dea351cdc72355055c1e6495190974e4d970c78bd6d8bd3eee65af63e918b26e",
+      "cases_sha256": "c1a25fd1ad839daaa8b363d3369a310c9fc938a08e0648888ca2390337c233da",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    },
+    "mismatched": {
+      "route": "initial",
+      "cohort": "mismatched",
+      "checkpoint": {
+        "revision": "a621f67c1338756911dfe879ee6200881686e6fafd264192a979f1c406f7d0de.pt",
+        "sha256": "a621f67c1338756911dfe879ee6200881686e6fafd264192a979f1c406f7d0de",
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "step": 0,
+        "score": 0.6963889359477837,
+        "metrics": {
+          "before_mse": 0.2033891981724878,
+          "after_mse": 0.15029743507659,
+          "next_query_mse": 0.18752038496971402,
+          "credit": 0.05209176008838767,
+          "signed_progress": 0.05309175973479796,
+          "n": 128,
+          "accuracy": 0.5234375,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.2176831838921643,
+        "after_mse": 0.15186884918756322,
+        "next_query_mse": 0.17403861393610146,
+        "credit": 0.06481433347614246,
+        "signed_progress": 0.06581433335445434,
+        "n": 372,
+        "accuracy": 0.4731182795698925,
+        "measurement_rate": 1.0
+      },
+      "ids_sha256": "ed44b5b2abd214c87b7191458f11560804d46d71bf864fe4cf9180d69b65e574",
+      "cases_sha256": "07293ed332848480a80d05a29d9d8e143df13b0f423337a8e671b7c13f7a3647",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    },
+    "shifted": {
+      "route": "initial",
+      "cohort": "shifted",
+      "checkpoint": {
+        "revision": "a621f67c1338756911dfe879ee6200881686e6fafd264192a979f1c406f7d0de.pt",
+        "sha256": "a621f67c1338756911dfe879ee6200881686e6fafd264192a979f1c406f7d0de",
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "step": 0,
+        "score": 0.6963889359477837,
+        "metrics": {
+          "before_mse": 0.2033891981724878,
+          "after_mse": 0.15029743507659,
+          "next_query_mse": 0.18752038496971402,
+          "credit": 0.05209176008838767,
+          "signed_progress": 0.05309175973479796,
+          "n": 128,
+          "accuracy": 0.5234375,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.25544448018307797,
+        "after_mse": 0.19872499725332204,
+        "next_query_mse": 0.1970693046296701,
+        "credit": 0.055731202817241865,
+        "signed_progress": 0.05671948369166557,
+        "n": 256,
+        "accuracy": 0.5078125,
+        "measurement_rate": 0.98828125
+      },
+      "ids_sha256": "a3d138498ace0e94f22bad18ae5bbdee508c3278cbc5c7bbdbeb2d9e6635eb59",
+      "cases_sha256": "18e24e96bd74a6aaf51412f1bfb1a1d75c13c21e1db301287ec85fbeef07be49",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    }
+  },
+  "uniform": {
+    "matched": {
+      "route": "uniform",
+      "cohort": "matched",
+      "checkpoint": {
+        "revision": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45.pt",
+        "sha256": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45",
+        "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+        "step": 1024,
+        "score": 0.7419909966649572,
+        "metrics": {
+          "before_mse": 0.09615632228690174,
+          "after_mse": 0.07608514542761213,
+          "next_query_mse": 0.08196941659605628,
+          "credit": 0.0190711774725969,
+          "signed_progress": 0.020071177291413278,
+          "n": 128,
+          "accuracy": 0.5546875,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.07235925637398191,
+        "after_mse": 0.06492050247966057,
+        "next_query_mse": 0.06978461259561888,
+        "credit": 0.006533093507291192,
+        "signed_progress": 0.0074387537744712365,
+        "n": 371,
+        "accuracy": 0.5067385444743935,
+        "measurement_rate": 0.9056603773584906
+      },
+      "ids_sha256": "dea351cdc72355055c1e6495190974e4d970c78bd6d8bd3eee65af63e918b26e",
+      "cases_sha256": "1d263ba9a4a62c9d06621f33b6f28f2edbd0470617b69ad91561b2eef734f2fa",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    },
+    "mismatched": {
+      "route": "uniform",
+      "cohort": "mismatched",
+      "checkpoint": {
+        "revision": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45.pt",
+        "sha256": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45",
+        "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+        "step": 1024,
+        "score": 0.7419909966649572,
+        "metrics": {
+          "before_mse": 0.09615632228690174,
+          "after_mse": 0.07608514542761213,
+          "next_query_mse": 0.08196941659605628,
+          "credit": 0.0190711774725969,
+          "signed_progress": 0.020071177291413278,
+          "n": 128,
+          "accuracy": 0.5546875,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.10508537301423257,
+        "after_mse": 0.0929793747347035,
+        "next_query_mse": 0.09185349472102701,
+        "credit": 0.011213523760576913,
+        "signed_progress": 0.012105996700532855,
+        "n": 372,
+        "accuracy": 0.489247311827957,
+        "measurement_rate": 0.8924731182795699
+      },
+      "ids_sha256": "ed44b5b2abd214c87b7191458f11560804d46d71bf864fe4cf9180d69b65e574",
+      "cases_sha256": "bad02f8e0f054726e51568d4c2e48b29fc1354dc8c91aa80037c24e7f82ee123",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    },
+    "shifted": {
+      "route": "uniform",
+      "cohort": "shifted",
+      "checkpoint": {
+        "revision": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45.pt",
+        "sha256": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45",
+        "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+        "step": 1024,
+        "score": 0.7419909966649572,
+        "metrics": {
+          "before_mse": 0.09615632228690174,
+          "after_mse": 0.07608514542761213,
+          "next_query_mse": 0.08196941659605628,
+          "credit": 0.0190711774725969,
+          "signed_progress": 0.020071177291413278,
+          "n": 128,
+          "accuracy": 0.5546875,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.18466365675585195,
+        "after_mse": 0.18021558917251657,
+        "next_query_mse": 0.13359046497769378,
+        "credit": 0.0035574403900682228,
+        "signed_progress": 0.004448065102479859,
+        "n": 256,
+        "accuracy": 0.53515625,
+        "measurement_rate": 0.890625
+      },
+      "ids_sha256": "a3d138498ace0e94f22bad18ae5bbdee508c3278cbc5c7bbdbeb2d9e6635eb59",
+      "cases_sha256": "bd9ee48f566c3c924053b10d86529b5d00dc82512f2a3406f21fa7d3bd8bbf71",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    }
+  },
+  "disagreement": {
+    "matched": {
+      "route": "disagreement",
+      "cohort": "matched",
+      "checkpoint": {
+        "revision": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45.pt",
+        "sha256": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45",
+        "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+        "step": 1024,
+        "score": 0.7419909966649572,
+        "metrics": {
+          "before_mse": 0.09615632228690174,
+          "after_mse": 0.07608514542761213,
+          "next_query_mse": 0.08196941659605628,
+          "credit": 0.0190711774725969,
+          "signed_progress": 0.020071177291413278,
+          "n": 128,
+          "accuracy": 0.5546875,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.07235925637398191,
+        "after_mse": 0.06225477628187843,
+        "next_query_mse": 0.0726303811608418,
+        "credit": 0.009104479510008265,
+        "signed_progress": 0.010104479471743552,
+        "n": 371,
+        "accuracy": 0.5283018867924528,
+        "measurement_rate": 1.0
+      },
+      "ids_sha256": "dea351cdc72355055c1e6495190974e4d970c78bd6d8bd3eee65af63e918b26e",
+      "cases_sha256": "beeeaba46b9aa2c2c80f6fc0fec166d4f4715267b56914c2f5a5e5fd282014d0",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    },
+    "mismatched": {
+      "route": "disagreement",
+      "cohort": "mismatched",
+      "checkpoint": {
+        "revision": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45.pt",
+        "sha256": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45",
+        "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+        "step": 1024,
+        "score": 0.7419909966649572,
+        "metrics": {
+          "before_mse": 0.09615632228690174,
+          "after_mse": 0.07608514542761213,
+          "next_query_mse": 0.08196941659605628,
+          "credit": 0.0190711774725969,
+          "signed_progress": 0.020071177291413278,
+          "n": 128,
+          "accuracy": 0.5546875,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.10508537301423257,
+        "after_mse": 0.0859020177213323,
+        "next_query_mse": 0.08508163967022593,
+        "credit": 0.01818335404565122,
+        "signed_progress": 0.019183354106698188,
+        "n": 372,
+        "accuracy": 0.489247311827957,
+        "measurement_rate": 1.0
+      },
+      "ids_sha256": "ed44b5b2abd214c87b7191458f11560804d46d71bf864fe4cf9180d69b65e574",
+      "cases_sha256": "63c3315fa00b203c0a6f3b8093a12b55cb45a5b4f841ebbf97a474df29d2bd13",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    },
+    "shifted": {
+      "route": "disagreement",
+      "cohort": "shifted",
+      "checkpoint": {
+        "revision": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45.pt",
+        "sha256": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45",
+        "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+        "step": 1024,
+        "score": 0.7419909966649572,
+        "metrics": {
+          "before_mse": 0.09615632228690174,
+          "after_mse": 0.07608514542761213,
+          "next_query_mse": 0.08196941659605628,
+          "credit": 0.0190711774725969,
+          "signed_progress": 0.020071177291413278,
+          "n": 128,
+          "accuracy": 0.5546875,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.18466365675585195,
+        "after_mse": 0.15572396130177468,
+        "next_query_mse": 0.1309027769716442,
+        "credit": 0.02793969760341497,
+        "signed_progress": 0.02893969717837308,
+        "n": 256,
+        "accuracy": 0.53515625,
+        "measurement_rate": 1.0
+      },
+      "ids_sha256": "a3d138498ace0e94f22bad18ae5bbdee508c3278cbc5c7bbdbeb2d9e6635eb59",
+      "cases_sha256": "da6535a9a891d13cc89f6494fbd38aebc17d082062edcad1aa0c580d22fdc383",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    }
+  },
+  "stop": {
+    "matched": {
+      "route": "stop",
+      "cohort": "matched",
+      "checkpoint": {
+        "revision": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45.pt",
+        "sha256": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45",
+        "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+        "step": 1024,
+        "score": 0.7419909966649572,
+        "metrics": {
+          "before_mse": 0.09615632228690174,
+          "after_mse": 0.07608514542761213,
+          "next_query_mse": 0.08196941659605628,
+          "credit": 0.0190711774725969,
+          "signed_progress": 0.020071177291413278,
+          "n": 128,
+          "accuracy": 0.5546875,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.07235925637398191,
+        "after_mse": 0.07235925637398191,
+        "next_query_mse": 0.08291722024124534,
+        "credit": 0.0,
+        "signed_progress": 0.0,
+        "n": 371,
+        "accuracy": 0.5336927223719676,
+        "measurement_rate": 0.0
+      },
+      "ids_sha256": "dea351cdc72355055c1e6495190974e4d970c78bd6d8bd3eee65af63e918b26e",
+      "cases_sha256": "9a144b1d352c2d527ce6ccadae0db784081eac754c62bb729f2503f4e8868052",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    },
+    "mismatched": {
+      "route": "stop",
+      "cohort": "mismatched",
+      "checkpoint": {
+        "revision": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45.pt",
+        "sha256": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45",
+        "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+        "step": 1024,
+        "score": 0.7419909966649572,
+        "metrics": {
+          "before_mse": 0.09615632228690174,
+          "after_mse": 0.07608514542761213,
+          "next_query_mse": 0.08196941659605628,
+          "credit": 0.0190711774725969,
+          "signed_progress": 0.020071177291413278,
+          "n": 128,
+          "accuracy": 0.5546875,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.10508537301423257,
+        "after_mse": 0.10508537301423257,
+        "next_query_mse": 0.10116403412231989,
+        "credit": 0.0,
+        "signed_progress": 0.0,
+        "n": 372,
+        "accuracy": 0.4946236559139785,
+        "measurement_rate": 0.0
+      },
+      "ids_sha256": "ed44b5b2abd214c87b7191458f11560804d46d71bf864fe4cf9180d69b65e574",
+      "cases_sha256": "6bb60da4caef73a239822ea6cf0395879bca478e00d259480b8230ec1f151bed",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    },
+    "shifted": {
+      "route": "stop",
+      "cohort": "shifted",
+      "checkpoint": {
+        "revision": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45.pt",
+        "sha256": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45",
+        "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+        "step": 1024,
+        "score": 0.7419909966649572,
+        "metrics": {
+          "before_mse": 0.09615632228690174,
+          "after_mse": 0.07608514542761213,
+          "next_query_mse": 0.08196941659605628,
+          "credit": 0.0190711774725969,
+          "signed_progress": 0.020071177291413278,
+          "n": 128,
+          "accuracy": 0.5546875,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.18466365675585195,
+        "after_mse": 0.18466365675585195,
+        "next_query_mse": 0.14056687621815867,
+        "credit": 0.0,
+        "signed_progress": 0.0,
+        "n": 256,
+        "accuracy": 0.5546875,
+        "measurement_rate": 0.0
+      },
+      "ids_sha256": "a3d138498ace0e94f22bad18ae5bbdee508c3278cbc5c7bbdbeb2d9e6635eb59",
+      "cases_sha256": "c71a61df19a53cb97fe99bc45ea4cd0a40bb9ec6bde36f15e799f66cac80c451",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    }
+  },
+  "erase_history": {
+    "matched": {
+      "route": "erase_history",
+      "cohort": "matched",
+      "checkpoint": {
+        "revision": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45.pt",
+        "sha256": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45",
+        "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+        "step": 1024,
+        "score": 0.7419909966649572,
+        "metrics": {
+          "before_mse": 0.09615632228690174,
+          "after_mse": 0.07608514542761213,
+          "next_query_mse": 0.08196941659605628,
+          "credit": 0.0190711774725969,
+          "signed_progress": 0.020071177291413278,
+          "n": 128,
+          "accuracy": 0.5546875,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.14097328148246216,
+        "after_mse": 0.14097328148246216,
+        "next_query_mse": 0.16156137999055403,
+        "credit": -0.0010000000474974513,
+        "signed_progress": 0.0,
+        "n": 371,
+        "accuracy": 0.4582210242587601,
+        "measurement_rate": 1.0
+      },
+      "ids_sha256": "dea351cdc72355055c1e6495190974e4d970c78bd6d8bd3eee65af63e918b26e",
+      "cases_sha256": "9df4320c99a0a3a3a5c130920bd754d55e730b2bff5d7a22a0169db58afa880c",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    },
+    "mismatched": {
+      "route": "erase_history",
+      "cohort": "mismatched",
+      "checkpoint": {
+        "revision": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45.pt",
+        "sha256": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45",
+        "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+        "step": 1024,
+        "score": 0.7419909966649572,
+        "metrics": {
+          "before_mse": 0.09615632228690174,
+          "after_mse": 0.07608514542761213,
+          "next_query_mse": 0.08196941659605628,
+          "credit": 0.0190711774725969,
+          "signed_progress": 0.020071177291413278,
+          "n": 128,
+          "accuracy": 0.5546875,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.16185007146892838,
+        "after_mse": 0.16185007146892838,
+        "next_query_mse": 0.15423158882980617,
+        "credit": -0.0010000000474974513,
+        "signed_progress": 0.0,
+        "n": 372,
+        "accuracy": 0.4489247311827957,
+        "measurement_rate": 1.0
+      },
+      "ids_sha256": "ed44b5b2abd214c87b7191458f11560804d46d71bf864fe4cf9180d69b65e574",
+      "cases_sha256": "0a7b671b2c8ee2a76ccce5c048428248a22fe90110c88d6dc789a8a87267001a",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    },
+    "shifted": {
+      "route": "erase_history",
+      "cohort": "shifted",
+      "checkpoint": {
+        "revision": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45.pt",
+        "sha256": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45",
+        "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+        "step": 1024,
+        "score": 0.7419909966649572,
+        "metrics": {
+          "before_mse": 0.09615632228690174,
+          "after_mse": 0.07608514542761213,
+          "next_query_mse": 0.08196941659605628,
+          "credit": 0.0190711774725969,
+          "signed_progress": 0.020071177291413278,
+          "n": 128,
+          "accuracy": 0.5546875,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.2555787083255461,
+        "after_mse": 0.2555787083255461,
+        "next_query_mse": 0.22050778303580998,
+        "credit": -0.0010000000474974513,
+        "signed_progress": 0.0,
+        "n": 256,
+        "accuracy": 0.46875,
+        "measurement_rate": 1.0
+      },
+      "ids_sha256": "a3d138498ace0e94f22bad18ae5bbdee508c3278cbc5c7bbdbeb2d9e6635eb59",
+      "cases_sha256": "1eeb606f202e9d802fbfcd97de5b79c7273f60fb3335c222c5dd31ab271dd7e3",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    }
+  },
+  "no_imagination": {
+    "matched": {
+      "route": "no_imagination",
+      "cohort": "matched",
+      "checkpoint": {
+        "revision": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45.pt",
+        "sha256": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45",
+        "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+        "step": 1024,
+        "score": 0.7419909966649572,
+        "metrics": {
+          "before_mse": 0.09615632228690174,
+          "after_mse": 0.07608514542761213,
+          "next_query_mse": 0.08196941659605628,
+          "credit": 0.0190711774725969,
+          "signed_progress": 0.020071177291413278,
+          "n": 128,
+          "accuracy": 0.5546875,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.1496117688161833,
+        "after_mse": 0.14226085473910666,
+        "next_query_mse": 0.15499364880630492,
+        "credit": 0.006364389699714313,
+        "signed_progress": 0.00735091262342012,
+        "n": 371,
+        "accuracy": 0.48787061994609165,
+        "measurement_rate": 0.9865229110512129
+      },
+      "ids_sha256": "dea351cdc72355055c1e6495190974e4d970c78bd6d8bd3eee65af63e918b26e",
+      "cases_sha256": "d9af15711a4077a59e73668e34185da2e82a71801dba5850d9bd6cb971c3987e",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    },
+    "mismatched": {
+      "route": "no_imagination",
+      "cohort": "mismatched",
+      "checkpoint": {
+        "revision": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45.pt",
+        "sha256": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45",
+        "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+        "step": 1024,
+        "score": 0.7419909966649572,
+        "metrics": {
+          "before_mse": 0.09615632228690174,
+          "after_mse": 0.07608514542761213,
+          "next_query_mse": 0.08196941659605628,
+          "credit": 0.0190711774725969,
+          "signed_progress": 0.020071177291413278,
+          "n": 128,
+          "accuracy": 0.5546875,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.16734656555075905,
+        "after_mse": 0.15859703969726552,
+        "next_query_mse": 0.1442200567425177,
+        "credit": 0.007749524666465849,
+        "signed_progress": 0.008749524391141579,
+        "n": 372,
+        "accuracy": 0.49731182795698925,
+        "measurement_rate": 1.0
+      },
+      "ids_sha256": "ed44b5b2abd214c87b7191458f11560804d46d71bf864fe4cf9180d69b65e574",
+      "cases_sha256": "09bf06653fca3286f37db4988712552c75fdd21f0427b0a576fde74663bf81d6",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    },
+    "shifted": {
+      "route": "no_imagination",
+      "cohort": "shifted",
+      "checkpoint": {
+        "revision": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45.pt",
+        "sha256": "6bdc403658ad5355901d02a326f7a4ee59ab07886083987e0b10f7cdbf61bf45",
+        "weights": "6736cc159124bed5fdbf71a527f55bf20b13b7b077ebfebf6e52a9d7be6e08e1",
+        "step": 1024,
+        "score": 0.7419909966649572,
+        "metrics": {
+          "before_mse": 0.09615632228690174,
+          "after_mse": 0.07608514542761213,
+          "next_query_mse": 0.08196941659605628,
+          "credit": 0.0190711774725969,
+          "signed_progress": 0.020071177291413278,
+          "n": 128,
+          "accuracy": 0.5546875,
+          "measurement_rate": 1.0
+        }
+      },
+      "metrics": {
+        "before_mse": 0.2268801416823667,
+        "after_mse": 0.19775456761557475,
+        "next_query_mse": 0.2047552788584408,
+        "credit": 0.028149012779294935,
+        "signed_progress": 0.02912557488514267,
+        "n": 256,
+        "accuracy": 0.50390625,
+        "measurement_rate": 0.9765625
+      },
+      "ids_sha256": "a3d138498ace0e94f22bad18ae5bbdee508c3278cbc5c7bbdbeb2d9e6635eb59",
+      "cases_sha256": "244f6480559f7329dae148b58c71cab7788c9cf2592e971aed09269659051935",
+      "registration": "ba2095b98b87b5d1aab5f182cd507084da0cb7d47cb766f1f0b9e2aec8107679"
+    }
+  }
+}

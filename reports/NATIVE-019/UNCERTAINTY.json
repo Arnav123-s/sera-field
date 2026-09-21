@@ -1,0 +1,23 @@
+{
+  "comparisons": {
+    "matched": {
+      "groups": 256,
+      "native_minus_delayed_accuracy": 0.016042780748663166,
+      "interval_95": [
+        -0.012016021361815787,
+        0.043827618951623654
+      ]
+    },
+    "mismatched": {
+      "groups": 256,
+      "native_minus_delayed_accuracy": 0.009358288770053513,
+      "interval_95": [
+        -0.01992164497801071,
+        0.037384427007846464
+      ]
+    }
+  },
+  "replicates": 2000,
+  "seed": 191190,
+  "scope": "Paired source-premise uncertainty for fixed models; no training-seed variance."
+}

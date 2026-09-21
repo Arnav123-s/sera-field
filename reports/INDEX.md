@@ -1,5 +1,28 @@
 # Evidence index
 
+**Completed developmental integration:** [NATIVE-019 report](NATIVE-019/REPORT.md),
+[qualification](NATIVE-019/QUALIFICATION.json), [costs](NATIVE-019/COSTS.json),
+[architecture](../docs/NATIVE_ARCHITECTURE.md),
+[frozen matched course](../protocols/NATIVE-019.md),
+[source preparation](NATIVE-019/SOURCE_PREPARATION.json) and
+[research alignment](NATIVE-019/SOURCE_ALIGNMENT.md).
+This owner initializes memory, perception and imagination together. Its 15
+engineering checks passed after the preserved [rounding diagnosis](NATIVE-019/REPAIRS.md).
+All three courses completed; the native owner passed 11 qualification checks,
+and its original final predictions replayed exactly after a separately recorded
+process-tree memory recovery. [Packaged owner](../checkpoints/NATIVE-019/MANIFEST.json)
+and [usage guide](../docs/NATIVE_USAGE.md).
+
+**Completed whole-cycle reward study:** [JOINT-020 report](JOINT-020/REPORT.md),
+[qualification](JOINT-020/QUALIFICATION.json), [actual persistent updates](JOINT-020/DELIVERY.json),
+[costs](JOINT-020/COSTS.json), [protocol](../protocols/JOINT-020.md)
+and [registered source/cohort identities](JOINT-020/REGISTRATION.json). Teaching
+compares identical evidence access with and without independently checked reward.
+The native input maps, memory, imagination and choice weights all remained trainable.
+The complete course and exact replay finished. The candidate is preserved for
+the next counterbalanced training refinement; the reward contrast and
+[order diagnosis](JOINT-020/ORDER_DIAGNOSIS.json) remain visible.
+
 **Latest qualified human interpretation:** [SEMANTIC-015 report](SEMANTIC-015/REPORT.md),
 [usage](../docs/SEMANTIC_USAGE.md), [weights](../checkpoints/SEMANTIC-015/MANIFEST.json),
 [teaching](SEMANTIC-015/TEACHING.json), [qualification](SEMANTIC-015/QUALIFICATION.json),
@@ -40,9 +63,20 @@ memory synthesis. The next human corpus has [attributed source intake](SOURCE_IN
 and [qualified split preparation](SOURCE_INTAKE/MULTINLI-VIEWS.json); preparation is
 recorded separately from model teaching.
 
-**Prepared next integration:** [GENRE-017 checklist](GENRE-017/PREPARATION.md),
+**Completed broader human course:** [GENRE-017 report](GENRE-017/REPORT.md),
+[qualification](GENRE-017/QUALIFICATION.json), [retention](GENRE-017/RETENTION.json),
+[paired intervals](GENRE-017/UNCERTAINTY.md), [costs](GENRE-017/COSTS.json),
 [frozen curriculum](../protocols/GENRE-017.md) and
 [finite neural-field equations](../docs/FINITE_NEURAL_FIELD_ACTION.md).
+The candidate improved on new genres; the earlier semantic retention gate was
+unmet. Its weights and all three complete training histories remain preserved,
+and the earlier qualified semantic owner stays available.
+
+**Verified representation operator:** [ATTACH-018 engineering](ATTACH-018/ENGINEERING.md),
+[identities](ATTACH-018/ENGINEERING.json) and [costs](ATTACH-018/COSTS.json).
+Eight checks passed; an actual additional stalk preserves old sections and adds
+three free coordinates. This is an operator verification with no trained growth
+policy or behavioral qualification assigned to it.
 The [additional unified synthesis audit](../docs/SDHA_UNIFIED_SOURCE_AUDIT.md)
 preserves the latest source and separates its new requirements from active work.
 

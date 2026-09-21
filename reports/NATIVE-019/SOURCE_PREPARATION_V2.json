@@ -1,0 +1,22 @@
+{
+  "original_preparation_sha256": "c64c2718fc2a0cfaa52780eafc427a4f4136b3855374bbfa82a8970e8320a922",
+  "original_protocol_sha256": "317fc2bee586fce96849f5de5c3cc4e2d02175a3342c766583aee02f531af518",
+  "protocol_sha256": "60f66f03d6b333b85f285934d5826cce504349e41ef85161ccf253ea35ca1a89",
+  "amendment_sha256": "67cbf1c5b5c4e3e74a1c2eebc4c3f54ac30d7ed62108f5e0affecb79b4efb0e9",
+  "change": "Information-matched basic trace retained in controls; every source, split and final cohort unchanged.",
+  "source_groups": {
+    "matched": {
+      "groups": 256,
+      "rows": 748,
+      "ids_sha256": "07b4bd6a5fabc928bf0c102945a258bb31afbd0c59ce0fb2a344d68f0bbcbcce"
+    },
+    "mismatched": {
+      "groups": 256,
+      "rows": 748,
+      "ids_sha256": "30190451d1b2b03b2f32416458c9ff264f8cb94288b4ca389436d9e1bb89b4c5"
+    }
+  },
+  "native_numerical_work_started": false,
+  "native_final_predictions_opened": false,
+  "utc": "2026-09-20T22:46:19Z"
+}

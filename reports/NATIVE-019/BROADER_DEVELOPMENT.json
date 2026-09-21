@@ -1,0 +1,30 @@
+{
+  "scope": "Already used development diagnostics; not new final evidence",
+  "score": 0.5460253147727442,
+  "tracks": {
+    "semantic": {
+      "n": 256,
+      "accuracy": 0.59765625,
+      "loss": 0.8880621415155474
+    },
+    "reading": {
+      "n": 128,
+      "accuracy": 0.3125,
+      "loss": 1.4853494627168402
+    },
+    "math": {
+      "n": 128,
+      "accuracy": 0.5703125,
+      "loss": 0.9650708180197398
+    },
+    "pairs": {
+      "n": 607,
+      "accuracy": 0.29983525535420097,
+      "loss": 1.5948199039063136
+    },
+    "physics": {
+      "n": 128,
+      "mse": 0.052828215662657385
+    }
+  }
+}

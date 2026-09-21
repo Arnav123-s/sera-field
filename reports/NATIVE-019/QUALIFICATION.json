@@ -1,0 +1,232 @@
+{
+  "gates": {
+    "matched_fresh_teaching": true,
+    "source_identity": true,
+    "complete_teaching": true,
+    "selected_learned_state": true,
+    "semantic_learning": true,
+    "semantic_history_use": true,
+    "physical_history_use": true,
+    "all_core_groups_updated": true,
+    "exact_replay": true,
+    "persistent_checked_delivery": true,
+    "engineering_tests": true
+  },
+  "all_gates": true,
+  "metrics": {
+    "native": {
+      "matched": {
+        "n": 748,
+        "accuracy": 0.5374331550802139,
+        "loss": 0.9637479125720873
+      },
+      "mismatched": {
+        "n": 748,
+        "accuracy": 0.5294117647058824,
+        "loss": 0.9506433759971444
+      },
+      "physics": {
+        "n": 512,
+        "mse": 0.05301283104891855
+      },
+      "physics_shifted": {
+        "n": 512,
+        "mse": 0.13366071958009157
+      }
+    },
+    "delayed": {
+      "matched": {
+        "n": 748,
+        "accuracy": 0.5213903743315508,
+        "loss": 0.9733317413689581
+      },
+      "mismatched": {
+        "n": 748,
+        "accuracy": 0.5200534759358288,
+        "loss": 0.9577259301602864
+      },
+      "physics": {
+        "n": 512,
+        "mse": 0.05373013494242614
+      },
+      "physics_shifted": {
+        "n": 512,
+        "mse": 0.13166465676437097
+      }
+    },
+    "trace": {
+      "matched": {
+        "n": 748,
+        "accuracy": 0.5254010695187166,
+        "loss": 0.9781653642676215
+      },
+      "mismatched": {
+        "n": 748,
+        "accuracy": 0.5213903743315508,
+        "loss": 0.9564677655026976
+      },
+      "physics": {
+        "n": 512,
+        "mse": 0.056535543001181125
+      },
+      "physics_shifted": {
+        "n": 512,
+        "mse": 0.13736728715409752
+      }
+    },
+    "initial": {
+      "matched": {
+        "n": 748,
+        "accuracy": 0.32219251336898397,
+        "loss": 1.1036324029678757
+      },
+      "mismatched": {
+        "n": 748,
+        "accuracy": 0.3141711229946524,
+        "loss": 1.1050611755380777
+      },
+      "physics": {
+        "n": 512,
+        "mse": 0.41054914807959325
+      },
+      "physics_shifted": {
+        "n": 512,
+        "mse": 0.886712635383364
+      }
+    },
+    "erase_history": {
+      "matched": {
+        "n": 748,
+        "accuracy": 0.4612299465240642,
+        "loss": 1.1719564991621356
+      },
+      "mismatched": {
+        "n": 748,
+        "accuracy": 0.4090909090909091,
+        "loss": 1.2009259603776634
+      },
+      "physics": {
+        "n": 512,
+        "mse": 0.17009876303131752
+      },
+      "physics_shifted": {
+        "n": 512,
+        "mse": 0.24098283899823966
+      }
+    },
+    "no_bulk": {
+      "matched": {
+        "n": 748,
+        "accuracy": 0.5334224598930482,
+        "loss": 0.9641261195725267
+      },
+      "mismatched": {
+        "n": 748,
+        "accuracy": 0.5307486631016043,
+        "loss": 0.9513168497709166
+      },
+      "physics": {
+        "n": 512,
+        "mse": 0.05355869308907829
+      },
+      "physics_shifted": {
+        "n": 512,
+        "mse": 0.13366608412720307
+      }
+    },
+    "equal_rates": {
+      "matched": {
+        "n": 748,
+        "accuracy": 0.5347593582887701,
+        "loss": 0.9628564064057853
+      },
+      "mismatched": {
+        "n": 748,
+        "accuracy": 0.5334224598930482,
+        "loss": 0.9486672785926092
+      },
+      "physics": {
+        "n": 512,
+        "mse": 0.05148001029523941
+      },
+      "physics_shifted": {
+        "n": 512,
+        "mse": 0.13447556027756613
+      }
+    },
+    "no_imagination": {
+      "matched": {
+        "n": 748,
+        "accuracy": 0.5387700534759359,
+        "loss": 0.9807627151654456
+      },
+      "mismatched": {
+        "n": 748,
+        "accuracy": 0.5240641711229946,
+        "loss": 0.9748522214959906
+      },
+      "physics": {
+        "n": 512,
+        "mse": 0.13105029327182682
+      },
+      "physics_shifted": {
+        "n": 512,
+        "mse": 0.2168550249657626
+      }
+    }
+  },
+  "source_checks": {
+    "sera_field/native_owner.py": true,
+    "sera_field/native_data.py": true,
+    "sera_field/native_training.py": true,
+    "sera_field/clifford_sheaf.py": true,
+    "sera_field/continuum_core.py": true,
+    "sera_field/gauge.py": true,
+    "sera_field/study_data.py": true,
+    "sera_field/records.py": true,
+    "sera_field/model.py": true,
+    "sera_field/situation_core.py": true,
+    "runner": true,
+    "protocol": true,
+    "amendment": true
+  },
+  "test_evidence": {
+    "runs\\native019-tests-001\\state.json": false,
+    "runs\\native019-tests-002\\state.json": true
+  },
+  "selected": {
+    "revision": "406649900b47b00c5e8339b42cc2b93c96f3dd3efc37f4c7f4ad6e2854c4fd3a.pt",
+    "sha256": "406649900b47b00c5e8339b42cc2b93c96f3dd3efc37f4c7f4ad6e2854c4fd3a",
+    "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+    "step": 8192,
+    "score": 0.5460253147727442,
+    "tracks": {
+      "semantic": {
+        "n": 256,
+        "accuracy": 0.59765625,
+        "loss": 0.8880621415155474
+      },
+      "reading": {
+        "n": 128,
+        "accuracy": 0.3125,
+        "loss": 1.4853494627168402
+      },
+      "math": {
+        "n": 128,
+        "accuracy": 0.5703125,
+        "loss": 0.9650708180197398
+      },
+      "pairs": {
+        "n": 607,
+        "accuracy": 0.29983525535420097,
+        "loss": 1.5948199039063136
+      },
+      "physics": {
+        "n": 128,
+        "mse": 0.052828215662657385
+      }
+    }
+  },
+  "default_predecessor_preserved": true,
+  "scope": "Fresh joint training in the specified curriculum; no replacement from unequal historical training."
+}

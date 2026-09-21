@@ -1,0 +1,10 @@
+{
+  "fresh_process": true,
+  "checks": {
+    "matched": true,
+    "mismatched": true,
+    "physics": true,
+    "physics_shifted": true
+  },
+  "exact": true
+}

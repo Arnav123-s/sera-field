@@ -105,6 +105,15 @@ useful. That new coupling changes the flow and requires fresh retention tests;
 the initial preservation identity is not asserted after unrestricted training.
 This derivation is prospective engineering, not a trained SERA result.
 
+The subsequent [engineering protocol](../protocols/ATTACH-018-ENGINEERING.md)
+uses the full-row-rank chart R=[I,A]. Writing the new stalk as (z_c,eta), its
+transform is T(x,eta,w)=(x,B*x_vertex-A*eta+w,eta). This alternative chart avoids
+a rank-dependent SVD/null-basis orientation while keeping the same compatibility
+and metric-flow identities. The explicit implementation is in
+`sera_field/variable_sheaf.py`; its prospective tests and independent actual-owner
+check wait for the active curriculum to finish. No learned growth result is
+claimed from the implementation alone.
+
 ## Local propagation alternative and its precise scope
 
 [Neural Sheaf Diffusion](https://arxiv.org/abs/2202.04579) supplies a learned-map

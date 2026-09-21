@@ -1,0 +1,23 @@
+{
+  "counts": {
+    "train": 371929,
+    "development": 20189,
+    "sealed_matched": 9815,
+    "sealed_mismatched": 9830
+  },
+  "group_counts": {
+    "train": 121376,
+    "development": 6571,
+    "sealed_matched": 3334,
+    "sealed_mismatched": 3335
+  },
+  "checks": {
+    "train:development": true,
+    "train:sealed_matched": true,
+    "train:sealed_mismatched": true,
+    "development:sealed_matched": true,
+    "development:sealed_mismatched": true,
+    "sealed_matched:sealed_mismatched": true,
+    "counts": true
+  }
+}

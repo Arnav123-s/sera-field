@@ -1,0 +1,74 @@
+{
+  "status": "mathematical_transition_verified",
+  "utc": "2026-09-21T00:24:34Z",
+  "numerical_attempt": "4c083d0772fe412db1adf00f32525fc0",
+  "test_count": 8,
+  "parent_selection": {
+    "sha256": "db851135bbca7235e743423fa14408196c0e3b829d51113180958ace3270c8f8",
+    "revision": "db851135bbca7235e743423fa14408196c0e3b829d51113180958ace3270c8f8.pt",
+    "parent": "4be5a015d7b7c194dc8770bf5118ea441b121758364462a0b2712cc29b49ddad",
+    "weights": "25d8ee69aeb6cffc621f4b51d42e652e6ac5bad825f0cc7d2f511775509ba37a",
+    "updates": 60,
+    "semantic_step": 13312,
+    "n": 512,
+    "accuracy": 0.60546875,
+    "loss": 0.8834963142871857,
+    "source_checkpoint_sha256": "725f5df52c584c71f590c6b098f91d7ab8b5c5526b107954a68f11c025f84b72",
+    "role": "qualified_human_semantic_owner"
+  },
+  "parent_weights": "25d8ee69aeb6cffc621f4b51d42e652e6ac5bad825f0cc7d2f511775509ba37a",
+  "owner_weights_unchanged": true,
+  "old_dimensions": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+  ],
+  "new_dimensions": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    11
+  ],
+  "old_edges": 8,
+  "new_edges": 9,
+  "old_nullity": 2,
+  "new_nullity": 5,
+  "new_free_dimensions": 3,
+  "transform_condition": 1.5221767398877692,
+  "minimum_metric_eigenvalue": 0.656953935634131,
+  "maximum_metric_eigenvalue": 1.52217673988777,
+  "errors": {
+    "enlarged_coboundary_max_abs": 0.0,
+    "round_trip_max_abs": 0.0,
+    "metric_gradient_max_abs": 1.7763568394002505e-15
+  },
+  "storage": {
+    "old_state_scalars": 64,
+    "new_state_scalars": 75,
+    "added_free_scalars": 3,
+    "new_state_bytes_per_case": 600,
+    "new_restriction_bytes": 704,
+    "dense_transform_bytes_if_requested": 45000,
+    "scope": "state and new restrictions only; excludes gradients, solver workspace and process memory"
+  },
+  "learned_updates": 0,
+  "data_used": "deterministic mathematical inputs and the retained owner restriction maps",
+  "behavioral_qualification": "not assessed by this engineering suite",
+  "scope": "actual additional stalk with exact initial projection and stated metric consistency flow",
+  "sources": {
+    "protocols/ATTACH-018-ENGINEERING.md": "acd76465f7535d6443eaefecca89c4f53d0eabb6b422300aec41350f39e1fee2",
+    "sera_field/variable_sheaf.py": "92f723c75c84b8bdee8af3f9a7e8b90ebaa7548d482d167bfbaf565c48827dc5",
+    "tests/test_variable_sheaf.py": "6ca5a6f00b57860588e537debfef578535bbbeda6506c5ff1d68dce60c0838b8",
+    "scripts/verify_attachment018.py": "c0f82ce0dc8c9a044dcfce2dd1fe9b5064e8312f5c7bcd22b2d31a9872ce1291"
+  }
+}
