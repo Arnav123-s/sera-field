@@ -1,5 +1,20 @@
 # Evidence index
 
+**Complete-core build in progress:** [CORE-022 engineering](CORE-022/REPORT.md),
+[source identities and ten checks](CORE-022/ENGINEERING.json),
+[equations](../docs/CORE_022_EQUATIONS.md) and
+[complete work order](../docs/COMPLETE_CORE_WORK_ORDER.md). The new build precedes
+its from-scratch curriculum; no new complete-core training is claimed here.
+
+**Completed counterbalanced whole-cycle course:** [JOINT-021 report](JOINT-021/REPORT.md),
+[qualification](JOINT-021/QUALIFICATION.json), [paired comparisons](JOINT-021/INDEPENDENT_METRICS.json),
+[retention](JOINT-021/RETENTION.json), [persistent updates](JOINT-021/DELIVERY.json),
+[exact replay](JOINT-021/REPLAY.json), [packaged owner](../checkpoints/JOINT-021/MANIFEST.json)
+and [full costs](JOINT-021/COSTS.json). All four family/order cells were taught
+equally. The full course reduced returned numerical error by 53.96% relative to
+its starting owner on 747 fresh cases. The reward-specific interval includes
+zero; the candidate and both complete matched courses remain preserved.
+
 **Completed developmental integration:** [NATIVE-019 report](NATIVE-019/REPORT.md),
 [qualification](NATIVE-019/QUALIFICATION.json), [costs](NATIVE-019/COSTS.json),
 [architecture](../docs/NATIVE_ARCHITECTURE.md),
@@ -19,8 +34,8 @@ and [usage guide](../docs/NATIVE_USAGE.md).
 and [registered source/cohort identities](JOINT-020/REGISTRATION.json). Teaching
 compares identical evidence access with and without independently checked reward.
 The native input maps, memory, imagination and choice weights all remained trainable.
-The complete course and exact replay finished. The candidate is preserved for
-the next counterbalanced training refinement; the reward contrast and
+The complete course and exact replay finished. The candidate is preserved beside
+the completed counterbalanced refinement; the reward contrast and
 [order diagnosis](JOINT-020/ORDER_DIAGNOSIS.json) remain visible.
 
 **Latest qualified human interpretation:** [SEMANTIC-015 report](SEMANTIC-015/REPORT.md),

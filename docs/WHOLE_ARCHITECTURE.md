@@ -5,6 +5,14 @@ imagination, investigation, correction and retained knowledge interact. A releas
 of one component does not complete this objective. Earlier studies, failures and
 owners remain immutable references.
 
+**Current work order:** finish the full specified mechanism and engineering
+checks before a fresh whole-system curriculum, then assess the trained owner
+and continue learning incrementally. [CORE-022](COMPLETE_CORE_WORK_ORDER.md)
+records that order. Its shared-energy and Fibonacci operators have ten passing
+checks; the complete owner and curriculum are still being built. Their
+[equations](CORE_022_EQUATIONS.md) and [build evidence](../reports/CORE-022/REPORT.md)
+are separate from the trained outcomes below.
+
 The current priority is the user's developmental requirement: memory, perception
 and imagination should learn together from initialization. The
 [NATIVE-019 owner](NATIVE_ARCHITECTURE.md) is implemented without a parent checkpoint
@@ -31,9 +39,14 @@ assessment and exact replay are complete. Sixteen persistent investigations
 caused real reward-weight updates and restored their goals, owner and optimizer.
 The candidate improved returned mixed-task answers and retained ordinary native
 human/physical performance. Its reward-specific interval overlapped zero. A
-separate design audit also found family/order confounding, so the candidate stays
-preserved while counterbalanced teaching is prepared. The original final results
-and all costs remain intact; the next refinement needs untouched evaluations.
+separate design audit also found family/order confounding. The candidate and
+original finals stay preserved. The [JOINT-021 repair](../reports/JOINT-021/REPORT.md)
+has now completed both counterbalanced courses, fresh finals, independent replay
+and 16 persistent updates. Its four training cells each contain 4,096 episodes
+per arm; ordinary language/physical retention passed. Its credited-versus-withheld
+interval also includes zero, so this comparison is preserved without further
+tuning of either opened final. Reward-procedure improvement remains an explicit
+behavioral obligation in the complete-core course.
 
 **Current-owner scope.** NATIVE-019 contains the Clifford/sheaf boundary and
 fast/slow/active-bulk continuum from initialization. Earlier covariance/echo,
@@ -82,7 +95,7 @@ the current experiment.
 | Scale-dependent adequacy | GROW-013 records a finite Gaussian action, regulator and flow with independent calibration | Learn a qualified capacity decision and test actual structural attachment |
 | Learned structural extension | GROW-013 learns residual features, qualifies acquired coefficients and returns five uses | Literal sheaf-cell/ambient-space growth and general concept construction |
 | Measurement and alternative routes | INQUIRY-014 completes explicit fusion spaces, all measurement outcomes, sustained local-credit training, independent replay and persistent delivery | Improve procedure learning on fresh training/development tasks; step zero won this selection |
-| Fibonacci-specific boundary imagination | Earlier finite Ising protocols and conditional branch protection remain preserved | Implement the specified Fibonacci F/R data and outcome corrections; assess its task contribution and classical cost before assigning this requirement |
+| Fibonacci-specific boundary imagination | CORE-022 implements fixed-total Fibonacci spaces, F/R data, pentagon/braid tests and every charge outcome; earlier Ising protocols remain preserved | Connect the instrument to the new owner's conditional proposals and assess its learned contribution, outcome continuation and classical cost |
 | Five uses of one relationship | CONCEPT-011 and GROW-013 pass finite acceptance and persistent-delivery checks | Broader acquired relationships and original-goal tasks |
 | Diverse useful discoveries | Guarded investigation and verified credit | Learned distinct proposals, canonical deduplication, complementary coverage and independent outcomes |
 | Perspective, poetry, practical understanding | Human source teaching retained | Source-grounded interpretation and observer/goal distinctions, without attributing feelings from scores |
@@ -91,7 +104,7 @@ the current experiment.
 | Causal propagation | Local field operators and recorded intervention boundaries | Finite dependency-cone tests under the stated dynamics; diffusion alone is not a strict physical light cone |
 | Correlator-derived neural action | GENRE-017 completed exact finite-ensemble teaching, action-force checks, controls and replay; new-genre accuracy improved while earlier semantic retention declined | Preserve the result; investigate retention under a fresh protocol without tuning the opened finals |
 | Growth followed by retry | Bounded learned feature refinement and retained original goals | Literal structure attachment, preserved old sections and independently checked active retry |
-| One unified trained dynamics | Native boundary and memory learn jointly; JOINT-020 connects checked reward to their existing shared weights | Couple the other named operators under explicit mathematical contracts, then train and evaluate the complete learner as a whole |
+| One unified trained dynamics | Native boundary and memory learn jointly; JOINT-020/021 connect checked reward to existing shared weights; CORE-022 adds a reciprocally coupled energy with tested active-work accounting | Complete all named connections in the fresh owner, then train and evaluate it as a whole under the complete-core work order |
 
 Every requirement needs an implemented connection and behavioral evidence.
 A source title, mathematical unit test or shared checkpoint alone does not close
@@ -179,7 +192,10 @@ recorded separately. No training imports external pretrained weights.
 - [x] Implement, train and independently assess connected dual-timescale and active-bulk history.
 - [x] Qualify a useful native history connection jointly trained from the first lesson (NATIVE-019).
 - [x] Assess a complete retained situation, investigation, reward-weight update and restart through that owner (JOINT-020).
-- [ ] Qualify the reward procedure after counterbalanced chronology/family teaching and a fresh comparison.
+- [x] Complete counterbalanced chronology/family teaching and a fresh reward comparison (JOINT-021).
+- [ ] Qualify improved reward-driven behavior through the complete-core curriculum and fresh assessment.
+- [ ] Finish the complete-core build acceptance before its first curriculum update.
+- [ ] Teach the complete fresh owner, assess its whole behavior, then begin incremental continuation.
 - [x] Complete the tested finite neural-action curriculum and its independent decision.
 - [ ] Complete broad interpretation, alternative discovery and continued-learning tests.
 - [ ] Re-audit every research requirement against actual executable evidence.

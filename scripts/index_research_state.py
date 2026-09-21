@@ -12,6 +12,8 @@ STUDIES = (
     ('GENRE-017', 'Broader human language and finite neural action'),
     ('NATIVE-019', 'Joint developmental memory, perception and imagination'),
     ('JOINT-020', 'Mixed observed situation, investigation and verified reward learning'),
+    ('JOINT-021', 'Counterbalanced chronology repair and fresh reward comparison'),
+    ('CORE-022', 'Complete-core engineering before from-scratch behavioral teaching'),
 )
 
 
@@ -38,16 +40,21 @@ def main():
         if decision.exists():
             assessment = json.loads(decision.read_text(encoding='utf-8'))
             entry.update(qualification=f'reports/{name}/QUALIFICATION.json',
-                         all_frozen_gates=assessment['all_gates'])
+                         all_frozen_gates=assessment.get('all_frozen_gates', assessment['all_gates']),
+                         all_qualification_checks=assessment['all_gates'])
         for label in ('COSTS', 'TEACHING', 'REPLAY', 'DELIVERY'):
             if (folder / (label + '.json')).exists():
                 entry[label.lower()] = f'reports/{name}/{label}.json'
         manifest = ROOT / 'checkpoints' / name / 'MANIFEST.json'
         if manifest.exists():
             entry['checkpoint_manifest'] = f'checkpoints/{name}/MANIFEST.json'
+        if name == 'CORE-022' and (folder / 'ENGINEERING.json').exists():
+            build = json.loads((folder / 'ENGINEERING.json').read_text())
+            entry.update(stage=build['stage'], engineering='reports/CORE-022/ENGINEERING.json',
+                         training_started=False, whole_owner_integration_complete=False)
         studies[name] = entry
     active = []
-    for pattern in ('genre017-*', 'attach018-*', 'native019-*', 'joint020-*'):
+    for pattern in ('genre017-*', 'attach018-*', 'native019-*', 'joint020-*', 'joint021-*', 'core022-*'):
         for path in sorted((ROOT / 'runs').glob(pattern + '/state.json')):
             row = json.loads(path.read_text(encoding='utf-8'))
             if row['status'] in ('STARTING', 'RUNNING'):
@@ -57,7 +64,8 @@ def main():
         'schema_version': 2,
         'goal': prior['full_vision'],
         'whole_research_completed': False,
-        'research_focus': 'Qualified native memory and completed whole-cycle study; counterbalance family/order and assess a fresh reward comparison.',
+        'research_focus': 'Complete the entire specified core and its engineering checks before fresh behavioral teaching, whole-system assessment and subsequent incremental learning. JOINT-021 is completed and preserved.',
+        'next_work_order': 'docs/COMPLETE_CORE_WORK_ORDER.md',
         'readme': 'README.md',
         'documentation': 'docs/INDEX.md',
         'evidence_index': 'reports/INDEX.md',
@@ -91,6 +99,7 @@ def main():
         'publication': {
             'repository': 'https://github.com/Arnav123-s/sera-field',
             'previous_verified_record': prior['publication_record'],
+            'latest_verified_release': read('reports/PUBLICATION.json') if (ROOT / 'reports/PUBLICATION.json').exists() else None,
             'current_snapshot_identity': 'PUBLICATION_MANIFEST.json',
         },
     }

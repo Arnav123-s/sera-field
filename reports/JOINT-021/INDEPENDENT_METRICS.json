@@ -1,0 +1,221 @@
+{
+  "metrics": {
+    "credited": {
+      "matched": {
+        "accuracy": 0.5297297297297298,
+        "original_goal_mse": 0.08832312565043826,
+        "utility": -0.08932312565043826
+      },
+      "mismatched": {
+        "accuracy": 0.493368700265252,
+        "original_goal_mse": 0.07304788016306152,
+        "utility": -0.07404788016306152
+      },
+      "shifted": {
+        "accuracy": 0.47265625,
+        "original_goal_mse": 0.17703631097441075,
+        "utility": -0.17803631097441075
+      }
+    },
+    "withheld": {
+      "matched": {
+        "accuracy": 0.518918918918919,
+        "original_goal_mse": 0.08736181946581101,
+        "utility": -0.0883591167631083
+      },
+      "mismatched": {
+        "accuracy": 0.4907161803713528,
+        "original_goal_mse": 0.0856458469376826,
+        "utility": -0.08664319441778869
+      },
+      "shifted": {
+        "accuracy": 0.46484375,
+        "original_goal_mse": 0.19381081818297663,
+        "utility": -0.19480691193297664
+      }
+    },
+    "initial": {
+      "matched": {
+        "accuracy": 0.4810810810810811,
+        "original_goal_mse": 0.18957215314957113,
+        "utility": -0.1905694504468684
+      },
+      "mismatched": {
+        "accuracy": 0.4297082228116711,
+        "original_goal_mse": 0.1608932942848186,
+        "utility": -0.1618906417649247
+      },
+      "shifted": {
+        "accuracy": 0.46484375,
+        "original_goal_mse": 0.23645714001397383,
+        "utility": -0.23743370251397383
+      }
+    },
+    "uniform": {
+      "matched": {
+        "accuracy": 0.5378378378378378,
+        "original_goal_mse": 0.07736996689475428,
+        "utility": -0.07824023716502457
+      },
+      "mismatched": {
+        "accuracy": 0.493368700265252,
+        "original_goal_mse": 0.06949767621252806,
+        "utility": -0.07039688045655988
+      },
+      "shifted": {
+        "accuracy": 0.49609375,
+        "original_goal_mse": 0.1824497184882741,
+        "utility": -0.18336378098827408
+      }
+    },
+    "disagreement": {
+      "matched": {
+        "accuracy": 0.5297297297297298,
+        "original_goal_mse": 0.08614980854706861,
+        "utility": -0.08714980854706861
+      },
+      "mismatched": {
+        "accuracy": 0.506631299734748,
+        "original_goal_mse": 0.07525589652307572,
+        "utility": -0.07625589652307573
+      },
+      "shifted": {
+        "accuracy": 0.47265625,
+        "original_goal_mse": 0.18319319961203592,
+        "utility": -0.1841931996120359
+      }
+    },
+    "stop": {
+      "matched": {
+        "accuracy": 0.5486486486486486,
+        "original_goal_mse": 0.09972031986142096,
+        "utility": -0.09972031986142096
+      },
+      "mismatched": {
+        "accuracy": 0.5119363395225465,
+        "original_goal_mse": 0.08678737372910464,
+        "utility": -0.08678737372910464
+      },
+      "shifted": {
+        "accuracy": 0.5,
+        "original_goal_mse": 0.21323880658927238,
+        "utility": -0.21323880658927238
+      }
+    },
+    "erase_history": {
+      "matched": {
+        "accuracy": 0.45675675675675675,
+        "original_goal_mse": 0.15365859439608834,
+        "utility": -0.15465859439608837
+      },
+      "mismatched": {
+        "accuracy": 0.4270557029177719,
+        "original_goal_mse": 0.16487110075717767,
+        "utility": -0.16587110075717765
+      },
+      "shifted": {
+        "accuracy": 0.41796875,
+        "original_goal_mse": 0.25287855675136145,
+        "utility": -0.25387855675136145
+      }
+    },
+    "no_imagination": {
+      "matched": {
+        "accuracy": 0.527027027027027,
+        "original_goal_mse": 0.1619843455803327,
+        "utility": -0.16298164287763
+      },
+      "mismatched": {
+        "accuracy": 0.493368700265252,
+        "original_goal_mse": 0.1668612075842411,
+        "utility": -0.16785855506434721
+      },
+      "shifted": {
+        "accuracy": 0.47265625,
+        "original_goal_mse": 0.2140300781832229,
+        "utility": -0.21502226568322289
+      }
+    }
+  },
+  "decimal_max_outcome_discrepancy": 1.1459345650166597e-07,
+  "utility": "negative squared original-goal error minus .001 per performed probe",
+  "comparisons": {
+    "withheld": {
+      "mean": 0.005879183648888957,
+      "95_percent_interval": [
+        -0.0006594085261951135,
+        0.012983833983961307
+      ],
+      "premise_groups": 256,
+      "rows": 747,
+      "resamples": 2000,
+      "scope": "Fixed learned checkpoints; evaluation group sampling, not training seed variability."
+    },
+    "initial": {
+      "mean": 0.09448174203290707,
+      "95_percent_interval": [
+        0.07520274305472503,
+        0.11519570972676003
+      ],
+      "premise_groups": 256,
+      "rows": 747,
+      "resamples": 2000,
+      "scope": "Fixed learned checkpoints; evaluation group sampling, not training seed variability."
+    },
+    "uniform": {
+      "mean": -0.0073321226625892725,
+      "95_percent_interval": [
+        -0.014870104634148685,
+        0.00030417908486237696
+      ],
+      "premise_groups": 256,
+      "rows": 747,
+      "resamples": 2000,
+      "scope": "Fixed learned checkpoints; evaluation group sampling, not training seed variability."
+    },
+    "disagreement": {
+      "mean": 3.787796449609181e-05,
+      "95_percent_interval": [
+        -0.00478914057583007,
+        0.00478699281160857
+      ],
+      "premise_groups": 256,
+      "rows": 747,
+      "resamples": 2000,
+      "scope": "Fixed learned checkpoints; evaluation group sampling, not training seed variability."
+    },
+    "stop": {
+      "mean": 0.011579318517351882,
+      "95_percent_interval": [
+        0.005926725660371754,
+        0.017616272108285622
+      ],
+      "premise_groups": 256,
+      "rows": 747,
+      "resamples": 2000,
+      "scope": "Fixed learned checkpoints; evaluation group sampling, not training seed variability."
+    },
+    "erase_history": {
+      "mean": 0.0787034506022387,
+      "95_percent_interval": [
+        0.06643838768852033,
+        0.09101221146370297
+      ],
+      "premise_groups": 256,
+      "rows": 747,
+      "resamples": 2000,
+      "scope": "Fixed learned checkpoints; evaluation group sampling, not training seed variability."
+    },
+    "no_imagination": {
+      "mean": 0.08382901715106512,
+      "95_percent_interval": [
+        0.06705250641765584,
+        0.1009758341506883
+      ],
+      "premise_groups": 256,
+      "rows": 747,
+      "resamples": 2000,
+      "scope": "Fixed learned checkpoints; evaluation group sampling, not training seed variability."
+    }
+  }
+}

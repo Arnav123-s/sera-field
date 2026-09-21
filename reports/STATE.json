@@ -2,7 +2,8 @@
   "schema_version": 2,
   "goal": "Persistent grounded understanding, imagination, investigation and learning across language and domains",
   "whole_research_completed": false,
-  "research_focus": "Qualified native memory and completed whole-cycle study; counterbalance family/order and assess a fresh reward comparison.",
+  "research_focus": "Complete the entire specified core and its engineering checks before fresh behavioral teaching, whole-system assessment and subsequent incremental learning. JOINT-021 is completed and preserved.",
+  "next_work_order": "docs/COMPLETE_CORE_WORK_ORDER.md",
   "readme": "README.md",
   "documentation": "docs/INDEX.md",
   "evidence_index": "reports/INDEX.md",
@@ -15,6 +16,7 @@
       "completed_report": true,
       "qualification": "reports/UNIFIED-012/QUALIFICATION.json",
       "all_frozen_gates": true,
+      "all_qualification_checks": true,
       "costs": "reports/UNIFIED-012/COSTS.json",
       "teaching": "reports/UNIFIED-012/TEACHING.json",
       "replay": "reports/UNIFIED-012/REPLAY.json",
@@ -26,6 +28,7 @@
       "completed_report": true,
       "qualification": "reports/GROW-013/QUALIFICATION.json",
       "all_frozen_gates": true,
+      "all_qualification_checks": true,
       "costs": "reports/GROW-013/COSTS.json",
       "teaching": "reports/GROW-013/TEACHING.json",
       "replay": "reports/GROW-013/REPLAY.json",
@@ -38,6 +41,7 @@
       "completed_report": true,
       "qualification": "reports/INQUIRY-014/QUALIFICATION.json",
       "all_frozen_gates": true,
+      "all_qualification_checks": true,
       "costs": "reports/INQUIRY-014/COSTS.json",
       "teaching": "reports/INQUIRY-014/TEACHING.json",
       "replay": "reports/INQUIRY-014/REPLAY.json",
@@ -50,6 +54,7 @@
       "completed_report": true,
       "qualification": "reports/SEMANTIC-015/QUALIFICATION.json",
       "all_frozen_gates": true,
+      "all_qualification_checks": true,
       "costs": "reports/SEMANTIC-015/COSTS.json",
       "teaching": "reports/SEMANTIC-015/TEACHING.json",
       "replay": "reports/SEMANTIC-015/REPLAY.json",
@@ -62,6 +67,7 @@
       "completed_report": true,
       "qualification": "reports/HISTORY-016/QUALIFICATION.json",
       "all_frozen_gates": false,
+      "all_qualification_checks": false,
       "costs": "reports/HISTORY-016/COSTS.json",
       "teaching": "reports/HISTORY-016/TEACHING.json",
       "replay": "reports/HISTORY-016/REPLAY.json",
@@ -73,6 +79,7 @@
       "completed_report": true,
       "qualification": "reports/GENRE-017/QUALIFICATION.json",
       "all_frozen_gates": false,
+      "all_qualification_checks": false,
       "costs": "reports/GENRE-017/COSTS.json",
       "teaching": "reports/GENRE-017/TEACHING.json",
       "delivery": "reports/GENRE-017/DELIVERY.json"
@@ -83,6 +90,7 @@
       "completed_report": true,
       "qualification": "reports/NATIVE-019/QUALIFICATION.json",
       "all_frozen_gates": true,
+      "all_qualification_checks": true,
       "costs": "reports/NATIVE-019/COSTS.json",
       "teaching": "reports/NATIVE-019/TEACHING.json",
       "replay": "reports/NATIVE-019/REPLAY.json",
@@ -95,11 +103,35 @@
       "completed_report": true,
       "qualification": "reports/JOINT-020/QUALIFICATION.json",
       "all_frozen_gates": false,
+      "all_qualification_checks": false,
       "costs": "reports/JOINT-020/COSTS.json",
       "teaching": "reports/JOINT-020/TEACHING.json",
       "replay": "reports/JOINT-020/REPLAY.json",
       "delivery": "reports/JOINT-020/DELIVERY.json",
       "checkpoint_manifest": "checkpoints/JOINT-020/MANIFEST.json"
+    },
+    "JOINT-021": {
+      "purpose": "Counterbalanced chronology repair and fresh reward comparison",
+      "report": "reports/JOINT-021/REPORT.md",
+      "completed_report": true,
+      "qualification": "reports/JOINT-021/QUALIFICATION.json",
+      "all_frozen_gates": false,
+      "all_qualification_checks": false,
+      "costs": "reports/JOINT-021/COSTS.json",
+      "teaching": "reports/JOINT-021/TEACHING.json",
+      "replay": "reports/JOINT-021/REPLAY.json",
+      "delivery": "reports/JOINT-021/DELIVERY.json",
+      "checkpoint_manifest": "checkpoints/JOINT-021/MANIFEST.json"
+    },
+    "CORE-022": {
+      "purpose": "Complete-core engineering before from-scratch behavioral teaching",
+      "report": "reports/CORE-022/REPORT.md",
+      "completed_report": true,
+      "costs": "reports/CORE-022/COSTS.json",
+      "stage": "complete-core engineering; full owner and curriculum not yet launched",
+      "engineering": "reports/CORE-022/ENGINEERING.json",
+      "training_started": false,
+      "whole_owner_integration_complete": false
     }
   },
   "preserved_usable_interfaces": {
@@ -154,6 +186,11 @@
   "publication": {
     "repository": "https://github.com/Arnav123-s/sera-field",
     "previous_verified_record": "reports/HISTORY-016/PUBLICATION.json",
+    "latest_verified_release": {
+      "latest_verified_release": "reports/PUBLICATION_20260920_NATIVE_JOINT.json",
+      "commit": "db663574faf2665e02847c1b5abcfc6280d41f27",
+      "repository": "https://github.com/Arnav123-s/sera-field"
+    },
     "current_snapshot_identity": "PUBLICATION_MANIFEST.json"
   }
 }

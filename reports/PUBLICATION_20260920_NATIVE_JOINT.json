@@ -1,0 +1,24 @@
+{
+  "repository": "https://github.com/Arnav123-s/sera-field",
+  "commit": "db663574faf2665e02847c1b5abcfc6280d41f27",
+  "source_local_revision": "510b801044b2f3b1c369e649895644d7e8bfc5f8",
+  "author": "Arnav123-s <215541657+Arnav123-s@users.noreply.github.com>",
+  "public_file_count": 770,
+  "public_content_bytes": 39094293,
+  "manifest_identity_mismatches": 0,
+  "missing_local_document_links": 0,
+  "workflow": {
+    "id": 35554542830,
+    "head_sha": "db663574faf2665e02847c1b5abcfc6280d41f27",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/Arnav123-s/sera-field/actions/runs/35554542830"
+  },
+  "local_repository_tests": 192,
+  "packaged_native_cli_checks": "reports/NATIVE-019/RELEASE_CHECK.json",
+  "packaged_joint_cli_checks": "reports/JOINT-020/RELEASE_CHECK.json",
+  "original_sera_head_preserved": "0dcbcb902706f3d299cd38a433fcf1f26a357efd",
+  "original_sera_worktree_clean": true,
+  "raw_sources_and_training_runs_published": false,
+  "research_complete": false
+}

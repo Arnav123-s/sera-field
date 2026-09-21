@@ -14,13 +14,14 @@ those versions separate.
 | [Behavioral acceptance](BEHAVIOR_ACCEPTANCE.md) | What counts as grounded understanding, useful imagination, correction and learning from reward |
 | [Curriculum](CURRICULUM.md) | Human language, other subjects, simulations and their supervision contracts |
 | [Latest source audit](SDHA_UNIFIED_SOURCE_AUDIT.md) | The supplied unified synthesis and its mathematical scope |
+| [Complete-core work order](COMPLETE_CORE_WORK_ORDER.md) | Build and verify all connections before fresh behavioral teaching and later incremental learning |
 
 ## Run a task
 
 | Task | Guide | Recorded owner |
 |---|---|---|
 | Remember text or measurements with the fresh memory core | [Native usage](NATIVE_USAGE.md) | NATIVE-019; use its completed assessment and manifest |
-| Keep two questions, investigate and update from independent credit | [Joint usage](JOINT_USAGE.md) | JOINT-020 research course; see its assessment and manifest |
+| Keep two questions, investigate and update from independent credit | [Joint usage](JOINT_USAGE.md) | JOINT-020 and counterbalanced JOINT-021; separately recorded assessments |
 | Interpret human premises and hypotheses | [Semantic usage](SEMANTIC_USAGE.md) | SEMANTIC-015 |
 | Acquire and reuse an observed response | [Acquired models](EXTENSION_USAGE.md) | GROW-013 |
 | Keep a goal, choose measurements and return an answer | [Persistent investigation](INQUIRY_USAGE.md) | INQUIRY-014 |
@@ -40,6 +41,7 @@ working interface. Local numerical commands use the exclusive supervisor.
 | Finite neural ensemble and action | [Neural-field action](FINITE_NEURAL_FIELD_ACTION.md) |
 | Added graph stalks and protected old sections | [Cell attachment](CELL_ATTACHMENT_CONTRACT.md) |
 | Unified dynamics and competing constructions | [Alternatives](UNIFIED_DYNAMICS_ALTERNATIVES.md) |
+| Shared energy and complete Fibonacci outcomes under construction | [CORE-022 equations](CORE_022_EQUATIONS.md) |
 | Earlier situation and acquired-model engineering | [Connected core](CONNECTED_CORE.md) · [Concept engineering](CONCEPT_ENGINEERING.md) |
 
 ## Reproduce or audit

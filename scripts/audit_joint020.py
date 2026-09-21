@@ -15,6 +15,9 @@ from sera_field.native_training import load_native, read, assess
 from sera_field.records import sha256, write_json
 
 REPORT = ROOT / 'reports/JOINT-020'
+PROTOCOL = ROOT / 'protocols/JOINT-020.md'
+EXTRA_PRIOR_GROUPS = []
+ENGINEERING_ATTEMPT = ROOT / 'runs/joint020-session-tests-001/state.json'
 
 
 def case_records(route, cohort):
@@ -49,7 +52,7 @@ def main():
         raise SystemExit('Use the numerical supervisor')
     torch.set_num_threads(1); data = JointData(); sources = read(STUDY / 'SOURCES.json')
     source_checks = {p: sha256(ROOT / p) == digest for p, digest in sources['implementation'].items()}
-    source_checks['protocol'] = sha256(ROOT / 'protocols/JOINT-020.md') == sources['protocol_sha256']
+    source_checks['protocol'] = sha256(PROTOCOL) == sources['protocol_sha256']
     from sera_field.native_data import GENRE, fixed
     native_registration = read(ROOT / 'reports/NATIVE-019/FINAL_REGISTRATION.json')
     for cohort in ('matched', 'mismatched'):
@@ -57,6 +60,8 @@ def main():
         old_ids = set(native_registration['cohorts'][cohort]['ids'])
         old_rows = fixed(path, 4096, 'GENRE-017-final-' + cohort)
         prior_groups = {r['source_group'] for r in old_rows}
+        for registration_path in EXTRA_PRIOR_GROUPS:
+            prior_groups.update(read(registration_path)['finals'][cohort]['groups'])
         with path.open(encoding='utf-8') as handle:
             for line in handle:
                 row = json.loads(line)
@@ -157,7 +162,7 @@ def main():
                    for c in ('matched', 'mismatched'))
     physical_ok = retention['credited']['physics']['mse'] <= 1.1*retention['initial']['physics']['mse']
     delivery = read(REPORT / 'DELIVERY.json')
-    tests = read(ROOT / 'runs/joint020-session-tests-001/state.json')
+    tests = read(ENGINEERING_ATTEMPT)
     gates = {'source_identity': all(source_checks.values()), 'complete_matched_teaching': all(exposure_checks.values()),
              'same_order_and_evidence': orders['credited'] == orders['withheld'],
              'selected_updated_state': chosen['step'] > 0,

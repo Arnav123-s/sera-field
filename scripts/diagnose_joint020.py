@@ -13,6 +13,8 @@ from sera_field.native_training import load_native
 from sera_field.native_data import physical_episode, identity
 from sera_field.records import write_json
 
+REPORT = ROOT / 'reports/JOINT-020'
+
 
 def main():
     if not os.environ.get('SERA_FIELD_SUPERVISED'):
@@ -39,13 +41,14 @@ def main():
             results[arm]['orders']['text_first' if first else 'measurements_first'] = metrics
     expected = {family+'|'+order for family in ('linear', 'quadratic')
                 for order in ('text_first', 'measurements_first')}
-    independent = expected == set(counts)
+    independent = expected == set(counts) and len(set(counts.values())) == 1
     record = {'training_contingency': dict(counts), 'all_family_order_cells_taught': independent,
               'development_crossed_orders': results,
-              'finding': 'The original deterministic schedule confounded order with the two physical families.',
+              'finding': ('The course includes both input orders in both physical families.' if independent else
+                          'The original deterministic schedule confounded order with the two physical families.'),
               'scope': 'Post-training design diagnosis on development worlds; no weights, selection or final results changed.',
-              'next_required_repair': 'Counterbalance physical family and chronology before a fresh matched teaching/evaluation protocol.'}
-    write_json(ROOT / 'reports/JOINT-020/ORDER_DIAGNOSIS.json', record)
+              'next_required_repair': None if independent else 'Counterbalance physical family and chronology before a fresh matched teaching/evaluation protocol.'}
+    write_json(REPORT / 'ORDER_DIAGNOSIS.json', record)
     print(json.dumps({'family_order_training_cells': dict(counts), 'all_cells_taught': independent}), flush=True)
 
 

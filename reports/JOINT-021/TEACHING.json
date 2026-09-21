@@ -1,0 +1,93 @@
+{
+  "arms": {
+    "credited": {
+      "cycles": 1024,
+      "optimizer_updates": 2048,
+      "presentations": {
+        "joint": 16384,
+        "semantic": 8192,
+        "physics": 2048,
+        "pairs": 2048,
+        "reading": 2048,
+        "math": 2048
+      },
+      "distinct_joint_human_rows": 16384,
+      "observed_probes": 14747,
+      "summed_signed_progress": 292.8773884157844,
+      "log_sha256": "cd254ac18e071020ce40cf7c9765a136b5c5e39b21fa36c234f6400281315af4",
+      "selection": {
+        "revision": "eab5d87a0025cfc605deedf255337f353f93625a57c18980163823a58b9ffcb5.pt",
+        "sha256": "eab5d87a0025cfc605deedf255337f353f93625a57c18980163823a58b9ffcb5",
+        "weights": "08c92646da0adbc552c6d36e984cc9aa3e76efbdeaefe6ace2766cfd06172416",
+        "step": 1024,
+        "score": 0.7587536455272079,
+        "metrics": {
+          "before_mse": 0.09710171289607672,
+          "after_mse": 0.07345687848908256,
+          "next_query_mse": 0.07714807961212955,
+          "credit": 0.022644834543370962,
+          "signed_progress": 0.02364483419574981,
+          "n": 128,
+          "accuracy": 0.5859375,
+          "measurement_rate": 1.0
+        }
+      }
+    },
+    "withheld": {
+      "cycles": 1024,
+      "optimizer_updates": 2048,
+      "presentations": {
+        "joint": 16384,
+        "semantic": 8192,
+        "physics": 2048,
+        "pairs": 2048,
+        "reading": 2048,
+        "math": 2048
+      },
+      "distinct_joint_human_rows": 16384,
+      "observed_probes": 14747,
+      "summed_signed_progress": 289.2656492627213,
+      "log_sha256": "a2eb3fbdd732fdccea7c40bc13f5fabd638bc7fe780ec6db9176974f7a286e94",
+      "selection": {
+        "revision": "17c13295b3fb9860aa4ea2b593790e208b89daddbd87bf12a18bb4cfed744732.pt",
+        "sha256": "17c13295b3fb9860aa4ea2b593790e208b89daddbd87bf12a18bb4cfed744732",
+        "weights": "3a568632c5d83707b643d3b85521e060d37ae5fa1da7053b66cd15f92e8d9acd",
+        "step": 896,
+        "score": 0.75158131621557,
+        "metrics": {
+          "before_mse": 0.09888515083009963,
+          "after_mse": 0.0810371004818986,
+          "next_query_mse": 0.0737980164676264,
+          "credit": 0.01685586149642404,
+          "signed_progress": 0.017848049129156607,
+          "n": 128,
+          "accuracy": 0.578125,
+          "measurement_rate": 0.9921875
+        }
+      }
+    }
+  },
+  "source_checks": {
+    "sera_field/native_owner.py": true,
+    "sera_field/native_data.py": true,
+    "sera_field/native_training.py": true,
+    "sera_field/clifford_sheaf.py": true,
+    "sera_field/continuum_core.py": true,
+    "sera_field/gauge.py": true,
+    "sera_field/study_data.py": true,
+    "sera_field/records.py": true,
+    "sera_field/model.py": true,
+    "sera_field/situation_core.py": true,
+    "sera_field/joint_cycle.py": true,
+    "sera_field/joint_data.py": true,
+    "sera_field/joint_training.py": true,
+    "scripts/complete_joint020.py": true,
+    "sera_field/balanced_joint_data.py": true,
+    "scripts/complete_balanced021.py": true,
+    "protocol": true,
+    "fresh_matched_groups": true,
+    "fresh_mismatched_groups": true,
+    "first_teaching_replay": true
+  },
+  "matched_evidence": true
+}

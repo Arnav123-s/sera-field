@@ -6,6 +6,13 @@ Its [manifest](../checkpoints/JOINT-020/MANIFEST.json) records the candidate's
 assessment and role; [results](../reports/JOINT-020/REPORT.md) give the matched
 reward comparison and retention. Earlier qualified interfaces stay available.
 
+The counterbalanced continuation is **JOINT-021**. It keeps the same interface
+and native architecture, with both physical families taught in both input
+orders. Its [protocol](../protocols/JOINT-021.md) identifies the preserved
+JOINT-020 evidence and the fresh assessment groups. To use its separately
+packaged owner, add `--owner checkpoints/JOINT-021` to `start`; use a new session
+directory. Subsequent commands restore that session's own owner.
+
 ## Start, ask and investigate
 
 The [example](../examples/joint-situation.json) puts a supplied human description

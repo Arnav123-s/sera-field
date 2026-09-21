@@ -1,0 +1,10 @@
+{
+  "fresh_process": true,
+  "checks": {
+    "matched": true,
+    "mismatched": true,
+    "shifted": true,
+    "retention": true
+  },
+  "exact": true
+}

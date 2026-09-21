@@ -34,11 +34,13 @@ available. [Teaching and results](reports/NATIVE-019/REPORT.md).
 Each result links through its guide to the exact curriculum, assumptions,
 comparisons, checkpoint and independent assessment.
 
-The latest [whole-cycle study](reports/JOINT-020/REPORT.md) connects retained
+The latest [whole-cycle study](reports/JOINT-021/REPORT.md) connects retained
 language, numerical investigation and actual reward-driven updates through the
 same weights. It completed 65,536 matched teaching presentations and 16 persistent
-investigations with exact restart. Its research status, comparison and next
-training refinement are recorded in [research state](reports/STATE.json).
+investigations with exact restart. Returned numerical error fell 54% versus its
+starting owner on 747 fresh cases. Comparisons and retention are in the report.
+The [next work order](docs/COMPLETE_CORE_WORK_ORDER.md) completes the core before
+from-scratch behavioral teaching and later incremental learning.
 
 ## Run locally
 

@@ -8,15 +8,19 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]; sys.path.insert(0, str(ROOT))
 from sera_field.records import write_json, sha256
 
+NAME = 'JOINT-020'
+
 
 def main():
     if not os.environ.get('SERA_FIELD_SUPERVISED'):
         raise SystemExit('Use the numerical supervisor')
-    local = ROOT / 'local/JOINT-020-release' / os.environ['SERA_FIELD_SUPERVISED']
+    local = ROOT / 'local' / (NAME+'-release') / os.environ['SERA_FIELD_SUPERVISED']
     session = local / 'task'
     local.mkdir(parents=True, exist_ok=False)
     def run(action, input_path=None):
         command = [sys.executable, '-X', 'utf8', '-m', 'sera_field.joint_cli', action, '--session', str(session)]
+        if action == 'start':
+            command += ['--owner', str(ROOT / 'checkpoints' / NAME)]
         if input_path is not None:
             command += ['--input', str(input_path)]
         result = subprocess.run(command, cwd=ROOT, text=True, encoding='utf-8', capture_output=True)
@@ -44,8 +48,8 @@ def main():
               'graded_fresh_process_restore': content(after) == graded['returned_answer'],
               'original_goal_retained': start['original_goal'] == after['original_goal'],
               'credit_bound_to_decision': graded['decision'] == proposed['id'],
-              'same_initial_packaged_tensors': start['weights'] == json.loads((ROOT / 'checkpoints/JOINT-020/SELECTION.json').read_text())['weights']}
-    write_json(ROOT / 'reports/JOINT-020/RELEASE_CHECK.json', {'checks': checks, 'all_checks': all(checks.values()),
+              'same_initial_packaged_tensors': start['weights'] == json.loads((ROOT / 'checkpoints' / NAME / 'SELECTION.json').read_text())['weights']}
+    write_json(ROOT / 'reports' / NAME / 'RELEASE_CHECK.json', {'checks': checks, 'all_checks': all(checks.values()),
         'input_sha256': sha256(ROOT / 'examples/joint-situation.json'), 'start': start,
         'transition': transition, 'credit': graded, 'restored': after,
         'scope': 'Illustrative CLI operation checks, separate from final scientific evidence.'})

@@ -1,0 +1,137 @@
+{
+  "training_contingency": {
+    "linear|measurements_first": 4096,
+    "quadratic|measurements_first": 4096,
+    "linear|text_first": 4096,
+    "quadratic|text_first": 4096
+  },
+  "all_family_order_cells_taught": true,
+  "development_crossed_orders": {
+    "credited": {
+      "checkpoint": {
+        "revision": "eab5d87a0025cfc605deedf255337f353f93625a57c18980163823a58b9ffcb5.pt",
+        "sha256": "eab5d87a0025cfc605deedf255337f353f93625a57c18980163823a58b9ffcb5",
+        "weights": "08c92646da0adbc552c6d36e984cc9aa3e76efbdeaefe6ace2766cfd06172416",
+        "step": 1024,
+        "score": 0.7587536455272079,
+        "metrics": {
+          "before_mse": 0.09710171289607672,
+          "after_mse": 0.07345687848908256,
+          "next_query_mse": 0.07714807961212955,
+          "credit": 0.022644834543370962,
+          "signed_progress": 0.02364483419574981,
+          "n": 128,
+          "accuracy": 0.5859375,
+          "measurement_rate": 1.0
+        }
+      },
+      "orders": {
+        "measurements_first": {
+          "before_mse": 0.1117494492409008,
+          "after_mse": 0.08337581067199551,
+          "next_query_mse": 0.09056681961412494,
+          "credit": 0.027373639848974562,
+          "signed_progress": 0.02837363961145911,
+          "n": 128,
+          "accuracy": 0.5625,
+          "measurement_rate": 1.0
+        },
+        "text_first": {
+          "before_mse": 0.08065781800348759,
+          "after_mse": 0.06542027444168852,
+          "next_query_mse": 0.07028049809355252,
+          "credit": 0.014237543330182234,
+          "signed_progress": 0.015237543106877638,
+          "n": 128,
+          "accuracy": 0.578125,
+          "measurement_rate": 1.0
+        }
+      }
+    },
+    "withheld": {
+      "checkpoint": {
+        "revision": "17c13295b3fb9860aa4ea2b593790e208b89daddbd87bf12a18bb4cfed744732.pt",
+        "sha256": "17c13295b3fb9860aa4ea2b593790e208b89daddbd87bf12a18bb4cfed744732",
+        "weights": "3a568632c5d83707b643d3b85521e060d37ae5fa1da7053b66cd15f92e8d9acd",
+        "step": 896,
+        "score": 0.75158131621557,
+        "metrics": {
+          "before_mse": 0.09888515083009963,
+          "after_mse": 0.0810371004818986,
+          "next_query_mse": 0.0737980164676264,
+          "credit": 0.01685586149642404,
+          "signed_progress": 0.017848049129156607,
+          "n": 128,
+          "accuracy": 0.578125,
+          "measurement_rate": 0.9921875
+        }
+      },
+      "orders": {
+        "measurements_first": {
+          "before_mse": 0.1131564334224322,
+          "after_mse": 0.09747865281666601,
+          "next_query_mse": 0.07928797475312122,
+          "credit": 0.014685592836030992,
+          "signed_progress": 0.01567778031164835,
+          "n": 128,
+          "accuracy": 0.578125,
+          "measurement_rate": 0.9921875
+        },
+        "text_first": {
+          "before_mse": 0.08154891807827158,
+          "after_mse": 0.07678394031279634,
+          "next_query_mse": 0.0757824456924503,
+          "credit": 0.003772791657866037,
+          "signed_progress": 0.004764979058734298,
+          "n": 128,
+          "accuracy": 0.546875,
+          "measurement_rate": 0.9921875
+        }
+      }
+    },
+    "initial": {
+      "checkpoint": {
+        "revision": "bdb3c2f9f3d2fe28cb020691bb1c37f1820c92bd8f7b989cfe1f7362d45e6c18.pt",
+        "sha256": "bdb3c2f9f3d2fe28cb020691bb1c37f1820c92bd8f7b989cfe1f7362d45e6c18",
+        "weights": "79ae50412f5458d74fcee217de4f6a4b27d69b0873e0c76685b23f7ffeea5fdb",
+        "step": 0,
+        "score": 0.6876027703127585,
+        "metrics": {
+          "before_mse": 0.22387472297657496,
+          "after_mse": 0.1633581179865935,
+          "next_query_mse": 0.189064701904881,
+          "credit": 0.05951660638265821,
+          "signed_progress": 0.06051660570142303,
+          "n": 128,
+          "accuracy": 0.515625,
+          "measurement_rate": 1.0
+        }
+      },
+      "orders": {
+        "measurements_first": {
+          "before_mse": 0.28547594580493296,
+          "after_mse": 0.20591186908584902,
+          "next_query_mse": 0.24556550157058155,
+          "credit": 0.078564073952748,
+          "signed_progress": 0.07956407359984041,
+          "n": 128,
+          "accuracy": 0.515625,
+          "measurement_rate": 1.0
+        },
+        "text_first": {
+          "before_mse": 0.14342163416380327,
+          "after_mse": 0.1115437839708413,
+          "next_query_mse": 0.1275837134197797,
+          "credit": 0.030877850319484423,
+          "signed_progress": 0.031877849919055734,
+          "n": 128,
+          "accuracy": 0.4921875,
+          "measurement_rate": 1.0
+        }
+      }
+    }
+  },
+  "finding": "The course includes both input orders in both physical families.",
+  "scope": "Post-training design diagnosis on development worlds; no weights, selection or final results changed.",
+  "next_required_repair": null
+}

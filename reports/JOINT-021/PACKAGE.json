@@ -1,0 +1,47 @@
+{
+  "exact_tensors": true,
+  "tensors_checked": 38,
+  "manifest": {
+    "inference": {
+      "revision": "fd89d4b5deee646dd20b5629674b2ceb8a13957c7db3bc523b345af641febe33.pt",
+      "sha256": "fd89d4b5deee646dd20b5629674b2ceb8a13957c7db3bc523b345af641febe33",
+      "weights": "08c92646da0adbc552c6d36e984cc9aa3e76efbdeaefe6ace2766cfd06172416",
+      "step": 1024,
+      "score": 0.7587536455272079,
+      "metrics": {
+        "before_mse": 0.09710171289607672,
+        "after_mse": 0.07345687848908256,
+        "next_query_mse": 0.07714807961212955,
+        "credit": 0.022644834543370962,
+        "signed_progress": 0.02364483419574981,
+        "n": 128,
+        "accuracy": 0.5859375,
+        "measurement_rate": 1.0
+      }
+    },
+    "source_training": {
+      "revision": "eab5d87a0025cfc605deedf255337f353f93625a57c18980163823a58b9ffcb5.pt",
+      "sha256": "eab5d87a0025cfc605deedf255337f353f93625a57c18980163823a58b9ffcb5",
+      "weights": "08c92646da0adbc552c6d36e984cc9aa3e76efbdeaefe6ace2766cfd06172416",
+      "step": 1024,
+      "score": 0.7587536455272079,
+      "metrics": {
+        "before_mse": 0.09710171289607672,
+        "after_mse": 0.07345687848908256,
+        "next_query_mse": 0.07714807961212955,
+        "credit": 0.022644834543370962,
+        "signed_progress": 0.02364483419574981,
+        "n": 128,
+        "accuracy": 0.5859375,
+        "measurement_rate": 1.0
+      }
+    },
+    "all_frozen_gates": false,
+    "all_qualification_checks": false,
+    "qualification": "reports/JOINT-021/QUALIFICATION.json",
+    "role": "preserved mixed investigation research candidate",
+    "earlier_defaults_replaced": false,
+    "parent_owner": "NATIVE-019",
+    "external_pretrained_weights": false
+  }
+}
