@@ -3,14 +3,28 @@
 I connected the fresh input maps, reciprocal energy, retained memory, conditional
 fusion and independent reward path through one owner. The build now also uses
 temporal echo, exact protected-state recovery and an actual finite stalk
-attachment with optimizer migration. **51 coupled-core checks and
-246 repository tests passed** at the recorded source identities.
+attachment with optimizer migration. **60 coupled-core checks and
+255 repository tests passed** at the recorded source identities.
 
 I am following the requested sequence: finish the complete mechanism and its
 engineering acceptance, then teach fresh weights on the behavioral course,
 assess the whole learner, and afterward continue learning incrementally.
 The [work order](../../docs/COMPLETE_CORE_WORK_ORDER.md) lists every required
 connection and curriculum obligation. Earlier owners and all evaluations remain.
+
+The [foundation course](../../protocols/CORE-022-FOUNDATION.md) now fixes 12,288
+updates and 90,112 presentations per matched arm, from entirely fresh weights.
+The [build acceptance review](../../docs/CORE_022_BUILD_ACCEPTANCE.md) maps the
+executable connections to their evidence and keeps wider behavior obligations
+open. The six actual [course derivative workloads](COURSE_WORKLOAD.json) passed
+with no optimizer update; a new interpreter [replayed the next update exactly](COURSE_REPLAY.json).
+
+The new [human source view](TEACHING_VIEWS.json) qualifies 3,822 complete math
+questions and three scalar code exercises, preserving ambiguous bindings and all
+exclusions. It checks every marked calculation and removes supplied intermediate
+answers from learner input. Earlier views and results remain unchanged. A fixed
+[source-group allocation](COURSE_ALLOCATION.json) reserves 10,723 groups for later
+final assessment; no final prediction was used to prepare it.
 
 ## What the build now executes
 
@@ -78,8 +92,8 @@ update, assessments, procedure credit, returned answer and random states exactly
 The fixture tests the execution contract; improvement of the learning procedure
 on future capabilities remains a prospective matched curriculum assessment.
 
-Supervised wall time is 489.835 seconds and
-peak process-tree memory is 704.8 MiB, using one numerical
+Supervised wall time is 660.195 seconds and
+peak process-tree memory is 725.3 MiB, using one numerical
 thread and the 2 GiB cap. [Identities](ENGINEERING.json) · [Costs](COSTS.json).
 
 ## New source and remaining acceptance

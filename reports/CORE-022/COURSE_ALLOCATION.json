@@ -1,0 +1,88 @@
+{
+  "schema": "sera-field.core022.course-allocation.1",
+  "split_key": "CORE-022-fresh-course-groups-20260921-v1|",
+  "files": {
+    "semantic": {
+      "path": "local/HUMAN-GENRE-data-v1/train.jsonl",
+      "sha256": "94dec53fb3968c9b1526c6a7ff61a60baae4d8ff736101e7ff332b71ba3b483c"
+    },
+    "pairs": {
+      "path": "local/CONNECTED-003-data-v1/train-pairs.jsonl",
+      "sha256": "e9ce35ec5ed8db6d0523b962a3e4280373edcdc0b35f277d4a74dbeb355c6fc6"
+    },
+    "reading": {
+      "path": "local/CONNECTED-003-data-v1/train-reading.jsonl",
+      "sha256": "08e30cbbae756651440c41aec1fc53bf694f4d493dca77a33d0d6e815ebd1b8e"
+    },
+    "programs": {
+      "path": "local/CORE-022-executable-human-v2/train.jsonl",
+      "sha256": "53e0dacf419d87d9bf5281db9db2d52646e8047fb386a283c902cbd58f2d660c"
+    }
+  },
+  "counts": {
+    "semantic": {
+      "development:semantic": 18543,
+      "train:semantic": 335100,
+      "final:semantic": 18286
+    },
+    "pairs": {
+      "train:programming": 270,
+      "development:programming": 18,
+      "final:programming": 7,
+      "train:grammar": 765,
+      "final:grammar": 73,
+      "development:grammar": 59,
+      "train:plato": 653,
+      "final:plato": 52,
+      "development:plato": 20,
+      "train:calculus": 252,
+      "final:calculus": 30,
+      "train:descartes": 55,
+      "train:dailydialog": 68803,
+      "development:dailydialog": 3555,
+      "final:dailydialog": 3695,
+      "train:webster": 80813,
+      "development:webster": 4487,
+      "final:webster": 4550
+    },
+    "reading": {
+      "train:reading": 60755,
+      "final:reading": 3700,
+      "development:reading": 1769
+    },
+    "programs": {
+      "train:programs": 3436,
+      "development:programs": 202,
+      "final:programs": 187
+    }
+  },
+  "indices_sha256": "d63ed499129664c79c12a8856031515f0466583a9d9af4fd32cc375cb6f3bb88",
+  "groups": {
+    "development": {
+      "count": 10716,
+      "sha256": "29e13ed7b322a0c4321256ccff0969d840231a11298e912b7cb9f81dbd2ba866"
+    },
+    "train": {
+      "count": 194217,
+      "sha256": "1062cb59f225250388d07d6ccc7eef47b0d10121f976d0bf5a70538e3166167d"
+    },
+    "final": {
+      "count": 10723,
+      "sha256": "7c7952d265ad8aef627b2f24abd4fd823f68d93bc174c487a23cf1ad079064bf"
+    }
+  },
+  "prior_sealed_partitions_opened": false,
+  "model_predictions_computed": false,
+  "source_transform_precedes_this_allocation": true,
+  "all_weights_will_start_fresh": true,
+  "allocation_rule": "Original training groups hashed: bucket 0 final, 1 development, 2..19 teaching; one rule across views.",
+  "source_manifests": {
+    "local\\HUMAN-GENRE-data-v1\\MANIFEST.json": "40e3b405de1a964045ad9af9c2d36b75dc8924bfb54b097334881d989057e9e3",
+    "local\\CONNECTED-003-data-v1\\MANIFEST.json": "7d7549e003282013dd3bacb277c6734da9de7915a1676405449cf7edd4ea892a",
+    "local\\CORE-022-executable-human-v2\\MANIFEST.json": "edeafac57bd112dfad6c326ee4d30e65780ee6a548396afe38dd08741f2aae7a"
+  },
+  "code": {
+    "sera_field/core_course_data.py": "4d73a5170318148a83dd438b961bf59e7db69d3f9784aef54899d1cbe1d7da7a",
+    "sera_field/core_teaching.py": "058ee63ee8c0d6fb3a6562ad7cbdf8035959298c4799ac85bf0b5467d37a9b88"
+  }
+}

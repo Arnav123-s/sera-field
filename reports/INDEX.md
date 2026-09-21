@@ -8,7 +8,13 @@ its from-scratch curriculum; no new complete-core training is claimed here.
 The executable [portfolio](CORE-022/PORTFOLIO.json),
 [program replay](CORE-022/PROGRAM_REPLAY.json),
 [learning-procedure replay](CORE-022/LEARNING_REPLAY.json) and
-[human source-view audit](CORE-022/INTAKE.json) give the latest concrete checks.
+[human source-view audit](CORE-022/INTAKE.json) preserve the preceding checks.
+The latest [build acceptance](CORE-022/BUILD_ACCEPTANCE.json),
+[whole-question teaching views](CORE-022/TEACHING_VIEWS.json),
+[fresh course allocation](CORE-022/COURSE_ALLOCATION.json),
+[full derivative workload](CORE-022/COURSE_WORKLOAD.json) and
+[independent course replay](CORE-022/COURSE_REPLAY.json) qualify the registered
+[foundation course](../protocols/CORE-022-FOUNDATION.md) to begin from fresh weights.
 
 **Completed counterbalanced whole-cycle course:** [JOINT-021 report](JOINT-021/REPORT.md),
 [qualification](JOINT-021/QUALIFICATION.json), [paired comparisons](JOINT-021/INDEPENDENT_METRICS.json),

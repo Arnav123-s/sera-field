@@ -1,0 +1,8 @@
+{
+  "independent_process_replay_exact": true,
+  "expected_identity": "18ad35d416e961380a41a97d04bbcdc663d19e74d7d68936b88ed0fc2107ecb0",
+  "actual_identity": "18ad35d416e961380a41a97d04bbcdc663d19e74d7d68936b88ed0fc2107ecb0",
+  "weights_after": "b77c3576e2cd6511cfde77a409355de028720faa19e4ef90bc728e0a476989f8",
+  "optimizer_and_both_rngs_exact": true,
+  "scope": "two explicit engineering updates; no source curriculum or final evaluation used"
+}

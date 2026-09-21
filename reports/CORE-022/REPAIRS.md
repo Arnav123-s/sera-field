@@ -21,3 +21,17 @@ actual polynomial; finite evidence keys its actual inputs and expected outputs.
 Goal and assumptions still bind qualification, but their spelling earns no points.
 Full reviews are stored once with a compact index. An added adversarial replay
 and 960 independent exact-execution comparisons passed in the 241-test regression.
+
+The teaching audit found that the preserved earlier arithmetic view could label
+unchecked preceding annotations as verified. New complete-question views check
+every marked calculation before accepting a graph target, with solution data
+kept outside the learner's input. The earlier files and studies remain unchanged.
+Before teaching, source review also caught discarded partial evaluations in the
+new code compiler: unused assignments and zero powers could hide division by
+zero. Version 2 retains those evaluations; adversarial tests passed. The original
+compiler bytes and v1 intake remain preserved, and the qualified corpus bytes
+were unchanged by this repair. Both preparations and all costs are retained.
+
+The mixed teaching helper read its numeric dtype from the earlier owner's memory
+module. It now reads the existing input embedding dtype, which is shared by both
+owner types. The complete regression and new mixed-core derivative test passed.

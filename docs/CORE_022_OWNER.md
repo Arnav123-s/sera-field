@@ -124,7 +124,12 @@ parent, and retries the original goal. Its mid-trial restart also replayed in a
 fresh process. Selecting supplied schedules is assessed separately from inventing
 an optimizer or demonstrating faster acquisition on the next capability.
 
-Next complete the source/representation audit and final curriculum/resource acceptance.
-Then freeze the source-disjoint curriculum and whole-system
-evaluation, including the [new five-use correction test](EMPIRICAL_SYNTHESIS_20260921.md).
-Train fresh weights, assess once, and only then continue that learner incrementally.
+The [human teaching views](CORE_022_TEACHING_VIEWS.md) now connect complete
+checked arithmetic instances and scalar human programs to this same owner.
+The [build acceptance](CORE_022_BUILD_ACCEPTANCE.md) includes all six actual
+course derivative paths, exact continuation and a read-only five-use interface
+whose assessment requires performed intervention receipts. The fixed
+[foundation course](../protocols/CORE-022-FOUNDATION.md) starts from fresh weights.
+The complete behavioral evaluation, including the
+[five-use correction test](EMPIRICAL_SYNTHESIS_20260921.md), and subsequent
+incremental continuation remain required work.

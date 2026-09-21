@@ -36,7 +36,7 @@ def mixed_state(owner, rows):
             raise ValueError('A batch must have one explicit support horizon')
         texts = {'kind': 'text', 'texts': [r['human']['premise'] for r in chosen]}
         observed = torch.tensor([r['physics']['support'][:r['supports']] for r in chosen],
-                                dtype=owner.memory.raw_fast.dtype)
+                                dtype=owner.words.weight.dtype)
         measurements = [{'kind': 'measurement', 'actual': value} for value in observed.unbind(1)]
         events = [texts, *measurements] if first else [*measurements, texts]
         states.append((indices, replay(owner, events, len(indices))))

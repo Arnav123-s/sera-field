@@ -8,8 +8,8 @@ owners remain immutable references.
 **Current work order:** finish the full specified mechanism and engineering
 checks before a fresh whole-system curriculum, then assess the trained owner
 and continue learning incrementally. [CORE-022](COMPLETE_CORE_WORK_ORDER.md)
-records that order. Its coupled owner has 51 passing integration/operator checks
-inside a 246-test repository regression, plus a 96-event stability check and
+records that order. Its coupled owner has 60 passing integration/operator checks
+inside a 255-test repository regression, plus a 96-event stability check and
 exact next-update replay in a new process. The complete behavior routes and
 curriculum remain in development. The [owner integration](CORE_022_OWNER.md),
 [equations](CORE_022_EQUATIONS.md) and [build evidence](../reports/CORE-022/REPORT.md)
@@ -65,7 +65,7 @@ conditional fusion outcomes, protected retained-state recovery, literal finite
 stalk attachment and executable graph proposals with independently qualified
 distinct-method credit. The reward and optimizer affect these same weights. Engineering
 fixtures qualify their execution and persistence; the whole behavioral teaching
-course follows the remaining acceptance work. No older checkpoint is substituted
+course is registered after the human-source and full derivative workload checks. No older checkpoint is substituted
 for this fresh candidate.
 
 The preceding cited private source is `intake/thdft-cited-20260920/proposal.txt`, SHA-256

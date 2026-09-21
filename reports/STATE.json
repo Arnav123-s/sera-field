@@ -128,12 +128,15 @@
       "report": "reports/CORE-022/REPORT.md",
       "completed_report": true,
       "costs": "reports/CORE-022/COSTS.json",
-      "stage": "coupled owner integrated; remaining complete-core behavior engineering precedes curriculum",
+      "stage": "complete finite construction and course workload checked; registered fresh foundation ready to launch",
       "engineering": "reports/CORE-022/ENGINEERING.json",
       "training_started": false,
       "whole_owner_integration_complete": false,
-      "coupled_core_tests": 51,
-      "repository_tests": 246
+      "coupled_core_tests": 60,
+      "repository_tests": 255,
+      "foundation_launch_qualified": true,
+      "build_acceptance": "reports/CORE-022/BUILD_ACCEPTANCE.json",
+      "foundation_protocol": "protocols/CORE-022-FOUNDATION.md"
     }
   },
   "preserved_usable_interfaces": {
@@ -189,8 +192,8 @@
     "repository": "https://github.com/Arnav123-s/sera-field",
     "previous_verified_record": "reports/HISTORY-016/PUBLICATION.json",
     "latest_verified_release": {
-      "latest_verified_release": "reports/PUBLICATION_20260921_CORE_INDEX.json",
-      "commit": "6e6ccf165f6447396e9fd505a0e0b1cecad2c066",
+      "latest_verified_release": "reports/PUBLICATION_20260921_EXECUTABLE_LEARNING.json",
+      "commit": "7e9c849b68c6e85efd5e06ef721459423ff84e8a",
       "repository": "https://github.com/Arnav123-s/sera-field"
     },
     "current_snapshot_identity": "PUBLICATION_MANIFEST.json"

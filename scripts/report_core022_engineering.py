@@ -29,11 +29,13 @@ def main():
         if not destination.exists(): destination.write_bytes(old.read_bytes())
     relevant = [c for c in suite.findall('testcase') if any(c.attrib['classname'].startswith(s) for s in
                 ('tests.test_core_', 'tests.test_fibonacci_space', 'tests.test_unified_energy'))]
-    record = {'stage': 'coupled owner integrated; remaining complete-core behavior engineering precedes curriculum',
+    record = {'stage': 'coupled construction and human teaching paths checked; fresh foundation course prepared',
         'work_order': 'docs/COMPLETE_CORE_WORK_ORDER.md', 'equations': 'docs/CORE_022_EQUATIONS.md',
         'owner_integration': 'docs/CORE_022_OWNER.md', 'source_reconciliation': 'docs/EMPIRICAL_SYNTHESIS_20260921.md',
         'executable_integration': 'docs/CORE_022_EXECUTABLE_WORK.md',
         'learning_procedure_integration': 'docs/CORE_022_LEARNING_WORK.md',
+        'teaching_views': 'docs/CORE_022_TEACHING_VIEWS.md',
+        'build_acceptance_review': 'docs/CORE_022_BUILD_ACCEPTANCE.md',
         'repository_tests': int(suite.attrib['tests']), 'coupled_core_tests': len(relevant),
         'failures': int(suite.attrib['failures']), 'errors': int(suite.attrib['errors']),
         'all_checks': last['status'] == 'PASS',
@@ -41,7 +43,7 @@ def main():
         'sources': {p: sha256(ROOT / p) for p in sources},
         'trained_presentations': 0, 'whole_owner_integration_complete': False,
         'research_complete': False,
-        'next_work': 'Complete the course source/representation audit and final build acceptance, freeze the behavior-directed curriculum and untouched evaluations, then train fresh weights and assess the whole owner before incremental continuation.',
+        'next_work': 'Bind final current build acceptance, publish the frozen course and train its fresh coupled owner; then carry the remaining integrated behavioral assessments and incremental continuation through evaluation.',
         'failed_attempts_preserved': [s['attempt'] for s in states if s['status'] != 'PASS'],
         'engineering_fixture_updates_are_not_curriculum': True}
     outcomes = []
@@ -87,6 +89,20 @@ engineering acceptance, then teach fresh weights on the behavioral course,
 assess the whole learner, and afterward continue learning incrementally.
 The [work order](../../docs/COMPLETE_CORE_WORK_ORDER.md) lists every required
 connection and curriculum obligation. Earlier owners and all evaluations remain.
+
+The [foundation course](../../protocols/CORE-022-FOUNDATION.md) now fixes 12,288
+updates and 90,112 presentations per matched arm, from entirely fresh weights.
+The [build acceptance review](../../docs/CORE_022_BUILD_ACCEPTANCE.md) maps the
+executable connections to their evidence and keeps wider behavior obligations
+open. The six actual [course derivative workloads](COURSE_WORKLOAD.json) passed
+with no optimizer update; a new interpreter [replayed the next update exactly](COURSE_REPLAY.json).
+
+The new [human source view](TEACHING_VIEWS.json) qualifies 3,822 complete math
+questions and three scalar code exercises, preserving ambiguous bindings and all
+exclusions. It checks every marked calculation and removes supplied intermediate
+answers from learner input. Earlier views and results remain unchanged. A fixed
+[source-group allocation](COURSE_ALLOCATION.json) reserves 10,723 groups for later
+final assessment; no final prediction was used to prepare it.
 
 ## What the build now executes
 

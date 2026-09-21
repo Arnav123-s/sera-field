@@ -1,0 +1,108 @@
+{
+  "schema": "sera-field.core022.executable-human-views.2",
+  "source_files": {
+    "train": "b4f1901a7399aa3a51ea2907ee98308892e4a22d7a3aa09a811da1eb107001ed",
+    "development": "db9f86b4165d9adddc24e2878e04c1455983891c8aaae8b7a230764a8b4530a4",
+    "sealed": "bc2d3190295e6c2dc04e0308fdf56d5647d2858728e51d04aaee2e853dd385d2"
+  },
+  "view_directory": "CORE-022-executable-human-v2",
+  "preserved_previous": "CORE-022-executable-human-v1; preserves earlier compiler and view bytes",
+  "source_identities": [
+    "17f347dc51477c50d4efb83959dbb7c56297aba886e5544ee2aaed3024813465",
+    "ccf64ceae9c5403bf50a044cb6d505bfd2a2963ee58338ba268fd65beab92a9f"
+  ],
+  "files": {
+    "train.jsonl": {
+      "sha256": "53e0dacf419d87d9bf5281db9db2d52646e8047fb386a283c902cbd58f2d660c",
+      "bytes": 7514782
+    },
+    "train-outcomes.jsonl": {
+      "sha256": "98093fd3bb563a2a05e39f7d34f5b44e2cecfef218f1175d78b5fef4e32963b0",
+      "bytes": 2594575
+    },
+    "train-rejected.jsonl": {
+      "sha256": "57c1081577bfc32faf8ca2dc602fb5275b04d7085b57ec890c720b6e665f0706",
+      "bytes": 137862
+    },
+    "development.jsonl": {
+      "sha256": "2b96932b79232aec21feff11e34e37de19885f2a8974f5ab0a2265db0b1cebee",
+      "bytes": 900512
+    },
+    "development-outcomes.jsonl": {
+      "sha256": "22a82bc62f1df91844ff97e5c6c27106edaa6322d6dc55de7e340f0397081b66",
+      "bytes": 336191
+    },
+    "development-rejected.jsonl": {
+      "sha256": "d5050e23eda6ce6ddec7ea36236baaba1ca0eb2073dde445b305d497983a4727",
+      "bytes": 19814
+    }
+  },
+  "counts": {
+    "train": {
+      "inspected:mathematics": 5918,
+      "source_parse_warnings": 0,
+      "checked:whole_human_mathematics": 5620,
+      "executable:whole_human_mathematics": 3822,
+      "graph_targets": 6572,
+      "ambiguous_numeric_bindings": 1127,
+      "checked_calculations": 11183,
+      "human_code_assertions": 9,
+      "outcome_only:instruction_capacity": 740,
+      "outcome_only:input_capacity": 856,
+      "rejected:mathematics:last_calculation_not_final_answer": 298,
+      "outcome_only:binding_alternatives_overflow": 146,
+      "outcome_only:constant_scope": 56,
+      "inspected:programming": 295,
+      "rejected:programming:code_module_scope": 82,
+      "rejected:programming:code_statement_scope": 89,
+      "rejected:programming:code_expression_scope": 59,
+      "rejected:programming:code_call_scope": 58,
+      "checked:human_scalar_programming": 3,
+      "executable:human_scalar_programming": 3,
+      "rejected:programming:code_signature_scope": 1,
+      "rejected:programming:code_setup_scope": 1,
+      "rejected:programming:nonliteral": 1,
+      "rejected:programming:arithmetic_syntax": 1
+    },
+    "development": {
+      "inspected:mathematics": 720,
+      "source_parse_warnings": 0,
+      "checked:whole_human_mathematics": 680,
+      "executable:whole_human_mathematics": 452,
+      "graph_targets": 842,
+      "ambiguous_numeric_bindings": 131,
+      "checked_calculations": 1290,
+      "human_code_assertions": 3,
+      "outcome_only:input_capacity": 119,
+      "rejected:mathematics:last_calculation_not_final_answer": 40,
+      "outcome_only:instruction_capacity": 83,
+      "outcome_only:binding_alternatives_overflow": 17,
+      "outcome_only:constant_scope": 9,
+      "inspected:programming": 46,
+      "rejected:programming:code_expression_scope": 8,
+      "rejected:programming:code_call_scope": 7,
+      "rejected:programming:nonliteral": 1,
+      "rejected:programming:code_statement_scope": 15,
+      "rejected:programming:code_module_scope": 13,
+      "checked:human_scalar_programming": 1,
+      "executable:human_scalar_programming": 1,
+      "rejected:programming:instruction_capacity": 1
+    }
+  },
+  "group_counts": {
+    "train": 6212,
+    "development": 766
+  },
+  "train_development_group_overlap": 0,
+  "source_code": {
+    "sera_field/core_teaching.py": "058ee63ee8c0d6fb3a6562ad7cbdf8035959298c4799ac85bf0b5467d37a9b88",
+    "sera_field/core_programs.py": "9cf663ddfd97345fa41a5caefff6e8daa224e42e96f84e73254cee7c00029f81",
+    "sera_field/core_program_verifier.py": "9179bee5657514b51b144017f34497723bd3806b6d753d72da50072b273e64c6",
+    "scripts/prepare_core022_teaching.py": "95f96c76e69c53657ad5916f7281e745344fed03f61dc061fea011b1f7df8e32"
+  },
+  "sealed_contents_opened": false,
+  "raw_downloaded_code_executed": false,
+  "curriculum_started": false,
+  "existing_source_views_modified": false,
+  "scope": "Whole numeric instances and scalar human assertions; checked teacher targets are not semantic law proofs."
+}

@@ -45,7 +45,9 @@ The [current build](docs/CORE_022_OWNER.md) connects a common energy, temporal
 credit, conditional alternatives, protected retained state and representation
 growth through one fresh owner. Its [executable proposal path](docs/CORE_022_EXECUTABLE_WORK.md)
 constructs scalar programs and binds checked methods to actual learning credit.
-[Engineering results](reports/CORE-022/REPORT.md).
+The [fresh training course](protocols/CORE-022-FOUNDATION.md) combines human
+language, complete math problems, programming material and physical investigation
+through that owner. [Engineering and teaching records](reports/CORE-022/REPORT.md).
 
 ## Run locally
 

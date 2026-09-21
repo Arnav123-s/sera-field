@@ -1,0 +1,35 @@
+{
+  "repository": "https://github.com/Arnav123-s/sera-field",
+  "commit": "7e9c849b68c6e85efd5e06ef721459423ff84e8a",
+  "source_local_revision": "72a9b6d194b400070b8f3bb28b29ea718a53ae3f",
+  "public_file_count": 872,
+  "public_content_bytes": 43371606,
+  "manifest_identity_mismatches": 0,
+  "missing_local_document_links": 0,
+  "local_repository_tests": 246,
+  "coupled_core_tests": 51,
+  "workflow": {
+    "id": 35563391022,
+    "head_sha": "7e9c849b68c6e85efd5e06ef721459423ff84e8a",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/Arnav123-s/sera-field/actions/runs/35563391022",
+    "jobs": [
+      {
+        "id": 106220391430,
+        "name": "verify",
+        "status": "completed",
+        "conclusion": "success",
+        "wall_seconds": 117.0,
+        "container_cpu_limit": 1,
+        "container_memory_limit_gib": 2,
+        "scope": "Public CI including setup; no model training"
+      }
+    ]
+  },
+  "original_sera_head_preserved": "0dcbcb902706f3d299cd38a433fcf1f26a357efd",
+  "original_sera_worktree_clean": true,
+  "core_curriculum_started": false,
+  "research_complete": false,
+  "prior_release_receipt": "reports/PUBLICATION_20260921_CORE_INDEX.json"
+}

@@ -19,6 +19,8 @@ those versions separate.
 | [Coupled owner integration](CORE_022_OWNER.md) | Shared energy, learning credit, conditional outcomes, protected state and actual stalk attachment |
 | [Executable alternatives](CORE_022_EXECUTABLE_WORK.md) | Parallel graph proposals, independent algebra/execution and persistent distinct-method credit through the same owner |
 | [Learning-procedure assessment](CORE_022_LEARNING_WORK.md) | Shared choice, actual practice, independent acquisition/retention checks, delayed credit and exact continuation |
+| [Build and teaching acceptance](CORE_022_BUILD_ACCEPTANCE.md) | Reviewed common-owner connections, source repair, resource checks and foundation launch conditions |
+| [Complete human teaching views](CORE_022_TEACHING_VIEWS.md) | Whole arithmetic questions and checked scalar code targets with label-separated inputs |
 
 ## Run a task
 
