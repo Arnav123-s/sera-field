@@ -651,9 +651,357 @@
       "returncode": 0,
       "lease_released": true,
       "finished_utc": "2026-09-21T04:06:54Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-21T04:36:24Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "core022-executable-001",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "tests/test_core_programs.py",
+        "tests/test_core_portfolio.py",
+        "--junitxml=reports/CORE-022/verification/core022-executable-001.xml"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 11860,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 375992320,
+        "cpu_seconds": 10.78125,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 11.30444500001613,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-21T04:36:35Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-21T04:40:42Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "core022-program-probe-001",
+      "command": [
+        "--",
+        "scripts/probe_core022_programs.py",
+        "prepare"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 25352,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 404013056,
+        "cpu_seconds": 4.59375,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 4.837991100008367,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-21T04:40:47Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-21T04:40:57Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "core022-program-replay-001",
+      "command": [
+        "--",
+        "scripts/probe_core022_programs.py",
+        "verify"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 21044,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 412680192,
+        "cpu_seconds": 4.234375,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 4.577419000008376,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-21T04:41:01Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-21T04:42:16Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "core022-regression-002",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "--junitxml=reports/CORE-022/verification/core022-regression-002.xml"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 23484,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 737955840,
+        "cpu_seconds": 73.828125,
+        "active_processes": 0,
+        "total_processes": 18
+      },
+      "wall_seconds": 76.6181765999936,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-21T04:43:33Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-21T04:54:46Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "core022-learning-001",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "tests/test_core_learning.py",
+        "--junitxml=reports/CORE-022/verification/core022-learning-001.xml"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 20884,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 385912832,
+        "cpu_seconds": 20.1875,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 21.01820179997594,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-21T04:55:07Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-21T04:56:33Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "core022-learning-probe-001",
+      "command": [
+        "--",
+        "scripts/probe_core022_learning.py",
+        "prepare"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 26044,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 374149120,
+        "cpu_seconds": 7.25,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 9.168499899999006,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-21T04:56:44Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-21T04:57:16Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "core022-learning-replay-001",
+      "command": [
+        "--",
+        "scripts/probe_core022_learning.py",
+        "verify"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 23680,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 381591552,
+        "cpu_seconds": 5.921875,
+        "active_processes": 0,
+        "total_processes": 3
+      },
+      "wall_seconds": 6.30912220000755,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-21T04:57:23Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-21T04:58:23Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "core022-regression-003",
+      "command": [
+        "--",
+        "-m",
+        "pytest",
+        "--junitxml=reports/CORE-022/verification/core022-regression-003.xml"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 1912,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 739012608,
+        "cpu_seconds": 91.078125,
+        "active_processes": 0,
+        "total_processes": 18
+      },
+      "wall_seconds": 96.43429410000681,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-21T05:00:00Z"
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-09-21T05:01:58Z",
+      "numerical_threads": 1,
+      "memory_limit_bytes": 2147483648,
+      "attempt": "core022-intake-001",
+      "command": [
+        "--",
+        "scripts/audit_core022_intake.py"
+      ],
+      "lease_acquired": true,
+      "paid_compute": false,
+      "verified_limits_before_launch": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 0,
+        "cpu_seconds": 0.0,
+        "active_processes": 0,
+        "total_processes": 0
+      },
+      "awake_requested": true,
+      "worker_pid": 20952,
+      "resources": {
+        "limit_bytes": 2147483648,
+        "flags": 8720,
+        "affinity": 1,
+        "peak_committed_bytes": 13549568,
+        "cpu_seconds": 2.234375,
+        "active_processes": 0,
+        "total_processes": 2
+      },
+      "wall_seconds": 2.6201610999996774,
+      "returncode": 0,
+      "lease_released": true,
+      "finished_utc": "2026-09-21T05:02:01Z"
     }
   ],
-  "wall_seconds": 256.9464687000582,
-  "cpu_seconds": 248.65625,
-  "peak_bytes": 738938880
+  "wall_seconds": 489.83477950007364,
+  "cpu_seconds": 468.765625,
+  "peak_bytes": 739012608
 }

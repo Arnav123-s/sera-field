@@ -16,6 +16,7 @@ from .native_owner import NativeOwner, NativeConfig, select_state
 from .situation_core import loop_feature
 from .stationary_field import stationary
 from .unified_energy import UnifiedEnergy
+from .core_proposals import GraphProposal
 
 
 class ConditionalFusion(nn.Module):
@@ -70,7 +71,7 @@ class ConditionalFusion(nn.Module):
 
 
 class CoreOwner(NativeOwner):
-    def __init__(self, config=None):
+    def __init__(self, config=None, *, program_slots=4):
         super().__init__(config or NativeConfig())
         if self.config.branches != 3:
             raise ValueError('The pinned four-tau, total-tau construction has three path branches')
@@ -84,9 +85,15 @@ class CoreOwner(NativeOwner):
         self.raw_stationary = nn.Parameter(torch.tensor(0.))
         self.raw_curvature_tag = nn.Parameter(torch.tensor(0.))
         self.adequacy_policy = nn.Sequential(nn.Linear(72, 24), nn.Tanh(), nn.Linear(24, 3))
+        # Zero slots is only for exact reconstruction of the preserved earlier
+        # engineering specification. New candidates own fresh proposal weights.
+        self.program_slots = program_slots
+        if program_slots:
+            self.program_map = GraphProposal(program_slots)
 
     def specification(self):
         return {'type': 'complete-core-candidate-022', **vars(self.config),
+                **({'program_slots': self.program_slots} if self.program_slots else {}),
                 'extension_size': self.core.extension_size,
                 'status': 'engineering; complete acceptance precedes curriculum'}
 
@@ -201,3 +208,9 @@ class CoreOwner(NativeOwner):
         elif ablation not in (None, 'no_imagination'):
             raise ValueError('Declare a coupled-core inference intervention explicitly')
         return self.conditional(state, source, propagate=ablation != 'no_imagination')[0]
+
+    def program_distribution(self, state, questions, arities):
+        if not self.program_slots:
+            raise ValueError('This preserved owner predates executable graph proposals')
+        features, branches = self.conditional(state, self.encode_texts(questions))
+        return self.program_map(features, branches['path_probabilities'], arities)

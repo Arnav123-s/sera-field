@@ -43,7 +43,9 @@ The [next work order](docs/COMPLETE_CORE_WORK_ORDER.md) completes the core befor
 from-scratch behavioral teaching and later incremental learning.
 The [current build](docs/CORE_022_OWNER.md) connects a common energy, temporal
 credit, conditional alternatives, protected retained state and representation
-growth through one fresh owner. [Engineering results](reports/CORE-022/REPORT.md).
+growth through one fresh owner. Its [executable proposal path](docs/CORE_022_EXECUTABLE_WORK.md)
+constructs scalar programs and binds checked methods to actual learning credit.
+[Engineering results](reports/CORE-022/REPORT.md).
 
 ## Run locally
 

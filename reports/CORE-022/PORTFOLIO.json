@@ -1,0 +1,18 @@
+{
+  "scope": "engineered decision fixture, not trained discovery",
+  "proposal_count": 64,
+  "distinct_verified_methods": 2,
+  "qualified_proposals": 36,
+  "failed_proposals": 28,
+  "positive_credit_count": 2,
+  "negative_credit_count": 2,
+  "method_expressions": [
+    "(((x0 + x1) * x0) + ((x0 + x1) * x1))",
+    "((x0 + x1) * (x0 + x1))"
+  ],
+  "actual_weight_update": true,
+  "same_owner_optimizer": true,
+  "protected_pending_state_saved": true,
+  "curriculum_presentations": 0,
+  "expected_identity": "1326784ca41d9f2d7606b059483b87f63a9aaeff37960effd1af9e614775b3f0"
+}

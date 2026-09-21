@@ -3,8 +3,8 @@
 I connected the fresh input maps, reciprocal energy, retained memory, conditional
 fusion and independent reward path through one owner. The build now also uses
 temporal echo, exact protected-state recovery and an actual finite stalk
-attachment with optimizer migration. **31 coupled-core checks and
-226 repository tests passed** at the recorded source identities.
+attachment with optimizer migration. **51 coupled-core checks and
+246 repository tests passed** at the recorded source identities.
 
 I am following the requested sequence: finish the complete mechanism and its
 engineering acceptance, then teach fresh weights on the behavioral course,
@@ -29,6 +29,14 @@ connection and curriculum obligation. Earlier owners and all evaluations remain.
 - Independent residuals and model spread feed a trainable adequacy decision.
   The attached stalk adds real coordinates, an input port, common-energy terms
   and a decoder; its existing optimizer moments and original goal survive.
+- The same conditional field proposes executable scalar graphs. Independent
+  coefficient proofs or finite input checks qualify their separate scopes.
+  Distinct methods persist, aliases receive no repeat credit, and checked
+  contribution reward updates the same optimizer and retained state.
+- The existing choice map selects a registered practice schedule. Actual
+  practice changes the same weights; independent acquisition and retention
+  checks bind delayed procedure credit to the pre-practice decision. Mid-trial
+  checkpoints preserve the completed-update cursor and return the original goal.
 
 The [owner note](../../docs/CORE_022_OWNER.md) and
 [equations](../../docs/CORE_022_EQUATIONS.md) give precise scope. A forced fixture
@@ -51,8 +59,27 @@ queries per case, including the full learning derivative. It takes no optimizer
 step. A new interpreter [reproduced the pending decision, independent credit,
 next weight update and RNG exactly](REPLAY.json). These are engineering fixtures.
 
-Supervised wall time is 256.946 seconds and
-peak process-tree memory is 704.7 MiB, using one numerical
+The [executable portfolio fixture](PORTFOLIO.json) committed 64 proposals before
+assessment. It retained two different exact methods for the squared sum,
+qualified 36 proposals and preserved 28 failures. Only two distinct successes
+and two distinct failures received nonzero credit. Output biases deliberately
+constructed the fixture; these counts are not trained discovery scores. Its
+[separate-process replay](PROGRAM_REPLAY.json) reproduced the full next assessment,
+weight update, optimizer, qualified methods, failures, original goal and RNG.
+The two independently written executors also agree on 960 inputs across 240
+generated engineering graphs covering every declared primitive.
+
+The [learning-procedure replay](LEARNING_REPLAY.json) starts from an explicitly
+constructed near-boundary readout. Two actual AdamW practice updates acquire the
+checked addition identity while the selected finite retention cases stay correct.
+Decision-time credit changes the same owner, and its original question receives
+one qualified method. Interruption after the first update reproduces the second
+update, assessments, procedure credit, returned answer and random states exactly.
+The fixture tests the execution contract; improvement of the learning procedure
+on future capabilities remains a prospective matched curriculum assessment.
+
+Supervised wall time is 489.835 seconds and
+peak process-tree memory is 704.8 MiB, using one numerical
 thread and the 2 GiB cap. [Identities](ENGINEERING.json) · [Costs](COSTS.json).
 
 ## New source and remaining acceptance
@@ -64,7 +91,10 @@ its historical status claims are superseded by trained ECHO, UNIFIED and NATIVE
 studies. None of their completed finals were reopened for tuning.
 
 CORE-022 curriculum presentations remain **zero**. The engineering fixtures are
-reported as such. Broader executable proposals, distinct-contribution reward,
-learning-procedure assessment and the complete behavioral curriculum remain in
+reported as such. Executable proposals and distinct-contribution reward now have
+an actual coupled route, as does independently assessed procedure credit. The
+[human-view intake audit](INTAKE.json) verifies source bytes and identifies supplied
+earlier mathematical work before a new whole-question teaching view is prepared.
+Final source/representation acceptance and the complete behavioral curriculum remain in
 the active work order. The whole research remains open; these working connections
 are not relabeled as the completion of every behavioral requirement.

@@ -1,0 +1,18 @@
+{
+  "role": "complete-core procedure engineering, before curriculum",
+  "seed": 22026,
+  "fixture": "explicit near-boundary program readout, two real AdamW practice updates",
+  "sources": "declared engineering examples, not human curriculum data",
+  "plans": ["new-source repetition", "two-source practice"],
+  "same_numerical_owner_and_optimizer": true,
+  "independent_checks": ["polynomial acquisition identity", "finite balanced-input retention"],
+  "reward": "acquisition gain - positive retention loss - 0.001 per practice update",
+  "credit": "decision-time gradient reconstructed from the preserved parent; applied after practice",
+  "assessment_schedule": ["before practice", "after practice", "after procedure credit"],
+  "replay": "resume after update one, perform update two and delayed credit, retry and verify original goal",
+  "preserve": ["all practice costs", "original parent", "intermediate revisions", "failed attempts", "optimizer and RNG"],
+  "curriculum_presentations": 0,
+  "independent_learning_to_learn_benefit": "requires the later matched next-capability curriculum",
+  "numerical_threads": 1,
+  "process_tree_limit_bytes": 2147483648
+}

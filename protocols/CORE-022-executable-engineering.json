@@ -1,0 +1,31 @@
+{
+  "role": "engineering acceptance before any CORE-022 curriculum",
+  "seed": 22023,
+  "supplied": ["scalar graph grammar", "independent proof and execution contracts", "forced fixture decisions"],
+  "checks": [
+    "acyclic graph and resource bounds",
+    "independent recursive checker versus iterative exact execution",
+    "polynomial identity versus finite tests and partial functions",
+    "dead code, commutation and association aliases versus distinct factorization",
+    "proposal purity and derivatives through actual common owner",
+    "bound original goal, assumptions, predictor, source and assessment",
+    "actual shared optimizer update and re-encoded qualified evidence",
+    "alias, repeated evidence and renamed goal credit rejection",
+    "retained alternatives, negative outcomes and rollback",
+    "old specification compatibility, saved pending decision and exact next update",
+    "fresh-process replay and full repository regression"
+  ],
+  "reward": {
+    "new_independent_coverage": "fraction not already retained",
+    "distinct_exact_method": "0.1/(1+retained_methods_for_claim)^2, at most 8 methods",
+    "finite_test_method": "0.05 * positive exact-cost reduction / (1+old_cost)",
+    "failed_obligation": "-0.1*(1-quality), once per canonical failure within decision",
+    "alias": 0,
+    "maximum_per_proposal": 1
+  },
+  "curriculum_presentations": 0,
+  "all_costs_and_failed_attempts_retained": true,
+  "final_evaluation_data_used": false,
+  "numerical_threads": 1,
+  "process_tree_limit_bytes": 2147483648
+}

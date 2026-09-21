@@ -18,6 +18,13 @@ from .records import write_json, sha256
 
 
 class JointSession:
+    @staticmethod
+    def validate_goal(goal):
+        if not isinstance(goal.get('hypothesis'), str) or not goal['hypothesis'].strip():
+            raise ValueError('Original human question required')
+        return {'hypothesis': goal['hypothesis'], 'force': finite(goal['force']),
+                'velocity': finite(goal['velocity'])}
+
     def checkpoint_extra(self, path):
         return {}
 
@@ -38,11 +45,10 @@ class JointSession:
         return NativeOwner(NativeConfig(**configuration))
 
     def __init__(self, owner, goal, *, source):
-        if not source or not isinstance(goal.get('hypothesis'), str) or not goal['hypothesis'].strip():
+        if not source:
             raise ValueError('Original human question and source identity required')
         self.owner = owner.eval()
-        self.goal = {'hypothesis': goal['hypothesis'], 'force': finite(goal['force']),
-                     'velocity': finite(goal['velocity'])}
+        self.goal = self.validate_goal(goal)
         self.source = str(source); self.weights = weight_hash(owner)
         self.optimizer = torch.optim.AdamW(owner.parameters(), lr=.0001, weight_decay=.0001)
         self.events = []; self.credits = []; self.pending = None; self.transition = None

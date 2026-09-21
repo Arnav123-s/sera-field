@@ -1,7 +1,7 @@
 # Reviewed publication scope
 
 This release is a reviewed current-file snapshot of the independent SERA Field
-laboratory at source revision `cbf678dbd509ef985956beda5518acded0134d85`. The complete local history and original
+laboratory at source revision `72a9b6d194b400070b8f3bb28b29ea718a53ae3f`. The complete local history and original
 SERA remain preserved. This checkout has its own public publication history.
 
 Included: source, tests, frozen prospective protocols, engineering and usage

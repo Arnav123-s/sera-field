@@ -13,6 +13,8 @@ import torch
 from .core_owner import CoreOwner
 from .core_adequacy import action_scale_diagnostic, adequacy_features
 from .core_storage import protect_state, recover_state
+from .core_portfolio import ExecutableInvestigation
+from .core_learning import LearningInvestigation
 from .joint_session import JointSession
 from .native_data import identity
 from .native_owner import NativeConfig, detached_state
@@ -20,10 +22,40 @@ from .model import weight_hash
 from .records import sha256
 
 
-class CoreSession(JointSession):
+class CoreSession(ExecutableInvestigation, LearningInvestigation, JointSession):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.refinements = []
+        self.initialize_portfolio()
+        self.initialize_learning()
+
+    @staticmethod
+    def validate_goal(goal):
+        if goal.get('kind') == 'program':
+            return ExecutableInvestigation.program_goal(goal)
+        return JointSession.validate_goal(goal)
+
+    def answer(self, **kwargs):
+        if self.goal.get('kind') == 'program':
+            if kwargs: raise ValueError('Numerical query overrides belong to physical questions')
+            return self.program_answer()
+        return super().answer(**kwargs)
+
+    def propose(self):
+        if self.goal.get('kind') == 'program': return self.propose_programs()
+        return super().propose()
+
+    def observe(self, *args, **kwargs):
+        if self.goal.get('kind') == 'program':
+            raise ValueError('Use independent grade_programs for an executable proposal')
+        return super().observe(*args, **kwargs)
+
+    def grade(self, *args, **kwargs):
+        if self.goal.get('kind') == 'program':
+            raise ValueError('Use independent grade_programs for an executable proposal')
+        result = super().grade(*args, **kwargs)
+        self.transition = None
+        return result
 
     def propose_refinement(self):
         self.checked_owner()
@@ -124,7 +156,9 @@ class CoreSession(JointSession):
             temporary.unlink()
         else:
             os.replace(temporary, destination)
-        return {'refinements': copy.deepcopy(self.refinements), 'protected_state': {'file': destination.name, 'sha256': digest,
+        return {**self.portfolio_snapshot(), 'learning_trial': copy.deepcopy(self.learning_trial),
+                'learning_history': copy.deepcopy(self.learning_history),
+                'refinements': copy.deepcopy(self.refinements), 'protected_state': {'file': destination.name, 'sha256': digest,
                 'metadata_sha256': record['metadata_sha256'], 'storage': record['storage']}}
 
     def restore_extra(self, path, extra):
@@ -143,6 +177,9 @@ class CoreSession(JointSession):
         self.state = decoded
         self.storage_recovery = audit
         self.refinements = copy.deepcopy(extra.get('refinements', []))
+        self.restore_portfolio(extra)
+        self.learning_trial = copy.deepcopy(extra.get('learning_trial'))
+        self.learning_history = copy.deepcopy(extra.get('learning_history', []))
 
     @classmethod
     def owner_from_specification(cls, specification):
@@ -151,6 +188,7 @@ class CoreSession(JointSession):
             raise ValueError('Unexpected coupled owner type')
         configuration.pop('status')
         size = configuration.pop('extension_size')
-        owner = CoreOwner(NativeConfig(**configuration))
+        slots = configuration.pop('program_slots', 0)
+        owner = CoreOwner(NativeConfig(**configuration), program_slots=slots)
         if size: owner.install_extension(size)
         return owner

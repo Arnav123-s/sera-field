@@ -54,6 +54,30 @@ Tests compare interrupted and uninterrupted pending decisions and next updates.
 The fixtures force particular decisions to exercise validation; they are not
 reported as learned curiosity or as a new trained curriculum.
 
+## Executable alternatives and verified portfolios
+
+The same imagined field now produces parallel graph decisions for mathematical
+and scalar programming questions. Fresh operation, operand and output weights
+construct executable acyclic graphs. The three conditional branches supply their
+features and probabilities. There is no separate program-predicting model or
+optimizer. The [construction contract](CORE_022_EXECUTABLE_WORK.md) records the
+supplied grammar, competing mechanisms and prospective engineering checks.
+
+Every sampled candidate is committed before its independent contract is opened.
+An independently written coefficient checker proves supported polynomial
+identities; a separate execution contract checks an explicitly finite set of
+inputs. These scopes remain attached to returned programs. Alias normalization
+removes dead code and elementary rearrangements while retaining different
+factorizations. Credit for additional exact methods diminishes and is bounded;
+repeated goals, source names or assumption wording do not reset novelty.
+
+Verified credit updates the same AdamW state and re-encodes checked evidence into
+the continuing situation. Failed proposals, distinct valid methods and the
+original question persist together. A new question retains contribution identities.
+Returned expressions and scope explanations are an engineering rendering of
+checked programs. The forthcoming course must teach the proposal procedure and
+assess its use; this code connection alone does not claim learned discovery.
+
 ## Protected storage reads into the owner
 
 The floating-point and integer tensors are encoded **byte for byte**, avoiding
@@ -91,9 +115,16 @@ decision vocabulary are supplied engineering.
 ## Work still required before the full course
 
 The [complete work order](COMPLETE_CORE_WORK_ORDER.md) remains controlling.
-Next engineering connects the broader executable proposal/assessment routes,
-distinct-contribution reward and learning-procedure comparison; qualifies long
-streams and the resource envelope; and performs a separate-process replay of the
-complete owner. Then freeze the source-disjoint curriculum and whole-system
+The executable proposal/assessment and distinct-contribution credit route is
+connected and has a separate-process pending-update replay. The
+[practice-selection route](CORE_022_LEARNING_WORK.md) uses the same choice map,
+weights and optimizer. It records genuine practice updates, assesses acquisition
+and retention independently, reconstructs decision-time credit from the preserved
+parent, and retries the original goal. Its mid-trial restart also replayed in a
+fresh process. Selecting supplied schedules is assessed separately from inventing
+an optimizer or demonstrating faster acquisition on the next capability.
+
+Next complete the source/representation audit and final curriculum/resource acceptance.
+Then freeze the source-disjoint curriculum and whole-system
 evaluation, including the [new five-use correction test](EMPIRICAL_SYNTHESIS_20260921.md).
 Train fresh weights, assess once, and only then continue that learner incrementally.

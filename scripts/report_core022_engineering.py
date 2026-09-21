@@ -32,6 +32,8 @@ def main():
     record = {'stage': 'coupled owner integrated; remaining complete-core behavior engineering precedes curriculum',
         'work_order': 'docs/COMPLETE_CORE_WORK_ORDER.md', 'equations': 'docs/CORE_022_EQUATIONS.md',
         'owner_integration': 'docs/CORE_022_OWNER.md', 'source_reconciliation': 'docs/EMPIRICAL_SYNTHESIS_20260921.md',
+        'executable_integration': 'docs/CORE_022_EXECUTABLE_WORK.md',
+        'learning_procedure_integration': 'docs/CORE_022_LEARNING_WORK.md',
         'repository_tests': int(suite.attrib['tests']), 'coupled_core_tests': len(relevant),
         'failures': int(suite.attrib['failures']), 'errors': int(suite.attrib['errors']),
         'all_checks': last['status'] == 'PASS',
@@ -39,7 +41,7 @@ def main():
         'sources': {p: sha256(ROOT / p) for p in sources},
         'trained_presentations': 0, 'whole_owner_integration_complete': False,
         'research_complete': False,
-        'next_work': 'Connect broader executable proposals, distinct-contribution credit and learning-procedure assessment; finish complete-core acceptance, freeze the course and teach fresh weights before whole-system assessment and incremental learning.',
+        'next_work': 'Complete the course source/representation audit and final build acceptance, freeze the behavior-directed curriculum and untouched evaluations, then train fresh weights and assess the whole owner before incremental continuation.',
         'failed_attempts_preserved': [s['attempt'] for s in states if s['status'] != 'PASS'],
         'engineering_fixture_updates_are_not_curriculum': True}
     outcomes = []
@@ -58,6 +60,11 @@ def main():
     for name in ('STABILITY', 'WORKLOAD', 'REPLAY'):
         path = ROOT/'runs/CORE-022/engineering-probe'/(name+'.json')
         if path.exists(): write_json(report/(name+'.json'), json.loads(path.read_text()))
+    for name, destination in (('PORTFOLIO', 'PORTFOLIO'), ('REPLAY', 'PROGRAM_REPLAY')):
+        path = ROOT/'runs/CORE-022/program-probe'/(name+'.json')
+        if path.exists(): write_json(report/(destination+'.json'), json.loads(path.read_text()))
+    learning = ROOT/'runs/CORE-022/learning-probe/REPLAY.json'
+    if learning.exists(): write_json(report/'LEARNING_REPLAY.json', json.loads(learning.read_text()))
     state_path = ROOT/'reports/STATE.json'
     current = json.loads(state_path.read_text())
     current['studies']['CORE-022'].update(stage=record['stage'], training_started=False,
@@ -98,6 +105,14 @@ connection and curriculum obligation. Earlier owners and all evaluations remain.
 - Independent residuals and model spread feed a trainable adequacy decision.
   The attached stalk adds real coordinates, an input port, common-energy terms
   and a decoder; its existing optimizer moments and original goal survive.
+- The same conditional field proposes executable scalar graphs. Independent
+  coefficient proofs or finite input checks qualify their separate scopes.
+  Distinct methods persist, aliases receive no repeat credit, and checked
+  contribution reward updates the same optimizer and retained state.
+- The existing choice map selects a registered practice schedule. Actual
+  practice changes the same weights; independent acquisition and retention
+  checks bind delayed procedure credit to the pre-practice decision. Mid-trial
+  checkpoints preserve the completed-update cursor and return the original goal.
 
 The [owner note](../../docs/CORE_022_OWNER.md) and
 [equations](../../docs/CORE_022_EQUATIONS.md) give precise scope. A forced fixture
@@ -120,6 +135,25 @@ queries per case, including the full learning derivative. It takes no optimizer
 step. A new interpreter [reproduced the pending decision, independent credit,
 next weight update and RNG exactly](REPLAY.json). These are engineering fixtures.
 
+The [executable portfolio fixture](PORTFOLIO.json) committed 64 proposals before
+assessment. It retained two different exact methods for the squared sum,
+qualified 36 proposals and preserved 28 failures. Only two distinct successes
+and two distinct failures received nonzero credit. Output biases deliberately
+constructed the fixture; these counts are not trained discovery scores. Its
+[separate-process replay](PROGRAM_REPLAY.json) reproduced the full next assessment,
+weight update, optimizer, qualified methods, failures, original goal and RNG.
+The two independently written executors also agree on 960 inputs across 240
+generated engineering graphs covering every declared primitive.
+
+The [learning-procedure replay](LEARNING_REPLAY.json) starts from an explicitly
+constructed near-boundary readout. Two actual AdamW practice updates acquire the
+checked addition identity while the selected finite retention cases stay correct.
+Decision-time credit changes the same owner, and its original question receives
+one qualified method. Interruption after the first update reproduces the second
+update, assessments, procedure credit, returned answer and random states exactly.
+The fixture tests the execution contract; improvement of the learning procedure
+on future capabilities remains a prospective matched curriculum assessment.
+
 Supervised wall time is {costs['wall_seconds']:.3f} seconds and
 peak process-tree memory is {costs['peak_bytes']/1024**2:.1f} MiB, using one numerical
 thread and the 2 GiB cap. [Identities](ENGINEERING.json) · [Costs](COSTS.json).
@@ -133,8 +167,11 @@ its historical status claims are superseded by trained ECHO, UNIFIED and NATIVE
 studies. None of their completed finals were reopened for tuning.
 
 CORE-022 curriculum presentations remain **zero**. The engineering fixtures are
-reported as such. Broader executable proposals, distinct-contribution reward,
-learning-procedure assessment and the complete behavioral curriculum remain in
+reported as such. Executable proposals and distinct-contribution reward now have
+an actual coupled route, as does independently assessed procedure credit. The
+[human-view intake audit](INTAKE.json) verifies source bytes and identifies supplied
+earlier mathematical work before a new whole-question teaching view is prepared.
+Final source/representation acceptance and the complete behavioral curriculum remain in
 the active work order. The whole research remains open; these working connections
 are not relabeled as the completion of every behavioral requirement.
 ''', encoding='utf-8')

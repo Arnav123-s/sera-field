@@ -17,6 +17,8 @@ those versions separate.
 | [New empirical synthesis](EMPIRICAL_SYNTHESIS_20260921.md) | Reconciled historical claims and the five-use coherent-correction requirement |
 | [Complete-core work order](COMPLETE_CORE_WORK_ORDER.md) | Build and verify all connections before fresh behavioral teaching and later incremental learning |
 | [Coupled owner integration](CORE_022_OWNER.md) | Shared energy, learning credit, conditional outcomes, protected state and actual stalk attachment |
+| [Executable alternatives](CORE_022_EXECUTABLE_WORK.md) | Parallel graph proposals, independent algebra/execution and persistent distinct-method credit through the same owner |
+| [Learning-procedure assessment](CORE_022_LEARNING_WORK.md) | Shared choice, actual practice, independent acquisition/retention checks, delayed credit and exact continuation |
 
 ## Run a task
 

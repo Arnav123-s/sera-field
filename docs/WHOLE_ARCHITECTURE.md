@@ -8,8 +8,8 @@ owners remain immutable references.
 **Current work order:** finish the full specified mechanism and engineering
 checks before a fresh whole-system curriculum, then assess the trained owner
 and continue learning incrementally. [CORE-022](COMPLETE_CORE_WORK_ORDER.md)
-records that order. Its coupled owner has 31 passing integration/operator checks
-inside a 226-test repository regression, plus a 96-event stability check and
+records that order. Its coupled owner has 51 passing integration/operator checks
+inside a 246-test repository regression, plus a 96-event stability check and
 exact next-update replay in a new process. The complete behavior routes and
 curriculum remain in development. The [owner integration](CORE_022_OWNER.md),
 [equations](CORE_022_EQUATIONS.md) and [build evidence](../reports/CORE-022/REPORT.md)
@@ -61,8 +61,9 @@ connections and their behavioral tests as well.
 **Current candidate scope.** CORE-022 connects those formerly separate equations
 through a fresh reciprocally coupled owner. It now executes learned covariance,
 finite neural action, metric-aware canonical echo, irreversible memory updates,
-conditional fusion outcomes, protected retained-state recovery and literal finite
-stalk attachment. The reward and optimizer affect these same weights. Engineering
+conditional fusion outcomes, protected retained-state recovery, literal finite
+stalk attachment and executable graph proposals with independently qualified
+distinct-method credit. The reward and optimizer affect these same weights. Engineering
 fixtures qualify their execution and persistence; the whole behavioral teaching
 course follows the remaining acceptance work. No older checkpoint is substituted
 for this fresh candidate.
@@ -113,9 +114,9 @@ its older code-status statements are reconciled against actual local evidence.
 | Measurement and alternative routes | INQUIRY-014 completes explicit fusion spaces, all measurement outcomes, sustained local-credit training, independent replay and persistent delivery | Improve procedure learning on fresh training/development tasks; step zero won this selection |
 | Fibonacci-specific boundary imagination | CORE-022 uses complete outcomes and a continuation channel in the owner's actual imagined field; absent/read/unread consequences and learning gradients are checked | Teach and assess useful diverse alternatives at recorded classical cost |
 | Five uses of one relationship | CONCEPT-011 and GROW-013 pass finite acceptance and persistent-delivery checks | Assess the complete candidate's five coherent uses and coordinated correction after contradictory evidence |
-| Diverse useful discoveries | Guarded investigation and verified credit | Learned distinct proposals, canonical deduplication, complementary coverage and independent outcomes |
+| Diverse useful discoveries | CORE-022 connects graph proposals, independent coefficient/finite-execution checks, canonical deduplication and bounded distinct-method credit to the same owner and optimizer; 64-proposal constructed fixture and exact fresh-process update replay passed | Teach the procedure from fresh weights and assess distinct useful proposals and transfer on untouched tasks |
 | Perspective, poetry, practical understanding | Human source teaching retained | Source-grounded interpretation and observer/goal distinctions, without attributing feelings from scores |
-| Continued learning and improved procedures | Scoped updates and protected retention | Sequence learning, transfer, retention and independent learning-efficiency assessment |
+| Continued learning and improved procedures | CORE-022 selects a supplied practice schedule through its shared field, performs actual updates, assesses acquisition/retention, applies bound delayed credit and returns to the original goal; interrupted fixture replay passed | Sequence learning, transfer, retention and independently improved acquisition on new capabilities at matched cost |
 | Goal-conditioned geometric paths | Existing acquired-model planning and covariance geometry | Explicit learned metric, trajectory action and intervention-qualified return; distinguish geometry from literal gravity |
 | Causal propagation | Local field operators and recorded intervention boundaries | Finite dependency-cone tests under the stated dynamics; diffusion alone is not a strict physical light cone |
 | Correlator-derived neural action | GENRE-017 completed exact finite-ensemble teaching, action-force checks, controls and replay; new-genre accuracy improved while earlier semantic retention declined | Preserve the result; investigate retention under a fresh protocol without tuning the opened finals |

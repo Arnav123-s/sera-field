@@ -1,0 +1,109 @@
+{
+  "schema": "sera-field.core022.intake-audit.1",
+  "legacy_manifest": "7d7549e003282013dd3bacb277c6734da9de7915a1676405449cf7edd4ea892a",
+  "genre_manifest": "40e3b405de1a964045ad9af9c2d36b75dc8924bfb54b097334881d989057e9e3",
+  "source_files_verified": [
+    {
+      "view": "CONNECTED-003-data-v1/development-math.jsonl",
+      "sha256": "2810f9819997696ce79f97cbf9681924d94276af8aaa593ec7cc3d0752ff9d63",
+      "bytes": 1118223
+    },
+    {
+      "view": "CONNECTED-003-data-v1/development-pairs.jsonl",
+      "sha256": "616720219146ce32f2210a50ad4bb1b083eb1195202aa1a3d8d8c709aff74243",
+      "bytes": 9163810
+    },
+    {
+      "view": "CONNECTED-003-data-v1/development-reading.jsonl",
+      "sha256": "3c11bf1a57639208665b71c6d6957289755bde3b9f039e37707b2f0c4b671e6d",
+      "bytes": 24748781
+    },
+    {
+      "view": "CONNECTED-003-data-v1/sealed-math.jsonl",
+      "sha256": "4c8a8454c3588bcc21ffed3be24133d6eab7930eeae584c052629757fc495d42",
+      "bytes": 1214687
+    },
+    {
+      "view": "CONNECTED-003-data-v1/sealed-pairs.jsonl",
+      "sha256": "7cb2f2700ba3cabd141e0bd4b0d00072822606c178eac662b0e171aeeb881c8f",
+      "bytes": 8523172
+    },
+    {
+      "view": "CONNECTED-003-data-v1/sealed-reading.jsonl",
+      "sha256": "83e29dcac6115096e238433e6895a3c1be64f166f0692e18fc86154f496f9f11",
+      "bytes": 16626221
+    },
+    {
+      "view": "CONNECTED-003-data-v1/train-math.jsonl",
+      "sha256": "71b110b11b265d422581c30937b7bec803c1615ae5cbc32d1e247e8cdc51d9be",
+      "bytes": 9046980
+    },
+    {
+      "view": "CONNECTED-003-data-v1/train-pairs.jsonl",
+      "sha256": "e9ce35ec5ed8db6d0523b962a3e4280373edcdc0b35f277d4a74dbeb355c6fc6",
+      "bytes": 76804904
+    },
+    {
+      "view": "CONNECTED-003-data-v1/train-reading.jsonl",
+      "sha256": "08e30cbbae756651440c41aec1fc53bf694f4d493dca77a33d0d6e815ebd1b8e",
+      "bytes": 136025019
+    },
+    {
+      "view": "HUMAN-GENRE-data-v1/train.jsonl",
+      "sha256": "94dec53fb3968c9b1526c6a7ff61a60baae4d8ff736101e7ff332b71ba3b483c",
+      "bytes": 250178815
+    },
+    {
+      "view": "HUMAN-GENRE-data-v1/development.jsonl",
+      "sha256": "7045f561eae4dc007f0aadc57c74aa2da17cfd6bff1b2d6058b1a36154a17e32",
+      "bytes": 13601737
+    },
+    {
+      "view": "HUMAN-GENRE-data-v1/sealed_matched.jsonl",
+      "sha256": "2d76b7ce4972f1415b8f92d8f1ad476cd6c361a6f3c348a28f4afbf5a6e07342",
+      "bytes": 7163064
+    },
+    {
+      "view": "HUMAN-GENRE-data-v1/sealed_mismatched.jsonl",
+      "sha256": "b6894ba3c1d0de08fd7b1c602cfc9df18827c54257f7387aa292521245c1f599",
+      "bytes": 7318090
+    }
+  ],
+  "human_math": {
+    "rows": 13120,
+    "with_supplied_earlier_work": 9475,
+    "original_single_step_problem": 77,
+    "target_uses_first_four_inventory_entries": 7356,
+    "maximum_supplied_values": 18,
+    "source_groups": 5326
+  },
+  "human_pair_tracks": {
+    "programming": 295,
+    "grammar": 897,
+    "plato": 725,
+    "calculus": 282,
+    "descartes": 55,
+    "dailydialog": 76053,
+    "webster": 89850
+  },
+  "human_code": {
+    "human_source_records": 295,
+    "parseable_records": 295
+  },
+  "human_code_functions": {
+    "total_functions": 311,
+    "at_most_four_arguments_single_return": 36
+  },
+  "source_id_count_in_inspected_training_views": 8,
+  "final_contents_or_predictions_opened": false,
+  "curriculum_training_started": false,
+  "input_scope": "training-view inventory only; complete final allocation remains prospective",
+  "required_curriculum_distinctions": [
+    "A mathematics row can be one teacher-forced step rather than an original whole question.",
+    "The numeric inventory may include supplied constants and earlier verified results.",
+    "Raw human Python is inspected as syntax only; no downloaded code is executed.",
+    "Single-return counts do not establish compilability into the finite scalar grammar.",
+    "Human language source-pair selection is separate from newly generated explanation.",
+    "Earlier opened final cohorts stay preserved; freeze new group-disjoint assessment IDs."
+  ]
+}

@@ -5,6 +5,10 @@
 [equations](../docs/CORE_022_EQUATIONS.md) and
 [complete work order](../docs/COMPLETE_CORE_WORK_ORDER.md). The new build precedes
 its from-scratch curriculum; no new complete-core training is claimed here.
+The executable [portfolio](CORE-022/PORTFOLIO.json),
+[program replay](CORE-022/PROGRAM_REPLAY.json),
+[learning-procedure replay](CORE-022/LEARNING_REPLAY.json) and
+[human source-view audit](CORE-022/INTAKE.json) give the latest concrete checks.
 
 **Completed counterbalanced whole-cycle course:** [JOINT-021 report](JOINT-021/REPORT.md),
 [qualification](JOINT-021/QUALIFICATION.json), [paired comparisons](JOINT-021/INDEPENDENT_METRICS.json),

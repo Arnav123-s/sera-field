@@ -1,0 +1,8 @@
+{
+  "exact_fresh_process_replay": true,
+  "weights_after": "72418384c6162c8009eebe9949534c9bd576dd0ba854e59b6fe46ec643563d9a",
+  "expected_identity": "1326784ca41d9f2d7606b059483b87f63a9aaeff37960effd1af9e614775b3f0",
+  "actual_identity": "1326784ca41d9f2d7606b059483b87f63a9aaeff37960effd1af9e614775b3f0",
+  "optimizer_identity": "c5c8a3c436bb033e5a85cd5431fab825c84786915a8ce9b010808c93e5077eb3",
+  "same_goals_methods_failures_credit_and_rng": true
+}

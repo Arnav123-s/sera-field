@@ -1,0 +1,23 @@
+{
+  "exact_mid_trial_replay": true,
+  "expected_identity": "d48b0f5f7aaa4018d1dd41e624be5c01adf4721c59f47ad09e833c450516def7",
+  "actual_identity": "d48b0f5f7aaa4018d1dd41e624be5c01adf4721c59f47ad09e833c450516def7",
+  "weights_after": "a2c469c6e9bcd85d471bfdafcbdad5663def6499fd15f7364f3ec3514e2e214b",
+  "baseline": {
+    "acquisition": 0.0,
+    "retention": 1.0
+  },
+  "after_practice": {
+    "acquisition": 1.0,
+    "retention": 1.0
+  },
+  "after_credit": {
+    "acquisition": 1.0,
+    "retention": 1.0
+  },
+  "reward": 0.998,
+  "practice_updates": 2,
+  "procedure_credit_updated_weights": true,
+  "original_goal_qualified_methods": 1,
+  "scope": "constructed readout fixture, two genuine optimizer updates; not the behavioral curriculum"
+}

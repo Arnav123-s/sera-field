@@ -132,8 +132,8 @@
       "engineering": "reports/CORE-022/ENGINEERING.json",
       "training_started": false,
       "whole_owner_integration_complete": false,
-      "coupled_core_tests": 31,
-      "repository_tests": 226
+      "coupled_core_tests": 51,
+      "repository_tests": 246
     }
   },
   "preserved_usable_interfaces": {
@@ -189,8 +189,8 @@
     "repository": "https://github.com/Arnav123-s/sera-field",
     "previous_verified_record": "reports/HISTORY-016/PUBLICATION.json",
     "latest_verified_release": {
-      "latest_verified_release": "reports/PUBLICATION_20260921_COUPLED_OWNER.json",
-      "commit": "e01e18a87d50669305bb9870225cbef8f85cc6e8",
+      "latest_verified_release": "reports/PUBLICATION_20260921_CORE_INDEX.json",
+      "commit": "6e6ccf165f6447396e9fd505a0e0b1cecad2c066",
       "repository": "https://github.com/Arnav123-s/sera-field"
     },
     "current_snapshot_identity": "PUBLICATION_MANIFEST.json"

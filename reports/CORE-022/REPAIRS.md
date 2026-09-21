@@ -13,3 +13,11 @@ These are build checks before the CORE-022 curriculum; no final cohort was used.
 The echo integration and later full-outcome continuation checks passed on their
 first attempts. [Full costs and all attempts](COSTS.json) separate failed work
 from the successful regression. No result is relabeled as trained behavior.
+
+The executable portfolio's first 14 checks passed. A subsequent source review
+removed an incentive defect before curriculum: changing assumption wording could
+have reset a mathematical contribution's novelty. Exact identities now key the
+actual polynomial; finite evidence keys its actual inputs and expected outputs.
+Goal and assumptions still bind qualification, but their spelling earns no points.
+Full reviews are stored once with a compact index. An added adversarial replay
+and 960 independent exact-execution comparisons passed in the 241-test regression.
