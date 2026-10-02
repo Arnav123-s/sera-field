@@ -1,4 +1,4 @@
-# CORE-022: complete-core construction in progress
+# CORE-022: accepted coupled core and fresh teaching in progress
 
 I connected the fresh input maps, reciprocal energy, retained memory, conditional
 fusion and independent reward path through one owner. The build now also uses
@@ -92,7 +92,7 @@ update, assessments, procedure credit, returned answer and random states exactly
 The fixture tests the execution contract; improvement of the learning procedure
 on future capabilities remains a prospective matched curriculum assessment.
 
-Supervised wall time is 660.195 seconds and
+Completed pre-course engineering used 660.195 supervised seconds and
 peak process-tree memory is 725.3 MiB, using one numerical
 thread and the 2 GiB cap. [Identities](ENGINEERING.json) · [Costs](COSTS.json).
 
@@ -104,11 +104,45 @@ Its five-use coherent-correction assessment is adopted prospectively. Some of
 its historical status claims are superseded by trained ECHO, UNIFIED and NATIVE
 studies. None of their completed finals were reopened for tuning.
 
-CORE-022 curriculum presentations remain **zero**. The engineering fixtures are
-reported as such. Executable proposals and distinct-contribution reward now have
-an actual coupled route, as does independently assessed procedure credit. The
-[human-view intake audit](INTAKE.json) verifies source bytes and identifies supplied
-earlier mathematical work before a new whole-question teaching view is prepared.
-Final source/representation acceptance and the complete behavioral curriculum remain in
-the active work order. The whole research remains open; these working connections
-are not relabeled as the completion of every behavioral requirement.
+The fresh `credited` foundation course is now running. An independently audited
+prefix contains **576 saved updates and 4,224 presentations**, spanning 2,715
+distinct human source groups. The [receipt audit](COURSE_PREFIX_AUDIT_001.json)
+checks the exact schedule, source order, reserved-group exclusion, finite logged
+updates and checkpoint bytes without importing the learner or parsing reserved
+source rows. It records a prefix, not course completion or a final ability score.
+Complete costs continue accumulating in the supervised job record.
+
+The first [scheduled development assessment](DEVELOPMENT_01024.json), at update
+1,024, selected the trained revision over initialization. On its 64 physical
+systems, prediction MSE changed from 0.52247 to 0.11565. The 64 reading cases
+changed from 21.875% to 37.5% accuracy. Every track, including unchanged and lower
+measurements, is preserved in the record. These are early development results;
+the 12,288-update course continues with unchanged settings and untouched finals.
+
+The independent assessment preparation adds eight passing standard-library
+checks of receipt tampering, failed-tail preservation, partition leakage,
+duplicate alternatives and unscored one-choice cases. Their
+[separate record](ASSESSMENT_ENGINEERING.json) does not replace the earlier
+255-test numerical regression. It leaves the registered learner and teaching
+identities unchanged. Source-choice preparation uses alternatives from the same
+held-out partition and reports insufficient alternatives explicitly.
+
+The new same-owner source-choice adapter and its numerical label-isolation test
+are staged in [ASSESSMENT_OWNER_PENDING.json](ASSESSMENT_OWNER_PENDING.json).
+Their syntax has been checked; actual model execution waits for the active
+training worker to release the exclusive numerical lease. The adapter supplies
+only public contexts and alternatives to the existing owner's choice method.
+
+The [five-use review](../../docs/CORE_022_CAUSAL_ASSESSMENT.md) specifies the
+difference between force selection, hidden-parameter inference, physical
+intervention and grounded explanation. In particular, changing mass requires an
+explicit account of which drag and body-force quantities stay fixed. These
+prospective requirements guide the full behavioral phase after foundation
+teaching. They are not counted as capabilities acquired by the running course.
+
+Executable proposals, distinct-contribution reward and independently assessed
+procedure credit have actual coupled routes. The original
+[human-view intake audit](INTAKE.json), corrected whole-question source view,
+build acceptance and all earlier results remain preserved. The whole research
+stays active through complete behavioral teaching, independent assessment and
+incremental continuation of this same learner.

@@ -1,0 +1,104 @@
+{
+ "task": "rail: ripple 2",
+ "subject": "physics",
+ "kind": "strengths:num->num",
+ "teaching": true,
+ "steps": 6,
+ "answer": null,
+ "others": null,
+ "level": 2,
+ "asked": 4,
+ "explored": 3,
+ "tension": [
+  2.031,
+  2.062,
+  19.085,
+  34.433,
+  48.542,
+  48.32
+ ],
+ "wall": 573.7,
+ "cpu": 570.6,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  8
+ ],
+ "words_heard": [
+  "back",
+  "ripple",
+  "far"
+ ],
+ "said": [
+  "spring",
+  "ripple"
+ ],
+ "false_words": [
+  "spring"
+ ],
+ "serendipity": null,
+ "duality": {
+  "other": "(('position', 'curve', 17), ('time', 'expr', ('sub', None, ('c', 12, ('var', 's')), ('var', 's'))))"
+ },
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 14.82,
+  "ledger": 40.48,
+  "actions": 74.44,
+  "prove": 38.28,
+  "doubt": 42.42,
+  "explore": 0.0,
+  "grow": 363.06,
+  "ask": 0.0
+ },
+ "built": [],
+ "peak_mb": 4806.5625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "my shape 12 of position",
+ "band": 0.06269361680008304,
+ "verdict": "proven right",
+ "gap": 0.007583562076698858,
+ "signs": {
+  "position": -1
+ },
+ "certified": [
+  {
+   "part": 0,
+   "as": "drawing",
+   "on": "position",
+   "shape": 12,
+   "concept": 8
+  }
+ ],
+ "question": {
+  "text": "The 8 things here have only 4 kinds of mass (1.113, 2.353, 2.403, 2.407). Why so few? What makes a mass? In all 5 worlds I measured so far, things came in fewer kinds of mass than there were things.",
+  "things": 8,
+  "kinds": 4,
+  "masses": [
+   1.113,
+   2.353,
+   2.403,
+   2.407
+  ]
+ },
+ "attributed": true,
+ "configs": [
+  "prove",
+  "explore+grow",
+  "ask",
+  "explore+grow",
+  "explore",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: (('position', 'concept', 8),) (4.28), (('position', 'concept', 9),) (2.51), (('position', 'expr', ('mul', None, ('var', 's'), ('mul', No (2.32).",
+  "The judge accepts: my shape 12 of position up to 0.2 where I looked.",
+  "I think bigger (level 1).",
+  "I think bigger (level 2)."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

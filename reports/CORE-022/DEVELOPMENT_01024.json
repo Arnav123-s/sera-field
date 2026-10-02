@@ -1,0 +1,169 @@
+{
+  "schema": "sera-field.core022.development-snapshot.1",
+  "recorded_utc": "2026-09-21T06:27:45.910320+00:00",
+  "arm": "credited",
+  "cursor": 1024,
+  "target_updates": 12288,
+  "initial": {
+    "revision": "918269e357c4c9b9ffea3afd1aef2a54fcc55469695bdf31c81532722f006994.pt",
+    "sha256": "918269e357c4c9b9ffea3afd1aef2a54fcc55469695bdf31c81532722f006994",
+    "weights": "f597c8ded9d31d7cdb9c5dfd712c81cf2c1e77c2e87812310221037b91867e59",
+    "cursor": 0,
+    "score": 0.3028495946862371,
+    "tracks": {
+      "semantic": {
+        "n": 64,
+        "accuracy": 0.234375,
+        "loss": 1.1107121612876654
+      },
+      "pairs": {
+        "n": 225,
+        "accuracy": 0.2577777777777778,
+        "loss": 1.386439652442932,
+        "subjects": {
+          "programming": {
+            "n": 18,
+            "accuracy": 0.2222222222222222,
+            "loss": 1.3854380514886644
+          },
+          "grammar": {
+            "n": 59,
+            "accuracy": 0.2542372881355932,
+            "loss": 1.3869505676172547
+          },
+          "plato": {
+            "n": 20,
+            "accuracy": 0.45,
+            "loss": 1.3851814806461333
+          },
+          "dailydialog": {
+            "n": 64,
+            "accuracy": 0.234375,
+            "loss": 1.3865506388247013
+          },
+          "webster": {
+            "n": 64,
+            "accuracy": 0.234375,
+            "loss": 1.3865325450897217
+          }
+        },
+        "macro_accuracy": 0.2790419020715631
+      },
+      "reading": {
+        "n": 64,
+        "accuracy": 0.21875,
+        "loss": 1.4754232792183757
+      },
+      "programs": {
+        "n": 64,
+        "accuracy": 0.0
+      },
+      "physics": {
+        "n": 64,
+        "mse": 0.5224685544671956
+      },
+      "mixed": {
+        "before_mse": 0.42834005294071176,
+        "after_mse": 0.42866265855741403,
+        "next_query_mse": 0.5253132269189109,
+        "credit": -0.001166350550192874,
+        "signed_progress": -0.0003226005098895257,
+        "n": 32,
+        "accuracy": 0.15625,
+        "measurement_rate": 0.84375
+      }
+    }
+  },
+  "selected_at_first_check": {
+    "revision": "1a7f1d91a13336ac4e1faba293cf3d59ade3d97b7b7b68df35894f7f82e936fa.pt",
+    "sha256": "1a7f1d91a13336ac4e1faba293cf3d59ade3d97b7b7b68df35894f7f82e936fa",
+    "weights": "302ea24a92f50c4df2f1495e45186b15514eb94da99c1b0d4270b5fb826e4452",
+    "cursor": 1024,
+    "score": 0.43420714563967616,
+    "tracks": {
+      "semantic": {
+        "n": 64,
+        "accuracy": 0.375,
+        "loss": 1.093104274943471
+      },
+      "pairs": {
+        "n": 225,
+        "accuracy": 0.2577777777777778,
+        "loss": 1.3862704632017349,
+        "subjects": {
+          "programming": {
+            "n": 18,
+            "accuracy": 0.2777777777777778,
+            "loss": 1.386293285422855
+          },
+          "grammar": {
+            "n": 59,
+            "accuracy": 0.288135593220339,
+            "loss": 1.386980820510347
+          },
+          "plato": {
+            "n": 20,
+            "accuracy": 0.25,
+            "loss": 1.3863526046276093
+          },
+          "dailydialog": {
+            "n": 64,
+            "accuracy": 0.265625,
+            "loss": 1.3854141384363174
+          },
+          "webster": {
+            "n": 64,
+            "accuracy": 0.21875,
+            "loss": 1.3864398393779993
+          }
+        },
+        "macro_accuracy": 0.26005767419962333
+      },
+      "reading": {
+        "n": 64,
+        "accuracy": 0.375,
+        "loss": 1.4730504481121898
+      },
+      "programs": {
+        "n": 64,
+        "accuracy": 0.0
+      },
+      "physics": {
+        "n": 64,
+        "mse": 0.1156472635884711
+      },
+      "mixed": {
+        "before_mse": 0.11397143393469378,
+        "after_mse": 0.11397143393469378,
+        "next_query_mse": 0.09671880194832738,
+        "credit": 0.0,
+        "signed_progress": 0.0,
+        "n": 32,
+        "accuracy": 0.5,
+        "measurement_rate": 0.0
+      }
+    }
+  },
+  "development_case_sha256": "7d4a5a058e1d200202eed95ce1f085ec02aafcb83bf0ebdaaa7fdf63d62ebcbd",
+  "initial_case_sha256": "58ce5cd3d97d14fcf1e5a5b5bd0d75bfef5375cb95aca3e934c71fc3c9ba3df4",
+  "assessment_role": "repeated scheduled development selection; not final evaluation",
+  "frozen_protocol_changed": false,
+  "course_complete": false,
+  "selected_score_is_intelligence_scale": false,
+  "supervisor_snapshot": {
+    "attempt": "core022-foundation-credited-001",
+    "status": "RUNNING",
+    "started_utc": "2026-09-21T05:56:45Z",
+    "wall_seconds": 1860.4727124999918,
+    "resources": {
+      "limit_bytes": 2147483648,
+      "flags": 8720,
+      "affinity": 1,
+      "peak_committed_bytes": 907239424,
+      "cpu_seconds": 1845.109375,
+      "active_processes": 2,
+      "total_processes": 3
+    }
+  },
+  "whole_behavior_qualified": false
+}

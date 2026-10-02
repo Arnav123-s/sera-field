@@ -1,0 +1,181 @@
+{
+ "task": "last 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 3,
+ "answer": [
+  "foldn",
+  null,
+  [
+   "lam",
+   "ae",
+   [
+    "var",
+    "e"
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   2,
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "head",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "c",
+      2,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "lit",
+    2
+   ],
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "lit",
+    5
+   ],
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "lit",
+   2
+  ]
+ ],
+ "level": 1,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  1.925,
+  20.759,
+  20.76
+ ],
+ "wall": 0.5,
+ "cpu": 0.5,
+ "proven": true,
+ "invented": [
+  {
+   "id": 3,
+   "subject": "language",
+   "body": "foldn(\u03bba,e. e, first(_), ridu(_))"
+  }
+ ],
+ "reused": [
+  2,
+  1
+ ],
+ "words_heard": [
+  "last",
+  "word"
+ ],
+ "said": [
+  "fofo"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.02,
+  "ledger": 0.0,
+  "actions": 0.0,
+  "ask": 0.0,
+  "imagine": 0.19,
+  "doubt": 0.01,
+  "prove": 0.03,
+  "grow": 0.14
+ },
+ "built": [],
+ "peak_mb": 11814.78515625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "foldn(\u03bba,e. e, first(g), ridu(g))",
+ "verdict": "proven right",
+ "audit": 572,
+ "imagined_by": {
+  "method": "step+compose",
+  "moves": "step+compose",
+  "origin": "stepped"
+ },
+ "method_named": {
+  "id": 1,
+  "moves": "step then compose"
+ },
+ "configs": [
+  "ask+imagine",
+  "prove+grow",
+  "leave"
+ ],
+ "say": [
+  "I break it into 1 step (first(g)) and the rest follows: foldn(\u03bba,e. e, first(g), ridu(g)).",
+  "I imagine by step then compose: 1 new ideas.",
+  "I imagine by compose: 0 new ideas.",
+  "My audit passes foldn(\u03bba,e. e, first(g), ridu(g)) on 572 fresh inputs.",
+  "I think bigger (level 1)."
+ ],
+ "answer_repr": "('foldn', None, ('lam', 'ae', ('var', 'e')), ('c', 1, ('var', 'g')), ('c', 2, ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: kitchen mary moved | question: what is the last word -> moved",
+  "story: garden moved bathroom bathroom mary went | question: what is the last word -> went",
+  "story: kitchen office mary kitchen | question: what is the last word -> kitchen"
+ ]
+}

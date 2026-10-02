@@ -1,0 +1,399 @@
+{
+ "task": "is_in 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 76,
+ "answer": [
+  "foldn",
+  null,
+  [
+   "lam",
+   "ae",
+   [
+    "lit",
+    124
+   ]
+  ],
+  [
+   "lit",
+   125
+  ],
+  [
+   "c",
+   2,
+   [
+    "c",
+    6,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "lit",
+     124
+    ]
+   ],
+   [
+    "lit",
+    125
+   ],
+   [
+    "c",
+    9,
+    [
+     "c",
+     6,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "lit",
+   125
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "lit",
+     124
+    ]
+   ],
+   [
+    "lit",
+    125
+   ],
+   [
+    "c",
+    2,
+    [
+     "c",
+     6,
+     [
+      "c",
+      9,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "lit",
+     125
+    ]
+   ],
+   [
+    "lit",
+    124
+   ],
+   [
+    "c",
+    2,
+    [
+     "c",
+     6,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "lit",
+    125
+   ],
+   [
+    "c",
+    1,
+    [
+     "tail",
+     null,
+     [
+      "c",
+      6,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 3,
+ "asked": 40,
+ "explored": 0,
+ "tension": [
+  2.206,
+  2.899,
+  2.902,
+  2.208,
+  2.902,
+  2.208,
+  2.902,
+  2.902,
+  2.902,
+  2.208,
+  2.902,
+  2.208,
+  2.902,
+  2.208,
+  2.902,
+  2.208,
+  2.902,
+  2.208,
+  2.902,
+  2.208,
+  2.902,
+  2.208,
+  2.902,
+  2.208,
+  2.902,
+  2.902,
+  2.902,
+  2.902,
+  2.902,
+  2.902,
+  2.902,
+  2.208,
+  2.902,
+  2.208,
+  2.902,
+  2.208,
+  2.902,
+  2.902,
+  2.902,
+  2.902,
+  2.902,
+  2.902,
+  19.424,
+  19.42,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335,
+  19.335
+ ],
+ "wall": 6439.9,
+ "cpu": 6434.2,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "is",
+  "yes",
+  "no"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 81.61,
+  "ledger": 0.0,
+  "actions": 1.39,
+  "ask": 0.01,
+  "doubt": 75.82,
+  "grow": 71.26,
+  "imagine": 6204.42
+ },
+ "built": [],
+ "peak_mb": 9156.46484375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "ask",
+  "grow",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "grow",
+  "grow",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine"
+ ],
+ "say": [
+  "This rings in me: in (12.19), duri (3.99).",
+  "I think bigger (level 1).",
+  "In is_in 1 my best idea is 125, but I cannot finish (none of my ideas fits the examples). Is it right, or what am I missing?",
+  "I think bigger (level 2).",
+  "I think bigger (level 3).",
+  "I imagine by compose then recall: 4 new ideas.",
+  "I imagine by recall then compose then wish: 0 new ideas.",
+  "I keep 0 of my imagined ideas in mind and let 6 go.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "In is_in 1 my best idea is foldn(\u03bba,e. 124, 125, ridu(sare(g))), but I cannot finish (none of my ideas fits the examples, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('foldn', None, ('lam', 'ae', ('lit', 124)), ('lit', 125), ('c', 2, ('c', 6, ('var', 'g'))))",
+ "stage": "teach",
+ "english": [
+  "story: mary journeyed to the bathroom; sandra went to the bedroom; john moved to the office | question: is sandra in the bedroom -> yes",
+  "story: john moved to the bathroom; sandra travelled to the office | question: is john in the bathroom -> yes",
+  "story: sandra travelled to the garden; mary journeyed to the bedroom | question: is sandra in the bedroom -> no"
+ ]
+}

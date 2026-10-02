@@ -1,0 +1,281 @@
+{
+ "task": "who 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 9,
+ "answer": [
+  "c",
+  1,
+  [
+   "filter",
+   null,
+   [
+    "lam",
+    "e",
+    [
+     "eq",
+     null,
+     [
+      "c",
+      3,
+      [
+       "var",
+       "e"
+      ]
+     ],
+     [
+      "c",
+      3,
+      [
+       "head",
+       "list",
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ],
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   1,
+   [
+    "filter",
+    null,
+    [
+     "lam",
+     "e",
+     [
+      "eq",
+      null,
+      [
+       "c",
+       3,
+       [
+        "head",
+        "list",
+        [
+         "var",
+         "g"
+        ]
+       ]
+      ],
+      [
+       "c",
+       3,
+       [
+        "var",
+        "e"
+       ]
+      ]
+     ]
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ],
+   [
+    "sub",
+    null,
+    [
+     "c",
+     4,
+     [
+      "var",
+      "g"
+     ]
+    ],
+    [
+     "c",
+     3,
+     [
+      "head",
+      "list",
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "head",
+     null,
+     [
+      "var",
+      "e"
+     ]
+    ]
+   ],
+   [
+    "lit",
+    5
+   ],
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "c",
+    4,
+    [
+     "var",
+     "g"
+    ]
+   ],
+   [
+    "lit",
+    4
+   ]
+  ]
+ ],
+ "level": 4,
+ "asked": 4,
+ "explored": 0,
+ "tension": [
+  5.459,
+  5.461,
+  10.993,
+  5.461,
+  32.858,
+  32.858,
+  32.858,
+  32.858,
+  32.858
+ ],
+ "wall": 1366.1,
+ "cpu": 1357.2,
+ "proven": true,
+ "invented": [
+  {
+   "id": 5,
+   "subject": "language",
+   "body": "first(filter(\u03bbe. eq(kalo(e), kalo(head(_))), _))"
+  },
+  {
+   "id": 6,
+   "subject": "language",
+   "inner": "the part it works on",
+   "body": "filter(\u03bbe. eq(kalo(e), kalo(head(_))), _)"
+  }
+ ],
+ "reused": [
+  1,
+  3
+ ],
+ "words_heard": [
+  "who"
+ ],
+ "said": [
+  "who"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.55,
+  "ledger": 0.0,
+  "actions": 0.14,
+  "grow": 60.86,
+  "doubt": 0.44,
+  "ask": 0.0,
+  "imagine": 1303.82,
+  "prove": 0.22
+ },
+ "built": [],
+ "peak_mb": 8606.2734375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "first(filter(\u03bbe. eq(kalo(e), kalo(head(g))), g))",
+ "verdict": "proven right",
+ "audit": 859,
+ "imagined_by": {
+  "method": "wish+compose",
+  "moves": "wish+compose",
+  "origin": "wished"
+ },
+ "method_named": {
+  "id": 2,
+  "moves": "wish then compose"
+ },
+ "configs": [
+  "grow",
+  "grow",
+  "ask",
+  "ask+imagine",
+  "grow",
+  "ask",
+  "ask+grow+imagine",
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "I think bigger (level 1).",
+  "I think bigger (level 2).",
+  "I wish my functions could see the whole problem, not only the part they are given. I grow that way of seeing, and 1 ideas fit this, first first(filter(\u03bbe. eq(kalo(e), kalo(head(g))), g)).",
+  "I imagine by wish then compose: 1 new ideas.",
+  "I break it into 1 step (kalo(head(g))) and the rest follows: first(filter(\u03bbe. eq(kalo(head(g)), kalo(e)), g)).",
+  "I imagine by wish then step: 1 new ideas.",
+  "I think bigger (level 3).",
+  "I think bigger (level 4).",
+  "I imagine by recall: 1 new ideas.",
+  "I keep 2 of my imagined ideas in mind and let 1 go.",
+  "My audit passes first(filter(\u03bbe. eq(kalo(e), kalo(head(g))), g)) on 859 fresh inputs.",
+  "It rings through the Field: 13 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('c', 1, ('filter', None, ('lam', 'e', ('eq', None, ('c', 3, ('var', 'e')), ('c', 3, ('head', 'list', ('var', 'g'))))), ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: john journeyed to the hallway; mary travelled to the office; daniel went to the bathroom | question: who went to the bathroom -> daniel",
+  "story: sandra travelled to the garden; sandra went to the kitchen | question: who went to the garden -> sandra",
+  "story: sandra went to the hallway; john went to the bathroom | question: who went to the bathroom -> john"
+ ]
+}

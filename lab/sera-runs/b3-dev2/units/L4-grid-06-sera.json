@@ -1,0 +1,37 @@
+{
+ "suite": "L4-grid",
+ "index": 6,
+ "mind": "sera",
+ "truth": "steps with position + a push that swings in time (sin 7t)",
+ "claim": "steps with position + a push that swings in time (sin 7t)",
+ "sure": true,
+ "verified": true,
+ "right": true,
+ "wrong_frozen": false,
+ "sure_unverified": false,
+ "right_grid": true,
+ "wrong_grid": false,
+ "surface_ok": false,
+ "wrong": false,
+ "throws": 16,
+ "own": 0,
+ "seconds": 51.4,
+ "certify_calls": 1,
+ "families": 121,
+ "gap": "I am sure the force is steps with position + a push that swings in time (sin 7t) where I looked (position -0.64 to 0.31, speed -0.86 to 0.64). Something more may be there, but it is too small to see here.",
+ "imagined_top3": [
+  [
+   "straight with position + a push that swings in time (sin 7t)",
+   0.411
+  ],
+  [
+   "straight with position + a push that swings in time (sin 7.1t)",
+   0.278
+  ],
+  [
+   "straight with position + a push that swings in time (sin 6.9t)",
+   0.143
+  ]
+ ],
+ "truth_in_imagined": true
+}

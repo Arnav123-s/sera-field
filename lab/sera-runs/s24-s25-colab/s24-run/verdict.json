@@ -1,0 +1,29 @@
+{
+  "development_only": true,
+  "failures": [],
+  "incomplete": [
+    "preflight failed or exceeded budget: tests/sera/test_teach_crutches.py"
+  ],
+  "processes": {
+    "tests/sera/test_crutches.py": {
+      "returncode": 0,
+      "timeout": false,
+      "wall": 1.9787556160008535
+    },
+    "tests/sera/test_s06.py": {
+      "returncode": 0,
+      "timeout": false,
+      "wall": 2.476009532001626
+    },
+    "tests/sera/test_teach_crutches.py": {
+      "returncode": 4,
+      "timeout": false,
+      "wall": 0.8177926579955965
+    }
+  },
+  "results": {},
+  "retirement_authorized": false,
+  "uptime_start": "56576.10 191002.98",
+  "verdict": "INCOMPLETE",
+  "wall": 5.273564856994199
+}

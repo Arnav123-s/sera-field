@@ -1,0 +1,128 @@
+{
+ "task": "number: triangle",
+ "subject": "math",
+ "kind": "exact:num->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  13,
+  [
+   "range",
+   null,
+   [
+    "var",
+    "n"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   2,
+   [
+    "c",
+    16,
+    [
+     "var",
+     "n"
+    ]
+   ]
+  ],
+  [
+   "c",
+   2,
+   [
+    "c",
+    17,
+    [
+     "var",
+     "n"
+    ]
+   ]
+  ],
+  [
+   "c",
+   10,
+   [
+    "c",
+    16,
+    [
+     "var",
+     "n"
+    ]
+   ]
+  ],
+  [
+   "c",
+   10,
+   [
+    "c",
+    17,
+    [
+     "var",
+     "n"
+    ]
+   ]
+  ],
+  [
+   "var",
+   "n"
+  ]
+ ],
+ "level": 0,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  9.964,
+  9.964
+ ],
+ "wall": 3.3,
+ "cpu": 3.3,
+ "proven": true,
+ "invented": [
+  {
+   "id": 25,
+   "subject": "math",
+   "body": "sum(range(_))"
+  }
+ ],
+ "reused": [
+  13
+ ],
+ "words_heard": [
+  "triangle"
+ ],
+ "said": [
+  "triangle"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.35,
+  "ledger": 0.0,
+  "actions": 0.0,
+  "prove": 0.02,
+  "doubt": 0.03
+ },
+ "built": [],
+ "peak_mb": 6668.0234375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "sum(range(n))",
+ "verdict": "proven right",
+ "audit": 326,
+ "configs": [
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "My audit passes sum(range(n)) on 326 fresh inputs."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

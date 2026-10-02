@@ -1,0 +1,27 @@
+lang-s3-f0: sh bash /content/onefield_ab.sh lang 3 0 | env RUN=b1 | package 1d1f91f | started 2026-10-02 00:18 UTC | exit 0 | wall 21631 s
+SETTINGS {"crutches_off": [], "knobs": "ONE_FIELD=0", "one_field": false}
+=== first 1 (teach, box 1800 s) | words heard: first word
+=== first 2 (teach, box 1800 s) | words heard: first word
+=== last 1 (teach, box 1800 s) | words heard: last word
+=== last 2 (teach, box 1800 s) | words heard: last word
+=== who 1 (teach, box 1800 s) | words heard: who
+=== who 2 (teach, box 1800 s) | words heard: who
+=== where 1 (teach, box 1800 s) | words heard: where is
+=== where 2 (teach, box 1800 s) | words heard: where is
+=== what_is 1 (teach, box 1800 s) | words heard: what is
+=== what_is 2 (teach, box 1800 s) | words heard: what is
+=== who_in 1 (teach, box 1800 s) | words heard: who is in
+=== who_in 2 (teach, box 1800 s) | words heard: who is in
+=== where_now 1 (teach, box 1800 s) | words heard: where is now
+=== where_now 2 (teach, box 1800 s) | words heard: where is now
+=== is_in 1 (teach, box 1800 s) | words heard: is yes no
+=== is_in 2 (teach, box 1800 s) | words heard: is yes no
+=== where_now 1 (teach, visit 2, box 3600 s) | words heard: where is now
+=== where_now 2 (teach, visit 2, box 3600 s) | words heard: where is now
+=== is_in 1 (teach, visit 2, box 3600 s) | words heard: is yes no
+=== is_in 2 (teach, visit 2, box 581 s) | words heard: is yes no
+AB DONE step {"first 1": {"verdict": "proven right", "claim": "head(head(tail(g)))", "visits": 1, "wall_all_visits": 601.0, "steps": 15, "stepped": true, "back": false, "rang": false}, "first 2": {"verdict": "proven right", "claim": "first(g)", "visits": 1, "wall_all_visits": 4.0, "steps": 2, "stepped": false, "back": false, "rang": true}, "last 1": {"verdict": "proven right", "claim": "kadu(dudu(g))", "visits": 1, "wall_all_visits": 677.1, "steps": 4, "stepped": false, "back": true, "rang": true}, "last 2": {"verdict": "proven right", "claim": "noka(g)", "visits": 1, "wall_all_visits": 4.2, "steps": 2, "stepped": false, "back": false, "rang": true}, "who 1": {"verdict": "proven right", "claim": "first(filter(\u03bbe. eq(kadu(head(g)), kadu(e)), g))", "visits": 1, "wall_all_visits": 36.6, "steps": 16, "stepped": true, "back": false, "rang": false}, "who 2": {"verdict": "proven right", "claim": "who(g)", "visits": 1, "wall_all_visits": 1.7, "steps": 2, "stepped": false, "back": false, "rang": true}, "where 1": {"verdict": "proven right", "claim": "kadu(head(filter(\u03bbe. eq(kadu(head(g)), head(e)), g)))", "visits": 1, "wall_all_visits": 320.0, "steps": 11, "stepped": true, "back": false, "rang": true}, "where 2": {"verdict": "proven right", "claim": "mire(g)", "visits": 1, "wall_all_visits": 3.7, "steps": 2, "stepped": false, "back": false, "rang": true}, "what_is 1": {"verdict": "proven right", "claim": "repe(reno(g))", "visits": 1, "wall_all_visits": 1190.7, "steps": 4, "stepped": true, "back": false, "rang": true}, "what_is 2": {"verdict": "proven right", "claim": "nope(g)", "visits": 1, "wall_all_visits": 5.6, "steps": 3, "stepped": false, "back": false, "rang": true}, "who_in 1": {"verdict": "proven right", "claim": "who(g)", "visits": 1, "wall_all_visits": 11.8, "steps": 2, "stepped": false, "back": false, "rang": true}, "who_in 2": {"verdict": "proven right", "claim": "in(g)", "visits": 1, "wall_all_visits": 5.8, "steps": 2, "stepped": false, "back": false, "rang": true}, "where_now 1": {"verdict": "not proven", "claim": null, "visits": 2, "wall_all_visits": 5406.3, "steps": 48, "stepped": false, "back": false, "rang": true}, "where_now 2": {"verdict": "not proven", "claim": null, "visits": 2, "wall_all_visits": 5542.3, "steps": 47, "stepped": false, "back": false, "rang": true}, "is_in 1": {"verdict": "not proven", "claim": null, "visits": 2, "wall_all_visits": 5405.1, "steps": 54, "stepped": false, "back": false, "rang": true}, "is_in 2": {"verdict": "not proven", "claim": null, "visits": 2, "wall_all_visits": 2381.6, "steps": 47, "stepped": false, "back": false, "rang": true}}
+SETTINGS {"crutches_off": [], "knobs": "ONE_FIELD=0", "one_field": false}
+CONVERSE DONE {"taught: the lesson": [48, 42, 60], "read only: the lesson": [44, 42, 60], "before: the fresh talk": [39, 45, 60], "taught: the fresh talk": [42, 35, 60], "read only: the fresh talk": [38, 45, 60]}
+SETTINGS {"crutches_off": [], "knobs": "ONE_FIELD=0", "one_field": false}
+CONVERSE DONE {"taught: the lesson": [44, 23, 60], "read only: the lesson": [48, 32, 60], "before: the fresh talk": [50, 44, 60], "taught: the fresh talk": [41, 33, 60], "read only: the fresh talk": [50, 44, 60]}

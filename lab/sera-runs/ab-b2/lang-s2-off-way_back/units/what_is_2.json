@@ -1,0 +1,145 @@
+{
+ "task": "what_is 2",
+ "subject": "language",
+ "kind": "exact:list(list)->list",
+ "teaching": true,
+ "steps": 3,
+ "answer": [
+  "c",
+  10,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   9,
+   [
+    "c",
+    8,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   9,
+   [
+    "head",
+    "list",
+    [
+     "c",
+     9,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   9,
+   [
+    "c",
+    2,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   9,
+   [
+    "c",
+    2,
+    [
+     "c",
+     9,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   8,
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "level": 1,
+ "asked": 2,
+ "explored": 0,
+ "tension": [
+  2.523,
+  2.525,
+  2.347
+ ],
+ "wall": 3.7,
+ "cpu": 3.7,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  10
+ ],
+ "words_heard": [
+  "what",
+  "is"
+ ],
+ "said": [
+  "losa"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.05,
+  "ledger": 0.0,
+  "actions": 0.05,
+  "grow": 0.26,
+  "prove": 0.03,
+  "ask": 0.0,
+  "doubt": 0.04,
+  "imagine": 0.01
+ },
+ "built": [],
+ "peak_mb": 7778.5625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "losa(g)",
+ "verdict": "proven right",
+ "audit": 236,
+ "configs": [
+  "grow+prove+ask",
+  "imagine+ask",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: losa (4.04).",
+  "I think bigger (level 1).",
+  "My audit passes losa(g) on 236 fresh inputs.",
+  "It rings through the Field: 1 ways of working and imagining that led here are strengthened.",
+  "I imagine by compose: 1 new ideas."
+ ],
+ "answer_repr": "('c', 10, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: intriguer is a person who devises plots or intrigues; poetically is in a poetic manner; uppityness is assumption of airs beyond station | question: what is poetically -> in a poetic manner",
+  "story: unflawed is without a flaw; recollective is good at remembering; alleviator is a therapist who makes suffering more endurable; mishegaas is senseless behavior or activity | question: what is recollective -> good at remembering",
+  "story: mycenaen is a native or inhabitant of ancient mycenae; moldy is covered with or smelling of mold | question: what is mycenaen -> a native or inhabitant of ancient mycenae"
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "suite": "L3",
+ "index": 0,
+ "mind": "sera",
+ "truth": "cubic with position times wave with speed",
+ "claim": "cubic with position times wave with speed",
+ "sure": true,
+ "verified": true,
+ "right": true,
+ "wrong_frozen": false,
+ "sure_unverified": false,
+ "right_grid": true,
+ "wrong_grid": false,
+ "surface_ok": false,
+ "wrong": false,
+ "throws": 16,
+ "own": 0,
+ "seconds": 31.4,
+ "certify_calls": 1,
+ "families": 79,
+ "gap": "I am sure the force is cubic with position times wave with speed where I looked (position -2.3 to 1.5, speed -3 to 1.2). Something more may be there, but it is too small to see here.",
+ "imagined_top3": [
+  [
+   "cubic with position times wave with speed",
+   1.0
+  ],
+  [
+   "nothing but my hand",
+   0.0
+  ],
+  [
+   "growing with position times wave with speed",
+   0.0
+  ]
+ ],
+ "truth_in_imagined": true
+}

@@ -1,0 +1,109 @@
+{
+ "task": "first 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 4,
+ "answer": [
+  "c",
+  1,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "lit",
+   2
+  ],
+  [
+   "lit",
+   5
+  ],
+  [
+   "one",
+   null
+  ],
+  [
+   "zero",
+   null
+  ],
+  [
+   "head",
+   null,
+   [
+    "head",
+    "list",
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "level": 1,
+ "asked": 2,
+ "explored": 0,
+ "tension": [
+  3.309,
+  3.309,
+  3.309,
+  3.31
+ ],
+ "wall": 0.1,
+ "cpu": 0.1,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  1
+ ],
+ "words_heard": [
+  "first",
+  "word"
+ ],
+ "said": [
+  "first"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.0,
+  "ledger": 0.0,
+  "actions": 0.0,
+  "prove": 0.01,
+  "imagine": 0.0,
+  "doubt": 0.0,
+  "ask": 0.0,
+  "grow": 0.03
+ },
+ "built": [],
+ "peak_mb": 344.38671875,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "first(g)",
+ "verdict": "proven right",
+ "audit": 228,
+ "configs": [
+  "prove+imagine",
+  "ask",
+  "grow+ask",
+  "leave"
+ ],
+ "say": [
+  "My audit passes first(g) on 228 fresh inputs.",
+  "I imagine by compose: 0 new ideas.",
+  "I think bigger (level 1)."
+ ],
+ "answer_repr": "('c', 1, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: daniel went to the hallway | question: what is the first word -> daniel",
+  "story: john travelled to the garden | question: what is the first word -> john",
+  "story: daniel went to the kitchen | question: what is the first word -> daniel"
+ ]
+}

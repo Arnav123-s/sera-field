@@ -1,0 +1,189 @@
+{
+ "task": "who 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 9,
+ "answer": [
+  "c",
+  25,
+  [
+   "c",
+   23,
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   25,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   25,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "head",
+   null,
+   [
+    "head",
+    "list",
+    [
+     "c",
+     23,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "c",
+    20,
+    [
+     "c",
+     25,
+     [
+      "c",
+      23,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ],
+   [
+    "c",
+    25,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "c",
+    25,
+    [
+     "var",
+     "g"
+    ]
+   ],
+   [
+    "c",
+    27,
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 3,
+ "asked": 6,
+ "explored": 0,
+ "tension": [
+  6.755,
+  9.021,
+  9.02,
+  12.671,
+  12.671,
+  9.02,
+  9.02,
+  6.756,
+  6.063,
+  6.756
+ ],
+ "wall": 1832.2,
+ "cpu": 1822.7,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "who"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 2.93,
+  "ledger": 0.0,
+  "actions": 0.31,
+  "grow": 308.49,
+  "doubt": 0.94,
+  "imagine": 1511.84,
+  "ask": 0.0
+ },
+ "built": [],
+ "peak_mb": 4349.4375,
+ "peak_mb_by": {
+  "imagine": 320.4,
+  "grow": 0.1
+ },
+ "memory_stops": 4,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "grow",
+  "grow",
+  "imagine+ask",
+  "imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+grow"
+ ],
+ "say": [
+  "I think bigger (level 1).",
+  "I think bigger (level 2).",
+  "I imagine by compose then wish then step: 0 new ideas.",
+  "I imagine by wish then compose then wish then compose: 0 new ideas.",
+  "I imagine by step then wish: 0 new ideas.",
+  "I imagine by wish then compose then wish then wish: 0 new ideas.",
+  "I think bigger (level 3).",
+  "In who 1 my best idea is kape(reverse(g)), but I cannot finish (none of my ideas fits the examples, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('c', 25, ('c', 23, ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: mary travelled to the bedroom; john went to the kitchen | question: who went to the kitchen -> john",
+  "story: daniel moved to the bathroom; mary travelled to the office | question: who went to the bathroom -> daniel",
+  "story: sandra travelled to the hallway; mary went to the office | question: who went to the office -> mary"
+ ]
+}

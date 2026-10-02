@@ -1,0 +1,158 @@
+{
+ "task": "last 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 5,
+ "answer": [
+  "c",
+  29,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   8,
+   [
+    "c",
+    29,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   22,
+   [
+    "head",
+    "list",
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   28,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   10,
+   [
+    "c",
+    10,
+    [
+     "c",
+     10,
+     [
+      "c",
+      28,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "lit",
+   119
+  ]
+ ],
+ "level": 1,
+ "asked": 2,
+ "explored": 0,
+ "tension": [
+  3.283,
+  3.283,
+  1.413,
+  13.027,
+  13.027
+ ],
+ "wall": 279.8,
+ "cpu": 278.5,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  29
+ ],
+ "words_heard": [
+  "last",
+  "word"
+ ],
+ "said": [
+  "fope"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.2,
+  "ledger": 0.0,
+  "actions": 0.05,
+  "ask": 0.01,
+  "doubt": 0.18,
+  "imagine": 266.82,
+  "grow": 2.27,
+  "prove": 0.03
+ },
+ "built": [
+  {
+   "id": 29,
+   "name": "fope",
+   "words": "make what spring turns into the answer",
+   "body": "last(head(tail(_)))"
+  }
+ ],
+ "peak_mb": 4431.31640625,
+ "peak_mb_by": {
+  "imagine": 960.5
+ },
+ "memory_stops": 7,
+ "claim": "fope(g)",
+ "verdict": "proven right",
+ "audit": 251,
+ "configs": [
+  "ask",
+  "ask",
+  "imagine+grow",
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: first (15.65).",
+  "I wish I could make what spring turns into the answer: I build it (fope = last(head(tail(_)))) and use it.",
+  "I imagine by wish then compose then wish then compose: 1 new ideas.",
+  "I was stuck, so I imagined the last step to the answer - last(z) of a part - and looked for that part: head(tail(g)). Together: last(head(tail(g))).",
+  "I imagine by step then compose then wish then wish: 1 new ideas.",
+  "I keep 2 of my imagined ideas in mind and let 1 go.",
+  "I think bigger (level 1).",
+  "My audit passes fope(g) on 251 fresh inputs.",
+  "It rings through the Field: 6 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('c', 29, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: travelled john garden bedroom | question: what is the last word -> bedroom",
+  "story: hallway the went | question: what is the last word -> went",
+  "story: hallway moved office hallway bathroom mary | question: what is the last word -> mary"
+ ]
+}

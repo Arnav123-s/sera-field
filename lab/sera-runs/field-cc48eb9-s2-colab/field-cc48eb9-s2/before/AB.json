@@ -1,0 +1,172 @@
+{
+ "arm": "step",
+ "echo": false,
+ "back": false,
+ "field": null,
+ "box": 30.0,
+ "hours": 6.0,
+ "seed": 2,
+ "total_s": 21600.5,
+ "lessons": {
+  "first 1": {
+   "verdict": "proven right",
+   "claim": "head(head(tail(g)))",
+   "visits": 1,
+   "wall_all_visits": 828.0,
+   "steps": 6,
+   "stepped": false,
+   "back": false,
+   "rang": false
+  },
+  "first 2": {
+   "verdict": "proven right",
+   "claim": "first(g)",
+   "visits": 1,
+   "wall_all_visits": 6.4,
+   "steps": 5,
+   "stepped": false,
+   "back": false,
+   "rang": false
+  },
+  "last 1": {
+   "verdict": "proven right",
+   "claim": "foldn(\u03bba,e. e, first(g), ridu(g))",
+   "visits": 1,
+   "wall_all_visits": 0.5,
+   "steps": 3,
+   "stepped": true,
+   "back": false,
+   "rang": false
+  },
+  "last 2": {
+   "verdict": "proven right",
+   "claim": "fofo(g)",
+   "visits": 1,
+   "wall_all_visits": 8.0,
+   "steps": 7,
+   "stepped": false,
+   "back": false,
+   "rang": false
+  },
+  "who 1": {
+   "verdict": "not proven",
+   "claim": null,
+   "visits": 1,
+   "wall_all_visits": 1800.4,
+   "steps": 11,
+   "stepped": false,
+   "back": false,
+   "rang": false
+  },
+  "who 2": {
+   "verdict": "not proven",
+   "claim": null,
+   "visits": 1,
+   "wall_all_visits": 1814.3,
+   "steps": 47,
+   "stepped": false,
+   "back": false,
+   "rang": false
+  },
+  "where 1": {
+   "verdict": "not proven",
+   "claim": null,
+   "visits": 1,
+   "wall_all_visits": 1837.3,
+   "steps": 47,
+   "stepped": false,
+   "back": false,
+   "rang": false
+  },
+  "where 2": {
+   "verdict": "not proven",
+   "claim": null,
+   "visits": 1,
+   "wall_all_visits": 2154.0,
+   "steps": 48,
+   "stepped": false,
+   "back": false,
+   "rang": false
+  },
+  "what_is 1": {
+   "verdict": "not proven",
+   "claim": null,
+   "visits": 1,
+   "wall_all_visits": 1819.9,
+   "steps": 45,
+   "stepped": false,
+   "back": false,
+   "rang": false
+  },
+  "what_is 2": {
+   "verdict": "not proven",
+   "claim": null,
+   "visits": 1,
+   "wall_all_visits": 1860.4,
+   "steps": 33,
+   "stepped": false,
+   "back": false,
+   "rang": false
+  },
+  "who_in 1": {
+   "verdict": "not proven",
+   "claim": null,
+   "visits": 1,
+   "wall_all_visits": 1899.0,
+   "steps": 47,
+   "stepped": false,
+   "back": false,
+   "rang": false
+  },
+  "who_in 2": {
+   "verdict": "not proven",
+   "claim": null,
+   "visits": 1,
+   "wall_all_visits": 1808.8,
+   "steps": 49,
+   "stepped": false,
+   "back": false,
+   "rang": false
+  },
+  "where_now 1": {
+   "verdict": "not proven",
+   "claim": null,
+   "visits": 1,
+   "wall_all_visits": 2073.0,
+   "steps": 46,
+   "stepped": false,
+   "back": false,
+   "rang": false
+  },
+  "where_now 2": {
+   "verdict": "not proven",
+   "claim": null,
+   "visits": 1,
+   "wall_all_visits": 1801.0,
+   "steps": 48,
+   "stepped": false,
+   "back": false,
+   "rang": false
+  },
+  "is_in 1": {
+   "verdict": "not proven",
+   "claim": null,
+   "visits": 1,
+   "wall_all_visits": 1815.5,
+   "steps": 44,
+   "stepped": false,
+   "back": false,
+   "rang": false
+  },
+  "is_in 2": {
+   "verdict": "not proven",
+   "claim": null,
+   "visits": 1,
+   "wall_all_visits": 73.7,
+   "steps": 43,
+   "stepped": false,
+   "back": false,
+   "rang": false
+  }
+ }
+}

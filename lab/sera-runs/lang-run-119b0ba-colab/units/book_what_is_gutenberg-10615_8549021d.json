@@ -1,0 +1,129 @@
+{
+ "task": "book what is gutenberg-10615_8549021d",
+ "subject": "language",
+ "kind": "exact:list(list)->list",
+ "teaching": false,
+ "steps": 2,
+ "answer": [
+  "c",
+  9,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "tail",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "c",
+     2,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "nil",
+   null
+  ],
+  [
+   "tail",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "c",
+     2,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   8,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   10,
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "level": 1,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  0.248,
+  0.248
+ ],
+ "wall": 10.1,
+ "cpu": 10.1,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  9
+ ],
+ "words_heard": [],
+ "said": [
+  "midu"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.04,
+  "ledger": 0.0,
+  "actions": 0.02,
+  "prove": 0.03,
+  "imagine": 0.0,
+  "grow": 0.57,
+  "doubt": 0.04
+ },
+ "built": [],
+ "peak_mb": 18171.0390625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "midu(g)",
+ "verdict": "proven right",
+ "audit": 236,
+ "configs": [
+  "prove+imagine+grow",
+  "leave"
+ ],
+ "say": [
+  "My audit passes midu(g) on 236 fresh inputs.",
+  "I imagine by compose: 0 new ideas.",
+  "I think bigger (level 1)."
+ ],
+ "answer_repr": "('c', 9, ('var', 'g'))",
+ "stage": "read",
+ "english": [
+  "story: anger is uneasiness or discomposure of the mind upon the receipt of any injury with a present purpose of revenge; judging is as it were balancing an account and determining on which side the odds lie; powers is relations not agents; morality is the relation of voluntary actions to these rules | question: what is anger -> uneasiness or discomposure of the mind upon the receipt of any injury with a present purpose of revenge",
+  "story: god is only active pure matter is only passive those beings that are both active and passive we may judge to partake of both; morality is the relation of voluntary actions to these rules; despair is the thought of the unattainableness of any good which works differently in men s minds sometimes producing uneasiness or pain sometimes rest and indolency; duration is as a line expansion as a solid | question: what is morality -> the relation of voluntary actions to these rules",
+  "story: consciousness is the perception of what passes in a man s own mind; anger is uneasiness or discomposure of the mind upon the receipt of any injury with a present purpose of revenge | question: what is anger -> uneasiness or discomposure of the mind upon the receipt of any injury with a present purpose of revenge"
+ ]
+}

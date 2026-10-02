@@ -1,0 +1,100 @@
+{
+ "task": "number: twice",
+ "subject": "math",
+ "kind": "exact:num->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  20,
+  [
+   "var",
+   "n"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   6,
+   [
+    "var",
+    "n"
+   ]
+  ],
+  [
+   "c",
+   10,
+   [
+    "c",
+    22,
+    [
+     "var",
+     "n"
+    ]
+   ]
+  ],
+  [
+   "lit",
+   2
+  ],
+  [
+   "lit",
+   4
+  ],
+  [
+   "lit",
+   6
+  ]
+ ],
+ "level": 0,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  5.739,
+  5.739
+ ],
+ "wall": 2.5,
+ "cpu": 2.5,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  20
+ ],
+ "words_heard": [
+  "twice"
+ ],
+ "said": [
+  "twice"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.19,
+  "ledger": 0.0,
+  "actions": 0.0,
+  "ask": 0.0,
+  "prove": 0.01,
+  "doubt": 0.03
+ },
+ "built": [],
+ "peak_mb": 5434.015625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "redu(n)",
+ "verdict": "proven right",
+ "audit": 246,
+ "configs": [
+  "ask+prove",
+  "leave"
+ ],
+ "say": [
+  "My audit passes redu(n) on 246 fresh inputs.",
+  "It rings through the Field: 1 ways of working and imagining that led here are strengthened."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

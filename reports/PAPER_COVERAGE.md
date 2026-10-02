@@ -68,4 +68,4 @@ with measured behavior; repaired after a recorded failure; or investigated and
 left open with its mathematical/empirical obstacle and exact next action. A row
 must never be silently dropped or marked complete solely from a document, code
 name, larger training run or successful unit test. Re-read the original proposal
-and the user's behavioral vision before freezing training and after evaluation.
+and the author's behavioral vision before freezing training and after evaluation.

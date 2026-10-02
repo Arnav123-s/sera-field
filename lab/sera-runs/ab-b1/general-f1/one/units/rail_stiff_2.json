@@ -1,0 +1,98 @@
+{
+ "task": "rail: stiff 2",
+ "subject": "physics",
+ "kind": "strengths:num->num",
+ "teaching": true,
+ "steps": 5,
+ "answer": null,
+ "others": null,
+ "level": 1,
+ "asked": 1,
+ "explored": 1,
+ "tension": [
+  8.364,
+  8.364,
+  19.19,
+  19.685,
+  19.94
+ ],
+ "wall": 244.5,
+ "cpu": 243.2,
+ "proven": true,
+ "invented": [
+  {
+   "id": 9,
+   "subject": "physics",
+   "input": "position",
+   "how": "expr",
+   "body": "mul(_, mul(_, _))"
+  }
+ ],
+ "reused": [],
+ "words_heard": [
+  "stiff",
+  "back",
+  "far"
+ ],
+ "said": [
+  "stiff"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.52,
+  "ledger": 32.01,
+  "actions": 69.22,
+  "prove": 141.25,
+  "doubt": 0.35,
+  "grow": 1.03,
+  "explore": 0.0
+ },
+ "built": [],
+ "peak_mb": 4806.5625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "some strength times (position x (position x position)) (clipped at +-1)",
+ "band": 0.07774704807328323,
+ "verdict": "proven right",
+ "gap": 4.440892098500626e-16,
+ "signs": {},
+ "certified": [
+  {
+   "part": 0,
+   "as": "formula",
+   "on": "dim:x.x.x.mul.mul@4"
+  }
+ ],
+ "question": {
+  "text": "The 8 things here have only 3 kinds of mass (1.334, 1.38, 2.292). Why so few? What makes a mass? In all 3 worlds I measured so far, things came in fewer kinds of mass than there were things.",
+  "things": 8,
+  "kinds": 3,
+  "masses": [
+   1.334,
+   1.38,
+   2.292
+  ]
+ },
+ "attributed": true,
+ "configs": [
+  "prove",
+  "grow",
+  "prove",
+  "explore",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: (('position', 'concept', 8),) (3.59), (('position', 'expr', ('var', 's')),) (3.48), (('time', 'concept', 1),) (0.98).",
+  "The judge does not accept my shape 12 of position + my shape 13 of speed: something else is here: the law misfits more objects than bumps explain.",
+  "I think bigger (level 1).",
+  "The judge accepts: some strength times (position x (position x position)) (clipped at +-1) up to 0.2 where I looked.",
+  "It rings through the Field: 1 ways of working and imagining that led here are strengthened."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

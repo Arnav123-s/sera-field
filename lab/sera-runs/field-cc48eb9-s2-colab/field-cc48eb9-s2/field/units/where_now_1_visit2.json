@@ -1,0 +1,142 @@
+{
+ "task": "where_now 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  11,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   7,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "c",
+    6,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "lit",
+    7
+   ],
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "level": 1,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  3.554,
+  3.559
+ ],
+ "wall": 6.9,
+ "cpu": 6.8,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  11
+ ],
+ "words_heard": [
+  "where",
+  "is",
+  "now"
+ ],
+ "said": [
+  "now"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.13,
+  "ledger": 0.0,
+  "actions": 0.08,
+  "prove": 0.15,
+  "grow": 0.66,
+  "ask": 0.0,
+  "doubt": 0.13
+ },
+ "built": [],
+ "peak_mb": 11644.0546875,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "now(g)",
+ "verdict": "proven right",
+ "audit": 237,
+ "configs": [
+  "prove+grow+ask",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: mivi (10.53), now (6.61).",
+  "My audit passes now(g) on 237 fresh inputs.",
+  "I think bigger (level 1).",
+  "It rings through the Field: 3 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('c', 11, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: mary travelled to the hallway; sandra went to the bedroom; mary went to the office; sandra travelled to the garden | question: where is mary -> office",
+  "story: sandra journeyed to the bedroom; sandra went to the hallway; sandra journeyed to the bedroom | question: where is sandra -> bedroom",
+  "story: sandra moved to the kitchen; mary moved to the hallway; mary went to the bedroom | question: where is mary -> bedroom"
+ ]
+}

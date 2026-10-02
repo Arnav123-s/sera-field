@@ -1,0 +1,235 @@
+{
+ "task": "last 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 6,
+ "answer": [
+  "c",
+  3,
+  [
+   "c",
+   2,
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "var",
+     "e"
+    ]
+   ],
+   [
+    "mul",
+    null,
+    [
+     "lit",
+     2
+    ],
+    [
+     "c",
+     1,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "c",
+    2,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "c",
+       2,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "tail",
+       null,
+       [
+        "c",
+        2,
+        [
+         "var",
+         "g"
+        ]
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "head",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "c",
+      2,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 2,
+ "asked": 4,
+ "explored": 0,
+ "tension": [
+  1.925,
+  1.925,
+  1.925,
+  13.545,
+  26.394,
+  26.394
+ ],
+ "wall": 606.0,
+ "cpu": 604.1,
+ "proven": true,
+ "invented": [
+  {
+   "id": 4,
+   "subject": "language",
+   "body": "fofo(ridu(_))"
+  }
+ ],
+ "reused": [
+  3,
+  2
+ ],
+ "words_heard": [
+  "last",
+  "word"
+ ],
+ "said": [
+  "fotu"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.14,
+  "ledger": 0.0,
+  "actions": 0.06,
+  "ask": 0.0,
+  "doubt": 0.11,
+  "grow": 1.52,
+  "imagine": 603.99,
+  "prove": 0.02
+ },
+ "built": [
+  {
+   "id": 3,
+   "name": "fofo",
+   "words": "finish what ridu starts",
+   "body": "foldn(\u03bba,e. e, 3, _)"
+  }
+ ],
+ "peak_mb": 9664.890625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "fofo(ridu(g))",
+ "verdict": "proven right",
+ "audit": 298,
+ "imagined_by": {
+  "method": "step+wish",
+  "moves": "step+wish",
+  "origin": "wished"
+ },
+ "method_named": {
+  "id": 2,
+  "moves": "step then wish"
+ },
+ "configs": [
+  "ask",
+  "ask",
+  "ask+grow",
+  "ask+imagine+grow",
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: first (15.89).",
+  "I think bigger (level 1).",
+  "I break it into 1 step (mul(2, first(g))) and the rest follows: foldn(\u03bba,e. e, mul(2, first(g)), ridu(g)).",
+  "I wish I could finish what ridu starts: I build it (fofo = foldn(\u03bba,e. e, 3, _)) and use it.",
+  "I imagine by step then wish: 2 new ideas.",
+  "I imagine by wish then compose: 0 new ideas.",
+  "I keep 2 of my imagined ideas in mind and let 1 go.",
+  "I think bigger (level 2).",
+  "My audit passes fofo(ridu(g)) on 298 fresh inputs.",
+  "It rings through the Field: 9 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('c', 3, ('c', 2, ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: kitchen mary moved | question: what is the last word -> moved",
+  "story: garden moved bathroom bathroom mary went | question: what is the last word -> went",
+  "story: kitchen office mary kitchen | question: what is the last word -> kitchen"
+ ]
+}

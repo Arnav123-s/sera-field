@@ -1,0 +1,140 @@
+{
+ "task": "last 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 3,
+ "answer": [
+  "c",
+  4,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   3,
+   [
+    "c",
+    2,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "head",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "c",
+      2,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "lit",
+    5
+   ],
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "lit",
+   2
+  ]
+ ],
+ "level": 1,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  3.469,
+  3.471,
+  3.19
+ ],
+ "wall": 4.4,
+ "cpu": 4.3,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  4
+ ],
+ "words_heard": [
+  "last",
+  "word"
+ ],
+ "said": [
+  "lolo"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.02,
+  "ledger": 0.0,
+  "actions": 0.03,
+  "prove": 0.02,
+  "grow": 0.1,
+  "doubt": 0.02,
+  "imagine": 0.0
+ },
+ "built": [],
+ "peak_mb": 8606.2734375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "lolo(g)",
+ "verdict": "proven right",
+ "audit": 230,
+ "configs": [
+  "prove+grow",
+  "imagine",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: first (17.82), lolo (11.65).",
+  "My audit passes lolo(g) on 230 fresh inputs.",
+  "I think bigger (level 1).",
+  "I imagine by compose: 1 new ideas.",
+  "I keep 2 of my imagined ideas in mind and let 1 go."
+ ],
+ "answer_repr": "('c', 4, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: kitchen mary moved | question: what is the last word -> moved",
+  "story: garden moved bathroom bathroom mary went | question: what is the last word -> went",
+  "story: kitchen office mary kitchen | question: what is the last word -> kitchen"
+ ]
+}

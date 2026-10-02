@@ -1,0 +1,9 @@
+﻿4 objects, up to 400 readings, sigma=0.05, speeds 0.2-1.0; grow at the first "yes"
+truth   rule              grew   median readings   lives
+same    in-sample       0.2918                44   20000
+same    e-process       0.0000               nan   20000
+faint   in-sample       1.0000                14    5000
+faint   e-process       0.5508               220    5000
+clear   in-sample       1.0000                 5    5000
+clear   e-process       1.0000                34    5000
+"same": the objects do not differ, so every growth is growth on noise.

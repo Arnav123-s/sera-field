@@ -1,0 +1,368 @@
+{
+ "task": "where 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 46,
+ "answer": [
+  "c",
+  3,
+  [
+   "head",
+   "list",
+   [
+    "filter",
+    null,
+    [
+     "lam",
+     "e",
+     [
+      "eq",
+      null,
+      [
+       "c",
+       3,
+       [
+        "head",
+        "list",
+        [
+         "var",
+         "g"
+        ]
+       ]
+      ],
+      [
+       "head",
+       null,
+       [
+        "var",
+        "e"
+       ]
+      ]
+     ]
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   4,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "cons",
+    null,
+    [
+     "c",
+     4,
+     [
+      "var",
+      "g"
+     ]
+    ],
+    [
+     "c",
+     2,
+     [
+      "tail",
+      null,
+      [
+       "tail",
+       null,
+       [
+        "tail",
+        null,
+        [
+         "var",
+         "g"
+        ]
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "foldl",
+    null,
+    [
+     "lam",
+     "ae",
+     [
+      "cons",
+      null,
+      [
+       "var",
+       "e"
+      ],
+      [
+       "var",
+       "a"
+      ]
+     ]
+    ],
+    [
+     "var",
+     "g"
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "cons",
+    null,
+    [
+     "c",
+     4,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ],
+    [
+     "c",
+     2,
+     [
+      "tail",
+      null,
+      [
+       "tail",
+       null,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "c",
+     3,
+     [
+      "var",
+      "e"
+     ]
+    ]
+   ],
+   [
+    "lit",
+    122
+   ],
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "level": 4,
+ "asked": 40,
+ "explored": 0,
+ "tension": [
+  5.469,
+  5.469,
+  5.469,
+  5.469,
+  5.469,
+  5.469,
+  5.469,
+  5.469,
+  5.469,
+  5.469,
+  5.469,
+  5.469,
+  5.469,
+  5.469,
+  5.469,
+  5.469,
+  5.469,
+  5.469,
+  5.469,
+  5.469,
+  5.469,
+  5.469,
+  5.469,
+  5.469,
+  5.469,
+  5.469,
+  2.863,
+  1.646,
+  1.646,
+  1.646,
+  1.646,
+  1.646,
+  1.646,
+  1.646,
+  1.646,
+  1.646,
+  1.646,
+  1.646,
+  1.646,
+  1.646,
+  1.646,
+  1.646,
+  1.646,
+  12.337,
+  34.902,
+  34.902
+ ],
+ "wall": 438.3,
+ "cpu": 437.0,
+ "proven": true,
+ "invented": [
+  {
+   "id": 7,
+   "subject": "language",
+   "body": "fofo(head(filter(\u03bbe. eq(fofo(head(_)), head(e)), _)))"
+  },
+  {
+   "id": 8,
+   "subject": "language",
+   "inner": "the part it works on",
+   "body": "head(filter(\u03bbe. eq(fofo(head(_)), head(e)), _))"
+  }
+ ],
+ "reused": [
+  3
+ ],
+ "words_heard": [
+  "where",
+  "is"
+ ],
+ "said": [
+  "mivi"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 5.97,
+  "ledger": 0.0,
+  "actions": 0.18,
+  "ask": 0.02,
+  "doubt": 5.78,
+  "imagine": 347.77,
+  "grow": 75.03,
+  "prove": 0.34
+ },
+ "built": [],
+ "peak_mb": 7778.5625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "fofo(head(filter(\u03bbe. eq(fofo(head(g)), head(e)), g)))",
+ "verdict": "proven right",
+ "audit": 941,
+ "imagined_by": {
+  "method": "step",
+  "moves": "step",
+  "origin": "stepped"
+ },
+ "configs": [
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "ask+imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+grow",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "grow",
+  "grow",
+  "imagine+grow",
+  "imagine",
+  "prove+imagine",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: first (7.58), fotu (7.56).",
+  "In where 1 my best idea is fotu(tail(g)), but I cannot finish (none of my ideas fits the examples). Is it right, or what am I missing?",
+  "I imagine by compose then wish then recall: 3 new ideas.",
+  "I imagine by recall then compose then wish: 0 new ideas.",
+  "I keep 0 of my imagined ideas in mind and let 5 go.",
+  "I imagine by step: 0 new ideas.",
+  "I think bigger (level 1).",
+  "I think bigger (level 2).",
+  "I think bigger (level 3).",
+  "I imagine by compose then wish then compose: 0 new ideas.",
+  "I imagine by compose then compose then wish: 0 new ideas.",
+  "I think bigger (level 4).",
+  "I break it into 2 steps (fofo(head(g)); head(filter(\u03bbe. eq(w1, head(e)), g))) and the rest follows: fofo(head(filter(\u03bbe. eq(fofo(head(g)), head(e)), g))).",
+  "I imagine by step: 1 new ideas.",
+  "My audit passes fofo(head(filter(\u03bbe. eq(fofo(head(g)), head(e)), g))) on 941 fresh inputs.",
+  "I imagine by compose: 0 new ideas.",
+  "It rings through the Field: 25 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('c', 3, ('head', 'list', ('filter', None, ('lam', 'e', ('eq', None, ('c', 3, ('head', 'list', ('var', 'g'))), ('head', None, ('var', 'e')))), ('var', 'g'))))",
+ "stage": "teach",
+ "english": [
+  "story: john moved to the office; mary journeyed to the bedroom | question: where is mary -> bedroom",
+  "story: mary moved to the office; john travelled to the kitchen | question: where is john -> kitchen",
+  "story: daniel journeyed to the hallway; john went to the office; sandra journeyed to the bedroom | question: where is john -> office"
+ ]
+}

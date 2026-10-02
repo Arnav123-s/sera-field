@@ -1,0 +1,2 @@
+﻿name=m1a-seed1-d1f4c44 from=(review notes, not published) commit=d1f4c44 cmd=core_check.py --seed 1 --twice --out (review notes, not published)\core-results\m1a-d1f4c44 started=2026-09-24T12:04:45
+seed 1 C1: PASS  {"coverage": 0.9495, "readings": 8200, "noise_worlds_force_certified": 0, "noise_worlds_alarms": 0}

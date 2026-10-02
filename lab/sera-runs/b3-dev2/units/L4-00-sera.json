@@ -1,0 +1,37 @@
+{
+ "suite": "L4",
+ "index": 0,
+ "mind": "sera",
+ "truth": "steps with position + steps with position times steps with speed",
+ "claim": "steps with position + steps with position times steps with speed",
+ "sure": true,
+ "verified": true,
+ "right": true,
+ "wrong_frozen": false,
+ "sure_unverified": false,
+ "right_grid": true,
+ "wrong_grid": false,
+ "surface_ok": false,
+ "wrong": false,
+ "throws": 16,
+ "own": 0,
+ "seconds": 35.8,
+ "certify_calls": 1,
+ "families": 79,
+ "gap": "I am sure the force is steps with position + steps with position times steps with speed where I looked (position -0.52 to 0.38, speed -0.74 to 1.5). Something more may be there, but it is too small to see here.",
+ "imagined_top3": [
+  [
+   "steps with position + steps with position times steps with speed",
+   1.0
+  ],
+  [
+   "steps with position + steps with position times wave with speed",
+   0.0
+  ],
+  [
+   "steps with position + wave with position times steps with speed",
+   0.0
+  ]
+ ],
+ "truth_in_imagined": true
+}

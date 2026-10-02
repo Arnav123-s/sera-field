@@ -1,0 +1,375 @@
+{
+ "task": "who_in 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 47,
+ "answer": [
+  "add",
+  null,
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "c",
+    3,
+    [
+     "var",
+     "g"
+    ]
+   ],
+   [
+    "c",
+    3,
+    [
+     "cons",
+     null,
+     [
+      "nil",
+      null
+     ],
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ],
+   [
+    "sub",
+    null,
+    [
+     "c",
+     3,
+     [
+      "cons",
+      null,
+      [
+       "nil",
+       null
+      ],
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ],
+    [
+     "c",
+     3,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ],
+   [
+    "head",
+    null,
+    [
+     "range",
+     null,
+     [
+      "sub",
+      null,
+      [
+       "c",
+       1,
+       [
+        "var",
+        "g"
+       ]
+      ],
+      [
+       "c",
+       1,
+       [
+        "tail",
+        null,
+        [
+         "var",
+         "g"
+        ]
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "foldl",
+    null,
+    [
+     "lam",
+     "ae",
+     [
+      "cons",
+      null,
+      [
+       "c",
+       2,
+       [
+        "var",
+        "a"
+       ]
+      ],
+      [
+       "var",
+       "a"
+      ]
+     ]
+    ],
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ],
+   [
+    "foldn",
+    null,
+    [
+     "lam",
+     "ae",
+     [
+      "sub",
+      null,
+      [
+       "one",
+       null
+      ],
+      [
+       "var",
+       "a"
+      ]
+     ]
+    ],
+    [
+     "one",
+     null
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "level": 7,
+ "asked": 40,
+ "explored": 0,
+ "tension": [
+  2.109,
+  4.562,
+  2.109,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.042,
+  1.046,
+  1.046,
+  1.046,
+  1.046,
+  28.74,
+  27.802,
+  27.802
+ ],
+ "wall": 1899.0,
+ "cpu": 1879.6,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "who",
+  "is",
+  "in"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 3.14,
+  "ledger": 0.0,
+  "actions": 0.14,
+  "imagine": 1352.19,
+  "ask": 0.0,
+  "doubt": 2.77,
+  "grow": 538.85
+ },
+ "built": [],
+ "peak_mb": 11814.78515625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "imagine+ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "grow",
+  "grow",
+  "grow",
+  "grow",
+  "grow",
+  "grow",
+  "grow"
+ ],
+ "say": [
+  "I imagine by wish then step then compose: 0 new ideas.",
+  "I imagine by compose then wish: 0 new ideas.",
+  "In who_in 1 my best idea is first(g), but I cannot finish (0.0 nats of doubt). Is it right, or what am I missing?",
+  "I think bigger (level 1).",
+  "I think bigger (level 2).",
+  "I think bigger (level 3).",
+  "I think bigger (level 4).",
+  "I think bigger (level 5).",
+  "I think bigger (level 6).",
+  "I think bigger (level 7).",
+  "In who_in 1 my best idea is add(first(g), sub(fofo(g), fofo(cons([], g)))), but I cannot finish (-0.0 nats of doubt, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('add', None, ('c', 1, ('var', 'g')), ('sub', None, ('c', 3, ('var', 'g')), ('c', 3, ('cons', None, ('nil', None), ('var', 'g')))))",
+ "stage": "teach",
+ "english": [
+  "story: mary journeyed to the office; john moved to the hallway | question: who is in the office -> mary",
+  "story: daniel journeyed to the bedroom; mary moved to the kitchen; john journeyed to the garden | question: who is in the kitchen -> mary",
+  "story: sandra went to the bathroom; mary went to the office | question: who is in the office -> mary"
+ ]
+}

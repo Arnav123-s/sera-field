@@ -1,0 +1,197 @@
+{
+ "task": "list: sum",
+ "subject": "code",
+ "kind": "exact:list->num",
+ "teaching": true,
+ "steps": 6,
+ "answer": [
+  "c",
+  8,
+  [
+   "c",
+   13,
+   [
+    "var",
+    "l"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "c",
+     13,
+     [
+      "var",
+      "l"
+     ]
+    ]
+   ],
+   [
+    "zero",
+    null
+   ],
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "l"
+    ]
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "c",
+    10,
+    [
+     "c",
+     13,
+     [
+      "var",
+      "l"
+     ]
+    ]
+   ],
+   [
+    "head",
+    null,
+    [
+     "range",
+     null,
+     [
+      "c",
+      10,
+      [
+       "c",
+       13,
+       [
+        "var",
+        "l"
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   12,
+   [
+    "head",
+    null,
+    [
+     "var",
+     "l"
+    ]
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "head",
+    null,
+    [
+     "var",
+     "l"
+    ]
+   ]
+  ],
+  [
+   "lit",
+   2
+  ]
+ ],
+ "level": 0,
+ "asked": 4,
+ "explored": 0,
+ "tension": [
+  5.561,
+  9.016,
+  9.016,
+  9.016,
+  23.608,
+  23.608
+ ],
+ "wall": 62.8,
+ "cpu": 62.6,
+ "proven": true,
+ "invented": [
+  {
+   "id": 14,
+   "subject": "code",
+   "body": "spring(miri(_))"
+  }
+ ],
+ "reused": [
+  8,
+  13
+ ],
+ "words_heard": [
+  "sum"
+ ],
+ "said": [
+  "dupe"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.22,
+  "ledger": 0.0,
+  "actions": 0.06,
+  "ask": 0.0,
+  "doubt": 0.07,
+  "imagine": 62.35,
+  "prove": 0.02
+ },
+ "built": [
+  {
+   "id": 13,
+   "name": "miri",
+   "words": "make what spring turns into the answer",
+   "body": "foldn(\u03bba,e. add(e, a), 0, _)"
+  }
+ ],
+ "peak_mb": 5144.390625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "spring(miri(l))",
+ "verdict": "proven right",
+ "audit": 313,
+ "imagined_by": {
+  "method": "wish",
+  "moves": "wish",
+  "origin": "wished"
+ },
+ "configs": [
+  "ask",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "I wish I could make what spring turns into the answer: I build it (miri = foldn(\u03bba,e. add(e, a), 0, _)) and use it.",
+  "I imagine by wish: 1 new ideas.",
+  "I wish my functions could see the whole problem, not only the part they are given. I grow that way of seeing, and 1 ideas fit this, first foldn(\u03bba,e. miri(l), 0, tail(l)).",
+  "I break it into 1 step (nope(miri(l))) and the rest follows: sub(nope(miri(l)), head(range(nope(miri(l))))).",
+  "I imagine by compose then wish then step: 2 new ideas.",
+  "My audit passes spring(miri(l)) on 313 fresh inputs.",
+  "It rings through the Field: 7 ways of working and imagining that led here are strengthened."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

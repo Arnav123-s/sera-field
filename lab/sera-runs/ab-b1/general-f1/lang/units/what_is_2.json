@@ -1,0 +1,88 @@
+{
+ "task": "what_is 2",
+ "subject": "language",
+ "kind": "exact:list(list)->list",
+ "teaching": true,
+ "steps": 8,
+ "answer": [
+  "nil",
+  null
+ ],
+ "others": [],
+ "level": 4,
+ "asked": 3,
+ "explored": 0,
+ "tension": [
+  4.398,
+  16.653,
+  16.653,
+  18.337,
+  22.101,
+  22.101,
+  22.101,
+  22.101,
+  0.0
+ ],
+ "wall": 1800.8,
+ "cpu": 1797.8,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "what",
+  "is"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 1.02,
+  "ledger": 0.0,
+  "actions": 0.13,
+  "grow": 292.93,
+  "doubt": 0.98,
+  "ask": 0.02,
+  "imagine": 1491.26
+ },
+ "built": [],
+ "peak_mb": 9652.0859375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "grow",
+  "ask",
+  "ask+grow",
+  "ask+grow+imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine+grow"
+ ],
+ "say": [
+  "I think bigger (level 1).",
+  "I think bigger (level 2).",
+  "I think bigger (level 3).",
+  "I imagine by step then wish then step: 0 new ideas.",
+  "I imagine by wish then compose then wish then wish: 0 new ideas.",
+  "I imagine by compose then step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I think bigger (level 4).",
+  "In what_is 2 my best idea is [], but I cannot finish (none of my ideas fits the examples, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('nil', None)",
+ "stage": "teach",
+ "english": [
+  "story: dardanian is a native of ancient troy; classicistic is of or relating to classicism; blaeberry is erect european blueberry having solitary flowers and berries; baccivorous is feeding on berries | question: what is dardanian -> a native of ancient troy",
+  "story: buirdly is muscular and heavily built; casuarinaceae is one genus casuarina; pesticide is a chemical used to kill pests rodents or | question: what is pesticide -> a chemical used to kill pests rodents or",
+  "story: buirdly is muscular and heavily built; habit is an established custom; boutique is a shop that sells clothes and jewelry; unhealthful is not sanitary or healthful | question: what is boutique -> a shop that sells clothes and jewelry"
+ ]
+}

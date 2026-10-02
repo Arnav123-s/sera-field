@@ -1,0 +1,137 @@
+{
+ "task": "first 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 5,
+ "answer": [
+  "head",
+  null,
+  [
+   "head",
+   "list",
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "lit",
+   118
+  ],
+  [
+   "lit",
+   120
+  ],
+  [
+   "one",
+   null
+  ],
+  [
+   "zero",
+   null
+  ],
+  [
+   "add",
+   null,
+   [
+    "lit",
+    118
+   ],
+   [
+    "lit",
+    118
+   ]
+  ]
+ ],
+ "level": 1,
+ "asked": 2,
+ "explored": 0,
+ "tension": [
+  3.957,
+  3.957,
+  3.957,
+  11.788,
+  11.788
+ ],
+ "wall": 840.0,
+ "cpu": 836.9,
+ "proven": true,
+ "invented": [
+  {
+   "id": 1,
+   "subject": "language",
+   "body": "head(head(tail(_)))"
+  },
+  {
+   "id": 2,
+   "subject": "language",
+   "inner": "the part it works on",
+   "body": "head(tail(_))"
+  }
+ ],
+ "reused": [],
+ "words_heard": [
+  "first",
+  "word"
+ ],
+ "said": [
+  "first"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.0,
+  "ledger": 0.0,
+  "actions": 0.0,
+  "ask": 0.0,
+  "doubt": 0.0,
+  "imagine": 839.86,
+  "grow": 0.03,
+  "prove": 0.02
+ },
+ "built": [],
+ "peak_mb": 7778.1875,
+ "peak_mb_by": {
+  "other": 0.9,
+  "ask": 1.2,
+  "imagine": 7444.4,
+  "grow": 0.1,
+  "prove": 0.1
+ },
+ "memory_stops": 0,
+ "claim": "head(head(tail(g)))",
+ "verdict": "proven right",
+ "audit": 361,
+ "configs": [
+  "ask",
+  "imagine",
+  "ask+grow",
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "I imagine by step then wish: 0 new ideas.",
+  "I imagine by wish then step: 0 new ideas.",
+  "I think bigger (level 1).",
+  "My audit passes head(head(tail(g))) on 361 fresh inputs.",
+  "It rings through the Field: 6 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('head', None, ('head', 'list', ('tail', None, ('var', 'g'))))",
+ "stage": "teach",
+ "english": [
+  "story: daniel went to the hallway | question: what is the first word -> daniel",
+  "story: john travelled to the garden | question: what is the first word -> john",
+  "story: daniel went to the kitchen | question: what is the first word -> daniel"
+ ]
+}

@@ -1,0 +1,726 @@
+{
+  "git_short_sha": "076e696",
+  "cpu_count": 16,
+  "python_version": "3.12.14",
+  "numba_version": "0.67.0",
+  "situations": 6,
+  "worlds": [
+    {
+      "force": "rubbing",
+      "index": 900,
+      "situations": 6,
+      "throws": 12,
+      "best_family": "(('speed', 'straight'),)",
+      "truth_family": "(('speed', 'straight'),)",
+      "warmup_seconds": 8.05932159999793,
+      "timings_seconds": {
+        "ledger": 21.808596899994882,
+        "per_throw": 1.8173830749995734,
+        "certify_best": 0.0014516000082949176,
+        "certify_truth": 0.0011642000026768073,
+        "band_of": 1.4258740000077523,
+        "something_else": 1.2884027999971295,
+        "checker": 21.464741200004937,
+        "total": 45.99023070001567
+      }
+    },
+    {
+      "force": "spring",
+      "index": 901,
+      "situations": 6,
+      "throws": 12,
+      "best_family": "(('position', 'straight'),)",
+      "truth_family": "(('position', 'straight'),)",
+      "warmup_seconds": 2.71506619999127,
+      "timings_seconds": {
+        "ledger": 32.48991999999271,
+        "per_throw": 2.707493333332726,
+        "certify_best": 0.004330399999162182,
+        "certify_truth": 0.0011301000049570575,
+        "band_of": 1.3247386000002734,
+        "something_else": 1.1816185999923619,
+        "checker": 30.8172682000004,
+        "total": 65.81900589998986
+      }
+    },
+    {
+      "force": "water drag",
+      "index": 902,
+      "situations": 6,
+      "throws": 12,
+      "best_family": "(('speed', 'growing'),)",
+      "truth_family": "(('speed', 'growing'),)",
+      "warmup_seconds": 1.2917314000078477,
+      "timings_seconds": {
+        "ledger": 20.89293380000163,
+        "per_throw": 1.7410778166668024,
+        "certify_best": 4.296209599997383,
+        "certify_truth": 1.8483492999948794,
+        "band_of": 1.9821626000048127,
+        "something_else": 1.7029708000045503,
+        "checker": 30.688464199993177,
+        "total": 61.41109029999643
+      }
+    },
+    {
+      "force": "swing",
+      "index": 903,
+      "situations": 6,
+      "throws": 12,
+      "best_family": "(('position', 'wave'),)",
+      "truth_family": "(('position', 'wave'),)",
+      "warmup_seconds": 3.900256199995056,
+      "timings_seconds": {
+        "ledger": 31.20497730000352,
+        "per_throw": 2.6004147750002935,
+        "certify_best": 0.0009184999944409356,
+        "certify_truth": 0.0007737999985693023,
+        "band_of": 2.1103698999941116,
+        "something_else": 2.0918564000021433,
+        "checker": 38.12325980000605,
+        "total": 73.53215569999884
+      }
+    },
+    {
+      "force": "x*v force",
+      "index": 904,
+      "situations": 6,
+      "throws": 12,
+      "best_family": "(('speed', 'growing'), ('speed', 'cubic'))",
+      "truth_family": "None",
+      "warmup_seconds": 1.8701065000059316,
+      "timings_seconds": {
+        "ledger": 41.45484810000926,
+        "per_throw": 3.4545706750007716,
+        "certify_best": 1.857775500000571,
+        "certify_truth": null,
+        "band_of": 4.428316100005759,
+        "something_else": 3.101936699997168,
+        "checker": 39.34555919999548,
+        "total": 90.18843560000823
+      }
+    },
+    {
+      "force": "motor",
+      "index": 905,
+      "situations": 6,
+      "throws": 12,
+      "best_family": "()",
+      "truth_family": "None",
+      "warmup_seconds": 3.3062569000030635,
+      "timings_seconds": {
+        "ledger": 31.225726000004215,
+        "per_throw": 2.6021438333336846,
+        "certify_best": 0.010073099998407997,
+        "certify_truth": null,
+        "band_of": 4.762480500008678,
+        "something_else": 3.3934392999944976,
+        "checker": 35.59455879998859,
+        "total": 74.98627769999439
+      }
+    },
+    {
+      "force": "none",
+      "index": 906,
+      "situations": 6,
+      "throws": 12,
+      "best_family": "()",
+      "truth_family": "()",
+      "warmup_seconds": 1.564293400006136,
+      "timings_seconds": {
+        "ledger": 15.156885699994746,
+        "per_throw": 1.2630738083328954,
+        "certify_best": 1.7610534999985248,
+        "certify_truth": 1.7951002000045264,
+        "band_of": 1.7667834000021685,
+        "something_else": 1.3302760999940801,
+        "checker": 16.550987900001928,
+        "total": 38.361086799995974
+      }
+    }
+  ],
+  "spring_profile_run": {
+    "force": "spring",
+    "index": 901,
+    "situations": 6,
+    "throws": 12,
+    "best_family": "(('position', 'straight'),)",
+    "truth_family": "(('position', 'straight'),)",
+    "warmup_seconds": 2.770682399990619,
+    "timings_seconds": {
+      "ledger": 33.73006799998984,
+      "per_throw": 2.8108389999991537,
+      "certify_best": 0.001344699994660914,
+      "certify_truth": 0.0011481999972602352,
+      "band_of": 1.2872537000075681,
+      "something_else": 1.1071045999997295,
+      "checker": 31.527913400001125,
+      "total": 67.65483259999019
+    }
+  },
+  "profile_total_seconds": 67.65331520000001,
+  "profile_top_40_tottime": [
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\likelihood.py:94",
+      "function": "_jac",
+      "ncalls": "49684",
+      "tottime": 34.7610249,
+      "cumtime": 35.5404968
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\likelihood.py:88",
+      "function": "_sim",
+      "ncalls": "106946",
+      "tottime": 20.150245700000003,
+      "cumtime": 21.413176800000002
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\likelihood.py:206",
+      "function": "refine",
+      "ncalls": "3770",
+      "tottime": 2.8249713,
+      "cumtime": 51.2746858
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\likelihood.py:190",
+      "function": "objective",
+      "ncalls": "106934",
+      "tottime": 2.0845125,
+      "cumtime": 23.4952289
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\linalg\\_linalg.py:382",
+      "function": "solve",
+      "ncalls": "49616",
+      "tottime": 0.9993093000000001,
+      "cumtime": 2.272101
+    },
+    {
+      "file_line": "~:0",
+      "function": "<built-in method numpy.array>",
+      "ncalls": "483177",
+      "tottime": 0.693844,
+      "cumtime": 0.693844
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\worlds.py:31",
+      "function": "arrays",
+      "ncalls": "158032",
+      "tottime": 0.5981123,
+      "cumtime": 1.5369785
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\lib\\_twodim_base_impl.py:258",
+      "function": "diag",
+      "ncalls": "95466",
+      "tottime": 0.5260542,
+      "cumtime": 1.0394427000000002
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\likelihood.py:167",
+      "function": "_laplace",
+      "ncalls": "2368",
+      "tottime": 0.4026212,
+      "cumtime": 67.28616120000001
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\likelihood.py:198",
+      "function": "<lambda>",
+      "ncalls": "55920",
+      "tottime": 0.3993456,
+      "cumtime": 12.450851100000001
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\likelihood.py:105",
+      "function": "linear_guess",
+      "ncalls": "1402",
+      "tottime": 0.3321811,
+      "cumtime": 0.5872765000000001
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numba\\core\\serialize.py:30",
+      "function": "_numba_unpickle",
+      "ncalls": "313260",
+      "tottime": 0.2783675,
+      "cumtime": 0.2783675
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\linalg\\_linalg.py:207",
+      "function": "_commonType",
+      "ncalls": "60492",
+      "tottime": 0.267755,
+      "cumtime": 0.5340109000000001
+    },
+    {
+      "file_line": "~:0",
+      "function": "<method 'diagonal' of 'numpy.ndarray' objects>",
+      "ncalls": "48218",
+      "tottime": 0.15598520000000002,
+      "cumtime": 0.15598520000000002
+    },
+    {
+      "file_line": "~:0",
+      "function": "<built-in method numpy.arange>",
+      "ncalls": "51088",
+      "tottime": 0.14728170000000002,
+      "cumtime": 0.14728170000000002
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\worlds.py:21",
+      "function": "hand",
+      "ncalls": "158032",
+      "tottime": 0.1419658,
+      "cumtime": 0.2692022
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\linalg\\_linalg.py:182",
+      "function": "_makearray",
+      "ncalls": "106774",
+      "tottime": 0.140992,
+      "cumtime": 0.22437490000000002
+    },
+    {
+      "file_line": "~:0",
+      "function": "<built-in method math.tanh>",
+      "ncalls": "158032",
+      "tottime": 0.1272364,
+      "cumtime": 0.1272364
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\_core\\_ufunc_config.py:448",
+      "function": "__enter__",
+      "ncalls": "55756",
+      "tottime": 0.1150521,
+      "cumtime": 0.26275380000000004
+    },
+    {
+      "file_line": "~:0",
+      "function": "<built-in method builtins.max>",
+      "ncalls": "116198",
+      "tottime": 0.1142051,
+      "cumtime": 0.1150324
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\_core\\fromnumeric.py:1695",
+      "function": "diagonal",
+      "ncalls": "48218",
+      "tottime": 0.10393580000000001,
+      "cumtime": 0.3048641
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\linalg\\_linalg.py:557",
+      "function": "inv",
+      "ncalls": "4738",
+      "tottime": 0.1032967,
+      "cumtime": 0.1924838
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\linalg\\_linalg.py:187",
+      "function": "isComplexType",
+      "ncalls": "172002",
+      "tottime": 0.09464310000000001,
+      "cumtime": 0.13938440000000002
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\linalg\\_linalg.py:2442",
+      "function": "lstsq",
+      "ncalls": "1402",
+      "tottime": 0.0928544,
+      "cumtime": 0.14606460000000002
+    },
+    {
+      "file_line": "~:0",
+      "function": "<built-in method builtins.min>",
+      "ncalls": "3843",
+      "tottime": 0.0912729,
+      "cumtime": 63.8327189
+    },
+    {
+      "file_line": "~:0",
+      "function": "<built-in method builtins.issubclass>",
+      "ncalls": "298332",
+      "tottime": 0.09120460000000001,
+      "cumtime": 0.09120460000000001
+    },
+    {
+      "file_line": "~:0",
+      "function": "<built-in method numpy._core._multiarray_umath._make_extobj>",
+      "ncalls": "55756",
+      "tottime": 0.091003,
+      "cumtime": 0.091003
+    },
+    {
+      "file_line": "~:0",
+      "function": "<built-in method numpy.zeros>",
+      "ncalls": "53440",
+      "tottime": 0.0889539,
+      "cumtime": 0.0889539
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\linalg\\_linalg.py:201",
+      "function": "_realType",
+      "ncalls": "117648",
+      "tottime": 0.0857242,
+      "cumtime": 0.14160240000000002
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\linalg\\_linalg.py:256",
+      "function": "_assert_stacked_square",
+      "ncalls": "59090",
+      "tottime": 0.0801801,
+      "cumtime": 0.0801801
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\likelihood.py:45",
+      "function": "n_coef",
+      "ncalls": "54990",
+      "tottime": 0.0796251,
+      "cumtime": 0.0796251
+    },
+    {
+      "file_line": "~:0",
+      "function": "<method 'astype' of 'numpy.ndarray' objects>",
+      "ncalls": "58602",
+      "tottime": 0.0792708,
+      "cumtime": 0.0792708
+    },
+    {
+      "file_line": "~:0",
+      "function": "<method 'reset' of '_contextvars.ContextVar' objects>",
+      "ncalls": "55756",
+      "tottime": 0.0783894,
+      "cumtime": 0.0783894
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\linalg\\_linalg.py:2296",
+      "function": "slogdet",
+      "ncalls": "4736",
+      "tottime": 0.07301550000000001,
+      "cumtime": 0.1522457
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\_core\\_ufunc_config.py:464",
+      "function": "__exit__",
+      "ncalls": "55756",
+      "tottime": 0.061294400000000006,
+      "cumtime": 0.1396838
+    },
+    {
+      "file_line": "~:0",
+      "function": "<built-in method builtins.len>",
+      "ncalls": "156632",
+      "tottime": 0.058842200000000004,
+      "cumtime": 0.058842200000000004
+    },
+    {
+      "file_line": "~:0",
+      "function": "<built-in method numpy.asanyarray>",
+      "ncalls": "147940",
+      "tottime": 0.0582507,
+      "cumtime": 0.0582507
+    },
+    {
+      "file_line": "~:0",
+      "function": "<built-in method numpy.asarray>",
+      "ncalls": "121276",
+      "tottime": 0.058053600000000004,
+      "cumtime": 0.058053600000000004
+    },
+    {
+      "file_line": "~:0",
+      "function": "<method 'get' of 'dict' objects>",
+      "ncalls": "119668",
+      "tottime": 0.057005,
+      "cumtime": 0.057005
+    },
+    {
+      "file_line": "~:0",
+      "function": "<method 'set' of '_contextvars.ContextVar' objects>",
+      "ncalls": "55756",
+      "tottime": 0.056698700000000005,
+      "cumtime": 0.056698700000000005
+    }
+  ],
+  "profile_top_40_cumtime": [
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\likelihood.py:145",
+      "function": "step",
+      "ncalls": "1632",
+      "tottime": 0.050425700000000004,
+      "cumtime": 67.4593767
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\likelihood.py:167",
+      "function": "_laplace",
+      "ncalls": "2368",
+      "tottime": 0.4026212,
+      "cumtime": 67.28616120000001
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\likelihood.py:158",
+      "function": "<genexpr>",
+      "ncalls": "3532",
+      "tottime": 0.0183097,
+      "cumtime": 65.5727318
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\truth.py:95",
+      "function": "add",
+      "ncalls": "24",
+      "tottime": 0.012337200000000001,
+      "cumtime": 65.2461914
+    },
+    {
+      "file_line": "~:0",
+      "function": "<built-in method builtins.min>",
+      "ncalls": "3843",
+      "tottime": 0.0912729,
+      "cumtime": 63.8327189
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\likelihood.py:232",
+      "function": "<genexpr>",
+      "ncalls": "6138",
+      "tottime": 0.014305900000000002,
+      "cumtime": 51.288991700000004
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\likelihood.py:206",
+      "function": "refine",
+      "ncalls": "3770",
+      "tottime": 2.8249713,
+      "cumtime": 51.2746858
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\likelihood.py:94",
+      "function": "_jac",
+      "ncalls": "49684",
+      "tottime": 34.7610249,
+      "cumtime": 35.5404968
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\checker.py:29",
+      "function": "check",
+      "ncalls": "1",
+      "tottime": 9.750000000000001e-05,
+      "cumtime": 31.527810100000004
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\likelihood.py:190",
+      "function": "objective",
+      "ncalls": "106934",
+      "tottime": 2.0845125,
+      "cumtime": 23.4952289
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\likelihood.py:88",
+      "function": "_sim",
+      "ncalls": "106946",
+      "tottime": 20.150245700000003,
+      "cumtime": 21.413176800000002
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\likelihood.py:198",
+      "function": "<lambda>",
+      "ncalls": "55920",
+      "tottime": 0.3993456,
+      "cumtime": 12.450851100000001
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\linalg\\_linalg.py:382",
+      "function": "solve",
+      "ncalls": "49616",
+      "tottime": 0.9993093000000001,
+      "cumtime": 2.272101
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\truth.py:72",
+      "function": "prequential",
+      "ncalls": "2",
+      "tottime": 0.0001653,
+      "cumtime": 2.2257659000000003
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\worlds.py:31",
+      "function": "arrays",
+      "ncalls": "158032",
+      "tottime": 0.5981123,
+      "cumtime": 1.5369785
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\truth.py:151",
+      "function": "band_of",
+      "ncalls": "1",
+      "tottime": 0.013508000000000001,
+      "cumtime": 1.2865250000000001
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\truth.py:241",
+      "function": "something_else",
+      "ncalls": "1",
+      "tottime": 3.29e-05,
+      "cumtime": 1.1070893000000002
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\lib\\_twodim_base_impl.py:258",
+      "function": "diag",
+      "ncalls": "95466",
+      "tottime": 0.5260542,
+      "cumtime": 1.0394427000000002
+    },
+    {
+      "file_line": "~:0",
+      "function": "<built-in method numpy.array>",
+      "ncalls": "483177",
+      "tottime": 0.693844,
+      "cumtime": 0.693844
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\likelihood.py:105",
+      "function": "linear_guess",
+      "ncalls": "1402",
+      "tottime": 0.3321811,
+      "cumtime": 0.5872765000000001
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\linalg\\_linalg.py:207",
+      "function": "_commonType",
+      "ncalls": "60492",
+      "tottime": 0.267755,
+      "cumtime": 0.5340109000000001
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\_core\\fromnumeric.py:1695",
+      "function": "diagonal",
+      "ncalls": "48218",
+      "tottime": 0.10393580000000001,
+      "cumtime": 0.3048641
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numba\\core\\serialize.py:30",
+      "function": "_numba_unpickle",
+      "ncalls": "313260",
+      "tottime": 0.2783675,
+      "cumtime": 0.2783675
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\worlds.py:21",
+      "function": "hand",
+      "ncalls": "158032",
+      "tottime": 0.1419658,
+      "cumtime": 0.2692022
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\_core\\_ufunc_config.py:448",
+      "function": "__enter__",
+      "ncalls": "55756",
+      "tottime": 0.1150521,
+      "cumtime": 0.26275380000000004
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\linalg\\_linalg.py:182",
+      "function": "_makearray",
+      "ncalls": "106774",
+      "tottime": 0.140992,
+      "cumtime": 0.22437490000000002
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\linalg\\_linalg.py:557",
+      "function": "inv",
+      "ncalls": "4738",
+      "tottime": 0.1032967,
+      "cumtime": 0.1924838
+    },
+    {
+      "file_line": "~:0",
+      "function": "<method 'diagonal' of 'numpy.ndarray' objects>",
+      "ncalls": "48218",
+      "tottime": 0.15598520000000002,
+      "cumtime": 0.15598520000000002
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\linalg\\_linalg.py:2296",
+      "function": "slogdet",
+      "ncalls": "4736",
+      "tottime": 0.07301550000000001,
+      "cumtime": 0.1522457
+    },
+    {
+      "file_line": "~:0",
+      "function": "<built-in method numpy.arange>",
+      "ncalls": "51088",
+      "tottime": 0.14728170000000002,
+      "cumtime": 0.14728170000000002
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\linalg\\_linalg.py:2442",
+      "function": "lstsq",
+      "ncalls": "1402",
+      "tottime": 0.0928544,
+      "cumtime": 0.14606460000000002
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\likelihood.py:258",
+      "function": "fit",
+      "ncalls": "2",
+      "tottime": 0.0003933,
+      "cumtime": 0.14603660000000002
+    },
+    {
+      "file_line": "(review notes, not published)\\ccops5\\core\\likelihood.py:278",
+      "function": "assemble",
+      "ncalls": "6",
+      "tottime": 0.0071075,
+      "cumtime": 0.14468140000000002
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\linalg\\_linalg.py:201",
+      "function": "_realType",
+      "ncalls": "117648",
+      "tottime": 0.0857242,
+      "cumtime": 0.14160240000000002
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\_core\\_ufunc_config.py:464",
+      "function": "__exit__",
+      "ncalls": "55756",
+      "tottime": 0.061294400000000006,
+      "cumtime": 0.1396838
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\linalg\\_linalg.py:187",
+      "function": "isComplexType",
+      "ncalls": "172002",
+      "tottime": 0.09464310000000001,
+      "cumtime": 0.13938440000000002
+    },
+    {
+      "file_line": "~:0",
+      "function": "<built-in method math.tanh>",
+      "ncalls": "158032",
+      "tottime": 0.1272364,
+      "cumtime": 0.1272364
+    },
+    {
+      "file_line": "~:0",
+      "function": "<built-in method builtins.max>",
+      "ncalls": "116198",
+      "tottime": 0.1142051,
+      "cumtime": 0.1150324
+    },
+    {
+      "file_line": "D:\\ai\\labs\\ccops5-sera-lab\\.venv\\Lib\\site-packages\\numpy\\lib\\_index_tricks_impl.py:32",
+      "function": "ix_",
+      "ncalls": "2428",
+      "tottime": 0.033890500000000004,
+      "cumtime": 0.09333380000000001
+    },
+    {
+      "file_line": "~:0",
+      "function": "<built-in method builtins.issubclass>",
+      "ncalls": "298332",
+      "tottime": 0.09120460000000001,
+      "cumtime": 0.09120460000000001
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+ "task": "first 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 6,
+ "answer": [
+  "c",
+  28,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   8,
+   [
+    "c",
+    28,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   12,
+   [
+    "c",
+    23,
+    [
+     "c",
+     17,
+     [
+      "lit",
+      118
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   23,
+   [
+    "c",
+    2,
+    [
+     "c",
+     12,
+     [
+      "c",
+      17,
+      [
+       "lit",
+       118
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "lit",
+   118
+  ],
+  [
+   "lit",
+   120
+  ]
+ ],
+ "level": 3,
+ "asked": 2,
+ "explored": 0,
+ "tension": [
+  3.963,
+  3.963,
+  9.675,
+  6.939,
+  6.939,
+  6.939
+ ],
+ "wall": 386.8,
+ "cpu": 385.3,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  28
+ ],
+ "words_heard": [
+  "first",
+  "word"
+ ],
+ "said": [
+  "first"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 3.25,
+  "ledger": 0.0,
+  "actions": 0.07,
+  "ask": 0.02,
+  "doubt": 0.4,
+  "imagine": 10.35,
+  "grow": 363.1,
+  "prove": 0.05
+ },
+ "built": [
+  {
+   "id": 28,
+   "name": "peno",
+   "words": "make what spring turns into the answer",
+   "body": "head(head(tail(_)))"
+  }
+ ],
+ "peak_mb": 3470.7890625,
+ "peak_mb_by": {
+  "other": 136.9,
+  "beliefs": 0.1,
+  "ask": 1.2,
+  "imagine": 157.5,
+  "doubt": 0.1,
+  "grow": 2835.9
+ },
+ "memory_stops": 0,
+ "claim": "peno(g)",
+ "verdict": "proven right",
+ "audit": 250,
+ "configs": [
+  "ask",
+  "ask+imagine",
+  "grow",
+  "prove+grow+imagine",
+  "grow",
+  "leave"
+ ],
+ "say": [
+  "I wish I could make what spring turns into the answer: I build it (peno = head(head(tail(_)))) and use it.",
+  "I imagine by wish then compose then compose: 1 new ideas.",
+  "I imagine by wish then compose then wish then compose: 0 new ideas.",
+  "I think bigger (level 1).",
+  "My audit passes peno(g) on 250 fresh inputs.",
+  "I think bigger (level 2).",
+  "I imagine by compose: 0 new ideas.",
+  "It rings through the Field: 6 ways of working and imagining that led here are strengthened.",
+  "I think bigger (level 3)."
+ ],
+ "answer_repr": "('c', 28, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: daniel journeyed to the bedroom | question: what is the first word -> daniel",
+  "story: mary went to the office | question: what is the first word -> mary",
+  "story: sandra moved to the hallway | question: what is the first word -> sandra"
+ ]
+}

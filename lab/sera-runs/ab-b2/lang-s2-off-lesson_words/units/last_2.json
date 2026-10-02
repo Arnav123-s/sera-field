@@ -1,0 +1,110 @@
+{
+ "task": "last 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  4,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   3,
+   [
+    "c",
+    2,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "lit",
+   2
+  ],
+  [
+   "lit",
+   3
+  ],
+  [
+   "lit",
+   4
+  ]
+ ],
+ "level": 0,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  3.467,
+  3.187
+ ],
+ "wall": 3.8,
+ "cpu": 3.8,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  4
+ ],
+ "words_heard": [
+  "last",
+  "word"
+ ],
+ "said": [
+  "fotu"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.0,
+  "ledger": 0.0,
+  "actions": 0.0,
+  "ask": 0.0,
+  "prove": 0.02,
+  "imagine": 0.0,
+  "doubt": 0.0
+ },
+ "built": [],
+ "peak_mb": 9664.890625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "fotu(g)",
+ "verdict": "proven right",
+ "audit": 230,
+ "configs": [
+  "ask+prove+imagine",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: first (17.22), fotu (11.61).",
+  "My audit passes fotu(g) on 230 fresh inputs.",
+  "I imagine by compose: 1 new ideas.",
+  "I keep 2 of my imagined ideas in mind and let 1 go.",
+  "It rings through the Field: 1 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('c', 4, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: travelled john garden bedroom | question: what is the last word -> bedroom",
+  "story: hallway the went | question: what is the last word -> went",
+  "story: hallway moved office hallway bathroom mary | question: what is the last word -> mary"
+ ]
+}

@@ -1,0 +1,104 @@
+{
+ "task": "first 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 3,
+ "answer": [
+  "c",
+  28,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "lit",
+   118
+  ],
+  [
+   "lit",
+   120
+  ],
+  [
+   "one",
+   null
+  ],
+  [
+   "zero",
+   null
+  ],
+  [
+   "c",
+   10,
+   [
+    "c",
+    28,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "level": 0,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  2.718,
+  2.718,
+  2.718
+ ],
+ "wall": 13.4,
+ "cpu": 13.4,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  28
+ ],
+ "words_heard": [
+  "first",
+  "word"
+ ],
+ "said": [
+  "first"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.06,
+  "ledger": 0.0,
+  "actions": 0.03,
+  "prove": 0.03,
+  "doubt": 0.04,
+  "ask": 0.0
+ },
+ "built": [],
+ "peak_mb": 3470.7890625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "first(g)",
+ "verdict": "proven right",
+ "audit": 250,
+ "configs": [
+  "prove",
+  "ask",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: first (8.79).",
+  "My audit passes first(g) on 250 fresh inputs."
+ ],
+ "answer_repr": "('c', 28, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: mary journeyed to the kitchen | question: what is the first word -> mary",
+  "story: mary travelled to the bedroom | question: what is the first word -> mary",
+  "story: mary journeyed to the hallway | question: what is the first word -> mary"
+ ]
+}

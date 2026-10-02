@@ -1,0 +1,112 @@
+{
+ "task": "rail: wind 2",
+ "subject": "physics",
+ "kind": "strengths:num->num",
+ "teaching": true,
+ "steps": 6,
+ "answer": null,
+ "others": null,
+ "level": 3,
+ "asked": 4,
+ "explored": 3,
+ "tension": [
+  11.256,
+  11.338,
+  41.576,
+  41.561,
+  41.564,
+  41.565
+ ],
+ "wall": 118.1,
+ "cpu": 117.4,
+ "proven": true,
+ "invented": [
+  {
+   "id": 1,
+   "subject": "physics",
+   "input": "time",
+   "how": "curve",
+   "body": "tab"
+  }
+ ],
+ "reused": [],
+ "words_heard": [
+  "always",
+  "wind"
+ ],
+ "said": [
+  "dudu"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.53,
+  "ledger": 15.47,
+  "actions": 59.28,
+  "prove": 41.67,
+  "imagine": 0.01,
+  "grow": 0.5,
+  "doubt": 0.65,
+  "explore": 0.0,
+  "ask": 0.0
+ },
+ "built": [],
+ "peak_mb": 496.48046875,
+ "peak_mb_by": {
+  "other": 0.1,
+  "beliefs": 1.4,
+  "ledger": 40.0,
+  "actions": 0.8,
+  "prove": 31.8,
+  "doubt": 14.2,
+  "grow": 1.5
+ },
+ "memory_stops": 0,
+ "claim": "a free curve in time (33 knots)",
+ "band": 0.06863143289906906,
+ "verdict": "proven right",
+ "gap": 0.0,
+ "signs": {},
+ "certified": [
+  {
+   "part": 0,
+   "as": "curve",
+   "on": "time"
+  }
+ ],
+ "question": {
+  "text": "The 8 things here have only 3 kinds of mass (1.551, 1.645, 2.337). Why so few? What makes a mass?",
+  "things": 8,
+  "kinds": 3,
+  "masses": [
+   1.551,
+   1.645,
+   2.337
+  ]
+ },
+ "attributed": true,
+ "configs": [
+  "prove+imagine+grow",
+  "explore+grow",
+  "grow+ask",
+  "explore",
+  "explore",
+  "leave"
+ ],
+ "say": [
+  "The judge accepts: a free curve in time (33 knots) up to 0.2 where I looked.",
+  "I imagine by refine: 1 new ideas.",
+  "I keep what was right: 1 of time explains 263350 nats; I build on it and look for the rest.",
+  "I imagine by keep then refine: 0 new ideas.",
+  "I keep 0 of my imagined ideas in mind and let 1 go.",
+  "I think bigger (level 1).",
+  "I think bigger (level 2).",
+  "I think bigger (level 3)."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

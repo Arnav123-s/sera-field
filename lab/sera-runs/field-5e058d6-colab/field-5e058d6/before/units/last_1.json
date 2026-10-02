@@ -1,0 +1,130 @@
+{
+ "task": "last 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 4,
+ "answer": [
+  "c",
+  3,
+  [
+   "c",
+   2,
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "lit",
+   2
+  ],
+  [
+   "lit",
+   3
+  ],
+  [
+   "lit",
+   4
+  ],
+  [
+   "lit",
+   5
+  ]
+ ],
+ "level": 0,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  1.781,
+  1.781,
+  8.078,
+  8.078
+ ],
+ "wall": 1204.1,
+ "cpu": 1198.7,
+ "proven": true,
+ "invented": [
+  {
+   "id": 4,
+   "subject": "language",
+   "body": "kalo(sare(_))"
+  }
+ ],
+ "reused": [
+  3,
+  2
+ ],
+ "words_heard": [
+  "last",
+  "word"
+ ],
+ "said": [
+  "lolo"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.0,
+  "ledger": 0.0,
+  "actions": 0.0,
+  "ask": 0.0,
+  "doubt": 0.0,
+  "imagine": 1203.97,
+  "prove": 0.02
+ },
+ "built": [
+  {
+   "id": 3,
+   "name": "kalo",
+   "words": "finish what sare starts",
+   "body": "foldn(\u03bba,e. e, 4, _)"
+  }
+ ],
+ "peak_mb": 9450.69921875,
+ "peak_mb_by": {
+  "imagine": 9106.1
+ },
+ "memory_stops": 0,
+ "claim": "kalo(sare(g))",
+ "verdict": "proven right",
+ "audit": 298,
+ "imagined_by": {
+  "method": "wish",
+  "moves": "wish",
+  "origin": "wished"
+ },
+ "configs": [
+  "ask",
+  "imagine",
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "I wish I could finish what sare starts: I build it (kalo = foldn(\u03bba,e. e, 4, _)) and use it.",
+  "I imagine by wish: 1 new ideas.",
+  "I imagine by wish then compose: 0 new ideas.",
+  "My audit passes kalo(sare(g)) on 298 fresh inputs."
+ ],
+ "answer_repr": "('c', 3, ('c', 2, ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: to bathroom went mary bedroom | question: what is the last word -> bedroom",
+  "story: the moved kitchen bathroom | question: what is the last word -> bathroom",
+  "story: garden journeyed bathroom | question: what is the last word -> bathroom"
+ ]
+}

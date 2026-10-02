@@ -1,0 +1,142 @@
+{
+ "task": "list: double",
+ "subject": "code",
+ "kind": "exact:list->list",
+ "teaching": true,
+ "steps": 3,
+ "answer": [
+  "map",
+  null,
+  [
+   "lam",
+   "e",
+   [
+    "c",
+    23,
+    [
+     "var",
+     "e"
+    ]
+   ]
+  ],
+  [
+   "var",
+   "l"
+  ]
+ ],
+ "others": [
+  [
+   "var",
+   "l"
+  ],
+  [
+   "nil",
+   null
+  ],
+  [
+   "c",
+   11,
+   [
+    "var",
+    "l"
+   ]
+  ],
+  [
+   "c",
+   21,
+   [
+    "var",
+    "l"
+   ]
+  ],
+  [
+   "tail",
+   null,
+   [
+    "var",
+    "l"
+   ]
+  ]
+ ],
+ "level": 1,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  3.789,
+  14.359,
+  14.359
+ ],
+ "wall": 264.4,
+ "cpu": 263.0,
+ "proven": true,
+ "invented": [
+  {
+   "id": 24,
+   "subject": "code",
+   "body": "map(\u03bbe. kape(e), _)"
+  }
+ ],
+ "reused": [
+  23
+ ],
+ "words_heard": [
+  "double"
+ ],
+ "said": [
+  "nosa"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.73,
+  "ledger": 0.0,
+  "actions": 0.06,
+  "ask": 0.0,
+  "imagine": 251.85,
+  "grow": 6.91,
+  "doubt": 0.2,
+  "prove": 0.03
+ },
+ "built": [
+  {
+   "id": 23,
+   "name": "kape",
+   "words": "make each element what it becomes",
+   "body": "add(_, _)"
+  }
+ ],
+ "peak_mb": 6668.0234375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "map(\u03bbe. kape(e), l)",
+ "verdict": "proven right",
+ "audit": 481,
+ "imagined_by": {
+  "method": "wish+compose",
+  "moves": "wish+compose",
+  "origin": "wished"
+ },
+ "method_named": {
+  "id": 5,
+  "moves": "wish then compose"
+ },
+ "configs": [
+  "ask+imagine+grow",
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "I wish I could make each element what it becomes: I build it (kape = add(_, _)) and use it.",
+  "I imagine by wish then compose: 1 new ideas.",
+  "I imagine by compose then wish then step: 0 new ideas.",
+  "I think bigger (level 1).",
+  "My audit passes map(\u03bbe. kape(e), l) on 481 fresh inputs.",
+  "It rings through the Field: 5 ways of working and imagining that led here are strengthened."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

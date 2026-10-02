@@ -1,0 +1,281 @@
+{
+ "task": "where_now 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 48,
+ "answer": [
+  "c",
+  3,
+  [
+   "tail",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   3,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "tail",
+       null,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "lit",
+    7
+   ],
+   [
+    "c",
+    1,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "head",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "c",
+      2,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ],
+   [
+    "lit",
+    4
+   ]
+  ]
+ ],
+ "level": 7,
+ "asked": 40,
+ "explored": 0,
+ "tension": [
+  3.776,
+  3.776,
+  5.109,
+  2.687,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  5.109,
+  8.832,
+  8.832,
+  21.36,
+  26.071,
+  24.363,
+  21.045,
+  8.832
+ ],
+ "wall": 1801.0,
+ "cpu": 1798.9,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "where",
+  "is",
+  "now"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 2.56,
+  "ledger": 0.0,
+  "actions": 0.0,
+  "ask": 0.0,
+  "doubt": 2.26,
+  "imagine": 841.23,
+  "grow": 950.59
+ },
+ "built": [],
+ "peak_mb": 12308.37890625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "imagine",
+  "grow",
+  "grow",
+  "grow",
+  "grow",
+  "grow",
+  "grow",
+  "grow"
+ ],
+ "say": [
+  "In where_now 2 my best idea is fofo(tail(g)), but I cannot finish (0.0 nats of doubt). Is it right, or what am I missing?",
+  "I imagine by wish then step then compose: 0 new ideas.",
+  "I imagine by step then wish: 0 new ideas.",
+  "I think bigger (level 1).",
+  "I think bigger (level 2).",
+  "I think bigger (level 3).",
+  "I think bigger (level 4).",
+  "I think bigger (level 5).",
+  "I think bigger (level 6).",
+  "I think bigger (level 7).",
+  "In where_now 2 my best idea is fofo(tail(tail(g))), but I cannot finish (0.0 nats of doubt, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('c', 3, ('tail', None, ('tail', None, ('var', 'g'))))",
+ "stage": "teach",
+ "english": [
+  "story: john journeyed to the hallway; mary journeyed to the office; mary moved to the office; mary journeyed to the office; john moved to the office; mary went to the kitchen | question: where is mary -> kitchen",
+  "story: sandra went to the kitchen; daniel went to the hallway; daniel moved to the bedroom; daniel moved to the bedroom; john went to the bedroom; daniel travelled to the bathroom | question: where is daniel -> bathroom",
+  "story: sandra journeyed to the bathroom; sandra travelled to the kitchen; sandra journeyed to the bathroom; mary travelled to the bedroom; mary travelled to the kitchen; mary moved to the bedroom | question: where is mary -> bedroom"
+ ]
+}

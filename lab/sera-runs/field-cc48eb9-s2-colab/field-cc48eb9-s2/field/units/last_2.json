@@ -1,0 +1,161 @@
+{
+ "task": "last 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  4,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "head",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "c",
+      2,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "lit",
+    3
+   ],
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "head",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "c",
+     2,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "lit",
+    5
+   ],
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ],
+   [
+    "lit",
+    3
+   ]
+  ]
+ ],
+ "level": 1,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  3.467,
+  3.469
+ ],
+ "wall": 4.2,
+ "cpu": 4.2,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  4
+ ],
+ "words_heard": [
+  "last",
+  "word"
+ ],
+ "said": [
+  "fotu"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.01,
+  "ledger": 0.0,
+  "actions": 0.01,
+  "grow": 0.09,
+  "prove": 0.01,
+  "ask": 0.0,
+  "doubt": 0.01
+ },
+ "built": [],
+ "peak_mb": 11644.0546875,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "fotu(g)",
+ "verdict": "proven right",
+ "audit": 230,
+ "configs": [
+  "grow+prove+ask",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: first (17.22), fotu (11.61).",
+  "I think bigger (level 1).",
+  "My audit passes fotu(g) on 230 fresh inputs.",
+  "It rings through the Field: 3 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('c', 4, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: travelled john garden bedroom | question: what is the last word -> bedroom",
+  "story: hallway the went | question: what is the last word -> went",
+  "story: hallway moved office hallway bathroom mary | question: what is the last word -> mary"
+ ]
+}

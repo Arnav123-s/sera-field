@@ -1,0 +1,187 @@
+{
+ "task": "what_is 1",
+ "subject": "language",
+ "kind": "exact:list(list)->list",
+ "teaching": true,
+ "steps": 4,
+ "answer": [
+  "c",
+  9,
+  [
+   "c",
+   8,
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   9,
+   [
+    "head",
+    "list",
+    [
+     "c",
+     9,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   9,
+   [
+    "c",
+    8,
+    [
+     "cons",
+     null,
+     [
+      "head",
+      "list",
+      [
+       "var",
+       "g"
+      ]
+     ],
+     [
+      "c",
+      9,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   9,
+   [
+    "c",
+    2,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "nil",
+   null
+  ],
+  [
+   "c",
+   9,
+   [
+    "c",
+    2,
+    [
+     "c",
+     9,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 2,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  2.699,
+  7.659,
+  7.659,
+  7.659
+ ],
+ "wall": 1138.0,
+ "cpu": 1137.6,
+ "proven": true,
+ "invented": [
+  {
+   "id": 10,
+   "subject": "language",
+   "body": "repe(reno(_))"
+  }
+ ],
+ "reused": [
+  9,
+  8
+ ],
+ "words_heard": [
+  "what",
+  "is"
+ ],
+ "said": [
+  "nope"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.12,
+  "ledger": 0.0,
+  "actions": 0.04,
+  "ask": 0.0,
+  "imagine": 1119.99,
+  "grow": 12.09,
+  "doubt": 0.12,
+  "prove": 0.03
+ },
+ "built": [
+  {
+   "id": 9,
+   "name": "repe",
+   "words": "finish what reno starts",
+   "body": "tail(tail(_))"
+  }
+ ],
+ "peak_mb": 13193.55859375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "repe(reno(g))",
+ "verdict": "proven right",
+ "audit": 307,
+ "imagined_by": {
+  "method": "#1+compose",
+  "moves": "wish+compose+compose",
+  "origin": "wished"
+ },
+ "method_named": {
+  "id": 3,
+  "moves": "wish then compose then compose"
+ },
+ "configs": [
+  "ask+imagine+grow",
+  "grow",
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "I wish I could finish what reno starts: I build it (repe = tail(tail(_))) and use it.",
+  "I imagine by wish then compose then compose: 1 new ideas.",
+  "I imagine by step then wish then compose then wish: 0 new ideas.",
+  "I think bigger (level 1).",
+  "I think bigger (level 2).",
+  "My audit passes repe(reno(g)) on 307 fresh inputs."
+ ],
+ "answer_repr": "('c', 9, ('c', 8, ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: intriguer is a person who devises plots or intrigues; poetically is in a poetic manner; uppityness is assumption of airs beyond station | question: what is poetically -> in a poetic manner",
+  "story: unflawed is without a flaw; recollective is good at remembering; alleviator is a therapist who makes suffering more endurable; mishegaas is senseless behavior or activity | question: what is recollective -> good at remembering",
+  "story: mycenaen is a native or inhabitant of ancient mycenae; moldy is covered with or smelling of mold | question: what is mycenaen -> a native or inhabitant of ancient mycenae"
+ ]
+}

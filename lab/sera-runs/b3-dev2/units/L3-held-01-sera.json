@@ -1,0 +1,37 @@
+{
+ "suite": "L3-held",
+ "index": 1,
+ "mind": "sera",
+ "truth": "wave with position times growing with speed",
+ "claim": "wave with position times growing with speed",
+ "sure": true,
+ "verified": true,
+ "right": true,
+ "wrong_frozen": false,
+ "sure_unverified": false,
+ "right_grid": true,
+ "wrong_grid": false,
+ "surface_ok": false,
+ "wrong": false,
+ "throws": 16,
+ "own": 0,
+ "seconds": 25.6,
+ "certify_calls": 1,
+ "families": 79,
+ "gap": "I am sure the force is wave with position times growing with speed where I looked (position -6.3 to 1.4, speed -5.2 to 1.2). Something more may be there, but it is too small to see here.",
+ "imagined_top3": [
+  [
+   "wave with position times growing with speed",
+   0.995
+  ],
+  [
+   "cubic with speed + wave with position times growing with speed",
+   0.002
+  ],
+  [
+   "wave with position times straight with speed",
+   0.001
+  ]
+ ],
+ "truth_in_imagined": true
+}

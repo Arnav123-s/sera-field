@@ -1,6 +1,6 @@
 # Source alignment before implementation
 
-I read the complete supplied “SERA: The Architecture of True Understanding and Imagination” proposal. The immutable original and hash are retained locally in `intake/`; its scientific propositions are evaluated as hypotheses. The user's direct request establishes the goal and preservation requirement.
+I read the complete supplied “SERA: The Architecture of True Understanding and Imagination” proposal. The immutable original and hash are retained locally in `intake/`; its scientific propositions are evaluated as hypotheses. the author's direct request establishes the goal and preservation requirement.
 
 ## Contracts that make the proposal executable
 

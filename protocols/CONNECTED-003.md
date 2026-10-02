@@ -1,7 +1,7 @@
 # CONNECTED-003: direct, audited continuation
 
 This prospective amendment replaces the delegated training adapter, not the SERA
-vision or preserved FIELD-001 evidence. The user paused Antigravity and requested
+vision or preserved FIELD-001 evidence. The author paused the helper script and requested
 direct execution. No delegated weights are imported. All parameters start fresh.
 
 ## Frozen first integration

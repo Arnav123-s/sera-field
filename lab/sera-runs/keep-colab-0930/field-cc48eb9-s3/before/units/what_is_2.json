@@ -1,0 +1,116 @@
+{
+ "task": "what_is 2",
+ "subject": "language",
+ "kind": "exact:list(list)->list",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  10,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   9,
+   [
+    "c",
+    2,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   8,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "nil",
+   null
+  ],
+  [
+   "c",
+   9,
+   [
+    "c",
+    10,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   2,
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "level": 0,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  2.617,
+  2.617
+ ],
+ "wall": 6.6,
+ "cpu": 6.6,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  10
+ ],
+ "words_heard": [
+  "what",
+  "is"
+ ],
+ "said": [
+  "nope"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.0,
+  "ledger": 0.0,
+  "actions": 0.02,
+  "prove": 0.02,
+  "doubt": 0.0
+ },
+ "built": [],
+ "peak_mb": 13193.55859375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "nope(g)",
+ "verdict": "proven right",
+ "audit": 236,
+ "configs": [
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "My audit passes nope(g) on 236 fresh inputs."
+ ],
+ "answer_repr": "('c', 10, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: dardanian is a native of ancient troy; classicistic is of or relating to classicism; blaeberry is erect european blueberry having solitary flowers and berries; baccivorous is feeding on berries | question: what is dardanian -> a native of ancient troy",
+  "story: buirdly is muscular and heavily built; casuarinaceae is one genus casuarina; pesticide is a chemical used to kill pests rodents or | question: what is pesticide -> a chemical used to kill pests rodents or",
+  "story: buirdly is muscular and heavily built; habit is an established custom; boutique is a shop that sells clothes and jewelry; unhealthful is not sanitary or healthful | question: what is boutique -> a shop that sells clothes and jewelry"
+ ]
+}

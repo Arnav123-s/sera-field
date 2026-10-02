@@ -1,0 +1,179 @@
+{
+ "arm": "step",
+ "echo": true,
+ "back": true,
+ "field": null,
+ "box": 30.0,
+ "hours": 6.0,
+ "seed": 2,
+ "one_field": false,
+ "settings": {
+  "crutches_off": [
+   "way_back"
+  ],
+  "knobs": "ONE_FIELD=0"
+ },
+ "total_s": 21609.3,
+ "lessons": {
+  "first 1": {
+   "verdict": "proven right",
+   "claim": "head(head(tail(g)))",
+   "visits": 1,
+   "wall_all_visits": 840.0,
+   "steps": 5,
+   "stepped": false,
+   "back": false,
+   "rang": false
+  },
+  "first 2": {
+   "verdict": "proven right",
+   "claim": "first(g)",
+   "visits": 1,
+   "wall_all_visits": 3.7,
+   "steps": 3,
+   "stepped": false,
+   "back": false,
+   "rang": true
+  },
+  "last 1": {
+   "verdict": "proven right",
+   "claim": "fofo(ridu(g))",
+   "visits": 1,
+   "wall_all_visits": 52.2,
+   "steps": 4,
+   "stepped": true,
+   "back": false,
+   "rang": true
+  },
+  "last 2": {
+   "verdict": "proven right",
+   "claim": "fotu(g)",
+   "visits": 1,
+   "wall_all_visits": 0.6,
+   "steps": 2,
+   "stepped": false,
+   "back": false,
+   "rang": true
+  },
+  "who 1": {
+   "verdict": "proven right",
+   "claim": "first(filter(\u03bbe. eq(fofo(e), fofo(head(g))), g))",
+   "visits": 1,
+   "wall_all_visits": 1253.7,
+   "steps": 9,
+   "stepped": true,
+   "back": false,
+   "rang": false
+  },
+  "who 2": {
+   "verdict": "proven right",
+   "claim": "who(g)",
+   "visits": 1,
+   "wall_all_visits": 6.4,
+   "steps": 2,
+   "stepped": false,
+   "back": false,
+   "rang": true
+  },
+  "where 1": {
+   "verdict": "proven right",
+   "claim": "fofo(head(filter(\u03bbe. eq(fofo(head(g)), head(e)), g)))",
+   "visits": 1,
+   "wall_all_visits": 438.3,
+   "steps": 46,
+   "stepped": true,
+   "back": false,
+   "rang": true
+  },
+  "where 2": {
+   "verdict": "proven right",
+   "claim": "mivi(g)",
+   "visits": 1,
+   "wall_all_visits": 4.2,
+   "steps": 3,
+   "stepped": false,
+   "back": false,
+   "rang": true
+  },
+  "what_is 1": {
+   "verdict": "proven right",
+   "claim": "dupe(rika(g))",
+   "visits": 1,
+   "wall_all_visits": 681.6,
+   "steps": 6,
+   "stepped": false,
+   "back": false,
+   "rang": true
+  },
+  "what_is 2": {
+   "verdict": "proven right",
+   "claim": "losa(g)",
+   "visits": 1,
+   "wall_all_visits": 3.7,
+   "steps": 3,
+   "stepped": false,
+   "back": false,
+   "rang": true
+  },
+  "who_in 1": {
+   "verdict": "proven right",
+   "claim": "who(g)",
+   "visits": 1,
+   "wall_all_visits": 7.3,
+   "steps": 2,
+   "stepped": false,
+   "back": false,
+   "rang": true
+  },
+  "who_in 2": {
+   "verdict": "proven right",
+   "claim": "in(g)",
+   "visits": 1,
+   "wall_all_visits": 10.3,
+   "steps": 2,
+   "stepped": false,
+   "back": false,
+   "rang": true
+  },
+  "where_now 1": {
+   "verdict": "proven right",
+   "claim": "foldn(\u03bba,e. fofo(e), head(rika(g)), filter(\u03bbe. eq(head(rika(g)), head(e)), g))",
+   "visits": 1,
+   "wall_all_visits": 1010.3,
+   "steps": 15,
+   "stepped": true,
+   "back": false,
+   "rang": true
+  },
+  "where_now 2": {
+   "verdict": "proven right",
+   "claim": "now(g)",
+   "visits": 1,
+   "wall_all_visits": 5.1,
+   "steps": 2,
+   "stepped": false,
+   "back": false,
+   "rang": true
+  },
+  "is_in 1": {
+   "verdict": "not proven",
+   "claim": null,
+   "visits": 3,
+   "wall_all_visits": 11844.3,
+   "steps": 76,
+   "stepped": false,
+   "back": false,
+   "rang": true
+  },
+  "is_in 2": {
+   "verdict": "not proven",
+   "claim": null,
+   "visits": 2,
+   "wall_all_visits": 5443.9,
+   "steps": 62,
+   "stepped": false,
+   "back": false,
+   "rang": true
+  }
+ }
+}

@@ -1,0 +1,147 @@
+{
+ "task": "who 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  5,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   1,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "c",
+    4,
+    [
+     "var",
+     "g"
+    ]
+   ],
+   [
+    "lit",
+    5
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "c",
+    3,
+    [
+     "head",
+     "list",
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "lit",
+    5
+   ]
+  ]
+ ],
+ "level": 1,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  3.376,
+  3.429
+ ],
+ "wall": 10.9,
+ "cpu": 10.7,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  5
+ ],
+ "words_heard": [
+  "who"
+ ],
+ "said": [
+  "who"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.02,
+  "ledger": 0.0,
+  "actions": 0.02,
+  "ask": 0.0,
+  "grow": 2.51,
+  "prove": 0.06,
+  "doubt": 0.03
+ },
+ "built": [],
+ "peak_mb": 8606.2734375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "who(g)",
+ "verdict": "proven right",
+ "audit": 232,
+ "configs": [
+  "ask+grow+prove",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: who (4.17), first (2.44).",
+  "I think bigger (level 1).",
+  "My audit passes who(g) on 232 fresh inputs."
+ ],
+ "answer_repr": "('c', 5, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: sandra travelled to the hallway; sandra moved to the bedroom | question: who went to the hallway -> sandra",
+  "story: john moved to the garden; daniel moved to the bedroom | question: who went to the bedroom -> daniel",
+  "story: sandra moved to the bedroom; john went to the office; sandra moved to the bathroom | question: who went to the office -> john"
+ ]
+}

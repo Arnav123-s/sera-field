@@ -1,0 +1,155 @@
+{
+ "task": "who 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 3,
+ "answer": [
+  "c",
+  5,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "c",
+    4,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "lit",
+    5
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "c",
+    1,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "lit",
+    3
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "mul",
+   null,
+   [
+    "lit",
+    5
+   ],
+   [
+    "mul",
+    null,
+    [
+     "lit",
+     5
+    ],
+    [
+     "lit",
+     4
+    ]
+   ]
+  ]
+ ],
+ "level": 1,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  3.433,
+  3.433,
+  3.436
+ ],
+ "wall": 3.3,
+ "cpu": 3.3,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  5
+ ],
+ "words_heard": [
+  "who"
+ ],
+ "said": [
+  "who"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.02,
+  "ledger": 0.0,
+  "actions": 0.03,
+  "prove": 0.05,
+  "doubt": 0.02,
+  "grow": 0.17
+ },
+ "built": [],
+ "peak_mb": 13193.55859375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "who(g)",
+ "verdict": "proven right",
+ "audit": 232,
+ "configs": [
+  "prove",
+  "grow",
+  "leave"
+ ],
+ "say": [
+  "My audit passes who(g) on 232 fresh inputs.",
+  "I think bigger (level 1)."
+ ],
+ "answer_repr": "('c', 5, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: daniel travelled to the office; mary journeyed to the bathroom | question: who went to the office -> daniel",
+  "story: mary moved to the bathroom; daniel moved to the garden | question: who went to the bathroom -> mary",
+  "story: daniel journeyed to the bedroom; daniel moved to the garden; mary moved to the kitchen | question: who went to the kitchen -> mary"
+ ]
+}

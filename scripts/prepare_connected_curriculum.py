@@ -23,8 +23,8 @@ def normalized_hash(text):
 
 
 def examples(source_lab, originals):
-    math_source = source_lab / "intake/multidomain-sources/openai_grade-school-math_grade_school_math_data_train.jsonl"
-    code_source = source_lab / "intake/multidomain-sources/google-research_google-research_mbpp_mbpp.jsonl"
+    math_source = source_lab / "intake/multidomain-sources/math_grade-school-math_grade_school_math_data_train.jsonl"
+    code_source = source_lab / "intake/multidomain-sources/code_mbpp_mbpp.jsonl"
     expected = [(math_source, "17f347dc51477c50d4efb83959dbb7c56297aba886e5544ee2aaed3024813465"),
                 (code_source, "ccf64ceae9c5403bf50a044cb6d505bfd2a2963ee58338ba268fd65beab92a9f")]
     for path, digest in expected:

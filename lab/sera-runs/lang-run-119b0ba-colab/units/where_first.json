@@ -1,0 +1,143 @@
+{
+ "task": "where first",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": false,
+ "steps": 2,
+ "answer": [
+  "c",
+  7,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   4,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "lit",
+    4
+   ],
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "lit",
+    6
+   ],
+   [
+    "head",
+    null,
+    [
+     "c",
+     8,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 1,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  2.026,
+  2.031
+ ],
+ "wall": 4.3,
+ "cpu": 4.3,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  7
+ ],
+ "words_heard": [],
+ "said": [
+  "where"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.04,
+  "ledger": 0.0,
+  "actions": 0.04,
+  "prove": 0.06,
+  "grow": 0.37,
+  "doubt": 0.04
+ },
+ "built": [],
+ "peak_mb": 17160.21484375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "where(g)",
+ "verdict": "proven right",
+ "audit": 236,
+ "configs": [
+  "prove+grow",
+  "leave"
+ ],
+ "say": [
+  "My audit passes where(g) on 236 fresh inputs.",
+  "I think bigger (level 1)."
+ ],
+ "answer_repr": "('c', 7, ('var', 'g'))",
+ "stage": "alone",
+ "english": [
+  "story: mary moved to the kitchen; daniel went to the garden; daniel travelled to the bedroom; sandra went to the kitchen; daniel journeyed to the bathroom | question: where is daniel -> garden",
+  "story: sandra travelled to the bedroom; sandra travelled to the bathroom; mary moved to the office; mary journeyed to the bathroom; mary journeyed to the bathroom | question: where is mary -> office",
+  "story: john went to the bedroom; mary journeyed to the garden; mary moved to the hallway; daniel went to the kitchen | question: where is mary -> garden"
+ ]
+}

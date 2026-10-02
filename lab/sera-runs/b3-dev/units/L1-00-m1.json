@@ -1,0 +1,16 @@
+{
+ "suite": "L1",
+ "index": 0,
+ "mind": "m1",
+ "truth": "straight with position",
+ "claim": "straight with position",
+ "sure": true,
+ "verified": true,
+ "right": true,
+ "surface_ok": false,
+ "wrong": false,
+ "throws": 19,
+ "own": 3,
+ "seconds": 43.9,
+ "families": 67
+}

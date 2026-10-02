@@ -1,0 +1,123 @@
+{
+ "task": "last 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  27,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   28,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   10,
+   [
+    "c",
+    25,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   10,
+   [
+    "c",
+    10,
+    [
+     "c",
+     25,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   25,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "lit",
+   119
+  ]
+ ],
+ "level": 1,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  2.649,
+  2.649
+ ],
+ "wall": 11.3,
+ "cpu": 11.3,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  27
+ ],
+ "words_heard": [
+  "last",
+  "word"
+ ],
+ "said": [
+  "kavi"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.09,
+  "ledger": 0.0,
+  "actions": 0.03,
+  "prove": 0.04,
+  "grow": 1.35,
+  "doubt": 0.08
+ },
+ "built": [],
+ "peak_mb": 4028.98828125,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "kavi(g)",
+ "verdict": "proven right",
+ "audit": 250,
+ "configs": [
+  "prove+grow",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: kape (14.39), nosa (12.84), peno (11.85).",
+  "My audit passes kavi(g) on 250 fresh inputs.",
+  "I think bigger (level 1)."
+ ],
+ "answer_repr": "('c', 27, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: mary travelled sandra john | question: what is the last word -> john",
+  "story: office bedroom john | question: what is the last word -> john",
+  "story: daniel journeyed the moved hallway the | question: what is the last word -> the"
+ ]
+}

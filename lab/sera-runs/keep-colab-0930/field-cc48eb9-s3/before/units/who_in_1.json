@@ -1,0 +1,114 @@
+{
+ "task": "who_in 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  5,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "c",
+    9,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "lit",
+   3
+  ],
+  [
+   "lit",
+   4
+  ]
+ ],
+ "level": 0,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  1.824,
+  1.824
+ ],
+ "wall": 7.0,
+ "cpu": 7.0,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  5
+ ],
+ "words_heard": [
+  "who",
+  "is",
+  "in"
+ ],
+ "said": [
+  "in"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.01,
+  "ledger": 0.0,
+  "actions": 0.15,
+  "prove": 1.4,
+  "ask": 0.0,
+  "doubt": 0.0
+ },
+ "built": [],
+ "peak_mb": 13193.55859375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "who(g)",
+ "verdict": "proven right",
+ "audit": 236,
+ "configs": [
+  "prove+ask",
+  "leave"
+ ],
+ "say": [
+  "My audit passes who(g) on 236 fresh inputs."
+ ],
+ "answer_repr": "('c', 5, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: sandra moved to the kitchen; daniel journeyed to the bathroom | question: who is in the bathroom -> daniel",
+  "story: daniel moved to the hallway; john went to the garden | question: who is in the garden -> john",
+  "story: mary journeyed to the kitchen; daniel journeyed to the bathroom; sandra went to the garden | question: who is in the kitchen -> mary"
+ ]
+}

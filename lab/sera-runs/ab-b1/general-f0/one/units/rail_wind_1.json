@@ -1,0 +1,98 @@
+{
+ "task": "rail: wind 1",
+ "subject": "physics",
+ "kind": "strengths:num->num",
+ "teaching": true,
+ "steps": 5,
+ "answer": null,
+ "others": null,
+ "level": 0,
+ "asked": 3,
+ "explored": 2,
+ "tension": [
+  7.186,
+  7.192,
+  5.199,
+  5.073,
+  5.054
+ ],
+ "wall": 78.8,
+ "cpu": 78.4,
+ "proven": true,
+ "invented": [
+  {
+   "id": 20,
+   "subject": "physics",
+   "input": "time",
+   "how": "curve",
+   "body": "tab"
+  }
+ ],
+ "reused": [],
+ "words_heard": [
+  "always",
+  "wind"
+ ],
+ "said": [
+  "satu"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.42,
+  "ledger": 9.26,
+  "actions": 37.2,
+  "prove": 31.13,
+  "doubt": 0.33,
+  "imagine": 0.06,
+  "ask": 0.0,
+  "explore": 0.01
+ },
+ "built": [],
+ "peak_mb": 4822.72265625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "a free curve in time (33 knots)",
+ "band": 0.05070235772999781,
+ "verdict": "proven right",
+ "gap": 2.220446049250313e-16,
+ "signs": {},
+ "certified": [
+  {
+   "part": 0,
+   "as": "curve",
+   "on": "time"
+  }
+ ],
+ "question": {
+  "text": "The 8 things here have only 3 kinds of mass (0.826, 1.058, 2.135). Why so few? What makes a mass? In all 6 worlds I measured so far, things came in fewer kinds of mass than there were things.",
+  "things": 8,
+  "kinds": 3,
+  "masses": [
+   0.826,
+   1.058,
+   2.135
+  ]
+ },
+ "attributed": true,
+ "configs": [
+  "prove",
+  "imagine+ask",
+  "explore",
+  "explore",
+  "leave"
+ ],
+ "say": [
+  "The judge accepts: a free curve in time (33 knots) up to 0.2 where I looked.",
+  "I keep what was right: a curve in time explains 549246 nats; I build on it and look for the rest.",
+  "I imagine by refine then keep: 121 new ideas.",
+  "I imagine by blend then recall: 2 new ideas.",
+  "I keep 1 of my imagined ideas in mind and let 122 go."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

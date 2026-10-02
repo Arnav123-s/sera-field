@@ -1,0 +1,90 @@
+{
+ "task": "rail: drag 2",
+ "subject": "physics",
+ "kind": "strengths:num->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": null,
+ "others": null,
+ "level": 0,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  4.013,
+  4.013
+ ],
+ "wall": 101.7,
+ "cpu": 101.0,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  8
+ ],
+ "words_heard": [
+  "fast",
+  "back",
+  "drag"
+ ],
+ "said": [
+  "spring",
+  "fast",
+  "ripple"
+ ],
+ "false_words": [
+  "spring",
+  "ripple"
+ ],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.14,
+  "ledger": 8.95,
+  "actions": 28.19,
+  "prove": 64.02,
+  "doubt": 0.06
+ },
+ "built": [],
+ "peak_mb": 5434.015625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "my shape 13 of speed",
+ "band": 0.02768906425104156,
+ "verdict": "proven right",
+ "gap": 1.1102230246251565e-16,
+ "signs": {
+  "speed": -1
+ },
+ "certified": [
+  {
+   "part": 0,
+   "as": "drawing",
+   "on": "speed",
+   "shape": 13,
+   "concept": 8
+  }
+ ],
+ "question": {
+  "text": "The 8 things here have only 3 kinds of mass (0.6, 0.955, 1.134). Why so few? What makes a mass? In all 9 worlds I measured so far, things came in fewer kinds of mass than there were things.",
+  "things": 8,
+  "kinds": 3,
+  "masses": [
+   0.6,
+   0.955,
+   1.134
+  ]
+ },
+ "attributed": true,
+ "configs": [
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: (('position', 'concept', 8),) (4.95), (('time', 'expr', ('one', None)),) (1.44), (('time', 'concept', 1),) (1.38).",
+  "The judge accepts: my shape 13 of speed up to 0.2 where I looked."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

@@ -1,11 +1,11 @@
 # Direct continuation and preservation
 
 I continued in the independent `D:/ai/labs/sera-field` repository from `f0c4993`.
-The user paused Antigravity. No other worker was stopped, resumed or assigned work.
+The author paused the earlier development work. No other worker was stopped, resumed or assigned work.
 The production repository remained clean at
 `0dcbcb902706f3d299cd38a433fcf1f26a357efd`; its owner and FIELD-001 stay preserved.
 
-The paused clone `D:/ai/agy/sera/labs/sera-field-002` contains additional uncommitted
+The paused clone (local workspace, not published) contains additional uncommitted
 training adapters. Its progress file said RUNNING, but the recorded supervisor
 PID 14156 and worker PID 5504 no longer existed. Both absences were independently
 checked through Windows OpenProcess (error 87, not access denied). An exclusive

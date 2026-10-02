@@ -1,0 +1,1967 @@
+{
+ "verdict": "INCOMPLETE",
+ "outcomes": {
+  "helpful_reuse_retained": "INCOMPLETE",
+  "harmful_transfer_reduced": "INCOMPLETE",
+  "no_negative_uncertainty": "INCOMPLETE",
+  "old_lessons_retained": "INCOMPLETE"
+ },
+ "evidence": {
+  "helpful": [
+   {
+    "before": "s1-before-spring",
+    "after": "s1-after-spring",
+    "identity": [
+     "law",
+     [
+      [
+       "position",
+       "body",
+       "4456d292415a66caa3a1b4336c70699715b6a170280a1e344715f162f991111c"
+      ]
+     ]
+    ],
+    "retained": false,
+    "complete": false
+   },
+   {
+    "before": "s1-before-ripple",
+    "after": "s1-after-ripple",
+    "identity": [
+     "law",
+     [
+      [
+       "position",
+       "body",
+       "4456d292415a66caa3a1b4336c70699715b6a170280a1e344715f162f991111c"
+      ]
+     ]
+    ],
+    "retained": false,
+    "complete": false
+   }
+  ],
+  "harmful": [],
+  "unjustified_negative": [],
+  "retention": [
+   {
+    "before": "s1-old-before-0",
+    "after": "s1-old-after-0",
+    "same_input": false,
+    "baseline_right": false,
+    "retained": false
+   },
+   {
+    "before": "s1-old-before-1",
+    "after": "s1-old-after-1",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s1-old-before-2",
+    "after": "s1-old-after-2",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s1-old-before-3",
+    "after": "s1-old-after-3",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s1-old-before-4",
+    "after": "s1-old-after-4",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s1-old-before-5",
+    "after": "s1-old-after-5",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s1-old-before-6",
+    "after": "s1-old-after-6",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s1-old-before-7",
+    "after": "s1-old-after-7",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s1-old-before-8",
+    "after": "s1-old-after-8",
+    "same_input": false,
+    "baseline_right": false,
+    "retained": false
+   },
+   {
+    "before": "s1-old-before-9",
+    "after": "s1-old-after-9",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s1-old-before-10",
+    "after": "s1-old-after-10",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s1-old-before-11",
+    "after": "s1-old-after-11",
+    "same_input": false,
+    "baseline_right": false,
+    "retained": false
+   },
+   {
+    "before": "s2-old-before-0",
+    "after": "s2-old-after-0",
+    "same_input": false,
+    "baseline_right": false,
+    "retained": false
+   },
+   {
+    "before": "s2-old-before-1",
+    "after": "s2-old-after-1",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s2-old-before-2",
+    "after": "s2-old-after-2",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s2-old-before-3",
+    "after": "s2-old-after-3",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s2-old-before-4",
+    "after": "s2-old-after-4",
+    "same_input": false,
+    "baseline_right": false,
+    "retained": false
+   },
+   {
+    "before": "s2-old-before-5",
+    "after": "s2-old-after-5",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s2-old-before-6",
+    "after": "s2-old-after-6",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s2-old-before-7",
+    "after": "s2-old-after-7",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s2-old-before-8",
+    "after": "s2-old-after-8",
+    "same_input": false,
+    "baseline_right": false,
+    "retained": false
+   },
+   {
+    "before": "s2-old-before-9",
+    "after": "s2-old-after-9",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s2-old-before-10",
+    "after": "s2-old-after-10",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s2-old-before-11",
+    "after": "s2-old-after-11",
+    "same_input": false,
+    "baseline_right": false,
+    "retained": false
+   },
+   {
+    "before": "s3-old-before-0",
+    "after": "s3-old-after-0",
+    "same_input": false,
+    "baseline_right": false,
+    "retained": false
+   },
+   {
+    "before": "s3-old-before-1",
+    "after": "s3-old-after-1",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s3-old-before-2",
+    "after": "s3-old-after-2",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s3-old-before-3",
+    "after": "s3-old-after-3",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s3-old-before-4",
+    "after": "s3-old-after-4",
+    "same_input": false,
+    "baseline_right": false,
+    "retained": false
+   },
+   {
+    "before": "s3-old-before-5",
+    "after": "s3-old-after-5",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s3-old-before-6",
+    "after": "s3-old-after-6",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s3-old-before-7",
+    "after": "s3-old-after-7",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s3-old-before-8",
+    "after": "s3-old-after-8",
+    "same_input": false,
+    "baseline_right": false,
+    "retained": false
+   },
+   {
+    "before": "s3-old-before-9",
+    "after": "s3-old-after-9",
+    "same_input": false,
+    "baseline_right": true,
+    "retained": false
+   },
+   {
+    "before": "s3-old-before-10",
+    "after": "s3-old-after-10",
+    "same_input": false,
+    "baseline_right": false,
+    "retained": false
+   },
+   {
+    "before": "s3-old-before-11",
+    "after": "s3-old-after-11",
+    "same_input": false,
+    "baseline_right": false,
+    "retained": false
+   }
+  ],
+  "uncertainty": [
+   {
+    "world": "s1-old-before-0",
+    "identity": [
+     "idea",
+     [
+      [
+       "time",
+       "concept",
+       1
+      ]
+     ]
+    ],
+    "reason": "something else could be as large as 0.375 > eps 0.2"
+   },
+   {
+    "world": "s1-old-before-0",
+    "identity": [
+     "idea",
+     [
+      [
+       "time",
+       "concept",
+       1
+      ]
+     ]
+    ],
+    "reason": "something else could be as large as 0.336 > eps 0.2"
+   },
+   {
+    "world": "s1-old-before-0",
+    "identity": [
+     "idea",
+     [
+      [
+       "time",
+       "concept",
+       1
+      ]
+     ]
+    ],
+    "reason": "something else could be as large as 0.33 > eps 0.2"
+   },
+   {
+    "world": "s1-old-before-0",
+    "identity": [
+     "idea",
+     [
+      [
+       "time",
+       "concept",
+       1
+      ]
+     ]
+    ],
+    "reason": "something else could be as large as 0.326 > eps 0.2"
+   },
+   {
+    "world": "s1-old-before-0",
+    "identity": [
+     "idea",
+     [
+      [
+       "time",
+       "concept",
+       1
+      ]
+     ]
+    ],
+    "reason": "something else could be as large as 0.327 > eps 0.2"
+   },
+   {
+    "world": "s3-old-before-8",
+    "identity": [
+     "idea",
+     [
+      [
+       "position",
+       "concept",
+       8
+      ],
+      [
+       "time",
+       "concept",
+       8
+      ]
+     ]
+    ],
+    "reason": "something else could be as large as 1.24 > eps 0.2"
+   }
+  ],
+  "sure_and_wrong": []
+ },
+ "input_mismatches": [],
+ "pre_field_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+ "dev_seeds": [
+  1,
+  2,
+  3
+ ],
+ "retention_complete": true,
+ "old_lesson_names": [
+  "list: count",
+  "list: one more",
+  "list: sum",
+  "number: odd",
+  "number: powers of two",
+  "number: square",
+  "rail: ripple 1",
+  "rail: ripple 2",
+  "rail: spring 2",
+  "rail: stiff 2",
+  "rail: wind 1",
+  "rail: wind 2"
+ ],
+ "wall_seconds": 4638.768549355002,
+ "uncovered_old_lessons": [],
+ "scope": "dev contrastive rails and frozen logged old lessons; not a deployment gate",
+ "timing": [
+  {
+   "world": "s1-teach-wind",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "e6cf2ffebdae6704c27ad2e568870c095b8c8bcd74b890051969e6007c8ed636",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.24,
+     "ledger": 7.95,
+     "actions": 18.34,
+     "prove": 21.39,
+     "doubt": 0.2,
+     "ask": 0.0,
+     "imagine": 0.08,
+     "explore": 0.0,
+     "finish": 0.04
+    },
+    "wall": 48.4,
+    "cpu": 48.4,
+    "thinking_wall": 48.4,
+    "thinking_cpu": 48.3,
+    "finish_cpu": 0.04
+   },
+   "process_seconds": 48.42574673999479
+  },
+  {
+   "world": "s1-teach-spring",
+   "status": "done",
+   "snapshot_sha256": "fd6242bf5af4b29ecc85ecfebdc7dda02a1b2bbf751770a3e9f6a1f1b96e0292",
+   "input_sha256": "c53fd47bf373b25181667cbcd502fbc0db83f0c3322e9a3be2c192f5decaf02e",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.29,
+     "ledger": 13.77,
+     "actions": 60.12,
+     "prove": 30.51,
+     "doubt": 0.23,
+     "explore": 0.0,
+     "finish": 0.03
+    },
+    "wall": 105.1,
+    "cpu": 105.0,
+    "thinking_wall": 105.1,
+    "thinking_cpu": 105.0,
+    "finish_cpu": 0.03
+   },
+   "process_seconds": 105.14607472599891
+  },
+  {
+   "world": "s1-teach-ripple",
+   "status": "done",
+   "snapshot_sha256": "81c4cdf95b0a77e1d23d42de2af419e64065cece7cebbf7d18239ec60702a2bd",
+   "input_sha256": "5aa340a36f65a6c698217a3f4ff1d283dcaec6c5ee355d394663a0cdcd10c0df",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.56,
+     "ledger": 8.83,
+     "actions": 16.48,
+     "prove": 25.37,
+     "grow": 11.05,
+     "doubt": 1.21,
+     "finish": 0.03
+    },
+    "wall": 63.8,
+    "cpu": 63.7,
+    "thinking_wall": 63.8,
+    "thinking_cpu": 63.7,
+    "finish_cpu": 0.03
+   },
+   "process_seconds": 63.79165342399938
+  },
+  {
+   "world": "s1-teach-stiff",
+   "status": "censored",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s1-before-wind",
+   "status": "censored",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s1-after-wind",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s1-before-spring",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "8ff761eaec9845a7b7581b2c0ac2dc3a9b8b6b9ba7054e7e0b7296e88cfa0b1f",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.38,
+     "ledger": 8.44,
+     "actions": 29.44,
+     "prove": 26.71,
+     "doubt": 0.73,
+     "imagine": 0.04,
+     "explore": 0.0,
+     "grow": 5.75,
+     "finish": 0.44
+    },
+    "wall": 72.1,
+    "cpu": 72.0,
+    "thinking_wall": 71.6,
+    "thinking_cpu": 71.5,
+    "finish_cpu": 0.46
+   },
+   "process_seconds": 72.0917128499932
+  },
+  {
+   "world": "s1-after-spring",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s1-before-ripple",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "6cd9be1f83ccd700828cf375e7559b3c94ac6b886672d92be5056c9bc98b8635",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.47,
+     "ledger": 11.75,
+     "actions": 39.7,
+     "explore": 0.0,
+     "doubt": 1.16,
+     "imagine": 0.06,
+     "prove": 24.49,
+     "grow": 5.39,
+     "finish": 0.43
+    },
+    "wall": 83.6,
+    "cpu": 83.5,
+    "thinking_wall": 83.2,
+    "thinking_cpu": 83.0,
+    "finish_cpu": 0.45
+   },
+   "process_seconds": 83.58642428900203
+  },
+  {
+   "world": "s1-after-ripple",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s1-before-stiff",
+   "status": "censored",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s1-after-stiff",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s1-old-before-0",
+   "status": "capped",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "22db368ce65767222cd9ef0923fd187a5713779f873fb108eddad0b0f38617ce",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 1.22,
+     "ledger": 2.6,
+     "actions": 39.88,
+     "prove": 80.29,
+     "doubt": 2.69,
+     "convince": 0.06,
+     "imagine": 3.04,
+     "ask": 0.02,
+     "grow": 5.93,
+     "explore": 0.04,
+     "finish": 0.0
+    },
+    "wall": 136.0,
+    "cpu": 135.8,
+    "thinking_wall": 136.0,
+    "thinking_cpu": 135.8,
+    "finish_cpu": 0.0
+   },
+   "process_seconds": 135.99374951200298
+  },
+  {
+   "world": "s1-old-after-0",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s1-old-before-1",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "b607a9688bea2043f3a21f66136e37baf64aa161f90a2175efd9ed2ad241da5d",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.05,
+     "ledger": 0.0,
+     "actions": 0.0,
+     "prove": 0.0,
+     "grow": 0.86,
+     "doubt": 0.04,
+     "finish": 0.0
+    },
+    "wall": 2.3,
+    "cpu": 2.3,
+    "thinking_wall": 2.3,
+    "thinking_cpu": 2.3,
+    "finish_cpu": 0.0
+   },
+   "process_seconds": 2.2617635300048278
+  },
+  {
+   "world": "s1-old-after-1",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s1-old-before-2",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "c3e31c9f32aa2ad38c5a6f1fe1b8f4d0c4e649fba723c2c8005929333bd142eb",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.05,
+     "ledger": 0.0,
+     "actions": 0.0,
+     "prove": 0.01,
+     "grow": 0.82,
+     "doubt": 0.04,
+     "finish": 0.01
+    },
+    "wall": 2.1,
+    "cpu": 2.1,
+    "thinking_wall": 2.1,
+    "thinking_cpu": 2.1,
+    "finish_cpu": 0.01
+   },
+   "process_seconds": 2.1028841239967733
+  },
+  {
+   "world": "s1-old-after-2",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s1-old-before-3",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "a3d8f9504a69da51b8bacd5e9d1dd4af0da7e58d6c633178e1e3d79a583e4c98",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.52,
+     "ledger": 11.41,
+     "actions": 49.84,
+     "prove": 28.62,
+     "doubt": 0.91,
+     "imagine": 0.07,
+     "explore": 0.0,
+     "grow": 5.45,
+     "ask": 0.0,
+     "finish": 0.39
+    },
+    "wall": 97.4,
+    "cpu": 97.2,
+    "thinking_wall": 97.0,
+    "thinking_cpu": 96.8,
+    "finish_cpu": 0.4
+   },
+   "process_seconds": 97.36892960099794
+  },
+  {
+   "world": "s1-old-after-3",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s1-old-before-4",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "cebc574f5ffb62efa290530acd4579bb8d4ac3772ba42718eaf83f5557f78706",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.68,
+     "ledger": 22.8,
+     "actions": 67.04,
+     "explore": 0.0,
+     "doubt": 1.36,
+     "imagine": 0.05,
+     "prove": 23.2,
+     "grow": 5.57,
+     "finish": 0.42
+    },
+    "wall": 121.3,
+    "cpu": 121.2,
+    "thinking_wall": 120.9,
+    "thinking_cpu": 120.8,
+    "finish_cpu": 0.44
+   },
+   "process_seconds": 121.2965509459973
+  },
+  {
+   "world": "s1-old-after-4",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s1-old-before-5",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "ae1e4065597792ea8021a4f998ae05a35be8c11b1498523bcb4a3c51865ed12c",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.08,
+     "ledger": 0.0,
+     "actions": 0.03,
+     "prove": 0.01,
+     "ask": 0.0,
+     "imagine": 0.01,
+     "doubt": 0.09,
+     "grow": 2.64,
+     "finish": 0.01
+    },
+    "wall": 4.7,
+    "cpu": 4.6,
+    "thinking_wall": 4.6,
+    "thinking_cpu": 4.6,
+    "finish_cpu": 0.01
+   },
+   "process_seconds": 4.657983115997922
+  },
+  {
+   "world": "s1-old-after-5",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s1-old-before-6",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "9f8b6726c1a67fb723390458f066ae2ca81e5bada10d22cea0905fb004cb7445",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.05,
+     "ledger": 0.0,
+     "actions": 0.0,
+     "prove": 0.0,
+     "grow": 0.77,
+     "doubt": 0.04,
+     "finish": 0.0
+    },
+    "wall": 2.0,
+    "cpu": 2.0,
+    "thinking_wall": 2.0,
+    "thinking_cpu": 2.0,
+    "finish_cpu": 0.0
+   },
+   "process_seconds": 2.0159114159978344
+  },
+  {
+   "world": "s1-old-after-6",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s1-old-before-7",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "760de14cff0498b18f3212290af564d6e9c6ab71e6ab85b939f8ba56d31d1f4e",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.25,
+     "ledger": 0.0,
+     "actions": 0.09,
+     "ask": 0.0,
+     "doubt": 0.25,
+     "prove": 0.01,
+     "grow": 2.73,
+     "imagine": 0.01,
+     "finish": 0.01
+    },
+    "wall": 5.1,
+    "cpu": 5.1,
+    "thinking_wall": 5.1,
+    "thinking_cpu": 5.1,
+    "finish_cpu": 0.01
+   },
+   "process_seconds": 5.075401675996545
+  },
+  {
+   "world": "s1-old-after-7",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s1-old-before-8",
+   "status": "censored",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s1-old-after-8",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s1-old-before-9",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "b293004af8088c5c982ba54f3514767d9b22f155ddade31d6792c77681b421a4",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.03,
+     "ledger": 0.0,
+     "actions": 0.03,
+     "ask": 0.0,
+     "doubt": 0.02,
+     "prove": 0.01,
+     "finish": 0.01
+    },
+    "wall": 1.7,
+    "cpu": 1.7,
+    "thinking_wall": 1.7,
+    "thinking_cpu": 1.7,
+    "finish_cpu": 0.01
+   },
+   "process_seconds": 1.6821898550042533
+  },
+  {
+   "world": "s1-old-after-9",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s1-old-before-10",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "f6b5ab774e8adf92ee8cfa65400d7f6757d96fc5a2fd4e076052aa36e2d3fc6e",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.9,
+     "ledger": 28.24,
+     "actions": 60.09,
+     "explore": 0.0,
+     "doubt": 2.26,
+     "imagine": 0.06,
+     "prove": 43.7,
+     "grow": 5.62,
+     "finish": 0.38
+    },
+    "wall": 141.4,
+    "cpu": 141.3,
+    "thinking_wall": 141.0,
+    "thinking_cpu": 140.9,
+    "finish_cpu": 0.4
+   },
+   "process_seconds": 141.4201503000004
+  },
+  {
+   "world": "s1-old-after-10",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s1-old-before-11",
+   "status": "censored",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s1-old-after-11",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-teach-wind",
+   "status": "censored",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-teach-spring",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-teach-ripple",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-teach-stiff",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-before-wind",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "976b5d5c8b35fa80c095655ab2cd3b3798a29ef9643c25e421767e4b1fc56981",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.47,
+     "ledger": 2.53,
+     "actions": 16.66,
+     "prove": 21.41,
+     "doubt": 0.78,
+     "imagine": 0.07,
+     "grow": 5.5,
+     "ask": 0.0,
+     "finish": 0.44
+    },
+    "wall": 48.0,
+    "cpu": 48.0,
+    "thinking_wall": 47.6,
+    "thinking_cpu": 47.5,
+    "finish_cpu": 0.46
+   },
+   "process_seconds": 48.00149999099813
+  },
+  {
+   "world": "s2-after-wind",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-before-spring",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "1848e51e7c1d12e852ea059298d95455e6141f97477d535064459b9235c5ac21",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.52,
+     "ledger": 11.34,
+     "actions": 47.39,
+     "prove": 27.82,
+     "doubt": 0.88,
+     "imagine": 0.07,
+     "explore": 0.0,
+     "grow": 6.83,
+     "ask": 0.0,
+     "finish": 0.37
+    },
+    "wall": 95.4,
+    "cpu": 95.3,
+    "thinking_wall": 95.0,
+    "thinking_cpu": 94.9,
+    "finish_cpu": 0.38
+   },
+   "process_seconds": 95.3634713279971
+  },
+  {
+   "world": "s2-after-spring",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-before-ripple",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "122ce03b5d269f0071a7c93a69a48d04e29e41adf03ee9c458b094b8bc9d52be",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.84,
+     "ledger": 23.12,
+     "actions": 88.04,
+     "prove": 15.03,
+     "doubt": 1.16,
+     "imagine": 0.84,
+     "grow": 5.4,
+     "ask": 0.0,
+     "explore": 0.02,
+     "finish": 0.38
+    },
+    "wall": 135.0,
+    "cpu": 134.9,
+    "thinking_wall": 134.6,
+    "thinking_cpu": 134.5,
+    "finish_cpu": 0.4
+   },
+   "process_seconds": 135.01915207199636
+  },
+  {
+   "world": "s2-after-ripple",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-before-stiff",
+   "status": "censored",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-after-stiff",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-old-before-0",
+   "status": "censored",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-old-after-0",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-old-before-1",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "b607a9688bea2043f3a21f66136e37baf64aa161f90a2175efd9ed2ad241da5d",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.05,
+     "ledger": 0.0,
+     "actions": 0.0,
+     "prove": 0.0,
+     "grow": 0.87,
+     "doubt": 0.04,
+     "finish": 0.0
+    },
+    "wall": 2.3,
+    "cpu": 2.3,
+    "thinking_wall": 2.3,
+    "thinking_cpu": 2.3,
+    "finish_cpu": 0.0
+   },
+   "process_seconds": 2.2801292419972015
+  },
+  {
+   "world": "s2-old-after-1",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-old-before-2",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "c3e31c9f32aa2ad38c5a6f1fe1b8f4d0c4e649fba723c2c8005929333bd142eb",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.05,
+     "ledger": 0.0,
+     "actions": 0.0,
+     "prove": 0.01,
+     "grow": 0.72,
+     "doubt": 0.04,
+     "finish": 0.01
+    },
+    "wall": 2.4,
+    "cpu": 2.4,
+    "thinking_wall": 2.4,
+    "thinking_cpu": 2.4,
+    "finish_cpu": 0.01
+   },
+   "process_seconds": 2.3647286599953077
+  },
+  {
+   "world": "s2-old-after-2",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-old-before-3",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "a3d8f9504a69da51b8bacd5e9d1dd4af0da7e58d6c633178e1e3d79a583e4c98",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.49,
+     "ledger": 11.27,
+     "actions": 47.68,
+     "prove": 27.25,
+     "doubt": 0.83,
+     "imagine": 0.07,
+     "explore": 0.0,
+     "grow": 5.27,
+     "ask": 0.0,
+     "finish": 0.38
+    },
+    "wall": 93.4,
+    "cpu": 93.3,
+    "thinking_wall": 93.0,
+    "thinking_cpu": 92.9,
+    "finish_cpu": 0.39
+   },
+   "process_seconds": 93.39091593799822
+  },
+  {
+   "world": "s2-old-after-3",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-old-before-4",
+   "status": "censored",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-old-after-4",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-old-before-5",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "ae1e4065597792ea8021a4f998ae05a35be8c11b1498523bcb4a3c51865ed12c",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.08,
+     "ledger": 0.0,
+     "actions": 0.03,
+     "prove": 0.01,
+     "ask": 0.0,
+     "imagine": 0.01,
+     "doubt": 0.08,
+     "grow": 2.57,
+     "finish": 0.01
+    },
+    "wall": 4.7,
+    "cpu": 4.7,
+    "thinking_wall": 4.7,
+    "thinking_cpu": 4.7,
+    "finish_cpu": 0.01
+   },
+   "process_seconds": 4.6685723299960955
+  },
+  {
+   "world": "s2-old-after-5",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-old-before-6",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "9f8b6726c1a67fb723390458f066ae2ca81e5bada10d22cea0905fb004cb7445",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.05,
+     "ledger": 0.0,
+     "actions": 0.0,
+     "prove": 0.0,
+     "grow": 0.82,
+     "doubt": 0.04,
+     "finish": 0.0
+    },
+    "wall": 2.0,
+    "cpu": 2.0,
+    "thinking_wall": 2.0,
+    "thinking_cpu": 2.0,
+    "finish_cpu": 0.0
+   },
+   "process_seconds": 2.0265449179933057
+  },
+  {
+   "world": "s2-old-after-6",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-old-before-7",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "760de14cff0498b18f3212290af564d6e9c6ab71e6ab85b939f8ba56d31d1f4e",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.24,
+     "ledger": 0.0,
+     "actions": 0.09,
+     "ask": 0.0,
+     "doubt": 0.24,
+     "prove": 0.01,
+     "grow": 2.46,
+     "imagine": 0.01,
+     "finish": 0.01
+    },
+    "wall": 4.7,
+    "cpu": 4.7,
+    "thinking_wall": 4.7,
+    "thinking_cpu": 4.7,
+    "finish_cpu": 0.01
+   },
+   "process_seconds": 4.728939578999416
+  },
+  {
+   "world": "s2-old-after-7",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-old-before-8",
+   "status": "censored",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-old-after-8",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-old-before-9",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "b293004af8088c5c982ba54f3514767d9b22f155ddade31d6792c77681b421a4",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.03,
+     "ledger": 0.0,
+     "actions": 0.03,
+     "ask": 0.0,
+     "doubt": 0.02,
+     "prove": 0.01,
+     "finish": 0.01
+    },
+    "wall": 1.8,
+    "cpu": 1.8,
+    "thinking_wall": 1.8,
+    "thinking_cpu": 1.8,
+    "finish_cpu": 0.01
+   },
+   "process_seconds": 1.785264621998067
+  },
+  {
+   "world": "s2-old-after-9",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-old-before-10",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "f6b5ab774e8adf92ee8cfa65400d7f6757d96fc5a2fd4e076052aa36e2d3fc6e",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 1.04,
+     "ledger": 28.75,
+     "actions": 60.11,
+     "explore": 0.0,
+     "doubt": 2.43,
+     "imagine": 0.07,
+     "prove": 44.55,
+     "grow": 5.56,
+     "finish": 0.42
+    },
+    "wall": 143.1,
+    "cpu": 143.0,
+    "thinking_wall": 142.7,
+    "thinking_cpu": 142.5,
+    "finish_cpu": 0.44
+   },
+   "process_seconds": 143.11191307399713
+  },
+  {
+   "world": "s2-old-after-10",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-old-before-11",
+   "status": "censored",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s2-old-after-11",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-teach-wind",
+   "status": "censored",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-teach-spring",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-teach-ripple",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-teach-stiff",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-before-wind",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "a198f6aae88d06da8c8a1672dd162ab7c40fe243f15c2e5512b030e1a5e9baed",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.46,
+     "ledger": 2.43,
+     "actions": 16.99,
+     "prove": 25.58,
+     "doubt": 0.81,
+     "imagine": 0.07,
+     "grow": 5.38,
+     "ask": 0.0,
+     "finish": 0.37
+    },
+    "wall": 52.3,
+    "cpu": 52.2,
+    "thinking_wall": 51.9,
+    "thinking_cpu": 51.8,
+    "finish_cpu": 0.4
+   },
+   "process_seconds": 52.25833153099666
+  },
+  {
+   "world": "s3-after-wind",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-before-spring",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "7a78744afab6c69a82b496b9bda8234f70f58122a31511403597ecb7d8808baf",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.47,
+     "ledger": 10.17,
+     "actions": 38.61,
+     "prove": 26.9,
+     "doubt": 0.81,
+     "imagine": 0.07,
+     "explore": 0.0,
+     "grow": 5.25,
+     "ask": 0.0,
+     "finish": 0.39
+    },
+    "wall": 82.8,
+    "cpu": 82.8,
+    "thinking_wall": 82.4,
+    "thinking_cpu": 82.4,
+    "finish_cpu": 0.4
+   },
+   "process_seconds": 82.81221557800018
+  },
+  {
+   "world": "s3-after-spring",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-before-ripple",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "bf57d062e4651ba1d95d65ac4e2d5fa2947759948f82fe04fcd4f855ac1f3ad6",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.38,
+     "ledger": 10.05,
+     "actions": 30.21,
+     "prove": 25.15,
+     "doubt": 0.72,
+     "imagine": 0.04,
+     "explore": 0.0,
+     "grow": 5.56,
+     "finish": 0.37
+    },
+    "wall": 72.6,
+    "cpu": 72.6,
+    "thinking_wall": 72.3,
+    "thinking_cpu": 72.2,
+    "finish_cpu": 0.38
+   },
+   "process_seconds": 72.63512864900258
+  },
+  {
+   "world": "s3-after-ripple",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-before-stiff",
+   "status": "censored",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-after-stiff",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-old-before-0",
+   "status": "censored",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-old-after-0",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-old-before-1",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "b607a9688bea2043f3a21f66136e37baf64aa161f90a2175efd9ed2ad241da5d",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.05,
+     "ledger": 0.0,
+     "actions": 0.0,
+     "prove": 0.0,
+     "grow": 0.86,
+     "doubt": 0.04,
+     "finish": 0.0
+    },
+    "wall": 2.3,
+    "cpu": 2.3,
+    "thinking_wall": 2.3,
+    "thinking_cpu": 2.3,
+    "finish_cpu": 0.0
+   },
+   "process_seconds": 2.296270184000605
+  },
+  {
+   "world": "s3-old-after-1",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-old-before-2",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "c3e31c9f32aa2ad38c5a6f1fe1b8f4d0c4e649fba723c2c8005929333bd142eb",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.05,
+     "ledger": 0.0,
+     "actions": 0.0,
+     "prove": 0.01,
+     "grow": 0.76,
+     "doubt": 0.04,
+     "finish": 0.01
+    },
+    "wall": 2.3,
+    "cpu": 2.3,
+    "thinking_wall": 2.3,
+    "thinking_cpu": 2.3,
+    "finish_cpu": 0.01
+   },
+   "process_seconds": 2.3430957829987165
+  },
+  {
+   "world": "s3-old-after-2",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-old-before-3",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "a3d8f9504a69da51b8bacd5e9d1dd4af0da7e58d6c633178e1e3d79a583e4c98",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.53,
+     "ledger": 11.62,
+     "actions": 49.27,
+     "prove": 28.15,
+     "doubt": 0.89,
+     "imagine": 0.07,
+     "explore": 0.0,
+     "grow": 5.57,
+     "ask": 0.0,
+     "finish": 0.4
+    },
+    "wall": 96.6,
+    "cpu": 96.5,
+    "thinking_wall": 96.2,
+    "thinking_cpu": 96.1,
+    "finish_cpu": 0.41
+   },
+   "process_seconds": 96.65406802100188
+  },
+  {
+   "world": "s3-old-after-3",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-old-before-4",
+   "status": "censored",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-old-after-4",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-old-before-5",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "ae1e4065597792ea8021a4f998ae05a35be8c11b1498523bcb4a3c51865ed12c",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.09,
+     "ledger": 0.0,
+     "actions": 0.03,
+     "prove": 0.01,
+     "ask": 0.0,
+     "imagine": 0.01,
+     "doubt": 0.09,
+     "grow": 2.67,
+     "finish": 0.01
+    },
+    "wall": 4.9,
+    "cpu": 4.9,
+    "thinking_wall": 4.9,
+    "thinking_cpu": 4.9,
+    "finish_cpu": 0.01
+   },
+   "process_seconds": 4.903065719998267
+  },
+  {
+   "world": "s3-old-after-5",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-old-before-6",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "9f8b6726c1a67fb723390458f066ae2ca81e5bada10d22cea0905fb004cb7445",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.07,
+     "ledger": 0.0,
+     "actions": 0.0,
+     "prove": 0.0,
+     "grow": 0.92,
+     "doubt": 0.05,
+     "finish": 0.0
+    },
+    "wall": 2.3,
+    "cpu": 2.3,
+    "thinking_wall": 2.3,
+    "thinking_cpu": 2.3,
+    "finish_cpu": 0.0
+   },
+   "process_seconds": 2.2869223640009295
+  },
+  {
+   "world": "s3-old-after-6",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-old-before-7",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "760de14cff0498b18f3212290af564d6e9c6ab71e6ab85b939f8ba56d31d1f4e",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.24,
+     "ledger": 0.0,
+     "actions": 0.09,
+     "ask": 0.0,
+     "doubt": 0.23,
+     "prove": 0.01,
+     "grow": 2.57,
+     "imagine": 0.01,
+     "finish": 0.01
+    },
+    "wall": 4.9,
+    "cpu": 4.9,
+    "thinking_wall": 4.9,
+    "thinking_cpu": 4.9,
+    "finish_cpu": 0.01
+   },
+   "process_seconds": 4.8703570409998065
+  },
+  {
+   "world": "s3-old-after-7",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-old-before-8",
+   "status": "capped",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "fc59ac5abbeb358197b6c929ec47fed49dd389210666799136adab1206382502",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.16,
+     "ledger": 43.35,
+     "actions": 64.22,
+     "explore": 0.0,
+     "doubt": 0.12,
+     "imagine": 0.05,
+     "prove": 23.39,
+     "convince": 0.03,
+     "finish": 0.0
+    },
+    "wall": 131.5,
+    "cpu": 131.3,
+    "thinking_wall": 131.5,
+    "thinking_cpu": 131.3,
+    "finish_cpu": 0.0
+   },
+   "process_seconds": 131.51997897999536
+  },
+  {
+   "world": "s3-old-after-8",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-old-before-9",
+   "status": "done",
+   "snapshot_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+   "input_sha256": "b293004af8088c5c982ba54f3514767d9b22f155ddade31d6792c77681b421a4",
+   "costs": {
+    "phases": {
+     "trigger": 0.0,
+     "other": 0.0,
+     "beliefs": 0.03,
+     "ledger": 0.0,
+     "actions": 0.03,
+     "ask": 0.0,
+     "doubt": 0.02,
+     "prove": 0.01,
+     "finish": 0.01
+    },
+    "wall": 1.8,
+    "cpu": 1.8,
+    "thinking_wall": 1.8,
+    "thinking_cpu": 1.8,
+    "finish_cpu": 0.01
+   },
+   "process_seconds": 1.8430067750014132
+  },
+  {
+   "world": "s3-old-after-9",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-old-before-10",
+   "status": "censored",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-old-after-10",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-old-before-11",
+   "status": "censored",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  },
+  {
+   "world": "s3-old-after-11",
+   "status": "not_reached",
+   "snapshot_sha256": null,
+   "input_sha256": null,
+   "costs": null,
+   "process_seconds": null
+  }
+ ]
+}

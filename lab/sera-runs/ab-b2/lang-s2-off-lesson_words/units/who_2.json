@@ -1,0 +1,162 @@
+{
+ "task": "who 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  5,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   5,
+   [
+    "c",
+    6,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "c",
+    6,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "filter",
+    null,
+    [
+     "lam",
+     "e",
+     [
+      "eq",
+      null,
+      [
+       "c",
+       3,
+       [
+        "head",
+        "list",
+        [
+         "var",
+         "g"
+        ]
+       ]
+      ],
+      [
+       "c",
+       3,
+       [
+        "var",
+        "e"
+       ]
+      ]
+     ]
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "level": 0,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  3.326,
+  6.212
+ ],
+ "wall": 5.1,
+ "cpu": 5.1,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  5
+ ],
+ "words_heard": [
+  "who"
+ ],
+ "said": [
+  "who"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.0,
+  "ledger": 0.0,
+  "actions": 0.03,
+  "ask": 0.0,
+  "imagine": 0.01,
+  "prove": 0.11,
+  "doubt": 0.01
+ },
+ "built": [],
+ "peak_mb": 9664.890625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "who(g)",
+ "verdict": "proven right",
+ "audit": 232,
+ "configs": [
+  "ask+imagine+prove",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: who (4.23), first (2.10).",
+  "I imagine by compose then recall: 4 new ideas.",
+  "I imagine by compose: 0 new ideas.",
+  "I keep 4 of my imagined ideas in mind and let 2 go.",
+  "My audit passes who(g) on 232 fresh inputs.",
+  "It rings through the Field: 4 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('c', 5, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: mary travelled to the bedroom; john went to the kitchen | question: who went to the kitchen -> john",
+  "story: daniel moved to the bathroom; mary travelled to the office | question: who went to the bathroom -> daniel",
+  "story: sandra travelled to the hallway; mary went to the office | question: who went to the office -> mary"
+ ]
+}

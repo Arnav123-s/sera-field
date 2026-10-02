@@ -66,5 +66,5 @@ Design references, read as competing mechanisms rather than imported capabilitie
   temporal local traces and the exact single-decision score derivative used here.
 - [MBPP authors](https://arxiv.org/abs/2108.07732) and the pinned publisher README:
   human program provenance and original split definitions.
-- [Publisher repository license](https://raw.githubusercontent.com/google-research/google-research/4700efb9afa54286b0e04473ba80a13e8461e25f/LICENSE):
+- Publisher repository license (source URL withheld):
   the pinned repository-level Apache-2.0 notice; raw data are retained locally.

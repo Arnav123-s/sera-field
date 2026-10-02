@@ -1,6 +1,6 @@
 # New unified memory research: source reconciliation and integration contract
 
-The user supplied **SERA Unified Architecture: Synthesizing Quantum Holography,
+the author supplied **SERA Unified Architecture: Synthesizing Quantum Holography,
 Phase Separation, and Epigenetic Memory for Autonomous Error Correction** directly
 in the SERA conversation on 2026-09-20. The full user text remains in that
 conversation. This file is an extracted engineering/source audit, not a verbatim

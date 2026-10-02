@@ -1,0 +1,37 @@
+{
+ "suite": "L1",
+ "index": 6,
+ "mind": "sera",
+ "truth": "growing with position",
+ "claim": "growing with position",
+ "sure": true,
+ "verified": true,
+ "right": true,
+ "wrong_frozen": false,
+ "sure_unverified": false,
+ "right_grid": true,
+ "wrong_grid": false,
+ "surface_ok": false,
+ "wrong": false,
+ "throws": 16,
+ "own": 0,
+ "seconds": 52.6,
+ "certify_calls": 1,
+ "families": 67,
+ "gap": "I am sure the force is growing with position where I looked (position -0.59 to 0.57, speed -0.69 to 0.63). Something more may be there, but it is too small to see here.",
+ "imagined_top3": [
+  [
+   "growing with position",
+   0.997
+  ],
+  [
+   "growing with position + cubic with position",
+   0.003
+  ],
+  [
+   "cubic with position",
+   0.0
+  ]
+ ],
+ "truth_in_imagined": true
+}

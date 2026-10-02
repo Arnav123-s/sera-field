@@ -1,0 +1,105 @@
+{
+ "task": "rail: wind 1",
+ "subject": "physics",
+ "kind": "strengths:num->num",
+ "teaching": true,
+ "steps": 6,
+ "answer": null,
+ "others": null,
+ "level": 1,
+ "asked": 4,
+ "explored": 3,
+ "tension": [
+  4.97,
+  5.279,
+  5.244,
+  5.226,
+  5.215,
+  22.406
+ ],
+ "wall": 78.2,
+ "cpu": 77.8,
+ "proven": true,
+ "invented": [
+  {
+   "id": 16,
+   "subject": "physics",
+   "input": "time",
+   "how": "curve",
+   "body": "tab"
+  }
+ ],
+ "reused": [],
+ "words_heard": [
+  "always",
+  "wind"
+ ],
+ "said": [
+  "rifo"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": {
+  "other": "(('time', 'concept', 4),)"
+ },
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.7,
+  "ledger": 3.13,
+  "actions": 37.64,
+  "prove": 31.28,
+  "imagine": 0.09,
+  "doubt": 1.19,
+  "explore": 0.0,
+  "ask": 0.01,
+  "grow": 3.86
+ },
+ "built": [],
+ "peak_mb": 4806.5625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "a free curve in time (33 knots)",
+ "band": 0.05070235772999781,
+ "verdict": "proven right",
+ "gap": 2.220446049250313e-16,
+ "signs": {},
+ "certified": [
+  {
+   "part": 0,
+   "as": "curve",
+   "on": "time"
+  }
+ ],
+ "question": {
+  "text": "The 8 things here have only 3 kinds of mass (0.826, 1.058, 2.135). Why so few? What makes a mass? In all 6 worlds I measured so far, things came in fewer kinds of mass than there were things.",
+  "things": 8,
+  "kinds": 3,
+  "masses": [
+   0.826,
+   1.058,
+   2.135
+  ]
+ },
+ "attributed": true,
+ "configs": [
+  "prove+imagine",
+  "explore+ask",
+  "ask",
+  "explore",
+  "explore+grow",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: (('time', 'concept', 1),) (4.17), (('time', 'expr', ('one', None)),) (4.10), (('position', 'concept', 8),) (1.45).",
+  "The judge accepts: a free curve in time (33 knots) up to 0.2 where I looked.",
+  "I imagine by compose then swap: 351 new ideas.",
+  "I keep what was right: 1 of time explains 549360 nats; I build on it and look for the rest.",
+  "I imagine by compose then keep: 64 new ideas.",
+  "I keep 156 of my imagined ideas in mind and let 262 go.",
+  "I think bigger (level 1)."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

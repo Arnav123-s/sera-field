@@ -1,0 +1,301 @@
+{
+ "task": "where 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 20,
+ "answer": [
+  "c",
+  3,
+  [
+   "head",
+   "list",
+   [
+    "filter",
+    null,
+    [
+     "lam",
+     "e",
+     [
+      "eq",
+      null,
+      [
+       "c",
+       3,
+       [
+        "head",
+        "list",
+        [
+         "var",
+         "g"
+        ]
+       ]
+      ],
+      [
+       "head",
+       null,
+       [
+        "var",
+        "e"
+       ]
+      ]
+     ]
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   4,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "c",
+     3,
+     [
+      "var",
+      "e"
+     ]
+    ]
+   ],
+   [
+    "lit",
+    5
+   ],
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "c",
+    4,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "c",
+    5,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "c",
+    4,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "c",
+    5,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "c",
+    4,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "c",
+    5,
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 3,
+ "asked": 17,
+ "explored": 0,
+ "tension": [
+  5.519,
+  5.522,
+  2.917,
+  5.522,
+  5.522,
+  2.917,
+  5.522,
+  5.522,
+  5.522,
+  5.522,
+  5.522,
+  5.522,
+  5.522,
+  5.522,
+  5.522,
+  16.367,
+  16.367,
+  16.367,
+  35.016,
+  35.016
+ ],
+ "wall": 646.4,
+ "cpu": 646.1,
+ "proven": true,
+ "invented": [
+  {
+   "id": 7,
+   "subject": "language",
+   "body": "kadu(head(filter(\u03bbe. eq(kadu(head(_)), head(e)), _)))"
+  },
+  {
+   "id": 8,
+   "subject": "language",
+   "inner": "the part it works on",
+   "body": "head(filter(\u03bbe. eq(kadu(head(_)), head(e)), _))"
+  }
+ ],
+ "reused": [
+  3
+ ],
+ "words_heard": [
+  "where",
+  "is"
+ ],
+ "said": [
+  "mire"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 1.36,
+  "ledger": 0.0,
+  "actions": 0.24,
+  "grow": 14.79,
+  "doubt": 1.31,
+  "ask": 0.0,
+  "imagine": 626.25,
+  "prove": 0.18
+ },
+ "built": [],
+ "peak_mb": 13193.55859375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "kadu(head(filter(\u03bbe. eq(kadu(head(g)), head(e)), g)))",
+ "verdict": "proven right",
+ "audit": 941,
+ "imagined_by": {
+  "method": "step+#1",
+  "moves": "step+wish+compose",
+  "origin": "stepped"
+ },
+ "method_named": {
+  "id": 2,
+  "moves": "step then wish then compose"
+ },
+ "configs": [
+  "grow",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "imagine+ask",
+  "ask+grow",
+  "ask",
+  "ask+grow",
+  "ask+imagine",
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "I think bigger (level 1).",
+  "In where 1 my best idea is noka(tail(g)), but I cannot finish (0.0 nats of doubt). Is it right, or what am I missing?",
+  "I imagine by compose then wish then compose: 0 new ideas.",
+  "I imagine by compose then wish: 0 new ideas.",
+  "I think bigger (level 2).",
+  "I think bigger (level 3).",
+  "I imagine by wish then wish then compose: 0 new ideas.",
+  "I break it into 2 steps (kadu(head(g)); head(filter(\u03bbe. eq(w1, head(e)), g))) and the rest follows: kadu(head(filter(\u03bbe. eq(kadu(head(g)), head(e)), g))).",
+  "I imagine by step then wish then compose: 1 new ideas.",
+  "My audit passes kadu(head(filter(\u03bbe. eq(kadu(head(g)), head(e)), g))) on 941 fresh inputs."
+ ],
+ "answer_repr": "('c', 3, ('head', 'list', ('filter', None, ('lam', 'e', ('eq', None, ('c', 3, ('head', 'list', ('var', 'g'))), ('head', None, ('var', 'e')))), ('var', 'g'))))",
+ "stage": "teach",
+ "english": [
+  "story: daniel moved to the office; john travelled to the bathroom; mary travelled to the garden | question: where is john -> bathroom",
+  "story: daniel went to the office; sandra moved to the garden | question: where is sandra -> garden",
+  "story: sandra went to the bedroom; daniel went to the bedroom | question: where is sandra -> bedroom"
+ ]
+}

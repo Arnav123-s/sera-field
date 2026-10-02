@@ -1,0 +1,29 @@
+phys-ec5d2ec-s3: one --stage teach --hours 1.5 --seed 3 --book /content/wordnet | env - | package ec5d2ec | started 2026-10-01 22:33 UTC | exit 0 | wall 5430 s
+=== rail: wind 2 (teach) | words heard: always wind
+  -> proven right | a free curve in time (33 knots) | steps 5 | 68.9 s | invented ['tab'] | reused [] | says ['dudu'] | CERTIFIED curve on time | IT ASKS: The 8 things here have only 3 kinds of mass (1.551, 1.645, 2.337). Why so few? What makes a mass? | time actions 32, prove 26, ledger 10
+=== number: odd (teach) | words heard: odd
+  -> proven right | if(eq(n, 2), 5, kadu(n)) | steps 3 | 626.0 s | invented ['if(eq(_, 2), 5, kadu(_))'] | reused [2] | says ['noka'] | FOUND BY compose+wish | ITS OWN METHOD {'id': 1, 'moves': 'compose then wish'} | time imagine 626, prove 0, other 0
+=== number: powers of two (teach) | words heard: powers of two
+  -> proven right | if(eq(n, 2), 4, mire(n)) | steps 13 | 1069.8 s | invented ['if(eq(_, 2), 4, mire(_))'] | reused [6] | says ['repe'] | FOUND BY wish+compose+wish | ITS OWN METHOD {'id': 2, 'moves': 'wish then compose then wish'} | time imagine 1060, grow 8, beliefs 1
+=== rail: spring 2 (teach) | words heard: far spring back
+  -> proven right | a free curve in position (9 knots) | steps 3 | 110.2 s | invented [] | reused [] | says [] | CERTIFIED curve on dim:x@4 | IT ASKS: The 8 things here have only 3 kinds of mass (1.051, 1.66, 1.853). Why so few? What makes a mass? | time prove 69, actions 26, ledger 12
+=== rail: stiff 2 (teach) | words heard: stiff back far
+  -> proven right | a free curve in (position x (position x position)) (9 knots) | steps 6 | 164.7 s | invented [] | reused [] | says ['stiff'] | CERTIFIED curve on dim:x.x.x.mul.mul@4 | IT ASKS: The 8 things here have only 3 kinds of mass (1.334, 1.38, 2.293). Why so few? What makes a mass? In all 3 worlds I measured so far, things came in fewer kinds of mass than there were things. | time prove 82, actions 58, ledger 23
+=== list: one more (teach) | words heard: one more
+  -> proven right | map(λe. nope(e), l) | steps 5 | 0.2 s | invented ['map(λe. nope(e), _)'] | reused [8] | says ['fori'] | FOUND BY wish+compose+wish+wish | ITS OWN METHOD {'id': 3, 'moves': 'wish then compose then wish then wish'} | time imagine 0, beliefs 0, actions 0
+=== number: square (teach) | words heard: square
+  -> proven right | mul(n, n) | steps 3 | 0.8 s | invented ['mul(_, _)'] | reused [] | says ['square'] | time grow 0, beliefs 0, doubt 0
+=== list: sum (teach) | words heard: sum
+  -> proven right | foldn(λa,e. add(e, a), 0, l) | steps 9 | 2650.4 s | invented ['foldn(λa,e. add(e, a), 0, _)'] | reused [] | says ['sum'] | FOUND BY compose+step | ITS OWN METHOD {'id': 4, 'moves': 'compose then step'} | time imagine 2650, beliefs 0, actions 0
+=== rail: ripple 1 (teach) | words heard: back far ripple
+  -> proven right | a free curve in position (9 knots) | steps 4 | 119.4 s | invented [] | reused [] | says ['spring'] | CERTIFIED curve on dim:x@4 | FALSE WORDS ['spring'] | DUALITY {'other': "(('position', 'expr', ('mul', None, ('var', 's'), ('c', 1, ('c', 10, ('var', 's'))))),)"} | IT ASKS: The 8 things here have only 3 kinds of mass (0.708, 1.425, 1.938). Why so few? What makes a mass? In all 4 worlds I measured so far, things came in fewer kinds of mass than there were things. | time prove 68, actions 33, ledger 12
+=== list: count (teach) | words heard: count
+  -> proven right | miri(l) | steps 6 | 262.6 s | invented [] | reused [12] | says ['count'] | FOUND BY compose+step | time imagine 262, beliefs 0, actions 0
+=== rail: ripple 2 (teach) | words heard: back ripple far
+  -> proven right | a free curve in position (9 knots) | steps 4 | 151.1 s | invented [] | reused [] | says ['ripple'] | CERTIFIED curve on dim:x@5 | DUALITY {'other': "(('position', 'expr', ('var', 's')), ('speed', 'expr', ('c', 10, ('c', 2, ('var', 's')))))"} | IT ASKS: The 8 things here have only 4 kinds of mass (1.112, 2.352, 2.402, 2.406). Why so few? What makes a mass? In all 5 worlds I measured so far, things came in fewer kinds of mass than there were things. | time prove 97, actions 39, ledger 14
+=== rail: wind 1 (teach) | words heard: always wind
+  -> proven right | a free curve in time (33 knots) | steps 5 | 66.9 s | invented ['tab'] | reused [] | says ['dupe'] | CERTIFIED curve on time | SERENDIPITY {'origin': 'recalled', 'source': 'rail: wind 2'} | DUALITY {'other': "(('time', 'concept', 4),)"} | FOUND BY recall+compose | ITS OWN METHOD {'id': 5, 'moves': 'recall then compose'} | IT ASKS: The 8 things here have only 3 kinds of mass (0.826, 1.058, 2.135). Why so few? What makes a mass? In all 6 worlds I measured so far, things came in fewer kinds of mass than there were things. | time prove 41, actions 22, ledger 4
+=== list: keep positive (teach) | words heard: keep positive
+  -> not proven | None | steps 5 | 106.8 s | invented [] | reused [] | says [] | time imagine 101, grow 3, beliefs 2
+PHYSICS PROVEN {"worlds": 6, "curves_proven": 6, "drawings_proven": 0, "formulas_proven": 0}
+ONE SERA DONE {"tasks": 13, "concepts": 13, "concepts_by_subject": {"physics": 2, "math": 7, "code": 4}, "words": 16, "grounded": 0, "coined": 11, "understood": 13, "possibilities": 14, "links": 1, "questions": 9, "inbox": 1}

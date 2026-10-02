@@ -1,0 +1,307 @@
+{
+ "task": "is_in 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 43,
+ "answer": [
+  "sub",
+  null,
+  [
+   "c",
+   3,
+   [
+    "cons",
+    null,
+    [
+     "nil",
+     null
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "one",
+   null
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   3,
+   [
+    "cons",
+    null,
+    [
+     "nil",
+     null
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "c",
+    1,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "mul",
+    null,
+    [
+     "lit",
+     8
+    ],
+    [
+     "lit",
+     3
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "mul",
+    null,
+    [
+     "lit",
+     8
+    ],
+    [
+     "lit",
+     3
+    ]
+   ],
+   [
+    "head",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "head",
+      "list",
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ],
+   [
+    "mul",
+    null,
+    [
+     "lit",
+     8
+    ],
+    [
+     "lit",
+     3
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ],
+   [
+    "sub",
+    null,
+    [
+     "mul",
+     null,
+     [
+      "lit",
+      5
+     ],
+     [
+      "lit",
+      5
+     ]
+    ],
+    [
+     "lit",
+     3
+    ]
+   ]
+  ]
+ ],
+ "level": 3,
+ "asked": 40,
+ "explored": 0,
+ "tension": [
+  3.796,
+  3.796,
+  3.796,
+  3.796,
+  3.796,
+  3.796,
+  3.796,
+  3.796,
+  3.796,
+  3.796,
+  3.796,
+  3.796,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  4.346,
+  8.062,
+  15.125,
+  15.125
+ ],
+ "wall": 73.7,
+ "cpu": 73.7,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "is",
+  "yes",
+  "no"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.89,
+  "ledger": 0.0,
+  "actions": 0.21,
+  "ask": 0.0,
+  "doubt": 0.71,
+  "imagine": 58.7,
+  "grow": 11.8
+ },
+ "built": [],
+ "peak_mb": 12308.37890625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "grow",
+  "grow",
+  "grow"
+ ],
+ "say": [
+  "I imagine by step then compose then compose: 0 new ideas.",
+  "I imagine by recall then wish: 1 new ideas.",
+  "In is_in 2 my best idea is first(g), but I cannot finish (1.9 nats of doubt). Is it right, or what am I missing?",
+  "I think bigger (level 1).",
+  "I think bigger (level 2).",
+  "I think bigger (level 3).",
+  "In is_in 2 my best idea is sub(fofo(cons([], g)), 1), but I cannot finish (0.0 nats of doubt, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('sub', None, ('c', 3, ('cons', None, ('nil', None), ('var', 'g'))), ('one', None))",
+ "stage": "teach",
+ "english": [
+  "story: sandra went to the hallway; daniel journeyed to the bedroom; john journeyed to the office; mary travelled to the kitchen | question: is daniel in the kitchen yes or no -> no",
+  "story: mary travelled to the garden; john journeyed to the kitchen; sandra travelled to the bedroom | question: is sandra in the bedroom yes or no -> yes",
+  "story: mary travelled to the hallway; daniel travelled to the hallway; john journeyed to the office | question: is daniel in the bedroom yes or no -> no"
+ ]
+}

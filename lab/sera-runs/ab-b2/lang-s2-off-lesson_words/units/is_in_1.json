@@ -1,0 +1,321 @@
+{
+ "task": "is_in 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 44,
+ "answer": [
+  "mul",
+  null,
+  [
+   "lit",
+   5
+  ],
+  [
+   "mul",
+   null,
+   [
+    "lit",
+    5
+   ],
+   [
+    "lit",
+    5
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "add",
+   null,
+   [
+    "lit",
+    4
+   ],
+   [
+    "add",
+    null,
+    [
+     "lit",
+     3
+    ],
+    [
+     "head",
+     null,
+     [
+      "head",
+      "list",
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "c",
+    4,
+    [
+     "var",
+     "g"
+    ]
+   ],
+   [
+    "mul",
+    null,
+    [
+     "lit",
+     5
+    ],
+    [
+     "lit",
+     4
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "c",
+    3,
+    [
+     "head",
+     "list",
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "mul",
+    null,
+    [
+     "lit",
+     4
+    ],
+    [
+     "lit",
+     4
+    ]
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "mul",
+     null,
+     [
+      "var",
+      "a"
+     ],
+     [
+      "lit",
+      5
+     ]
+    ]
+   ],
+   [
+    "lit",
+    5
+   ],
+   [
+    "c",
+    6,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "c",
+    4,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "mul",
+    null,
+    [
+     "lit",
+     4
+    ],
+    [
+     "lit",
+     4
+    ]
+   ]
+  ]
+ ],
+ "level": 3,
+ "asked": 40,
+ "explored": 0,
+ "tension": [
+  2.076,
+  4.825,
+  4.825,
+  4.825,
+  4.825,
+  4.825,
+  4.825,
+  4.825,
+  4.825,
+  18.139,
+  18.139,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113,
+  18.113
+ ],
+ "wall": 1809.0,
+ "cpu": 1807.4,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "is",
+  "yes",
+  "no"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 11.57,
+  "ledger": 0.0,
+  "actions": 1.25,
+  "ask": 0.0,
+  "imagine": 1723.27,
+  "doubt": 10.24,
+  "grow": 54.8
+ },
+ "built": [],
+ "peak_mb": 9664.890625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "ask+imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "grow",
+  "ask",
+  "ask+imagine",
+  "ask+imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "grow",
+  "imagine",
+  "grow"
+ ],
+ "say": [
+  "This rings in me: in (11.00), now (1.77).",
+  "I imagine by wish then step then compose then recall: 4 new ideas.",
+  "I imagine by compose then recall: 0 new ideas.",
+  "I think bigger (level 1).",
+  "I imagine by wish then step: 0 new ideas.",
+  "I imagine by wish then step: 0 new ideas.",
+  "I keep 0 of my imagined ideas in mind and let 6 go.",
+  "I imagine by compose: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "In is_in 1 my best idea is mul(5, mul(5, 5)), but I cannot finish (none of my ideas fits the examples). Is it right, or what am I missing?",
+  "I think bigger (level 2).",
+  "I imagine by step then wish: 0 new ideas.",
+  "I imagine by wish then step then step: 0 new ideas.",
+  "I think bigger (level 3).",
+  "In is_in 1 my best idea is mul(5, mul(5, 5)), but I cannot finish (none of my ideas fits the examples, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('mul', None, ('lit', 5), ('mul', None, ('lit', 5), ('lit', 5)))",
+ "stage": "teach",
+ "english": [
+  "story: mary journeyed to the bathroom; sandra went to the bedroom; john moved to the office | question: is sandra in the bedroom -> yes",
+  "story: john moved to the bathroom; sandra travelled to the office | question: is john in the bathroom -> yes",
+  "story: sandra travelled to the garden; mary journeyed to the bedroom | question: is sandra in the bedroom -> no"
+ ]
+}

@@ -1,0 +1,183 @@
+{
+ "task": "what_is 1",
+ "subject": "language",
+ "kind": "exact:list(list)->list",
+ "teaching": true,
+ "steps": 5,
+ "answer": [
+  "tail",
+  null,
+  [
+   "tail",
+   null,
+   [
+    "c",
+    8,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "tail",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "c",
+     2,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "nil",
+   null
+  ],
+  [
+   "tail",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "c",
+     2,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "foldl",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "e"
+      ]
+     ]
+    ]
+   ],
+   [
+    "nil",
+    null
+   ],
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   2,
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "level": 2,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  2.699,
+  2.699,
+  11.3,
+  11.3,
+  11.3
+ ],
+ "wall": 28.3,
+ "cpu": 28.2,
+ "proven": true,
+ "invented": [
+  {
+   "id": 9,
+   "subject": "language",
+   "body": "tail(tail(rika(_)))"
+  },
+  {
+   "id": 10,
+   "subject": "language",
+   "inner": "the part it works on",
+   "body": "tail(rika(_))"
+  }
+ ],
+ "reused": [
+  8
+ ],
+ "words_heard": [
+  "what",
+  "is"
+ ],
+ "said": [
+  "losa"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.19,
+  "ledger": 0.0,
+  "actions": 0.06,
+  "ask": 0.0,
+  "doubt": 0.17,
+  "grow": 18.15,
+  "imagine": 0.01,
+  "prove": 0.07
+ },
+ "built": [],
+ "peak_mb": 9664.890625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "tail(tail(rika(g)))",
+ "verdict": "proven right",
+ "audit": 378,
+ "configs": [
+  "ask",
+  "grow",
+  "imagine",
+  "prove+grow",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: ridu (1.96).",
+  "I think bigger (level 1).",
+  "I imagine by compose: 0 new ideas.",
+  "I keep 0 of my imagined ideas in mind and let 1 go.",
+  "My audit passes tail(tail(rika(g))) on 378 fresh inputs.",
+  "I think bigger (level 2).",
+  "It rings through the Field: 4 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('tail', None, ('tail', None, ('c', 8, ('var', 'g'))))",
+ "stage": "teach",
+ "english": [
+  "story: masseuse is a female massager; ridley is a marine turtle; haggard is british writer noted for romantic adventure novels | question: what is masseuse -> a female massager",
+  "story: unlabeled is lacking a label or tag; sanction is formal and explicit approval; miniaturist is someone who paints tiny pictures in great detail | question: what is sanction -> formal and explicit approval",
+  "story: blackcock is male black grouse; witting is aware or knowing; miniaturist is someone who paints tiny pictures in great detail; cariamidae is south american wading birds | question: what is witting -> aware or knowing"
+ ]
+}

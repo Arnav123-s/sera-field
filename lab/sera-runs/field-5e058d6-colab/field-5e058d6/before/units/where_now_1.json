@@ -1,0 +1,360 @@
+{
+ "task": "where_now 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 44,
+ "answer": [
+  "foldn",
+  null,
+  [
+   "lam",
+   "ae",
+   [
+    "c",
+    3,
+    [
+     "var",
+     "e"
+    ]
+   ]
+  ],
+  [
+   "lit",
+   5
+  ],
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   7,
+   [
+    "cons",
+    null,
+    [
+     "head",
+     "list",
+     [
+      "var",
+      "g"
+     ]
+    ],
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "tail",
+       null,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "filter",
+    null,
+    [
+     "lam",
+     "e",
+     [
+      "eq",
+      null,
+      [
+       "head",
+       null,
+       [
+        "var",
+        "e"
+       ]
+      ],
+      [
+       "head",
+       null,
+       [
+        "c",
+        8,
+        [
+         "var",
+         "g"
+        ]
+       ]
+      ]
+     ]
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "cons",
+    null,
+    [
+     "c",
+     4,
+     [
+      "var",
+      "g"
+     ]
+    ],
+    [
+     "c",
+     2,
+     [
+      "tail",
+      null,
+      [
+       "tail",
+       null,
+       [
+        "tail",
+        null,
+        [
+         "var",
+         "g"
+        ]
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   7,
+   [
+    "cons",
+    null,
+    [
+     "head",
+     "list",
+     [
+      "var",
+      "g"
+     ]
+    ],
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "tail",
+       null,
+       [
+        "tail",
+        null,
+        [
+         "var",
+         "g"
+        ]
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "cons",
+    null,
+    [
+     "c",
+     4,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ],
+    [
+     "c",
+     2,
+     [
+      "tail",
+      null,
+      [
+       "tail",
+       null,
+       [
+        "tail",
+        null,
+        [
+         "var",
+         "g"
+        ]
+       ]
+      ]
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 5,
+ "asked": 40,
+ "explored": 0,
+ "tension": [
+  3.377,
+  11.11,
+  3.381,
+  3.463,
+  14.141,
+  13.801,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  13.871,
+  12.894,
+  10.666,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  12.894,
+  15.805,
+  15.805,
+  14.33,
+  14.329
+ ],
+ "wall": 1884.5,
+ "cpu": 1860.0,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "where",
+  "is",
+  "now"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 16.2,
+  "ledger": 0.0,
+  "actions": 0.73,
+  "ask": 0.0,
+  "grow": 1848.31,
+  "doubt": 15.02
+ },
+ "built": [],
+ "peak_mb": 16360.3984375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "ask+grow",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "grow",
+  "grow",
+  "grow",
+  "grow"
+ ],
+ "say": [
+  "I think bigger (level 1).",
+  "In where_now 1 my best idea is lolo(tail(tail(tail(g)))), but I cannot finish (0.0 nats of doubt). Is it right, or what am I missing?",
+  "I think bigger (level 2).",
+  "I think bigger (level 3).",
+  "I think bigger (level 4).",
+  "I think bigger (level 5).",
+  "In where_now 1 my best idea is foldn(\u03bba,e. kalo(e), 5, g), but I cannot finish (-0.0 nats of doubt, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('foldn', None, ('lam', 'ae', ('c', 3, ('var', 'e'))), ('lit', 5), ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: john moved to the office; daniel went to the garden; john moved to the office; mary journeyed to the bedroom; daniel journeyed to the garden; john journeyed to the garden | question: where is daniel -> garden",
+  "story: mary went to the kitchen; mary went to the hallway; mary moved to the kitchen | question: where is mary -> kitchen",
+  "story: sandra moved to the garden; daniel went to the kitchen; mary moved to the bathroom; sandra travelled to the hallway | question: where is sandra -> hallway"
+ ]
+}

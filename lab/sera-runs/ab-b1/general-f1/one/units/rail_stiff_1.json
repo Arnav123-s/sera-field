@@ -1,0 +1,129 @@
+{
+ "task": "rail: stiff 1",
+ "subject": "physics",
+ "kind": "strengths:num->num",
+ "teaching": true,
+ "steps": 13,
+ "answer": null,
+ "others": null,
+ "level": 1,
+ "asked": 11,
+ "explored": 4,
+ "tension": [
+  5.673,
+  8.179,
+  16.55,
+  16.518,
+  16.583,
+  16.599,
+  16.482,
+  16.004,
+  16.067,
+  34.318,
+  32.308,
+  23.042,
+  21.032
+ ],
+ "wall": 315.0,
+ "cpu": 313.2,
+ "proven": true,
+ "invented": [
+  {
+   "id": 24,
+   "subject": "physics",
+   "input": "position",
+   "how": "curve",
+   "body": "tab"
+  }
+ ],
+ "reused": [],
+ "words_heard": [
+  "stiff",
+  "far",
+  "back"
+ ],
+ "said": [
+  "satu",
+  "ripple"
+ ],
+ "false_words": [
+  "ripple"
+ ],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 1.26,
+  "ledger": 35.44,
+  "actions": 173.16,
+  "prove": 87.51,
+  "doubt": 2.15,
+  "ask": 0.12,
+  "convince": 0.18,
+  "grow": 12.51
+ },
+ "built": [],
+ "peak_mb": 5434.015625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "a free curve in position (33 knots)",
+ "band": 0.07278426223160743,
+ "verdict": "proven right",
+ "gap": 0.05627478356614546,
+ "signs": {
+  "position": -1
+ },
+ "certified": [
+  {
+   "part": 0,
+   "as": "curve",
+   "on": "position"
+  }
+ ],
+ "question": {
+  "text": "The 8 things here have only 3 kinds of mass (2.017, 2.121, 2.361). Why so few? What makes a mass? In all 11 worlds I measured so far, things came in fewer kinds of mass than there were things.",
+  "things": 8,
+  "kinds": 3,
+  "masses": [
+   2.017,
+   2.121,
+   2.361
+  ]
+ },
+ "attributed": true,
+ "configs": [
+  "prove",
+  "ask+convince",
+  "convince+explore",
+  "convince+ask",
+  "convince+ask",
+  "ask+explore+convince",
+  "ask",
+  "prove+convince+ask",
+  "grow+ask",
+  "convince+ask+prove",
+  "ask+explore",
+  "ask+explore",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: (('position', 'concept', 8),) (5.82), (('position', 'concept', 8), ('speed', 'concept', 8)) (2.25), (('position', 'concept', 9),) (1.60).",
+  "The judge does not accept my shape 15 of position + my shape 13 of speed: something else could be as large as 0.297 > eps 0.2.",
+  "The judge is least sure near position 0.67, speed -0.14, time 2.00: I push to show it there.",
+  "The judge is least sure near position 0.67, speed -0.14, time 2.00: I push to show it there.",
+  "The judge is least sure near position 0.67, speed -0.14, time 2.00: I push to show it there.",
+  "The judge is least sure near position 0.67, speed -0.14, time 2.00: I push to show it there.",
+  "The judge is least sure near position 0.67, speed -0.14, time 2.00: I push to show it there.",
+  "The judge does not accept my shape 15 of position: something else is here: the law misfits more objects than bumps explain.",
+  "The judge is least sure near position 0.67, speed -0.14, time 2.00: I push to show it there.",
+  "The judge refuted it: the 13 ways of working and imagining that led there are weakened a little.",
+  "I think bigger (level 1).",
+  "The judge is least sure near position 0.67, speed -0.14, time 2.00: I push to show it there.",
+  "The judge accepts: a free curve in position (33 knots) up to 0.2 where I looked.",
+  "It rings through the Field: 4 ways of working and imagining that led here are strengthened."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

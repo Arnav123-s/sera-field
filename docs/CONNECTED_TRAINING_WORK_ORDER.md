@@ -1,6 +1,6 @@
 # CONNECTED-002: sustained understanding and imagination research
 
-The current user authorizes Antigravity to continue the new from-scratch SERA
+The author authorizes development work to continue the new from-scratch SERA
 direction after this engineering handoff. This is a separate assignment from
 CAMPAIGN-001. Preserve that older work and any pause on its tasks. Do not copy its
 learner weights or replace this direction with its byte-prediction experiment.
@@ -16,7 +16,7 @@ to the original goal. Continue across human language, physical simulation,
 mathematics, programming, other sciences and interpretation. Test useful transfer,
 retention and better acquisition of later abilities.
 
-The user's examples of scientists, inventors and poets express a desired process:
+The author's examples of scientists, inventors and poets express a desired process:
 perspective, imagination, unresolved questions, connections, hypotheses and checked
 discoveries. They are not supplied discoveries for SERA to repeat as if invented.
 Reward multiple genuinely different correct approaches and useful connections.
@@ -46,7 +46,7 @@ repo to the existing production ag branch and replace that branch's history.
 Keep raw corpora, prompts, runtime logs and large working checkpoints private;
 preserve reproducible manifests and original attribution. No automatic coauthors.
 
-No recurring monitor or scheduled task is requested. The user will return to
+No recurring monitor or scheduled task is requested. The author will return to
 the main engineer for an independent audit. Maintain local progress/handoff files.
 
 ## Read, reconcile and audit first
@@ -140,7 +140,7 @@ through logged views, preserving document offsets, but grade executable meaning
 and task performance independently. Add qualified human chemistry/biology and
 multilingual sources when needed. Pin publisher revision, hash, rights, author
 origin, transformations, source groups and exposure. Do not turn generated
-explanations from a research assistant into an unlabeled human teaching corpus.
+explanations from a helper script into an unlabeled human teaching corpus.
 Unresolved provenance/rights remain pending. Preserve the 97 mathematics intake
 exceptions; resolve or exclude with reasons, never rewrite their original answers.
 
@@ -163,8 +163,8 @@ seven stages, with three prospective seeds. It is a finite, substantial teaching
 allocation, not a request to pad counts. Rehearse correctness first; profile a
 sustained segment and record realistic throughput and projected runtime. Then run
 large resumable segments, not repeated fresh micro-pilots. Support a durable local
-runner so an agent quota limit does not discard completed numerical work. Do not
-buy credits or use paid overages to keep agent research running.
+runner so a development quota limit does not discard completed numerical work. Do not
+buy credits or use paid overages to keep automated research running.
 
 Freeze the executable model specification, source partitions, dataset exposure,
 learning rates, curriculum schedule, reward/checker identities, development
@@ -188,7 +188,7 @@ before relying on a long unattended worker. Save open original questions too.
 Select on development only. Run reward-disconnected, imagination-disconnected,
 loop-disconnected and no-update checks with matched exposure and evidence costs
 where the corresponding causal claim is made. Use simple strong task controls to
-diagnose failure, not as a reason to abandon the user's architecture. Do not rank
+diagnose failure, not as a reason to abandon the author's architecture. Do not rank
 unequally trained systems. Count training repetitions, unique source records,
 synthetic cases, verified revisions, qualified distinct methods and next-task
 improvements separately. Report per-subject results and mixed retention, not only
@@ -203,7 +203,7 @@ and allocate a fresh prospective final; never present it as the original holdout
 
 Routine local research, edits, finite tests, training, repairs and checkpoints in
 the assigned lab are already authorized. No per-command request to the main
-engineer is needed. Use the included Antigravity subscription only. Do not change
+engineer is needed. Use the included development resources only. Do not change
 app/security permissions, approve security prompts, create credentials, spend
 money or bypass account limits. A genuine blocked app prompt is a user action;
 record it accurately and continue independent safe work where possible.
@@ -211,13 +211,13 @@ record it accurately and continue independent safe work where possible.
 All numerical work, including tests and program execution, uses scripts/supervise.py
 or a proven equivalent with the shared exclusive lease, one CPU numerical thread,
 2 GiB committed process-tree cap and exact costs. These limits are already wired
-in the supplied supervisor before the child resumes. The user removed the elapsed
+in the supplied supervisor before the child resumes. The author removed the elapsed
 local numerical time cap. Do not ask for another 60-minute grant. Keep-awake is
 scoped to the owned supervised job and must be restored on exit. Never stop another
 session. A lease conflict requires waiting or preparation, not deleting its lock.
 
 A compact lead/implementer/reviewer arrangement is allowed if useful. Serialize
-numerical workers. Avoid endless reviewing-agent messages or repeated broad report
+numerical workers. Avoid endless review messages or repeated broad report
 reads that consume the subscription without producing learned behavior. Make
 substantive local progress and commit checkpoints before exhausting context/quota.
 
@@ -239,5 +239,5 @@ what it imagined, what was checked, what changed and the answer returned.
 
 Re-read the original proposal and intended behavior after evaluation. Update every
 coverage row with measured evidence or a concrete remaining research question.
-Do not self-promote a candidate into production. The user and main engineer will
+Do not self-promote a candidate into production. The author and main engineer will
 independently audit the finished checkpoint and untouched comparison cohort.

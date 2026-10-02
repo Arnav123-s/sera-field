@@ -1,0 +1,287 @@
+{
+ "task": "where_now 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 10,
+ "answer": [
+  "foldn",
+  null,
+  [
+   "lam",
+   "ae",
+   [
+    "c",
+    3,
+    [
+     "var",
+     "e"
+    ]
+   ]
+  ],
+  [
+   "head",
+   null,
+   [
+    "c",
+    8,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "filter",
+   null,
+   [
+    "lam",
+    "e",
+    [
+     "eq",
+     null,
+     [
+      "head",
+      null,
+      [
+       "c",
+       8,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ],
+     [
+      "head",
+      null,
+      [
+       "var",
+       "e"
+      ]
+     ]
+    ]
+   ],
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "c",
+     3,
+     [
+      "var",
+      "e"
+     ]
+    ]
+   ],
+   [
+    "lit",
+    5
+   ],
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   7,
+   [
+    "cons",
+    null,
+    [
+     "head",
+     "list",
+     [
+      "var",
+      "g"
+     ]
+    ],
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "lit",
+    6
+   ],
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "head",
+    null,
+    [
+     "c",
+     9,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "lit",
+    5
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 5,
+ "asked": 8,
+ "explored": 0,
+ "tension": [
+  2.442,
+  14.327,
+  15.169,
+  15.169,
+  15.169,
+  15.169,
+  52.591,
+  52.591,
+  52.591,
+  51.487,
+  52.654
+ ],
+ "wall": 1803.6,
+ "cpu": 1802.3,
+ "proven": true,
+ "invented": [
+  {
+   "id": 11,
+   "subject": "language",
+   "body": "foldn(\u03bba,e. fofo(e), head(rika(_)), filter(\u03bbe. eq(head(rika(_)), head(e)), _))"
+  }
+ ],
+ "reused": [
+  8,
+  3
+ ],
+ "words_heard": [
+  "where",
+  "is",
+  "now"
+ ],
+ "said": [
+  "now"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 2.4,
+  "ledger": 0.0,
+  "actions": 0.43,
+  "grow": 500.5,
+  "doubt": 1.98,
+  "ask": 0.04,
+  "imagine": 1292.09,
+  "prove": 0.76
+ },
+ "built": [],
+ "peak_mb": 9664.890625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "foldn(\u03bba,e. fofo(e), head(rika(g)), filter(\u03bbe. eq(head(rika(g)), head(e)), g))",
+ "verdict": "proven right",
+ "audit": 1329,
+ "imagined_by": {
+  "method": "#1+compose",
+  "moves": "wish+step+compose",
+  "origin": "stepped"
+ },
+ "method_named": {
+  "id": 4,
+  "moves": "wish then step then compose"
+ },
+ "configs": [
+  "grow",
+  "ask+imagine+grow",
+  "ask+grow",
+  "ask",
+  "ask",
+  "imagine",
+  "ask",
+  "ask",
+  "ask+grow",
+  "ask+grow+prove"
+ ],
+ "say": [
+  "This rings in me: where (9.96), in (3.72).",
+  "I think bigger (level 1).",
+  "I imagine by wish then recall: 4 new ideas.",
+  "I imagine by compose then wish: 0 new ideas.",
+  "I keep 1 of my imagined ideas in mind and let 5 go.",
+  "I think bigger (level 2).",
+  "I think bigger (level 3).",
+  "I break it into 2 steps (head(rika(g)); filter(\u03bbe. eq(w1, head(e)), g)) and the rest follows: foldn(\u03bba,e. fofo(e), head(rika(g)), filter(\u03bbe. eq(head(rika(g)), head(e)), g)).",
+  "I imagine by wish then step then compose: 1 new ideas.",
+  "I imagine by step then wish then compose then wish: 0 new ideas.",
+  "I keep 1 of my imagined ideas in mind and let 1 go.",
+  "I think bigger (level 4).",
+  "I think bigger (level 5).",
+  "My audit passes foldn(\u03bba,e. fofo(e), head(rika(g)), filter(\u03bbe. eq(head(rika(g)), head(e)), g)) on 1329 fresh inputs.",
+  "It rings through the Field: 19 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('foldn', None, ('lam', 'ae', ('c', 3, ('var', 'e'))), ('head', None, ('c', 8, ('var', 'g'))), ('filter', None, ('lam', 'e', ('eq', None, ('head', None, ('c', 8, ('var', 'g'))), ('head', None, ('var', 'e')))), ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: john journeyed to the hallway; mary journeyed to the office; mary moved to the office; mary journeyed to the office; john moved to the office; mary went to the kitchen | question: where is mary -> kitchen",
+  "story: sandra went to the kitchen; daniel went to the hallway; daniel moved to the bedroom; daniel moved to the bedroom; john went to the bedroom; daniel travelled to the bathroom | question: where is daniel -> bathroom",
+  "story: sandra journeyed to the bathroom; sandra travelled to the kitchen; sandra journeyed to the bathroom; mary travelled to the bedroom; mary travelled to the kitchen; mary moved to the bedroom | question: where is mary -> bedroom"
+ ]
+}

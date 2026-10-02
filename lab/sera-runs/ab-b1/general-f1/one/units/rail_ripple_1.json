@@ -1,0 +1,88 @@
+{
+ "task": "rail: ripple 1",
+ "subject": "physics",
+ "kind": "strengths:num->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": null,
+ "others": null,
+ "level": 0,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  5.662,
+  5.226
+ ],
+ "wall": 85.3,
+ "cpu": 84.8,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  8
+ ],
+ "words_heard": [
+  "back",
+  "far",
+  "ripple"
+ ],
+ "said": [
+  "spring",
+  "ripple"
+ ],
+ "false_words": [
+  "spring"
+ ],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.27,
+  "ledger": 10.51,
+  "actions": 30.08,
+  "prove": 43.55,
+  "doubt": 0.04
+ },
+ "built": [],
+ "peak_mb": 4806.5625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "my shape 12 of position",
+ "band": 0.1601362891102398,
+ "verdict": "proven right",
+ "gap": 0.022468652883280038,
+ "signs": {
+  "position": -1
+ },
+ "certified": [
+  {
+   "part": 0,
+   "as": "drawing",
+   "on": "position",
+   "shape": 12,
+   "concept": 8
+  }
+ ],
+ "question": {
+  "text": "The 8 things here have only 3 kinds of mass (0.911, 1.426, 1.935). Why so few? What makes a mass? In all 4 worlds I measured so far, things came in fewer kinds of mass than there were things.",
+  "things": 8,
+  "kinds": 3,
+  "masses": [
+   0.911,
+   1.426,
+   1.935
+  ]
+ },
+ "attributed": true,
+ "configs": [
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: (('position', 'concept', 8),) (2.27), (('position', 'concept', 9),) (2.22), (('position', 'expr', ('mul', None, ('var', 's'), ('mul', No (1.98).",
+  "The judge accepts: my shape 12 of position up to 0.2 where I looked."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

@@ -1,0 +1,317 @@
+{
+ "task": "what_is 2",
+ "subject": "language",
+ "kind": "exact:list(list)->list",
+ "teaching": true,
+ "steps": 33,
+ "answer": [
+  "tail",
+  null,
+  [
+   "tail",
+   null,
+   [
+    "c",
+    2,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "tail",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "c",
+     2,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "foldl",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "e"
+      ]
+     ]
+    ]
+   ],
+   [
+    "nil",
+    null
+   ],
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "filteri",
+   null,
+   [
+    "lam",
+    "ie",
+    [
+     "lt",
+     null,
+     [
+      "var",
+      "i"
+     ],
+     [
+      "lit",
+      5
+     ]
+    ]
+   ],
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "c",
+      2,
+      [
+       "tail",
+       null,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "filteri",
+   null,
+   [
+    "lam",
+    "ie",
+    [
+     "lt",
+     null,
+     [
+      "var",
+      "i"
+     ],
+     [
+      "lit",
+      6
+     ]
+    ]
+   ],
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "c",
+      2,
+      [
+       "tail",
+       null,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "tail",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "filteri",
+     null,
+     [
+      "lam",
+      "ie",
+      [
+       "lt",
+       null,
+       [
+        "var",
+        "i"
+       ],
+       [
+        "lit",
+        9
+       ]
+      ]
+     ],
+     [
+      "c",
+      2,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 5,
+ "asked": 33,
+ "explored": 0,
+ "tension": [
+  2.437,
+  2.437,
+  2.437,
+  2.437,
+  2.437,
+  2.437,
+  2.437,
+  2.437,
+  2.437,
+  2.437,
+  2.437,
+  2.437,
+  2.437,
+  2.437,
+  2.437,
+  13.579,
+  13.579,
+  13.579,
+  13.579,
+  13.579,
+  13.579,
+  13.579,
+  13.579,
+  13.579,
+  13.579,
+  13.579,
+  13.579,
+  13.579,
+  13.579,
+  13.579,
+  13.579,
+  13.579,
+  13.579,
+  13.579
+ ],
+ "wall": 1860.4,
+ "cpu": 1851.8,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "what",
+  "is"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 2.05,
+  "ledger": 0.0,
+  "actions": 0.0,
+  "ask": 0.0,
+  "doubt": 2.03,
+  "imagine": 1598.16,
+  "grow": 257.47
+ },
+ "built": [],
+ "peak_mb": 11814.78515625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "ask",
+  "ask+imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+grow",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask+grow",
+  "ask",
+  "ask",
+  "ask",
+  "ask+grow",
+  "grow+ask+imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask+grow"
+ ],
+ "say": [
+  "I imagine by step then compose then step: 0 new ideas.",
+  "I imagine by compose then wish: 0 new ideas.",
+  "In what_is 2 my best idea is [], but I cannot finish (0.6 nats of doubt). Is it right, or what am I missing?",
+  "I think bigger (level 1).",
+  "I imagine by step then compose: 0 new ideas.",
+  "I imagine by step then compose then wish: 0 new ideas.",
+  "I think bigger (level 2).",
+  "In what_is 2 my best idea is tail(tail(ridu(tail(g)))), but I cannot finish (-0.0 nats of doubt). Is it right, or what am I missing?",
+  "I think bigger (level 3).",
+  "I think bigger (level 4).",
+  "I imagine by step then wish: 0 new ideas.",
+  "I imagine by wish: 0 new ideas.",
+  "I think bigger (level 5).",
+  "In what_is 2 my best idea is tail(tail(ridu(tail(g)))), but I cannot finish (-0.0 nats of doubt, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('tail', None, ('tail', None, ('c', 2, ('tail', None, ('var', 'g')))))",
+ "stage": "teach",
+ "english": [
+  "story: intriguer is a person who devises plots or intrigues; poetically is in a poetic manner; uppityness is assumption of airs beyond station | question: what is poetically -> in a poetic manner",
+  "story: unflawed is without a flaw; recollective is good at remembering; alleviator is a therapist who makes suffering more endurable; mishegaas is senseless behavior or activity | question: what is recollective -> good at remembering",
+  "story: mycenaen is a native or inhabitant of ancient mycenae; moldy is covered with or smelling of mold | question: what is mycenaen -> a native or inhabitant of ancient mycenae"
+ ]
+}

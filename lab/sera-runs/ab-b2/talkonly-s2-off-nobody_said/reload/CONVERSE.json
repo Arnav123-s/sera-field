@@ -1,0 +1,4726 @@
+{
+ "taught: the lesson": {
+  "task": "talk",
+  "teaching": true,
+  "n": 60,
+  "right": 37,
+  "answered": 43,
+  "by_kind": {
+   "absent": "1/1 (answered 0)",
+   "first": "7/7 (answered 7)",
+   "is in": "0/6 (answered 0)",
+   "last": "7/7 (answered 7)",
+   "what is": "8/8 (answered 8)",
+   "where": "3/11 (answered 4)",
+   "where now": "0/9 (answered 6)",
+   "who in": "11/11 (answered 11)"
+  },
+  "learned": [
+   [
+    "where",
+    "is",
+    -0.25
+   ],
+   [
+    "where",
+    "where",
+    -0.25
+   ],
+   [
+    "fotu",
+    "is",
+    0.25
+   ],
+   [
+    "fotu",
+    "where",
+    0.25
+   ],
+   [
+    "fotu",
+    "is",
+    -0.25
+   ],
+   [
+    "fotu",
+    "where",
+    -0.25
+   ],
+   [
+    "fotu",
+    "is",
+    0.25
+   ],
+   [
+    "fotu",
+    "where",
+    0.25
+   ],
+   [
+    "where",
+    "is",
+    0.25
+   ],
+   [
+    "where",
+    "where",
+    0.25
+   ],
+   [
+    "fotu",
+    "is",
+    -0.25
+   ],
+   [
+    "fotu",
+    "where",
+    -0.25
+   ],
+   [
+    "where",
+    "is",
+    -0.25
+   ],
+   [
+    "where",
+    "where",
+    -0.25
+   ],
+   [
+    "where",
+    "is",
+    0.25
+   ],
+   [
+    "where",
+    "where",
+    0.25
+   ],
+   [
+    "where",
+    "is",
+    -0.25
+   ],
+   [
+    "where",
+    "where",
+    -0.25
+   ],
+   [
+    "where",
+    "is",
+    0.25
+   ],
+   [
+    "where",
+    "where",
+    0.25
+   ],
+   [
+    "where",
+    "is",
+    -0.25
+   ],
+   [
+    "where",
+    "where",
+    -0.25
+   ],
+   [
+    "where",
+    "is",
+    0.25
+   ],
+   [
+    "where",
+    "where",
+    0.25
+   ],
+   [
+    "where",
+    "is",
+    -0.25
+   ],
+   [
+    "where",
+    "where",
+    -0.25
+   ],
+   [
+    "where",
+    "is",
+    0.25
+   ],
+   [
+    "where",
+    "where",
+    0.25
+   ]
+  ],
+  "rows": [
+   {
+    "kind": "where now",
+    "question": "where is sandra",
+    "said": "kitchen",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.701
+     ]
+    ],
+    "teacher": "bathroom"
+   },
+   {
+    "kind": "is in",
+    "question": "is daniel in the hallway",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "no"
+   },
+   {
+    "kind": "is in",
+    "question": "is mary in the bedroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "yes"
+   },
+   {
+    "kind": "where",
+    "question": "where is john",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "bedroom"
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "john",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      36.442
+     ],
+     [
+      "first",
+      23.688
+     ],
+     [
+      "losa",
+      13.832
+     ]
+    ],
+    "teacher": "john"
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "office",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      36.452
+     ],
+     [
+      "first",
+      23.695
+     ],
+     [
+      "losa",
+      13.836
+     ]
+    ],
+    "teacher": "office"
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "the",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      36.464
+     ],
+     [
+      "first",
+      23.703
+     ],
+     [
+      "losa",
+      13.835
+     ]
+    ],
+    "teacher": "the"
+   },
+   {
+    "kind": "where",
+    "question": "where is mary",
+    "said": "office",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      1.938
+     ]
+    ],
+    "teacher": "office"
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "bathroom",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      36.492
+     ],
+     [
+      "first",
+      23.723
+     ],
+     [
+      "losa",
+      13.846
+     ]
+    ],
+    "teacher": "bathroom"
+   },
+   {
+    "kind": "where now",
+    "question": "where is mary",
+    "said": "office",
+    "idea": "fotu",
+    "right": false,
+    "rang": [
+     [
+      "fotu",
+      1.978
+     ]
+    ],
+    "teacher": "hallway"
+   },
+   {
+    "kind": "where",
+    "question": "where is john",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "bedroom"
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "garden",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      36.597
+     ],
+     [
+      "first",
+      23.786
+     ],
+     [
+      "losa",
+      13.889
+     ]
+    ],
+    "teacher": "garden"
+   },
+   {
+    "kind": "where",
+    "question": "where is sandra",
+    "said": "office",
+    "idea": "fotu",
+    "right": false,
+    "rang": [
+     [
+      "fotu",
+      1.971
+     ]
+    ],
+    "teacher": "kitchen"
+   },
+   {
+    "kind": "is in",
+    "question": "is sandra in the office",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "no"
+   },
+   {
+    "kind": "where",
+    "question": "where is john",
+    "said": "hallway",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.738
+     ]
+    ],
+    "teacher": "hallway"
+   },
+   {
+    "kind": "is in",
+    "question": "is daniel in the office",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "yes"
+   },
+   {
+    "kind": "what is",
+    "question": "what is unchurch",
+    "said": "exclude from a church or a religious community",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.513
+     ],
+     [
+      "first",
+      11.634
+     ],
+     [
+      "fotu",
+      11.225
+     ]
+    ],
+    "teacher": "exclude from a church or a religious community"
+   },
+   {
+    "kind": "where now",
+    "question": "where is mary",
+    "said": "bathroom",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.925
+     ]
+    ],
+    "teacher": "office"
+   },
+   {
+    "kind": "where",
+    "question": "where is sandra",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "kitchen"
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "mary",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      36.915
+     ],
+     [
+      "fotu",
+      23.741
+     ],
+     [
+      "losa",
+      14.709
+     ]
+    ],
+    "teacher": "mary"
+   },
+   {
+    "kind": "where",
+    "question": "where is mary",
+    "said": "kitchen",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.923
+     ]
+    ],
+    "teacher": "kitchen"
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "went",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      36.532
+     ],
+     [
+      "first",
+      23.963
+     ],
+     [
+      "losa",
+      14.102
+     ]
+    ],
+    "teacher": "went"
+   },
+   {
+    "kind": "where now",
+    "question": "where is daniel",
+    "said": "kitchen",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.846
+     ]
+    ],
+    "teacher": "hallway"
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "sandra",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      37.027
+     ],
+     [
+      "fotu",
+      23.786
+     ],
+     [
+      "losa",
+      14.75
+     ]
+    ],
+    "teacher": "sandra"
+   },
+   {
+    "kind": "where now",
+    "question": "where is daniel",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "hallway"
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "sandra",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      37.075
+     ],
+     [
+      "fotu",
+      23.813
+     ],
+     [
+      "losa",
+      14.77
+     ]
+    ],
+    "teacher": "sandra"
+   },
+   {
+    "kind": "where now",
+    "question": "where is sandra",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "kitchen"
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "sandra",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      37.12
+     ],
+     [
+      "fotu",
+      23.836
+     ],
+     [
+      "losa",
+      14.784
+     ]
+    ],
+    "teacher": "sandra"
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "john",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      37.125
+     ],
+     [
+      "fotu",
+      23.844
+     ],
+     [
+      "losa",
+      14.787
+     ]
+    ],
+    "teacher": "john"
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the hallway",
+    "said": "sandra",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      9.257
+     ]
+    ],
+    "teacher": "sandra"
+   },
+   {
+    "kind": "where now",
+    "question": "where is mary",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "hallway"
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the bathroom",
+    "said": "daniel",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      9.197
+     ]
+    ],
+    "teacher": "daniel"
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "mary",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      37.222
+     ],
+     [
+      "fotu",
+      23.908
+     ],
+     [
+      "losa",
+      14.829
+     ]
+    ],
+    "teacher": "mary"
+   },
+   {
+    "kind": "what is",
+    "question": "what is unlikeness",
+    "said": "dissimilarity evidenced by an absence of likeness",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.566
+     ],
+     [
+      "first",
+      11.564
+     ],
+     [
+      "fotu",
+      10.966
+     ]
+    ],
+    "teacher": "dissimilarity evidenced by an absence of likeness"
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the garden",
+    "said": "john",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      9.434
+     ]
+    ],
+    "teacher": "john"
+   },
+   {
+    "kind": "where",
+    "question": "where is mary",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "hallway"
+   },
+   {
+    "kind": "is in",
+    "question": "is mary in the garden",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "no"
+   },
+   {
+    "kind": "what is",
+    "question": "what is cooperatively",
+    "said": "in close cooperation",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.666
+     ],
+     [
+      "first",
+      11.309
+     ],
+     [
+      "fotu",
+      10.83
+     ]
+    ],
+    "teacher": "in close cooperation"
+   },
+   {
+    "kind": "what is",
+    "question": "what is nock",
+    "said": "make small marks into the surface of",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.627
+     ],
+     [
+      "first",
+      11.526
+     ],
+     [
+      "fotu",
+      10.711
+     ]
+    ],
+    "teacher": "make small marks into the surface of"
+   },
+   {
+    "kind": "where",
+    "question": "where is john",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "garden"
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the bathroom",
+    "said": "daniel",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      9.23
+     ]
+    ],
+    "teacher": "daniel"
+   },
+   {
+    "kind": "where now",
+    "question": "where is sandra",
+    "said": "kitchen",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      2.373
+     ]
+    ],
+    "teacher": "office"
+   },
+   {
+    "kind": "where",
+    "question": "where is daniel",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "hallway"
+   },
+   {
+    "kind": "what is",
+    "question": "what is ideography",
+    "said": "the use of ideograms in writing",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.71
+     ],
+     [
+      "first",
+      11.184
+     ],
+     [
+      "fotu",
+      11.112
+     ]
+    ],
+    "teacher": "the use of ideograms in writing"
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "office",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      37.018
+     ],
+     [
+      "first",
+      24.071
+     ],
+     [
+      "losa",
+      14.281
+     ]
+    ],
+    "teacher": "office"
+   },
+   {
+    "kind": "what is",
+    "question": "what is dushanbe",
+    "said": "the capital of formerly stalinabad",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.562
+     ],
+     [
+      "first",
+      11.407
+     ],
+     [
+      "fotu",
+      11.029
+     ]
+    ],
+    "teacher": "the capital of formerly stalinabad"
+   },
+   {
+    "kind": "what is",
+    "question": "what is confirmative",
+    "said": "serving to support or corroborate",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.738
+     ],
+     [
+      "first",
+      11.654
+     ],
+     [
+      "fotu",
+      11.219
+     ]
+    ],
+    "teacher": "serving to support or corroborate"
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the hallway",
+    "said": "daniel",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.496
+     ]
+    ],
+    "teacher": "daniel"
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the garden",
+    "said": "sandra",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.531
+     ]
+    ],
+    "teacher": "sandra"
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the kitchen",
+    "said": "daniel",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.479
+     ]
+    ],
+    "teacher": "daniel"
+   },
+   {
+    "kind": "what is",
+    "question": "what is pe",
+    "said": "the letter of the hebrew alphabet",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.372
+     ],
+     [
+      "first",
+      11.449
+     ],
+     [
+      "fotu",
+      11.164
+     ]
+    ],
+    "teacher": "the letter of the hebrew alphabet"
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the bedroom",
+    "said": "john",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.476
+     ]
+    ],
+    "teacher": "john"
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "mary",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      37.464
+     ],
+     [
+      "fotu",
+      24.196
+     ],
+     [
+      "losa",
+      14.851
+     ]
+    ],
+    "teacher": "mary"
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the bathroom",
+    "said": "john",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.485
+     ]
+    ],
+    "teacher": "john"
+   },
+   {
+    "kind": "is in",
+    "question": "is mary in the bathroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "yes"
+   },
+   {
+    "kind": "where now",
+    "question": "where is john",
+    "said": "garden",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.861
+     ]
+    ],
+    "teacher": "hallway"
+   },
+   {
+    "kind": "where",
+    "question": "where is sandra",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "hallway"
+   },
+   {
+    "kind": "absent",
+    "question": "where is alice",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.982
+     ]
+    ],
+    "teacher": null
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the bedroom",
+    "said": "daniel",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.518
+     ]
+    ],
+    "teacher": "daniel"
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the garden",
+    "said": "mary",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.729
+     ]
+    ],
+    "teacher": "mary"
+   }
+  ],
+  "wall": 0.2
+ },
+ "read only: the lesson": {
+  "task": "talk",
+  "teaching": false,
+  "n": 60,
+  "right": 45,
+  "answered": 53,
+  "by_kind": {
+   "absent": "1/1 (answered 0)",
+   "first": "7/7 (answered 7)",
+   "is in": "0/6 (answered 0)",
+   "last": "7/7 (answered 7)",
+   "what is": "8/8 (answered 8)",
+   "where": "11/11 (answered 11)",
+   "where now": "0/9 (answered 9)",
+   "who in": "11/11 (answered 11)"
+  },
+  "learned": [],
+  "rows": [
+   {
+    "kind": "where now",
+    "question": "where is sandra",
+    "said": "kitchen",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.701
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is daniel in the hallway",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "is in",
+    "question": "is mary in the bedroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where",
+    "question": "where is john",
+    "said": "bedroom",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.74
+     ]
+    ]
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "john",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      35.926
+     ],
+     [
+      "first",
+      23.682
+     ],
+     [
+      "losa",
+      13.845
+     ]
+    ]
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "office",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      35.936
+     ],
+     [
+      "first",
+      23.689
+     ],
+     [
+      "losa",
+      13.849
+     ]
+    ]
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "the",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      35.948
+     ],
+     [
+      "first",
+      23.697
+     ],
+     [
+      "losa",
+      13.848
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is mary",
+    "said": "office",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.894
+     ]
+    ]
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "bathroom",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      35.974
+     ],
+     [
+      "first",
+      23.717
+     ],
+     [
+      "losa",
+      13.859
+     ]
+    ]
+   },
+   {
+    "kind": "where now",
+    "question": "where is mary",
+    "said": "office",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.829
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is john",
+    "said": "bedroom",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.745
+     ]
+    ]
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "garden",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      36.076
+     ],
+     [
+      "first",
+      23.78
+     ],
+     [
+      "losa",
+      13.902
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is sandra",
+    "said": "kitchen",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.835
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is sandra in the office",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where",
+    "question": "where is john",
+    "said": "hallway",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.738
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is daniel in the office",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "what is",
+    "question": "what is unchurch",
+    "said": "exclude from a church or a religious community",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.513
+     ],
+     [
+      "first",
+      11.634
+     ],
+     [
+      "fotu",
+      11.225
+     ]
+    ]
+   },
+   {
+    "kind": "where now",
+    "question": "where is mary",
+    "said": "bathroom",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.925
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is sandra",
+    "said": "kitchen",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.849
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "mary",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      36.915
+     ],
+     [
+      "fotu",
+      23.741
+     ],
+     [
+      "losa",
+      14.709
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is mary",
+    "said": "kitchen",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.923
+     ]
+    ]
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "went",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      36.532
+     ],
+     [
+      "first",
+      23.963
+     ],
+     [
+      "losa",
+      14.102
+     ]
+    ]
+   },
+   {
+    "kind": "where now",
+    "question": "where is daniel",
+    "said": "kitchen",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.846
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "sandra",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      37.021
+     ],
+     [
+      "fotu",
+      23.813
+     ],
+     [
+      "losa",
+      14.75
+     ]
+    ]
+   },
+   {
+    "kind": "where now",
+    "question": "where is daniel",
+    "said": "bathroom",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.795
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "sandra",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      37.069
+     ],
+     [
+      "fotu",
+      23.841
+     ],
+     [
+      "losa",
+      14.77
+     ]
+    ]
+   },
+   {
+    "kind": "where now",
+    "question": "where is sandra",
+    "said": "office",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.83
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "sandra",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      37.114
+     ],
+     [
+      "fotu",
+      23.864
+     ],
+     [
+      "losa",
+      14.784
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "john",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      37.119
+     ],
+     [
+      "fotu",
+      23.872
+     ],
+     [
+      "losa",
+      14.787
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the hallway",
+    "said": "sandra",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      9.267
+     ]
+    ]
+   },
+   {
+    "kind": "where now",
+    "question": "where is mary",
+    "said": "bedroom",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.92
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the bathroom",
+    "said": "daniel",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      9.207
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "mary",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      37.216
+     ],
+     [
+      "fotu",
+      23.936
+     ],
+     [
+      "losa",
+      14.829
+     ]
+    ]
+   },
+   {
+    "kind": "what is",
+    "question": "what is unlikeness",
+    "said": "dissimilarity evidenced by an absence of likeness",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.566
+     ],
+     [
+      "first",
+      11.56
+     ],
+     [
+      "fotu",
+      10.982
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the garden",
+    "said": "john",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      9.44
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is mary",
+    "said": "hallway",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.886
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is mary in the garden",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "what is",
+    "question": "what is cooperatively",
+    "said": "in close cooperation",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.666
+     ],
+     [
+      "first",
+      11.307
+     ],
+     [
+      "fotu",
+      10.839
+     ]
+    ]
+   },
+   {
+    "kind": "what is",
+    "question": "what is nock",
+    "said": "make small marks into the surface of",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.627
+     ],
+     [
+      "first",
+      11.525
+     ],
+     [
+      "fotu",
+      10.716
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is john",
+    "said": "garden",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.874
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the bathroom",
+    "said": "daniel",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      9.222
+     ]
+    ]
+   },
+   {
+    "kind": "where now",
+    "question": "where is sandra",
+    "said": "kitchen",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.918
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is daniel",
+    "said": "hallway",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.836
+     ]
+    ]
+   },
+   {
+    "kind": "what is",
+    "question": "what is ideography",
+    "said": "the use of ideograms in writing",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.71
+     ],
+     [
+      "first",
+      11.186
+     ],
+     [
+      "fotu",
+      11.105
+     ]
+    ]
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "office",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      37.011
+     ],
+     [
+      "first",
+      24.073
+     ],
+     [
+      "losa",
+      14.281
+     ]
+    ]
+   },
+   {
+    "kind": "what is",
+    "question": "what is dushanbe",
+    "said": "the capital of formerly stalinabad",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.562
+     ],
+     [
+      "first",
+      11.408
+     ],
+     [
+      "fotu",
+      11.026
+     ]
+    ]
+   },
+   {
+    "kind": "what is",
+    "question": "what is confirmative",
+    "said": "serving to support or corroborate",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.738
+     ],
+     [
+      "first",
+      11.654
+     ],
+     [
+      "fotu",
+      11.218
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the hallway",
+    "said": "daniel",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.496
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the garden",
+    "said": "sandra",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.53
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the kitchen",
+    "said": "daniel",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.479
+     ]
+    ]
+   },
+   {
+    "kind": "what is",
+    "question": "what is pe",
+    "said": "the letter of the hebrew alphabet",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.372
+     ],
+     [
+      "first",
+      11.449
+     ],
+     [
+      "fotu",
+      11.164
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the bedroom",
+    "said": "john",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.476
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "mary",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      37.464
+     ],
+     [
+      "fotu",
+      24.196
+     ],
+     [
+      "losa",
+      14.851
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the bathroom",
+    "said": "john",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.485
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is mary in the bathroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where now",
+    "question": "where is john",
+    "said": "garden",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.853
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is sandra",
+    "said": "hallway",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.848
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is alice",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.974
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the bedroom",
+    "said": "daniel",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.518
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the garden",
+    "said": "mary",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.729
+     ]
+    ]
+   }
+  ],
+  "wall": 0.2
+ },
+ "before: the fresh talk": {
+  "task": "talk",
+  "teaching": false,
+  "n": 60,
+  "right": 42,
+  "answered": 40,
+  "by_kind": {
+   "absent": "8/8 (answered 0)",
+   "first": "8/8 (answered 8)",
+   "is in": "0/12 (answered 0)",
+   "last": "8/8 (answered 8)",
+   "what is": "3/3 (answered 3)",
+   "where": "5/5 (answered 5)",
+   "where now": "0/6 (answered 6)",
+   "who in": "10/10 (answered 10)"
+  },
+  "learned": [],
+  "rows": [
+   {
+    "kind": "where now",
+    "question": "where is sandra",
+    "said": "bedroom",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.73
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the kitchen",
+    "said": "mary",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      9.117
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is sandra in the hallway",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "bathroom",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      35.899
+     ],
+     [
+      "first",
+      23.662
+     ],
+     [
+      "losa",
+      13.831
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is otto",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.855
+     ]
+    ]
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "sandra",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      35.939
+     ],
+     [
+      "first",
+      23.687
+     ],
+     [
+      "losa",
+      13.846
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is finn",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.857
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is olga",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.858
+     ]
+    ]
+   },
+   {
+    "kind": "what is",
+    "question": "what is boise",
+    "said": "the capital and largest city of idaho",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      13.986
+     ],
+     [
+      "first",
+      11.189
+     ],
+     [
+      "fotu",
+      10.789
+     ]
+    ]
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "travelled",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      36.094
+     ],
+     [
+      "first",
+      23.592
+     ],
+     [
+      "losa",
+      13.707
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "mary",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      36.477
+     ],
+     [
+      "fotu",
+      23.462
+     ],
+     [
+      "losa",
+      14.33
+     ]
+    ]
+   },
+   {
+    "kind": "what is",
+    "question": "what is verity",
+    "said": "conformity to reality or actuality",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.163
+     ],
+     [
+      "first",
+      11.156
+     ],
+     [
+      "fotu",
+      10.82
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is pia",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.821
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is daniel in the kitchen",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "bathroom",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      36.162
+     ],
+     [
+      "first",
+      23.601
+     ],
+     [
+      "losa",
+      13.823
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the kitchen",
+    "said": "john",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      8.715
+     ]
+    ]
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "kitchen",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      36.198
+     ],
+     [
+      "first",
+      23.626
+     ],
+     [
+      "losa",
+      13.836
+     ]
+    ]
+   },
+   {
+    "kind": "where now",
+    "question": "where is sandra",
+    "said": "hallway",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.76
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is daniel in the bedroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the garden",
+    "said": "sandra",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      8.987
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "sandra",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      36.659
+     ],
+     [
+      "fotu",
+      23.58
+     ],
+     [
+      "losa",
+      14.494
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is mary",
+    "said": "office",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.844
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is john in the bedroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "is in",
+    "question": "is sandra in the hallway",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "is in",
+    "question": "is sandra in the hallway",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where now",
+    "question": "where is mary",
+    "said": "kitchen",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.847
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is mary",
+    "said": "bathroom",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.81
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is mary in the kitchen",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where",
+    "question": "where is mary",
+    "said": "office",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.828
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "john",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      36.919
+     ],
+     [
+      "fotu",
+      23.748
+     ],
+     [
+      "losa",
+      14.598
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "john",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      36.928
+     ],
+     [
+      "fotu",
+      23.756
+     ],
+     [
+      "losa",
+      14.603
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the hallway",
+    "said": "sandra",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      8.861
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the kitchen",
+    "said": "sandra",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      8.965
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is john in the garden",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where now",
+    "question": "where is mary",
+    "said": "bedroom",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.823
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the hallway",
+    "said": "john",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      8.881
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "mary",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      37.059
+     ],
+     [
+      "fotu",
+      23.835
+     ],
+     [
+      "losa",
+      14.645
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is dora",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.853
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is jack",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.853
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is wren",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.854
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is john in the bathroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "john",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      37.134
+     ],
+     [
+      "fotu",
+      23.893
+     ],
+     [
+      "losa",
+      14.684
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is daniel in the bathroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "garden",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      36.818
+     ],
+     [
+      "first",
+      24.028
+     ],
+     [
+      "losa",
+      14.067
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is eli",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.859
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is sandra",
+    "said": "office",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.746
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the hallway",
+    "said": "john",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      8.969
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is john in the kitchen",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "to",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      36.934
+     ],
+     [
+      "first",
+      24.108
+     ],
+     [
+      "losa",
+      14.108
+     ]
+    ]
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "garden",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      36.943
+     ],
+     [
+      "first",
+      24.114
+     ],
+     [
+      "losa",
+      14.111
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the garden",
+    "said": "daniel",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      9.162
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the garden",
+    "said": "john",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      9.14
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "sandra",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      37.363
+     ],
+     [
+      "fotu",
+      24.034
+     ],
+     [
+      "losa",
+      14.765
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the bedroom",
+    "said": "daniel",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      9.064
+     ]
+    ]
+   },
+   {
+    "kind": "what is",
+    "question": "what is repentant",
+    "said": "feeling or expressing remorse for misdeeds",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.405
+     ],
+     [
+      "first",
+      11.545
+     ],
+     [
+      "fotu",
+      10.947
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is daniel in the kitchen",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where",
+    "question": "where is sandra",
+    "said": "bathroom",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.68
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "john",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      37.536
+     ],
+     [
+      "fotu",
+      24.085
+     ],
+     [
+      "losa",
+      14.926
+     ]
+    ]
+   },
+   {
+    "kind": "where now",
+    "question": "where is daniel",
+    "said": "hallway",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.678
+     ]
+    ]
+   },
+   {
+    "kind": "where now",
+    "question": "where is sandra",
+    "said": "bathroom",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.629
+     ]
+    ]
+   }
+  ],
+  "wall": 0.2
+ },
+ "taught: the fresh talk": {
+  "task": "talk",
+  "teaching": false,
+  "n": 60,
+  "right": 42,
+  "answered": 40,
+  "by_kind": {
+   "absent": "8/8 (answered 0)",
+   "first": "8/8 (answered 8)",
+   "is in": "0/12 (answered 0)",
+   "last": "8/8 (answered 8)",
+   "what is": "3/3 (answered 3)",
+   "where": "5/5 (answered 5)",
+   "where now": "0/6 (answered 6)",
+   "who in": "10/10 (answered 10)"
+  },
+  "learned": [],
+  "rows": [
+   {
+    "kind": "where now",
+    "question": "where is sandra",
+    "said": "bedroom",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.86
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the kitchen",
+    "said": "mary",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.648
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is sandra in the hallway",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "bathroom",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      37.498
+     ],
+     [
+      "first",
+      24.373
+     ],
+     [
+      "losa",
+      14.326
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is otto",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.992
+     ]
+    ]
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "sandra",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      37.529
+     ],
+     [
+      "first",
+      24.391
+     ],
+     [
+      "losa",
+      14.337
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is finn",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.993
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is olga",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.994
+     ]
+    ]
+   },
+   {
+    "kind": "what is",
+    "question": "what is boise",
+    "said": "the capital and largest city of idaho",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.54
+     ],
+     [
+      "first",
+      11.561
+     ],
+     [
+      "fotu",
+      11.259
+     ]
+    ]
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "travelled",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      37.593
+     ],
+     [
+      "first",
+      24.467
+     ],
+     [
+      "losa",
+      14.249
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "mary",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      37.874
+     ],
+     [
+      "fotu",
+      24.446
+     ],
+     [
+      "losa",
+      14.896
+     ]
+    ]
+   },
+   {
+    "kind": "what is",
+    "question": "what is verity",
+    "said": "conformity to reality or actuality",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.728
+     ],
+     [
+      "first",
+      11.562
+     ],
+     [
+      "fotu",
+      11.276
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is pia",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.904
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is daniel in the kitchen",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "bathroom",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      37.625
+     ],
+     [
+      "first",
+      24.499
+     ],
+     [
+      "losa",
+      14.368
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the kitchen",
+    "said": "john",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.432
+     ]
+    ]
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "kitchen",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      37.653
+     ],
+     [
+      "first",
+      24.519
+     ],
+     [
+      "losa",
+      14.377
+     ]
+    ]
+   },
+   {
+    "kind": "where now",
+    "question": "where is sandra",
+    "said": "hallway",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.84
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is daniel in the bedroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the garden",
+    "said": "sandra",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.689
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "sandra",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      38.04
+     ],
+     [
+      "fotu",
+      24.516
+     ],
+     [
+      "losa",
+      15.05
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is mary",
+    "said": "office",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.925
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is john in the bedroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "is in",
+    "question": "is sandra in the hallway",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "is in",
+    "question": "is sandra in the hallway",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where now",
+    "question": "where is mary",
+    "said": "kitchen",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.927
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is mary",
+    "said": "bathroom",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.889
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is mary in the kitchen",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where",
+    "question": "where is mary",
+    "said": "office",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.906
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "john",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      38.242
+     ],
+     [
+      "fotu",
+      24.648
+     ],
+     [
+      "losa",
+      15.132
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "john",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      38.25
+     ],
+     [
+      "fotu",
+      24.654
+     ],
+     [
+      "losa",
+      15.137
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the hallway",
+    "said": "sandra",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.511
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the kitchen",
+    "said": "sandra",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.615
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is john in the garden",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where now",
+    "question": "where is mary",
+    "said": "bedroom",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.9
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the hallway",
+    "said": "john",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.516
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "mary",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      38.354
+     ],
+     [
+      "fotu",
+      24.716
+     ],
+     [
+      "losa",
+      15.168
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is dora",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.929
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is jack",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.93
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is wren",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.93
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is john in the bathroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "john",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      38.412
+     ],
+     [
+      "fotu",
+      24.764
+     ],
+     [
+      "losa",
+      15.2
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is daniel in the bathroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "garden",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      38.142
+     ],
+     [
+      "first",
+      24.832
+     ],
+     [
+      "losa",
+      14.558
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is eli",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.934
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is sandra",
+    "said": "office",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.819
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the hallway",
+    "said": "john",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.574
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is john in the kitchen",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "to",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      38.233
+     ],
+     [
+      "first",
+      24.896
+     ],
+     [
+      "losa",
+      14.59
+     ]
+    ]
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "garden",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      38.24
+     ],
+     [
+      "first",
+      24.901
+     ],
+     [
+      "losa",
+      14.592
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the garden",
+    "said": "daniel",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.762
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the garden",
+    "said": "john",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.737
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "sandra",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      38.594
+     ],
+     [
+      "fotu",
+      24.876
+     ],
+     [
+      "losa",
+      15.263
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the bedroom",
+    "said": "daniel",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.648
+     ]
+    ]
+   },
+   {
+    "kind": "what is",
+    "question": "what is repentant",
+    "said": "feeling or expressing remorse for misdeeds",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.889
+     ],
+     [
+      "first",
+      11.919
+     ],
+     [
+      "fotu",
+      11.325
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is daniel in the kitchen",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where",
+    "question": "where is sandra",
+    "said": "bathroom",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.745
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "john",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      38.779
+     ],
+     [
+      "fotu",
+      24.901
+     ],
+     [
+      "losa",
+      15.425
+     ]
+    ]
+   },
+   {
+    "kind": "where now",
+    "question": "where is daniel",
+    "said": "hallway",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.743
+     ]
+    ]
+   },
+   {
+    "kind": "where now",
+    "question": "where is sandra",
+    "said": "bathroom",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.692
+     ]
+    ]
+   }
+  ],
+  "wall": 0.2
+ },
+ "read only: the fresh talk": {
+  "task": "talk",
+  "teaching": false,
+  "n": 60,
+  "right": 42,
+  "answered": 40,
+  "by_kind": {
+   "absent": "8/8 (answered 0)",
+   "first": "8/8 (answered 8)",
+   "is in": "0/12 (answered 0)",
+   "last": "8/8 (answered 8)",
+   "what is": "3/3 (answered 3)",
+   "where": "5/5 (answered 5)",
+   "where now": "0/6 (answered 6)",
+   "who in": "10/10 (answered 10)"
+  },
+  "learned": [],
+  "rows": [
+   {
+    "kind": "where now",
+    "question": "where is sandra",
+    "said": "bedroom",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.852
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the kitchen",
+    "said": "mary",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.648
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is sandra in the hallway",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "bathroom",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      37.497
+     ],
+     [
+      "first",
+      24.373
+     ],
+     [
+      "losa",
+      14.326
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is otto",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.984
+     ]
+    ]
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "sandra",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      37.528
+     ],
+     [
+      "first",
+      24.391
+     ],
+     [
+      "losa",
+      14.337
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is finn",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.986
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is olga",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.986
+     ]
+    ]
+   },
+   {
+    "kind": "what is",
+    "question": "what is boise",
+    "said": "the capital and largest city of idaho",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.54
+     ],
+     [
+      "first",
+      11.561
+     ],
+     [
+      "fotu",
+      11.259
+     ]
+    ]
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "travelled",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      37.593
+     ],
+     [
+      "first",
+      24.467
+     ],
+     [
+      "losa",
+      14.249
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "mary",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      37.874
+     ],
+     [
+      "fotu",
+      24.446
+     ],
+     [
+      "losa",
+      14.896
+     ]
+    ]
+   },
+   {
+    "kind": "what is",
+    "question": "what is verity",
+    "said": "conformity to reality or actuality",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.728
+     ],
+     [
+      "first",
+      11.562
+     ],
+     [
+      "fotu",
+      11.276
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is pia",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.902
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is daniel in the kitchen",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "bathroom",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      37.625
+     ],
+     [
+      "first",
+      24.499
+     ],
+     [
+      "losa",
+      14.368
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the kitchen",
+    "said": "john",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.432
+     ]
+    ]
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "kitchen",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      37.653
+     ],
+     [
+      "first",
+      24.519
+     ],
+     [
+      "losa",
+      14.377
+     ]
+    ]
+   },
+   {
+    "kind": "where now",
+    "question": "where is sandra",
+    "said": "hallway",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.838
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is daniel in the bedroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the garden",
+    "said": "sandra",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.689
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "sandra",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      38.04
+     ],
+     [
+      "fotu",
+      24.516
+     ],
+     [
+      "losa",
+      15.05
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is mary",
+    "said": "office",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.923
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is john in the bedroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "is in",
+    "question": "is sandra in the hallway",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "is in",
+    "question": "is sandra in the hallway",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where now",
+    "question": "where is mary",
+    "said": "kitchen",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.925
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is mary",
+    "said": "bathroom",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.887
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is mary in the kitchen",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where",
+    "question": "where is mary",
+    "said": "office",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.905
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "john",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      38.242
+     ],
+     [
+      "fotu",
+      24.648
+     ],
+     [
+      "losa",
+      15.132
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "john",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      38.25
+     ],
+     [
+      "fotu",
+      24.654
+     ],
+     [
+      "losa",
+      15.137
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the hallway",
+    "said": "sandra",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.511
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the kitchen",
+    "said": "sandra",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.615
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is john in the garden",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where now",
+    "question": "where is mary",
+    "said": "bedroom",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.899
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the hallway",
+    "said": "john",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.516
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "mary",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      38.354
+     ],
+     [
+      "fotu",
+      24.716
+     ],
+     [
+      "losa",
+      15.168
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is dora",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.928
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is jack",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.928
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is wren",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.929
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is john in the bathroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "john",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      38.412
+     ],
+     [
+      "fotu",
+      24.764
+     ],
+     [
+      "losa",
+      15.2
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is daniel in the bathroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "garden",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      38.142
+     ],
+     [
+      "first",
+      24.832
+     ],
+     [
+      "losa",
+      14.558
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is eli",
+    "said": null,
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.933
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is sandra",
+    "said": "office",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.818
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the hallway",
+    "said": "john",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.574
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is john in the kitchen",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "to",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      38.233
+     ],
+     [
+      "first",
+      24.896
+     ],
+     [
+      "losa",
+      14.59
+     ]
+    ]
+   },
+   {
+    "kind": "last",
+    "question": "what is the last word",
+    "said": "garden",
+    "idea": "fotu",
+    "right": true,
+    "rang": [
+     [
+      "fotu",
+      38.24
+     ],
+     [
+      "first",
+      24.901
+     ],
+     [
+      "losa",
+      14.592
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the garden",
+    "said": "daniel",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.762
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the garden",
+    "said": "john",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.737
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "sandra",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      38.594
+     ],
+     [
+      "fotu",
+      24.876
+     ],
+     [
+      "losa",
+      15.263
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the bedroom",
+    "said": "daniel",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      6.648
+     ]
+    ]
+   },
+   {
+    "kind": "what is",
+    "question": "what is repentant",
+    "said": "feeling or expressing remorse for misdeeds",
+    "idea": "losa",
+    "right": true,
+    "rang": [
+     [
+      "losa",
+      14.889
+     ],
+     [
+      "first",
+      11.919
+     ],
+     [
+      "fotu",
+      11.325
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is daniel in the kitchen",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where",
+    "question": "where is sandra",
+    "said": "bathroom",
+    "idea": "where",
+    "right": true,
+    "rang": [
+     [
+      "where",
+      1.745
+     ]
+    ]
+   },
+   {
+    "kind": "first",
+    "question": "what is the first word",
+    "said": "john",
+    "idea": "first",
+    "right": true,
+    "rang": [
+     [
+      "first",
+      38.779
+     ],
+     [
+      "fotu",
+      24.901
+     ],
+     [
+      "losa",
+      15.425
+     ]
+    ]
+   },
+   {
+    "kind": "where now",
+    "question": "where is daniel",
+    "said": "hallway",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.743
+     ]
+    ]
+   },
+   {
+    "kind": "where now",
+    "question": "where is sandra",
+    "said": "bathroom",
+    "idea": "where",
+    "right": false,
+    "rang": [
+     [
+      "where",
+      1.692
+     ]
+    ]
+   }
+  ],
+  "wall": 0.2
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "task": "rail: spring 2",
+ "subject": "physics",
+ "kind": "strengths:num->num",
+ "teaching": true,
+ "steps": 3,
+ "answer": null,
+ "others": null,
+ "level": 0,
+ "asked": 2,
+ "explored": 2,
+ "tension": [
+  4.993,
+  4.937,
+  4.913
+ ],
+ "wall": 115.9,
+ "cpu": 115.8,
+ "proven": true,
+ "invented": [
+  {
+   "id": 8,
+   "subject": "physics",
+   "input": "position",
+   "how": "expr",
+   "body": "_"
+  }
+ ],
+ "reused": [],
+ "words_heard": [
+  "far",
+  "spring",
+  "back"
+ ],
+ "said": [
+  "repe"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.23,
+  "ledger": 9.35,
+  "actions": 30.99,
+  "imagine": 0.05,
+  "prove": 73.46,
+  "explore": 0.0,
+  "doubt": 0.05
+ },
+ "built": [],
+ "peak_mb": 5144.390625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "some strength times position (clipped at +-1)",
+ "band": 0.09253537123858055,
+ "verdict": "proven right",
+ "gap": 0.0,
+ "signs": {},
+ "certified": [
+  {
+   "part": 0,
+   "as": "formula",
+   "on": "dim:x@4"
+  }
+ ],
+ "question": {
+  "text": "The 8 things here have only 3 kinds of mass (1.051, 1.66, 1.853). Why so few? What makes a mass?",
+  "things": 8,
+  "kinds": 3,
+  "masses": [
+   1.051,
+   1.66,
+   1.853
+  ]
+ },
+ "attributed": true,
+ "configs": [
+  "imagine+prove+explore",
+  "imagine+explore+ask",
+  "leave"
+ ],
+ "say": [
+  "I keep what was right: s of position explains 317296 nats; I build on it and look for the rest.",
+  "I imagine by keep then compose: 103 new ideas.",
+  "I keep what was right: a curve in position explains 317275 nats; I build on it and look for the rest.",
+  "I imagine by refine then keep: 25 new ideas.",
+  "I keep 40 of my imagined ideas in mind and let 88 go.",
+  "The judge accepts: some strength times position (clipped at +-1) up to 0.2 where I looked.",
+  "It rings through the Field: 3 ways of working and imagining that led here are strengthened.",
+  "I imagine by swap: 0 new ideas.",
+  "I imagine by blend then compose: 0 new ideas.",
+  "I keep 39 of my imagined ideas in mind and let 1 go."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

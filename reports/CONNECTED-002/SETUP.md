@@ -1,6 +1,6 @@
 # Independent execution setup
 
-The independent clone is D:/ai/agy/sera/labs/sera-field-002 on local branch ag.
+The independent clone is (local workspace, not published) on local branch ag.
 Its source engineering commit is 41890e2571cfe96c856b0b0df01410e57529081b.
 It has separate Git storage; the only remote is a read-only reference to the source
 lab, with a disabled push URL. No GitHub or protected branch was changed.
@@ -20,4 +20,4 @@ gated on the subject/goal/checker integrations described in the work order.
 Computer Use dispatch status is recorded separately in the source lab's private
 local/CONNECTED-002-DISPATCH.json. Worker acceptance and subsequent training state
 belong to the clone's local/ACCEPTANCE.json and local/PROGRESS.json. This setup
-record alone does not assert that Antigravity has begun or completed training.
+record alone does not assert that development has begun or completed training.

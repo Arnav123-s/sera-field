@@ -1,0 +1,27 @@
+sera_converse.py (f5dfb72) on copies of the seed-3 arms' Fields (Colab 50deeff run, saved 19:34 before / 19:42 field UTC: both had first, last, who; the field arm also where). 60 questions, one fresh talk for all arms. Terminal lines (53 columns) as read:
+#ff
+before: the fresh talk: 41/60 right, answered 41 {'ab
+sent': '12/12 ', 'first': '8/8 ', 'is in': '0/8 ', 'l
+ast': '10/10 ', 'what is': '0/6 ', 'where': '5/5 ', '
+where now': '0/5 ', 'who in': '6/6 '} (0.2 s)
+taught: the fresh talk: 41/60 right, answered 40 {'ab
+sent': '12/12 ', 'first': '8/8 ', 'is in': '0/8 ', 'l
+ast': '10/10 ', 'what is': '0/6 ', 'where': '5/5 ', '
+where now': '0/5 ', 'who in': '6/6 '} (0.1 s)
+read only: the fresh talk: 41/60 right, answered 40 {
+'absent': '12/12 ', 'first': '8/8 ', 'is in': '0/8 ',
+ 'last': '10/10 ', 'what is': '0/6 ', 'where': '5/5 '
+, 'where now': '0/5 ', 'who in': '6/6 '} (0.1 s)
+#fb
+before: the fresh talk: 12/60 right, answered 0 {'abs
+ent': '12/12 ', 'first': '0/8 ', 'is in': '0/8 ', 'la
+st': '0/10 ', 'what is': '0/6 ', 'where': '0/5 ', 'wh
+ere now': '0/5 ', 'who in': '0/6 '} (0.2 s)
+taught: the fresh talk: 36/60 right, answered 24 {'ab
+sent': '12/12 ', 'first': '8/8 ', 'is in': '0/8 ', 'l
+ast': '10/10 ', 'what is': '0/6 ', 'where': '0/5 ', '
+where now': '0/5 ', 'who in': '6/6 '} (0.1 s)
+read only: the fresh talk: 12/60 right, answered 0 {'
+absent': '12/12 ', 'first': '0/8 ', 'is in': '0/8 ',
+'last': '0/10 ', 'what is': '0/6 ', 'where': '0/5 ',
+'where now': '0/5 ', 'who in': '0/6 '} (0.1 s)

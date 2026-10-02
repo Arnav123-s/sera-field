@@ -1,0 +1,195 @@
+{
+ "task": "where_now 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 10,
+ "answer": [
+  "foldn",
+  null,
+  [
+   "lam",
+   "ae",
+   [
+    "c",
+    3,
+    [
+     "var",
+     "e"
+    ]
+   ]
+  ],
+  [
+   "head",
+   null,
+   [
+    "c",
+    8,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "filter",
+   null,
+   [
+    "lam",
+    "e",
+    [
+     "eq",
+     null,
+     [
+      "head",
+      null,
+      [
+       "c",
+       8,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ],
+     [
+      "head",
+      null,
+      [
+       "var",
+       "e"
+      ]
+     ]
+    ]
+   ],
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "lit",
+   3
+  ],
+  [
+   "lit",
+   4
+  ],
+  [
+   "lit",
+   5
+  ],
+  [
+   "lit",
+   6
+  ],
+  [
+   "lit",
+   7
+  ]
+ ],
+ "level": 5,
+ "asked": 8,
+ "explored": 0,
+ "tension": [
+  2.419,
+  14.678,
+  2.526,
+  15.495,
+  15.548,
+  18.261,
+  14.436,
+  19.158,
+  21.944,
+  50.692,
+  50.746
+ ],
+ "wall": 1800.1,
+ "cpu": 1792.0,
+ "proven": true,
+ "invented": [
+  {
+   "id": 11,
+   "subject": "language",
+   "body": "foldn(\u03bba,e. fofo(e), head(rika(_)), filter(\u03bbe. eq(head(rika(_)), head(e)), _))"
+  }
+ ],
+ "reused": [
+  8,
+  3
+ ],
+ "words_heard": [
+  "where",
+  "is",
+  "now"
+ ],
+ "said": [
+  "now"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 3.37,
+  "ledger": 0.0,
+  "actions": 0.34,
+  "grow": 572.25,
+  "ask": 0.02,
+  "doubt": 3.02,
+  "imagine": 1211.87,
+  "prove": 0.76
+ },
+ "built": [],
+ "peak_mb": 11644.0546875,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "foldn(\u03bba,e. fofo(e), head(rika(g)), filter(\u03bbe. eq(head(rika(g)), head(e)), g))",
+ "verdict": "proven right",
+ "audit": 1329,
+ "imagined_by": {
+  "method": "#3",
+  "moves": "compose+step+wish",
+  "origin": "stepped"
+ },
+ "configs": [
+  "grow+ask",
+  "ask",
+  "ask+grow+imagine",
+  "ask+grow",
+  "ask+grow",
+  "ask",
+  "ask",
+  "ask",
+  "imagine",
+  "prove+grow"
+ ],
+ "say": [
+  "This rings in me: where (9.96), in (3.72).",
+  "I think bigger (level 1).",
+  "I think bigger (level 2).",
+  "I imagine by wish then recall: 1 new ideas.",
+  "I imagine by step then wish then compose then wish: 0 new ideas.",
+  "I keep 1 of my imagined ideas in mind and let 2 go.",
+  "I think bigger (level 3).",
+  "I think bigger (level 4).",
+  "I break it into 2 steps (head(rika(g)); filter(\u03bbe. eq(w1, head(e)), g)) and the rest follows: foldn(\u03bba,e. fofo(e), head(rika(g)), filter(\u03bbe. eq(head(rika(g)), head(e)), g)).",
+  "I imagine by compose then step then wish: 1 new ideas.",
+  "I imagine by wish then step then wish then compose: 0 new ideas.",
+  "I keep 1 of my imagined ideas in mind and let 1 go.",
+  "My audit passes foldn(\u03bba,e. fofo(e), head(rika(g)), filter(\u03bbe. eq(head(rika(g)), head(e)), g)) on 1329 fresh inputs.",
+  "I think bigger (level 5).",
+  "It rings through the Field: 20 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('foldn', None, ('lam', 'ae', ('c', 3, ('var', 'e'))), ('head', None, ('c', 8, ('var', 'g'))), ('filter', None, ('lam', 'e', ('eq', None, ('head', None, ('c', 8, ('var', 'g'))), ('head', None, ('var', 'e')))), ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: john journeyed to the hallway; mary journeyed to the office; mary moved to the office; mary journeyed to the office; john moved to the office; mary went to the kitchen | question: where is mary -> kitchen",
+  "story: sandra went to the kitchen; daniel went to the hallway; daniel moved to the bedroom; daniel moved to the bedroom; john went to the bedroom; daniel travelled to the bathroom | question: where is daniel -> bathroom",
+  "story: sandra journeyed to the bathroom; sandra travelled to the kitchen; sandra journeyed to the bathroom; mary travelled to the bedroom; mary travelled to the kitchen; mary moved to the bedroom | question: where is mary -> bedroom"
+ ]
+}

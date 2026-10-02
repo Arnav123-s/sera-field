@@ -1,0 +1,215 @@
+{
+ "task": "last 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 7,
+ "answer": [
+  "c",
+  3,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   3,
+   [
+    "map",
+    null,
+    [
+     "lam",
+     "e",
+     [
+      "tail",
+      null,
+      [
+       "tail",
+       null,
+       [
+        "tail",
+        null,
+        [
+         "var",
+         "e"
+        ]
+       ]
+      ]
+     ]
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "head",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "c",
+      2,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "head",
+   null,
+   [
+    "filteri",
+    null,
+    [
+     "lam",
+     "ie",
+     [
+      "lt",
+      null,
+      [
+       "lit",
+       5
+      ],
+      [
+       "var",
+       "i"
+      ]
+     ]
+    ],
+    [
+     "c",
+     2,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "head",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "c",
+       2,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "lit",
+    3
+   ],
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "level": 3,
+ "asked": 2,
+ "explored": 0,
+ "tension": [
+  3.593,
+  3.593,
+  3.596,
+  3.596,
+  3.596,
+  3.596,
+  3.596
+ ],
+ "wall": 8.0,
+ "cpu": 7.9,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  3
+ ],
+ "words_heard": [
+  "last",
+  "word"
+ ],
+ "said": [
+  "fofo"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.23,
+  "ledger": 0.0,
+  "actions": 0.05,
+  "prove": 0.06,
+  "doubt": 0.2,
+  "grow": 7.32,
+  "imagine": 0.0,
+  "ask": 0.0
+ },
+ "built": [],
+ "peak_mb": 11814.78515625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "fofo(g)",
+ "verdict": "proven right",
+ "audit": 229,
+ "configs": [
+  "prove",
+  "grow",
+  "imagine+grow+ask",
+  "prove",
+  "ask",
+  "prove+grow",
+  "leave"
+ ],
+ "say": [
+  "My audit passes fofo(g) on 229 fresh inputs.",
+  "I think bigger (level 1).",
+  "I imagine by compose: 0 new ideas.",
+  "I think bigger (level 2).",
+  "My audit passes fofo(g) on 229 fresh inputs.",
+  "My audit passes fofo(g) on 229 fresh inputs.",
+  "I think bigger (level 3)."
+ ],
+ "answer_repr": "('c', 3, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: travelled john garden bedroom | question: what is the last word -> bedroom",
+  "story: hallway the went | question: what is the last word -> went",
+  "story: hallway moved office hallway bathroom mary | question: what is the last word -> mary"
+ ]
+}

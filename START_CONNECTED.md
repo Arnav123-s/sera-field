@@ -40,4 +40,4 @@ credit that actually updates weights. Do not replace this task with another
 next-token-only model or count source intake as learned capability.
 
 No recurring follow-up is configured. Keep exact local progress and return a
-reproducible handoff for the user's next review.
+reproducible handoff for the author's next review.

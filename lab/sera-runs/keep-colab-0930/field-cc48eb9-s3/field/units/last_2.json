@@ -1,0 +1,103 @@
+{
+ "task": "last 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 3,
+ "answer": [
+  "c",
+  4,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "lit",
+   2
+  ],
+  [
+   "lit",
+   3
+  ],
+  [
+   "lit",
+   4
+  ],
+  [
+   "lit",
+   5
+  ]
+ ],
+ "level": 0,
+ "asked": 2,
+ "explored": 0,
+ "tension": [
+  3.468,
+  3.468,
+  3.468
+ ],
+ "wall": 0.5,
+ "cpu": 0.5,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  4
+ ],
+ "words_heard": [
+  "last",
+  "word"
+ ],
+ "said": [
+  "noka"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.0,
+  "ledger": 0.0,
+  "actions": 0.0,
+  "prove": 0.02,
+  "ask": 0.0,
+  "doubt": 0.0
+ },
+ "built": [],
+ "peak_mb": 13200.9296875,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "noka(g)",
+ "verdict": "proven right",
+ "audit": 230,
+ "configs": [
+  "prove+ask",
+  "ask+prove",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: first (17.01), noka (11.55).",
+  "My audit passes noka(g) on 230 fresh inputs.",
+  "It rings through the Field: 2 ways of working and imagining that led here are strengthened.",
+  "My audit passes noka(g) on 230 fresh inputs.",
+  "It rings through the Field: 2 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('c', 4, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: mary travelled sandra john | question: what is the last word -> john",
+  "story: office bedroom john | question: what is the last word -> john",
+  "story: daniel journeyed the moved hallway the | question: what is the last word -> the"
+ ]
+}

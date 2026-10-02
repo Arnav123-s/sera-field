@@ -1,0 +1,100 @@
+{
+ "task": "number: square",
+ "subject": "math",
+ "kind": "exact:num->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "mul",
+  null,
+  [
+   "var",
+   "n"
+  ],
+  [
+   "var",
+   "n"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   6,
+   [
+    "var",
+    "n"
+   ]
+  ],
+  [
+   "lit",
+   16
+  ],
+  [
+   "lit",
+   4
+  ],
+  [
+   "lit",
+   9
+  ],
+  [
+   "var",
+   "n"
+  ]
+ ],
+ "level": 0,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  9.625,
+  9.625
+ ],
+ "wall": 0.4,
+ "cpu": 0.4,
+ "proven": true,
+ "invented": [
+  {
+   "id": 12,
+   "subject": "math",
+   "body": "mul(_, _)"
+  }
+ ],
+ "reused": [],
+ "words_heard": [
+  "square"
+ ],
+ "said": [
+  "square"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.08,
+  "ledger": 0.0,
+  "actions": 0.0,
+  "ask": 0.0,
+  "prove": 0.0,
+  "doubt": 0.01
+ },
+ "built": [],
+ "peak_mb": 4806.5625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "mul(n, n)",
+ "verdict": "proven right",
+ "audit": 310,
+ "configs": [
+  "ask+prove",
+  "leave"
+ ],
+ "say": [
+  "My audit passes mul(n, n) on 310 fresh inputs.",
+  "It rings through the Field: 1 ways of working and imagining that led here are strengthened."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

@@ -1,0 +1,152 @@
+{
+ "task": "list: one more",
+ "subject": "code",
+ "kind": "exact:list->list",
+ "teaching": true,
+ "steps": 7,
+ "answer": [
+  "map",
+  null,
+  [
+   "lam",
+   "e",
+   [
+    "c",
+    10,
+    [
+     "var",
+     "e"
+    ]
+   ]
+  ],
+  [
+   "var",
+   "l"
+  ]
+ ],
+ "others": [
+  [
+   "nil",
+   null
+  ],
+  [
+   "var",
+   "l"
+  ],
+  [
+   "range",
+   null,
+   [
+    "lit",
+    2
+   ]
+  ],
+  [
+   "range",
+   null,
+   [
+    "lit",
+    3
+   ]
+  ],
+  [
+   "range",
+   null,
+   [
+    "lit",
+    5
+   ]
+  ]
+ ],
+ "level": 2,
+ "asked": 3,
+ "explored": 0,
+ "tension": [
+  3.989,
+  3.989,
+  3.989,
+  15.743,
+  15.744,
+  15.744,
+  15.744
+ ],
+ "wall": 18.5,
+ "cpu": 18.4,
+ "proven": true,
+ "invented": [
+  {
+   "id": 11,
+   "subject": "code",
+   "body": "map(\u03bbe. fori(e), _)"
+  }
+ ],
+ "reused": [
+  10
+ ],
+ "words_heard": [
+  "one",
+  "more"
+ ],
+ "said": [
+  "miri"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.78,
+  "ledger": 0.0,
+  "actions": 0.07,
+  "ask": 0.0,
+  "doubt": 0.21,
+  "imagine": 0.12,
+  "grow": 17.17,
+  "prove": 0.02
+ },
+ "built": [
+  {
+   "id": 10,
+   "name": "fori",
+   "words": "make each element what it becomes",
+   "body": "add(_, 1)"
+  }
+ ],
+ "peak_mb": 4806.5625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "map(\u03bbe. fori(e), l)",
+ "verdict": "proven right",
+ "audit": 455,
+ "imagined_by": {
+  "method": "#2+wish",
+  "moves": "wish+compose+wish+wish",
+  "origin": "wished"
+ },
+ "method_named": {
+  "id": 3,
+  "moves": "wish then compose then wish then wish"
+ },
+ "configs": [
+  "ask",
+  "ask",
+  "ask+imagine",
+  "grow",
+  "prove",
+  "grow",
+  "leave"
+ ],
+ "say": [
+  "I wish I could make each element what it becomes: I build it (fori = add(_, 1)) and use it.",
+  "I imagine by wish then compose then wish then wish: 1 new ideas.",
+  "I imagine by compose: 0 new ideas.",
+  "I think bigger (level 1).",
+  "My audit passes map(\u03bbe. fori(e), l) on 455 fresh inputs.",
+  "It rings through the Field: 7 ways of working and imagining that led here are strengthened.",
+  "I think bigger (level 2)."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

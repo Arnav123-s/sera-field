@@ -1,0 +1,114 @@
+{
+ "task": "rail: spring and drag 1",
+ "subject": "physics",
+ "kind": "strengths:num->num",
+ "teaching": true,
+ "steps": 7,
+ "answer": null,
+ "others": null,
+ "level": 0,
+ "asked": 5,
+ "explored": 5,
+ "tension": [
+  5.301,
+  5.301,
+  5.304,
+  5.304,
+  5.301,
+  5.301,
+  5.307
+ ],
+ "wall": 270.4,
+ "cpu": 268.9,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  8,
+  8
+ ],
+ "words_heard": [
+  "drag",
+  "far",
+  "fast",
+  "back",
+  "spring"
+ ],
+ "said": [
+  "spring",
+  "fast"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.51,
+  "ledger": 40.06,
+  "actions": 118.52,
+  "prove": 110.53,
+  "doubt": 0.36,
+  "explore": 0.01,
+  "imagine": 0.05
+ },
+ "built": [],
+ "peak_mb": 5434.015625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "my shape 12 of position + my shape 13 of speed",
+ "band": 0.030483730743852626,
+ "verdict": "proven right",
+ "gap": 6.661338147750939e-16,
+ "signs": {
+  "position": -1,
+  "speed": -1
+ },
+ "certified": [
+  {
+   "part": 0,
+   "as": "drawing",
+   "on": "position",
+   "shape": 12,
+   "concept": 8
+  },
+  {
+   "part": 1,
+   "as": "drawing",
+   "on": "speed",
+   "shape": 13,
+   "concept": 8
+  }
+ ],
+ "question": {
+  "text": "The 8 things here have only 3 kinds of mass (0.853, 0.918, 2.286). Why so few? What makes a mass? In all 12 worlds I measured so far, things came in fewer kinds of mass than there were things.",
+  "things": 8,
+  "kinds": 3,
+  "masses": [
+   0.853,
+   0.918,
+   2.286
+  ]
+ },
+ "attributed": true,
+ "configs": [
+  "prove",
+  "explore",
+  "explore",
+  "explore",
+  "explore",
+  "explore+imagine",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: (('position', 'concept', 8),) (7.20), (('position', 'concept', 24),) (2.94), (('position', 'expr', ('mul', None, ('c', 1, ('var', 's')),  (2.78).",
+  "The judge accepts: my shape 12 of position + my shape 13 of speed up to 0.2 where I looked.",
+  "I keep what was right: spring of position explains 809735 nats; I build on it and look for the rest.",
+  "I keep what was right: spring of speed explains 114791 nats; I build on it and look for the rest.",
+  "I imagine by keep then refine: 61 new ideas.",
+  "I imagine by drop then refine: 2 new ideas.",
+  "I keep 62 of my imagined ideas in mind and let 4 go."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

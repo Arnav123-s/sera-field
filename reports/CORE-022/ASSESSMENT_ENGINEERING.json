@@ -1,0 +1,29 @@
+{
+  "schema": "sera-field.core022.assessment-engineering.1",
+  "utc": "2026-09-21T06:21:46.429572+00:00",
+  "checks": [
+    {
+      "command": ".venv/Scripts/python.exe -m unittest discover -s tests -p test_core_course_audit.py -v",
+      "passed": 4,
+      "framework_seconds": 0.05
+    },
+    {
+      "command": ".venv/Scripts/python.exe -m unittest discover -s tests -p test_core_assessment_views.py -v",
+      "passed": 4,
+      "framework_seconds": 0.005
+    }
+  ],
+  "implementation": {
+    "scripts/audit_core022_course.py": "0c9110fbf36c505bb503e7726141067464d625a347387a31adbdf8a9d1ac4113",
+    "scripts/core022_assessment_views.py": "daf39d81b688edf2c729c6ad2f09118f35f6383007e6cb10529524b6e216ccc4",
+    "tests/test_core_course_audit.py": "dc116ec34901477a0c446e9598f00d3bc0ed99dad431f16bdd093c9024a48000",
+    "tests/test_core_assessment_views.py": "0096439dd860e6a8b6bfe0c4ed507127861680e4f1cfa80a9b4c6b96ea5744e3"
+  },
+  "numerical_model_imports": 0,
+  "learner_weight_updates": 0,
+  "reserved_source_rows_opened": 0,
+  "running_course_modified": false,
+  "full_numerical_regression_rerun": false,
+  "prefix_audit": "reports/CORE-022/COURSE_PREFIX_AUDIT_001.json",
+  "scope": "Independent bookkeeping and assessment-choice integrity; no learned ability is inferred from these checks."
+}

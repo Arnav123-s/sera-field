@@ -1,0 +1,34 @@
+{
+  "repository": "https://github.com/Arnav123-s/sera-field",
+  "commit": "8511d5f8cfa93864f2cf1dbd70c1fcb73d58f6b6",
+  "source_local_revision": "2cb8468efc1c9a73e2a796ec4522c67409781b4c",
+  "public_file_count": 901,
+  "public_content_bytes": 43567736,
+  "manifest_identity_mismatches": 0,
+  "missing_local_document_links": 0,
+  "local_repository_tests": 255,
+  "coupled_core_tests": 60,
+  "workflow": {
+    "id": 35566176199,
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/Arnav123-s/sera-field/actions/runs/35566176199",
+    "jobs": [
+      {
+        "id": 106228328803,
+        "name": "verify",
+        "conclusion": "success",
+        "wall_seconds": 122.0,
+        "container_cpu_limit": 1,
+        "container_memory_limit_gib": 2,
+        "scope": "Public verification including setup; no model training"
+      }
+    ]
+  },
+  "original_sera_head_preserved": "0dcbcb902706f3d299cd38a433fcf1f26a357efd",
+  "original_sera_worktree_clean": true,
+  "core_curriculum_started_at_publication": false,
+  "foundation_launch_qualified": true,
+  "research_complete": false,
+  "prior_release_receipt": "reports/PUBLICATION_20260921_EXECUTABLE_LEARNING.json"
+}

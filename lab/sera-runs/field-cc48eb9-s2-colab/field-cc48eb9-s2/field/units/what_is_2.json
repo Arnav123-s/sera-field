@@ -1,0 +1,115 @@
+{
+ "task": "what_is 2",
+ "subject": "language",
+ "kind": "exact:list(list)->list",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  9,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   8,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "nil",
+   null
+  ],
+  [
+   "tail",
+   null,
+   [
+    "c",
+    9,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   10,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   2,
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "level": 0,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  2.631,
+  2.631
+ ],
+ "wall": 6.7,
+ "cpu": 6.6,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  9
+ ],
+ "words_heard": [
+  "what",
+  "is"
+ ],
+ "said": [
+  "losa"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.0,
+  "ledger": 0.0,
+  "actions": 0.02,
+  "prove": 0.02,
+  "ask": 0.0,
+  "doubt": 0.0
+ },
+ "built": [],
+ "peak_mb": 11644.0546875,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "losa(g)",
+ "verdict": "proven right",
+ "audit": 236,
+ "configs": [
+  "prove+ask",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: losa (4.39).",
+  "My audit passes losa(g) on 236 fresh inputs.",
+  "It rings through the Field: 2 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('c', 9, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: intriguer is a person who devises plots or intrigues; poetically is in a poetic manner; uppityness is assumption of airs beyond station | question: what is poetically -> in a poetic manner",
+  "story: unflawed is without a flaw; recollective is good at remembering; alleviator is a therapist who makes suffering more endurable; mishegaas is senseless behavior or activity | question: what is recollective -> good at remembering",
+  "story: mycenaen is a native or inhabitant of ancient mycenae; moldy is covered with or smelling of mold | question: what is mycenaen -> a native or inhabitant of ancient mycenae"
+ ]
+}

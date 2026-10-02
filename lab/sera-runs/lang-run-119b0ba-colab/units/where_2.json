@@ -1,0 +1,336 @@
+{
+ "task": "where 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 34,
+ "answer": [
+  "c",
+  3,
+  [
+   "head",
+   "list",
+   [
+    "filter",
+    null,
+    [
+     "lam",
+     "e",
+     [
+      "eq",
+      null,
+      [
+       "head",
+       null,
+       [
+        "var",
+        "e"
+       ]
+      ],
+      [
+       "c",
+       3,
+       [
+        "head",
+        "list",
+        [
+         "var",
+         "g"
+        ]
+       ]
+      ]
+     ]
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   4,
+   [
+    "foldl",
+    null,
+    [
+     "lam",
+     "ae",
+     [
+      "cons",
+      null,
+      [
+       "var",
+       "e"
+      ],
+      [
+       "var",
+       "a"
+      ]
+     ]
+    ],
+    [
+     "var",
+     "g"
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "foldl",
+    null,
+    [
+     "lam",
+     "ae",
+     [
+      "cons",
+      null,
+      [
+       "c",
+       2,
+       [
+        "tail",
+        null,
+        [
+         "var",
+         "a"
+        ]
+       ]
+      ],
+      [
+       "var",
+       "a"
+      ]
+     ]
+    ],
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "filter",
+    null,
+    [
+     "lam",
+     "e",
+     [
+      "lt",
+      null,
+      [
+       "c",
+       1,
+       [
+        "var",
+        "g"
+       ]
+      ],
+      [
+       "add",
+       null,
+       [
+        "one",
+        null
+       ],
+       [
+        "c",
+        3,
+        [
+         "var",
+         "e"
+        ]
+       ]
+      ]
+     ]
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "level": 6,
+ "asked": 29,
+ "explored": 0,
+ "tension": [
+  5.241,
+  5.241,
+  5.241,
+  5.241,
+  5.241,
+  5.241,
+  5.241,
+  5.241,
+  5.241,
+  5.241,
+  5.241,
+  5.241,
+  5.241,
+  8.882,
+  14.817,
+  16.178,
+  16.178,
+  16.178,
+  16.178,
+  16.178,
+  19.077,
+  21.481,
+  21.481,
+  23.839,
+  23.299,
+  23.299,
+  23.299,
+  23.839,
+  22.25,
+  22.25,
+  22.25,
+  22.25,
+  33.175,
+  33.175
+ ],
+ "wall": 1302.2,
+ "cpu": 1301.4,
+ "proven": true,
+ "invented": [
+  {
+   "id": 7,
+   "subject": "language",
+   "body": "kalo(head(filter(\u03bbe. eq(head(e), kalo(head(_))), _)))"
+  },
+  {
+   "id": 8,
+   "subject": "language",
+   "inner": "the part it works on",
+   "body": "head(filter(\u03bbe. eq(head(e), kalo(head(_))), _))"
+  }
+ ],
+ "reused": [
+  3
+ ],
+ "words_heard": [
+  "where",
+  "is"
+ ],
+ "said": [
+  "visa"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 8.68,
+  "ledger": 0.0,
+  "actions": 0.37,
+  "ask": 0.0,
+  "doubt": 8.59,
+  "grow": 1280.5,
+  "imagine": 0.05,
+  "prove": 0.17
+ },
+ "built": [],
+ "peak_mb": 17160.21484375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "kalo(head(filter(\u03bbe. eq(head(e), kalo(head(g))), g)))",
+ "verdict": "proven right",
+ "audit": 941,
+ "configs": [
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+grow",
+  "grow",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "grow",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "grow",
+  "ask",
+  "ask",
+  "ask",
+  "imagine+ask+grow",
+  "ask",
+  "ask",
+  "ask",
+  "ask+grow",
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "In where 2 my best idea is lolo(tail(g)), but I cannot finish (0.0 nats of doubt). Is it right, or what am I missing?",
+  "I think bigger (level 1).",
+  "I think bigger (level 2).",
+  "I think bigger (level 3).",
+  "I think bigger (level 4).",
+  "I imagine by compose then wish then compose then wish: 0 new ideas.",
+  "I imagine by wish then compose then compose: 0 new ideas.",
+  "I think bigger (level 5).",
+  "I think bigger (level 6).",
+  "My audit passes kalo(head(filter(\u03bbe. eq(head(e), kalo(head(g))), g))) on 941 fresh inputs."
+ ],
+ "answer_repr": "('c', 3, ('head', 'list', ('filter', None, ('lam', 'e', ('eq', None, ('head', None, ('var', 'e')), ('c', 3, ('head', 'list', ('var', 'g'))))), ('var', 'g'))))",
+ "stage": "teach",
+ "english": [
+  "story: john moved to the office; mary journeyed to the bedroom | question: where is mary -> bedroom",
+  "story: mary moved to the office; john travelled to the kitchen | question: where is john -> kitchen",
+  "story: daniel journeyed to the hallway; john went to the office; sandra journeyed to the bedroom | question: where is john -> office"
+ ]
+}

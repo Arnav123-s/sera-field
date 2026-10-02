@@ -1,0 +1,209 @@
+{
+ "task": "list: count",
+ "subject": "code",
+ "kind": "exact:list->num",
+ "teaching": true,
+ "steps": 7,
+ "answer": [
+  "c",
+  13,
+  [
+   "map",
+   null,
+   [
+    "lam",
+    "e",
+    [
+     "one",
+     null
+    ]
+   ],
+   [
+    "var",
+    "l"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "c",
+     10,
+     [
+      "var",
+      "a"
+     ]
+    ]
+   ],
+   [
+    "one",
+    null
+   ],
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "l"
+    ]
+   ]
+  ],
+  [
+   "lit",
+   5
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "sub",
+     null,
+     [
+      "lit",
+      9
+     ],
+     [
+      "var",
+      "a"
+     ]
+    ]
+   ],
+   [
+    "lit",
+    4
+   ],
+   [
+    "var",
+    "l"
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "lit",
+     5
+    ]
+   ],
+   [
+    "zero",
+    null
+   ],
+   [
+    "var",
+    "l"
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "lit",
+    4
+   ],
+   [
+    "head",
+    null,
+    [
+     "range",
+     null,
+     [
+      "c",
+      13,
+      [
+       "var",
+       "l"
+      ]
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 2,
+ "asked": 5,
+ "explored": 0,
+ "tension": [
+  4.09,
+  2.047,
+  2.047,
+  1.354,
+  0.948,
+  15.812,
+  13.628
+ ],
+ "wall": 55.8,
+ "cpu": 55.6,
+ "proven": true,
+ "invented": [
+  {
+   "id": 15,
+   "subject": "code",
+   "body": "miri(map(\u03bbe. 1, _))"
+  },
+  {
+   "id": 16,
+   "subject": "code",
+   "inner": "the part it works on",
+   "body": "map(\u03bbe. 1, _)"
+  }
+ ],
+ "reused": [
+  13
+ ],
+ "words_heard": [
+  "count"
+ ],
+ "said": [
+  "count"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 1.16,
+  "ledger": 0.0,
+  "actions": 0.15,
+  "ask": 0.02,
+  "doubt": 0.41,
+  "grow": 51.61,
+  "prove": 0.04
+ },
+ "built": [],
+ "peak_mb": 5144.390625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "miri(map(\u03bbe. 1, l))",
+ "verdict": "proven right",
+ "audit": 463,
+ "configs": [
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+grow",
+  "prove+grow",
+  "leave"
+ ],
+ "say": [
+  "I think bigger (level 1).",
+  "My audit passes miri(map(\u03bbe. 1, l)) on 463 fresh inputs.",
+  "I think bigger (level 2).",
+  "It rings through the Field: 6 ways of working and imagining that led here are strengthened."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

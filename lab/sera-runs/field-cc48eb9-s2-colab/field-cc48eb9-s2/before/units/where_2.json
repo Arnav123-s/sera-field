@@ -1,0 +1,382 @@
+{
+ "task": "where 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 48,
+ "answer": [
+  "c",
+  3,
+  [
+   "foldl",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "cons",
+     null,
+     [
+      "c",
+      2,
+      [
+       "var",
+       "a"
+      ]
+     ],
+     [
+      "var",
+      "a"
+     ]
+    ]
+   ],
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "var",
+     "e"
+    ]
+   ],
+   [
+    "lit",
+    5
+   ],
+   [
+    "foldl",
+    null,
+    [
+     "lam",
+     "ae",
+     [
+      "var",
+      "e"
+     ]
+    ],
+    [
+     "nil",
+     null
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "var",
+     "e"
+    ]
+   ],
+   [
+    "c",
+    3,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "c",
+    2,
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "foldl",
+    null,
+    [
+     "lam",
+     "ae",
+     [
+      "cons",
+      null,
+      [
+       "c",
+       2,
+       [
+        "var",
+        "a"
+       ]
+      ],
+      [
+       "var",
+       "a"
+      ]
+     ]
+    ],
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ],
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "foldl",
+    null,
+    [
+     "lam",
+     "ae",
+     [
+      "cons",
+      null,
+      [
+       "c",
+       2,
+       [
+        "tail",
+        null,
+        [
+         "var",
+         "a"
+        ]
+       ]
+      ],
+      [
+       "var",
+       "a"
+      ]
+     ]
+    ],
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "level": 8,
+ "asked": 40,
+ "explored": 0,
+ "tension": [
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.445,
+  5.448,
+  5.448,
+  5.448,
+  27.45,
+  25.12,
+  30.616,
+  30.614,
+  30.614
+ ],
+ "wall": 2154.0,
+ "cpu": 2142.9,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "where",
+  "is"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 3.28,
+  "ledger": 0.0,
+  "actions": 0.0,
+  "ask": 0.0,
+  "doubt": 3.2,
+  "grow": 2142.06
+ },
+ "built": [],
+ "peak_mb": 11814.78515625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "grow",
+  "grow",
+  "grow",
+  "grow",
+  "grow",
+  "grow",
+  "grow",
+  "grow"
+ ],
+ "say": [
+  "In where 2 my best idea is fofo(tail(g)), but I cannot finish (0.0 nats of doubt). Is it right, or what am I missing?",
+  "I think bigger (level 1).",
+  "I think bigger (level 2).",
+  "I think bigger (level 3).",
+  "I think bigger (level 4).",
+  "I think bigger (level 5).",
+  "I think bigger (level 6).",
+  "I think bigger (level 7).",
+  "I think bigger (level 8).",
+  "In where 2 my best idea is fofo(foldl(\u03bba,e. cons(ridu(a), a), tail(tail(g)), g)), but I cannot finish (0.1 nats of doubt, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('c', 3, ('foldl', None, ('lam', 'ae', ('cons', None, ('c', 2, ('var', 'a')), ('var', 'a'))), ('tail', None, ('tail', None, ('var', 'g'))), ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: daniel moved to the office; john travelled to the bathroom; mary travelled to the garden | question: where is john -> bathroom",
+  "story: daniel went to the office; sandra moved to the garden | question: where is sandra -> garden",
+  "story: sandra went to the bedroom; daniel went to the bedroom | question: where is sandra -> bedroom"
+ ]
+}

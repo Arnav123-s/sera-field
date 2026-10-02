@@ -1,0 +1,105 @@
+{
+ "task": "where 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  7,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   4,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "lit",
+   3
+  ],
+  [
+   "lit",
+   4
+  ],
+  [
+   "lit",
+   5
+  ]
+ ],
+ "level": 0,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  3.333,
+  3.333
+ ],
+ "wall": 5.1,
+ "cpu": 5.1,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  7
+ ],
+ "words_heard": [
+  "where",
+  "is"
+ ],
+ "said": [
+  "mire"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.0,
+  "ledger": 0.0,
+  "actions": 0.02,
+  "prove": 0.05,
+  "ask": 0.0,
+  "doubt": 0.0
+ },
+ "built": [],
+ "peak_mb": 13193.55859375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "mire(g)",
+ "verdict": "proven right",
+ "audit": 234,
+ "configs": [
+  "prove+ask",
+  "leave"
+ ],
+ "say": [
+  "My audit passes mire(g) on 234 fresh inputs."
+ ],
+ "answer_repr": "('c', 7, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: mary journeyed to the kitchen; sandra went to the bathroom; john moved to the hallway | question: where is mary -> kitchen",
+  "story: john went to the bathroom; mary went to the garden; daniel journeyed to the office; sandra travelled to the office | question: where is mary -> garden",
+  "story: mary travelled to the kitchen; john moved to the kitchen; daniel moved to the office | question: where is john -> kitchen"
+ ]
+}

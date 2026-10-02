@@ -1,0 +1,126 @@
+{
+ "task": "last 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 3,
+ "answer": [
+  "c",
+  3,
+  [
+   "c",
+   2,
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "lit",
+   2
+  ],
+  [
+   "lit",
+   3
+  ],
+  [
+   "lit",
+   4
+  ],
+  [
+   "lit",
+   5
+  ]
+ ],
+ "level": 0,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  2.279,
+  8.208,
+  8.208
+ ],
+ "wall": 840.7,
+ "cpu": 840.5,
+ "proven": true,
+ "invented": [
+  {
+   "id": 4,
+   "subject": "language",
+   "body": "kadu(dudu(_))"
+  }
+ ],
+ "reused": [
+  3,
+  2
+ ],
+ "words_heard": [
+  "last",
+  "word"
+ ],
+ "said": [
+  "noka"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.0,
+  "ledger": 0.0,
+  "actions": 0.0,
+  "imagine": 840.59,
+  "doubt": 0.0,
+  "prove": 0.02
+ },
+ "built": [
+  {
+   "id": 3,
+   "name": "kadu",
+   "words": "finish what dudu starts",
+   "body": "foldn(\u03bba,e. e, 3, _)"
+  }
+ ],
+ "peak_mb": 13193.55859375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "kadu(dudu(g))",
+ "verdict": "proven right",
+ "audit": 298,
+ "imagined_by": {
+  "method": "wish",
+  "moves": "wish",
+  "origin": "wished"
+ },
+ "configs": [
+  "imagine",
+  "prove+imagine",
+  "leave"
+ ],
+ "say": [
+  "I wish I could finish what dudu starts: I build it (kadu = foldn(\u03bba,e. e, 3, _)) and use it.",
+  "I imagine by wish: 1 new ideas.",
+  "I imagine by step then wish: 0 new ideas.",
+  "My audit passes kadu(dudu(g)) on 298 fresh inputs.",
+  "I imagine by compose: 0 new ideas."
+ ],
+ "answer_repr": "('c', 3, ('c', 2, ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: travelled john garden bedroom | question: what is the last word -> bedroom",
+  "story: hallway the went | question: what is the last word -> went",
+  "story: hallway moved office hallway bathroom mary | question: what is the last word -> mary"
+ ]
+}

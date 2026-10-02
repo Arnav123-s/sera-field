@@ -1,6 +1,6 @@
 # Acceptance criteria for the requested SERA behavior
 
-This revision follows the user's clarification after FIELD-001. The objective is a persistent learner that constructs grounded situations, imagines alternatives, notices and investigates gaps, discovers useful relationships and improves those procedures through independently verified reward. Classical model scores remain diagnostic evidence. Winning a classical benchmark is not the product goal or a condition for pursuing this research direction.
+This revision follows the author's clarification after FIELD-001. The objective is a persistent learner that constructs grounded situations, imagines alternatives, notices and investigates gaps, discovers useful relationships and improves those procedures through independently verified reward. Classical model scores remain diagnostic evidence. Winning a classical benchmark is not the product goal or a condition for pursuing this research direction.
 
 FIELD-001 is retained as a completed component study. Its completion does not close any untested whole-system requirement. The original SERA, the independent laboratories, the new field checkpoints, the failed attempts and the opened final cohort stay preserved.
 

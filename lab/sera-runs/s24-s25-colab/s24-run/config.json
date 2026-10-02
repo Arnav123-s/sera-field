@@ -1,0 +1,14 @@
+{
+  "book": "/content/wordnet",
+  "eval_seconds": 3300.0,
+  "one_field": 0,
+  "probe_seconds": 150.0,
+  "seed": 3,
+  "teach_seeds": [
+    1,
+    2
+  ],
+  "train_seconds": 1800.0,
+  "wall_seconds": 21600.0,
+  "world_seconds": 180.0
+}

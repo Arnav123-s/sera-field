@@ -1,0 +1,57 @@
+# test suite, one process per file (cap 1200 s, 3 at a time)
+# commit ec5d2ec, 2026-10-01T23:35Z
+PASS    |    42 s | tests/core/test_adapters.py | 7 passed, 52 subtests passed in 39.97s
+PASS    |    57 s | tests/core/test_adequacy_per_situation.py | 2 passed in 55.48s
+TIMEOUT |  1200 s | tests/core/test_audit_fast.py |
+TIMEOUT |  1200 s | tests/core/test_audit_parallel.py |
+PASS    |   787 s | tests/core/test_audit_share.py | 4 passed, 1 warning in 786.02s (0:13:06)
+PASS    |    23 s | tests/core/test_band_test.py | 7 passed in 22.48s
+PASS    |     3 s | tests/core/test_basis_duplicate.py | 5 passed in 1.69s
+PASS    |     1 s | tests/core/test_board.py | 6 passed in 0.47s
+PASS    |     1 s | tests/core/test_caretaker.py | 6 passed in 0.49s
+PASS    |     3 s | tests/core/test_challenge.py | 4 passed in 1.83s
+PASS    |   100 s | tests/core/test_checker_band_independent.py | 2 passed, 6 warnings in 98.76s (0:01:38)
+PASS    |     6 s | tests/core/test_checker_fail_fast.py | 5 passed in 5.49s
+PASS    |     1 s | tests/core/test_credit.py | 11 passed in 0.85s
+PASS    |     3 s | tests/core/test_curriculum.py | 7 passed, 48 subtests passed in 1.87s
+FAIL    |    77 s | tests/core/test_curve_size_bound.py | 2 failed, 2 passed, 4 warnings in 75.56s (0:01:15)
+PASS    |     2 s | tests/core/test_d10.py | 3 passed in 1.87s
+PASS    |     1 s | tests/core/test_d9.py | 6 passed in 0.22s
+PASS    |     2 s | tests/core/test_evidence.py | 5 passed in 0.96s
+PASS    |     2 s | tests/core/test_exact_jacobian.py | 5 passed in 1.69s
+PASS    |   117 s | tests/core/test_exact_numerator.py | 7 passed in 115.97s (0:01:55)
+PASS    |     3 s | tests/core/test_gaps.py | 5 passed in 2.30s
+PASS    |     1 s | tests/core/test_grammar_v2.py | 4 passed in 0.26s
+TIMEOUT |  1200 s | tests/core/test_growth_certify.py |
+PASS    |     3 s | tests/core/test_growth_terms.py | 12 passed in 1.97s
+PASS    |     3 s | tests/core/test_invent_merge.py | 6 passed in 2.07s
+PASS    |    70 s | tests/core/test_knock_object.py | 7 passed, 2 warnings in 68.58s (0:01:08)
+PASS    |     3 s | tests/core/test_laplace_singular.py | 14 passed, 5 warnings in 1.76s
+PASS    |     2 s | tests/core/test_lenses.py | 10 passed in 1.68s
+PASS    |     1 s | tests/core/test_lexicon.py | 7 passed in 0.48s
+PASS    |    17 s | tests/core/test_playroom.py | 7 passed in 16.26s
+PASS    |     2 s | tests/core/test_premise_ledger.py | 4 passed in 0.83s
+PASS    |    11 s | tests/core/test_scoped_claims.py | 4 passed in 10.63s
+PASS    |    35 s | tests/core/test_shapes_functional.py | 12 passed in 33.69s
+PASS    |     4 s | tests/core/test_surprise_worlds.py | 2 passed, 9 subtests passed in 3.15s
+TIMEOUT |  1200 s | tests/core/test_universe_audit.py |
+TIMEOUT |  1200 s | tests/core/test_wide_rivals.py |
+PASS    |     2 s | tests/sera/test_converse.py | 5 passed in 1.53s
+PASS    |     4 s | tests/sera/test_field.py | 12 passed in 2.83s
+PASS    |     3 s | tests/sera/test_general.py | 9 passed in 2.10s
+PASS    |    12 s | tests/sera/test_governor_slots.py | 9 passed in 11.08s
+PASS    |     0 s | tests/sera/test_grades.py | 2 passed in 0.02s
+PASS    |   208 s | tests/sera/test_honest_credit.py | 3 passed in 206.57s (0:03:26)
+PASS    |     3 s | tests/sera/test_ideas.py | 10 passed in 1.69s
+PASS    |    15 s | tests/sera/test_language.py | 7 passed in 14.34s
+PASS    |     1 s | tests/sera/test_lawspace.py | 3 passed in 0.53s
+TIMEOUT |  1200 s | tests/sera/test_nested.py |
+PASS    |   138 s | tests/sera/test_one.py | 12 passed in 136.71s (0:02:16)
+PASS    |     2 s | tests/sera/test_playroom_laws.py | 1 passed in 1.09s
+PASS    |     2 s | tests/sera/test_pyprint.py | 3 passed in 2.30s
+PASS    |     2 s | tests/sera/test_s06.py | 8 passed in 1.28s
+PASS    |    76 s | tests/sera/test_s09.py | 8 passed in 74.51s (0:01:14)
+PASS    |    33 s | tests/sera/test_synth.py | 3 passed in 33.28s
+PASS    |     2 s | tests/sera/test_understand.py | 2 passed in 1.27s
+PASS    |    17 s | tests/sera/test_worlds.py | 5 passed in 15.63s
+files: 54, failed or timed out: 7, wall: 3701 s

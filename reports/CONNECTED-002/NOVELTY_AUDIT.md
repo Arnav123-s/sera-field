@@ -17,6 +17,6 @@ shared numerical lease occupied and launched no worker. I preserved that failed
 reservation, waited for the other job to finish and ran a fresh supervised attempt.
 No other job or lock was modified.
 
-This correction is a separate source-lab commit for Antigravity to incorporate in
+This correction is a separate source-lab commit for the helper script to incorporate in
 its branch, preserving any concurrent changes. It does not require repeating any
 completed model training or reopening a final evaluation.

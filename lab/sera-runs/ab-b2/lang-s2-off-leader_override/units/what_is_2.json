@@ -1,0 +1,123 @@
+{
+ "task": "what_is 2",
+ "subject": "language",
+ "kind": "exact:list(list)->list",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  10,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   9,
+   [
+    "c",
+    8,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   9,
+   [
+    "c",
+    2,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   8,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "nil",
+   null
+  ],
+  [
+   "c",
+   9,
+   [
+    "c",
+    10,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "level": 0,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  2.523,
+  2.346
+ ],
+ "wall": 7.2,
+ "cpu": 7.2,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  10
+ ],
+ "words_heard": [
+  "what",
+  "is"
+ ],
+ "said": [
+  "losa"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.0,
+  "ledger": 0.0,
+  "actions": 0.04,
+  "prove": 0.06,
+  "imagine": 0.01,
+  "doubt": 0.0
+ },
+ "built": [],
+ "peak_mb": 9745.40234375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "losa(g)",
+ "verdict": "proven right",
+ "audit": 236,
+ "configs": [
+  "prove+imagine",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: losa (4.04).",
+  "My audit passes losa(g) on 236 fresh inputs.",
+  "I imagine by compose: 1 new ideas."
+ ],
+ "answer_repr": "('c', 10, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: intriguer is a person who devises plots or intrigues; poetically is in a poetic manner; uppityness is assumption of airs beyond station | question: what is poetically -> in a poetic manner",
+  "story: unflawed is without a flaw; recollective is good at remembering; alleviator is a therapist who makes suffering more endurable; mishegaas is senseless behavior or activity | question: what is recollective -> good at remembering",
+  "story: mycenaen is a native or inhabitant of ancient mycenae; moldy is covered with or smelling of mold | question: what is mycenaen -> a native or inhabitant of ancient mycenae"
+ ]
+}

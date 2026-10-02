@@ -1,0 +1,141 @@
+{
+ "task": "where_now 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  11,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   7,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "c",
+    6,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "lit",
+    7
+   ],
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "level": 1,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  3.489,
+  3.493
+ ],
+ "wall": 8.2,
+ "cpu": 8.1,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  11
+ ],
+ "words_heard": [
+  "where",
+  "is",
+  "now"
+ ],
+ "said": [
+  "now"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.12,
+  "ledger": 0.0,
+  "actions": 0.07,
+  "prove": 0.16,
+  "grow": 0.73,
+  "ask": 0.0,
+  "doubt": 0.11
+ },
+ "built": [],
+ "peak_mb": 9470.96875,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "now(g)",
+ "verdict": "proven right",
+ "audit": 237,
+ "configs": [
+  "prove+grow+ask",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: visa (10.16), now (6.39).",
+  "My audit passes now(g) on 237 fresh inputs.",
+  "I think bigger (level 1)."
+ ],
+ "answer_repr": "('c', 11, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: mary travelled to the hallway; sandra went to the bedroom; mary went to the office; sandra travelled to the garden | question: where is mary -> office",
+  "story: sandra journeyed to the bedroom; sandra went to the hallway; sandra journeyed to the bedroom | question: where is sandra -> bedroom",
+  "story: sandra moved to the kitchen; mary moved to the hallway; mary went to the bedroom | question: where is mary -> bedroom"
+ ]
+}

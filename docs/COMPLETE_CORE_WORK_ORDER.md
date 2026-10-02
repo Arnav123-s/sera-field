@@ -1,6 +1,6 @@
 # Complete-core construction, fresh teaching and later continued learning
 
-The user's 2026-09-20 continuation changes the next execution order: complete the
+the author's 2026-09-20 continuation changes the next execution order: complete the
 specified mechanism and its engineering checks first, then train its weights
 from scratch on a behavior-directed curriculum, assess the entire learner, and
 subsequently continue learning incrementally. JOINT-021 finishes under its

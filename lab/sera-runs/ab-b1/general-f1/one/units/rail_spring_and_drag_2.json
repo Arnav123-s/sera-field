@@ -1,0 +1,115 @@
+{
+ "task": "rail: spring and drag 2",
+ "subject": "physics",
+ "kind": "strengths:num->num",
+ "teaching": true,
+ "steps": 7,
+ "answer": null,
+ "others": null,
+ "level": 0,
+ "asked": 5,
+ "explored": 5,
+ "tension": [
+  7.546,
+  7.546,
+  7.547,
+  7.547,
+  6.567,
+  6.567,
+  6.567
+ ],
+ "wall": 192.8,
+ "cpu": 191.7,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  8,
+  8
+ ],
+ "words_heard": [
+  "fast",
+  "back",
+  "spring",
+  "drag",
+  "far"
+ ],
+ "said": [
+  "spring",
+  "ripple",
+  "fast"
+ ],
+ "false_words": [
+  "ripple"
+ ],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 2.02,
+  "ledger": 29.19,
+  "actions": 75.72,
+  "prove": 83.08,
+  "doubt": 0.33,
+  "explore": 0.01,
+  "imagine": 0.07
+ },
+ "built": [],
+ "peak_mb": 5434.015625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "my shape 12 of position + my shape 13 of speed",
+ "band": 0.0312803501021799,
+ "verdict": "proven right",
+ "gap": 6.661338147750939e-16,
+ "signs": {
+  "position": -1,
+  "speed": -1
+ },
+ "certified": [
+  {
+   "part": 0,
+   "as": "drawing",
+   "on": "position",
+   "shape": 12,
+   "concept": 8
+  },
+  {
+   "part": 1,
+   "as": "drawing",
+   "on": "speed",
+   "shape": 13,
+   "concept": 8
+  }
+ ],
+ "question": {
+  "text": "The 8 things here have only 3 kinds of mass (0.794, 1.944, 2.392). Why so few? What makes a mass? In all 7 worlds I measured so far, things came in fewer kinds of mass than there were things.",
+  "things": 8,
+  "kinds": 3,
+  "masses": [
+   0.794,
+   1.944,
+   2.392
+  ]
+ },
+ "attributed": true,
+ "configs": [
+  "prove",
+  "explore",
+  "explore+ask",
+  "explore+ask+imagine",
+  "explore",
+  "explore",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: (('position', 'concept', 8),) (5.05), (('position', 'concept', 9),) (1.98), (('position', 'expr', ('mul', None, ('var', 's'), ('mul', No (1.83).",
+  "The judge accepts: my shape 12 of position + my shape 13 of speed up to 0.2 where I looked.",
+  "I imagine by refine then blend: 2 new ideas.",
+  "I imagine by blend then compose: 475 new ideas.",
+  "I keep 5 of my imagined ideas in mind and let 475 go."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

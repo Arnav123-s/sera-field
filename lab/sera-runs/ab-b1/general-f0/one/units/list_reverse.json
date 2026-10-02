@@ -1,0 +1,273 @@
+{
+ "task": "list: reverse",
+ "subject": "code",
+ "kind": "exact:list->list",
+ "teaching": true,
+ "steps": 42,
+ "answer": [
+  "foldl",
+  null,
+  [
+   "lam",
+   "ae",
+   [
+    "cons",
+    null,
+    [
+     "var",
+     "e"
+    ],
+    [
+     "var",
+     "a"
+    ]
+   ]
+  ],
+  [
+   "nil",
+   null
+  ],
+  [
+   "var",
+   "l"
+  ]
+ ],
+ "others": [
+  [
+   "var",
+   "l"
+  ],
+  [
+   "mapi",
+   null,
+   [
+    "lam",
+    "ie",
+    [
+     "mul",
+     null,
+     [
+      "var",
+      "i"
+     ],
+     [
+      "var",
+      "e"
+     ]
+    ]
+   ],
+   [
+    "var",
+    "l"
+   ]
+  ],
+  [
+   "map",
+   null,
+   [
+    "lam",
+    "e",
+    [
+     "c",
+     13,
+     [
+      "var",
+      "l"
+     ]
+    ]
+   ],
+   [
+    "var",
+    "l"
+   ]
+  ],
+  [
+   "map",
+   null,
+   [
+    "lam",
+    "e",
+    [
+     "c",
+     22,
+     [
+      "var",
+      "l"
+     ]
+    ]
+   ],
+   [
+    "var",
+    "l"
+   ]
+  ],
+  [
+   "map",
+   null,
+   [
+    "lam",
+    "e",
+    [
+     "head",
+     null,
+     [
+      "var",
+      "l"
+     ]
+    ]
+   ],
+   [
+    "var",
+    "l"
+   ]
+  ]
+ ],
+ "level": 2,
+ "asked": 36,
+ "explored": 0,
+ "tension": [
+  3.278,
+  3.278,
+  3.278,
+  3.278,
+  3.278,
+  3.278,
+  3.278,
+  3.278,
+  3.278,
+  3.278,
+  3.278,
+  3.278,
+  3.278,
+  3.278,
+  3.278,
+  3.278,
+  8.45,
+  8.45,
+  8.45,
+  8.45,
+  15.827,
+  15.827,
+  15.827,
+  15.827,
+  15.827,
+  15.827,
+  15.827,
+  15.827,
+  15.827,
+  15.827,
+  15.827,
+  15.827,
+  11.682,
+  11.682,
+  13.344,
+  13.344,
+  13.292,
+  13.292,
+  13.292,
+  13.292,
+  23.207,
+  23.207
+ ],
+ "wall": 3556.1,
+ "cpu": 3496.9,
+ "proven": true,
+ "invented": [
+  {
+   "id": 26,
+   "subject": "code",
+   "body": "foldl(\u03bba,e. cons(e, a), [], _)"
+  }
+ ],
+ "reused": [],
+ "words_heard": [
+  "reverse"
+ ],
+ "said": [
+  "reverse"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 30.97,
+  "ledger": 0.0,
+  "actions": 0.4,
+  "ask": 0.01,
+  "doubt": 21.88,
+  "imagine": 3373.24,
+  "grow": 125.53,
+  "prove": 0.04
+ },
+ "built": [],
+ "peak_mb": 6668.0234375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "foldl(\u03bba,e. cons(e, a), [], l)",
+ "verdict": "proven right",
+ "audit": 642,
+ "configs": [
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+grow",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "grow",
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "I imagine by compose then wish then step: 0 new ideas.",
+  "I imagine by wish then wish then compose then wish: 0 new ideas.",
+  "In list: reverse my best idea is l, but I cannot finish (none of my ideas fits the examples). Is it right, or what am I missing?",
+  "I think bigger (level 1).",
+  "I imagine by wish then step: 0 new ideas.",
+  "I imagine by step then wish: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step then wish: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by wish then step: 0 new ideas.",
+  "I think bigger (level 2).",
+  "My audit passes foldl(\u03bba,e. cons(e, a), [], l) on 642 fresh inputs.",
+  "It rings through the Field: 26 ways of working and imagining that led here are strengthened."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

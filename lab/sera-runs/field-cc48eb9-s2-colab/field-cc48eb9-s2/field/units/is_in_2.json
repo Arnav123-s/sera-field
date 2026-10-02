@@ -1,0 +1,298 @@
+{
+ "task": "is_in 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 41,
+ "answer": [
+  "sub",
+  null,
+  [
+   "c",
+   3,
+   [
+    "head",
+    "list",
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "one",
+   null
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   3,
+   [
+    "head",
+    "list",
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "c",
+    1,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "mul",
+    null,
+    [
+     "lit",
+     8
+    ],
+    [
+     "lit",
+     3
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "c",
+    3,
+    [
+     "head",
+     "list",
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "c",
+    5,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "c",
+    3,
+    [
+     "head",
+     "list",
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "c",
+    5,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ],
+   [
+    "mul",
+    null,
+    [
+     "lit",
+     8
+    ],
+    [
+     "lit",
+     3
+    ]
+   ]
+  ]
+ ],
+ "level": 4,
+ "asked": 40,
+ "explored": 0,
+ "tension": [
+  3.825,
+  3.827,
+  3.827,
+  3.827,
+  3.827,
+  3.827,
+  3.06,
+  3.06,
+  3.06,
+  3.06,
+  3.06,
+  3.06,
+  3.06,
+  3.06,
+  3.06,
+  3.06,
+  3.06,
+  3.06,
+  6.472,
+  11.271,
+  6.472,
+  3.06,
+  3.06,
+  3.06,
+  3.06,
+  3.06,
+  6.472,
+  11.271,
+  6.472,
+  3.06,
+  6.472,
+  3.06,
+  3.06,
+  3.06,
+  6.472,
+  11.271,
+  6.472,
+  11.271,
+  11.271,
+  11.271,
+  11.271,
+  11.333
+ ],
+ "wall": 1804.2,
+ "cpu": 1792.9,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "is",
+  "yes",
+  "no"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 15.91,
+  "ledger": 0.0,
+  "actions": 0.81,
+  "ask": 0.0,
+  "grow": 163.2,
+  "doubt": 12.63,
+  "imagine": 1605.4
+ },
+ "built": [],
+ "peak_mb": 11644.0546875,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "ask+grow",
+  "ask+grow",
+  "ask+grow",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "imagine+ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "ask",
+  "grow"
+ ],
+ "say": [
+  "This rings in me: in (11.63).",
+  "I think bigger (level 1).",
+  "I think bigger (level 2).",
+  "I think bigger (level 3).",
+  "I imagine by recall then step: 1 new ideas.",
+  "I imagine by compose then step then wish: 0 new ideas.",
+  "I keep 0 of my imagined ideas in mind and let 2 go.",
+  "I imagine by step then wish: 0 new ideas.",
+  "I imagine by step then step then wish: 0 new ideas.",
+  "I imagine by wish then step then wish: 0 new ideas.",
+  "I imagine by step then wish: 0 new ideas.",
+  "In is_in 2 my best idea is fofo(head(g)), but I cannot finish (0.0 nats of doubt). Is it right, or what am I missing?",
+  "I imagine by step then wish then step: 0 new ideas.",
+  "I imagine by step then wish then step: 0 new ideas.",
+  "I imagine by wish then compose then step then wish: 0 new ideas.",
+  "I imagine by step then compose then step then wish: 0 new ideas.",
+  "I think bigger (level 4).",
+  "In is_in 2 my best idea is sub(fofo(head(g)), 1), but I cannot finish (0.0 nats of doubt, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('sub', None, ('c', 3, ('head', 'list', ('var', 'g'))), ('one', None))",
+ "stage": "teach",
+ "english": [
+  "story: sandra went to the hallway; daniel journeyed to the bedroom; john journeyed to the office; mary travelled to the kitchen | question: is daniel in the kitchen yes or no -> no",
+  "story: mary travelled to the garden; john journeyed to the kitchen; sandra travelled to the bedroom | question: is sandra in the bedroom yes or no -> yes",
+  "story: mary travelled to the hallway; daniel travelled to the hallway; john journeyed to the office | question: is daniel in the bedroom yes or no -> no"
+ ]
+}

@@ -17,7 +17,7 @@ The link parameterization and small graph here are my finite engineering interpr
 
 ## Why these first tests
 
-A model that uses one learned mechanism for several tasks is a direct way to test the user's intended integration. Coordinate changes should leave physical conclusions consistent; a changed mass should change a conditional conclusion. The same distinction applies later to grammatical perspective and semantic change, but physical covariance alone does not establish language grounding.
+A model that uses one learned mechanism for several tasks is a direct way to test the author's intended integration. Coordinate changes should leave physical conclusions consistent; a changed mass should change a conditional conclusion. The same distinction applies later to grammatical perspective and semantic change, but physical covariance alone does not establish language grounding.
 
 The new weights begin as random Lie-algebra coordinates, radial gains and scalar readouts. They are trained on position-derived physical consequences. No pretrained language model or earlier SERA checkpoint supplies the answers. A simple fitted power-law control provides a strong comparison for this first physics family; its structural assumptions and small parameter count are disclosed.
 

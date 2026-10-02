@@ -1,0 +1,105 @@
+{
+ "task": "what is alone",
+ "subject": "language",
+ "kind": "exact:list(list)->list",
+ "teaching": false,
+ "steps": 2,
+ "answer": [
+  "c",
+  9,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "nil",
+   null
+  ],
+  [
+   "c",
+   8,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   10,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   2,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "head",
+   "list",
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "level": 0,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  1.046,
+  1.046
+ ],
+ "wall": 5.6,
+ "cpu": 5.6,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  9
+ ],
+ "words_heard": [],
+ "said": [
+  "midu"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.0,
+  "ledger": 0.0,
+  "actions": 0.02,
+  "prove": 0.03,
+  "doubt": 0.0
+ },
+ "built": [],
+ "peak_mb": 17160.21484375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "midu(g)",
+ "verdict": "proven right",
+ "audit": 236,
+ "configs": [
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "My audit passes midu(g) on 236 fresh inputs."
+ ],
+ "answer_repr": "('c', 9, ('var', 'g'))",
+ "stage": "alone",
+ "english": [
+  "story: narcotized is under the influence of narcotics; hideously is in a hideous manner | question: what is narcotized -> under the influence of narcotics",
+  "story: semicomatose is in a state of partial coma; lumpy is like or containing small sticky lumps; millime is millimes equal dinar in tunisia | question: what is semicomatose -> in a state of partial coma",
+  "story: staginess is an artificial and mannered quality; tightfisted is unwilling to part with money; stigmatization is the act of stigmatizing; leatherfish is any of several brightly colored tropical filefishes | question: what is staginess -> an artificial and mannered quality"
+ ]
+}

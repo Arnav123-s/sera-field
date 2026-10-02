@@ -1,0 +1,273 @@
+{
+ "task": "who_in 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 44,
+ "answer": [
+  "c",
+  25,
+  [
+   "tail",
+   null,
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   25,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   25,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "c",
+       23,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   2,
+   [
+    "c",
+    10,
+    [
+     "c",
+     12,
+     [
+      "c",
+      2,
+      [
+       "c",
+       2,
+       [
+        "one",
+        null
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   25,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "tail",
+       null,
+       [
+        "c",
+        23,
+        [
+         "var",
+         "g"
+        ]
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   2,
+   [
+    "c",
+    2,
+    [
+     "c",
+     12,
+     [
+      "c",
+      2,
+      [
+       "c",
+       4,
+       [
+        "lit",
+        121
+       ]
+      ]
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 3,
+ "asked": 40,
+ "explored": 0,
+ "tension": [
+  3.335,
+  6.466,
+  3.335,
+  1.59,
+  1.591,
+  1.591,
+  1.591,
+  1.591,
+  3.336,
+  6.467,
+  3.336,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467,
+  6.467
+ ],
+ "wall": 2263.8,
+ "cpu": 2260.6,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "who",
+  "is",
+  "in"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 36.79,
+  "ledger": 0.0,
+  "actions": 0.67,
+  "ask": 0.13,
+  "doubt": 13.78,
+  "grow": 1273.98,
+  "imagine": 923.56
+ },
+ "built": [],
+ "peak_mb": 9652.0859375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "ask",
+  "ask",
+  "ask",
+  "grow",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "grow",
+  "imagine",
+  "grow"
+ ],
+ "say": [
+  "I think bigger (level 1).",
+  "In who_in 1 my best idea is kape(tail(g)), but I cannot finish (none of my ideas fits the examples). Is it right, or what am I missing?",
+  "I think bigger (level 2).",
+  "I imagine by wish then wish then compose then wish: 0 new ideas.",
+  "I imagine by compose then compose then wish then step: 0 new ideas.",
+  "I think bigger (level 3).",
+  "In who_in 1 my best idea is kape(tail(g)), but I cannot finish (none of my ideas fits the examples, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('c', 25, ('tail', None, ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: sandra moved to the kitchen; daniel journeyed to the bathroom | question: who is in the bathroom -> daniel",
+  "story: daniel moved to the hallway; john went to the garden | question: who is in the garden -> john",
+  "story: mary journeyed to the kitchen; daniel journeyed to the bathroom; sandra went to the garden | question: who is in the kitchen -> mary"
+ ]
+}

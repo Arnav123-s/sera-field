@@ -1,0 +1,167 @@
+{
+ "task": "number: odd",
+ "subject": "math",
+ "kind": "exact:num->num",
+ "teaching": true,
+ "steps": 3,
+ "answer": [
+  "if",
+  null,
+  [
+   "eq",
+   null,
+   [
+    "var",
+    "n"
+   ],
+   [
+    "lit",
+    2
+   ]
+  ],
+  [
+   "lit",
+   5
+  ],
+  [
+   "c",
+   2,
+   [
+    "var",
+    "n"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "add",
+   null,
+   [
+    "c",
+    2,
+    [
+     "var",
+     "n"
+    ]
+   ],
+   [
+    "head",
+    null,
+    [
+     "range",
+     null,
+     [
+      "sub",
+      null,
+      [
+       "var",
+       "n"
+      ],
+      [
+       "lit",
+       5
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "lit",
+   3
+  ],
+  [
+   "lit",
+   5
+  ],
+  [
+   "lit",
+   7
+  ],
+  [
+   "lit",
+   9
+  ]
+ ],
+ "level": 0,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  4.269,
+  23.374,
+  23.374
+ ],
+ "wall": 634.3,
+ "cpu": 631.1,
+ "proven": true,
+ "invented": [
+  {
+   "id": 3,
+   "subject": "math",
+   "body": "if(eq(_, 2), 5, kadu(_))"
+  }
+ ],
+ "reused": [
+  2
+ ],
+ "words_heard": [
+  "odd"
+ ],
+ "said": [
+  "noka"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.03,
+  "ledger": 0.0,
+  "actions": 0.0,
+  "imagine": 634.18,
+  "ask": 0.0,
+  "doubt": 0.0,
+  "prove": 0.01
+ },
+ "built": [
+  {
+   "id": 2,
+   "name": "kadu",
+   "words": "handle eq(w, 2) (it gives 5), then the rest",
+   "body": "add(_, add(_, 1))"
+  }
+ ],
+ "peak_mb": 4524.765625,
+ "peak_mb_by": {
+  "imagine": 4028.4
+ },
+ "memory_stops": 0,
+ "claim": "if(eq(n, 2), 5, kadu(n))",
+ "verdict": "proven right",
+ "audit": 572,
+ "imagined_by": {
+  "method": "compose+wish",
+  "moves": "compose+wish",
+  "origin": "wished"
+ },
+ "method_named": {
+  "id": 1,
+  "moves": "compose then wish"
+ },
+ "configs": [
+  "imagine+ask",
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "I wish I could handle eq(w, 2) (it gives 5), then the rest: I build it (kadu = add(_, add(_, 1))) and use it.",
+  "I imagine by compose then wish: 1 new ideas.",
+  "I break it into 1 step (sub(n, 5)) and the rest follows: add(kadu(n), head(range(sub(n, 5)))).",
+  "I imagine by step then wish: 1 new ideas.",
+  "My audit passes if(eq(n, 2), 5, kadu(n)) on 572 fresh inputs.",
+  "It rings through the Field: 4 ways of working and imagining that led here are strengthened."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

@@ -1,0 +1,174 @@
+{
+ "task": "where_now 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 8,
+ "answer": [
+  "foldn",
+  null,
+  [
+   "lam",
+   "ae",
+   [
+    "c",
+    3,
+    [
+     "var",
+     "e"
+    ]
+   ]
+  ],
+  [
+   "head",
+   null,
+   [
+    "c",
+    8,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "filter",
+   null,
+   [
+    "lam",
+    "e",
+    [
+     "eq",
+     null,
+     [
+      "head",
+      null,
+      [
+       "c",
+       8,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ],
+     [
+      "head",
+      null,
+      [
+       "var",
+       "e"
+      ]
+     ]
+    ]
+   ],
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "lit",
+   3
+  ],
+  [
+   "lit",
+   4
+  ],
+  [
+   "lit",
+   5
+  ],
+  [
+   "lit",
+   6
+  ],
+  [
+   "lit",
+   7
+  ]
+ ],
+ "level": 5,
+ "asked": 8,
+ "explored": 0,
+ "tension": [
+  2.444,
+  10.269,
+  10.269,
+  10.269,
+  10.269,
+  16.016,
+  16.016,
+  51.801,
+  51.748
+ ],
+ "wall": 1800.4,
+ "cpu": 1791.0,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "where",
+  "is",
+  "now"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 1.58,
+  "ledger": 0.0,
+  "actions": 0.32,
+  "ask": 0.0,
+  "grow": 592.28,
+  "doubt": 1.28,
+  "imagine": 1201.32
+ },
+ "built": [],
+ "peak_mb": 11644.0546875,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "ask+grow",
+  "ask",
+  "ask",
+  "ask",
+  "ask+grow+imagine",
+  "ask+grow+imagine",
+  "ask+grow+imagine",
+  "ask+grow"
+ ],
+ "say": [
+  "This rings in me: where (9.67), in (3.40).",
+  "I think bigger (level 1).",
+  "I think bigger (level 2).",
+  "I imagine by step then wish then compose then compose: 0 new ideas.",
+  "I imagine by wish then step: 0 new ideas.",
+  "I keep 0 of my imagined ideas in mind and let 2 go.",
+  "I think bigger (level 3).",
+  "I imagine by recall then compose: 1 new ideas.",
+  "I imagine by recall: 0 new ideas.",
+  "I keep 0 of my imagined ideas in mind and let 1 go.",
+  "I think bigger (level 4).",
+  "I break it into 2 steps (head(rika(g)); filter(\u03bbe. eq(w1, head(e)), g)) and the rest follows: foldn(\u03bba,e. fofo(e), head(rika(g)), filter(\u03bbe. eq(head(rika(g)), head(e)), g)).",
+  "I imagine by compose then step: 1 new ideas.",
+  "I imagine by step then wish then compose then step: 0 new ideas.",
+  "I think bigger (level 5).",
+  "In where_now 1 my best idea is foldn(\u03bba,e. fofo(e), head(rika(g)), filter(\u03bbe. eq(head(rika(g)), head(e)), g)), but I cannot finish (-0.0 nats of doubt, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('foldn', None, ('lam', 'ae', ('c', 3, ('var', 'e'))), ('head', None, ('c', 8, ('var', 'g'))), ('filter', None, ('lam', 'e', ('eq', None, ('head', None, ('c', 8, ('var', 'g'))), ('head', None, ('var', 'e')))), ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: mary travelled to the hallway; sandra went to the bedroom; mary went to the office; sandra travelled to the garden | question: where is mary -> office",
+  "story: sandra journeyed to the bedroom; sandra went to the hallway; sandra journeyed to the bedroom | question: where is sandra -> bedroom",
+  "story: sandra moved to the kitchen; mary moved to the hallway; mary went to the bedroom | question: where is mary -> bedroom"
+ ]
+}

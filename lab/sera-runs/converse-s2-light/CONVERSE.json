@@ -1,0 +1,1390 @@
+{
+ "alone before": {
+  "task": "talk",
+  "teaching": false,
+  "n": 40,
+  "right": 10,
+  "by_kind": {
+   "absent": "10/10",
+   "is in": "0/4",
+   "what is": "0/5",
+   "where": "0/6",
+   "where now": "0/8",
+   "who in": "0/7"
+  },
+  "learned": [],
+  "rows": [
+   {
+    "kind": "absent",
+    "question": "where is dora",
+    "said": null,
+    "idea": null,
+    "right": true,
+    "rang": []
+   },
+   {
+    "kind": "absent",
+    "question": "where is ned",
+    "said": null,
+    "idea": null,
+    "right": true,
+    "rang": []
+   },
+   {
+    "kind": "where now",
+    "question": "where is mary",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where now",
+    "question": "where is john",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where",
+    "question": "where is mary",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "absent",
+    "question": "where is ned",
+    "said": null,
+    "idea": null,
+    "right": true,
+    "rang": []
+   },
+   {
+    "kind": "absent",
+    "question": "where is karl",
+    "said": null,
+    "idea": null,
+    "right": true,
+    "rang": []
+   },
+   {
+    "kind": "absent",
+    "question": "where is ivan",
+    "said": null,
+    "idea": null,
+    "right": true,
+    "rang": []
+   },
+   {
+    "kind": "where now",
+    "question": "where is daniel",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where",
+    "question": "where is john",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where",
+    "question": "where is sandra",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the bedroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where now",
+    "question": "where is john",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "what is",
+    "question": "what is quartz",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "absent",
+    "question": "where is iris",
+    "said": null,
+    "idea": null,
+    "right": true,
+    "rang": []
+   },
+   {
+    "kind": "where now",
+    "question": "where is sandra",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the bathroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the garden",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the garden",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "is in",
+    "question": "is mary in the garden",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "absent",
+    "question": "where is una",
+    "said": null,
+    "idea": null,
+    "right": true,
+    "rang": []
+   },
+   {
+    "kind": "absent",
+    "question": "where is max",
+    "said": null,
+    "idea": null,
+    "right": true,
+    "rang": []
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the bedroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the hallway",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "is in",
+    "question": "is sandra in the garden",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where",
+    "question": "where is daniel",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "what is",
+    "question": "what is kitten",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "is in",
+    "question": "is mary in the hallway",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "absent",
+    "question": "where is pia",
+    "said": null,
+    "idea": null,
+    "right": true,
+    "rang": []
+   },
+   {
+    "kind": "where",
+    "question": "where is sandra",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the garden",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "what is",
+    "question": "what is rabbit",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where",
+    "question": "where is sandra",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where now",
+    "question": "where is mary",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "what is",
+    "question": "what is daisy",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "absent",
+    "question": "where is hana",
+    "said": null,
+    "idea": null,
+    "right": true,
+    "rang": []
+   },
+   {
+    "kind": "where now",
+    "question": "where is sandra",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "where now",
+    "question": "where is sandra",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "is in",
+    "question": "is mary in the kitchen",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "what is",
+    "question": "what is window",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   }
+  ],
+  "wall": 0.0
+ },
+ "taught": {
+  "task": "talk",
+  "teaching": true,
+  "n": 40,
+  "right": 6,
+  "by_kind": {
+   "absent": "6/6",
+   "is in": "0/6",
+   "what is": "0/10",
+   "where": "0/6",
+   "where now": "0/8",
+   "who in": "0/4"
+  },
+  "learned": [
+   [
+    "now",
+    "where",
+    0.5
+   ],
+   [
+    "fotu",
+    "sandra",
+    -0.21
+   ],
+   [
+    "fotu",
+    "is",
+    -0.42
+   ],
+   [
+    "fotu",
+    "where",
+    -0.35
+   ],
+   [
+    "in",
+    "hallway",
+    0.17
+   ],
+   [
+    "in",
+    "the",
+    -0.1
+   ],
+   [
+    "in",
+    "is",
+    -0.25
+   ],
+   [
+    "in",
+    "who",
+    0.5
+   ],
+   [
+    "in",
+    "in",
+    -0.1
+   ],
+   [
+    "mivi",
+    "is",
+    -0.15
+   ],
+   [
+    "mivi",
+    "where",
+    0.2
+   ],
+   [
+    "what",
+    "what",
+    0.5
+   ],
+   [
+    "what",
+    "is",
+    -0.1
+   ]
+  ],
+  "rows": [
+   {
+    "kind": "what is",
+    "question": "what is ladder",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "stone flower person land"
+   },
+   {
+    "kind": "is in",
+    "question": "is sandra in the office",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "no"
+   },
+   {
+    "kind": "is in",
+    "question": "is sandra in the hallway",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "yes"
+   },
+   {
+    "kind": "absent",
+    "question": "where is alice",
+    "said": null,
+    "idea": null,
+    "right": true,
+    "rang": [],
+    "teacher": null
+   },
+   {
+    "kind": "where",
+    "question": "where is mary",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "garden"
+   },
+   {
+    "kind": "what is",
+    "question": "what is eagle",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "of house story water thing for bright"
+   },
+   {
+    "kind": "is in",
+    "question": "is john in the bedroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "no"
+   },
+   {
+    "kind": "where now",
+    "question": "where is mary",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "garden"
+   },
+   {
+    "kind": "what is",
+    "question": "what is zephyr",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "a kind tree bird place animal used"
+   },
+   {
+    "kind": "where now",
+    "question": "where is john",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "hallway"
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the hallway",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "sandra"
+   },
+   {
+    "kind": "where now",
+    "question": "where is sandra",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "bedroom"
+   },
+   {
+    "kind": "absent",
+    "question": "where is sam",
+    "said": null,
+    "idea": null,
+    "right": true,
+    "rang": [],
+    "teacher": null
+   },
+   {
+    "kind": "is in",
+    "question": "is daniel in the bedroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "no"
+   },
+   {
+    "kind": "where now",
+    "question": "where is daniel",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "bedroom"
+   },
+   {
+    "kind": "where",
+    "question": "where is daniel",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "garden"
+   },
+   {
+    "kind": "what is",
+    "question": "what is acorn",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "house story water"
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the hallway",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "john"
+   },
+   {
+    "kind": "what is",
+    "question": "what is giant",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "used old a kind"
+   },
+   {
+    "kind": "absent",
+    "question": "where is eli",
+    "said": null,
+    "idea": null,
+    "right": true,
+    "rang": [],
+    "teacher": null
+   },
+   {
+    "kind": "what is",
+    "question": "what is window",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "story water thing for bright"
+   },
+   {
+    "kind": "where now",
+    "question": "where is sandra",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "office"
+   },
+   {
+    "kind": "where",
+    "question": "where is sandra",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "bathroom"
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the garden",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "john"
+   },
+   {
+    "kind": "what is",
+    "question": "what is dragon",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "of house story water thing for"
+   },
+   {
+    "kind": "is in",
+    "question": "is sandra in the bathroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "yes"
+   },
+   {
+    "kind": "what is",
+    "question": "what is rabbit",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "soft large stone flower person"
+   },
+   {
+    "kind": "absent",
+    "question": "where is una",
+    "said": null,
+    "idea": null,
+    "right": true,
+    "rang": [],
+    "teacher": null
+   },
+   {
+    "kind": "absent",
+    "question": "where is alice",
+    "said": null,
+    "idea": null,
+    "right": true,
+    "rang": [],
+    "teacher": null
+   },
+   {
+    "kind": "where now",
+    "question": "where is john",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "garden"
+   },
+   {
+    "kind": "where now",
+    "question": "where is sandra",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "office"
+   },
+   {
+    "kind": "what is",
+    "question": "what is birch",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "house story water thing"
+   },
+   {
+    "kind": "where",
+    "question": "where is daniel",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "hallway"
+   },
+   {
+    "kind": "where",
+    "question": "where is daniel",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "bedroom"
+   },
+   {
+    "kind": "absent",
+    "question": "where is walt",
+    "said": null,
+    "idea": null,
+    "right": true,
+    "rang": [],
+    "teacher": null
+   },
+   {
+    "kind": "where",
+    "question": "where is john",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "hallway"
+   },
+   {
+    "kind": "is in",
+    "question": "is mary in the bathroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "no"
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the office",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "daniel"
+   },
+   {
+    "kind": "where now",
+    "question": "where is daniel",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "office"
+   },
+   {
+    "kind": "what is",
+    "question": "what is yellow",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": [],
+    "teacher": "made with soft large stone flower"
+   }
+  ],
+  "wall": 0.0
+ },
+ "alone after": {
+  "task": "talk",
+  "teaching": false,
+  "n": 40,
+  "right": 36,
+  "by_kind": {
+   "absent": "13/13",
+   "is in": "0/4",
+   "what is": "8/8",
+   "where": "6/6",
+   "where now": "3/3",
+   "who in": "6/6"
+  },
+  "learned": [],
+  "rows": [
+   {
+    "kind": "who in",
+    "question": "who is in the kitchen",
+    "said": "john",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      2.593
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the kitchen",
+    "said": "sandra",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      2.593
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is jack",
+    "said": null,
+    "idea": "now",
+    "right": true,
+    "rang": [
+     [
+      "now",
+      3.066
+     ],
+     [
+      "mivi",
+      1.015
+     ]
+    ]
+   },
+   {
+    "kind": "where now",
+    "question": "where is mary",
+    "said": "bathroom",
+    "idea": "now",
+    "right": true,
+    "rang": [
+     [
+      "now",
+      2.984
+     ],
+     [
+      "mivi",
+      0.995
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is vic",
+    "said": null,
+    "idea": "now",
+    "right": true,
+    "rang": [
+     [
+      "now",
+      3.066
+     ],
+     [
+      "mivi",
+      1.015
+     ]
+    ]
+   },
+   {
+    "kind": "what is",
+    "question": "what is zephyr",
+    "said": "a kind tree bird place animal used",
+    "idea": "what",
+    "right": true,
+    "rang": [
+     [
+      "what",
+      2.893
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is john",
+    "said": "hallway",
+    "idea": "now",
+    "right": true,
+    "rang": [
+     [
+      "now",
+      3.022
+     ],
+     [
+      "mivi",
+      0.839
+     ]
+    ]
+   },
+   {
+    "kind": "what is",
+    "question": "what is otter",
+    "said": "large stone flower person land made with",
+    "idea": "what",
+    "right": true,
+    "rang": [
+     [
+      "what",
+      3.354
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is bella",
+    "said": null,
+    "idea": "now",
+    "right": true,
+    "rang": [
+     [
+      "now",
+      3.066
+     ],
+     [
+      "mivi",
+      1.015
+     ]
+    ]
+   },
+   {
+    "kind": "what is",
+    "question": "what is island",
+    "said": "flower person land made with soft",
+    "idea": "what",
+    "right": true,
+    "rang": [
+     [
+      "what",
+      3.241
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is john",
+    "said": "garden",
+    "idea": "now",
+    "right": true,
+    "rang": [
+     [
+      "now",
+      3.022
+     ],
+     [
+      "mivi",
+      0.839
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is zoe",
+    "said": null,
+    "idea": "now",
+    "right": true,
+    "rang": [
+     [
+      "now",
+      3.066
+     ],
+     [
+      "mivi",
+      1.015
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the garden",
+    "said": "sandra",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      2.585
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the kitchen",
+    "said": "mary",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      2.593
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is daniel in the office",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "what is",
+    "question": "what is amber",
+    "said": "a kind tree",
+    "idea": "what",
+    "right": true,
+    "rang": [
+     [
+      "what",
+      3.122
+     ]
+    ]
+   },
+   {
+    "kind": "where now",
+    "question": "where is john",
+    "said": "bathroom",
+    "idea": "now",
+    "right": true,
+    "rang": [
+     [
+      "now",
+      3.022
+     ],
+     [
+      "mivi",
+      0.839
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is daniel in the bathroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "what is",
+    "question": "what is island",
+    "said": "flower person land made with soft",
+    "idea": "what",
+    "right": true,
+    "rang": [
+     [
+      "what",
+      3.241
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is daniel in the kitchen",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "what is",
+    "question": "what is temple",
+    "said": "water thing for bright small of house",
+    "idea": "what",
+    "right": true,
+    "rang": [
+     [
+      "what",
+      3.169
+     ]
+    ]
+   },
+   {
+    "kind": "is in",
+    "question": "is sandra in the bathroom",
+    "said": null,
+    "idea": null,
+    "right": false,
+    "rang": []
+   },
+   {
+    "kind": "what is",
+    "question": "what is island",
+    "said": "flower person land made with soft",
+    "idea": "what",
+    "right": true,
+    "rang": [
+     [
+      "what",
+      3.241
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is mary",
+    "said": "office",
+    "idea": "now",
+    "right": true,
+    "rang": [
+     [
+      "now",
+      2.984
+     ],
+     [
+      "mivi",
+      0.995
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is tom",
+    "said": null,
+    "idea": "now",
+    "right": true,
+    "rang": [
+     [
+      "now",
+      3.066
+     ],
+     [
+      "mivi",
+      1.015
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is bella",
+    "said": null,
+    "idea": "now",
+    "right": true,
+    "rang": [
+     [
+      "now",
+      3.066
+     ],
+     [
+      "mivi",
+      1.015
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is paul",
+    "said": null,
+    "idea": "now",
+    "right": true,
+    "rang": [
+     [
+      "now",
+      3.066
+     ],
+     [
+      "mivi",
+      1.015
+     ]
+    ]
+   },
+   {
+    "kind": "what is",
+    "question": "what is basket",
+    "said": "land made with soft",
+    "idea": "what",
+    "right": true,
+    "rang": [
+     [
+      "what",
+      2.797
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is rosa",
+    "said": null,
+    "idea": "now",
+    "right": true,
+    "rang": [
+     [
+      "now",
+      3.066
+     ],
+     [
+      "mivi",
+      1.015
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is daniel",
+    "said": "office",
+    "idea": "now",
+    "right": true,
+    "rang": [
+     [
+      "now",
+      3.027
+     ],
+     [
+      "mivi",
+      0.938
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is carl",
+    "said": null,
+    "idea": "now",
+    "right": true,
+    "rang": [
+     [
+      "now",
+      3.066
+     ],
+     [
+      "mivi",
+      1.015
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is anna",
+    "said": null,
+    "idea": "now",
+    "right": true,
+    "rang": [
+     [
+      "now",
+      3.066
+     ],
+     [
+      "mivi",
+      1.015
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is sara",
+    "said": null,
+    "idea": "now",
+    "right": true,
+    "rang": [
+     [
+      "now",
+      3.066
+     ],
+     [
+      "mivi",
+      1.015
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is john",
+    "said": "hallway",
+    "idea": "now",
+    "right": true,
+    "rang": [
+     [
+      "now",
+      3.022
+     ],
+     [
+      "mivi",
+      0.839
+     ]
+    ]
+   },
+   {
+    "kind": "where now",
+    "question": "where is john",
+    "said": "office",
+    "idea": "now",
+    "right": true,
+    "rang": [
+     [
+      "now",
+      3.022
+     ],
+     [
+      "mivi",
+      0.839
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the hallway",
+    "said": "sandra",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      2.464
+     ]
+    ]
+   },
+   {
+    "kind": "where",
+    "question": "where is sandra",
+    "said": "hallway",
+    "idea": "now",
+    "right": true,
+    "rang": [
+     [
+      "now",
+      2.984
+     ],
+     [
+      "mivi",
+      0.88
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is wren",
+    "said": null,
+    "idea": "now",
+    "right": true,
+    "rang": [
+     [
+      "now",
+      3.066
+     ],
+     [
+      "mivi",
+      1.015
+     ]
+    ]
+   },
+   {
+    "kind": "who in",
+    "question": "who is in the bathroom",
+    "said": "daniel",
+    "idea": "in",
+    "right": true,
+    "rang": [
+     [
+      "in",
+      2.41
+     ]
+    ]
+   },
+   {
+    "kind": "absent",
+    "question": "where is dora",
+    "said": null,
+    "idea": "now",
+    "right": true,
+    "rang": [
+     [
+      "now",
+      3.066
+     ],
+     [
+      "mivi",
+      1.015
+     ]
+    ]
+   }
+  ],
+  "wall": 0.0
+ }
+}

@@ -1,0 +1,372 @@
+{
+ "task": "where 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 45,
+ "answer": [
+  "c",
+  2,
+  [
+   "tail",
+   null,
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "add",
+   null,
+   [
+    "c",
+    1,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "sub",
+    null,
+    [
+     "c",
+     2,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ],
+    [
+     "c",
+     3,
+     [
+      "head",
+      "list",
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   2,
+   [
+    "foldl",
+    null,
+    [
+     "lam",
+     "ae",
+     [
+      "cons",
+      null,
+      [
+       "var",
+       "e"
+      ],
+      [
+       "var",
+       "a"
+      ]
+     ]
+    ],
+    [
+     "var",
+     "g"
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "c",
+    2,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "sub",
+    null,
+    [
+     "c",
+     3,
+     [
+      "head",
+      "list",
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ],
+    [
+     "c",
+     1,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "cons",
+    null,
+    [
+     "c",
+     2,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ],
+    [
+     "head",
+     "list",
+     [
+      "tail",
+      null,
+      [
+       "tail",
+       null,
+       [
+        "tail",
+        null,
+        [
+         "var",
+         "g"
+        ]
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "cons",
+    null,
+    [
+     "c",
+     2,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ],
+    [
+     "head",
+     "list",
+     [
+      "tail",
+      null,
+      [
+       "tail",
+       null,
+       [
+        "tail",
+        null,
+        [
+         "tail",
+         null,
+         [
+          "var",
+          "g"
+         ]
+        ]
+       ]
+      ]
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 7,
+ "asked": 40,
+ "explored": 0,
+ "tension": [
+  3.19,
+  5.423,
+  5.423,
+  8.305,
+  6.709,
+  6.709,
+  8.982,
+  8.982,
+  4.971,
+  2.346,
+  2.346,
+  3.193,
+  10.405,
+  10.405,
+  7.082,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  5.427,
+  3.196,
+  15.228,
+  15.228
+ ],
+ "wall": 1887.4,
+ "cpu": 1882.2,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "where",
+  "is"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 8.78,
+  "ledger": 0.0,
+  "actions": 0.22,
+  "ask": 0.01,
+  "doubt": 8.44,
+  "grow": 670.93,
+  "imagine": 1198.89
+ },
+ "built": [],
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "ask",
+  "ask",
+  "grow+imagine+ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+grow",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "grow",
+  "grow",
+  "grow",
+  "grow",
+  "grow"
+ ],
+ "say": [
+  "I think bigger (level 1).",
+  "I imagine by wish: 0 new ideas.",
+  "I imagine by wish then compose: 0 new ideas.",
+  "I think bigger (level 2).",
+  "In where 1 my best idea is last(tail(g)), but I cannot finish (0.0 nats of doubt). Is it right, or what am I missing?",
+  "I imagine by compose: 0 new ideas.",
+  "I think bigger (level 3).",
+  "I think bigger (level 4).",
+  "I think bigger (level 5).",
+  "I think bigger (level 6).",
+  "I think bigger (level 7).",
+  "In where 1 my best idea is last(tail(g)), but I cannot finish (0.0 nats of doubt, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('c', 2, ('tail', None, ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: john travelled to the kitchen; mary moved to the bedroom | question: where is mary -> bedroom",
+  "story: sandra moved to the hallway; john went to the garden | question: where is sandra -> hallway",
+  "story: john went to the kitchen; mary journeyed to the hallway; daniel moved to the kitchen | question: where is john -> kitchen"
+ ]
+}

@@ -1,0 +1,27 @@
+Colab seed 3, field vs before, commit cc48eb9 (echo self-reinforcement bug present in the field arm), read 2026-09-30 17:30 UTC at VM uptime 23.8 h; lines cut at 48 chars
+#before
+first 1: proven right | head(head(tail(g))) | st
+first 2: proven right | first(g) | steps 2 | 4.4
+last 1: proven right | kadu(dudu(g)) | steps 3 |
+last 2: proven right | noka(g) | steps 2 | 4.5 s
+who 1: proven right | first(filter(λe. eq(kadu(
+who 2: proven right | who(g) | steps 3 | 3.3 s |
+where 1: proven right | kadu(head(filter(λe. eq
+where 2: proven right | mire(g) | steps 2 | 5.1
+what_is 1: proven right | repe(reno(g)) | steps
+what_is 2: proven right | nope(g) | steps 2 | 6.
+who_in 1: proven right | who(g) | steps 2 | 7.0
+who_in 2: proven right | in(g) | steps 2 | 6.2 s
+where_now 1: not proven | None | steps 47 | 1800
+where_now 2: not proven | None | steps 45 | 1892
+#field
+first 1: proven right | head(head(tail(g))) | st
+first 2: proven right | first(g) | steps 2 | 4.4
+last 1: proven right | kadu(dudu(g)) | steps 6 |
+last 2: proven right | noka(g) | steps 3 | 0.5 s
+who 1: proven right | first(filter(λe. eq(kadu(
+who 2: proven right | who(g) | steps 12 | 1800.7
+where 1: proven right | kadu(head(filter(λe. eq
+where 2: proven right | mire(g) | steps 9 | 1801
+what_is 1: proven right | repe(reno(g)) | steps
+what_is 2: proven right | nope(g) | steps 3 | 8.

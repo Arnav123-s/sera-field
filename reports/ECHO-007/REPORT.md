@@ -214,7 +214,7 @@ goal-directed intervention and grounded language. Freeze a new observed-system
 cohort; bind the same acquired state to all five paths; withhold task-specific
 teaching after acquisition; and check actuation plus independently measured
 outcomes. A calibrated force channel must distinguish mass from force scale.
-That measures the connection the user wants instead of treating five separate
+That measures the connection the author wants instead of treating five separate
 interfaces as proof of shared conceptual transfer.
 
 Timed-input RHEL requires a separate persistent position/momentum sequence

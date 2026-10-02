@@ -1,0 +1,209 @@
+{
+ "task": "list: count",
+ "subject": "code",
+ "kind": "exact:list->num",
+ "teaching": true,
+ "steps": 7,
+ "answer": [
+  "c",
+  15,
+  [
+   "c",
+   11,
+   [
+    "var",
+    "l"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   15,
+   [
+    "c",
+    11,
+    [
+     "var",
+     "l"
+    ]
+   ]
+  ],
+  [
+   "c",
+   8,
+   [
+    "c",
+    15,
+    [
+     "var",
+     "l"
+    ]
+   ]
+  ],
+  [
+   "c",
+   18,
+   [
+    "c",
+    13,
+    [
+     "var",
+     "l"
+    ]
+   ]
+  ],
+  [
+   "c",
+   18,
+   [
+    "c",
+    12,
+    [
+     "c",
+     13,
+     [
+      "var",
+      "l"
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   18,
+   [
+    "c",
+    9,
+    [
+     "c",
+     13,
+     [
+      "var",
+      "l"
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 1,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  4.044,
+  7.776,
+  7.776,
+  8.637,
+  8.637,
+  6.496,
+  6.496
+ ],
+ "wall": 302.3,
+ "cpu": 300.7,
+ "proven": true,
+ "invented": [
+  {
+   "id": 19,
+   "subject": "code",
+   "body": "rifo(miri(_))"
+  }
+ ],
+ "reused": [
+  15,
+  11
+ ],
+ "words_heard": [
+  "count"
+ ],
+ "said": [
+  "mino"
+ ],
+ "false_words": [],
+ "serendipity": {
+  "origin": "composed",
+  "source": "(15, 11)"
+ },
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.76,
+  "ledger": 0.0,
+  "actions": 0.13,
+  "ask": 0.0,
+  "imagine": 294.44,
+  "doubt": 0.29,
+  "prove": 0.02,
+  "grow": 4.87
+ },
+ "built": [
+  {
+   "id": 15,
+   "name": "rifo",
+   "words": "make what spring turns into the answer",
+   "body": "sum(map(\u03bbe. 1, _))"
+  },
+  {
+   "id": 16,
+   "name": "sami",
+   "words": "handle lt(5, w) (it gives 5), then the rest",
+   "body": "square(sub(_, 1))"
+  },
+  {
+   "id": 17,
+   "name": "nofo",
+   "words": "finish what noka starts",
+   "body": "if(lt(5, _), 5, sami(_))"
+  },
+  {
+   "id": 18,
+   "name": "redu",
+   "words": "finish what sum starts",
+   "body": "nofo(noka(_))"
+  }
+ ],
+ "peak_mb": 4822.72265625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "rifo(miri(l))",
+ "verdict": "proven right",
+ "audit": 319,
+ "imagined_by": {
+  "method": "#1+wish",
+  "moves": "compose+wish+wish",
+  "origin": "composed"
+ },
+ "method_named": {
+  "id": 4,
+  "moves": "compose then wish then wish"
+ },
+ "configs": [
+  "ask+imagine",
+  "imagine",
+  "prove",
+  "imagine",
+  "prove+grow",
+  "imagine",
+  "leave"
+ ],
+ "say": [
+  "I wish I could make what spring turns into the answer: I build it (rifo = sum(map(\u03bbe. 1, _))) and use it.",
+  "I imagine by compose then wish then recall: 2 new ideas.",
+  "I wish I could handle lt(5, w) (it gives 5), then the rest: I build it (sami = square(sub(_, 1))) and use it.",
+  "I wish I could finish what noka starts: I build it (nofo = if(lt(5, _), 5, sami(_))) and use it.",
+  "I wish I could finish what sum starts: I build it (redu = nofo(noka(_))) and use it.",
+  "I imagine by compose then wish then wish: 2 new ideas.",
+  "I keep 3 of my imagined ideas in mind and let 1 go.",
+  "I imagine by compose: 0 new ideas.",
+  "My audit found an input it gets wrong; I learn from it.",
+  "The judge refuted it: the 6 ways of working and imagining that led there are weakened a little.",
+  "I imagine by compose: 0 new ideas.",
+  "My audit passes rifo(miri(l)) on 319 fresh inputs.",
+  "I think bigger (level 1).",
+  "It rings through the Field: 2 ways of working and imagining that led here are strengthened.",
+  "I imagine by compose: 0 new ideas."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

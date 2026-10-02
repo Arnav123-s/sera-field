@@ -1,0 +1,113 @@
+INCOMPLETE
+helpful_reuse_retained: INCOMPLETE
+harmful_transfer_reduced: INCOMPLETE
+no_negative_uncertainty: INCOMPLETE
+old_lessons_retained: INCOMPLETE
+s1-teach-wind: done, wall=48.4, cpu=48.4, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.24, 'ledger': 7.95, 'actions': 18.34, 'prove': 21.39, 'doubt': 0.2, 'ask': 0.0, 'imagine': 0.08, 'explore': 0.0, 'finish': 0.04}
+s1-teach-spring: done, wall=105.1, cpu=105.0, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.29, 'ledger': 13.77, 'actions': 60.12, 'prove': 30.51, 'doubt': 0.23, 'explore': 0.0, 'finish': 0.03}
+s1-teach-ripple: done, wall=63.8, cpu=63.7, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.56, 'ledger': 8.83, 'actions': 16.48, 'prove': 25.37, 'grow': 11.05, 'doubt': 1.21, 'finish': 0.03}
+s1-teach-stiff: censored, wall=None, cpu=None, phases={}
+s1-before-wind: censored, wall=None, cpu=None, phases={}
+s1-after-wind: not_reached, wall=None, cpu=None, phases={}
+s1-before-spring: done, wall=72.1, cpu=72.0, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.38, 'ledger': 8.44, 'actions': 29.44, 'prove': 26.71, 'doubt': 0.73, 'imagine': 0.04, 'explore': 0.0, 'grow': 5.75, 'finish': 0.44}
+s1-after-spring: not_reached, wall=None, cpu=None, phases={}
+s1-before-ripple: done, wall=83.6, cpu=83.5, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.47, 'ledger': 11.75, 'actions': 39.7, 'explore': 0.0, 'doubt': 1.16, 'imagine': 0.06, 'prove': 24.49, 'grow': 5.39, 'finish': 0.43}
+s1-after-ripple: not_reached, wall=None, cpu=None, phases={}
+s1-before-stiff: censored, wall=None, cpu=None, phases={}
+s1-after-stiff: not_reached, wall=None, cpu=None, phases={}
+s1-old-before-0: capped, wall=136.0, cpu=135.8, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 1.22, 'ledger': 2.6, 'actions': 39.88, 'prove': 80.29, 'doubt': 2.69, 'convince': 0.06, 'imagine': 3.04, 'ask': 0.02, 'grow': 5.93, 'explore': 0.04, 'finish': 0.0}
+s1-old-after-0: not_reached, wall=None, cpu=None, phases={}
+s1-old-before-1: done, wall=2.3, cpu=2.3, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.05, 'ledger': 0.0, 'actions': 0.0, 'prove': 0.0, 'grow': 0.86, 'doubt': 0.04, 'finish': 0.0}
+s1-old-after-1: not_reached, wall=None, cpu=None, phases={}
+s1-old-before-2: done, wall=2.1, cpu=2.1, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.05, 'ledger': 0.0, 'actions': 0.0, 'prove': 0.01, 'grow': 0.82, 'doubt': 0.04, 'finish': 0.01}
+s1-old-after-2: not_reached, wall=None, cpu=None, phases={}
+s1-old-before-3: done, wall=97.4, cpu=97.2, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.52, 'ledger': 11.41, 'actions': 49.84, 'prove': 28.62, 'doubt': 0.91, 'imagine': 0.07, 'explore': 0.0, 'grow': 5.45, 'ask': 0.0, 'finish': 0.39}
+s1-old-after-3: not_reached, wall=None, cpu=None, phases={}
+s1-old-before-4: done, wall=121.3, cpu=121.2, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.68, 'ledger': 22.8, 'actions': 67.04, 'explore': 0.0, 'doubt': 1.36, 'imagine': 0.05, 'prove': 23.2, 'grow': 5.57, 'finish': 0.42}
+s1-old-after-4: not_reached, wall=None, cpu=None, phases={}
+s1-old-before-5: done, wall=4.7, cpu=4.6, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.08, 'ledger': 0.0, 'actions': 0.03, 'prove': 0.01, 'ask': 0.0, 'imagine': 0.01, 'doubt': 0.09, 'grow': 2.64, 'finish': 0.01}
+s1-old-after-5: not_reached, wall=None, cpu=None, phases={}
+s1-old-before-6: done, wall=2.0, cpu=2.0, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.05, 'ledger': 0.0, 'actions': 0.0, 'prove': 0.0, 'grow': 0.77, 'doubt': 0.04, 'finish': 0.0}
+s1-old-after-6: not_reached, wall=None, cpu=None, phases={}
+s1-old-before-7: done, wall=5.1, cpu=5.1, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.25, 'ledger': 0.0, 'actions': 0.09, 'ask': 0.0, 'doubt': 0.25, 'prove': 0.01, 'grow': 2.73, 'imagine': 0.01, 'finish': 0.01}
+s1-old-after-7: not_reached, wall=None, cpu=None, phases={}
+s1-old-before-8: censored, wall=None, cpu=None, phases={}
+s1-old-after-8: not_reached, wall=None, cpu=None, phases={}
+s1-old-before-9: done, wall=1.7, cpu=1.7, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.03, 'ledger': 0.0, 'actions': 0.03, 'ask': 0.0, 'doubt': 0.02, 'prove': 0.01, 'finish': 0.01}
+s1-old-after-9: not_reached, wall=None, cpu=None, phases={}
+s1-old-before-10: done, wall=141.4, cpu=141.3, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.9, 'ledger': 28.24, 'actions': 60.09, 'explore': 0.0, 'doubt': 2.26, 'imagine': 0.06, 'prove': 43.7, 'grow': 5.62, 'finish': 0.38}
+s1-old-after-10: not_reached, wall=None, cpu=None, phases={}
+s1-old-before-11: censored, wall=None, cpu=None, phases={}
+s1-old-after-11: not_reached, wall=None, cpu=None, phases={}
+s2-teach-wind: censored, wall=None, cpu=None, phases={}
+s2-teach-spring: not_reached, wall=None, cpu=None, phases={}
+s2-teach-ripple: not_reached, wall=None, cpu=None, phases={}
+s2-teach-stiff: not_reached, wall=None, cpu=None, phases={}
+s2-before-wind: done, wall=48.0, cpu=48.0, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.47, 'ledger': 2.53, 'actions': 16.66, 'prove': 21.41, 'doubt': 0.78, 'imagine': 0.07, 'grow': 5.5, 'ask': 0.0, 'finish': 0.44}
+s2-after-wind: not_reached, wall=None, cpu=None, phases={}
+s2-before-spring: done, wall=95.4, cpu=95.3, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.52, 'ledger': 11.34, 'actions': 47.39, 'prove': 27.82, 'doubt': 0.88, 'imagine': 0.07, 'explore': 0.0, 'grow': 6.83, 'ask': 0.0, 'finish': 0.37}
+s2-after-spring: not_reached, wall=None, cpu=None, phases={}
+s2-before-ripple: done, wall=135.0, cpu=134.9, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.84, 'ledger': 23.12, 'actions': 88.04, 'prove': 15.03, 'doubt': 1.16, 'imagine': 0.84, 'grow': 5.4, 'ask': 0.0, 'explore': 0.02, 'finish': 0.38}
+s2-after-ripple: not_reached, wall=None, cpu=None, phases={}
+s2-before-stiff: censored, wall=None, cpu=None, phases={}
+s2-after-stiff: not_reached, wall=None, cpu=None, phases={}
+s2-old-before-0: censored, wall=None, cpu=None, phases={}
+s2-old-after-0: not_reached, wall=None, cpu=None, phases={}
+s2-old-before-1: done, wall=2.3, cpu=2.3, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.05, 'ledger': 0.0, 'actions': 0.0, 'prove': 0.0, 'grow': 0.87, 'doubt': 0.04, 'finish': 0.0}
+s2-old-after-1: not_reached, wall=None, cpu=None, phases={}
+s2-old-before-2: done, wall=2.4, cpu=2.4, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.05, 'ledger': 0.0, 'actions': 0.0, 'prove': 0.01, 'grow': 0.72, 'doubt': 0.04, 'finish': 0.01}
+s2-old-after-2: not_reached, wall=None, cpu=None, phases={}
+s2-old-before-3: done, wall=93.4, cpu=93.3, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.49, 'ledger': 11.27, 'actions': 47.68, 'prove': 27.25, 'doubt': 0.83, 'imagine': 0.07, 'explore': 0.0, 'grow': 5.27, 'ask': 0.0, 'finish': 0.38}
+s2-old-after-3: not_reached, wall=None, cpu=None, phases={}
+s2-old-before-4: censored, wall=None, cpu=None, phases={}
+s2-old-after-4: not_reached, wall=None, cpu=None, phases={}
+s2-old-before-5: done, wall=4.7, cpu=4.7, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.08, 'ledger': 0.0, 'actions': 0.03, 'prove': 0.01, 'ask': 0.0, 'imagine': 0.01, 'doubt': 0.08, 'grow': 2.57, 'finish': 0.01}
+s2-old-after-5: not_reached, wall=None, cpu=None, phases={}
+s2-old-before-6: done, wall=2.0, cpu=2.0, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.05, 'ledger': 0.0, 'actions': 0.0, 'prove': 0.0, 'grow': 0.82, 'doubt': 0.04, 'finish': 0.0}
+s2-old-after-6: not_reached, wall=None, cpu=None, phases={}
+s2-old-before-7: done, wall=4.7, cpu=4.7, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.24, 'ledger': 0.0, 'actions': 0.09, 'ask': 0.0, 'doubt': 0.24, 'prove': 0.01, 'grow': 2.46, 'imagine': 0.01, 'finish': 0.01}
+s2-old-after-7: not_reached, wall=None, cpu=None, phases={}
+s2-old-before-8: censored, wall=None, cpu=None, phases={}
+s2-old-after-8: not_reached, wall=None, cpu=None, phases={}
+s2-old-before-9: done, wall=1.8, cpu=1.8, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.03, 'ledger': 0.0, 'actions': 0.03, 'ask': 0.0, 'doubt': 0.02, 'prove': 0.01, 'finish': 0.01}
+s2-old-after-9: not_reached, wall=None, cpu=None, phases={}
+s2-old-before-10: done, wall=143.1, cpu=143.0, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 1.04, 'ledger': 28.75, 'actions': 60.11, 'explore': 0.0, 'doubt': 2.43, 'imagine': 0.07, 'prove': 44.55, 'grow': 5.56, 'finish': 0.42}
+s2-old-after-10: not_reached, wall=None, cpu=None, phases={}
+s2-old-before-11: censored, wall=None, cpu=None, phases={}
+s2-old-after-11: not_reached, wall=None, cpu=None, phases={}
+s3-teach-wind: censored, wall=None, cpu=None, phases={}
+s3-teach-spring: not_reached, wall=None, cpu=None, phases={}
+s3-teach-ripple: not_reached, wall=None, cpu=None, phases={}
+s3-teach-stiff: not_reached, wall=None, cpu=None, phases={}
+s3-before-wind: done, wall=52.3, cpu=52.2, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.46, 'ledger': 2.43, 'actions': 16.99, 'prove': 25.58, 'doubt': 0.81, 'imagine': 0.07, 'grow': 5.38, 'ask': 0.0, 'finish': 0.37}
+s3-after-wind: not_reached, wall=None, cpu=None, phases={}
+s3-before-spring: done, wall=82.8, cpu=82.8, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.47, 'ledger': 10.17, 'actions': 38.61, 'prove': 26.9, 'doubt': 0.81, 'imagine': 0.07, 'explore': 0.0, 'grow': 5.25, 'ask': 0.0, 'finish': 0.39}
+s3-after-spring: not_reached, wall=None, cpu=None, phases={}
+s3-before-ripple: done, wall=72.6, cpu=72.6, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.38, 'ledger': 10.05, 'actions': 30.21, 'prove': 25.15, 'doubt': 0.72, 'imagine': 0.04, 'explore': 0.0, 'grow': 5.56, 'finish': 0.37}
+s3-after-ripple: not_reached, wall=None, cpu=None, phases={}
+s3-before-stiff: censored, wall=None, cpu=None, phases={}
+s3-after-stiff: not_reached, wall=None, cpu=None, phases={}
+s3-old-before-0: censored, wall=None, cpu=None, phases={}
+s3-old-after-0: not_reached, wall=None, cpu=None, phases={}
+s3-old-before-1: done, wall=2.3, cpu=2.3, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.05, 'ledger': 0.0, 'actions': 0.0, 'prove': 0.0, 'grow': 0.86, 'doubt': 0.04, 'finish': 0.0}
+s3-old-after-1: not_reached, wall=None, cpu=None, phases={}
+s3-old-before-2: done, wall=2.3, cpu=2.3, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.05, 'ledger': 0.0, 'actions': 0.0, 'prove': 0.01, 'grow': 0.76, 'doubt': 0.04, 'finish': 0.01}
+s3-old-after-2: not_reached, wall=None, cpu=None, phases={}
+s3-old-before-3: done, wall=96.6, cpu=96.5, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.53, 'ledger': 11.62, 'actions': 49.27, 'prove': 28.15, 'doubt': 0.89, 'imagine': 0.07, 'explore': 0.0, 'grow': 5.57, 'ask': 0.0, 'finish': 0.4}
+s3-old-after-3: not_reached, wall=None, cpu=None, phases={}
+s3-old-before-4: censored, wall=None, cpu=None, phases={}
+s3-old-after-4: not_reached, wall=None, cpu=None, phases={}
+s3-old-before-5: done, wall=4.9, cpu=4.9, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.09, 'ledger': 0.0, 'actions': 0.03, 'prove': 0.01, 'ask': 0.0, 'imagine': 0.01, 'doubt': 0.09, 'grow': 2.67, 'finish': 0.01}
+s3-old-after-5: not_reached, wall=None, cpu=None, phases={}
+s3-old-before-6: done, wall=2.3, cpu=2.3, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.07, 'ledger': 0.0, 'actions': 0.0, 'prove': 0.0, 'grow': 0.92, 'doubt': 0.05, 'finish': 0.0}
+s3-old-after-6: not_reached, wall=None, cpu=None, phases={}
+s3-old-before-7: done, wall=4.9, cpu=4.9, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.24, 'ledger': 0.0, 'actions': 0.09, 'ask': 0.0, 'doubt': 0.23, 'prove': 0.01, 'grow': 2.57, 'imagine': 0.01, 'finish': 0.01}
+s3-old-after-7: not_reached, wall=None, cpu=None, phases={}
+s3-old-before-8: capped, wall=131.5, cpu=131.3, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.16, 'ledger': 43.35, 'actions': 64.22, 'explore': 0.0, 'doubt': 0.12, 'imagine': 0.05, 'prove': 23.39, 'convince': 0.03, 'finish': 0.0}
+s3-old-after-8: not_reached, wall=None, cpu=None, phases={}
+s3-old-before-9: done, wall=1.8, cpu=1.8, phases={'trigger': 0.0, 'other': 0.0, 'beliefs': 0.03, 'ledger': 0.0, 'actions': 0.03, 'ask': 0.0, 'doubt': 0.02, 'prove': 0.01, 'finish': 0.01}
+s3-old-after-9: not_reached, wall=None, cpu=None, phases={}
+s3-old-before-10: censored, wall=None, cpu=None, phases={}
+s3-old-after-10: not_reached, wall=None, cpu=None, phases={}
+s3-old-before-11: censored, wall=None, cpu=None, phases={}
+s3-old-after-11: not_reached, wall=None, cpu=None, phases={}

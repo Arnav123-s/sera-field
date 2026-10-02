@@ -1,0 +1,100 @@
+{
+ "task": "first 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 3,
+ "answer": [
+  "c",
+  25,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   26,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "lit",
+   118
+  ],
+  [
+   "lit",
+   120
+  ],
+  [
+   "one",
+   null
+  ],
+  [
+   "zero",
+   null
+  ]
+ ],
+ "level": 0,
+ "asked": 2,
+ "explored": 0,
+ "tension": [
+  2.947,
+  2.947,
+  2.947
+ ],
+ "wall": 7.3,
+ "cpu": 7.3,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  25
+ ],
+ "words_heard": [
+  "first",
+  "word"
+ ],
+ "said": [
+  "kape"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.03,
+  "ledger": 0.0,
+  "actions": 0.03,
+  "prove": 0.04,
+  "ask": 0.0,
+  "doubt": 0.02
+ },
+ "built": [],
+ "peak_mb": 539.69140625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "kape(g)",
+ "verdict": "proven right",
+ "audit": 249,
+ "configs": [
+  "prove+ask",
+  "ask",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: nosa (8.90), kape (4.72).",
+  "My audit passes kape(g) on 249 fresh inputs."
+ ],
+ "answer_repr": "('c', 25, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: mary journeyed to the kitchen | question: what is the first word -> mary",
+  "story: mary travelled to the bedroom | question: what is the first word -> mary",
+  "story: mary journeyed to the hallway | question: what is the first word -> mary"
+ ]
+}

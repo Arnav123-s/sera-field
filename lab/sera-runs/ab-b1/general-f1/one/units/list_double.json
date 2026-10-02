@@ -1,0 +1,140 @@
+{
+ "task": "list: double",
+ "subject": "code",
+ "kind": "exact:list->list",
+ "teaching": true,
+ "steps": 3,
+ "answer": [
+  "map",
+  null,
+  [
+   "lam",
+   "e",
+   [
+    "c",
+    20,
+    [
+     "var",
+     "e"
+    ]
+   ]
+  ],
+  [
+   "var",
+   "l"
+  ]
+ ],
+ "others": [
+  [
+   "var",
+   "l"
+  ],
+  [
+   "nil",
+   null
+  ],
+  [
+   "c",
+   11,
+   [
+    "var",
+    "l"
+   ]
+  ],
+  [
+   "c",
+   17,
+   [
+    "var",
+    "l"
+   ]
+  ],
+  [
+   "c",
+   15,
+   [
+    "var",
+    "l"
+   ]
+  ]
+ ],
+ "level": 0,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  3.637,
+  14.155,
+  14.155
+ ],
+ "wall": 253.6,
+ "cpu": 252.3,
+ "proven": true,
+ "invented": [
+  {
+   "id": 21,
+   "subject": "code",
+   "body": "map(\u03bbe. redu(e), _)"
+  }
+ ],
+ "reused": [
+  20
+ ],
+ "words_heard": [
+  "double"
+ ],
+ "said": [
+  "mino"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.09,
+  "ledger": 0.0,
+  "actions": 0.06,
+  "ask": 0.0,
+  "imagine": 250.18,
+  "doubt": 0.02,
+  "prove": 0.03
+ },
+ "built": [
+  {
+   "id": 20,
+   "name": "redu",
+   "words": "make each element what it becomes",
+   "body": "add(_, _)"
+  }
+ ],
+ "peak_mb": 5434.015625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "map(\u03bbe. redu(e), l)",
+ "verdict": "proven right",
+ "audit": 475,
+ "imagined_by": {
+  "method": "wish+step",
+  "moves": "wish+step",
+  "origin": "wished"
+ },
+ "method_named": {
+  "id": 4,
+  "moves": "wish then step"
+ },
+ "configs": [
+  "ask+imagine",
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "I wish I could make each element what it becomes: I build it (redu = add(_, _)) and use it.",
+  "I imagine by wish then step: 1 new ideas.",
+  "I imagine by wish then compose then wish then compose: 0 new ideas.",
+  "My audit passes map(\u03bbe. redu(e), l) on 475 fresh inputs.",
+  "It rings through the Field: 4 ways of working and imagining that led here are strengthened."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

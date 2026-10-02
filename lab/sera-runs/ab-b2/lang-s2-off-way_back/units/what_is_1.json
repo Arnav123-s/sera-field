@@ -1,0 +1,182 @@
+{
+ "task": "what_is 1",
+ "subject": "language",
+ "kind": "exact:list(list)->list",
+ "teaching": true,
+ "steps": 6,
+ "answer": [
+  "c",
+  9,
+  [
+   "c",
+   8,
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   9,
+   [
+    "head",
+    "list",
+    [
+     "c",
+     9,
+     [
+      "c",
+      9,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   9,
+   [
+    "c",
+    2,
+    [
+     "c",
+     9,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   9,
+   [
+    "head",
+    "list",
+    [
+     "c",
+     9,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   9,
+   [
+    "c",
+    2,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "nil",
+   null
+  ]
+ ],
+ "level": 1,
+ "asked": 4,
+ "explored": 0,
+ "tension": [
+  6.104,
+  6.104,
+  6.104,
+  6.104,
+  7.525,
+  7.527
+ ],
+ "wall": 681.6,
+ "cpu": 679.8,
+ "proven": true,
+ "invented": [
+  {
+   "id": 10,
+   "subject": "language",
+   "body": "dupe(rika(_))"
+  }
+ ],
+ "reused": [
+  9,
+  8
+ ],
+ "words_heard": [
+  "what",
+  "is"
+ ],
+ "said": [
+  "losa"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.04,
+  "ledger": 0.0,
+  "actions": 0.07,
+  "ask": 0.0,
+  "doubt": 0.03,
+  "imagine": 674.47,
+  "prove": 0.03,
+  "grow": 2.83
+ },
+ "built": [
+  {
+   "id": 9,
+   "name": "dupe",
+   "words": "finish what rika starts",
+   "body": "tail(tail(_))"
+  }
+ ],
+ "peak_mb": 7778.5625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "dupe(rika(g))",
+ "verdict": "proven right",
+ "audit": 307,
+ "imagined_by": {
+  "method": "#1",
+  "moves": "compose+wish",
+  "origin": "wished"
+ },
+ "configs": [
+  "ask",
+  "ask",
+  "ask",
+  "imagine+ask",
+  "imagine+prove+grow",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: ridu (1.96).",
+  "I wish I could finish what rika starts: I build it (dupe = tail(tail(_))) and use it.",
+  "I imagine by compose then wish: 1 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I keep 1 of my imagined ideas in mind and let 1 go.",
+  "I imagine by compose: 0 new ideas.",
+  "My audit passes dupe(rika(g)) on 307 fresh inputs.",
+  "I think bigger (level 1).",
+  "It rings through the Field: 9 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('c', 9, ('c', 8, ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: masseuse is a female massager; ridley is a marine turtle; haggard is british writer noted for romantic adventure novels | question: what is masseuse -> a female massager",
+  "story: unlabeled is lacking a label or tag; sanction is formal and explicit approval; miniaturist is someone who paints tiny pictures in great detail | question: what is sanction -> formal and explicit approval",
+  "story: blackcock is male black grouse; witting is aware or knowing; miniaturist is someone who paints tiny pictures in great detail; cariamidae is south american wading birds | question: what is witting -> aware or knowing"
+ ]
+}

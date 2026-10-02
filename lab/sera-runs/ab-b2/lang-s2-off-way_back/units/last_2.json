@@ -1,0 +1,147 @@
+{
+ "task": "last 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  4,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "head",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "c",
+      2,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ],
+   [
+    "c",
+    3,
+    [
+     "nil",
+     null
+    ]
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ],
+   [
+    "c",
+    3,
+    [
+     "nil",
+     null
+    ]
+   ]
+  ],
+  [
+   "lit",
+   119
+  ]
+ ],
+ "level": 1,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  3.073,
+  3.075
+ ],
+ "wall": 0.6,
+ "cpu": 0.6,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  4
+ ],
+ "words_heard": [
+  "last",
+  "word"
+ ],
+ "said": [
+  "fotu"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.01,
+  "ledger": 0.0,
+  "actions": 0.02,
+  "prove": 0.03,
+  "grow": 0.07,
+  "doubt": 0.01
+ },
+ "built": [],
+ "peak_mb": 7778.5625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "fotu(g)",
+ "verdict": "proven right",
+ "audit": 230,
+ "configs": [
+  "prove+grow",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: first (17.22), fotu (11.61).",
+  "My audit passes fotu(g) on 230 fresh inputs.",
+  "I think bigger (level 1)."
+ ],
+ "answer_repr": "('c', 4, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: travelled john garden bedroom | question: what is the last word -> bedroom",
+  "story: hallway the went | question: what is the last word -> went",
+  "story: hallway moved office hallway bathroom mary | question: what is the last word -> mary"
+ ]
+}

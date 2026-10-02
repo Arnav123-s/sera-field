@@ -1,0 +1,77 @@
+{
+ "pre_field_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+ "lessons": [
+  {
+   "seed": 3,
+   "source": "teaching",
+   "name": "rail: wind 2",
+   "input_sha256": "22db368ce65767222cd9ef0923fd187a5713779f873fb108eddad0b0f38617ce"
+  },
+  {
+   "seed": 3,
+   "source": "teaching",
+   "name": "number: odd",
+   "input_sha256": "b607a9688bea2043f3a21f66136e37baf64aa161f90a2175efd9ed2ad241da5d"
+  },
+  {
+   "seed": 3,
+   "source": "teaching",
+   "name": "number: powers of two",
+   "input_sha256": "c3e31c9f32aa2ad38c5a6f1fe1b8f4d0c4e649fba723c2c8005929333bd142eb"
+  },
+  {
+   "seed": 3,
+   "source": "teaching",
+   "name": "rail: spring 2",
+   "input_sha256": "a3d8f9504a69da51b8bacd5e9d1dd4af0da7e58d6c633178e1e3d79a583e4c98"
+  },
+  {
+   "seed": 3,
+   "source": "teaching",
+   "name": "rail: stiff 2",
+   "input_sha256": "cebc574f5ffb62efa290530acd4579bb8d4ac3772ba42718eaf83f5557f78706"
+  },
+  {
+   "seed": 3,
+   "source": "teaching",
+   "name": "list: one more",
+   "input_sha256": "ae1e4065597792ea8021a4f998ae05a35be8c11b1498523bcb4a3c51865ed12c"
+  },
+  {
+   "seed": 3,
+   "source": "teaching",
+   "name": "number: square",
+   "input_sha256": "9f8b6726c1a67fb723390458f066ae2ca81e5bada10d22cea0905fb004cb7445"
+  },
+  {
+   "seed": 3,
+   "source": "teaching",
+   "name": "list: sum",
+   "input_sha256": "760de14cff0498b18f3212290af564d6e9c6ab71e6ab85b939f8ba56d31d1f4e"
+  },
+  {
+   "seed": 3,
+   "source": "teaching",
+   "name": "rail: ripple 1",
+   "input_sha256": "fc59ac5abbeb358197b6c929ec47fed49dd389210666799136adab1206382502"
+  },
+  {
+   "seed": 3,
+   "source": "teaching",
+   "name": "list: count",
+   "input_sha256": "b293004af8088c5c982ba54f3514767d9b22f155ddade31d6792c77681b421a4"
+  },
+  {
+   "seed": 3,
+   "source": "teaching",
+   "name": "rail: ripple 2",
+   "input_sha256": "f6b5ab774e8adf92ee8cfa65400d7f6757d96fc5a2fd4e076052aa36e2d3fc6e"
+  },
+  {
+   "seed": 3,
+   "source": "teaching",
+   "name": "rail: wind 1",
+   "input_sha256": "f40e7755995be5368a351cae1ad6faaf1f734d81fc690aad4bb5079170d624ab"
+  }
+ ]
+}

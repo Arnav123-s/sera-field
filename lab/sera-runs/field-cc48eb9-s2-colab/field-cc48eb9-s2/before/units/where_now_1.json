@@ -1,0 +1,350 @@
+{
+ "task": "where_now 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 46,
+ "answer": [
+  "foldn",
+  null,
+  [
+   "lam",
+   "ae",
+   [
+    "var",
+    "e"
+   ]
+  ],
+  [
+   "lit",
+   5
+  ],
+  [
+   "foldl",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "var",
+     "e"
+    ]
+   ],
+   [
+    "nil",
+    null
+   ],
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   3,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "foldl",
+    null,
+    [
+     "lam",
+     "ae",
+     [
+      "cons",
+      null,
+      [
+       "c",
+       2,
+       [
+        "var",
+        "a"
+       ]
+      ],
+      [
+       "var",
+       "a"
+      ]
+     ]
+    ],
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "head",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "c",
+      2,
+      [
+       "tail",
+       null,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ],
+   [
+    "lit",
+    6
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "head",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "c",
+      2,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ],
+   [
+    "lit",
+    5
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "var",
+     "e"
+    ]
+   ],
+   [
+    "c",
+    3,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "c",
+    2,
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "tail",
+       null,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 7,
+ "asked": 40,
+ "explored": 0,
+ "tension": [
+  1.625,
+  1.625,
+  1.625,
+  1.625,
+  1.625,
+  1.625,
+  1.625,
+  1.625,
+  1.625,
+  1.625,
+  1.625,
+  1.625,
+  1.625,
+  1.625,
+  1.625,
+  1.625,
+  1.625,
+  1.625,
+  1.625,
+  1.625,
+  1.625,
+  1.625,
+  2.639,
+  8.66,
+  8.66,
+  8.66,
+  8.66,
+  8.66,
+  8.66,
+  8.66,
+  8.66,
+  8.66,
+  8.66,
+  8.66,
+  8.66,
+  8.66,
+  8.66,
+  8.66,
+  8.66,
+  8.66,
+  8.66,
+  8.661,
+  8.661,
+  27.158,
+  25.514,
+  25.512,
+  25.512
+ ],
+ "wall": 2073.0,
+ "cpu": 2071.5,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "where",
+  "is",
+  "now"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 4.03,
+  "ledger": 0.0,
+  "actions": 0.0,
+  "ask": 0.0,
+  "doubt": 3.65,
+  "grow": 2064.72
+ },
+ "built": [],
+ "peak_mb": 12308.37890625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+grow",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "grow",
+  "grow",
+  "grow",
+  "grow",
+  "grow",
+  "grow"
+ ],
+ "say": [
+  "In where_now 1 my best idea is fofo(g), but I cannot finish (0.0 nats of doubt). Is it right, or what am I missing?",
+  "I think bigger (level 1).",
+  "I think bigger (level 2).",
+  "I think bigger (level 3).",
+  "I think bigger (level 4).",
+  "I think bigger (level 5).",
+  "I think bigger (level 6).",
+  "I think bigger (level 7).",
+  "In where_now 1 my best idea is foldn(\u03bba,e. e, 5, foldl(\u03bba,e. e, [], g)), but I cannot finish (-0.0 nats of doubt, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('foldn', None, ('lam', 'ae', ('var', 'e')), ('lit', 5), ('foldl', None, ('lam', 'ae', ('var', 'e')), ('nil', None), ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: mary travelled to the hallway; sandra went to the bedroom; mary went to the office; sandra travelled to the garden | question: where is mary -> office",
+  "story: sandra journeyed to the bedroom; sandra went to the hallway; sandra journeyed to the bedroom | question: where is sandra -> bedroom",
+  "story: sandra moved to the kitchen; mary moved to the hallway; mary went to the bedroom | question: where is mary -> bedroom"
+ ]
+}

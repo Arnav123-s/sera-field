@@ -1,6 +1,6 @@
 # Connected engineering handoff
 
-I reread the original proposal and compared its full mechanism set and the user's
+I reread the original proposal and compared its full mechanism set and the author's
 behavior description against the actual trained model, interfaces and evidence.
 The row-by-row result is in ../PAPER_COVERAGE.md. FIELD-001 remains preserved.
 

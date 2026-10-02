@@ -1,0 +1,37 @@
+{
+ "suite": "L2",
+ "index": 0,
+ "mind": "sera",
+ "truth": "growing with position + straight with speed",
+ "claim": "growing with position + straight with speed",
+ "sure": true,
+ "verified": true,
+ "right": true,
+ "wrong_frozen": false,
+ "sure_unverified": false,
+ "right_grid": true,
+ "wrong_grid": false,
+ "surface_ok": false,
+ "wrong": false,
+ "throws": 16,
+ "own": 0,
+ "seconds": 54.8,
+ "certify_calls": 1,
+ "families": 67,
+ "gap": "I am sure the force is growing with position + straight with speed where I looked (position -0.48 to 0.5, speed -0.43 to 0.46). Something more may be there, but it is too small to see here.",
+ "imagined_top3": [
+  [
+   "straight with speed + steps with speed",
+   0.8
+  ],
+  [
+   "cubic with position + steps with speed",
+   0.066
+  ],
+  [
+   "growing with speed + steps with speed",
+   0.028
+  ]
+ ],
+ "truth_in_imagined": true
+}

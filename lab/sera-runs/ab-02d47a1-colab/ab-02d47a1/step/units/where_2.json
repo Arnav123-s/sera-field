@@ -1,0 +1,100 @@
+{
+ "task": "where 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  7,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   4,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "lit",
+   3
+  ],
+  [
+   "lit",
+   4
+  ],
+  [
+   "lit",
+   5
+  ],
+  [
+   "one",
+   null
+  ]
+ ],
+ "level": 0,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  3.329,
+  3.329
+ ],
+ "wall": 3.4,
+ "cpu": 3.4,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  7
+ ],
+ "words_heard": [
+  "where",
+  "is"
+ ],
+ "said": [
+  "visa"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.0,
+  "ledger": 0.0,
+  "actions": 0.02,
+  "prove": 0.04,
+  "doubt": 0.0
+ },
+ "built": [],
+ "peak_mb": 10168.0546875,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "visa(g)",
+ "verdict": "proven right",
+ "audit": 234,
+ "configs": [
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "My audit passes visa(g) on 234 fresh inputs."
+ ],
+ "answer_repr": "('c', 7, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: john moved to the office; mary journeyed to the bedroom | question: where is mary -> bedroom",
+  "story: mary moved to the office; john travelled to the kitchen | question: where is john -> kitchen",
+  "story: daniel journeyed to the hallway; john went to the office; sandra journeyed to the bedroom | question: where is john -> office"
+ ]
+}

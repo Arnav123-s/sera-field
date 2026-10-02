@@ -1,0 +1,269 @@
+{
+ "task": "what_is 2",
+ "subject": "language",
+ "kind": "exact:list(list)->list",
+ "teaching": true,
+ "steps": 28,
+ "answer": [
+  "tail",
+  null,
+  [
+   "tail",
+   null,
+   [
+    "head",
+    "list",
+    [
+     "tail",
+     null,
+     [
+      "c",
+      26,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "tail",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "head",
+     "list",
+     [
+      "c",
+      26,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "tail",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "head",
+     "list",
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "tail",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "head",
+     "list",
+     [
+      "tail",
+      null,
+      [
+       "tail",
+       null,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "tail",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "head",
+     "list",
+     [
+      "tail",
+      null,
+      [
+       "tail",
+       null,
+       [
+        "tail",
+        null,
+        [
+         "var",
+         "g"
+        ]
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "tail",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "head",
+     "list",
+     [
+      "tail",
+      null,
+      [
+       "tail",
+       null,
+       [
+        "c",
+        26,
+        [
+         "var",
+         "g"
+        ]
+       ]
+      ]
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 2,
+ "asked": 26,
+ "explored": 0,
+ "tension": [
+  4.628,
+  4.628,
+  4.628,
+  4.628,
+  16.706,
+  16.706,
+  16.706,
+  16.706,
+  16.706,
+  16.706,
+  16.706,
+  16.706,
+  16.706,
+  16.706,
+  16.706,
+  16.706,
+  16.706,
+  16.706,
+  16.706,
+  16.706,
+  16.706,
+  16.706,
+  16.706,
+  16.706,
+  16.706,
+  16.706,
+  16.706,
+  16.012,
+  20.816
+ ],
+ "wall": 1804.2,
+ "cpu": 1800.1,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "what",
+  "is"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 8.94,
+  "ledger": 0.0,
+  "actions": 0.31,
+  "ask": 0.01,
+  "doubt": 9.06,
+  "imagine": 1680.89,
+  "grow": 78.8
+ },
+ "built": [],
+ "peak_mb": 11022.77734375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "ask",
+  "ask",
+  "ask",
+  "ask+imagine+grow",
+  "ask",
+  "ask",
+  "ask",
+  "imagine+ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "grow+imagine"
+ ],
+ "say": [
+  "I imagine by wish then compose then wish then wish: 0 new ideas.",
+  "I imagine by step then compose then wish then wish: 0 new ideas.",
+  "I think bigger (level 1).",
+  "I imagine by compose then wish then wish then compose: 0 new ideas.",
+  "I imagine by wish then compose then wish: 0 new ideas.",
+  "In what_is 2 my best idea is tail(tail(head(tail(g)))), but I cannot finish (none of my ideas fits the examples). Is it right, or what am I missing?",
+  "I imagine by step then wish: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I think bigger (level 2).",
+  "I imagine by wish: 0 new ideas.",
+  "I imagine by wish then step: 0 new ideas.",
+  "In what_is 2 my best idea is tail(tail(head(tail(reverse(g))))), but I cannot finish (none of my ideas fits the examples, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('tail', None, ('tail', None, ('head', 'list', ('tail', None, ('c', 26, ('var', 'g'))))))",
+ "stage": "teach",
+ "english": [
+  "story: dardanian is a native of ancient troy; classicistic is of or relating to classicism; blaeberry is erect european blueberry having solitary flowers and berries; baccivorous is feeding on berries | question: what is dardanian -> a native of ancient troy",
+  "story: buirdly is muscular and heavily built; casuarinaceae is one genus casuarina; pesticide is a chemical used to kill pests rodents or | question: what is pesticide -> a chemical used to kill pests rodents or",
+  "story: buirdly is muscular and heavily built; habit is an established custom; boutique is a shop that sells clothes and jewelry; unhealthful is not sanitary or healthful | question: what is boutique -> a shop that sells clothes and jewelry"
+ ]
+}

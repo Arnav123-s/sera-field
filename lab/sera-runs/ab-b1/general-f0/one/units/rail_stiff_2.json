@@ -1,0 +1,123 @@
+{
+ "task": "rail: stiff 2",
+ "subject": "physics",
+ "kind": "strengths:num->num",
+ "teaching": true,
+ "steps": 9,
+ "answer": null,
+ "others": null,
+ "level": 1,
+ "asked": 3,
+ "explored": 3,
+ "tension": [
+  8.338,
+  8.338,
+  19.161,
+  19.659,
+  32.707,
+  21.707,
+  21.707,
+  22.377,
+  46.644
+ ],
+ "wall": 543.8,
+ "cpu": 540.0,
+ "proven": true,
+ "invented": [
+  {
+   "id": 9,
+   "subject": "physics",
+   "input": "position",
+   "how": "expr",
+   "body": "mul(_, mul(_, _))"
+  }
+ ],
+ "reused": [],
+ "words_heard": [
+  "stiff",
+  "back",
+  "far"
+ ],
+ "said": [
+  "stiff"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [
+  "position@1:2",
+  "dim:x.x.x.mul.mul@4"
+ ],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 6.02,
+  "ledger": 63.01,
+  "actions": 148.04,
+  "prove": 134.03,
+  "doubt": 17.82,
+  "grow": 0.68,
+  "explore": 0.01,
+  "imagine": 174.11
+ },
+ "built": [],
+ "peak_mb": 4822.72265625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "some strength times (position x (position x position)) (clipped at +-1)",
+ "band": 0.07774704807328323,
+ "verdict": "proven right",
+ "gap": 4.440892098500626e-16,
+ "signs": {},
+ "certified": [
+  {
+   "part": 0,
+   "as": "formula",
+   "on": "dim:x.x.x.mul.mul@4"
+  }
+ ],
+ "question": {
+  "text": "The 8 things here have only 3 kinds of mass (1.334, 1.38, 2.292). Why so few? What makes a mass? In all 3 worlds I measured so far, things came in fewer kinds of mass than there were things.",
+  "things": 8,
+  "kinds": 3,
+  "masses": [
+   1.334,
+   1.38,
+   2.292
+  ]
+ },
+ "attributed": true,
+ "configs": [
+  "prove",
+  "grow",
+  "prove",
+  "explore+imagine",
+  "explore+imagine+ask",
+  "imagine",
+  "explore",
+  "imagine",
+  "leave"
+ ],
+ "say": [
+  "The judge does not accept my shape 12 of position + my shape 13 of speed: something else is here: the law misfits more objects than bumps explain.",
+  "I think bigger (level 1).",
+  "The judge accepts: some strength times (position x (position x position)) (clipped at +-1) up to 0.2 where I looked.",
+  "It rings through the Field: 1 ways of working and imagining that led here are strengthened.",
+  "I imagine by refine then compose: 172 new ideas.",
+  "I keep what was right: mul(s, mul(s, s)) of position explains 321037 nats; I build on it and look for the rest.",
+  "I imagine by compose then keep: 103 new ideas.",
+  "I keep 103 of my imagined ideas in mind and let 172 go.",
+  "I imagine by blend: 0 new ideas.",
+  "I imagine by recall then blend: 2 new ideas.",
+  "I keep 34 of my imagined ideas in mind and let 71 go.",
+  "I imagine by swap: 1 new ideas.",
+  "I keep 34 of my imagined ideas in mind and let 1 go.",
+  "My idea misses most near position 0: I look 2x closer there, and draw finer (331 nats better).",
+  "I make a new sense, (position x (position x position)), and think along it too (60 nats better).",
+  "I imagine by closer then dimension: 2 new ideas.",
+  "I imagine by closer: 0 new ideas.",
+  "I keep 1 of my imagined ideas in mind and let 35 go."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

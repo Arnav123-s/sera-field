@@ -1,0 +1,232 @@
+{
+ "task": "list: keep positive",
+ "subject": "code",
+ "kind": "exact:list->list",
+ "teaching": true,
+ "steps": 18,
+ "answer": [
+  "filter",
+  null,
+  [
+   "lam",
+   "e",
+   [
+    "lt",
+    null,
+    [
+     "zero",
+     null
+    ],
+    [
+     "var",
+     "e"
+    ]
+   ]
+  ],
+  [
+   "var",
+   "l"
+  ]
+ ],
+ "others": [
+  [
+   "filter",
+   null,
+   [
+    "lam",
+    "e",
+    [
+     "lt",
+     null,
+     [
+      "one",
+      null
+     ],
+     [
+      "var",
+      "e"
+     ]
+    ]
+   ],
+   [
+    "var",
+    "l"
+   ]
+  ],
+  [
+   "filteri",
+   null,
+   [
+    "lam",
+    "ie",
+    [
+     "lt",
+     null,
+     [
+      "lit",
+      2
+     ],
+     [
+      "var",
+      "e"
+     ]
+    ]
+   ],
+   [
+    "var",
+    "l"
+   ]
+  ],
+  [
+   "filteri",
+   null,
+   [
+    "lam",
+    "ie",
+    [
+     "lt",
+     null,
+     [
+      "var",
+      "i"
+     ],
+     [
+      "var",
+      "e"
+     ]
+    ]
+   ],
+   [
+    "var",
+    "l"
+   ]
+  ],
+  [
+   "var",
+   "l"
+  ],
+  [
+   "filter",
+   null,
+   [
+    "lam",
+    "e",
+    [
+     "lt",
+     null,
+     [
+      "lit",
+      3
+     ],
+     [
+      "var",
+      "e"
+     ]
+    ]
+   ],
+   [
+    "var",
+    "l"
+   ]
+  ]
+ ],
+ "level": 2,
+ "asked": 16,
+ "explored": 0,
+ "tension": [
+  0.518,
+  0.518,
+  0.518,
+  0.539,
+  0.539,
+  0.539,
+  0.539,
+  0.539,
+  0.539,
+  0.539,
+  0.539,
+  0.539,
+  0.539,
+  0.539,
+  0.539,
+  0.539,
+  19.549,
+  19.549
+ ],
+ "wall": 1517.3,
+ "cpu": 1509.3,
+ "proven": true,
+ "invented": [
+  {
+   "id": 21,
+   "subject": "code",
+   "body": "filter(\u03bbe. lt(0, e), _)"
+  }
+ ],
+ "reused": [],
+ "words_heard": [
+  "keep",
+  "positive"
+ ],
+ "said": [
+  "keep"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 9.77,
+  "ledger": 0.0,
+  "actions": 0.28,
+  "ask": 0.02,
+  "doubt": 4.7,
+  "grow": 58.07,
+  "imagine": 1441.75,
+  "prove": 0.03
+ },
+ "built": [],
+ "peak_mb": 6668.0234375,
+ "peak_mb_by": {
+  "imagine": 1845.3
+ },
+ "memory_stops": 0,
+ "claim": "filter(\u03bbe. lt(0, e), l)",
+ "verdict": "proven right",
+ "audit": 552,
+ "configs": [
+  "ask",
+  "ask",
+  "ask+grow",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "ask+imagine+grow",
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "I think bigger (level 1).",
+  "In list: keep positive my best idea is l, but I cannot finish (none of my ideas fits the examples). Is it right, or what am I missing?",
+  "I imagine by wish then compose: 0 new ideas.",
+  "I imagine by compose then compose then wish: 0 new ideas.",
+  "I imagine by step then wish: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I think bigger (level 2).",
+  "My audit passes filter(\u03bbe. lt(0, e), l) on 552 fresh inputs.",
+  "It rings through the Field: 24 ways of working and imagining that led here are strengthened."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

@@ -1,0 +1,105 @@
+{
+ "task": "last 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  29,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   10,
+   [
+    "c",
+    28,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   28,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "lit",
+   119
+  ],
+  [
+   "lit",
+   120
+  ],
+  [
+   "one",
+   null
+  ]
+ ],
+ "level": 0,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  2.473,
+  2.473
+ ],
+ "wall": 12.2,
+ "cpu": 12.1,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  29
+ ],
+ "words_heard": [
+  "last",
+  "word"
+ ],
+ "said": [
+  "fope"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.05,
+  "ledger": 0.0,
+  "actions": 0.04,
+  "prove": 0.05,
+  "doubt": 0.02
+ },
+ "built": [],
+ "peak_mb": 4431.31640625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "fope(g)",
+ "verdict": "proven right",
+ "audit": 251,
+ "configs": [
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: first (17.49), fope (11.95).",
+  "My audit passes fope(g) on 251 fresh inputs."
+ ],
+ "answer_repr": "('c', 29, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: mary travelled sandra john | question: what is the last word -> john",
+  "story: office bedroom john | question: what is the last word -> john",
+  "story: daniel journeyed the moved hallway the | question: what is the last word -> the"
+ ]
+}

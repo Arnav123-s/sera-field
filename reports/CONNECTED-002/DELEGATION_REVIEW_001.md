@@ -98,4 +98,4 @@ Then continue the full end-to-end campaign autonomously. No new routine approval
 is required, and this review is not a request to end after another micro-pilot.
 Publish local/REPAIR_001.json with each finding, exact code/test evidence and
 qualification decision. Update local/PROGRESS.json with actual jobs, metrics and
-costs. The user will return later for an independent trained-candidate audit.
+costs. the author will return later for an independent trained-candidate audit.

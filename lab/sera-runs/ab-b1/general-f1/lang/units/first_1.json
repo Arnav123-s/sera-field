@@ -1,0 +1,135 @@
+{
+ "task": "first 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 4,
+ "answer": [
+  "c",
+  8,
+  [
+   "c",
+   25,
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "lit",
+   118
+  ],
+  [
+   "lit",
+   120
+  ],
+  [
+   "one",
+   null
+  ],
+  [
+   "zero",
+   null
+  ],
+  [
+   "c",
+   10,
+   [
+    "lit",
+    118
+   ]
+  ]
+ ],
+ "level": 0,
+ "asked": 2,
+ "explored": 0,
+ "tension": [
+  4.155,
+  4.155,
+  9.55,
+  9.55
+ ],
+ "wall": 9.8,
+ "cpu": 9.8,
+ "proven": true,
+ "invented": [
+  {
+   "id": 26,
+   "subject": "language",
+   "body": "spring(kape(_))"
+  }
+ ],
+ "reused": [
+  8,
+  25
+ ],
+ "words_heard": [
+  "first",
+  "word"
+ ],
+ "said": [
+  "nosa"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.33,
+  "ledger": 0.0,
+  "actions": 0.04,
+  "ask": 0.0,
+  "doubt": 0.03,
+  "imagine": 4.59,
+  "prove": 0.02
+ },
+ "built": [
+  {
+   "id": 25,
+   "name": "kape",
+   "words": "make what spring turns into the answer",
+   "body": "head(head(tail(_)))"
+  }
+ ],
+ "peak_mb": 538.19140625,
+ "peak_mb_by": {
+  "other": 90.4,
+  "beliefs": 0.1,
+  "ask": 1.1,
+  "imagine": 107.4,
+  "prove": 0.1
+ },
+ "memory_stops": 0,
+ "claim": "spring(kape(g))",
+ "verdict": "proven right",
+ "audit": 327,
+ "imagined_by": {
+  "method": "wish+#1",
+  "moves": "wish+compose+wish",
+  "origin": "wished"
+ },
+ "configs": [
+  "ask",
+  "ask+imagine",
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "I wish I could make what spring turns into the answer: I build it (kape = head(head(tail(_)))) and use it.",
+  "I imagine by wish then compose then wish: 1 new ideas.",
+  "I imagine by wish then compose then wish then wish: 0 new ideas.",
+  "My audit passes spring(kape(g)) on 327 fresh inputs.",
+  "It rings through the Field: 5 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('c', 8, ('c', 25, ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: daniel journeyed to the bedroom | question: what is the first word -> daniel",
+  "story: mary went to the office | question: what is the first word -> mary",
+  "story: sandra moved to the hallway | question: what is the first word -> sandra"
+ ]
+}

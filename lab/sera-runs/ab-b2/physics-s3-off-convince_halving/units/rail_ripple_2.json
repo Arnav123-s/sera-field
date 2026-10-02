@@ -1,0 +1,146 @@
+{
+ "task": "rail: ripple 2",
+ "subject": "physics",
+ "kind": "strengths:num->num",
+ "teaching": true,
+ "steps": 9,
+ "answer": null,
+ "others": null,
+ "level": 2,
+ "asked": 7,
+ "explored": 6,
+ "tension": [
+  2.048,
+  52.511,
+  52.289,
+  52.088,
+  52.062,
+  49.663,
+  49.538,
+  49.625,
+  52.508
+ ],
+ "wall": 798.6,
+ "cpu": 796.9,
+ "proven": true,
+ "invented": [
+  {
+   "id": 17,
+   "subject": "physics",
+   "input": "position",
+   "how": "curve",
+   "body": "tab"
+  }
+ ],
+ "reused": [
+  12
+ ],
+ "words_heard": [
+  "back",
+  "ripple",
+  "far"
+ ],
+ "said": [
+  "rifo",
+  "square"
+ ],
+ "false_words": [
+  "square"
+ ],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 17.29,
+  "ledger": 34.05,
+  "actions": 111.82,
+  "imagine": 75.39,
+  "ask": 0.0,
+  "prove": 138.34,
+  "doubt": 70.63,
+  "grow": 350.42,
+  "explore": 0.03
+ },
+ "built": [],
+ "peak_mb": 5144.390625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "a free curve in position (17 knots) + my shape 22 of speed",
+ "band": 0.11588808186337007,
+ "verdict": "proven right",
+ "gap": 0.015512592156831095,
+ "signs": {
+  "position": -1,
+  "speed": -1
+ },
+ "certified": [
+  {
+   "part": 0,
+   "as": "curve",
+   "on": "position"
+  },
+  {
+   "part": 1,
+   "as": "drawing",
+   "on": "speed",
+   "shape": 22,
+   "concept": 12
+  }
+ ],
+ "question": {
+  "text": "The 8 things here have only 5 kinds of mass (1.111, 1.112, 2.352, 2.402, 2.405). Why so few? What makes a mass? In all 5 worlds I measured so far, things came in fewer kinds of mass than there were things.",
+  "things": 8,
+  "kinds": 5,
+  "masses": [
+   1.111,
+   1.112,
+   2.352,
+   2.402,
+   2.405
+  ]
+ },
+ "attributed": true,
+ "imagined_by": {
+  "method": "compose+refine",
+  "moves": "compose+refine",
+  "origin": "freed"
+ },
+ "method_named": {
+  "id": 3,
+  "moves": "compose then refine"
+ },
+ "configs": [
+  "imagine+ask+prove",
+  "grow",
+  "explore+imagine",
+  "explore+prove",
+  "explore+imagine",
+  "explore+imagine",
+  "explore+ask",
+  "grow+explore",
+  "leave"
+ ],
+ "say": [
+  "I imagine by compose then refine: 287 new ideas.",
+  "I imagine by compose then swap: 0 new ideas.",
+  "I keep 30 of my imagined ideas in mind and let 257 go.",
+  "The judge accepts: my shape 12 of position up to 0.2 where I looked.",
+  "It rings through the Field: 4 ways of working and imagining that led here are strengthened.",
+  "I think bigger (level 1).",
+  "I imagine by recall then refine: 2 new ideas.",
+  "I imagine by recall then swap: 1 new ideas.",
+  "I keep 2 of my imagined ideas in mind and let 31 go.",
+  "The judge accepts: a free curve in position (17 knots) + my shape 22 of speed up to 0.2 where I looked.",
+  "It rings through the Field: 6 ways of working and imagining that led here are strengthened.",
+  "I keep what was right: a curve in position explains 828882 nats; I build on it and look for the rest.",
+  "I imagine by keep then drop: 121 new ideas.",
+  "I imagine by refine then question: 1 new ideas.",
+  "I imagine by compose then refine: 1 new ideas.",
+  "I imagine by blend then question: 0 new ideas.",
+  "I think bigger (level 2)."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

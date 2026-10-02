@@ -1,0 +1,9 @@
+6 /content/w1.txt
+    I think bigger (level 3).
+    I think bigger (level 4).
+    I imagine by compose: 0 new ideas.
+    I imagine by compose then step: 0 new ideas.
+    I think bigger (level 5).
+    In where 1 my best idea is foldn(λa,e. nope(e), 1
+22, g), but I cannot finish (0.0 nats of doubt, and I
+ reached my l

@@ -1,0 +1,151 @@
+{
+ "task": "first 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 9,
+ "answer": [
+  "head",
+  null,
+  [
+   "head",
+   "list",
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "mul",
+   null,
+   [
+    "lit",
+    5
+   ],
+   [
+    "mul",
+    null,
+    [
+     "lit",
+     5
+    ],
+    [
+     "add",
+     null,
+     [
+      "lit",
+      2
+     ],
+     [
+      "lit",
+      2
+     ]
+    ]
+   ]
+  ],
+  [
+   "lit",
+   2
+  ],
+  [
+   "lit",
+   5
+  ],
+  [
+   "one",
+   null
+  ],
+  [
+   "zero",
+   null
+  ]
+ ],
+ "level": 2,
+ "asked": 7,
+ "explored": 0,
+ "tension": [
+  3.815,
+  3.815,
+  3.815,
+  3.815,
+  3.815,
+  3.815,
+  3.815,
+  11.786,
+  11.786
+ ],
+ "wall": 0.6,
+ "cpu": 0.6,
+ "proven": true,
+ "invented": [
+  {
+   "id": 1,
+   "subject": "language",
+   "body": "head(head(tail(_)))"
+  },
+  {
+   "id": 2,
+   "subject": "language",
+   "inner": "the part it works on",
+   "body": "head(tail(_))"
+  }
+ ],
+ "reused": [],
+ "words_heard": [
+  "first",
+  "word"
+ ],
+ "said": [
+  "first"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.02,
+  "ledger": 0.0,
+  "actions": 0.01,
+  "ask": 0.01,
+  "doubt": 0.02,
+  "grow": 0.43,
+  "prove": 0.02
+ },
+ "built": [],
+ "peak_mb": 0.0,
+ "peak_mb_by": {},
+ "claim": "head(head(tail(g)))",
+ "verdict": "proven right",
+ "audit": 361,
+ "configs": [
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+grow",
+  "prove+grow",
+  "leave"
+ ],
+ "say": [
+  "I think bigger (level 1).",
+  "My audit passes head(head(tail(g))) on 361 fresh inputs.",
+  "I think bigger (level 2)."
+ ],
+ "answer_repr": "('head', None, ('head', 'list', ('tail', None, ('var', 'g'))))",
+ "stage": "teach",
+ "english": [
+  "story: mary moved to the hallway | question: what is the first word -> mary",
+  "story: mary travelled to the bathroom | question: what is the first word -> mary",
+  "story: daniel journeyed to the office | question: what is the first word -> daniel"
+ ]
+}

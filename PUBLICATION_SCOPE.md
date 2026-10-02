@@ -1,26 +1,27 @@
-# Reviewed publication scope
+# Publication scope
 
-This release is a reviewed current-file snapshot of the independent SERA Field
-laboratory at source revision `2cb8468efc1c9a73e2a796ec4522c67409781b4c`. The complete local history and original
-SERA remain preserved. This checkout has its own public publication history.
+This release preserves the assessed releases from public base `8511d5f`, refreshes SERA Field records
+and adds a reviewed current-file snapshot of the SERA discovery lab.
 
-Included: source, tests, frozen prospective protocols, engineering and usage
-guides, compact research results, costs and identity manifests, and packaged
-inference weights with their individually recorded assessment and research roles.
-The fresh NATIVE-019 lineage and earlier usable checkpoints remain separately
-addressable. The documentation guide separates current interfaces from history.
-Work marked active in the research state has not been represented as completed.
-File identities below describe the Git blob bytes, before platform line endings.
+- Learned-field source revision: `7c39634b7cc193dfa50c894ec1e69e42993a3f73`.
+- Discovery-lab source revision: `04fd415caf790f1476e138809e32e905f7e31392`.
+- Publication date: 2026-10-02.
 
-Excluded: private Git history, source attachments and packets, raw human corpora,
-complete run trees, local sessions, credentials and environment files. The
-historical FIELD-001 raw archive stays local; its public link points to a
-preservation note. Failed studies, full optimizer/RNG histories and old checkpoints
-remain in the lab with compact outcomes and costs published.
+Included: implementation, tests, prospective protocols, architecture and usage
+guides, compact results, costs, and assessed inference checkpoints already in
+the public repository. The lab adds selected text run artifacts under 1 MiB per
+file. Active, incomplete, and planned studies are labeled accordingly.
 
-The historical FIELD-001 base checkpoint includes its selected optimizer and RNG
-state from the supplied physical simulation study. Later packaged owners contain
-inference weights and lineage. Common token/private-key patterns were scanned;
-this scoped review is not a universal secret detector.
+Excluded: private Git history, raw source attachments and human corpora, full
+training and optimizer/RNG archives, binary lab Fields, environment files,
+credentials, development instructions, session records, and preparation tooling.
+All original research repositories and complete local evidence remain preserved.
 
-See [PUBLICATION_MANIFEST.json](PUBLICATION_MANIFEST.json) for exact file identities.
+Publication adaptations: development attribution and private machine paths are
+removed from prose; the lab README uses portable setup commands; the editable
+lab package includes both `sera` and `ccops5`. Previously declared report-path
+and validation-name renames are retained. Scientific results are not recomputed
+or promoted by this publication.
+
+[PUBLICATION_MANIFEST.json](PUBLICATION_MANIFEST.json) records SHA-256 identities
+of Git blob bytes for every published file except the manifest itself.

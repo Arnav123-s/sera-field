@@ -1,0 +1,72 @@
+general-f0: sh bash /content/onefield_ab.sh general 0 | env RUN=b1 | package 1d1f91f | started 2026-10-02 00:18 UTC | exit 0 | wall 28861 s
+SETTINGS {"crutches_off": [], "knobs": "ONE_FIELD=0", "one_field": false}
+=== rail: wind 2 (teach) | words heard: always wind
+  -> proven right | a free curve in time (33 knots) | steps 5 | 106.9 s | invented ['tab'] | reused [] | says ['dudu'] | CERTIFIED curve on time | IT ASKS: The 8 things here have only 3 kinds of mass (1.551, 1.645, 2.337). Why so few? What makes a mass? | time actions 50, prove 41, ledger 15
+=== number: odd (teach) | words heard: odd
+  -> proven right | if(eq(n, 2), 5, kadu(n)) | steps 3 | 634.3 s | invented ['if(eq(_, 2), 5, kadu(_))'] | reused [2] | says ['noka'] | FOUND BY compose+wish | ITS OWN METHOD {'id': 1, 'moves': 'compose then wish'} | time imagine 634, beliefs 0, prove 0
+=== number: powers of two (teach) | words heard: powers of two
+  -> proven right | if(eq(n, 2), 4, mire(n)) | steps 13 | 1009.9 s | invented ['if(eq(_, 2), 4, mire(_))'] | reused [6] | says ['repe'] | FOUND BY wish+compose+wish | ITS OWN METHOD {'id': 2, 'moves': 'wish then compose then wish'} | time imagine 1003, grow 2, beliefs 2
+=== rail: spring 2 (teach) | words heard: far spring back
+  -> proven right | some strength times position (clipped at +-1) | steps 3 | 144.7 s | invented ['_'] | reused [] | says ['nope'] | CERTIFIED formula on dim:x@4 | IT ASKS: The 8 things here have only 3 kinds of mass (1.051, 1.66, 1.853). Why so few? What makes a mass? | time prove 92, actions 40, ledger 12
+=== rail: stiff 2 (teach) | words heard: stiff back far
+  -> proven right | some strength times (position x (position x position)) (clipped at +-1) | steps 9 | 543.8 s | invented ['mul(_, mul(_, _))'] | reused [] | says ['stiff'] | CERTIFIED formula on dim:x.x.x.mul.mul@4 | NEW SENSES ['position@1:2', 'dim:x.x.x.mul.mul@4'] | IT ASKS: The 8 things here have only 3 kinds of mass (1.334, 1.38, 2.292). Why so few? What makes a mass? In all 3 worlds I measured so far, things came in fewer kinds of mass than there were things. | time imagine 174, actions 148, prove 134
+=== list: one more (teach) | words heard: one more
+  -> proven right | map(λe. fori(e), l) | steps 7 | 18.8 s | invented ['map(λe. fori(e), _)'] | reused [10] | says ['miri'] | FOUND BY wish+compose+wish+wish | ITS OWN METHOD {'id': 3, 'moves': 'wish then compose then wish then wish'} | time grow 18, beliefs 1, doubt 0
+=== number: square (teach) | words heard: square
+  -> proven right | mul(n, n) | steps 2 | 0.4 s | invented ['mul(_, _)'] | reused [] | says ['square'] | time beliefs 0, prove 0, doubt 0
+=== list: sum (teach) | words heard: sum
+  -> proven right | dupe(l) | steps 8 | 55.6 s | invented [] | reused [13] | says ['sum'] | time imagine 54, beliefs 1, doubt 0
+=== rail: ripple 1 (teach) | words heard: back far ripple
+  -> proven right | a free curve in position (17 knots) | steps 10 | 814.8 s | invented ['tab'] | reused [] | says ['mika'] | CERTIFIED curve on position | IT ASKS: The 8 things here have only 6 kinds of mass (0.709, 0.71, 0.711, 1.419, 1.424, 1.933). Why so few? What makes a mass? In all 4 worlds I measured so far, things came in fewer kinds of mass than there were things. | time grow 383, actions 123, doubt 122
+=== list: count (teach) | words heard: count
+  -> proven right | rifo(miri(l)) | steps 7 | 302.3 s | invented ['rifo(miri(_))'] | reused [15, 11] | says ['mino'] | SERENDIPITY {'origin': 'composed', 'source': '(15, 11)'} | FOUND BY compose+wish+wish | ITS OWN METHOD {'id': 4, 'moves': 'compose then wish then wish'} | time imagine 294, grow 5, beliefs 1
+=== rail: ripple 2 (teach) | words heard: back ripple far
+  -> proven right | my shape 26 of position | steps 4 | 126.0 s | invented [] | reused [14] | says ['mika'] | CERTIFIED drawing on position | IT ASKS: The 8 things here have only 4 kinds of mass (1.113, 2.353, 2.402, 2.406). Why so few? What makes a mass? In all 5 worlds I measured so far, things came in fewer kinds of mass than there were things. | time actions 46, prove 39, grow 24
+=== rail: wind 1 (teach) | words heard: always wind
+  -> proven right | a free curve in time (33 knots) | steps 5 | 78.8 s | invented ['tab'] | reused [] | says ['satu'] | CERTIFIED curve on time | IT ASKS: The 8 things here have only 3 kinds of mass (0.826, 1.058, 2.135). Why so few? What makes a mass? In all 6 worlds I measured so far, things came in fewer kinds of mass than there were things. | time actions 37, prove 31, ledger 9
+=== list: keep positive (teach) | words heard: keep positive
+  -> proven right | filter(λe. lt(0, e), l) | steps 18 | 1517.3 s | invented ['filter(λe. lt(0, e), _)'] | reused [] | says ['keep'] | time imagine 1442, grow 58, beliefs 10
+=== list: last (teach) | words heard: last
+  -> proven right | foldn(λa,e. e, 0, l) | steps 6 | 48.8 s | invented ['foldn(λa,e. e, 0, _)'] | reused [] | says ['last'] | time grow 42, beliefs 2, doubt 1
+=== list: double (teach) | words heard: double
+  -> proven right | map(λe. kape(e), l) | steps 3 | 264.4 s | invented ['map(λe. kape(e), _)'] | reused [23] | says ['nosa'] | FOUND BY wish+compose | ITS OWN METHOD {'id': 5, 'moves': 'wish then compose'} | time imagine 252, grow 7, beliefs 1
+=== rail: spring and drag 2 (teach) | words heard: fast back spring drag far
+  -> proven right | my shape 26 of position + my shape 13 of speed | steps 2 | 133.6 s | invented [] | reused [14, 8] | says ['mika', 'spring', 'fast'] | CERTIFIED drawing on position + drawing on speed | IT ASKS: The 8 things here have only 3 kinds of mass (0.794, 1.944, 2.392). Why so few? What makes a mass? In all 7 worlds I measured so far, things came in fewer kinds of mass than there were things. | time prove 81, actions 34, ledger 16
+=== number: triangle (teach) | words heard: triangle
+  -> proven right | sum(range(n)) | steps 2 | 3.3 s | invented ['sum(range(_))'] | reused [13] | says ['triangle'] | time beliefs 0, doubt 0, prove 0
+=== number: twice (teach) | words heard: twice
+  -> proven right | kape(n) | steps 2 | 2.9 s | invented [] | reused [23] | says ['twice'] | time beliefs 0, doubt 0, prove 0
+=== rail: spring 1 (teach) | words heard: far spring back
+  -> proven right | my shape 12 of position | steps 2 | 95.7 s | invented [] | reused [8] | says ['spring'] | CERTIFIED drawing on position | IT ASKS: The 8 things here have only 3 kinds of mass (1.328, 1.772, 2.139). Why so few? What makes a mass? In all 8 worlds I measured so far, things came in fewer kinds of mass than there were things. | time prove 51, actions 28, ledger 17
+=== rail: drag 2 (teach) | words heard: fast back drag
+  -> proven right | my shape 13 of speed | steps 3 | 126.6 s | invented [] | reused [8] | says ['spring', 'fast'] | CERTIFIED drawing on speed | FALSE WORDS ['spring'] | IT ASKS: The 8 things here have only 3 kinds of mass (0.6, 0.955, 1.134). Why so few? What makes a mass? In all 9 worlds I measured so far, things came in fewer kinds of mass than there were things. | time prove 72, actions 42, ledger 12
+=== rail: drag 1 (teach) | words heard: fast back drag
+  -> proven right | my shape 13 of speed | steps 2 | 98.2 s | invented [] | reused [8] | says ['spring', 'fast'] | CERTIFIED drawing on speed | FALSE WORDS ['spring'] | IT ASKS: The 8 things here have only 3 kinds of mass (0.829, 0.868, 0.959). Why so few? What makes a mass? In all 10 worlds I measured so far, things came in fewer kinds of mass than there were things. | time prove 60, actions 29, ledger 8
+=== list: reverse (teach) | words heard: reverse
+  -> proven right | foldl(λa,e. cons(e, a), [], l) | steps 42 | 3556.1 s | invented ['foldl(λa,e. cons(e, a), [], _)'] | reused [] | says ['reverse'] | time imagine 3373, grow 126, beliefs 31
+=== rail: stiff 1 (teach) | words heard: stiff far back
+  -> proven right | a free curve in position (33 knots) + my shape 13 of speed | steps 2 | 181.6 s | invented ['tab'] | reused [8] | says ['kavi', 'spring', 'fast'] | CERTIFIED curve on position + drawing on speed | FALSE WORDS ['spring', 'fast'] | IT ASKS: The 8 things here have only 3 kinds of mass (2.014, 2.119, 2.358). Why so few? What makes a mass? In all 11 worlds I measured so far, things came in fewer kinds of mass than there were things. | time prove 123, actions 35, ledger 22
+=== rail: spring and drag 1 (teach) | words heard: drag far fast back spring
+  -> proven right | a free curve in ((speed + speed) + ((speed + speed) + 1)) (9 knots) + my shape 12 of position | steps 5 | 493.7 s | invented [] | reused [8] | says ['spring'] | CERTIFIED drawing on position + curve on dim:v.v.add.v.v.add.1.add.add@8 | IT ASKS: The 8 things here have only 3 kinds of mass (0.853, 0.918, 2.286). Why so few? What makes a mass? In all 12 worlds I measured so far, things came in fewer kinds of mass than there were things. | time prove 290, grow 86, actions 63
+=== rail: rub 2 (teach) | words heard: rub back fast
+  -> not proven | None | steps 24 | 4045.7 s | invented [] | reused [] | says [] | NEW SENSES ['dim:v.v.t.mul.add@5', 'speed@6:64', 'speed@5:32'] | time imagine 1025, grow 698, doubt 664
+PHYSICS PROVEN {"worlds": 12, "curves_proven": 5, "drawings_proven": 8, "formulas_proven": 2}
+ONE SERA DONE {"tasks": 25, "concepts": 27, "concepts_by_subject": {"physics": 6, "math": 8, "code": 13}, "words": 25, "grounded": 1, "coined": 21, "understood": 25, "possibilities": 17, "links": 1, "questions": 12, "inbox": 4}
+SETTINGS {"crutches_off": [], "knobs": "ONE_FIELD=0", "one_field": false}
+=== first 1 (teach, box 1800 s) | words heard: first word
+=== first 2 (teach, box 1800 s) | words heard: first word
+=== last 1 (teach, box 1800 s) | words heard: last word
+=== last 2 (teach, box 1800 s) | words heard: last word
+=== who 1 (teach, box 1800 s) | words heard: who
+=== who 2 (teach, box 1800 s) | words heard: who
+=== where 1 (teach, box 1800 s) | words heard: where is
+=== where 2 (teach, box 1800 s) | words heard: where is
+=== what_is 1 (teach, box 1800 s) | words heard: what is
+=== what_is 2 (teach, box 1800 s) | words heard: what is
+=== who_in 1 (teach, box 1800 s) | words heard: who is in
+=== who_in 2 (teach, box 509 s) | words heard: who is in
+AB DONE step {"first 1": {"verdict": "proven right", "claim": "peno(g)", "visits": 1, "wall_all_visits": 386.8, "steps": 6, "stepped": false, "back": false, "rang": false}, "first 2": {"verdict": "proven right", "claim": "first(g)", "visits": 1, "wall_all_visits": 13.4, "steps": 3, "stepped": false, "back": false, "rang": true}, "last 1": {"verdict": "proven right", "claim": "fope(g)", "visits": 1, "wall_all_visits": 279.8, "steps": 5, "stepped": false, "back": true, "rang": true}, "last 2": {"verdict": "proven right", "claim": "fope(g)", "visits": 1, "wall_all_visits": 12.2, "steps": 2, "stepped": false, "back": false, "rang": true}, "who 1": {"verdict": "not proven", "claim": null, "visits": 1, "wall_all_visits": 1800.2, "steps": 34, "stepped": false, "back": false, "rang": false}, "who 2": {"verdict": "not proven", "claim": null, "visits": 1, "wall_all_visits": 1800.3, "steps": 44, "stepped": false, "back": false, "rang": false}, "where 1": {"verdict": "not proven", "claim": null, "visits": 1, "wall_all_visits": 1800.3, "steps": 44, "stepped": false, "back": false, "rang": true}, "where 2": {"verdict": "not proven", "claim": null, "visits": 1, "wall_all_visits": 1800.5, "steps": 44, "stepped": false, "back": false, "rang": true}, "what_is 1": {"verdict": "not proven", "claim": null, "visits": 1, "wall_all_visits": 1801.5, "steps": 4, "stepped": false, "back": false, "rang": false}, "what_is 2": {"verdict": "not proven", "claim": null, "visits": 1, "wall_all_visits": 1804.2, "steps": 28, "stepped": false, "back": false, "rang": false}, "who_in 1": {"verdict": "not proven", "claim": null, "visits": 1, "wall_all_visits": 2391.5, "steps": 44, "stepped": false, "back": false, "rang": false}, "who_in 2": {"verdict": "not proven", "claim": null, "visits": 1, "wall_all_visits": 510.3, "steps": 44, "stepped": false, "back": false, "rang": false}}
+SETTINGS {"crutches_off": [], "knobs": "ONE_FIELD=0", "one_field": false}
+CONVERSE DONE {"taught: the lesson": [32, 21, 60], "read only: the lesson": [32, 21, 60], "before: the fresh talk": [25, 18, 60], "taught: the fresh talk": [25, 18, 60], "read only: the fresh talk": [25, 18, 60]}
+SETTINGS {"crutches_off": [], "knobs": "ONE_FIELD=0", "one_field": false}
+CONVERSE DONE {"taught: the lesson": [30, 12, 60], "read only: the lesson": [30, 15, 60], "before: the fresh talk": [22, 26, 60], "taught: the fresh talk": [22, 14, 60], "read only: the fresh talk": [22, 26, 60]}

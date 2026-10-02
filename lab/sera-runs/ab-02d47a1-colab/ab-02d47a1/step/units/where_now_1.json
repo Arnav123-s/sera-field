@@ -1,0 +1,346 @@
+{
+ "task": "where_now 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 26,
+ "answer": [
+  "foldn",
+  null,
+  [
+   "lam",
+   "ae",
+   [
+    "c",
+    3,
+    [
+     "var",
+     "e"
+    ]
+   ]
+  ],
+  [
+   "head",
+   null,
+   [
+    "c",
+    8,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "filter",
+   null,
+   [
+    "lam",
+    "e",
+    [
+     "eq",
+     null,
+     [
+      "head",
+      null,
+      [
+       "c",
+       8,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ],
+     [
+      "head",
+      null,
+      [
+       "var",
+       "e"
+      ]
+     ]
+    ]
+   ],
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "c",
+     3,
+     [
+      "var",
+      "e"
+     ]
+    ]
+   ],
+   [
+    "lit",
+    5
+   ],
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   7,
+   [
+    "cons",
+    null,
+    [
+     "head",
+     "list",
+     [
+      "var",
+      "g"
+     ]
+    ],
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "tail",
+       null,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "cons",
+    null,
+    [
+     "lit",
+     3
+    ],
+    [
+     "c",
+     2,
+     [
+      "tail",
+      null,
+      [
+       "tail",
+       null,
+       [
+        "tail",
+        null,
+        [
+         "var",
+         "g"
+        ]
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "cons",
+    null,
+    [
+     "lit",
+     5
+    ],
+    [
+     "c",
+     2,
+     [
+      "tail",
+      null,
+      [
+       "tail",
+       null,
+       [
+        "tail",
+        null,
+        [
+         "var",
+         "g"
+        ]
+       ]
+      ]
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 3,
+ "asked": 23,
+ "explored": 0,
+ "tension": [
+  1.75,
+  1.747,
+  11.313,
+  11.313,
+  13.049,
+  14.23,
+  16.057,
+  16.057,
+  16.057,
+  16.057,
+  16.057,
+  16.057,
+  16.057,
+  16.057,
+  16.057,
+  16.057,
+  16.057,
+  16.057,
+  16.057,
+  16.057,
+  16.057,
+  16.057,
+  16.057,
+  16.057,
+  52.999,
+  52.999
+ ],
+ "wall": 390.4,
+ "cpu": 390.3,
+ "proven": true,
+ "invented": [
+  {
+   "id": 11,
+   "subject": "language",
+   "body": "foldn(\u03bba,e. kalo(e), head(pevi(_)), filter(\u03bbe. eq(head(pevi(_)), head(e)), _))"
+  }
+ ],
+ "reused": [
+  8,
+  3
+ ],
+ "words_heard": [
+  "where",
+  "is",
+  "now"
+ ],
+ "said": [
+  "now"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 8.69,
+  "ledger": 0.0,
+  "actions": 0.53,
+  "ask": 0.0,
+  "doubt": 7.76,
+  "grow": 54.23,
+  "imagine": 315.01,
+  "prove": 0.77
+ },
+ "built": [],
+ "peak_mb": 10168.0546875,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "foldn(\u03bba,e. kalo(e), head(pevi(g)), filter(\u03bbe. eq(head(pevi(g)), head(e)), g))",
+ "verdict": "proven right",
+ "audit": 1329,
+ "imagined_by": {
+  "method": "step+compose",
+  "moves": "step+compose",
+  "origin": "stepped"
+ },
+ "method_named": {
+  "id": 2,
+  "moves": "step then compose"
+ },
+ "configs": [
+  "ask",
+  "ask+grow",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "grow",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+grow",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "I think bigger (level 1).",
+  "I imagine by recall then wish: 1 new ideas.",
+  "I imagine by wish then step: 0 new ideas.",
+  "I keep 0 of my imagined ideas in mind and let 1 go.",
+  "I think bigger (level 2).",
+  "I think bigger (level 3).",
+  "In where_now 1 my best idea is foldn(\u03bba,e. kalo(e), 5, g), but I cannot finish (-0.0 nats of doubt). Is it right, or what am I missing?",
+  "I break it into 2 steps (head(pevi(g)); filter(\u03bbe. eq(w1, head(e)), g)) and the rest follows: foldn(\u03bba,e. kalo(e), head(pevi(g)), filter(\u03bbe. eq(head(pevi(g)), head(e)), g)).",
+  "I imagine by step then compose: 1 new ideas.",
+  "I imagine by compose: 0 new ideas.",
+  "My audit passes foldn(\u03bba,e. kalo(e), head(pevi(g)), filter(\u03bbe. eq(head(pevi(g)), head(e)), g)) on 1329 fresh inputs."
+ ],
+ "answer_repr": "('foldn', None, ('lam', 'ae', ('c', 3, ('var', 'e'))), ('head', None, ('c', 8, ('var', 'g'))), ('filter', None, ('lam', 'e', ('eq', None, ('head', None, ('c', 8, ('var', 'g'))), ('head', None, ('var', 'e')))), ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: john moved to the office; daniel went to the garden; john moved to the office; mary journeyed to the bedroom; daniel journeyed to the garden; john journeyed to the garden | question: where is daniel -> garden",
+  "story: mary went to the kitchen; mary went to the hallway; mary moved to the kitchen | question: where is mary -> kitchen",
+  "story: sandra moved to the garden; daniel went to the kitchen; mary moved to the bathroom; sandra travelled to the hallway | question: where is sandra -> hallway"
+ ]
+}

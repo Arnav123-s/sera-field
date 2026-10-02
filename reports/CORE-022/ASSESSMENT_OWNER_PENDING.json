@@ -1,0 +1,14 @@
+{
+  "schema": "sera-field.core022.assessment-owner-adapter.1",
+  "files": {
+    "scripts/assess_core022_choices.py": "11eec489fb28a14e308acf932a6b8e5d52a5c64915ef44d510b6c6eeca5af452",
+    "tests/test_core_assessment_owner.py": "60ba7b0cce0faed1fafceebf1bc7bb378b334d39208c6e024463a552063953b8"
+  },
+  "syntax_checked": true,
+  "numerical_test_executed": false,
+  "reason": "The fresh foundation job owns the exclusive numerical lease.",
+  "next_test_command": ".venv/Scripts/python.exe scripts/supervise.py --attempt core022-assessment-owner-001 -- -m pytest tests/test_core_assessment_owner.py",
+  "earliest_execution": "After authoritative termination of the existing course worker; do not interrupt or duplicate it.",
+  "reserved_source_rows_opened": 0,
+  "learned_capability_claim": false
+}

@@ -1,0 +1,151 @@
+{
+ "task": "who went",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": false,
+ "steps": 4,
+ "answer": [
+  "c",
+  5,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   5,
+   [
+    "c",
+    6,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "c",
+    6,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "c",
+    4,
+    [
+     "var",
+     "g"
+    ]
+   ],
+   [
+    "lit",
+    5
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "c",
+    3,
+    [
+     "head",
+     "list",
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "lit",
+    5
+   ]
+  ]
+ ],
+ "level": 1,
+ "asked": 2,
+ "explored": 0,
+ "tension": [
+  0.619,
+  3.528,
+  3.531,
+  3.531
+ ],
+ "wall": 2.7,
+ "cpu": 2.7,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  5
+ ],
+ "words_heard": [],
+ "said": [
+  "in"
+ ],
+ "false_words": [
+  "in"
+ ],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.05,
+  "ledger": 0.0,
+  "actions": 0.06,
+  "ask": 0.0,
+  "imagine": 0.01,
+  "doubt": 0.06,
+  "prove": 0.1,
+  "grow": 0.22
+ },
+ "built": [],
+ "peak_mb": 17160.21484375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "in(g)",
+ "verdict": "proven right",
+ "audit": 236,
+ "configs": [
+  "ask+imagine",
+  "prove+ask+grow",
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "I imagine by compose then recall: 6 new ideas.",
+  "I imagine by compose: 0 new ideas.",
+  "I keep 2 of my imagined ideas in mind and let 4 go.",
+  "My audit passes in(g) on 236 fresh inputs.",
+  "I think bigger (level 1).",
+  "My audit passes in(g) on 236 fresh inputs."
+ ],
+ "answer_repr": "('c', 5, ('var', 'g'))",
+ "stage": "alone",
+ "english": [
+  "story: daniel went to the bathroom; mary journeyed to the hallway; john journeyed to the kitchen; mary travelled to the office | question: who went to the bathroom -> daniel",
+  "story: john journeyed to the garden; john travelled to the office; john journeyed to the bathroom | question: who went to the bathroom -> john",
+  "story: daniel went to the kitchen; mary journeyed to the office; mary travelled to the bathroom | question: who went to the kitchen -> daniel"
+ ]
+}

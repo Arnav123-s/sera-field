@@ -10,7 +10,7 @@ and [current research state](../reports/STATE.json) for integration status.
 The old "no new subject training" paragraph below describes that earlier intake
 turn only, not the present learner.
 
-The user's clarified direction is to teach the entire intended learner: physical simulations are one experience source alongside mathematics, programming, language, other sciences and interpretation. The current trained release covers a finite physical curriculum. The additional tracks below are explicit teaching requirements; listing or downloading them does not mark them trained.
+The author's clarified direction is to teach the entire intended learner: physical simulations are one experience source alongside mathematics, programming, language, other sciences and interpretation. The current trained release covers a finite physical curriculum. The additional tracks below are explicit teaching requirements; listing or downloading them does not mark them trained.
 
 ## Subject tracks and checks
 
@@ -32,8 +32,8 @@ The local originals of Webster's dictionary, Baskervill and Sewell's grammar, Da
 
 Two additional pinned human-source collections have been obtained for the new lab:
 
-- **GSM8K:** the original human-authored training problems and worked solutions from the [publisher repository](https://github.com/openai/grade-school-math), revision `3101c7d5072418e28b9008a6636bde82a006892c`. The automatically generated Socratic variants and example model solutions are excluded. The official test file has not been downloaded for this intake.
-- **MBPP:** crowd-sourced Python problems, reference programs and tests from the [publisher's data directory](https://github.com/google-research/google-research/tree/4700efb9afa54286b0e04473ba80a13e8461e25f/mbpp). The author's split is retained: IDs 601–974 for training, 511–600 for development, 11–510 for testing and 1–10 for prompting. Only the training reference bodies were selected for inspection. Dataset-specific license attribution remains an intake item; raw records stay local.
+- **GSM8K:** the original human-authored training problems and worked solutions from the publisher repository (source URL withheld), revision `3101c7d5072418e28b9008a6636bde82a006892c`. The automatically generated Socratic variants and example model solutions are excluded. The official test file has not been downloaded for this intake.
+- **MBPP:** crowd-sourced Python problems, reference programs and tests from the publisher's data directory (source URL withheld). The author's split is retained: IDs 601–974 for training, 511–600 for development, 11–510 for testing and 1–10 for prompting. Only the training reference bodies were selected for inspection. Dataset-specific license attribution remains an intake item; raw records stay local.
 
 The intake checker inspected 7,473 human mathematics training records and 23,714 arithmetic annotations. In 7,376 records the available annotations passed exact literal-arithmetic checks; 97 records are retained for review, including possible intentional approximations. These checks do not certify that the written solution correctly interprets the word problem. All 374 MBPP training records passed Python syntax and assertion-structure inspection. No reference program was executed and no coding semantics or tests have yet been certified by that inspection.
 

@@ -1,0 +1,329 @@
+{
+ "task": "what_is 1",
+ "subject": "language",
+ "kind": "exact:list(list)->list",
+ "teaching": true,
+ "steps": 45,
+ "answer": [
+  "tail",
+  null,
+  [
+   "tail",
+   null,
+   [
+    "c",
+    2,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "tail",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "c",
+     2,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "foldl",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "e"
+      ]
+     ]
+    ]
+   ],
+   [
+    "nil",
+    null
+   ],
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "filteri",
+   null,
+   [
+    "lam",
+    "ie",
+    [
+     "lt",
+     null,
+     [
+      "var",
+      "i"
+     ],
+     [
+      "lit",
+      6
+     ]
+    ]
+   ],
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "c",
+      2,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "filteri",
+   null,
+   [
+    "lam",
+    "ie",
+    [
+     "lt",
+     null,
+     [
+      "var",
+      "i"
+     ],
+     [
+      "lit",
+      5
+     ]
+    ]
+   ],
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "c",
+      2,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "foldl",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "a"
+     ]
+    ]
+   ],
+   [
+    "c",
+    2,
+    [
+     "var",
+     "g"
+    ]
+   ],
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "level": 4,
+ "asked": 40,
+ "explored": 0,
+ "tension": [
+  2.588,
+  2.588,
+  2.588,
+  2.588,
+  14.463,
+  14.463,
+  11.992,
+  14.463,
+  11.992,
+  11.992,
+  14.463,
+  14.463,
+  11.992,
+  11.992,
+  14.463,
+  14.463,
+  14.463,
+  14.463,
+  14.463,
+  14.463,
+  14.463,
+  14.463,
+  14.463,
+  14.463,
+  14.463,
+  14.463,
+  14.463,
+  14.463,
+  14.463,
+  14.463,
+  14.463,
+  11.992,
+  11.992,
+  10.908,
+  10.908,
+  10.908,
+  11.992,
+  10.908,
+  11.992,
+  10.908,
+  10.908,
+  10.908,
+  10.908,
+  10.908,
+  10.908,
+  10.908
+ ],
+ "wall": 1819.9,
+ "cpu": 1808.3,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "what",
+  "is"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 3.39,
+  "ledger": 0.0,
+  "actions": 0.03,
+  "ask": 0.0,
+  "doubt": 3.35,
+  "grow": 64.26,
+  "imagine": 1742.67
+ },
+ "built": [],
+ "peak_mb": 11814.78515625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "ask",
+  "ask",
+  "ask",
+  "grow",
+  "imagine",
+  "ask",
+  "imagine+ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "grow",
+  "ask",
+  "grow",
+  "grow"
+ ],
+ "say": [
+  "I think bigger (level 1).",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by compose then wish: 0 new ideas.",
+  "I imagine by compose then step: 0 new ideas.",
+  "I imagine by compose then step then compose: 0 new ideas.",
+  "In what_is 1 my best idea is tail(tail(ridu(tail(g)))), but I cannot finish (0.0 nats of doubt). Is it right, or what am I missing?",
+  "I imagine by wish then step: 0 new ideas.",
+  "I imagine by step then wish: 0 new ideas.",
+  "I imagine by wish: 0 new ideas.",
+  "I imagine by wish then step: 0 new ideas.",
+  "I think bigger (level 2).",
+  "I think bigger (level 3).",
+  "I think bigger (level 4).",
+  "In what_is 1 my best idea is tail(tail(ridu(g))), but I cannot finish (0.0 nats of doubt, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('tail', None, ('tail', None, ('c', 2, ('var', 'g'))))",
+ "stage": "teach",
+ "english": [
+  "story: masseuse is a female massager; ridley is a marine turtle; haggard is british writer noted for romantic adventure novels | question: what is masseuse -> a female massager",
+  "story: unlabeled is lacking a label or tag; sanction is formal and explicit approval; miniaturist is someone who paints tiny pictures in great detail | question: what is sanction -> formal and explicit approval",
+  "story: blackcock is male black grouse; witting is aware or knowing; miniaturist is someone who paints tiny pictures in great detail; cariamidae is south american wading birds | question: what is witting -> aware or knowing"
+ ]
+}

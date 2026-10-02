@@ -1,0 +1,86 @@
+{
+ "task": "rail: spring 1",
+ "subject": "physics",
+ "kind": "strengths:num->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": null,
+ "others": null,
+ "level": 0,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  2.547,
+  2.587
+ ],
+ "wall": 95.7,
+ "cpu": 95.1,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  8
+ ],
+ "words_heard": [
+  "far",
+  "spring",
+  "back"
+ ],
+ "said": [
+  "spring"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.16,
+  "ledger": 16.6,
+  "actions": 27.57,
+  "ask": 0.01,
+  "prove": 50.68,
+  "doubt": 0.07
+ },
+ "built": [],
+ "peak_mb": 6668.0234375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "my shape 12 of position",
+ "band": 0.024417070571768805,
+ "verdict": "proven right",
+ "gap": 4.440892098500626e-16,
+ "signs": {
+  "position": -1
+ },
+ "certified": [
+  {
+   "part": 0,
+   "as": "drawing",
+   "on": "position",
+   "shape": 12,
+   "concept": 8
+  }
+ ],
+ "question": {
+  "text": "The 8 things here have only 3 kinds of mass (1.328, 1.772, 2.139). Why so few? What makes a mass? In all 8 worlds I measured so far, things came in fewer kinds of mass than there were things.",
+  "things": 8,
+  "kinds": 3,
+  "masses": [
+   1.328,
+   1.772,
+   2.139
+  ]
+ },
+ "attributed": true,
+ "configs": [
+  "ask+prove",
+  "leave"
+ ],
+ "say": [
+  "The judge accepts: my shape 12 of position up to 0.2 where I looked.",
+  "It rings through the Field: 1 ways of working and imagining that led here are strengthened."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

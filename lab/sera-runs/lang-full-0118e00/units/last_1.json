@@ -1,0 +1,214 @@
+{
+ "task": "last 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 14,
+ "answer": [
+  "c",
+  3,
+  [
+   "c",
+   2,
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "head",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "c",
+      2,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "head",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "c",
+     2,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "lit",
+    3
+   ],
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "one",
+    null
+   ],
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ],
+   [
+    "lit",
+    2
+   ]
+  ]
+ ],
+ "level": 1,
+ "asked": 13,
+ "explored": 0,
+ "tension": [
+  1.781,
+  1.781,
+  1.781,
+  1.781,
+  1.781,
+  1.781,
+  1.781,
+  1.781,
+  1.781,
+  1.781,
+  1.781,
+  1.781,
+  8.078,
+  8.209
+ ],
+ "wall": 0.6,
+ "cpu": 0.5,
+ "proven": true,
+ "invented": [
+  {
+   "id": 4,
+   "subject": "language",
+   "body": "kalo(sare(_))"
+  }
+ ],
+ "reused": [
+  3,
+  2
+ ],
+ "words_heard": [
+  "last",
+  "word"
+ ],
+ "said": [
+  "lolo"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.04,
+  "ledger": 0.0,
+  "actions": 0.03,
+  "ask": 0.0,
+  "doubt": 0.04,
+  "imagine": 0.16,
+  "grow": 0.16,
+  "prove": 0.01
+ },
+ "built": [
+  {
+   "id": 3,
+   "name": "kalo",
+   "words": "finish what sare starts",
+   "body": "foldn(\u03bba,e. e, 4, _)"
+  }
+ ],
+ "peak_mb": 0.0,
+ "peak_mb_by": {},
+ "claim": "kalo(sare(g))",
+ "verdict": "proven right",
+ "audit": 298,
+ "imagined_by": {
+  "method": "wish+compose",
+  "moves": "wish+compose",
+  "origin": "wished"
+ },
+ "method_named": {
+  "id": 1,
+  "moves": "wish then compose"
+ },
+ "configs": [
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "imagine+ask",
+  "grow+prove+ask",
+  "leave"
+ ],
+ "say": [
+  "I wish I could finish what sare starts: I build it (kalo = foldn(\u03bba,e. e, 4, _)) and use it.",
+  "I imagine by wish then compose: 1 new ideas.",
+  "I imagine by compose: 0 new ideas.",
+  "In last 1 my best idea is kalo(sare(g)), but I cannot finish (-0.0 nats of doubt). Is it right, or what am I missing?",
+  "I think bigger (level 1).",
+  "My audit passes kalo(sare(g)) on 298 fresh inputs."
+ ],
+ "answer_repr": "('c', 3, ('c', 2, ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: to bathroom went mary bedroom | question: what is the last word -> bedroom",
+  "story: the moved kitchen bathroom | question: what is the last word -> bathroom",
+  "story: garden journeyed bathroom | question: what is the last word -> bathroom"
+ ]
+}

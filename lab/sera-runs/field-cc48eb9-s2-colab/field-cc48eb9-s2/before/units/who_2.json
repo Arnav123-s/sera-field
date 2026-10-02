@@ -1,0 +1,324 @@
+{
+ "task": "who 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 47,
+ "answer": [
+  "c",
+  1,
+  [
+   "foldl",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "cons",
+     null,
+     [
+      "var",
+      "e"
+     ],
+     [
+      "var",
+      "a"
+     ]
+    ]
+   ],
+   [
+    "var",
+    "g"
+   ],
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   1,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ],
+   [
+    "sub",
+    null,
+    [
+     "c",
+     3,
+     [
+      "var",
+      "g"
+     ]
+    ],
+    [
+     "c",
+     3,
+     [
+      "cons",
+      null,
+      [
+       "nil",
+       null
+      ],
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "head",
+     null,
+     [
+      "var",
+      "e"
+     ]
+    ]
+   ],
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ],
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "head",
+     null,
+     [
+      "var",
+      "e"
+     ]
+    ]
+   ],
+   [
+    "lit",
+    5
+   ],
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "level": 5,
+ "asked": 40,
+ "explored": 0,
+ "tension": [
+  4.862,
+  2.298,
+  4.862,
+  4.862,
+  4.862,
+  4.862,
+  4.862,
+  4.862,
+  4.862,
+  4.862,
+  4.862,
+  4.862,
+  4.862,
+  4.862,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  4.972,
+  23.221,
+  23.221,
+  22.02
+ ],
+ "wall": 1814.3,
+ "cpu": 1804.9,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "who"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 3.21,
+  "ledger": 0.0,
+  "actions": 0.11,
+  "ask": 0.0,
+  "imagine": 1734.39,
+  "doubt": 3.04,
+  "grow": 72.69
+ },
+ "built": [],
+ "peak_mb": 11814.78515625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "ask+imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "grow",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "imagine",
+  "grow",
+  "imagine",
+  "grow",
+  "grow+imagine",
+  "grow"
+ ],
+ "say": [
+  "I imagine by step then compose then compose: 0 new ideas.",
+  "I imagine by step then compose then step: 0 new ideas.",
+  "In who 2 my best idea is first(tail(g)), but I cannot finish (0.0 nats of doubt). Is it right, or what am I missing?",
+  "I imagine by wish then step: 0 new ideas.",
+  "I imagine by step then wish: 0 new ideas.",
+  "I think bigger (level 1).",
+  "I imagine by wish: 0 new ideas.",
+  "I imagine by wish then step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by wish then step: 0 new ideas.",
+  "I think bigger (level 2).",
+  "I imagine by step: 0 new ideas.",
+  "I think bigger (level 3).",
+  "I think bigger (level 4).",
+  "I imagine by step then compose: 0 new ideas.",
+  "I imagine by step then step then compose: 0 new ideas.",
+  "I think bigger (level 5).",
+  "In who 2 my best idea is first(foldl(\u03bba,e. cons(e, a), g, g)), but I cannot finish (0.2 nats of doubt, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('c', 1, ('foldl', None, ('lam', 'ae', ('cons', None, ('var', 'e'), ('var', 'a'))), ('var', 'g'), ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: mary travelled to the bedroom; john went to the kitchen | question: who went to the kitchen -> john",
+  "story: daniel moved to the bathroom; mary travelled to the office | question: who went to the bathroom -> daniel",
+  "story: sandra travelled to the hallway; mary went to the office | question: who went to the office -> mary"
+ ]
+}

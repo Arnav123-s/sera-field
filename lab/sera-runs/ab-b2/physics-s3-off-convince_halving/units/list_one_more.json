@@ -1,0 +1,163 @@
+{
+ "task": "list: one more",
+ "subject": "code",
+ "kind": "exact:list->list",
+ "teaching": true,
+ "steps": 12,
+ "answer": [
+  "map",
+  null,
+  [
+   "lam",
+   "e",
+   [
+    "c",
+    10,
+    [
+     "var",
+     "e"
+    ]
+   ]
+  ],
+  [
+   "var",
+   "l"
+  ]
+ ],
+ "others": [
+  [
+   "nil",
+   null
+  ],
+  [
+   "var",
+   "l"
+  ],
+  [
+   "range",
+   null,
+   [
+    "lit",
+    2
+   ]
+  ],
+  [
+   "range",
+   null,
+   [
+    "lit",
+    3
+   ]
+  ],
+  [
+   "range",
+   null,
+   [
+    "lit",
+    4
+   ]
+  ]
+ ],
+ "level": 3,
+ "asked": 8,
+ "explored": 0,
+ "tension": [
+  3.975,
+  3.975,
+  8.307,
+  8.307,
+  8.307,
+  8.307,
+  8.307,
+  15.744,
+  15.744,
+  15.744,
+  15.744,
+  15.744
+ ],
+ "wall": 330.8,
+ "cpu": 329.8,
+ "proven": true,
+ "invented": [
+  {
+   "id": 11,
+   "subject": "code",
+   "body": "map(\u03bbe. nope(e), _)"
+  }
+ ],
+ "reused": [
+  10
+ ],
+ "words_heard": [
+  "one",
+  "more"
+ ],
+ "said": [
+  "fori"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 2.18,
+  "ledger": 0.0,
+  "actions": 0.12,
+  "ask": 0.0,
+  "doubt": 0.74,
+  "grow": 77.6,
+  "imagine": 250.02,
+  "prove": 0.03
+ },
+ "built": [
+  {
+   "id": 10,
+   "name": "nope",
+   "words": "make each element what it becomes",
+   "body": "add(_, 1)"
+  }
+ ],
+ "peak_mb": 5144.390625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "map(\u03bbe. nope(e), l)",
+ "verdict": "proven right",
+ "audit": 455,
+ "imagined_by": {
+  "method": "#1+compose",
+  "moves": "compose+wish+compose",
+  "origin": "wished"
+ },
+ "method_named": {
+  "id": 2,
+  "moves": "compose then wish then compose"
+ },
+ "configs": [
+  "ask",
+  "grow",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "grow",
+  "prove",
+  "grow+ask",
+  "leave"
+ ],
+ "say": [
+  "I think bigger (level 1).",
+  "I wish I could make each element what it becomes: I build it (nope = add(_, 1)) and use it.",
+  "I imagine by compose then wish then compose: 1 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I think bigger (level 2).",
+  "My audit passes map(\u03bbe. nope(e), l) on 455 fresh inputs.",
+  "It rings through the Field: 12 ways of working and imagining that led here are strengthened.",
+  "I think bigger (level 3)."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

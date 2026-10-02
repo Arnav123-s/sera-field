@@ -1,0 +1,47 @@
+{
+ "suite": "L4",
+ "index": 7,
+ "mind": "sera31",
+ "truth": "cubic with position + steps with position times steps with speed",
+ "claim": "cubic with position + steps with position times steps with speed",
+ "sure": true,
+ "verified": true,
+ "right": true,
+ "wrong_frozen": false,
+ "sure_unverified": false,
+ "right_grid": true,
+ "wrong_grid": false,
+ "surface_ok": false,
+ "wrong": false,
+ "throws": 16,
+ "own": 0,
+ "seconds": 31.2,
+ "certify_calls": 1,
+ "families": 79,
+ "gap": "I am sure the force is cubic with position + steps with position times steps with speed where I looked (position -0.76 to 0.74, speed -1.7 to 2.5). Something more may be there, but it is too small to see here.",
+ "imagined_top3": [
+  [
+   "cubic with position + steps with position times steps with speed",
+   0.988
+  ],
+  [
+   "growing with position + steps with position times steps with speed",
+   0.012
+  ],
+  [
+   "cubic with position + steps with position times wave with speed",
+   0.0
+  ]
+ ],
+ "truth_in_imagined": true,
+ "unsure_but_right": false,
+ "flaw": false,
+ "statements": 9,
+ "false_statements": [],
+ "self_report": "I am sure the force is cubic with position + steps with position times steps with speed where I looked (position -0.76 to 0.74, speed -1.7 to 2.5).\nNo other law I weighed comes closer than 4699.5 units of evidence (I needed 16.6); the closest was growing with position + steps with position times steps with speed.\nI ruled out growing with position + steps with position times steps with speed: it trails by 4699.5 units of evidence.\nI ruled out straight with position + steps with position times steps with speed: it trails by 5683.1 units of evidence.\nI ruled out wave with position + steps with position times steps with speed: it trails by 5685.7 units of evidence.\nAnything else acting here is at most 0.07 in size where I looked (my tolerance is 0.2).\nI imagined 16 laws at the start; 4 were weighed: 1 are still close, 3 are ruled out.\nI assume the force depends only on position, speed and time, is the same law for every object, and that each object keeps its own mass.\nMy proof also rests on two things not yet proven: that my forecast before each throw is a proper probability (I compute it by an approximation), and that my search found the best fit of each rival law.",
+ "check_coverage": 0.9512195121951219,
+ "check_readings": 656,
+ "foresight_median": null,
+ "disturbed": [],
+ "questions": {}
+}

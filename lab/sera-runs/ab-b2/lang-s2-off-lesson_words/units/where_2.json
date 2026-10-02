@@ -1,0 +1,106 @@
+{
+ "task": "where 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  7,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   4,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "lit",
+   3
+  ],
+  [
+   "lit",
+   4
+  ],
+  [
+   "lit",
+   5
+  ]
+ ],
+ "level": 0,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  3.341,
+  3.341
+ ],
+ "wall": 6.0,
+ "cpu": 6.0,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  7
+ ],
+ "words_heard": [
+  "where",
+  "is"
+ ],
+ "said": [
+  "mivi"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.0,
+  "ledger": 0.0,
+  "actions": 0.03,
+  "prove": 0.1,
+  "ask": 0.0,
+  "doubt": 0.0
+ },
+ "built": [],
+ "peak_mb": 9664.890625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "mivi(g)",
+ "verdict": "proven right",
+ "audit": 234,
+ "configs": [
+  "prove+ask",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: mivi (8.50), fotu (8.13), first (7.81).",
+  "My audit passes mivi(g) on 234 fresh inputs."
+ ],
+ "answer_repr": "('c', 7, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: daniel moved to the office; john travelled to the bathroom; mary travelled to the garden | question: where is john -> bathroom",
+  "story: daniel went to the office; sandra moved to the garden | question: where is sandra -> garden",
+  "story: sandra went to the bedroom; daniel went to the bedroom | question: where is sandra -> bedroom"
+ ]
+}

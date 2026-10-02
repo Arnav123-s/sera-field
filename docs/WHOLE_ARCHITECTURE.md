@@ -10,12 +10,13 @@ checks before a fresh whole-system curriculum, then assess the trained owner
 and continue learning incrementally. [CORE-022](COMPLETE_CORE_WORK_ORDER.md)
 records that order. Its coupled owner has 60 passing integration/operator checks
 inside a 255-test repository regression, plus a 96-event stability check and
-exact next-update replay in a new process. The complete behavior routes and
-curriculum remain in development. The [owner integration](CORE_022_OWNER.md),
+exact next-update replay in a new process. The fresh foundation curriculum is
+now running after its source and build acceptance. The later whole-behavior
+assessment and incremental continuation remain open. The [owner integration](CORE_022_OWNER.md),
 [equations](CORE_022_EQUATIONS.md) and [build evidence](../reports/CORE-022/REPORT.md)
 are separate from the trained outcomes below.
 
-The current priority is the user's developmental requirement: memory, perception
+The current priority is the author's developmental requirement: memory, perception
 and imagination should learn together from initialization. The
 [NATIVE-019 owner](NATIVE_ARCHITECTURE.md) is implemented without a parent checkpoint
 or frozen inherited learner. Its [prospective protocol](../protocols/NATIVE-019.md)
@@ -211,7 +212,7 @@ recorded separately. No training imports external pretrained weights.
 - [x] Assess a complete retained situation, investigation, reward-weight update and restart through that owner (JOINT-020).
 - [x] Complete counterbalanced chronology/family teaching and a fresh reward comparison (JOINT-021).
 - [ ] Qualify improved reward-driven behavior through the complete-core curriculum and fresh assessment.
-- [ ] Finish the complete-core build acceptance before its first curriculum update.
+- [x] Finish the complete-core build acceptance before its first curriculum update.
 - [ ] Teach the complete fresh owner, assess its whole behavior, then begin incremental continuation.
 - [x] Complete the tested finite neural-action curriculum and its independent decision.
 - [ ] Complete broad interpretation, alternative discovery and continued-learning tests.

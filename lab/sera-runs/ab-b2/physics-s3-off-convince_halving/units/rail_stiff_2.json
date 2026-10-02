@@ -1,0 +1,104 @@
+{
+ "task": "rail: stiff 2",
+ "subject": "physics",
+ "kind": "strengths:num->num",
+ "teaching": true,
+ "steps": 6,
+ "answer": null,
+ "others": null,
+ "level": 1,
+ "asked": 3,
+ "explored": 2,
+ "tension": [
+  8.338,
+  8.338,
+  19.164,
+  19.641,
+  19.887,
+  20.605
+ ],
+ "wall": 235.3,
+ "cpu": 234.5,
+ "proven": true,
+ "invented": [
+  {
+   "id": 9,
+   "subject": "physics",
+   "input": "position",
+   "how": "expr",
+   "body": "mul(_, mul(_, _))"
+  }
+ ],
+ "reused": [],
+ "words_heard": [
+  "stiff",
+  "back",
+  "far"
+ ],
+ "said": [
+  "stiff"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.51,
+  "ledger": 28.16,
+  "actions": 75.9,
+  "prove": 129.46,
+  "doubt": 0.31,
+  "grow": 0.81,
+  "ask": 0.0,
+  "explore": 0.0,
+  "imagine": 0.02
+ },
+ "built": [],
+ "peak_mb": 5144.390625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "some strength times (position x (position x position)) (clipped at +-1)",
+ "band": 0.07785537523214023,
+ "verdict": "proven right",
+ "gap": 0.0,
+ "signs": {},
+ "certified": [
+  {
+   "part": 0,
+   "as": "formula",
+   "on": "dim:x.x.x.mul.mul@4"
+  }
+ ],
+ "question": {
+  "text": "The 8 things here have only 3 kinds of mass (1.334, 1.38, 2.292). Why so few? What makes a mass? In all 3 worlds I measured so far, things came in fewer kinds of mass than there were things.",
+  "things": 8,
+  "kinds": 3,
+  "masses": [
+   1.334,
+   1.38,
+   2.292
+  ]
+ },
+ "attributed": true,
+ "configs": [
+  "prove",
+  "grow+ask",
+  "prove",
+  "explore",
+  "imagine+explore",
+  "leave"
+ ],
+ "say": [
+  "The judge does not accept my shape 12 of position + my shape 13 of speed: something else is here: the law misfits more objects than bumps explain.",
+  "I think bigger (level 1).",
+  "The judge accepts: some strength times (position x (position x position)) (clipped at +-1) up to 0.2 where I looked.",
+  "It rings through the Field: 2 ways of working and imagining that led here are strengthened.",
+  "I imagine by blend then recall: 1 new ideas.",
+  "I imagine by compose then blend: 126 new ideas.",
+  "I keep 0 of my imagined ideas in mind and let 127 go."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

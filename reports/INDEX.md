@@ -1,10 +1,12 @@
 # Evidence index
 
-**Complete-core build in progress:** [CORE-022 engineering](CORE-022/REPORT.md),
+**Fresh complete-core teaching in progress:** [CORE-022 report](CORE-022/REPORT.md),
 [current source identities and checks](CORE-022/ENGINEERING.json),
 [equations](../docs/CORE_022_EQUATIONS.md) and
-[complete work order](../docs/COMPLETE_CORE_WORK_ORDER.md). The new build precedes
-its from-scratch curriculum; no new complete-core training is claimed here.
+[complete work order](../docs/COMPLETE_CORE_WORK_ORDER.md). The accepted build is
+now learning from fresh weights. [First scheduled development](CORE-022/DEVELOPMENT_01024.json)
+and the [independent teaching-prefix audit](CORE-022/COURSE_PREFIX_AUDIT_001.json)
+record observed progress; the complete course and whole assessment remain active.
 The executable [portfolio](CORE-022/PORTFOLIO.json),
 [program replay](CORE-022/PROGRAM_REPLAY.json),
 [learning-procedure replay](CORE-022/LEARNING_REPLAY.json) and
@@ -134,7 +136,7 @@ The FIELD-001 material below is the preserved earlier release.
 
 Start with [the results report](FIELD-001.md). Numerical summaries and raw records below preserve the measured scope, controls and unsuccessful attempts.
 
-For the user's whole-system goal, read the newer [requested-behavior audit](REQUESTED_BEHAVIOR_AUDIT.md) and [acceptance criteria](../docs/BEHAVIOR_ACCEPTANCE.md). Those records distinguish the completed component study from the remaining learning and behavior integration.
+For the author's whole-system goal, read the newer [requested-behavior audit](REQUESTED_BEHAVIOR_AUDIT.md) and [acceptance criteria](../docs/BEHAVIOR_ACCEPTANCE.md). Those records distinguish the completed component study from the remaining learning and behavior integration.
 
 The subsequent [paper coverage audit](PAPER_COVERAGE.md) maps every substantive
 research component and intended behavior. [Connected engineering evidence](CONNECTED-002/ENGINEERING.md)
@@ -153,7 +155,7 @@ cross-goal regression, bringing the verified test set to 56 distinct tests.
 | [Post-final engineering record](FIELD-001/post-final-engineering.json) | Reporting and interface fixes, separated from frozen model training |
 | [Costs](COSTS.json) | Every supervised attempt, including the failed comparator, tests, replays and demonstrations |
 | [Checkpoint manifest](../checkpoints/FIELD-001/manifest.json) | Ready-to-use weights, file and tensor identities, initialization lineage |
-| [Raw evidence archive](FIELD-001/LOCAL_RAW_ARCHIVE.md) | Full runs tree: initial and intermediate checkpoints, optimizer/RNG state, training logs, selected models, final case records, both replay attempts and supervisor logs |
+| [Raw evidence archive](FIELD-001/raw-evidence.zip) | Full runs tree: initial and intermediate checkpoints, optimizer/RNG state, training logs, selected models, final case records, both replay attempts and supervisor logs |
 | [Archive manifest](FIELD-001/artifacts.json) | Archive and member SHA-256 identities |
 | [Continuation state](STATE.json) | Completed work, retained goal, default owner and next research gate |
 

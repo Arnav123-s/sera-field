@@ -1,0 +1,101 @@
+{
+ "args": {
+  "dreams": "dreams-v1",
+  "name": "imagine-v1",
+  "epochs": 8,
+  "batch": 256,
+  "lr": 0.002,
+  "val_shards": 5,
+  "threads": 2
+ },
+ "suites": {
+  "L1": {
+   "imagination": [
+    0.733,
+    1.0
+   ],
+   "greedy": [
+    0.8,
+    0.8
+   ],
+   "p_true": 0.714
+  },
+  "L2": {
+   "imagination": [
+    0.4,
+    0.933
+   ],
+   "greedy": [
+    0.0,
+    0.067
+   ],
+   "p_true": 0.291
+  },
+  "L3": {
+   "imagination": [
+    0.967,
+    1.0
+   ],
+   "greedy": [
+    0.933,
+    0.933
+   ],
+   "p_true": 0.829
+  },
+  "L4": {
+   "imagination": [
+    0.367,
+    0.867
+   ],
+   "greedy": [
+    0.0,
+    0.233
+   ],
+   "p_true": 0.239
+  },
+  "L5": {
+   "imagination": [
+    0.767,
+    1.0
+   ],
+   "greedy": [
+    0.0,
+    0.333
+   ],
+   "p_true": 0.644
+  },
+  "L2-held": {
+   "imagination": [
+    0.767,
+    0.9
+   ],
+   "greedy": [
+    0.0,
+    0.467
+   ],
+   "p_true": 0.484
+  },
+  "L3-held": {
+   "imagination": [
+    1.0,
+    1.0
+   ],
+   "greedy": [
+    1.0,
+    1.0
+   ],
+   "p_true": 0.92
+  },
+  "L4-held": {
+   "imagination": [
+    0.3,
+    0.767
+   ],
+   "greedy": [
+    0.0,
+    0.233
+   ],
+   "p_true": 0.187
+  }
+ }
+}

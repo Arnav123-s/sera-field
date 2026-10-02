@@ -1,0 +1,93 @@
+{
+ "task": "last 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  2,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "lit",
+   2
+  ],
+  [
+   "lit",
+   3
+  ],
+  [
+   "lit",
+   4
+  ],
+  [
+   "lit",
+   5
+  ]
+ ],
+ "level": 0,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  2.929,
+  2.929
+ ],
+ "wall": 0.3,
+ "cpu": 0.3,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  2
+ ],
+ "words_heard": [
+  "last",
+  "word"
+ ],
+ "said": [
+  "last"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.0,
+  "ledger": 0.0,
+  "actions": 0.0,
+  "prove": 0.02,
+  "doubt": 0.0
+ },
+ "built": [],
+ "claim": "last(g)",
+ "verdict": "proven right",
+ "audit": 229,
+ "configs": [
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "My audit passes last(g) on 229 fresh inputs."
+ ],
+ "answer_repr": "('c', 2, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: to bathroom went mary bedroom | question: what is the last word -> bedroom",
+  "story: the moved kitchen bathroom | question: what is the last word -> bathroom",
+  "story: garden journeyed bathroom | question: what is the last word -> bathroom"
+ ]
+}

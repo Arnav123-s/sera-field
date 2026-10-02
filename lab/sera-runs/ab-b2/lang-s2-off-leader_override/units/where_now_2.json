@@ -1,0 +1,353 @@
+{
+ "task": "where_now 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 47,
+ "answer": [
+  "foldn",
+  null,
+  [
+   "lam",
+   "ae",
+   [
+    "c",
+    3,
+    [
+     "var",
+     "e"
+    ]
+   ]
+  ],
+  [
+   "lit",
+   122
+  ],
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "c",
+     3,
+     [
+      "var",
+      "e"
+     ]
+    ]
+   ],
+   [
+    "lit",
+    117
+   ],
+   [
+    "c",
+    9,
+    [
+     "c",
+     9,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "c",
+     3,
+     [
+      "var",
+      "e"
+     ]
+    ]
+   ],
+   [
+    "lit",
+    122
+   ],
+   [
+    "c",
+    9,
+    [
+     "c",
+     9,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "c",
+     3,
+     [
+      "var",
+      "e"
+     ]
+    ]
+   ],
+   [
+    "lit",
+    520
+   ],
+   [
+    "c",
+    9,
+    [
+     "c",
+     9,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "c",
+     3,
+     [
+      "var",
+      "e"
+     ]
+    ]
+   ],
+   [
+    "one",
+    null
+   ],
+   [
+    "c",
+    9,
+    [
+     "c",
+     9,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "c",
+     3,
+     [
+      "var",
+      "e"
+     ]
+    ]
+   ],
+   [
+    "zero",
+    null
+   ],
+   [
+    "c",
+    9,
+    [
+     "c",
+     9,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 3,
+ "asked": 40,
+ "explored": 0,
+ "tension": [
+  2.448,
+  2.448,
+  2.448,
+  2.448,
+  2.448,
+  2.448,
+  2.448,
+  2.448,
+  2.448,
+  2.447,
+  2.447,
+  6.572,
+  5.9,
+  10.971,
+  10.971,
+  10.971,
+  9.795,
+  9.795,
+  9.795,
+  10.971,
+  10.146,
+  9.795,
+  10.146,
+  9.795,
+  9.795,
+  9.795,
+  9.795,
+  9.795,
+  9.795,
+  9.795,
+  9.795,
+  9.795,
+  9.795,
+  9.795,
+  9.795,
+  9.795,
+  9.795,
+  9.795,
+  7.538,
+  6.668,
+  6.668,
+  15.114,
+  15.114,
+  15.114,
+  15.114,
+  15.114,
+  15.114,
+  15.114
+ ],
+ "wall": 1803.6,
+ "cpu": 1802.3,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "where",
+  "is",
+  "now"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 17.26,
+  "ledger": 0.0,
+  "actions": 0.39,
+  "ask": 0.0,
+  "doubt": 16.01,
+  "imagine": 1708.27,
+  "grow": 58.3
+ },
+ "built": [],
+ "peak_mb": 9745.40234375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "ask+grow",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "grow",
+  "grow",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine",
+  "imagine"
+ ],
+ "say": [
+  "This rings in me: where (9.93), in (3.78).",
+  "I imagine by wish then step: 0 new ideas.",
+  "I imagine by step then wish then compose: 0 new ideas.",
+  "I keep 0 of my imagined ideas in mind and let 2 go.",
+  "In where_now 2 my best idea is fotu(tail(g)), but I cannot finish (none of my ideas fits the examples). Is it right, or what am I missing?",
+  "I think bigger (level 1).",
+  "I think bigger (level 2).",
+  "I think bigger (level 3).",
+  "I imagine by wish then recall: 1 new ideas.",
+  "I imagine by wish then step: 0 new ideas.",
+  "I keep 0 of my imagined ideas in mind and let 1 go.",
+  "I imagine by compose then step: 0 new ideas.",
+  "I imagine by step then compose: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "In where_now 2 my best idea is foldn(\u03bba,e. fofo(e), 122, g), but I cannot finish (none of my ideas fits the examples, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('foldn', None, ('lam', 'ae', ('c', 3, ('var', 'e'))), ('lit', 122), ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: john journeyed to the hallway; mary journeyed to the office; mary moved to the office; mary journeyed to the office; john moved to the office; mary went to the kitchen | question: where is mary -> kitchen",
+  "story: sandra went to the kitchen; daniel went to the hallway; daniel moved to the bedroom; daniel moved to the bedroom; john went to the bedroom; daniel travelled to the bathroom | question: where is daniel -> bathroom",
+  "story: sandra journeyed to the bathroom; sandra travelled to the kitchen; sandra journeyed to the bathroom; mary travelled to the bedroom; mary travelled to the kitchen; mary moved to the bedroom | question: where is mary -> bedroom"
+ ]
+}

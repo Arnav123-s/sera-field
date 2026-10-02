@@ -1,0 +1,4 @@
+what SERA sends for its cubic: (('cell', 'position', 9),)
+what SERA sends        accepted=False band=None ('something else is here: the law misfits more objects than bumps explain',)
+free curve 33 knots    accepted=True band=0.043 checker=True observer={'verdict': 'proven right', 'gap': 0.04729286860968873}
+cubic dimension r=4    accepted=True band=0.0582 checker=True observer={'verdict': 'proven right', 'gap': 4.440892098500626e-16}

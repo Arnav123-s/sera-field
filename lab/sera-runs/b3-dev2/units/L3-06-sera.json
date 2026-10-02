@@ -1,0 +1,37 @@
+{
+ "suite": "L3",
+ "index": 6,
+ "mind": "sera",
+ "truth": "straight with position times steps with speed",
+ "claim": "straight with position times steps with speed",
+ "sure": true,
+ "verified": true,
+ "right": true,
+ "wrong_frozen": false,
+ "sure_unverified": false,
+ "right_grid": true,
+ "wrong_grid": false,
+ "surface_ok": false,
+ "wrong": false,
+ "throws": 16,
+ "own": 0,
+ "seconds": 24.7,
+ "certify_calls": 1,
+ "families": 79,
+ "gap": "I am sure the force is straight with position times steps with speed where I looked (position -2 to 1, speed -2.6 to 0.8). Something more may be there, but it is too small to see here.",
+ "imagined_top3": [
+  [
+   "straight with position times steps with speed",
+   1.0
+  ],
+  [
+   "nothing but my hand",
+   0.0
+  ],
+  [
+   "steps with position times straight with speed",
+   0.0
+  ]
+ ],
+ "truth_in_imagined": true
+}

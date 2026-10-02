@@ -1,0 +1,148 @@
+{
+ "task": "last 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 3,
+ "answer": [
+  "c",
+  8,
+  [
+   "c",
+   27,
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   18,
+   [
+    "head",
+    "list",
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   25,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "lit",
+   119
+  ],
+  [
+   "lit",
+   120
+  ],
+  [
+   "one",
+   null
+  ]
+ ],
+ "level": 0,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  2.858,
+  12.86,
+  12.86
+ ],
+ "wall": 266.2,
+ "cpu": 265.5,
+ "proven": true,
+ "invented": [
+  {
+   "id": 28,
+   "subject": "language",
+   "body": "spring(kavi(_))"
+  }
+ ],
+ "reused": [
+  8,
+  27
+ ],
+ "words_heard": [
+  "last",
+  "word"
+ ],
+ "said": [
+  "peno"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.03,
+  "ledger": 0.0,
+  "actions": 0.03,
+  "ask": 0.0,
+  "imagine": 258.84,
+  "doubt": 0.02,
+  "prove": 0.05
+ },
+ "built": [
+  {
+   "id": 27,
+   "name": "kavi",
+   "words": "make what spring turns into the answer",
+   "body": "sami(head(tail(_)))"
+  }
+ ],
+ "peak_mb": 4028.98828125,
+ "peak_mb_by": {
+  "imagine": 3489.3
+ },
+ "memory_stops": 0,
+ "claim": "spring(kavi(g))",
+ "verdict": "proven right",
+ "audit": 329,
+ "imagined_by": {
+  "method": "#1+step",
+  "moves": "compose+wish+step",
+  "origin": "wished"
+ },
+ "method_named": {
+  "id": 5,
+  "moves": "compose then wish then step"
+ },
+ "configs": [
+  "ask+imagine",
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: kape (12.15), nosa (11.40).",
+  "I wish I could make what spring turns into the answer: I build it (kavi = sami(head(tail(_)))) and use it.",
+  "I was stuck, so I imagined the last step to the answer - sami(z) of a part - and looked for that part: head(tail(g)). Together: sami(head(tail(g))).",
+  "I imagine by compose then wish then step: 2 new ideas.",
+  "I imagine by step then wish then compose then wish: 0 new ideas.",
+  "I keep 2 of my imagined ideas in mind and let 2 go.",
+  "My audit passes spring(kavi(g)) on 329 fresh inputs.",
+  "It rings through the Field: 4 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('c', 8, ('c', 27, ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: travelled john garden bedroom | question: what is the last word -> bedroom",
+  "story: hallway the went | question: what is the last word -> went",
+  "story: hallway moved office hallway bathroom mary | question: what is the last word -> mary"
+ ]
+}

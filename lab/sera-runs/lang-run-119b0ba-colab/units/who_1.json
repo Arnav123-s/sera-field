@@ -1,0 +1,233 @@
+{
+ "task": "who 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 6,
+ "answer": [
+  "c",
+  1,
+  [
+   "filter",
+   null,
+   [
+    "lam",
+    "e",
+    [
+     "eq",
+     null,
+     [
+      "c",
+      3,
+      [
+       "var",
+       "e"
+      ]
+     ],
+     [
+      "c",
+      3,
+      [
+       "head",
+       "list",
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ],
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   1,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "head",
+     null,
+     [
+      "var",
+      "e"
+     ]
+    ]
+   ],
+   [
+    "lit",
+    5
+   ],
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "foldl",
+    null,
+    [
+     "lam",
+     "ae",
+     [
+      "cons",
+      null,
+      [
+       "var",
+       "e"
+      ],
+      [
+       "var",
+       "a"
+      ]
+     ]
+    ],
+    [
+     "var",
+     "g"
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "level": 3,
+ "asked": 3,
+ "explored": 0,
+ "tension": [
+  5.459,
+  33.552,
+  33.552,
+  33.552,
+  33.552,
+  33.552
+ ],
+ "wall": 1561.5,
+ "cpu": 1557.8,
+ "proven": true,
+ "invented": [
+  {
+   "id": 5,
+   "subject": "language",
+   "body": "first(filter(\u03bbe. eq(kalo(e), kalo(head(_))), _))"
+  },
+  {
+   "id": 6,
+   "subject": "language",
+   "inner": "the part it works on",
+   "body": "filter(\u03bbe. eq(kalo(e), kalo(head(_))), _)"
+  }
+ ],
+ "reused": [
+  1,
+  3
+ ],
+ "words_heard": [
+  "who"
+ ],
+ "said": [
+  "who"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.02,
+  "beliefs": 0.23,
+  "ledger": 0.0,
+  "actions": 0.09,
+  "grow": 10.92,
+  "ask": 0.0,
+  "imagine": 1549.85,
+  "doubt": 0.21,
+  "prove": 0.18
+ },
+ "built": [],
+ "peak_mb": 0.0,
+ "peak_mb_by": {},
+ "claim": "first(filter(\u03bbe. eq(kalo(e), kalo(head(g))), g))",
+ "verdict": "proven right",
+ "audit": 859,
+ "imagined_by": {
+  "method": "#1+wish",
+  "moves": "wish+compose+wish",
+  "origin": "wished"
+ },
+ "method_named": {
+  "id": 2,
+  "moves": "wish then compose then wish"
+ },
+ "configs": [
+  "grow+ask+imagine",
+  "ask",
+  "ask+grow",
+  "grow",
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "I think bigger (level 1).",
+  "I wish my functions could see the whole problem, not only the part they are given. I grow that way of seeing, and 1 ideas fit this, first first(filter(\u03bbe. eq(kalo(e), kalo(head(g))), g)).",
+  "I imagine by wish then compose then wish: 1 new ideas.",
+  "I imagine by compose then wish then compose: 0 new ideas.",
+  "I think bigger (level 2).",
+  "I think bigger (level 3).",
+  "My audit passes first(filter(\u03bbe. eq(kalo(e), kalo(head(g))), g)) on 859 fresh inputs."
+ ],
+ "answer_repr": "('c', 1, ('filter', None, ('lam', 'e', ('eq', None, ('c', 3, ('var', 'e')), ('c', 3, ('head', 'list', ('var', 'g'))))), ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: john journeyed to the hallway; mary travelled to the office; daniel went to the bathroom | question: who went to the bathroom -> daniel",
+  "story: sandra travelled to the garden; sandra went to the kitchen | question: who went to the garden -> sandra",
+  "story: sandra went to the hallway; john went to the bathroom | question: who went to the bathroom -> john"
+ ]
+}

@@ -1,0 +1,254 @@
+{
+ "task": "last 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 6,
+ "answer": [
+  "c",
+  3,
+  [
+   "c",
+   2,
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "var",
+     "e"
+    ]
+   ],
+   [
+    "zero",
+    null
+   ],
+   [
+    "c",
+    2,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "head",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "c",
+      2,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "filteri",
+    null,
+    [
+     "lam",
+     "ie",
+     [
+      "lt",
+      null,
+      [
+       "var",
+       "i"
+      ],
+      [
+       "lit",
+       5
+      ]
+     ]
+    ],
+    [
+     "c",
+     2,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "filteri",
+    null,
+    [
+     "lam",
+     "ie",
+     [
+      "lt",
+      null,
+      [
+       "var",
+       "i"
+      ],
+      [
+       "lit",
+       6
+      ]
+     ]
+    ],
+    [
+     "c",
+     2,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "c",
+       2,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 3,
+ "asked": 4,
+ "explored": 0,
+ "tension": [
+  2.279,
+  2.279,
+  13.532,
+  12.85,
+  12.85,
+  12.85
+ ],
+ "wall": 246.0,
+ "cpu": 245.9,
+ "proven": true,
+ "invented": [
+  {
+   "id": 4,
+   "subject": "language",
+   "body": "kadu(dudu(_))"
+  }
+ ],
+ "reused": [
+  3,
+  2
+ ],
+ "words_heard": [
+  "last",
+  "word"
+ ],
+ "said": [
+  "noka"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.18,
+  "ledger": 0.0,
+  "actions": 0.03,
+  "ask": 0.0,
+  "doubt": 0.14,
+  "grow": 5.3,
+  "imagine": 240.18,
+  "prove": 0.03
+ },
+ "built": [
+  {
+   "id": 3,
+   "name": "kadu",
+   "words": "finish what dudu starts",
+   "body": "foldn(\u03bba,e. e, 3, _)"
+  }
+ ],
+ "peak_mb": 13200.9296875,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "kadu(dudu(g))",
+ "verdict": "proven right",
+ "audit": 298,
+ "imagined_by": {
+  "method": "compose+wish",
+  "moves": "compose+wish",
+  "origin": "wished"
+ },
+ "method_named": {
+  "id": 1,
+  "moves": "compose then wish"
+ },
+ "configs": [
+  "ask",
+  "ask+grow",
+  "imagine+grow",
+  "prove+ask+grow",
+  "ask+prove",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: first (15.67).",
+  "I think bigger (level 1).",
+  "I was stuck, so I imagined the last step to the answer - foldn(\u03bba,e. e, 0, z) of a part - and looked for that part: dudu(g). Together: foldn(\u03bba,e. e, 0, dudu(g)).",
+  "I imagine by step: 1 new ideas.",
+  "I wish I could finish what dudu starts: I build it (kadu = foldn(\u03bba,e. e, 3, _)) and use it.",
+  "I imagine by compose then wish: 1 new ideas.",
+  "I keep 2 of my imagined ideas in mind and let 1 go.",
+  "I think bigger (level 2).",
+  "My audit passes kadu(dudu(g)) on 298 fresh inputs.",
+  "I think bigger (level 3).",
+  "It rings through the Field: 10 ways of working and imagining that led here are strengthened.",
+  "My audit passes kadu(dudu(g)) on 298 fresh inputs.",
+  "It rings through the Field: 2 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('c', 3, ('c', 2, ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: travelled john garden bedroom | question: what is the last word -> bedroom",
+  "story: hallway the went | question: what is the last word -> went",
+  "story: hallway moved office hallway bathroom mary | question: what is the last word -> mary"
+ ]
+}

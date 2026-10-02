@@ -1,0 +1,2 @@
+﻿name=m1a-t5-seed1-4f1791c from=(review notes, not published) commit=4f1791c cmd=core_check.py --seed 1 --checks T5 C11 C10 C1 C6 C8 --out (review notes, not published)\core-results\m1a-4f1791c started=2026-09-24T13:11:48
+exit=-1 minutes=9.9 finished=2026-09-24T13:21:45

@@ -1,0 +1,93 @@
+{
+ "task": "first 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  1,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   2,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "lit",
+   2
+  ],
+  [
+   "lit",
+   5
+  ],
+  [
+   "one",
+   null
+  ],
+  [
+   "zero",
+   null
+  ]
+ ],
+ "level": 0,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  0.518,
+  0.518
+ ],
+ "wall": 0.1,
+ "cpu": 0.1,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  1
+ ],
+ "words_heard": [
+  "first",
+  "word"
+ ],
+ "said": [
+  "first"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.0,
+  "ledger": 0.0,
+  "actions": 0.01,
+  "prove": 0.02,
+  "doubt": 0.0
+ },
+ "built": [],
+ "claim": "first(g)",
+ "verdict": "proven right",
+ "audit": 229,
+ "configs": [
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "My audit passes first(g) on 229 fresh inputs."
+ ],
+ "answer_repr": "('c', 1, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: mary moved to the hallway | question: what is the first word -> mary",
+  "story: mary travelled to the bathroom | question: what is the first word -> mary",
+  "story: daniel journeyed to the office | question: what is the first word -> daniel"
+ ]
+}

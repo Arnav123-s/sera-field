@@ -1,0 +1,27 @@
+Colab A/B 2026-10-01 08:51-10:03 UTC: sera_steps_ab.py --field /content/general-140e36f-s3/lang/field.pkl --from where --arm step --out /content/teach-ab-{old,new} --hours 1.2 --box 30 --seed 3 --book /content/wordnet
+old = 176de5a (/content/sera-v4-fix), new = e5666b4 (/content/sera-v4-teach: 176de5a + teach.patch)
+Copied from the Colab terminal screen (wrapped at its width). Logs on Colab: /content/logs/teach-ab-{old,new}.log
+
+--- every lesson's line, both arms (10:00 UTC) ---
+10:00
+== old
+where 1: not proven | None | steps 48 | 1877.9 s
+where 2: not proven | None | steps 47 | 1800.3 s
+== new
+where 1: proven right | who(head(filter(λe. eq(who(he
+ad(g)), head(e)), g))) | steps 11 | 1800.8 s
+where 2: proven right | where(g) | steps 2 | 3.5 s
+what_is 1: proven right | rifo(mika(g)) | steps 43 |
+1055.2 s
+what_is 2: proven right | sami(g) | steps 2 | 4.7 s
+who_in 1: proven right | in(g) | steps 2 | 7.1 s
+who_in 2: proven right | in(g) | steps 2 | 6.3 s
+2
+
+--- the where 1 lines of each arm (09:2x UTC) ---
+== old
+where 1: not proven | None | steps 48 | 1877.9 s
+== new
+where 1: proven right | who(head(filter(λe. eq(who(he
+ad(g)), head(e)), g))) | steps 11 | 1800.8 s
+where 2: proven right | where(g) | steps 2 | 3.5 s

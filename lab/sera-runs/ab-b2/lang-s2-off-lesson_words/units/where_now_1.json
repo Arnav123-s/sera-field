@@ -1,0 +1,227 @@
+{
+ "task": "where_now 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 21,
+ "answer": [
+  "foldn",
+  null,
+  [
+   "lam",
+   "ae",
+   [
+    "c",
+    3,
+    [
+     "var",
+     "e"
+    ]
+   ]
+  ],
+  [
+   "lit",
+   5
+  ],
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   7,
+   [
+    "cons",
+    null,
+    [
+     "head",
+     "list",
+     [
+      "var",
+      "g"
+     ]
+    ],
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "tail",
+       null,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   7,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "level": 2,
+ "asked": 18,
+ "explored": 0,
+ "tension": [
+  2.444,
+  2.446,
+  2.444,
+  2.564,
+  2.444,
+  2.444,
+  1.757,
+  1.759,
+  1.759,
+  1.759,
+  1.759,
+  1.759,
+  1.759,
+  9.605,
+  9.605,
+  9.605,
+  16.016,
+  16.016,
+  16.016,
+  16.016,
+  16.016,
+  16.016
+ ],
+ "wall": 1801.3,
+ "cpu": 1797.5,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "where",
+  "is",
+  "now"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 4.24,
+  "ledger": 0.0,
+  "actions": 0.58,
+  "ask": 0.0,
+  "doubt": 3.72,
+  "imagine": 1781.85,
+  "grow": 7.35
+ },
+ "built": [],
+ "peak_mb": 9664.890625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "grow",
+  "ask",
+  "ask",
+  "ask+grow",
+  "imagine",
+  "imagine+ask",
+  "ask",
+  "ask",
+  "ask"
+ ],
+ "say": [
+  "This rings in me: where (9.67), in (3.40).",
+  "I imagine by step then compose: 0 new ideas.",
+  "I imagine by wish: 0 new ideas.",
+  "I keep 1 of my imagined ideas in mind and let 1 go.",
+  "I imagine by step then wish then step: 0 new ideas.",
+  "I imagine by wish then step: 0 new ideas.",
+  "In where_now 1 my best idea is where(g), but I cannot finish (none of my ideas fits the examples). Is it right, or what am I missing?",
+  "I think bigger (level 1).",
+  "I think bigger (level 2).",
+  "I imagine by step then wish: 0 new ideas.",
+  "I imagine by step then recall: 4 new ideas.",
+  "I keep 0 of my imagined ideas in mind and let 5 go.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by compose: 0 new ideas.",
+  "In where_now 1 my best idea is foldn(\u03bba,e. fofo(e), 5, g), but I cannot finish (none of my ideas fits the examples, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('foldn', None, ('lam', 'ae', ('c', 3, ('var', 'e'))), ('lit', 5), ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: mary travelled to the hallway; sandra went to the bedroom; mary went to the office; sandra travelled to the garden | question: where is mary -> office",
+  "story: sandra journeyed to the bedroom; sandra went to the hallway; sandra journeyed to the bedroom | question: where is sandra -> bedroom",
+  "story: sandra moved to the kitchen; mary moved to the hallway; mary went to the bedroom | question: where is mary -> bedroom"
+ ]
+}

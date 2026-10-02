@@ -5,7 +5,7 @@ I compared the attachment with the preserved papers. It is a distinct document,
 `ac76b3aa0a709ed16f988b909f1b2a0accf5e1ec73d0ba02a12c00fc78b78ca1`.
 The private unchanged copy is `intake/addendum-20260920/singular-ecosystem.txt`.
 This is the latest design addendum. Earlier papers, models and failed attempts
-remain preserved. Antigravity remains paused; this integration is direct work.
+remain preserved. The earlier development work remains paused; this integration is direct work.
 
 ## Changes and concrete engineering obligations
 

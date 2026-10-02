@@ -1,0 +1,4 @@
+judge: sh bash /content/onefield_ab.sh judge 6accd2d | env RUN=b1 | package 1d1f91f | started 2026-10-02 00:18 UTC | exit 0 | wall 9210 s
+REGRESSION DONE 306
+REGRESSION DONE 306
+JUDGE REGRESSION 306 and 306 claims; all the same ; accepted: 51

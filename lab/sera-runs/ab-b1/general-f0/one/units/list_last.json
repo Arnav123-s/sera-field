@@ -1,0 +1,212 @@
+{
+ "task": "list: last",
+ "subject": "code",
+ "kind": "exact:list->num",
+ "teaching": true,
+ "steps": 6,
+ "answer": [
+  "foldn",
+  null,
+  [
+   "lam",
+   "ae",
+   [
+    "var",
+    "e"
+   ]
+  ],
+  [
+   "zero",
+   null
+  ],
+  [
+   "var",
+   "l"
+  ]
+ ],
+ "others": [
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "var",
+     "e"
+    ]
+   ],
+   [
+    "zero",
+    null
+   ],
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "l"
+    ]
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "var",
+     "e"
+    ]
+   ],
+   [
+    "c",
+    15,
+    [
+     "var",
+     "l"
+    ]
+   ],
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "l"
+    ]
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "var",
+     "e"
+    ]
+   ],
+   [
+    "lit",
+    2
+   ],
+   [
+    "var",
+    "l"
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "var",
+     "e"
+    ]
+   ],
+   [
+    "lit",
+    3
+   ],
+   [
+    "var",
+    "l"
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "var",
+     "e"
+    ]
+   ],
+   [
+    "lit",
+    4
+   ],
+   [
+    "var",
+    "l"
+   ]
+  ]
+ ],
+ "level": 2,
+ "asked": 4,
+ "explored": 0,
+ "tension": [
+  6.075,
+  10.151,
+  13.656,
+  13.765,
+  13.765,
+  11.147
+ ],
+ "wall": 48.8,
+ "cpu": 48.5,
+ "proven": true,
+ "invented": [
+  {
+   "id": 22,
+   "subject": "code",
+   "body": "foldn(\u03bba,e. e, 0, _)"
+  }
+ ],
+ "reused": [],
+ "words_heard": [
+  "last"
+ ],
+ "said": [
+  "last"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 1.61,
+  "ledger": 0.0,
+  "actions": 0.09,
+  "ask": 0.0,
+  "doubt": 0.63,
+  "grow": 41.9,
+  "prove": 0.02,
+  "imagine": 0.03
+ },
+ "built": [],
+ "peak_mb": 6668.0234375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "foldn(\u03bba,e. e, 0, l)",
+ "verdict": "proven right",
+ "audit": 477,
+ "configs": [
+  "ask",
+  "ask+grow",
+  "ask+prove+grow",
+  "prove+imagine",
+  "ask",
+  "leave"
+ ],
+ "say": [
+  "I think bigger (level 1).",
+  "My audit found an input it gets wrong; I learn from it.",
+  "I think bigger (level 2).",
+  "The judge refuted it: the 4 ways of working and imagining that led there are weakened a little.",
+  "My audit passes foldn(\u03bba,e. e, 0, l) on 477 fresh inputs.",
+  "I imagine by compose: 0 new ideas.",
+  "I imagine by recall then compose: 3 new ideas.",
+  "I keep 0 of my imagined ideas in mind and let 3 go."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

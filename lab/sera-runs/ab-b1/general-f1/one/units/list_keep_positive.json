@@ -1,0 +1,266 @@
+{
+ "task": "list: keep positive",
+ "subject": "code",
+ "kind": "exact:list->list",
+ "teaching": true,
+ "steps": 17,
+ "answer": [
+  "filter",
+  null,
+  [
+   "lam",
+   "e",
+   [
+    "lt",
+    null,
+    [
+     "zero",
+     null
+    ],
+    [
+     "var",
+     "e"
+    ]
+   ]
+  ],
+  [
+   "var",
+   "l"
+  ]
+ ],
+ "others": [
+  [
+   "filter",
+   null,
+   [
+    "lam",
+    "e",
+    [
+     "lt",
+     null,
+     [
+      "var",
+      "e"
+     ],
+     [
+      "c",
+      2,
+      [
+       "var",
+       "e"
+      ]
+     ]
+    ]
+   ],
+   [
+    "var",
+    "l"
+   ]
+  ],
+  [
+   "filteri",
+   null,
+   [
+    "lam",
+    "ie",
+    [
+     "lt",
+     null,
+     [
+      "c",
+      16,
+      [
+       "var",
+       "i"
+      ]
+     ],
+     [
+      "var",
+      "e"
+     ]
+    ]
+   ],
+   [
+    "var",
+    "l"
+   ]
+  ],
+  [
+   "filteri",
+   null,
+   [
+    "lam",
+    "ie",
+    [
+     "lt",
+     null,
+     [
+      "var",
+      "i"
+     ],
+     [
+      "c",
+      2,
+      [
+       "var",
+       "e"
+      ]
+     ]
+    ]
+   ],
+   [
+    "var",
+    "l"
+   ]
+  ],
+  [
+   "filter",
+   null,
+   [
+    "lam",
+    "e",
+    [
+     "lt",
+     null,
+     [
+      "one",
+      null
+     ],
+     [
+      "var",
+      "e"
+     ]
+    ]
+   ],
+   [
+    "var",
+    "l"
+   ]
+  ],
+  [
+   "filteri",
+   null,
+   [
+    "lam",
+    "ie",
+    [
+     "lt",
+     null,
+     [
+      "var",
+      "i"
+     ],
+     [
+      "c",
+      10,
+      [
+       "var",
+       "e"
+      ]
+     ]
+    ]
+   ],
+   [
+    "var",
+    "l"
+   ]
+  ]
+ ],
+ "level": 3,
+ "asked": 14,
+ "explored": 0,
+ "tension": [
+  0.538,
+  0.538,
+  0.538,
+  0.561,
+  0.561,
+  0.561,
+  0.561,
+  0.561,
+  0.561,
+  0.561,
+  0.561,
+  0.561,
+  0.561,
+  0.561,
+  19.166,
+  19.166,
+  19.166
+ ],
+ "wall": 1001.2,
+ "cpu": 995.8,
+ "proven": true,
+ "invented": [
+  {
+   "id": 17,
+   "subject": "code",
+   "body": "filter(\u03bbe. lt(0, e), _)"
+  }
+ ],
+ "reused": [],
+ "words_heard": [
+  "keep",
+  "positive"
+ ],
+ "said": [
+  "keep"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 8.58,
+  "ledger": 0.0,
+  "actions": 0.31,
+  "ask": 0.01,
+  "doubt": 4.23,
+  "grow": 145.03,
+  "imagine": 840.98,
+  "prove": 0.02
+ },
+ "built": [],
+ "peak_mb": 5434.015625,
+ "peak_mb_by": {
+  "imagine": 627.5
+ },
+ "memory_stops": 0,
+ "claim": "filter(\u03bbe. lt(0, e), l)",
+ "verdict": "proven right",
+ "audit": 543,
+ "configs": [
+  "ask",
+  "ask",
+  "ask+grow",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+grow+imagine",
+  "grow+prove",
+  "imagine",
+  "leave"
+ ],
+ "say": [
+  "I think bigger (level 1).",
+  "In list: keep positive my best idea is l, but I cannot finish (none of my ideas fits the examples). Is it right, or what am I missing?",
+  "I think bigger (level 2).",
+  "I imagine by wish then compose then wish then wish: 0 new ideas.",
+  "I imagine by wish then step: 0 new ideas.",
+  "I think bigger (level 3).",
+  "My audit passes filter(\u03bbe. lt(0, e), l) on 543 fresh inputs.",
+  "It rings through the Field: 20 ways of working and imagining that led here are strengthened.",
+  "I imagine by compose: 0 new ideas."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

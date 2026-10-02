@@ -1,0 +1,109 @@
+{
+ "task": "rail: spring and drag 1",
+ "subject": "physics",
+ "kind": "strengths:num->num",
+ "teaching": true,
+ "steps": 5,
+ "answer": null,
+ "others": null,
+ "level": 1,
+ "asked": 4,
+ "explored": 2,
+ "tension": [
+  5.006,
+  14.323,
+  4.883,
+  4.534,
+  4.533
+ ],
+ "wall": 493.7,
+ "cpu": 477.8,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  8
+ ],
+ "words_heard": [
+  "drag",
+  "far",
+  "fast",
+  "back",
+  "spring"
+ ],
+ "said": [
+  "spring"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 3.64,
+  "ledger": 38.95,
+  "actions": 62.66,
+  "explore": 0.02,
+  "doubt": 10.58,
+  "ask": 0.02,
+  "prove": 290.45,
+  "imagine": 0.19,
+  "grow": 86.37
+ },
+ "built": [],
+ "peak_mb": 6668.0234375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "a free curve in ((speed + speed) + ((speed + speed) + 1)) (9 knots) + my shape 12 of position",
+ "band": 0.03900444908365569,
+ "verdict": "proven right",
+ "gap": 6.661338147750939e-16,
+ "signs": {
+  "position": -1
+ },
+ "certified": [
+  {
+   "part": 0,
+   "as": "drawing",
+   "on": "position",
+   "shape": 12,
+   "concept": 8
+  },
+  {
+   "part": 1,
+   "as": "curve",
+   "on": "dim:v.v.add.v.v.add.1.add.add@8"
+  }
+ ],
+ "question": {
+  "text": "The 8 things here have only 3 kinds of mass (0.853, 0.918, 2.286). Why so few? What makes a mass? In all 12 worlds I measured so far, things came in fewer kinds of mass than there were things.",
+  "things": 8,
+  "kinds": 3,
+  "masses": [
+   0.853,
+   0.918,
+   2.286
+  ]
+ },
+ "attributed": true,
+ "configs": [
+  "explore+ask",
+  "ask+prove+imagine",
+  "explore+grow",
+  "ask",
+  "leave"
+ ],
+ "say": [
+  "The judge does not accept some strength times ((speed + speed) + ((speed + speed) + 1)) (clipped at +-16) + my shape 12 of position as my formula: something else is here: the law misfits more objects than bumps explain. I say it as a curve.",
+  "The judge accepts: a free curve in ((speed + speed) + ((speed + speed) + 1)) (9 knots) + my shape 12 of position up to 0.2 where I looked.",
+  "I keep what was right: spring of position explains 614932 nats; I build on it and look for the rest.",
+  "I keep what was right: kadu(twice(s)) of speed explains 57176 nats; I build on it and look for the rest.",
+  "I imagine by keep then compose: 1124 new ideas.",
+  "I imagine by recall then swap: 6 new ideas.",
+  "I keep 34 of my imagined ideas in mind and let 1096 go.",
+  "It rings through the Field: 3 ways of working and imagining that led here are strengthened.",
+  "I think bigger (level 1)."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

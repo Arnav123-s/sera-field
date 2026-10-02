@@ -1,0 +1,108 @@
+{
+ "task": "is_in 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 5,
+ "answer": [
+  "lit",
+  3
+ ],
+ "others": [
+  [
+   "lit",
+   4
+  ],
+  [
+   "lit",
+   5
+  ],
+  [
+   "lit",
+   8
+  ],
+  [
+   "one",
+   null
+  ],
+  [
+   "zero",
+   null
+  ]
+ ],
+ "level": 5,
+ "asked": 5,
+ "explored": 0,
+ "tension": [
+  4.008,
+  11.287,
+  11.287,
+  11.429,
+  19.72,
+  0.0
+ ],
+ "wall": 1800.5,
+ "cpu": 1777.7,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "is",
+  "yes",
+  "no"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.71,
+  "ledger": 0.0,
+  "actions": 0.31,
+  "ask": 0.0,
+  "grow": 340.32,
+  "imagine": 1452.82,
+  "doubt": 0.41
+ },
+ "built": [],
+ "peak_mb": 9470.96875,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "ask+grow+imagine",
+  "ask+imagine+grow",
+  "ask+imagine+grow",
+  "ask+grow+imagine",
+  "ask+imagine+grow"
+ ],
+ "say": [
+  "This rings in me: in (10.25), now (3.52).",
+  "I think bigger (level 1).",
+  "I imagine by wish then compose: 0 new ideas.",
+  "I imagine by compose then wish then recall: 2 new ideas.",
+  "I keep 0 of my imagined ideas in mind and let 4 go.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step then compose: 0 new ideas.",
+  "I think bigger (level 2).",
+  "I imagine by wish: 0 new ideas.",
+  "I imagine by wish then wish then step: 0 new ideas.",
+  "I think bigger (level 3).",
+  "I think bigger (level 4).",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by wish: 0 new ideas.",
+  "I think bigger (level 5).",
+  "In is_in 1 my best idea is 3, but I cannot finish (1.8 nats of doubt, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('lit', 3)",
+ "stage": "teach",
+ "english": [
+  "story: john journeyed to the bathroom; daniel went to the office | question: is daniel in the office yes or no -> yes",
+  "story: daniel moved to the bathroom; sandra travelled to the office; john moved to the office; mary moved to the hallway | question: is mary in the bedroom yes or no -> no",
+  "story: mary moved to the kitchen; john moved to the bedroom; sandra moved to the bathroom; daniel travelled to the bedroom | question: is mary in the kitchen yes or no -> yes"
+ ]
+}

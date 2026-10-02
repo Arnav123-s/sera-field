@@ -1,0 +1,141 @@
+{
+ "task": "what_is 1",
+ "subject": "language",
+ "kind": "exact:list(list)->list",
+ "teaching": true,
+ "steps": 3,
+ "answer": [
+  "tail",
+  null,
+  [
+   "tail",
+   null,
+   [
+    "c",
+    8,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "tail",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "c",
+     2,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "nil",
+   null
+  ],
+  [
+   "c",
+   2,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   8,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "head",
+   "list",
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "level": 1,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  5.161,
+  11.3,
+  11.3
+ ],
+ "wall": 6.2,
+ "cpu": 6.2,
+ "proven": true,
+ "invented": [
+  {
+   "id": 9,
+   "subject": "language",
+   "body": "tail(tail(pevi(_)))"
+  },
+  {
+   "id": 10,
+   "subject": "language",
+   "inner": "the part it works on",
+   "body": "tail(pevi(_))"
+  }
+ ],
+ "reused": [
+  8
+ ],
+ "words_heard": [
+  "what",
+  "is"
+ ],
+ "said": [
+  "midu"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.08,
+  "ledger": 0.0,
+  "actions": 0.03,
+  "grow": 0.37,
+  "ask": 0.0,
+  "doubt": 0.06,
+  "prove": 0.04
+ },
+ "built": [],
+ "peak_mb": 10168.0546875,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "tail(tail(pevi(g)))",
+ "verdict": "proven right",
+ "audit": 378,
+ "configs": [
+  "grow+ask",
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "I think bigger (level 1).",
+  "My audit passes tail(tail(pevi(g))) on 378 fresh inputs."
+ ],
+ "answer_repr": "('tail', None, ('tail', None, ('c', 8, ('var', 'g'))))",
+ "stage": "teach",
+ "english": [
+  "story: darkened is fabrics and grown dark in color over time; dispiritedness is a feeling of low spirits; stemmatic is of or relating to a textual stemma | question: what is darkened -> fabrics and grown dark in color over time",
+  "story: manidae is coextensive with the order pholidota; meclofenamate is a nonsteroidal name used to treat arthritis | question: what is manidae -> coextensive with the order pholidota",
+  "story: minter is a skilled worker who coins or stamps money; subacid is slightly sour to the taste; dope is street names for marijuana; vapourised is converted into a gas or vapor | question: what is minter -> a skilled worker who coins or stamps money"
+ ]
+}

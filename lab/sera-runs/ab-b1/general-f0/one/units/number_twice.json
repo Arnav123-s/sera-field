@@ -1,0 +1,98 @@
+{
+ "task": "number: twice",
+ "subject": "math",
+ "kind": "exact:num->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  23,
+  [
+   "var",
+   "n"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   6,
+   [
+    "var",
+    "n"
+   ]
+  ],
+  [
+   "c",
+   10,
+   [
+    "c",
+    25,
+    [
+     "var",
+     "n"
+    ]
+   ]
+  ],
+  [
+   "lit",
+   2
+  ],
+  [
+   "lit",
+   4
+  ],
+  [
+   "lit",
+   6
+  ]
+ ],
+ "level": 0,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  5.806,
+  5.806
+ ],
+ "wall": 2.9,
+ "cpu": 2.9,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  23
+ ],
+ "words_heard": [
+  "twice"
+ ],
+ "said": [
+  "twice"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.19,
+  "ledger": 0.0,
+  "actions": 0.0,
+  "prove": 0.01,
+  "doubt": 0.02
+ },
+ "built": [],
+ "peak_mb": 6668.0234375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "kape(n)",
+ "verdict": "proven right",
+ "audit": 248,
+ "configs": [
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "My audit passes kape(n) on 248 fresh inputs."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

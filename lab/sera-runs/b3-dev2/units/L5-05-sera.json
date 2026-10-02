@@ -1,0 +1,37 @@
+{
+ "suite": "L5",
+ "index": 5,
+ "mind": "sera",
+ "truth": "straight with position + cubic with position",
+ "claim": "straight with position + cubic with position",
+ "sure": true,
+ "verified": true,
+ "right": true,
+ "wrong_frozen": false,
+ "sure_unverified": false,
+ "right_grid": true,
+ "wrong_grid": false,
+ "surface_ok": false,
+ "wrong": false,
+ "throws": 18,
+ "own": 2,
+ "seconds": 29.0,
+ "certify_calls": 2,
+ "families": 67,
+ "gap": "I am sure the force is straight with position + cubic with position where I looked (position -1.1 to 0.47, speed -1.4 to 2). Something more may be there, but it is too small to see here.",
+ "imagined_top3": [
+  [
+   "straight with position + cubic with position",
+   0.623
+  ],
+  [
+   "growing with position + cubic with position",
+   0.286
+  ],
+  [
+   "straight with position + growing with position",
+   0.022
+  ]
+ ],
+ "truth_in_imagined": true
+}

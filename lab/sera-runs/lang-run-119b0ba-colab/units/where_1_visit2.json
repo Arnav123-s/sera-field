@@ -1,0 +1,104 @@
+{
+ "task": "where 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  7,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   4,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "lit",
+   3
+  ],
+  [
+   "lit",
+   4
+  ],
+  [
+   "lit",
+   5
+  ]
+ ],
+ "level": 0,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  3.509,
+  3.509
+ ],
+ "wall": 3.5,
+ "cpu": 3.5,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  7
+ ],
+ "words_heard": [
+  "where",
+  "is"
+ ],
+ "said": [
+  "where"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.0,
+  "ledger": 0.0,
+  "actions": 0.02,
+  "prove": 0.04,
+  "doubt": 0.0
+ },
+ "built": [],
+ "peak_mb": 17160.21484375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "where(g)",
+ "verdict": "proven right",
+ "audit": 236,
+ "configs": [
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "My audit passes where(g) on 236 fresh inputs."
+ ],
+ "answer_repr": "('c', 7, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: john travelled to the kitchen; mary moved to the bedroom | question: where is mary -> bedroom",
+  "story: sandra moved to the hallway; john went to the garden | question: where is sandra -> hallway",
+  "story: john went to the kitchen; mary journeyed to the hallway; daniel moved to the kitchen | question: where is john -> kitchen"
+ ]
+}

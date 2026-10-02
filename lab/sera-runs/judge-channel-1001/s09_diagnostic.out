@@ -1,0 +1,37 @@
+actual unregistered claim: (('cell', 'position', 9),)
+whole free 9 fit True True LL -1401.8 object max RMS {0: 640.11, 1: 895.71, 2: 873.17, 3: 873.32, 4: 623.81, 5: 723.15, 6: 895.74, 7: 895.76}
+   certificate False 12.31659742388361 None ('something else is here: the law misfits more objects than bumps explain',)
+whole free 17 fit True True LL -96.78 object max RMS {0: 3.46, 1: 222.77, 2: 22.17, 3: 22.42, 4: 3.22, 5: 3.72, 6: 222.64, 7: 25.37}
+   certificate False 12.31659742388361 None ('something else is here: the law misfits more objects than bumps explain',)
+whole free 33 fit True True LL 6827.48 object max RMS {0: 1.36, 1: 1.21, 2: 1.39, 3: 1.51, 4: 1.42, 5: 1.25, 6: 1.2, 7: 1.35}
+   certificate True -1.6174121719982029 0.043 ()
+   checker True [] observer {'verdict': 'proven right', 'gap': 0.04729286860968873}
+whole tied cubic fit True True LL 2002.78 object max RMS {0: 3.31, 1: 2.62, 2: 3.51, 3: 3.6, 4: 3.36, 5: 4.01, 6: 2.57, 7: 3.15}
+   certificate False 12.31659742388361 None ('something else is here: the law misfits more objects than bumps explain',)
+cubic dimension 3 fit True True LL 7209.53 object max RMS {0: 1.03, 1: 1.03, 2: 1.05, 3: 1.19, 4: 1.0, 5: 1.0, 6: 1.08, 7: 1.03}
+   certificate False -2.5862554809517118 0.2042 ('something else could be as large as 0.204 > eps 0.2',)
+cubic dimension 4 fit True True LL 7204.9 object max RMS {0: 1.04, 1: 1.03, 2: 1.04, 3: 1.18, 4: 1.02, 5: 0.99, 6: 1.07, 7: 1.05}
+   certificate True -2.5862554809517118 0.0582 ()
+   checker True [] observer {'verdict': 'proven right', 'gap': 4.440892098500626e-16}
+analytic-proxy fit True True LL 7204.82 object max RMS {0: 1.04, 1: 1.03, 2: 1.04, 3: 1.18, 4: 1.02, 5: 0.99, 6: 1.07, 7: 1.05}
+Traceback (most recent call last):
+  File "D:\ai\labs\ccops5-sera-lab\sera-runs\judge-channel-1001\s09_diagnostic.py", line 63, in <module>
+    report('analytic-proxy', analytic)
+  File "D:\ai\labs\ccops5-sera-lab\sera-runs\judge-channel-1001\s09_diagnostic.py", line 47, in report
+    cert = T.certify(led, fam, TS.EPS, claim='functional')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "(review notes, not published)\ccops5\core\truth.py", line 1162, in certify
+    return certify_functional(ledger, family, eps, alpha, delta, audit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "(review notes, not published)\ccops5\core\truth.py", line 1129, in certify_functional
+    lp = functional_prior(family)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "(review notes, not published)\ccops5\core\truth.py", line 986, in functional_prior
+    bases = [grammar.base_input(t[1]) for t in fam]
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "(review notes, not published)\ccops5\core\grammar.py", line 231, in base_input
+    return inp if is_dim(inp) else lens(inp)[0]
+                                   ^^^^^^^^^
+  File "(review notes, not published)\ccops5\core\grammar.py", line 114, in lens
+    raise ValueError(f'not an input: {inp!r}')
+ValueError: not an input: 'cubic'

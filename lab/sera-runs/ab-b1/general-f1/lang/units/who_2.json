@@ -1,0 +1,229 @@
+{
+ "task": "who 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 30,
+ "answer": [
+  "head",
+  null,
+  [
+   "head",
+   "list",
+   [
+    "c",
+    23,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   25,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   25,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   25,
+   [
+    "c",
+    23,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "c",
+    20,
+    [
+     "c",
+     25,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "c",
+    25,
+    [
+     "c",
+     23,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "c",
+    20,
+    [
+     "c",
+     25,
+     [
+      "c",
+      23,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ],
+   [
+    "c",
+    25,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "level": 3,
+ "asked": 28,
+ "explored": 0,
+ "tension": [
+  3.151,
+  12.355,
+  12.355,
+  12.355,
+  12.355,
+  12.355,
+  12.355,
+  12.355,
+  12.355,
+  12.355,
+  6.209,
+  1.449,
+  1.449,
+  1.449,
+  6.209,
+  1.449,
+  6.209,
+  12.355,
+  6.209,
+  12.355,
+  6.209,
+  12.355,
+  12.355,
+  12.355,
+  12.355,
+  12.355,
+  12.355,
+  12.355,
+  6.209,
+  12.355,
+  12.354
+ ],
+ "wall": 2192.5,
+ "cpu": 2183.3,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "who"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 15.35,
+  "ledger": 0.0,
+  "actions": 0.58,
+  "ask": 0.04,
+  "grow": 591.03,
+  "doubt": 8.31,
+  "imagine": 1566.3
+ },
+ "built": [],
+ "peak_mb": 4349.4375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "ask+grow",
+  "ask",
+  "ask",
+  "grow",
+  "imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "imagine+ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+grow"
+ ],
+ "say": [
+  "I think bigger (level 1).",
+  "I think bigger (level 2).",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step then compose: 0 new ideas.",
+  "In who 2 my best idea is kape(g), but I cannot finish (none of my ideas fits the examples). Is it right, or what am I missing?",
+  "I imagine by step then wish then step: 0 new ideas.",
+  "I imagine by wish then wish then compose then wish then wish: 0 new ideas.",
+  "I think bigger (level 3).",
+  "In who 2 my best idea is head(head(reverse(g))), but I cannot finish (none of my ideas fits the examples, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('head', None, ('head', 'list', ('c', 23, ('var', 'g'))))",
+ "stage": "teach",
+ "english": [
+  "story: daniel travelled to the office; mary journeyed to the bathroom | question: who went to the office -> daniel",
+  "story: mary moved to the bathroom; daniel moved to the garden | question: who went to the bathroom -> mary",
+  "story: daniel journeyed to the bedroom; daniel moved to the garden; mary moved to the kitchen | question: who went to the kitchen -> mary"
+ ]
+}

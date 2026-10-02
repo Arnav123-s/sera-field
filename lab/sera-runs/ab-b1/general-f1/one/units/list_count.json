@@ -1,0 +1,152 @@
+{
+ "task": "list: count",
+ "subject": "code",
+ "kind": "exact:list->num",
+ "teaching": true,
+ "steps": 5,
+ "answer": [
+  "c",
+  13,
+  [
+   "map",
+   null,
+   [
+    "lam",
+    "e",
+    [
+     "one",
+     null
+    ]
+   ],
+   [
+    "var",
+    "l"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "lit",
+   5
+  ],
+  [
+   "lit",
+   6
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "lit",
+     5
+    ]
+   ],
+   [
+    "zero",
+    null
+   ],
+   [
+    "var",
+    "l"
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "lit",
+     6
+    ]
+   ],
+   [
+    "zero",
+    null
+   ],
+   [
+    "var",
+    "l"
+   ]
+  ],
+  [
+   "lit",
+   4
+  ]
+ ],
+ "level": 1,
+ "asked": 3,
+ "explored": 0,
+ "tension": [
+  4.008,
+  2.065,
+  2.065,
+  15.733,
+  15.733
+ ],
+ "wall": 6.8,
+ "cpu": 6.7,
+ "proven": true,
+ "invented": [
+  {
+   "id": 14,
+   "subject": "code",
+   "body": "sum(map(\u03bbe. 1, _))"
+  },
+  {
+   "id": 15,
+   "subject": "code",
+   "inner": "the part it works on",
+   "body": "map(\u03bbe. 1, _)"
+  }
+ ],
+ "reused": [
+  13
+ ],
+ "words_heard": [
+  "count"
+ ],
+ "said": [
+  "count"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.68,
+  "ledger": 0.0,
+  "actions": 0.08,
+  "ask": 0.0,
+  "doubt": 0.23,
+  "grow": 3.72,
+  "prove": 0.03
+ },
+ "built": [],
+ "peak_mb": 4806.5625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "sum(map(\u03bbe. 1, l))",
+ "verdict": "proven right",
+ "audit": 461,
+ "configs": [
+  "ask",
+  "ask",
+  "ask+grow",
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "I think bigger (level 1).",
+  "My audit passes sum(map(\u03bbe. 1, l)) on 461 fresh inputs.",
+  "It rings through the Field: 4 ways of working and imagining that led here are strengthened."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

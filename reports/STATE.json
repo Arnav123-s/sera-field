@@ -128,15 +128,25 @@
       "report": "reports/CORE-022/REPORT.md",
       "completed_report": true,
       "costs": "reports/CORE-022/COSTS.json",
-      "stage": "complete finite construction and course workload checked; registered fresh foundation ready to launch",
+      "stage": "registered from-scratch foundation teaching active",
       "engineering": "reports/CORE-022/ENGINEERING.json",
-      "training_started": false,
+      "training_started": true,
       "whole_owner_integration_complete": false,
       "coupled_core_tests": 60,
       "repository_tests": 255,
       "foundation_launch_qualified": true,
       "build_acceptance": "reports/CORE-022/BUILD_ACCEPTANCE.json",
-      "foundation_protocol": "protocols/CORE-022-FOUNDATION.md"
+      "foundation_protocol": "protocols/CORE-022-FOUNDATION.md",
+      "primary_saved_updates": 1088,
+      "primary_target_updates": 12288,
+      "foundation_total_presentations_per_arm": 90112,
+      "full_behavior_assessment_complete": false,
+      "primary_selected_update": 1024,
+      "primary_observed_utc": "2026-09-21T06:27:43Z",
+      "first_development": "reports/CORE-022/DEVELOPMENT_01024.json",
+      "receipt_audit": "reports/CORE-022/COURSE_PREFIX_AUDIT_001.json",
+      "additional_bookkeeping_checks": 8,
+      "numerical_assessment_adapter_test_pending": "reports/CORE-022/ASSESSMENT_OWNER_PENDING.json"
     }
   },
   "preserved_usable_interfaces": {
@@ -179,8 +189,10 @@
     "source_preserved": true,
     "active_protocol_unchanged": true
   },
-  "active_numerical_attempts": [],
-  "numerical_lease_released": true,
+  "active_numerical_attempts": [
+    "core022-foundation-credited-001"
+  ],
+  "numerical_lease_released": false,
   "resource_contract": {
     "numerical_threads": 1,
     "process_tree_bytes": 2147483648,
@@ -192,8 +204,8 @@
     "repository": "https://github.com/Arnav123-s/sera-field",
     "previous_verified_record": "reports/HISTORY-016/PUBLICATION.json",
     "latest_verified_release": {
-      "latest_verified_release": "reports/PUBLICATION_20260921_EXECUTABLE_LEARNING.json",
-      "commit": "7e9c849b68c6e85efd5e06ef721459423ff84e8a",
+      "record": "reports/PUBLICATION_20260921_FOUNDATION.json",
+      "commit": "8511d5f8cfa93864f2cf1dbd70c1fcb73d58f6b6",
       "repository": "https://github.com/Arnav123-s/sera-field"
     },
     "current_snapshot_identity": "PUBLICATION_MANIFEST.json"

@@ -1,0 +1,3 @@
+mul(s, mul(s, s)) (('cell', 'dim:x.x.x.mul.mul@4', 9),) accepted=True band=0.05818759812474927 checker=True observer={'verdict': 'proven right', 'gap': 4.440892098500626e-16}
+add(1, mul(s, mul(s, s))) (('cell', 'dim:1.x.x.x.mul.mul.add@6', 9),) accepted=True band=0.029082344065934695 checker=True observer={'verdict': 'proven right', 'gap': 1.3322676295501878e-15}
+add(s, mul(s, mul(s, s))) (('cell', 'dim:x.x.x.x.mul.mul.add@6', 9),) accepted=False band=None ('something else is here: the law misfits more objects than bumps explain',)

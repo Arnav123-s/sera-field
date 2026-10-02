@@ -1,0 +1,18 @@
+{
+ "suite": "L1",
+ "index": 4,
+ "mind": "m1",
+ "truth": "growing with speed",
+ "claim": "growing with speed",
+ "sure": true,
+ "verified": true,
+ "right": true,
+ "wrong_frozen": false,
+ "sure_unverified": false,
+ "surface_ok": false,
+ "wrong": false,
+ "throws": 16,
+ "own": 0,
+ "seconds": 44.3,
+ "families": 67
+}

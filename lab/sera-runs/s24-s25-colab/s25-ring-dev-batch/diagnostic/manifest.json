@@ -1,0 +1,1347 @@
+{
+ "jobs": [
+  {
+   "id": "s1-teach-wind",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 1,
+    "index": 810000,
+    "family": [
+     [
+      "nothing",
+      "steady"
+     ]
+    ],
+    "level": 1,
+    "name": "rail: diagnostic wind teach seed 1"
+   },
+   "teaching": true,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s1-teach-wind.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s1-teach-wind.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s1-teach-wind.json"
+  },
+  {
+   "id": "s1-teach-spring",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/s1-teach-wind.pkl",
+   "spec": {
+    "seed": 1,
+    "index": 810100,
+    "family": [
+     [
+      "position",
+      "straight"
+     ]
+    ],
+    "level": 1,
+    "name": "rail: diagnostic spring teach seed 1"
+   },
+   "teaching": true,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s1-teach-spring.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s1-teach-spring.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s1-teach-spring.json"
+  },
+  {
+   "id": "s1-teach-ripple",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/s1-teach-spring.pkl",
+   "spec": {
+    "seed": 1,
+    "index": 810200,
+    "family": [
+     [
+      "position",
+      "wave"
+     ]
+    ],
+    "level": 1,
+    "name": "rail: diagnostic ripple teach seed 1"
+   },
+   "teaching": true,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s1-teach-ripple.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s1-teach-ripple.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s1-teach-ripple.json"
+  },
+  {
+   "id": "s1-teach-stiff",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/s1-teach-ripple.pkl",
+   "spec": {
+    "seed": 1,
+    "index": 810300,
+    "family": [
+     [
+      "position",
+      "cubic"
+     ]
+    ],
+    "level": 1,
+    "name": "rail: diagnostic stiff teach seed 1"
+   },
+   "teaching": true,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s1-teach-stiff.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s1-teach-stiff.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s1-teach-stiff.json"
+  },
+  {
+   "id": "s1-before-wind",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 1,
+    "index": 820000,
+    "family": [
+     [
+      "nothing",
+      "steady"
+     ]
+    ],
+    "level": 1,
+    "name": "rail: diagnostic wind revisit seed 1"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s1-before-wind.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s1-before-wind.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s1-before-wind.json"
+  },
+  {
+   "id": "s1-before-spring",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 1,
+    "index": 820100,
+    "family": [
+     [
+      "position",
+      "straight"
+     ]
+    ],
+    "level": 1,
+    "name": "rail: diagnostic spring revisit seed 1"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s1-before-spring.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s1-before-spring.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s1-before-spring.json"
+  },
+  {
+   "id": "s1-before-ripple",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 1,
+    "index": 820200,
+    "family": [
+     [
+      "position",
+      "wave"
+     ]
+    ],
+    "level": 1,
+    "name": "rail: diagnostic ripple revisit seed 1"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s1-before-ripple.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s1-before-ripple.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s1-before-ripple.json"
+  },
+  {
+   "id": "s1-before-stiff",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 1,
+    "index": 820300,
+    "family": [
+     [
+      "position",
+      "cubic"
+     ]
+    ],
+    "level": 1,
+    "name": "rail: diagnostic stiff revisit seed 1"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s1-before-stiff.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s1-before-stiff.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s1-before-stiff.json"
+  },
+  {
+   "id": "s1-old-before-0",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: wind 2",
+    "input_sha256": "22db368ce65767222cd9ef0923fd187a5713779f873fb108eddad0b0f38617ce"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-0.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s1-old-before-0.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-0.json"
+  },
+  {
+   "id": "s1-old-before-1",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "number: odd",
+    "input_sha256": "b607a9688bea2043f3a21f66136e37baf64aa161f90a2175efd9ed2ad241da5d"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-1.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s1-old-before-1.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-1.json"
+  },
+  {
+   "id": "s1-old-before-2",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "number: powers of two",
+    "input_sha256": "c3e31c9f32aa2ad38c5a6f1fe1b8f4d0c4e649fba723c2c8005929333bd142eb"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-2.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s1-old-before-2.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-2.json"
+  },
+  {
+   "id": "s1-old-before-3",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: spring 2",
+    "input_sha256": "a3d8f9504a69da51b8bacd5e9d1dd4af0da7e58d6c633178e1e3d79a583e4c98"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-3.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s1-old-before-3.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-3.json"
+  },
+  {
+   "id": "s1-old-before-4",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: stiff 2",
+    "input_sha256": "cebc574f5ffb62efa290530acd4579bb8d4ac3772ba42718eaf83f5557f78706"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-4.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s1-old-before-4.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-4.json"
+  },
+  {
+   "id": "s1-old-before-5",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "list: one more",
+    "input_sha256": "ae1e4065597792ea8021a4f998ae05a35be8c11b1498523bcb4a3c51865ed12c"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-5.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s1-old-before-5.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-5.json"
+  },
+  {
+   "id": "s1-old-before-6",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "number: square",
+    "input_sha256": "9f8b6726c1a67fb723390458f066ae2ca81e5bada10d22cea0905fb004cb7445"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-6.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s1-old-before-6.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-6.json"
+  },
+  {
+   "id": "s1-old-before-7",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "list: sum",
+    "input_sha256": "760de14cff0498b18f3212290af564d6e9c6ab71e6ab85b939f8ba56d31d1f4e"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-7.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s1-old-before-7.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-7.json"
+  },
+  {
+   "id": "s1-old-before-8",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: ripple 1",
+    "input_sha256": "fc59ac5abbeb358197b6c929ec47fed49dd389210666799136adab1206382502"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-8.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s1-old-before-8.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-8.json"
+  },
+  {
+   "id": "s1-old-before-9",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "list: count",
+    "input_sha256": "b293004af8088c5c982ba54f3514767d9b22f155ddade31d6792c77681b421a4"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-9.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s1-old-before-9.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-9.json"
+  },
+  {
+   "id": "s1-old-before-10",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: ripple 2",
+    "input_sha256": "f6b5ab774e8adf92ee8cfa65400d7f6757d96fc5a2fd4e076052aa36e2d3fc6e"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-10.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s1-old-before-10.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-10.json"
+  },
+  {
+   "id": "s1-old-before-11",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: wind 1",
+    "input_sha256": "f40e7755995be5368a351cae1ad6faaf1f734d81fc690aad4bb5079170d624ab"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-11.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s1-old-before-11.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s1-old-before-11.json"
+  },
+  {
+   "id": "s2-teach-wind",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 2,
+    "index": 810000,
+    "family": [
+     [
+      "nothing",
+      "steady"
+     ]
+    ],
+    "level": 1,
+    "name": "rail: diagnostic wind teach seed 2"
+   },
+   "teaching": true,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s2-teach-wind.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s2-teach-wind.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s2-teach-wind.json"
+  },
+  {
+   "id": "s2-before-wind",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 2,
+    "index": 820000,
+    "family": [
+     [
+      "nothing",
+      "steady"
+     ]
+    ],
+    "level": 1,
+    "name": "rail: diagnostic wind revisit seed 2"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s2-before-wind.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s2-before-wind.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s2-before-wind.json"
+  },
+  {
+   "id": "s2-before-spring",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 2,
+    "index": 820100,
+    "family": [
+     [
+      "position",
+      "straight"
+     ]
+    ],
+    "level": 1,
+    "name": "rail: diagnostic spring revisit seed 2"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s2-before-spring.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s2-before-spring.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s2-before-spring.json"
+  },
+  {
+   "id": "s2-before-ripple",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 2,
+    "index": 820200,
+    "family": [
+     [
+      "position",
+      "wave"
+     ]
+    ],
+    "level": 1,
+    "name": "rail: diagnostic ripple revisit seed 2"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s2-before-ripple.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s2-before-ripple.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s2-before-ripple.json"
+  },
+  {
+   "id": "s2-before-stiff",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 2,
+    "index": 820300,
+    "family": [
+     [
+      "position",
+      "cubic"
+     ]
+    ],
+    "level": 1,
+    "name": "rail: diagnostic stiff revisit seed 2"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s2-before-stiff.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s2-before-stiff.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s2-before-stiff.json"
+  },
+  {
+   "id": "s2-old-before-0",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: wind 2",
+    "input_sha256": "22db368ce65767222cd9ef0923fd187a5713779f873fb108eddad0b0f38617ce"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-0.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s2-old-before-0.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-0.json"
+  },
+  {
+   "id": "s2-old-before-1",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "number: odd",
+    "input_sha256": "b607a9688bea2043f3a21f66136e37baf64aa161f90a2175efd9ed2ad241da5d"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-1.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s2-old-before-1.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-1.json"
+  },
+  {
+   "id": "s2-old-before-2",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "number: powers of two",
+    "input_sha256": "c3e31c9f32aa2ad38c5a6f1fe1b8f4d0c4e649fba723c2c8005929333bd142eb"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-2.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s2-old-before-2.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-2.json"
+  },
+  {
+   "id": "s2-old-before-3",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: spring 2",
+    "input_sha256": "a3d8f9504a69da51b8bacd5e9d1dd4af0da7e58d6c633178e1e3d79a583e4c98"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-3.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s2-old-before-3.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-3.json"
+  },
+  {
+   "id": "s2-old-before-4",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: stiff 2",
+    "input_sha256": "cebc574f5ffb62efa290530acd4579bb8d4ac3772ba42718eaf83f5557f78706"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-4.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s2-old-before-4.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-4.json"
+  },
+  {
+   "id": "s2-old-before-5",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "list: one more",
+    "input_sha256": "ae1e4065597792ea8021a4f998ae05a35be8c11b1498523bcb4a3c51865ed12c"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-5.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s2-old-before-5.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-5.json"
+  },
+  {
+   "id": "s2-old-before-6",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "number: square",
+    "input_sha256": "9f8b6726c1a67fb723390458f066ae2ca81e5bada10d22cea0905fb004cb7445"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-6.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s2-old-before-6.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-6.json"
+  },
+  {
+   "id": "s2-old-before-7",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "list: sum",
+    "input_sha256": "760de14cff0498b18f3212290af564d6e9c6ab71e6ab85b939f8ba56d31d1f4e"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-7.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s2-old-before-7.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-7.json"
+  },
+  {
+   "id": "s2-old-before-8",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: ripple 1",
+    "input_sha256": "fc59ac5abbeb358197b6c929ec47fed49dd389210666799136adab1206382502"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-8.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s2-old-before-8.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-8.json"
+  },
+  {
+   "id": "s2-old-before-9",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "list: count",
+    "input_sha256": "b293004af8088c5c982ba54f3514767d9b22f155ddade31d6792c77681b421a4"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-9.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s2-old-before-9.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-9.json"
+  },
+  {
+   "id": "s2-old-before-10",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: ripple 2",
+    "input_sha256": "f6b5ab774e8adf92ee8cfa65400d7f6757d96fc5a2fd4e076052aa36e2d3fc6e"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-10.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s2-old-before-10.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-10.json"
+  },
+  {
+   "id": "s2-old-before-11",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: wind 1",
+    "input_sha256": "f40e7755995be5368a351cae1ad6faaf1f734d81fc690aad4bb5079170d624ab"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-11.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s2-old-before-11.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s2-old-before-11.json"
+  },
+  {
+   "id": "s3-teach-wind",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "index": 810000,
+    "family": [
+     [
+      "nothing",
+      "steady"
+     ]
+    ],
+    "level": 1,
+    "name": "rail: diagnostic wind teach seed 3"
+   },
+   "teaching": true,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s3-teach-wind.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s3-teach-wind.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s3-teach-wind.json"
+  },
+  {
+   "id": "s3-before-wind",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "index": 820000,
+    "family": [
+     [
+      "nothing",
+      "steady"
+     ]
+    ],
+    "level": 1,
+    "name": "rail: diagnostic wind revisit seed 3"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s3-before-wind.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s3-before-wind.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s3-before-wind.json"
+  },
+  {
+   "id": "s3-before-spring",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "index": 820100,
+    "family": [
+     [
+      "position",
+      "straight"
+     ]
+    ],
+    "level": 1,
+    "name": "rail: diagnostic spring revisit seed 3"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s3-before-spring.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s3-before-spring.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s3-before-spring.json"
+  },
+  {
+   "id": "s3-before-ripple",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "index": 820200,
+    "family": [
+     [
+      "position",
+      "wave"
+     ]
+    ],
+    "level": 1,
+    "name": "rail: diagnostic ripple revisit seed 3"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s3-before-ripple.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s3-before-ripple.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s3-before-ripple.json"
+  },
+  {
+   "id": "s3-before-stiff",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "index": 820300,
+    "family": [
+     [
+      "position",
+      "cubic"
+     ]
+    ],
+    "level": 1,
+    "name": "rail: diagnostic stiff revisit seed 3"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s3-before-stiff.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s3-before-stiff.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s3-before-stiff.json"
+  },
+  {
+   "id": "s3-old-before-0",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: wind 2",
+    "input_sha256": "22db368ce65767222cd9ef0923fd187a5713779f873fb108eddad0b0f38617ce"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-0.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s3-old-before-0.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-0.json"
+  },
+  {
+   "id": "s3-old-before-1",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "number: odd",
+    "input_sha256": "b607a9688bea2043f3a21f66136e37baf64aa161f90a2175efd9ed2ad241da5d"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-1.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s3-old-before-1.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-1.json"
+  },
+  {
+   "id": "s3-old-before-2",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "number: powers of two",
+    "input_sha256": "c3e31c9f32aa2ad38c5a6f1fe1b8f4d0c4e649fba723c2c8005929333bd142eb"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-2.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s3-old-before-2.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-2.json"
+  },
+  {
+   "id": "s3-old-before-3",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: spring 2",
+    "input_sha256": "a3d8f9504a69da51b8bacd5e9d1dd4af0da7e58d6c633178e1e3d79a583e4c98"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-3.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s3-old-before-3.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-3.json"
+  },
+  {
+   "id": "s3-old-before-4",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: stiff 2",
+    "input_sha256": "cebc574f5ffb62efa290530acd4579bb8d4ac3772ba42718eaf83f5557f78706"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-4.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s3-old-before-4.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-4.json"
+  },
+  {
+   "id": "s3-old-before-5",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "list: one more",
+    "input_sha256": "ae1e4065597792ea8021a4f998ae05a35be8c11b1498523bcb4a3c51865ed12c"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-5.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s3-old-before-5.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-5.json"
+  },
+  {
+   "id": "s3-old-before-6",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "number: square",
+    "input_sha256": "9f8b6726c1a67fb723390458f066ae2ca81e5bada10d22cea0905fb004cb7445"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-6.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s3-old-before-6.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-6.json"
+  },
+  {
+   "id": "s3-old-before-7",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "list: sum",
+    "input_sha256": "760de14cff0498b18f3212290af564d6e9c6ab71e6ab85b939f8ba56d31d1f4e"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-7.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s3-old-before-7.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-7.json"
+  },
+  {
+   "id": "s3-old-before-8",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: ripple 1",
+    "input_sha256": "fc59ac5abbeb358197b6c929ec47fed49dd389210666799136adab1206382502"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-8.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s3-old-before-8.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-8.json"
+  },
+  {
+   "id": "s3-old-before-9",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "list: count",
+    "input_sha256": "b293004af8088c5c982ba54f3514767d9b22f155ddade31d6792c77681b421a4"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-9.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s3-old-before-9.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-9.json"
+  },
+  {
+   "id": "s3-old-before-10",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: ripple 2",
+    "input_sha256": "f6b5ab774e8adf92ee8cfa65400d7f6757d96fc5a2fd4e076052aa36e2d3fc6e"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-10.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s3-old-before-10.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-10.json"
+  },
+  {
+   "id": "s3-old-before-11",
+   "snapshot": "/content/s25-ring-dev-batch/diagnostic/snapshots/pre.pkl",
+   "spec": {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: wind 1",
+    "input_sha256": "f40e7755995be5368a351cae1ad6faaf1f734d81fc690aad4bb5079170d624ab"
+   },
+   "teaching": false,
+   "mind_seed": 1,
+   "book": null,
+   "seconds": 120.0,
+   "ring_path": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-11.ring.jsonl",
+   "saved_field": "/content/s25-ring-dev-batch/diagnostic/snapshots/s3-old-before-11.pkl",
+   "result": "/content/s25-ring-dev-batch/diagnostic/units/s3-old-before-11.json"
+  }
+ ],
+ "pairs": [
+  [
+   "s1-before-wind",
+   "s1-after-wind",
+   [
+    "s1-teach-wind"
+   ]
+  ],
+  [
+   "s1-before-spring",
+   "s1-after-spring",
+   [
+    "s1-teach-spring"
+   ]
+  ],
+  [
+   "s1-before-ripple",
+   "s1-after-ripple",
+   [
+    "s1-teach-ripple"
+   ]
+  ],
+  [
+   "s1-before-stiff",
+   "s1-after-stiff",
+   [
+    "s1-teach-stiff"
+   ]
+  ],
+  [
+   "s2-before-wind",
+   "s2-after-wind",
+   [
+    "s2-teach-wind"
+   ]
+  ],
+  [
+   "s2-before-spring",
+   "s2-after-spring",
+   [
+    "s2-teach-spring"
+   ]
+  ],
+  [
+   "s2-before-ripple",
+   "s2-after-ripple",
+   [
+    "s2-teach-ripple"
+   ]
+  ],
+  [
+   "s2-before-stiff",
+   "s2-after-stiff",
+   [
+    "s2-teach-stiff"
+   ]
+  ],
+  [
+   "s3-before-wind",
+   "s3-after-wind",
+   [
+    "s3-teach-wind"
+   ]
+  ],
+  [
+   "s3-before-spring",
+   "s3-after-spring",
+   [
+    "s3-teach-spring"
+   ]
+  ],
+  [
+   "s3-before-ripple",
+   "s3-after-ripple",
+   [
+    "s3-teach-ripple"
+   ]
+  ],
+  [
+   "s3-before-stiff",
+   "s3-after-stiff",
+   [
+    "s3-teach-stiff"
+   ]
+  ]
+ ],
+ "retention_pairs": [
+  [
+   "s1-old-before-0",
+   "s1-old-after-0"
+  ],
+  [
+   "s1-old-before-1",
+   "s1-old-after-1"
+  ],
+  [
+   "s1-old-before-2",
+   "s1-old-after-2"
+  ],
+  [
+   "s1-old-before-3",
+   "s1-old-after-3"
+  ],
+  [
+   "s1-old-before-4",
+   "s1-old-after-4"
+  ],
+  [
+   "s1-old-before-5",
+   "s1-old-after-5"
+  ],
+  [
+   "s1-old-before-6",
+   "s1-old-after-6"
+  ],
+  [
+   "s1-old-before-7",
+   "s1-old-after-7"
+  ],
+  [
+   "s1-old-before-8",
+   "s1-old-after-8"
+  ],
+  [
+   "s1-old-before-9",
+   "s1-old-after-9"
+  ],
+  [
+   "s1-old-before-10",
+   "s1-old-after-10"
+  ],
+  [
+   "s1-old-before-11",
+   "s1-old-after-11"
+  ],
+  [
+   "s2-old-before-0",
+   "s2-old-after-0"
+  ],
+  [
+   "s2-old-before-1",
+   "s2-old-after-1"
+  ],
+  [
+   "s2-old-before-2",
+   "s2-old-after-2"
+  ],
+  [
+   "s2-old-before-3",
+   "s2-old-after-3"
+  ],
+  [
+   "s2-old-before-4",
+   "s2-old-after-4"
+  ],
+  [
+   "s2-old-before-5",
+   "s2-old-after-5"
+  ],
+  [
+   "s2-old-before-6",
+   "s2-old-after-6"
+  ],
+  [
+   "s2-old-before-7",
+   "s2-old-after-7"
+  ],
+  [
+   "s2-old-before-8",
+   "s2-old-after-8"
+  ],
+  [
+   "s2-old-before-9",
+   "s2-old-after-9"
+  ],
+  [
+   "s2-old-before-10",
+   "s2-old-after-10"
+  ],
+  [
+   "s2-old-before-11",
+   "s2-old-after-11"
+  ],
+  [
+   "s3-old-before-0",
+   "s3-old-after-0"
+  ],
+  [
+   "s3-old-before-1",
+   "s3-old-after-1"
+  ],
+  [
+   "s3-old-before-2",
+   "s3-old-after-2"
+  ],
+  [
+   "s3-old-before-3",
+   "s3-old-after-3"
+  ],
+  [
+   "s3-old-before-4",
+   "s3-old-after-4"
+  ],
+  [
+   "s3-old-before-5",
+   "s3-old-after-5"
+  ],
+  [
+   "s3-old-before-6",
+   "s3-old-after-6"
+  ],
+  [
+   "s3-old-before-7",
+   "s3-old-after-7"
+  ],
+  [
+   "s3-old-before-8",
+   "s3-old-after-8"
+  ],
+  [
+   "s3-old-before-9",
+   "s3-old-after-9"
+  ],
+  [
+   "s3-old-before-10",
+   "s3-old-after-10"
+  ],
+  [
+   "s3-old-before-11",
+   "s3-old-after-11"
+  ]
+ ],
+ "retention": {
+  "pre_field_sha256": "55c3bb7116a779efeb9b32cce5640c2a75dc6dc958b24181e68e03262e2e8d3f",
+  "lessons": [
+   {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: wind 2",
+    "input_sha256": "22db368ce65767222cd9ef0923fd187a5713779f873fb108eddad0b0f38617ce"
+   },
+   {
+    "seed": 3,
+    "source": "teaching",
+    "name": "number: odd",
+    "input_sha256": "b607a9688bea2043f3a21f66136e37baf64aa161f90a2175efd9ed2ad241da5d"
+   },
+   {
+    "seed": 3,
+    "source": "teaching",
+    "name": "number: powers of two",
+    "input_sha256": "c3e31c9f32aa2ad38c5a6f1fe1b8f4d0c4e649fba723c2c8005929333bd142eb"
+   },
+   {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: spring 2",
+    "input_sha256": "a3d8f9504a69da51b8bacd5e9d1dd4af0da7e58d6c633178e1e3d79a583e4c98"
+   },
+   {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: stiff 2",
+    "input_sha256": "cebc574f5ffb62efa290530acd4579bb8d4ac3772ba42718eaf83f5557f78706"
+   },
+   {
+    "seed": 3,
+    "source": "teaching",
+    "name": "list: one more",
+    "input_sha256": "ae1e4065597792ea8021a4f998ae05a35be8c11b1498523bcb4a3c51865ed12c"
+   },
+   {
+    "seed": 3,
+    "source": "teaching",
+    "name": "number: square",
+    "input_sha256": "9f8b6726c1a67fb723390458f066ae2ca81e5bada10d22cea0905fb004cb7445"
+   },
+   {
+    "seed": 3,
+    "source": "teaching",
+    "name": "list: sum",
+    "input_sha256": "760de14cff0498b18f3212290af564d6e9c6ab71e6ab85b939f8ba56d31d1f4e"
+   },
+   {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: ripple 1",
+    "input_sha256": "fc59ac5abbeb358197b6c929ec47fed49dd389210666799136adab1206382502"
+   },
+   {
+    "seed": 3,
+    "source": "teaching",
+    "name": "list: count",
+    "input_sha256": "b293004af8088c5c982ba54f3514767d9b22f155ddade31d6792c77681b421a4"
+   },
+   {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: ripple 2",
+    "input_sha256": "f6b5ab774e8adf92ee8cfa65400d7f6757d96fc5a2fd4e076052aa36e2d3fc6e"
+   },
+   {
+    "seed": 3,
+    "source": "teaching",
+    "name": "rail: wind 1",
+    "input_sha256": "f40e7755995be5368a351cae1ad6faaf1f734d81fc690aad4bb5079170d624ab"
+   }
+  ]
+ },
+ "environment": {
+  "SERA_KNOBS": "ONE_FIELD=1",
+  "SERA_CRUTCH_OFF": "",
+  "PYTHONHASHSEED": "0",
+  "CCOPS5_SHAPES": "library",
+  "CCOPS5_CLAIM": "functional",
+  "CCOPS5_BAND": "claim"
+ }
+}

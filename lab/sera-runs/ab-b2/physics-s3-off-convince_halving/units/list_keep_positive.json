@@ -1,0 +1,219 @@
+{
+ "task": "list: keep positive",
+ "subject": "code",
+ "kind": "exact:list->list",
+ "teaching": true,
+ "steps": 37,
+ "answer": [
+  "var",
+  "l"
+ ],
+ "others": [
+  [
+   "cons",
+   null,
+   [
+    "head",
+    null,
+    [
+     "var",
+     "l"
+    ]
+   ],
+   [
+    "nil",
+    null
+   ]
+  ],
+  [
+   "tail",
+   null,
+   [
+    "var",
+    "l"
+   ]
+  ],
+  [
+   "tail",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "l"
+    ]
+   ]
+  ],
+  [
+   "cons",
+   null,
+   [
+    "c",
+    13,
+    [
+     "var",
+     "l"
+    ]
+   ],
+   [
+    "nil",
+    null
+   ]
+  ],
+  [
+   "c",
+   11,
+   [
+    "range",
+    null,
+    [
+     "head",
+     null,
+     [
+      "c",
+      16,
+      [
+       "var",
+       "l"
+      ]
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 2,
+ "asked": 35,
+ "explored": 0,
+ "tension": [
+  0.534,
+  0.534,
+  0.534,
+  0.534,
+  0.534,
+  0.534,
+  0.534,
+  0.534,
+  0.534,
+  0.534,
+  0.534,
+  0.534,
+  0.534,
+  0.534,
+  0.534,
+  0.534,
+  0.534,
+  0.534,
+  0.534,
+  0.534,
+  0.534,
+  0.534,
+  0.534,
+  0.534,
+  0.555,
+  0.555,
+  0.555,
+  0.555,
+  0.555,
+  3.774,
+  3.774,
+  3.774,
+  3.369,
+  5.037,
+  5.73,
+  5.73,
+  5.73,
+  5.73
+ ],
+ "wall": 1673.2,
+ "cpu": 1669.3,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "keep",
+  "positive"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 15.69,
+  "ledger": 0.0,
+  "actions": 0.33,
+  "ask": 0.01,
+  "doubt": 10.68,
+  "imagine": 1635.71,
+  "grow": 8.11
+ },
+ "built": [],
+ "peak_mb": 11155.140625,
+ "peak_mb_by": {
+  "imagine": 6010.7
+ },
+ "memory_stops": 0,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "ask",
+  "ask+grow",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "ask",
+  "imagine",
+  "grow"
+ ],
+ "say": [
+  "In list: keep positive my best idea is l, but I cannot finish (none of my ideas fits the examples). Is it right, or what am I missing?",
+  "I imagine by wish then compose: 0 new ideas.",
+  "I imagine by step then compose: 0 new ideas.",
+  "I imagine by step then wish: 0 new ideas.",
+  "I imagine by wish then step: 0 new ideas.",
+  "I imagine by wish: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I think bigger (level 1).",
+  "I imagine by step then wish: 0 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I imagine by wish: 0 new ideas.",
+  "I imagine by wish then step: 0 new ideas.",
+  "I think bigger (level 2).",
+  "In list: keep positive my best idea is l, but I cannot finish (none of my ideas fits the examples, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "stage": "teach",
+ "tag": ""
+}

@@ -1,0 +1,139 @@
+{
+ "task": "list: last",
+ "subject": "code",
+ "kind": "exact:list->num",
+ "teaching": true,
+ "steps": 4,
+ "answer": [
+  "c",
+  8,
+  [
+   "c",
+   18,
+   [
+    "var",
+    "l"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "lit",
+   5
+  ],
+  [
+   "head",
+   null,
+   [
+    "c",
+    11,
+    [
+     "var",
+     "l"
+    ]
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "lit",
+    5
+   ],
+   [
+    "lit",
+    8
+   ]
+  ],
+  [
+   "zero",
+   null
+  ],
+  [
+   "c",
+   13,
+   [
+    "var",
+    "l"
+   ]
+  ]
+ ],
+ "level": 0,
+ "asked": 3,
+ "explored": 0,
+ "tension": [
+  6.82,
+  9.256,
+  9.293,
+  9.293
+ ],
+ "wall": 9.2,
+ "cpu": 9.1,
+ "proven": true,
+ "invented": [
+  {
+   "id": 19,
+   "subject": "code",
+   "body": "spring(sami(_))"
+  }
+ ],
+ "reused": [
+  8,
+  18
+ ],
+ "words_heard": [
+  "last"
+ ],
+ "said": [
+  "nofo"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.26,
+  "ledger": 0.0,
+  "actions": 0.05,
+  "ask": 0.0,
+  "doubt": 0.05,
+  "imagine": 4.22,
+  "prove": 0.01
+ },
+ "built": [
+  {
+   "id": 18,
+   "name": "sami",
+   "words": "make what spring turns into the answer",
+   "body": "foldn(\u03bba,e. e, 0, _)"
+  }
+ ],
+ "peak_mb": 5434.015625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "spring(sami(l))",
+ "verdict": "proven right",
+ "audit": 319,
+ "imagined_by": {
+  "method": "wish+#1",
+  "moves": "wish+compose+wish",
+  "origin": "wished"
+ },
+ "configs": [
+  "ask",
+  "ask+imagine",
+  "prove+ask",
+  "leave"
+ ],
+ "say": [
+  "I wish I could make what spring turns into the answer: I build it (sami = foldn(\u03bba,e. e, 0, _)) and use it.",
+  "I imagine by wish then compose then wish: 1 new ideas.",
+  "I imagine by wish then compose then wish then wish then wish: 0 new ideas.",
+  "My audit passes spring(sami(l)) on 319 fresh inputs.",
+  "It rings through the Field: 5 ways of working and imagining that led here are strengthened."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

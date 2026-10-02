@@ -1,0 +1,159 @@
+nohup: ignoring input
+SETTINGS {"crutches_off": ["convince_halving"], "knobs": "ONE_FIELD=0", "one_field": false}
+SERA has a dictionary: 147306 words, 117659 senses
+
+=== rail: wind 2 (teach) | words heard: always wind
+    [1] The judge accepts: a free curve in time (33 knots) up to 0.2 where I looked.
+    [1] I imagine by refine: 1 new ideas.
+    [1] I keep what was right: 1 of time explains 263350 nats; I build on it and look for the rest.
+    [1] I imagine by keep then refine: 0 new ideas.
+    [1] I keep 0 of my imagined ideas in mind and let 1 go.
+    [1] I think bigger (level 1).
+    [2] I think bigger (level 2).
+    [3] I think bigger (level 3).
+  -> proven right | a free curve in time (33 knots) | steps 5 | 109.0 s | invented ['tab'] | reused [] | says ['dudu'] | CERTIFIED curve on time | IT ASKS: The 8 things here have only 3 kinds of mass (1.551, 1.645, 2.337). Why so few? What makes a mass? | time actions 52, prove 46, ledger 9
+
+=== number: odd (teach) | words heard: odd
+    [1] I wish I could handle eq(w, 2) (it gives 5), then the rest: I build it (kadu = add(_, add(_, 1))) and use it.
+    [1] I imagine by compose then wish: 1 new ideas.
+    [1] I break it into 1 step (sub(n, 5)) and the rest follows: add(kadu(n), head(range(sub(n, 5)))).
+    [1] I imagine by step then wish: 1 new ideas.
+    [2] My audit passes if(eq(n, 2), 5, kadu(n)) on 572 fresh inputs.
+    [2] It rings through the Field: 4 ways of working and imagining that led here are strengthened.
+  -> proven right | if(eq(n, 2), 5, kadu(n)) | steps 3 | 643.5 s | invented ['if(eq(_, 2), 5, kadu(_))'] | reused [2] | says ['noka'] | FOUND BY compose+wish | ITS OWN METHOD {'id': 1, 'moves': 'compose then wish'} | time imagine 643, prove 0, other 0
+
+=== number: powers of two (teach) | words heard: powers of two
+    [1] I wish I could handle eq(w, 3) (it gives 8), then the rest: I build it (nolo = if(eq(_, 4), 16, 2)) and use it.
+    [1] I wish I could handle eq(w, 2) (it gives 4), then the rest: I build it (reno = if(eq(_, 3), 8, nolo(_))) and use it.
+    [1] I imagine by step then wish: 1 new ideas.
+    [1] I imagine by compose then wish: 0 new ideas.
+    [2] I think bigger (level 1).
+    [3] I think bigger (level 2).
+    [8] I think bigger (level 3).
+    [9] My audit passes foldn(λa,e. add(a, a), 1, range(n)) on 653 fresh inputs.
+    [9] I think bigger (level 4).
+    [9] It rings through the Field: 13 ways of working and imagining that led here are strengthened.
+    [10] I imagine by compose: 0 new ideas.
+    [10] I keep 0 of my imagined ideas in mind and let 1 go.
+    [10] I think bigger (level 5).
+  -> proven right | foldn(λa,e. add(a, a), 1, range(n)) | steps 11 | 1127.0 s | invented ['foldn(λa,e. add(a, a), 1, range(_))', 'foldn(λa,e. add(a, a), 1, _)'] | reused [] | says ['powers'] | time imagine 848, grow 275, beliefs 1
+
+=== rail: spring 2 (teach) | words heard: far spring back
+    [1] I keep what was right: s of position explains 317296 nats; I build on it and look for the rest.
+    [1] I imagine by keep then compose: 103 new ideas.
+    [1] I keep what was right: a curve in position explains 317275 nats; I build on it and look for the rest.
+    [1] I imagine by refine then keep: 25 new ideas.
+    [1] I keep 40 of my imagined ideas in mind and let 88 go.
+    [1] The judge accepts: some strength times position (clipped at +-1) up to 0.2 where I looked.
+    [1] It rings through the Field: 3 ways of working and imagining that led here are strengthened.
+    [2] I imagine by swap: 0 new ideas.
+    [2] I imagine by blend then compose: 0 new ideas.
+    [2] I keep 39 of my imagined ideas in mind and let 1 go.
+  -> proven right | some strength times position (clipped at +-1) | steps 3 | 115.9 s | invented ['_'] | reused [] | says ['repe'] | CERTIFIED formula on dim:x@4 | IT ASKS: The 8 things here have only 3 kinds of mass (1.051, 1.66, 1.853). Why so few? What makes a mass? | time prove 73, actions 31, ledger 9
+
+=== rail: stiff 2 (teach) | words heard: stiff back far
+    [1] The judge does not accept my shape 12 of position + my shape 13 of speed: something else is here: the law misfits more objects than bumps explain.
+    [2] I think bigger (level 1).
+    [3] The judge accepts: some strength times (position x (position x position)) (clipped at +-1) up to 0.2 where I looked.
+    [3] It rings through the Field: 2 ways of working and imagining that led here are strengthened.
+    [5] I imagine by blend then recall: 1 new ideas.
+    [5] I imagine by compose then blend: 126 new ideas.
+    [5] I keep 0 of my imagined ideas in mind and let 127 go.
+  -> proven right | some strength times (position x (position x position)) (clipped at +-1) | steps 6 | 235.3 s | invented ['mul(_, mul(_, _))'] | reused [] | says ['stiff'] | CERTIFIED formula on dim:x.x.x.mul.mul@4 | IT ASKS: The 8 things here have only 3 kinds of mass (1.334, 1.38, 2.292). Why so few? What makes a mass? In all 3 worlds I measured so far, things came in fewer kinds of mass than there were things. | time prove 129, actions 76, ledger 28
+
+=== list: one more (teach) | words heard: one more
+    [2] I think bigger (level 1).
+    [7] I wish I could make each element what it becomes: I build it (nope = add(_, 1)) and use it.
+    [7] I imagine by compose then wish then compose: 1 new ideas.
+    [7] I imagine by step: 0 new ideas.
+    [9] I think bigger (level 2).
+    [10] My audit passes map(λe. nope(e), l) on 455 fresh inputs.
+    [10] It rings through the Field: 12 ways of working and imagining that led here are strengthened.
+    [11] I think bigger (level 3).
+  -> proven right | map(λe. nope(e), l) | steps 12 | 330.8 s | invented ['map(λe. nope(e), _)'] | reused [10] | says ['fori'] | FOUND BY compose+wish+compose | ITS OWN METHOD {'id': 2, 'moves': 'compose then wish then compose'} | time imagine 250, grow 78, beliefs 2
+
+=== number: square (teach) | words heard: square
+    [1] My audit passes mul(n, n) on 310 fresh inputs.
+    [1] I think bigger (level 1).
+    [1] It rings through the Field: 1 ways of working and imagining that led here are strengthened.
+  -> proven right | mul(n, n) | steps 2 | 2.2 s | invented ['mul(_, _)'] | reused [] | says ['square'] | time grow 1, beliefs 0, doubt 0
+
+=== list: sum (teach) | words heard: sum
+    [4] I wish I could make what spring turns into the answer: I build it (miri = foldn(λa,e. add(e, a), 0, _)) and use it.
+    [4] I imagine by wish: 1 new ideas.
+    [4] I wish my functions could see the whole problem, not only the part they are given. I grow that way of seeing, and 1 ideas fit this, first foldn(λa,e. miri(l), 0, tail(l)).
+    [4] I break it into 1 step (nope(miri(l))) and the rest follows: sub(nope(miri(l)), head(range(nope(miri(l))))).
+    [4] I imagine by compose then wish then step: 2 new ideas.
+    [5] My audit passes spring(miri(l)) on 313 fresh inputs.
+    [5] It rings through the Field: 7 ways of working and imagining that led here are strengthened.
+  -> proven right | spring(miri(l)) | steps 6 | 62.8 s | invented ['spring(miri(_))'] | reused [8, 13] | says ['dupe'] | FOUND BY wish | time imagine 62, beliefs 0, doubt 0
+
+=== rail: ripple 1 (teach) | words heard: back far ripple
+    [1] I imagine by recall: 1 new ideas.
+    [1] I keep what was right: spring of position explains 1453812 nats; I build on it and look for the rest.
+    [1] I imagine by blend then keep: 48 new ideas.
+    [1] I keep 0 of my imagined ideas in mind and let 49 go.
+    [2] I imagine by compose then refine: 276 new ideas.
+    [2] I imagine by compose then swap: 0 new ideas.
+    [2] I keep 17 of my imagined ideas in mind and let 259 go.
+    [2] The judge accepts: my shape 12 of position up to 0.2 where I looked.
+    [2] It rings through the Field: 7 ways of working and imagining that led here are strengthened.
+    [3] I imagine by refine: 1 new ideas.
+    [3] I keep 17 of my imagined ideas in mind and let 1 go.
+  -> proven right | my shape 12 of position | steps 6 | 161.5 s | invented [] | reused [8] | says ['spring', 'ripple'] | CERTIFIED drawing on position | FALSE WORDS ['spring'] | DUALITY {'other': "(('position', 'curve', 17), ('speed', 'concept', 3))"} | IT ASKS: The 8 things here have only 3 kinds of mass (0.911, 1.426, 1.935). Why so few? What makes a mass? In all 4 worlds I measured so far, things came in fewer kinds of mass than there were things. | time actions 89, prove 40, ledger 30
+
+=== list: count (teach) | words heard: count
+    [5] I think bigger (level 1).
+    [6] My audit passes miri(map(λe. 1, l)) on 463 fresh inputs.
+    [6] I think bigger (level 2).
+    [6] It rings through the Field: 6 ways of working and imagining that led here are strengthened.
+  -> proven right | miri(map(λe. 1, l)) | steps 7 | 55.8 s | invented ['miri(map(λe. 1, _))', 'map(λe. 1, _)'] | reused [13] | says ['count'] | time grow 52, beliefs 1, doubt 0
+
+=== rail: ripple 2 (teach) | words heard: back ripple far
+    [1] I imagine by compose then refine: 287 new ideas.
+    [1] I imagine by compose then swap: 0 new ideas.
+    [1] I keep 30 of my imagined ideas in mind and let 257 go.
+    [1] The judge accepts: my shape 12 of position up to 0.2 where I looked.
+    [1] It rings through the Field: 4 ways of working and imagining that led here are strengthened.
+    [2] I think bigger (level 1).
+    [3] I imagine by recall then refine: 2 new ideas.
+    [3] I imagine by recall then swap: 1 new ideas.
+    [3] I keep 2 of my imagined ideas in mind and let 31 go.
+    [4] The judge accepts: a free curve in position (17 knots) + my shape 22 of speed up to 0.2 where I looked.
+    [4] It rings through the Field: 6 ways of working and imagining that led here are strengthened.
+    [5] I keep what was right: a curve in position explains 828882 nats; I build on it and look for the rest.
+    [5] I imagine by keep then drop: 121 new ideas.
+    [5] I imagine by refine then question: 1 new ideas.
+    [6] I imagine by compose then refine: 1 new ideas.
+    [6] I imagine by blend then question: 0 new ideas.
+    [8] I think bigger (level 2).
+  -> proven right | a free curve in position (17 knots) + my shape 22 of speed | steps 9 | 798.6 s | invented ['tab'] | reused [12] | says ['rifo', 'square'] | CERTIFIED curve on position + drawing on speed | FALSE WORDS ['square'] | FOUND BY compose+refine | ITS OWN METHOD {'id': 3, 'moves': 'compose then refine'} | IT ASKS: The 8 things here have only 5 kinds of mass (1.111, 1.112, 2.352, 2.402, 2.405). Why so few? What makes a mass? In all 5 worlds I measured so far, things came in fewer kinds of mass than there were things. | time grow 350, prove 138, actions 112
+
+=== rail: wind 1 (teach) | words heard: always wind
+    [1] I imagine by compose then swap: 351 new ideas.
+    [1] I imagine by compose then refine: 1 new ideas.
+    [1] I keep 100 of my imagined ideas in mind and let 252 go.
+    [1] The judge accepts: a free curve in time (33 knots) up to 0.2 where I looked.
+    [1] It rings through the Field: 4 ways of working and imagining that led here are strengthened.
+  -> proven right | a free curve in time (33 knots) | steps 5 | 83.6 s | invented ['tab'] | reused [] | says ['sami'] | CERTIFIED curve on time | IT ASKS: The 8 things here have only 3 kinds of mass (0.826, 1.058, 2.135). Why so few? What makes a mass? In all 6 worlds I measured so far, things came in fewer kinds of mass than there were things. | time actions 45, prove 29, ledger 8
+
+=== list: keep positive (teach) | words heard: keep positive
+    [12] In list: keep positive my best idea is l, but I cannot finish (none of my ideas fits the examples). Is it right, or what am I missing?
+    [13] I imagine by wish then compose: 0 new ideas.
+    [13] I imagine by step then compose: 0 new ideas.
+    [16] I imagine by step then wish: 0 new ideas.
+    [16] I imagine by wish then step: 0 new ideas.
+    [18] I imagine by wish: 0 new ideas.
+    [18] I imagine by step: 0 new ideas.
+    [21] I imagine by step: 0 new ideas.
+    [24] I think bigger (level 1).
+    [33] I imagine by step then wish: 0 new ideas.
+    [33] I imagine by step: 0 new ideas.
+    [36] I imagine by wish: 0 new ideas.
+    [36] I imagine by wish then step: 0 new ideas.
+    [37] I think bigger (level 2).
+    [37] In list: keep positive my best idea is l, but I cannot finish (none of my ideas fits the examples, and I reached my limit). Is it right, or what am I missing?
+  -> not proven | None | steps 37 | 1673.2 s | invented [] | reused [] | says [] | time imagine 1636, beliefs 16, doubt 11
+TEACH DONE {"tasks": 13, "concepts": 18, "concepts_by_subject": {"physics": 5, "math": 7, "code": 6}, "words": 16, "grounded": 0, "coined": 14, "understood": 13, "possibilities": 4, "links": 0, "questions": 7, "inbox": 2}
+PHYSICS PROVEN {"worlds": 6, "curves_proven": 3, "drawings_proven": 2, "formulas_proven": 2}
+ONE SERA DONE {"tasks": 13, "concepts": 18, "concepts_by_subject": {"physics": 5, "math": 7, "code": 6}, "words": 16, "grounded": 0, "coined": 14, "understood": 13, "possibilities": 4, "links": 0, "questions": 7, "inbox": 2}

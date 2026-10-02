@@ -1,0 +1,37 @@
+{
+ "suite": "L1",
+ "index": 0,
+ "mind": "sera",
+ "truth": "straight with position",
+ "claim": "straight with position",
+ "sure": true,
+ "verified": true,
+ "right": true,
+ "wrong_frozen": false,
+ "sure_unverified": false,
+ "right_grid": true,
+ "wrong_grid": false,
+ "surface_ok": false,
+ "wrong": false,
+ "throws": 19,
+ "own": 3,
+ "seconds": 42.7,
+ "certify_calls": 3,
+ "families": 67,
+ "gap": "I am sure the force is straight with position where I looked (position -0.96 to 0.46, speed -1.2 to 2.1). Something more may be there, but it is too small to see here.",
+ "imagined_top3": [
+  [
+   "straight with position",
+   0.871
+  ],
+  [
+   "straight with position + cubic with position",
+   0.113
+  ],
+  [
+   "straight with position + growing with position",
+   0.012
+  ]
+ ],
+ "truth_in_imagined": true
+}

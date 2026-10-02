@@ -1,0 +1,150 @@
+{
+ "task": "who_in 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  5,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "sub",
+   null,
+   [
+    "c",
+    3,
+    [
+     "head",
+     "list",
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "lit",
+    4
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "c",
+    4,
+    [
+     "var",
+     "g"
+    ]
+   ],
+   [
+    "lit",
+    4
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 1,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  1.057,
+  1.06
+ ],
+ "wall": 7.7,
+ "cpu": 7.6,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  5
+ ],
+ "words_heard": [
+  "who",
+  "is",
+  "in"
+ ],
+ "said": [
+  "in"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.03,
+  "ledger": 0.0,
+  "actions": 0.16,
+  "prove": 1.23,
+  "ask": 0.0,
+  "grow": 1.05,
+  "doubt": 0.03
+ },
+ "built": [],
+ "peak_mb": 11644.0546875,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "in(g)",
+ "verdict": "proven right",
+ "audit": 236,
+ "configs": [
+  "prove+ask+grow",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: in (8.66).",
+  "My audit passes in(g) on 236 fresh inputs.",
+  "I think bigger (level 1).",
+  "It rings through the Field: 3 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('c', 5, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: sandra moved to the kitchen; daniel journeyed to the bathroom | question: who is in the bathroom -> daniel",
+  "story: daniel moved to the hallway; john went to the garden | question: who is in the garden -> john",
+  "story: mary journeyed to the kitchen; daniel journeyed to the bathroom; sandra went to the garden | question: who is in the kitchen -> mary"
+ ]
+}

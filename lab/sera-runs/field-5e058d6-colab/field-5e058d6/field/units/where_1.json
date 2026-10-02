@@ -1,0 +1,283 @@
+{
+ "task": "where 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 6,
+ "answer": [
+  "c",
+  3,
+  [
+   "head",
+   "list",
+   [
+    "filter",
+    null,
+    [
+     "lam",
+     "e",
+     [
+      "eq",
+      null,
+      [
+       "c",
+       3,
+       [
+        "head",
+        "list",
+        [
+         "var",
+         "g"
+        ]
+       ]
+      ],
+      [
+       "head",
+       null,
+       [
+        "var",
+        "e"
+       ]
+      ]
+     ]
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   4,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "foldl",
+    null,
+    [
+     "lam",
+     "ae",
+     [
+      "cons",
+      null,
+      [
+       "var",
+       "e"
+      ],
+      [
+       "var",
+       "a"
+      ]
+     ]
+    ],
+    [
+     "var",
+     "g"
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "cons",
+    null,
+    [
+     "c",
+     4,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ],
+    [
+     "c",
+     2,
+     [
+      "c",
+      6,
+      [
+       "tail",
+       null,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "foldl",
+    null,
+    [
+     "lam",
+     "ae",
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "a"
+      ]
+     ]
+    ],
+    [
+     "var",
+     "g"
+    ],
+    [
+     "c",
+     6,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 4,
+ "asked": 4,
+ "explored": 0,
+ "tension": [
+  2.929,
+  7.189,
+  13.323,
+  24.094,
+  35.078,
+  35.078
+ ],
+ "wall": 1381.7,
+ "cpu": 1368.1,
+ "proven": true,
+ "invented": [
+  {
+   "id": 7,
+   "subject": "language",
+   "body": "kalo(head(filter(\u03bbe. eq(kalo(head(_)), head(e)), _)))"
+  },
+  {
+   "id": 8,
+   "subject": "language",
+   "inner": "the part it works on",
+   "body": "head(filter(\u03bbe. eq(kalo(head(_)), head(e)), _))"
+  }
+ ],
+ "reused": [
+  3
+ ],
+ "words_heard": [
+  "where",
+  "is"
+ ],
+ "said": [
+  "visa"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.47,
+  "ledger": 0.0,
+  "actions": 0.14,
+  "grow": 85.67,
+  "ask": 0.0,
+  "doubt": 0.45,
+  "imagine": 1292.18,
+  "prove": 0.19
+ },
+ "built": [],
+ "peak_mb": 9470.96875,
+ "peak_mb_by": {
+  "imagine": 864.7
+ },
+ "memory_stops": 0,
+ "claim": "kalo(head(filter(\u03bbe. eq(kalo(head(g)), head(e)), g)))",
+ "verdict": "proven right",
+ "audit": 941,
+ "imagined_by": {
+  "method": "wish+step",
+  "moves": "wish+step",
+  "origin": "stepped"
+ },
+ "method_named": {
+  "id": 3,
+  "moves": "wish then step"
+ },
+ "configs": [
+  "grow+ask",
+  "ask+grow+imagine",
+  "imagine+ask+grow",
+  "imagine+ask+grow",
+  "prove+imagine",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: first (7.80), lolo (7.48).",
+  "I think bigger (level 1).",
+  "I think bigger (level 2).",
+  "I imagine by wish then compose then wish: 0 new ideas.",
+  "I imagine by wish then compose: 0 new ideas.",
+  "I keep 1 of my imagined ideas in mind and let 1 go.",
+  "I imagine by recall: 2 new ideas.",
+  "I imagine by step: 0 new ideas.",
+  "I keep 2 of my imagined ideas in mind and let 1 go.",
+  "I think bigger (level 3).",
+  "I imagine by wish: 0 new ideas.",
+  "I break it into 2 steps (kalo(head(g)); head(filter(\u03bbe. eq(w1, head(e)), g))) and the rest follows: kalo(head(filter(\u03bbe. eq(kalo(head(g)), head(e)), g))).",
+  "I imagine by wish then step: 1 new ideas.",
+  "I keep 1 of my imagined ideas in mind and let 2 go.",
+  "I think bigger (level 4).",
+  "My audit passes kalo(head(filter(\u03bbe. eq(kalo(head(g)), head(e)), g))) on 941 fresh inputs.",
+  "It rings through the Field: 17 ways of working and imagining that led here are strengthened.",
+  "I imagine by compose: 0 new ideas."
+ ],
+ "answer_repr": "('c', 3, ('head', 'list', ('filter', None, ('lam', 'e', ('eq', None, ('c', 3, ('head', 'list', ('var', 'g'))), ('head', None, ('var', 'e')))), ('var', 'g'))))",
+ "stage": "teach",
+ "english": [
+  "story: john travelled to the kitchen; mary moved to the bedroom | question: where is mary -> bedroom",
+  "story: sandra moved to the hallway; john went to the garden | question: where is sandra -> hallway",
+  "story: john went to the kitchen; mary journeyed to the hallway; daniel moved to the kitchen | question: where is john -> kitchen"
+ ]
+}

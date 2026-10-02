@@ -1,0 +1,18 @@
+{
+ "suite": "L3",
+ "index": 4,
+ "mind": "m1",
+ "truth": "straight with position times wave with speed",
+ "claim": "straight with position times wave with speed",
+ "sure": true,
+ "verified": true,
+ "right": true,
+ "wrong_frozen": false,
+ "sure_unverified": false,
+ "surface_ok": false,
+ "wrong": false,
+ "throws": 40,
+ "own": 24,
+ "seconds": 700.1,
+ "families": 326
+}

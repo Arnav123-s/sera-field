@@ -1,0 +1,309 @@
+{
+ "task": "last 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 4,
+ "answer": [
+  "c",
+  3,
+  [
+   "c",
+   2,
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "var",
+     "e"
+    ]
+   ],
+   [
+    "sub",
+    null,
+    [
+     "zero",
+     null
+    ],
+    [
+     "c",
+     1,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "c",
+    2,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "c",
+       2,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "filteri",
+    null,
+    [
+     "lam",
+     "ie",
+     [
+      "lt",
+      null,
+      [
+       "c",
+       1,
+       [
+        "var",
+        "g"
+       ]
+      ],
+      [
+       "add",
+       null,
+       [
+        "var",
+        "i"
+       ],
+       [
+        "var",
+        "e"
+       ]
+      ]
+     ]
+    ],
+    [
+     "c",
+     2,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "filter",
+    null,
+    [
+     "lam",
+     "e",
+     [
+      "lt",
+      null,
+      [
+       "c",
+       1,
+       [
+        "var",
+        "g"
+       ]
+      ],
+      [
+       "add",
+       null,
+       [
+        "var",
+        "e"
+       ],
+       [
+        "one",
+        null
+       ]
+      ]
+     ]
+    ],
+    [
+     "c",
+     2,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "filteri",
+    null,
+    [
+     "lam",
+     "ie",
+     [
+      "lt",
+      null,
+      [
+       "var",
+       "i"
+      ],
+      [
+       "sub",
+       null,
+       [
+        "lit",
+        119
+       ],
+       [
+        "c",
+        1,
+        [
+         "var",
+         "g"
+        ]
+       ]
+      ]
+     ]
+    ],
+    [
+     "c",
+     2,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 2,
+ "asked": 3,
+ "explored": 0,
+ "tension": [
+  1.48,
+  13.1,
+  32.672,
+  30.057
+ ],
+ "wall": 526.4,
+ "cpu": 524.9,
+ "proven": true,
+ "invented": [
+  {
+   "id": 4,
+   "subject": "language",
+   "body": "fofo(ridu(_))"
+  }
+ ],
+ "reused": [
+  3,
+  2
+ ],
+ "words_heard": [
+  "last",
+  "word"
+ ],
+ "said": [
+  "fotu"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.13,
+  "ledger": 0.0,
+  "actions": 0.04,
+  "ask": 0.0,
+  "grow": 0.87,
+  "doubt": 0.09,
+  "imagine": 525.17,
+  "prove": 0.03
+ },
+ "built": [
+  {
+   "id": 3,
+   "name": "fofo",
+   "words": "finish what ridu starts",
+   "body": "foldn(\u03bba,e. e, 3, _)"
+  }
+ ],
+ "peak_mb": 9745.40234375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "fofo(ridu(g))",
+ "verdict": "proven right",
+ "audit": 298,
+ "imagined_by": {
+  "method": "#1+compose",
+  "moves": "step+wish+compose",
+  "origin": "wished"
+ },
+ "method_named": {
+  "id": 2,
+  "moves": "step then wish then compose"
+ },
+ "configs": [
+  "ask+grow",
+  "ask+imagine",
+  "grow+prove+ask",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: first (15.89).",
+  "I think bigger (level 1).",
+  "I break it into 1 step (sub(0, first(g))) and the rest follows: foldn(\u03bba,e. e, sub(0, first(g)), ridu(g)).",
+  "I wish I could finish what ridu starts: I build it (fofo = foldn(\u03bba,e. e, 3, _)) and use it.",
+  "I imagine by step then wish then compose: 2 new ideas.",
+  "I wish my functions could see the whole problem, not only the part they are given. I grow that way of seeing, and 3 ideas fit this, first fofo(filter(\u03bbe. lt(first(g), add(e, 1)), ridu(g))).",
+  "I break it into 1 step (fofo(ridu(g))) and the rest follows: fofo(ridu(g)).",
+  "I imagine by wish then step: 3 new ideas.",
+  "I keep 5 of my imagined ideas in mind and let 1 go.",
+  "I think bigger (level 2).",
+  "My audit passes fofo(ridu(g)) on 298 fresh inputs.",
+  "It rings through the Field: 7 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('c', 3, ('c', 2, ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: kitchen mary moved | question: what is the last word -> moved",
+  "story: garden moved bathroom bathroom mary went | question: what is the last word -> went",
+  "story: kitchen office mary kitchen | question: what is the last word -> kitchen"
+ ]
+}

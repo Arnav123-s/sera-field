@@ -1,0 +1,112 @@
+{
+ "task": "what_is 2",
+ "subject": "language",
+ "kind": "exact:list(list)->list",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  9,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   8,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "nil",
+   null
+  ],
+  [
+   "tail",
+   null,
+   [
+    "c",
+    9,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   10,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   2,
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "level": 0,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  2.637,
+  2.637
+ ],
+ "wall": 5.6,
+ "cpu": 5.6,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  9
+ ],
+ "words_heard": [
+  "what",
+  "is"
+ ],
+ "said": [
+  "midu"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.0,
+  "ledger": 0.0,
+  "actions": 0.02,
+  "prove": 0.03,
+  "doubt": 0.0
+ },
+ "built": [],
+ "peak_mb": 10168.0546875,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "midu(g)",
+ "verdict": "proven right",
+ "audit": 236,
+ "configs": [
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "My audit passes midu(g) on 236 fresh inputs."
+ ],
+ "answer_repr": "('c', 9, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: masseuse is a female massager; ridley is a marine turtle; haggard is british writer noted for romantic adventure novels | question: what is masseuse -> a female massager",
+  "story: unlabeled is lacking a label or tag; sanction is formal and explicit approval; miniaturist is someone who paints tiny pictures in great detail | question: what is sanction -> formal and explicit approval",
+  "story: blackcock is male black grouse; witting is aware or knowing; miniaturist is someone who paints tiny pictures in great detail; cariamidae is south american wading birds | question: what is witting -> aware or knowing"
+ ]
+}

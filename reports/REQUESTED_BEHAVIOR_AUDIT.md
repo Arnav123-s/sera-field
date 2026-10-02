@@ -1,6 +1,6 @@
 # Audit of the requested understanding, imagination and reward behavior
 
-Audited implementation: `c88820e349e0b0cb84af5b89df4ecf4041967d37`. I reread the complete attached proposal and the user's behavioral description, then traced the implementation, training updates, saved evaluation and reward call sites. This audit performs no new training and does not reopen FIELD-001 for selection.
+Audited implementation: `c88820e349e0b0cb84af5b89df4ecf4041967d37`. I reread the complete attached proposal and the author's behavioral description, then traced the implementation, training updates, saved evaluation and reward call sites. This audit performs no new training and does not reopen FIELD-001 for selection.
 
 **The complete requested architecture and behavior were not implemented or tested.** FIELD-001 trained a useful physical component and checked its task interfaces. Its 29 passing tests are implementation and finite physical-behavior checks; they are not 29 validations of the complete vision.
 
@@ -49,7 +49,7 @@ These are concrete implementation gaps, not claims that the proposed direction c
 
 ## Correction to the work's acceptance criterion
 
-The user's priority is the integrated behavior, irrespective of whether a classical control scores higher. I retain comparative evidence as a diagnostic and preserve the research direction. I should not make a numerical benchmark the answer to a request for deep understanding and autonomous discovery.
+the author's priority is the integrated behavior, irrespective of whether a classical control scores higher. I retain comparative evidence as a diagnostic and preserve the research direction. I should not make a numerical benchmark the answer to a request for deep understanding and autonomous discovery.
 
 The corrected [behavior acceptance contract](../docs/BEHAVIOR_ACCEPTANCE.md) requires a connected cycle: interpret a situation, identify a gap, generate alternatives, imagine consequences, choose evidence, independently check it, use credit to update a learned procedure, retain the result, and return to the original task. Completion requires held-out evidence for that cycle and its reward effect. Adding another isolated prediction task or accumulating points does not close it.
 

@@ -2,7 +2,7 @@
 
 I reread the latest supplied unified synthesis, SHA-256
 `701f8abbf20aa87693d05feec79e0f63790b183f5b55fdf48cea429b72eef775`,
-and the user's correction that memory should participate from the first lesson.
+and the author's correction that memory should participate from the first lesson.
 The original is preserved; the [full audit](../../docs/SDHA_UNIFIED_SOURCE_AUDIT.md)
 records the mathematical scope of every proposed mechanism.
 

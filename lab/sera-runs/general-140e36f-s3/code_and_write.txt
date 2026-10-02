@@ -1,0 +1,85 @@
+Colab /content/logs/general140.out (the one-SERA chain at 140e36f, seed 3), copied from the terminal screen; wrapped at the terminal width.
+
+--- its ideas as Python (part, lines 590-640, def/return only) ---
+return (5 if (x == 2) else dudu(x))
+# its idea 'noka': num -> num, in 'number: powers of
+two (wished)' (math)
+def noka(x):
+return reduce(lambda a, e: (a + a), count_to(x), 1)
+# its idea 'nolo': num -> num, in 'number: powers of
+two' (math)
+def nolo(x):
+return (4 if (x == 2) else noka(x))
+# its idea 'reno': num -> num, in 'rail: spring 2' (p
+hysics)
+def reno(x):
+return x
+# its idea 'mire': list(list) -> num, in 'first 1 (wi
+shed)' (language)
+def mire(x):
+return head(head_list(x[1:]))
+# its idea 'repe': list(list) -> num, in 'first 1' (l
+anguage)
+def repe(x):
+return reno(mire(x))
+# its idea 'last': list(list) -> num, in 'last 1' (la
+nguage)
+def last(x):
+return reduce(lambda a, e: e, head_list(x[1:]), 'last
+')
+
+--- its ideas as Python (tail) ---
+t 1 (inside)' (language)
+[code] def who(x):
+[code]     return reduce(lambda a, e: e, x, 'last')
+[code]
+[code]
+[code] # its idea 'fori': list(list) -> list, learned
+ in 'last 1 (inside)' (language)
+[code] def fori(x):
+[code]     return head_list(x[1:])
+[code]
+[code]
+[code] # its idea 'is': list(list) -> num, learned in
+ 'who 1' (language)
+[code] def is_(x):
+[code]     return mire(tuple(e for e in x if (who(hea
+d_list(x)) == who(e))))
+[code]
+[code]
+[code] # its idea 'miri': list(list) -> list(list), l
+earned in 'who 1 (inside)' (language)
+[code] def miri(x):
+[code]     return tuple(e for e in x if (who(head_lis
+t(x)) == who(e)))
+[code]
+[code]
+RUN EXIT code 0
+
+--- the write jobs ---
+of a list of lists; of nothing, the empty list
+598:[code] def count_to(n):              # 1, 2, ...,
+ n
+603:[code] def dudu(x):
+608:[code] def kadu(x):
+613:[code] def noka(x):
+618:[code] def nolo(x):
+623:[code] def reno(x):
+628:[code] def mire(x):
+633:[code] def repe(x):
+638:[code] def last(x):
+643:[code] def who(x):
+648:[code] def fori(x):
+653:[code] def is_(x):
+658:[code] def miri(x):
+663:[write] you: reverse the doubled - 4 examples to
+learn from, 2 held back as its check
+665:[write] SERA: I could not prove a program for thi
+s in 600 s. My best idea: [].
+666:RUN EXIT write 0
+667:[write] you: reverse the list - 4 examples to lea
+rn from, 2 held back as its check
+669:[write] SERA: I could not prove a program for thi
+s in 601 s. My best idea: l.
+670:RUN EXIT write 0
+671:GENERAL RUN DONE /content/general-140e36f-s3

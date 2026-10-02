@@ -1,0 +1,137 @@
+{
+ "arm": "step",
+ "echo": true,
+ "back": true,
+ "field": "/content/ab-b1/general-f1/one/field.pkl",
+ "box": 30.0,
+ "hours": 4.0,
+ "seed": 3,
+ "one_field": true,
+ "settings": {
+  "crutches_off": [],
+  "knobs": "ONE_FIELD=1"
+ },
+ "total_s": 14459.9,
+ "lessons": {
+  "first 1": {
+   "verdict": "proven right",
+   "claim": "spring(kape(g))",
+   "visits": 1,
+   "wall_all_visits": 9.8,
+   "steps": 4,
+   "stepped": false,
+   "back": false,
+   "rang": false
+  },
+  "first 2": {
+   "verdict": "proven right",
+   "claim": "kape(g)",
+   "visits": 1,
+   "wall_all_visits": 7.3,
+   "steps": 3,
+   "stepped": false,
+   "back": false,
+   "rang": true
+  },
+  "last 1": {
+   "verdict": "proven right",
+   "claim": "spring(kavi(g))",
+   "visits": 1,
+   "wall_all_visits": 266.2,
+   "steps": 3,
+   "stepped": false,
+   "back": true,
+   "rang": true
+  },
+  "last 2": {
+   "verdict": "proven right",
+   "claim": "kavi(g)",
+   "visits": 1,
+   "wall_all_visits": 11.3,
+   "steps": 2,
+   "stepped": false,
+   "back": false,
+   "rang": true
+  },
+  "who 1": {
+   "verdict": "not proven",
+   "claim": null,
+   "visits": 1,
+   "wall_all_visits": 1832.2,
+   "steps": 9,
+   "stepped": false,
+   "back": false,
+   "rang": false
+  },
+  "who 2": {
+   "verdict": "not proven",
+   "claim": null,
+   "visits": 1,
+   "wall_all_visits": 2192.5,
+   "steps": 30,
+   "stepped": false,
+   "back": false,
+   "rang": false
+  },
+  "where 1": {
+   "verdict": "not proven",
+   "claim": null,
+   "visits": 1,
+   "wall_all_visits": 2128.2,
+   "steps": 45,
+   "stepped": false,
+   "back": false,
+   "rang": true
+  },
+  "where 2": {
+   "verdict": "not proven",
+   "claim": null,
+   "visits": 1,
+   "wall_all_visits": 1906.5,
+   "steps": 7,
+   "stepped": false,
+   "back": false,
+   "rang": true
+  },
+  "what_is 1": {
+   "verdict": "not proven",
+   "claim": null,
+   "visits": 1,
+   "wall_all_visits": 1800.6,
+   "steps": 14,
+   "stepped": false,
+   "back": false,
+   "rang": false
+  },
+  "what_is 2": {
+   "verdict": "not proven",
+   "claim": null,
+   "visits": 1,
+   "wall_all_visits": 1800.8,
+   "steps": 8,
+   "stepped": false,
+   "back": false,
+   "rang": false
+  },
+  "who_in 1": {
+   "verdict": "not proven",
+   "claim": null,
+   "visits": 1,
+   "wall_all_visits": 2263.8,
+   "steps": 44,
+   "stepped": false,
+   "back": false,
+   "rang": false
+  },
+  "who_in 2": {
+   "verdict": "not proven",
+   "claim": null,
+   "visits": 1,
+   "wall_all_visits": 240.1,
+   "steps": 42,
+   "stepped": false,
+   "back": false,
+   "rang": false
+  }
+ }
+}

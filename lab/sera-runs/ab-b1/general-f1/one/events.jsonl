@@ -1,0 +1,25 @@
+{"kind": "task", "name": "rail: wind 2", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 6, "wall": 118.1, "t": 1790900452.8}
+{"kind": "task", "name": "number: odd", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 3, "wall": 632.6, "t": 1790901085.4}
+{"kind": "task", "name": "number: powers of two", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 13, "wall": 1007.9, "t": 1790902093.3}
+{"kind": "task", "name": "rail: spring 2", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 5, "wall": 272.1, "t": 1790902365.5}
+{"kind": "task", "name": "rail: stiff 2", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 5, "wall": 244.5, "t": 1790902610.2}
+{"kind": "task", "name": "list: one more", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 7, "wall": 18.5, "t": 1790902628.7}
+{"kind": "task", "name": "number: square", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 2, "wall": 0.4, "t": 1790902629.1}
+{"kind": "task", "name": "list: sum", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 7, "wall": 73.3, "t": 1790902702.4}
+{"kind": "task", "name": "rail: ripple 1", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 2, "wall": 85.3, "t": 1790902787.9}
+{"kind": "task", "name": "list: count", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 5, "wall": 6.8, "t": 1790902794.7}
+{"kind": "task", "name": "rail: ripple 2", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 6, "wall": 573.7, "t": 1790903368.7}
+{"kind": "task", "name": "rail: wind 1", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 6, "wall": 78.2, "t": 1790903447.3}
+{"kind": "task", "name": "list: keep positive", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 17, "wall": 1001.2, "t": 1790904448.5}
+{"kind": "task", "name": "list: last", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 4, "wall": 9.2, "t": 1790904457.7}
+{"kind": "task", "name": "list: double", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 3, "wall": 253.6, "t": 1790904711.3}
+{"kind": "task", "name": "rail: spring and drag 2", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 7, "wall": 192.8, "t": 1790904904.8}
+{"kind": "task", "name": "number: triangle", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 2, "wall": 2.1, "t": 1790904906.9}
+{"kind": "task", "name": "number: twice", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 2, "wall": 2.5, "t": 1790904909.4}
+{"kind": "task", "name": "rail: spring 1", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 5, "wall": 130.9, "t": 1790905040.6}
+{"kind": "task", "name": "rail: drag 2", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 2, "wall": 101.7, "t": 1790905142.6}
+{"kind": "task", "name": "rail: drag 1", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 2, "wall": 88.3, "t": 1790905231.2}
+{"kind": "task", "name": "list: reverse", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 17, "wall": 900.4, "t": 1790906131.6}
+{"kind": "task", "name": "rail: stiff 1", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 13, "wall": 315.0, "t": 1790906447.1}
+{"kind": "task", "name": "rail: spring and drag 1", "stage": "teach", "tag": "", "verdict": "proven right", "steps": 7, "wall": 270.4, "t": 1790906718.2}
+{"kind": "task", "name": "rail: rub 2", "stage": "teach", "tag": "", "verdict": "not proven", "steps": 198, "wall": 8272.1, "t": 1790914990.4}

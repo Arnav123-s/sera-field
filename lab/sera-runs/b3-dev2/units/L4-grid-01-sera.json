@@ -1,0 +1,37 @@
+{
+ "suite": "L4-grid",
+ "index": 1,
+ "mind": "sera",
+ "truth": "a steady push + a push that swings in time (cos 4.1t)",
+ "claim": "a steady push + a push that swings in time (cos 4.1t)",
+ "sure": true,
+ "verified": true,
+ "right": true,
+ "wrong_frozen": false,
+ "sure_unverified": false,
+ "right_grid": true,
+ "wrong_grid": false,
+ "surface_ok": false,
+ "wrong": false,
+ "throws": 16,
+ "own": 0,
+ "seconds": 42.4,
+ "certify_calls": 1,
+ "families": 121,
+ "gap": "I am sure the force is a steady push + a push that swings in time (cos 4.1t) where I looked (position -2.6 to 0.84, speed -2 to 1.1). Something more may be there, but it is too small to see here.",
+ "imagined_top3": [
+  [
+   "a steady push + a push that swings in time (cos 4.1t)",
+   0.326
+  ],
+  [
+   "a steady push + a push that swings in time (cos 4t)",
+   0.235
+  ],
+  [
+   "a steady push + a push that swings in time (cos 4.3t)",
+   0.121
+  ]
+ ],
+ "truth_in_imagined": true
+}

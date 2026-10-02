@@ -1,0 +1,14 @@
+The six files that timed out at 1,200 s, re-run on the same VM with JOBS=2, CAP=3600 (Colab cell output), 2026-10-01.
+CPU checks during the run (ps in the Colab terminal): test_growth_certify and test_universe_audit at 99.9% CPU at 1951 s;
+test_wide_rivals and test_nested at 99.9% later. The two audit files were not sampled. Dots in their logs at the
+cap: test_audit_fast 2 of 4 tests passed, test_audit_parallel 5 of 6.
+# test suite, one process per file (cap 3600 s, 2 at a time)
+# commit ac7759f, 2026-10-01T21:53Z
+TIMEOUT |  3600 s | tests/core/test_audit_fast.py |
+TIMEOUT |  3600 s | tests/core/test_audit_parallel.py |
+TIMEOUT |  3600 s | tests/core/test_growth_certify.py |
+PASS    |  2260 s | tests/core/test_universe_audit.py | 13 passed, 4 warnings in 2259.64s (0:37:39)
+PASS    |  2990 s | tests/core/test_wide_rivals.py | 9 passed, 3 warnings in 2989.50s (0:49:49)
+PASS    |  1112 s | tests/sera/test_nested.py | 8 passed in 1111.51s (0:18:31)
+files: 6, failed or timed out: 3, wall: 8850 s
+SLOW SUITE EXIT 1

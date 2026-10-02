@@ -1,0 +1,132 @@
+{
+ "rows": [
+  {
+   "unit": "L1-01",
+   "claim": "wave with position",
+   "right": false,
+   "band_ui": 0.3375800273959392,
+   "band_claim": 0.2450115763461086,
+   "ratio": 0.7257881286286545
+  },
+  {
+   "unit": "L1-05",
+   "claim": "a steady push",
+   "right": false,
+   "band_ui": 0.27274379425563045,
+   "band_claim": 0.2119588288533185,
+   "ratio": 0.7771352944318838
+  },
+  {
+   "unit": "L1-07",
+   "claim": "straight with speed",
+   "right": false,
+   "band_ui": 0.4550547116163249,
+   "band_claim": 0.3348134393614618,
+   "ratio": 0.7357652405624504
+  },
+  {
+   "unit": "L2-02",
+   "claim": "steps with speed + wave with speed",
+   "right": false,
+   "band_ui": 1.6124000854150242,
+   "band_claim": 1.1724581242984446,
+   "ratio": 0.727150869628402
+  },
+  {
+   "unit": "L2-03",
+   "claim": "cubic with speed + wave with speed",
+   "right": false,
+   "band_ui": 25.074456711517858,
+   "band_claim": 17.539688227031544,
+   "ratio": 0.6995042177314555
+  },
+  {
+   "unit": "L2-04",
+   "claim": "growing with position + wave with speed",
+   "right": false,
+   "band_ui": 1.1544237512780542,
+   "band_claim": 0.8264022851065502,
+   "ratio": 0.715856966899413
+  },
+  {
+   "unit": "L2-07",
+   "claim": "cubic with speed + wave with speed",
+   "right": false,
+   "band_ui": 33.423464225266294,
+   "band_claim": 22.429267321227055,
+   "ratio": 0.6710635130475724
+  },
+  {
+   "unit": "L3-01",
+   "claim": "cubic with speed + wave with position times growing with speed",
+   "right": false,
+   "band_ui": 10.641478488164767,
+   "band_claim": 24.55458709749759,
+   "ratio": 2.3074413132354397
+  },
+  {
+   "unit": "L3-04",
+   "claim": "straight with position times wave with speed",
+   "right": false,
+   "band_ui": 0.216030649083581,
+   "band_claim": 0.15365923758105285,
+   "ratio": 0.7112844322455514
+  },
+  {
+   "unit": "L3-held-02",
+   "claim": "cubic with position times steps with speed",
+   "right": false,
+   "band_ui": 0.62211094873373,
+   "band_claim": 0.4356742567316749,
+   "ratio": 0.7003160089345222
+  },
+  {
+   "unit": "L3-held-04",
+   "claim": "cubic with position times steps with speed",
+   "right": false,
+   "band_ui": 0.321813274070989,
+   "band_claim": 0.24258248821041395,
+   "ratio": 0.7537988882239287
+  },
+  {
+   "unit": "L4-01",
+   "claim": "a steady push + steps with position times wave with speed",
+   "right": false,
+   "band_ui": 0.6907586584525158,
+   "band_claim": 0.5476690676300939,
+   "ratio": 0.7928515421826476
+  },
+  {
+   "unit": "L4-02",
+   "claim": "growing with speed + cubic with position times straight with speed",
+   "right": false,
+   "band_ui": 0.30471628675561063,
+   "band_claim": 0.22462077426907606,
+   "ratio": 0.7371472547813862
+  },
+  {
+   "unit": "L5-01",
+   "claim": "straight with position + cubic with position",
+   "right": false,
+   "band_ui": 0.06703958492099048,
+   "band_claim": 0.05011279989315669,
+   "ratio": 0.7475105932146976
+  },
+  {
+   "unit": "L5-07",
+   "claim": "straight with position + cubic with position",
+   "right": false,
+   "band_ui": 0.042902131699497005,
+   "band_claim": 0.030789052282683072,
+   "ratio": 0.7176578660086499
+  }
+ ],
+ "summary": {
+  "n": 15,
+  "median_ratio": 0.727150869628402,
+  "bar": "median <= 0.85",
+  "passed": true,
+  "below_eps_ui": 2,
+  "below_eps_claim": 3
+ }
+}

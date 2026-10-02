@@ -1,0 +1,138 @@
+{
+ "task": "is_in 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 17,
+ "answer": [
+  "lit",
+  3
+ ],
+ "others": [
+  [
+   "lit",
+   4
+  ],
+  [
+   "lit",
+   5
+  ],
+  [
+   "lit",
+   8
+  ],
+  [
+   "one",
+   null
+  ],
+  [
+   "zero",
+   null
+  ]
+ ],
+ "level": 5,
+ "asked": 17,
+ "explored": 0,
+ "tension": [
+  3.838,
+  3.84,
+  7.254,
+  13.116,
+  15.055,
+  11.448,
+  15.038,
+  11.448,
+  11.26,
+  11.26,
+  11.26,
+  11.26,
+  11.26,
+  11.26,
+  11.26,
+  11.26,
+  11.26,
+  0.0
+ ],
+ "wall": 1800.7,
+ "cpu": 1790.1,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "is",
+  "yes",
+  "no"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 4.25,
+  "ledger": 0.0,
+  "actions": 0.79,
+  "ask": 0.01,
+  "grow": 270.35,
+  "doubt": 3.04,
+  "imagine": 1510.44
+ },
+ "built": [],
+ "peak_mb": 11644.0546875,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "ask+grow",
+  "ask+grow",
+  "ask+grow+imagine",
+  "ask+imagine+grow",
+  "ask+imagine",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "ask+grow"
+ ],
+ "say": [
+  "This rings in me: in (11.05), now (1.97).",
+  "I think bigger (level 1).",
+  "I think bigger (level 2).",
+  "I think bigger (level 3).",
+  "I imagine by step then wish then step: 0 new ideas.",
+  "I imagine by step then wish: 0 new ideas.",
+  "I keep 0 of my imagined ideas in mind and let 2 go.",
+  "I imagine by compose: 0 new ideas.",
+  "I imagine by compose then recall: 1 new ideas.",
+  "I keep 0 of my imagined ideas in mind and let 1 go.",
+  "I think bigger (level 4).",
+  "I imagine by wish then wish then step: 0 new ideas.",
+  "I imagine by step then wish: 0 new ideas.",
+  "I imagine by wish then step then wish: 0 new ideas.",
+  "I imagine by wish then step: 0 new ideas.",
+  "In is_in 1 my best idea is sub(fofo(head(g)), 1), but I cannot finish (0.0 nats of doubt). Is it right, or what am I missing?",
+  "I imagine by wish then compose then step then wish: 0 new ideas.",
+  "I imagine by compose then step then wish then compose: 0 new ideas.",
+  "I imagine by wish: 0 new ideas.",
+  "I imagine by wish then step: 0 new ideas.",
+  "I think bigger (level 5).",
+  "In is_in 1 my best idea is 3, but I cannot finish (1.8 nats of doubt, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('lit', 3)",
+ "stage": "teach",
+ "english": [
+  "story: mary journeyed to the bathroom; sandra went to the bedroom; john moved to the office | question: is sandra in the bedroom yes or no -> yes",
+  "story: john moved to the bathroom; sandra travelled to the office | question: is john in the bathroom yes or no -> yes",
+  "story: sandra travelled to the garden; mary journeyed to the bedroom | question: is sandra in the bedroom yes or no -> no"
+ ]
+}

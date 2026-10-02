@@ -67,7 +67,7 @@ attach_logging_hooks = False
             )  # Calls into the C++ engine to run the backward pass
 E           RuntimeError: trying to differentiate twice a function that was marked with @once_differentiable
 
-.venv\Lib\site-packages\torch\autograd\graph.py:865: RuntimeError</failure></testcase><testcase classname="tests.test_core_owner" name="test_exact_state_and_next_update_after_checkpoint_restore" time="1.241"><failure message="RuntimeError: trying to differentiate twice a function that was marked with @once_differentiable">tmp_path = WindowsPath('C:/Users/admin/AppData/Local/Temp/pytest-of-octashop/pytest-146/test_exact_state_and_next_upda0')
+.venv\Lib\site-packages\torch\autograd\graph.py:865: RuntimeError</failure></testcase><testcase classname="tests.test_core_owner" name="test_exact_state_and_next_update_after_checkpoint_restore" time="1.241"><failure message="RuntimeError: trying to differentiate twice a function that was marked with @once_differentiable">tmp_path = WindowsPath('(local temporary path)')
 
     def test_exact_state_and_next_update_after_checkpoint_restore(tmp_path):
         owner = fresh(); optimizer = torch.optim.AdamW(owner.parameters(), lr=.0001)

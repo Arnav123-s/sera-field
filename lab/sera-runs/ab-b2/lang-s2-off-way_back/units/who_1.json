@@ -1,0 +1,211 @@
+{
+ "task": "who 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 9,
+ "answer": [
+  "c",
+  1,
+  [
+   "filter",
+   null,
+   [
+    "lam",
+    "e",
+    [
+     "eq",
+     null,
+     [
+      "c",
+      3,
+      [
+       "var",
+       "e"
+      ]
+     ],
+     [
+      "c",
+      3,
+      [
+       "head",
+       "list",
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ],
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   1,
+   [
+    "filter",
+    null,
+    [
+     "lam",
+     "e",
+     [
+      "eq",
+      null,
+      [
+       "c",
+       3,
+       [
+        "head",
+        "list",
+        [
+         "var",
+         "g"
+        ]
+       ]
+      ],
+      [
+       "c",
+       3,
+       [
+        "var",
+        "e"
+       ]
+      ]
+     ]
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "lit",
+   121
+  ],
+  [
+   "one",
+   null
+  ]
+ ],
+ "level": 0,
+ "asked": 6,
+ "explored": 0,
+ "tension": [
+  5.1,
+  5.1,
+  5.1,
+  5.1,
+  5.1,
+  5.1,
+  5.1,
+  32.491,
+  32.491
+ ],
+ "wall": 1253.7,
+ "cpu": 1249.7,
+ "proven": true,
+ "invented": [
+  {
+   "id": 5,
+   "subject": "language",
+   "body": "first(filter(\u03bbe. eq(fofo(e), fofo(head(_))), _))"
+  },
+  {
+   "id": 6,
+   "subject": "language",
+   "inner": "the part it works on",
+   "body": "filter(\u03bbe. eq(fofo(e), fofo(head(_))), _)"
+  }
+ ],
+ "reused": [
+  1,
+  3
+ ],
+ "words_heard": [
+  "who"
+ ],
+ "said": [
+  "who"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.01,
+  "ledger": 0.0,
+  "actions": 0.04,
+  "prove": 0.28,
+  "doubt": 0.0,
+  "ask": 0.0,
+  "imagine": 1253.23
+ },
+ "built": [],
+ "peak_mb": 7778.5625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "first(filter(\u03bbe. eq(fofo(e), fofo(head(g))), g))",
+ "verdict": "proven right",
+ "audit": 859,
+ "imagined_by": {
+  "method": "compose+wish",
+  "moves": "compose+wish",
+  "origin": "wished"
+ },
+ "configs": [
+  "prove",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "imagine+ask",
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "My audit found an input it gets wrong; I learn from it.",
+  "I wish my functions could see the whole problem, not only the part they are given. I grow that way of seeing, and 1 ideas fit this, first first(filter(\u03bbe. eq(fofo(e), fofo(head(g))), g)).",
+  "I imagine by compose then wish: 1 new ideas.",
+  "I break it into 1 step (fofo(head(g))) and the rest follows: first(filter(\u03bbe. eq(fofo(head(g)), fofo(e)), g)).",
+  "I imagine by step then wish: 1 new ideas.",
+  "My audit passes first(filter(\u03bbe. eq(fofo(e), fofo(head(g))), g)) on 859 fresh inputs.",
+  "It rings through the Field: 9 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('c', 1, ('filter', None, ('lam', 'e', ('eq', None, ('c', 3, ('var', 'e')), ('c', 3, ('head', 'list', ('var', 'g'))))), ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: sandra travelled to the hallway; sandra moved to the bedroom | question: who went to the hallway -> sandra",
+  "story: john moved to the garden; daniel moved to the bedroom | question: who went to the bedroom -> daniel",
+  "story: sandra moved to the bedroom; john went to the office; sandra moved to the bathroom | question: who went to the office -> john"
+ ]
+}

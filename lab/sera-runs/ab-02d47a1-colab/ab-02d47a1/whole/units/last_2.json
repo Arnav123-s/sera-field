@@ -1,0 +1,96 @@
+{
+ "task": "last 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  4,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "lit",
+   2
+  ],
+  [
+   "lit",
+   3
+  ],
+  [
+   "lit",
+   4
+  ],
+  [
+   "lit",
+   5
+  ]
+ ],
+ "level": 0,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  3.469,
+  3.469
+ ],
+ "wall": 0.9,
+ "cpu": 0.8,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  4
+ ],
+ "words_heard": [
+  "last",
+  "word"
+ ],
+ "said": [
+  "lolo"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.0,
+  "ledger": 0.0,
+  "actions": 0.0,
+  "prove": 0.02,
+  "doubt": 0.0
+ },
+ "built": [],
+ "peak_mb": 2913.79296875,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "lolo(g)",
+ "verdict": "proven right",
+ "audit": 230,
+ "configs": [
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "My audit passes lolo(g) on 230 fresh inputs."
+ ],
+ "answer_repr": "('c', 4, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: kitchen mary moved | question: what is the last word -> moved",
+  "story: garden moved bathroom bathroom mary went | question: what is the last word -> went",
+  "story: kitchen office mary kitchen | question: what is the last word -> kitchen"
+ ]
+}

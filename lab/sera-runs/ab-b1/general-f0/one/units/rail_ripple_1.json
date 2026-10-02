@@ -1,0 +1,127 @@
+{
+ "task": "rail: ripple 1",
+ "subject": "physics",
+ "kind": "strengths:num->num",
+ "teaching": true,
+ "steps": 10,
+ "answer": null,
+ "others": null,
+ "level": 3,
+ "asked": 6,
+ "explored": 5,
+ "tension": [
+  5.662,
+  7.003,
+  19.758,
+  28.688,
+  48.364,
+  91.722,
+  114.735,
+  114.682,
+  117.157,
+  107.198
+ ],
+ "wall": 814.8,
+ "cpu": 810.7,
+ "proven": true,
+ "invented": [
+  {
+   "id": 14,
+   "subject": "physics",
+   "input": "position",
+   "how": "curve",
+   "body": "tab"
+  }
+ ],
+ "reused": [],
+ "words_heard": [
+  "back",
+  "far",
+  "ripple"
+ ],
+ "said": [
+  "mika"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 33.75,
+  "ledger": 61.25,
+  "actions": 123.23,
+  "imagine": 26.25,
+  "doubt": 122.34,
+  "prove": 63.79,
+  "ask": 0.0,
+  "grow": 383.45,
+  "explore": 0.01
+ },
+ "built": [],
+ "peak_mb": 4822.72265625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "a free curve in position (17 knots)",
+ "band": 0.10592236407423597,
+ "verdict": "proven right",
+ "gap": 0.01831593790641417,
+ "signs": {
+  "position": -1
+ },
+ "certified": [
+  {
+   "part": 0,
+   "as": "curve",
+   "on": "position"
+  }
+ ],
+ "question": {
+  "text": "The 8 things here have only 6 kinds of mass (0.709, 0.71, 0.711, 1.419, 1.424, 1.933). Why so few? What makes a mass? In all 4 worlds I measured so far, things came in fewer kinds of mass than there were things.",
+  "things": 8,
+  "kinds": 6,
+  "masses": [
+   0.709,
+   0.71,
+   0.711,
+   1.419,
+   1.424,
+   1.933
+  ]
+ },
+ "attributed": true,
+ "configs": [
+  "imagine",
+  "prove+ask+grow",
+  "explore+ask+grow",
+  "explore",
+  "explore+imagine",
+  "grow+prove",
+  "imagine",
+  "explore",
+  "explore",
+  "leave"
+ ],
+ "say": [
+  "I imagine by recall: 1 new ideas.",
+  "I keep what was right: spring of position explains 1453812 nats; I build on it and look for the rest.",
+  "I imagine by blend then keep: 48 new ideas.",
+  "I keep 0 of my imagined ideas in mind and let 49 go.",
+  "The judge accepts: my shape 12 of position up to 0.2 where I looked.",
+  "I think bigger (level 1).",
+  "It rings through the Field: 3 ways of working and imagining that led here are strengthened.",
+  "I think bigger (level 2).",
+  "I imagine by compose then blend: 338 new ideas.",
+  "I imagine by closer then refine: 1 new ideas.",
+  "I keep 1 of my imagined ideas in mind and let 338 go.",
+  "I think bigger (level 3).",
+  "The judge accepts: a free curve in position (17 knots) up to 0.2 where I looked.",
+  "It rings through the Field: 9 ways of working and imagining that led here are strengthened.",
+  "I keep what was right: a curve in position explains 5524475 nats; I build on it and look for the rest.",
+  "I imagine by question then keep: 117 new ideas.",
+  "I imagine by keep then blend: 0 new ideas."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

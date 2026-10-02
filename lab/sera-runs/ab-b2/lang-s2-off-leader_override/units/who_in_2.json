@@ -1,0 +1,141 @@
+{
+ "task": "who_in 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  5,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "c",
+    9,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "one",
+    null
+   ],
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "c",
+    4,
+    [
+     "var",
+     "g"
+    ]
+   ],
+   [
+    "one",
+    null
+   ]
+  ]
+ ],
+ "level": 1,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  1.065,
+  1.068
+ ],
+ "wall": 6.9,
+ "cpu": 6.9,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  5
+ ],
+ "words_heard": [
+  "who",
+  "is",
+  "in"
+ ],
+ "said": [
+  "in"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.04,
+  "ledger": 0.0,
+  "actions": 0.15,
+  "prove": 1.5,
+  "ask": 0.0,
+  "grow": 0.39,
+  "doubt": 0.04
+ },
+ "built": [],
+ "peak_mb": 9745.40234375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "in(g)",
+ "verdict": "proven right",
+ "audit": 236,
+ "configs": [
+  "prove+ask+grow",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: in (8.71).",
+  "My audit passes in(g) on 236 fresh inputs.",
+  "I think bigger (level 1)."
+ ],
+ "answer_repr": "('c', 5, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: sandra moved to the kitchen; daniel journeyed to the bathroom | question: who is in the bathroom -> daniel",
+  "story: daniel moved to the hallway; john went to the garden | question: who is in the garden -> john",
+  "story: mary journeyed to the kitchen; daniel journeyed to the bathroom; sandra went to the garden | question: who is in the kitchen -> mary"
+ ]
+}

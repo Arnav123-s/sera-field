@@ -1,0 +1,111 @@
+{
+ "task": "book what is psychology_03eef13b",
+ "subject": "language",
+ "kind": "exact:list(list)->list",
+ "teaching": false,
+ "steps": 3,
+ "answer": [
+  "c",
+  9,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "nil",
+   null
+  ],
+  [
+   "c",
+   8,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   10,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   2,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "head",
+   "list",
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "level": 0,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  0.764,
+  0.764,
+  0.764
+ ],
+ "wall": 8.8,
+ "cpu": 8.8,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  9
+ ],
+ "words_heard": [],
+ "said": [
+  "midu"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.0,
+  "ledger": 0.0,
+  "actions": 0.03,
+  "prove": 0.06,
+  "ask": 0.0,
+  "doubt": 0.0,
+  "imagine": 0.0
+ },
+ "built": [],
+ "peak_mb": 17160.21484375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "midu(g)",
+ "verdict": "proven right",
+ "audit": 236,
+ "configs": [
+  "prove+ask",
+  "prove+imagine",
+  "leave"
+ ],
+ "say": [
+  "My audit passes midu(g) on 236 fresh inputs.",
+  "My audit passes midu(g) on 236 fresh inputs.",
+  "I imagine by compose: 0 new ideas."
+ ],
+ "answer_repr": "('c', 9, ('var', 'g'))",
+ "stage": "read",
+ "english": [
+  "story: concepts is categories or groupings of linguistic information images ideas or memories such as life experiences; rates is higher in men than in women and about half of those with this disorder report onset before the age of merikangas et al; schema is a mental construct consisting of a cluster or collection of related concepts bartlett; reason is most likely encoding failure | question: what is schema -> a mental construct consisting of a cluster or collection of related concepts bartlett",
+  "story: mania is a state of extreme elation and agitation; depression is a heterogeneous mood state it consists of a broad spectrum of symptoms that range in severity; schema is a mental construct consisting of a cluster or collection of related concepts bartlett | question: what is depression -> a heterogeneous mood state it consists of a broad spectrum of symptoms that range in severity",
+  "story: culture is transmitted to people through language as well as through the modeling of culturally acceptable and nonacceptable behaviors that are either rewarded or punished triandis suh; chances is good that it was plate | question: what is chances -> good that it was plate"
+ ]
+}

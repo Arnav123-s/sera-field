@@ -1,0 +1,37 @@
+{
+ "suite": "L4-grid",
+ "index": 4,
+ "mind": "sera",
+ "truth": "cubic with speed + a push that swings in time (sin 3.3t)",
+ "claim": "cubic with speed + a push that swings in time (sin 3.3t)",
+ "sure": true,
+ "verified": true,
+ "right": true,
+ "wrong_frozen": false,
+ "sure_unverified": false,
+ "right_grid": true,
+ "wrong_grid": false,
+ "surface_ok": false,
+ "wrong": false,
+ "throws": 16,
+ "own": 0,
+ "seconds": 41.0,
+ "certify_calls": 1,
+ "families": 121,
+ "gap": "I am sure the force is cubic with speed + a push that swings in time (sin 3.3t) where I looked (position -0.65 to 0.79, speed -0.54 to 0.74). Something more may be there, but it is too small to see here.",
+ "imagined_top3": [
+  [
+   "cubic with speed + a push that swings in time (sin 3.4t)",
+   0.33
+  ],
+  [
+   "cubic with speed + a push that swings in time (sin 3.6t)",
+   0.182
+  ],
+  [
+   "cubic with speed + a push that swings in time (sin 3.3t)",
+   0.16
+  ]
+ ],
+ "truth_in_imagined": true
+}

@@ -1,0 +1,76 @@
+
+===== /content/logs/trace-where-all.log =====
+11 is language ['list(list)', 'num'] mire(filter(λ
+e. eq(who(head(_)), who(e)), _))
+   12 miri language ['list(list)', 'list(list)'] filt
+er(λe. eq(who(head(_)), who(e)), _)
+language ideas (and what they call): [5, 6, 7, 8, 9,
+10, 11, 12]
+its ideas that give the last of a list: [(9, 'who')]
+target with plain: size 17, fits the lesson: True, se
+es: True
+target with who: size 11, fits the lesson: True, sees
+: True
+all | level 0 (size 3, seeing body 3): 39 programs, 0
+ fit, complete True, 2 s
+all | level 1 (size 5, seeing body 3): 460 programs,
+0 fit, complete True, 0 s
+all | level 2 (size 7, seeing body 3): 6111 programs,
+ 0 fit, complete True, 2 s
+all | level 3 (size 8, seeing body 4): 22674 programs
+, 0 fit, complete True, 16 s
+all | level 4 (size 9, seeing body 5): 84213 programs
+, 0 fit, complete True, 74 s
+all | level 5 (size 10, seeing body 6): 315180 progra
+ms, 0 fit, complete True, 357 s
+all | level 6 (size 11, seeing body 7): 4 programs, 0
+ fit, complete False, 401 s
+TRACE DONE
+
+===== /content/logs/trace-where-language.log =====
+11 is language ['list(list)', 'num'] mire(filter(λ
+e. eq(who(head(_)), who(e)), _))
+   12 miri language ['list(list)', 'list(list)'] filt
+er(λe. eq(who(head(_)), who(e)), _)
+language ideas (and what they call): [5, 6, 7, 8, 9,
+10, 11, 12]
+its ideas that give the last of a list: [(9, 'who')]
+target with plain: size 17, fits the lesson: True, se
+es: True
+target with who: size 11, fits the lesson: True, sees
+: True
+language | level 0 (size 3, seeing body 3): 29 progra
+ms, 0 fit, complete True, 2 s
+language | level 1 (size 5, seeing body 3): 208 progr
+ams, 0 fit, complete True, 0 s
+language | level 2 (size 7, seeing body 3): 1646 prog
+rams, 0 fit, complete True, 1 s
+language | level 3 (size 8, seeing body 4): 4834 prog
+rams, 0 fit, complete True, 8 s
+language | level 4 (size 9, seeing body 5): 14250 pro
+grams, 0 fit, complete True, 39 s
+language | level 5 (size 10, seeing body 6): 43299 pr
+ograms, 0 fit, complete True, 134 s
+language | level 6 (size 11, seeing body 7): 15435 pr
+ograms, 0 fit, complete False, 401 s
+TRACE DONE
+
+===== /content/logs/trace-step-all.log =====
+ideas used 12 masked 0 sees True
+  [build] I break it into 2 steps (who(head(g)); head
+(filter(λe. eq(w1, head(e)), g))) and the rest follow
+s: who(head
+all: 1 answers in 68 s
+    who(head(filter(λe. eq(who(head(g)), head(e)), g)
+)) ('stepped', 2) fits: True
+STEP TRACE DONE
+
+===== /content/logs/trace-step-language.log =====
+ideas used 8 masked 4 sees True
+  [build] I break it into 2 steps (who(head(g)); head
+(filter(λe. eq(w1, head(e)), g))) and the rest follow
+s: who(head
+language: 1 answers in 32 s
+    who(head(filter(λe. eq(who(head(g)), head(e)), g)
+)) ('stepped', 2) fits: True
+STEP TRACE DONE

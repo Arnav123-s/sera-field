@@ -1,0 +1,59 @@
+{
+  "schema": "sera-field.core022.receipt-audit.1",
+  "arm": "credited",
+  "utc": "2026-09-21T06:13:14Z",
+  "cursor": 576,
+  "target": 12288,
+  "checkpoint": {
+    "revision": "63f7fcb3b20b7517a64b34fdbaf90168718c4c5639a33334c6d4c3174d882051.pt",
+    "sha256": "63f7fcb3b20b7517a64b34fdbaf90168718c4c5639a33334c6d4c3174d882051",
+    "weights": "ae79c8b40a8c01f119f2c3f4b635d33aa2fa32d6820d7bf299554f344756590d",
+    "cursor": 576
+  },
+  "initial_weights": "f597c8ded9d31d7cdb9c5dfd712c81cf2c1e77c2e87812310221037b91867e59",
+  "weights_changed": true,
+  "receipt_prefixes": [
+    {
+      "file": "updates-3dc5d04c4c5e41fdbb67be0857318d4f.jsonl",
+      "bytes": 1505732,
+      "sha256": "fc2aea5edfd9050b33fe543f406e6581279b73c7bf2231575b48005e108e54b2"
+    }
+  ],
+  "presentations": {
+    "semantic": 1152,
+    "physics": 768,
+    "program_subject:whole_human_mathematics": 768,
+    "programs": 768,
+    "pair_subject:calculus": 168,
+    "pairs": 1152,
+    "reading": 192,
+    "pair_subject:dailydialog": 168,
+    "mixed": 192,
+    "pair_subject:descartes": 168,
+    "pair_subject:grammar": 168,
+    "pair_subject:plato": 160,
+    "pair_subject:programming": 160,
+    "pair_subject:webster": 160
+  },
+  "distinct_records": {
+    "semantic": 1152,
+    "physics": 768,
+    "programs": 768,
+    "pairs": 1039,
+    "reading": 192,
+    "mixed": 192
+  },
+  "distinct_human_source_groups": 2715,
+  "recorded_update_wall_seconds": 921.6723866002285,
+  "progress_same_cursor": true,
+  "audit_passed": true,
+  "course_completed_at_snapshot": false,
+  "reserved_source_rows_parsed": 0,
+  "model_imports": 0,
+  "checkpoint_pickles_opened": 0,
+  "worker_files_modified": 0,
+  "whole_behavior_qualified": false,
+  "verifier_sha256": "0c9110fbf36c505bb503e7726141067464d625a347387a31adbdf8a9d1ac4113",
+  "audit_wall_seconds": 2.182012399978703,
+  "scope": "Recorded source order, partitions, finite updates and checkpoint bytes; numerical replay is a separate assessment."
+}

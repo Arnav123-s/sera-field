@@ -1,0 +1,284 @@
+{
+ "task": "number: powers of two",
+ "subject": "math",
+ "kind": "exact:num->num",
+ "teaching": true,
+ "steps": 11,
+ "answer": [
+  "foldn",
+  null,
+  [
+   "lam",
+   "ae",
+   [
+    "add",
+    null,
+    [
+     "var",
+     "a"
+    ],
+    [
+     "var",
+     "a"
+    ]
+   ]
+  ],
+  [
+   "one",
+   null
+  ],
+  [
+   "range",
+   null,
+   [
+    "var",
+    "n"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "add",
+     null,
+     [
+      "var",
+      "a"
+     ],
+     [
+      "var",
+      "a"
+     ]
+    ]
+   ],
+   [
+    "lit",
+    2
+   ],
+   [
+    "tail",
+    null,
+    [
+     "range",
+     null,
+     [
+      "var",
+      "n"
+     ]
+    ]
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "sub",
+     null,
+     [
+      "one",
+      null
+     ],
+     [
+      "c",
+      2,
+      [
+       "var",
+       "a"
+      ]
+     ]
+    ]
+   ],
+   [
+    "one",
+    null
+   ],
+   [
+    "range",
+    null,
+    [
+     "var",
+     "n"
+    ]
+   ]
+  ],
+  [
+   "c",
+   5,
+   [
+    "var",
+    "n"
+   ]
+  ],
+  [
+   "if",
+   null,
+   [
+    "eq",
+    null,
+    [
+     "var",
+     "n"
+    ],
+    [
+     "lit",
+     2
+    ]
+   ],
+   [
+    "lit",
+    4
+   ],
+   [
+    "c",
+    5,
+    [
+     "var",
+     "n"
+    ]
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "c",
+     5,
+     [
+      "var",
+      "e"
+     ]
+    ]
+   ],
+   [
+    "one",
+    null
+   ],
+   [
+    "range",
+    null,
+    [
+     "var",
+     "n"
+    ]
+   ]
+  ]
+ ],
+ "level": 5,
+ "asked": 7,
+ "explored": 0,
+ "tension": [
+  8.509,
+  21.265,
+  21.409,
+  20.314,
+  20.314,
+  20.861,
+  20.861,
+  20.861,
+  22.401,
+  22.401,
+  22.401
+ ],
+ "wall": 1127.0,
+ "cpu": 1123.3,
+ "proven": true,
+ "invented": [
+  {
+   "id": 6,
+   "subject": "math",
+   "body": "foldn(\u03bba,e. add(a, a), 1, range(_))"
+  },
+  {
+   "id": 7,
+   "subject": "math",
+   "inner": "what it does to its part",
+   "body": "foldn(\u03bba,e. add(a, a), 1, _)"
+  }
+ ],
+ "reused": [],
+ "words_heard": [
+  "powers",
+  "of",
+  "two"
+ ],
+ "said": [
+  "powers"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 1.1,
+  "ledger": 0.0,
+  "actions": 0.0,
+  "imagine": 847.92,
+  "ask": 0.0,
+  "doubt": 0.63,
+  "grow": 274.7,
+  "prove": 0.02
+ },
+ "built": [
+  {
+   "id": 4,
+   "name": "nolo",
+   "words": "handle eq(w, 3) (it gives 8), then the rest",
+   "body": "if(eq(_, 4), 16, 2)"
+  },
+  {
+   "id": 5,
+   "name": "reno",
+   "words": "handle eq(w, 2) (it gives 4), then the rest",
+   "body": "if(eq(_, 3), 8, nolo(_))"
+  }
+ ],
+ "peak_mb": 5144.390625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "foldn(\u03bba,e. add(a, a), 1, range(n))",
+ "verdict": "proven right",
+ "audit": 653,
+ "configs": [
+  "imagine+ask",
+  "grow",
+  "ask+grow",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+grow",
+  "prove+grow",
+  "imagine+grow",
+  "leave"
+ ],
+ "say": [
+  "I wish I could handle eq(w, 3) (it gives 8), then the rest: I build it (nolo = if(eq(_, 4), 16, 2)) and use it.",
+  "I wish I could handle eq(w, 2) (it gives 4), then the rest: I build it (reno = if(eq(_, 3), 8, nolo(_))) and use it.",
+  "I imagine by step then wish: 1 new ideas.",
+  "I imagine by compose then wish: 0 new ideas.",
+  "I think bigger (level 1).",
+  "I think bigger (level 2).",
+  "I think bigger (level 3).",
+  "My audit passes foldn(\u03bba,e. add(a, a), 1, range(n)) on 653 fresh inputs.",
+  "I think bigger (level 4).",
+  "It rings through the Field: 13 ways of working and imagining that led here are strengthened.",
+  "I imagine by compose: 0 new ideas.",
+  "I keep 0 of my imagined ideas in mind and let 1 go.",
+  "I think bigger (level 5)."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

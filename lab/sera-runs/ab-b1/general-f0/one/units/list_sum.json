@@ -1,0 +1,187 @@
+{
+ "task": "list: sum",
+ "subject": "code",
+ "kind": "exact:list->num",
+ "teaching": true,
+ "steps": 8,
+ "answer": [
+  "c",
+  13,
+  [
+   "var",
+   "l"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   8,
+   [
+    "c",
+    13,
+    [
+     "var",
+     "l"
+    ]
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "c",
+     13,
+     [
+      "var",
+      "l"
+     ]
+    ]
+   ],
+   [
+    "zero",
+    null
+   ],
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "l"
+    ]
+   ]
+  ],
+  [
+   "c",
+   13,
+   [
+    "tail",
+    null,
+    [
+     "c",
+     11,
+     [
+      "var",
+      "l"
+     ]
+    ]
+   ]
+  ],
+  [
+   "mul",
+   null,
+   [
+    "lit",
+    4
+   ],
+   [
+    "head",
+    null,
+    [
+     "var",
+     "l"
+    ]
+   ]
+  ],
+  [
+   "c",
+   6,
+   [
+    "c",
+    10,
+    [
+     "head",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "l"
+      ]
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 1,
+ "asked": 4,
+ "explored": 0,
+ "tension": [
+  5.557,
+  9.013,
+  9.013,
+  9.013,
+  18.573,
+  13.732,
+  13.732,
+  13.732
+ ],
+ "wall": 55.6,
+ "cpu": 55.3,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  13
+ ],
+ "words_heard": [
+  "sum"
+ ],
+ "said": [
+  "sum"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.94,
+  "ledger": 0.0,
+  "actions": 0.12,
+  "ask": 0.0,
+  "doubt": 0.36,
+  "imagine": 53.69,
+  "grow": 0.3,
+  "prove": 0.02
+ },
+ "built": [
+  {
+   "id": 13,
+   "name": "dupe",
+   "words": "make what spring turns into the answer",
+   "body": "foldn(\u03bba,e. add(e, a), 0, _)"
+  }
+ ],
+ "peak_mb": 4822.72265625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "dupe(l)",
+ "verdict": "proven right",
+ "audit": 239,
+ "configs": [
+  "ask",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "grow",
+  "prove",
+  "imagine",
+  "leave"
+ ],
+ "say": [
+  "I wish I could make what spring turns into the answer: I build it (dupe = foldn(\u03bba,e. add(e, a), 0, _)) and use it.",
+  "I imagine by wish: 1 new ideas.",
+  "I wish my functions could see the whole problem, not only the part they are given. I grow that way of seeing, and 1 ideas fit this, first foldn(\u03bba,e. dupe(l), 0, tail(l)).",
+  "I imagine by compose then wish then wish: 1 new ideas.",
+  "I think bigger (level 1).",
+  "My audit passes dupe(l) on 239 fresh inputs.",
+  "It rings through the Field: 8 ways of working and imagining that led here are strengthened.",
+  "I imagine by compose: 0 new ideas."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

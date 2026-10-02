@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+scratch/
+test-results/
+
+sources/
+.venv/
+*.egg-info/
+build/
+.pytest_cache/
+*.pkl
+*.pt
+*.npz
+*.log
+sera-runs/try/
+sera-runs/course/

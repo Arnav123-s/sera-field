@@ -1,0 +1,58 @@
+Colab run conv-gen-fix2 (2026-09-30), code = 176de5a (per-frame reliability gate), Field = general-140e36f-s3/lang/field.pkl
+command: sera_converse.py --field ... --seed 3 --n 60 --book /content/wordnet
+Below: the run's own output, copied from the Colab terminal screen (lines wrapped at the terminal width).
+
+in': '5/5 (answered 5)'}  (0.1 s)
+== read only: the lesson: 37/60 right, answered 28  {
+'absent': '16/16 (answered 0)', 'first': '8/8 (answer
+ed 8)', 'is in': '0/4 (answered 2)', 'last': '8/8 (an
+swered 8)', 'what is': '0/5 (answered 5)', 'where': '
+0/6 (answered 0)', 'where now': '0/8 (answered 0)', '
+who in': '5/5 (answered 5)'}  (0.1 s)
+== before: the fresh talk: 29/60 right, answered 28
+{'absent': '13/13 (answered 0)', 'first': '8/8 (answe
+red 8)', 'is in': '0/8 (answered 6)', 'last': '4/4 (a
+nswered 4)', 'what is': '0/6 (answered 6)', 'where':
+'0/8 (answered 0)', 'where now': '0/9 (answered 0)',
+'who in': '4/4 (answered 4)'}  (0.1 s)
+== taught: the fresh talk: 29/60 right, answered 22
+{'absent': '13/13 (answered 0)', 'first': '8/8 (answe
+red 8)', 'is in': '0/8 (answered 0)', 'last': '4/4 (a
+nswered 4)', 'what is': '0/6 (answered 6)', 'where':
+'0/8 (answered 0)', 'where now': '0/9 (answered 0)',
+'who in': '4/4 (answered 4)'}  (0.1 s)
+== read only: the fresh talk: 29/60 right, answered 2
+8  {'absent': '13/13 (answered 0)', 'first': '8/8 (an
+swered 8)', 'is in': '0/8 (answered 6)', 'last': '4/4
+ (answered 4)', 'what is': '0/6 (answered 6)', 'where
+': '0/8 (answered 0)', 'where now': '0/9 (answered 0)
+', 'who in': '4/4 (answered 4)'}  (0.1 s)
+63301 /content/conv-gen-fix2/CONVERSE.json
+
+--- example answers (screen tail) ---
+what is phyllocladaceae? -> omissions (idea last)
+ [wrong]
+
+== taught: the fresh talk: 29/60 right, answered 22
+{'absent': '13/13 (answered 0)', 'first': '8/8 (answe
+red 8)', 'is in': '0/8 (answered 0)', 'last': '4/4 (a
+nswered 4)', 'what is': '0/6 (answered 6)', 'where':
+'0/8 (answered 0)', 'where now': '0/9 (answered 0)',
+'who in': '4/4 (answered 4)'}  (0.1
+   who is in the garden? -> john (idea is)
+   where is john? -> I do not know  [wrong]
+   what is the first word? -> sandra (idea mire)
+   where is jade? -> I do not know
+   where is grace? -> I do not know
+   what is phyllocladaceae? -> omissions (idea last)
+ [wrong]
+
+== read only: the fresh talk: 29/60 right, answered 2
+8  {'absent': '13/13 (answered 0)', 'first': '8/8 (an
+swered 8)', 'is in': '0/8 (answered 6)', 'last': '4/4
+ (answered 4)', 'what is': '0/6 (answered 6)', 'where
+': '0/8 (answered 0)', 'where now': '0/9 (answered 0)
+', 'who in': '4/4 (answered 4)'}  (
+   who is in the garden? -> john (idea is)
+   where is john? -> I do not know  [wrong]
+   what is the first word? -> sandra (idea mire)

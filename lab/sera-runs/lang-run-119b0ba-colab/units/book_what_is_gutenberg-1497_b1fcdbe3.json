@@ -1,0 +1,105 @@
+{
+ "task": "book what is gutenberg-1497_b1fcdbe3",
+ "subject": "language",
+ "kind": "exact:list(list)->list",
+ "teaching": false,
+ "steps": 2,
+ "answer": [
+  "c",
+  9,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "nil",
+   null
+  ],
+  [
+   "c",
+   8,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   10,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   2,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "head",
+   "list",
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "level": 0,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  0.575,
+  0.575
+ ],
+ "wall": 15.9,
+ "cpu": 15.9,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  9
+ ],
+ "words_heard": [],
+ "said": [
+  "midu"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.0,
+  "ledger": 0.0,
+  "actions": 0.04,
+  "prove": 0.03,
+  "doubt": 0.0
+ },
+ "built": [],
+ "peak_mb": 18171.0390625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "midu(g)",
+ "verdict": "proven right",
+ "audit": 236,
+ "configs": [
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "My audit passes midu(g) on 236 fresh inputs."
+ ],
+ "answer_repr": "('c', 9, ('var', 'g'))",
+ "stage": "read",
+ "english": [
+  "story: curse is laid upon them of being and doing what it approves and when they attempt first principles the failure is ludicrous; question is asked why are the citizens of states so hostile to philosophy; tyrant is the third removed from the oligarch and has therefore not a shadow of his pleasure but the shadow of a shadow only; second is a dwelling and the third clothing and the like | question: what is curse -> laid upon them of being and doing what it approves and when they attempt first principles the failure is ludicrous",
+  "story: man is mean saving toiling the slave of one passion which is the master of the rest is he not the very image of the state; socrates is quite ready to accept the new position which he equally turns against thrasymachus by the help of the analogy of the arts; education is represented by him not as the filling of a vessel but as the turning the eye of the soul towards the light; greek is the base on which the whole calculation depends or the lowest term from which it can be worked out | question: what is man -> mean saving toiling the slave of one passion which is the master of the rest is he not the very image of the state",
+  "story: dialectician is as much above the mathematician as the mathematician is above the ordinary man; anarchy is the law not of the state only but of private houses and extends even to the animals | question: what is anarchy -> the law not of the state only but of private houses and extends even to the animals"
+ ]
+}

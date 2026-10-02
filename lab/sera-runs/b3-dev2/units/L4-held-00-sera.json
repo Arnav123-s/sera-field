@@ -1,0 +1,37 @@
+{
+ "suite": "L4-held",
+ "index": 0,
+ "mind": "sera",
+ "truth": "growing with speed + steps with position times cubic with speed",
+ "claim": "growing with speed + steps with position times cubic with speed",
+ "sure": true,
+ "verified": true,
+ "right": true,
+ "wrong_frozen": false,
+ "sure_unverified": false,
+ "right_grid": true,
+ "wrong_grid": false,
+ "surface_ok": false,
+ "wrong": false,
+ "throws": 24,
+ "own": 8,
+ "seconds": 155.5,
+ "certify_calls": 9,
+ "families": 92,
+ "gap": "I am sure the force is growing with speed + steps with position times cubic with speed where I looked (position -1.2 to 0.87, speed -1.1 to 0.79). Something more may be there, but it is too small to see here.",
+ "imagined_top3": [
+  [
+   "straight with speed",
+   0.171
+  ],
+  [
+   "straight with speed + cubic with speed",
+   0.164
+  ],
+  [
+   "straight with speed + growing with speed",
+   0.113
+  ]
+ ],
+ "truth_in_imagined": false
+}

@@ -1,0 +1,100 @@
+{
+ "task": "first 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  1,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "lit",
+   2
+  ],
+  [
+   "lit",
+   5
+  ],
+  [
+   "one",
+   null
+  ],
+  [
+   "zero",
+   null
+  ],
+  [
+   "head",
+   null,
+   [
+    "head",
+    "list",
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ]
+ ],
+ "level": 0,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  3.309,
+  3.309
+ ],
+ "wall": 4.4,
+ "cpu": 4.4,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  1
+ ],
+ "words_heard": [
+  "first",
+  "word"
+ ],
+ "said": [
+  "first"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.0,
+  "ledger": 0.0,
+  "actions": 0.0,
+  "prove": 0.01,
+  "doubt": 0.0
+ },
+ "built": [],
+ "peak_mb": 13193.55859375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "first(g)",
+ "verdict": "proven right",
+ "audit": 228,
+ "configs": [
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "My audit passes first(g) on 228 fresh inputs."
+ ],
+ "answer_repr": "('c', 1, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: mary journeyed to the kitchen | question: what is the first word -> mary",
+  "story: mary travelled to the bedroom | question: what is the first word -> mary",
+  "story: mary journeyed to the hallway | question: what is the first word -> mary"
+ ]
+}

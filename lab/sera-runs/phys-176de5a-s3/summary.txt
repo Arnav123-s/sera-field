@@ -1,0 +1,80 @@
+Colab run phys-176de5a (2026-10-01 UTC): scripts/sera_one.py --stage teach --hours 1.5 --seed 3 --book /content/wordnet, code 176de5a (the channel fix a291bd5/2ecdb79 included), a newborn SERA.
+Copied from the Colab terminal screen (wrapped at the terminal width). Log on Colab: /content/logs/phys-176de5a.log
+
+--- worlds 1-13 ---
+ve in time (33 knots) | steps 5 | 68.
+number: odd (teach) | wo :: proven right | if(eq(n, 2
+), 5, dudu(n)) | steps 3 | 511.2 s |
+number: powers of two (t :: proven right | if(eq(n, 2
+), 4, noka(n)) | steps 9 | 371.9 s |
+rail: spring 2 (teach) | :: proven right | a free cur
+ve in position (9 knots) | steps 3 |
+rail: stiff 2 (teach) |  :: proven right | a free cur
+ve in (position x (position x positio
+list: one more (teach) | :: proven right | map(λe. mi
+re(e), l) | steps 6 | 491.5 s | inve
+number: square (teach) | :: proven right | mul(n, n)
+| steps 3 | 2.2 s | invented ['mul(_,
+list: sum (teach) | word :: proven right | nope(l) |
+steps 7 | 154.0 s | invented [] | reu
+rail: ripple 1 (teach) | :: proven right | my shape 7
+ of position | steps 5 | 90.9 s | inv
+list: count (teach) | wo :: proven right | sum(map(λe
+. 1, l)) | steps 5 | 23.0 s | invent
+rail: ripple 2 (teach) | :: proven right | my shape 7
+ of position | steps 5 | 85.1 s | inv
+rail: wind 1 (teach) | w :: proven right | a free cur
+ve in time (33 knots) | steps 5 | 58.
+list: keep positive (tea :: proven right | filter(λe.
+ lt(0, e), l) | steps 14 | 33.8 s |
+25
+
+--- worlds 12-25 ---
+list: keep positive (teach)  :: proven right | filter
+(λe. lt(0, e), l) | steps 14 | 33.8 s | invent
+list: last (teach) | words h :: proven right | foldn(
+λa,e. e, 0, l) | steps 4 | 2.7 s | invented ['
+list: double (teach) | words :: proven right | map(λe
+. miri(e), l) | steps 4 | 491.3 s | invented [
+rail: spring and drag 2 (tea :: proven right | my sha
+pe 7 of position + my shape 8 of speed | steps
+number: triangle (teach) | w :: proven right | sum(ra
+nge(n)) | steps 3 | 1.9 s | invented ['sum(rang
+number: twice (teach) | word :: proven right | miri(n
+) | steps 2 | 1.1 s | invented [] | reused [15]
+rail: spring 1 (teach) | wor :: proven right | my sha
+pe 7 of position | steps 8 | 119.0 s | invented
+rail: drag 2 (teach) | words :: proven right | my sha
+pe 8 of speed | steps 6 | 108.2 s | invented []
+rail: drag 1 (teach) | words :: proven right | my sha
+pe 8 of speed | steps 6 | 97.4 s | invented []
+list: reverse (teach) | word :: proven right | foldl(
+ a,e. cons(e, a), [], l) | steps 42 | 921.2 s
+rail: stiff 1 (teach) | word :: proven right | a free
+ curve in position 2x closer around 0 (33 knots
+rail: spring and drag 1 (tea :: proven right | my sha
+pe 7 of position + my shape 8 of speed | steps
+rail: rub 2 (teach) | words  :: not proven | None | s
+teps 7 | 606.2 s | invented [] | reused [] | sa
+
+--- rail: stiff 2 ---
+=== rail: stiff 2 (teach) | words heard: stiff back f
+ar
+    [1] The judge does not accept my shape 7 of posit
+ion + my shape 8 of speed: something else is here: th
+e law misfits more objects than bumps explai
+    [1] I imagine by blend: 0 new ideas.
+    [1] I imagine by blend then swap: 0 new ideas.
+    [2] I think bigger (level 1).
+    [3] The judge accepts: a free curve in (position
+x (position x position)) (9 knots) up to 0.2 where I
+looked.
+    [3] I think bigger (level 2).
+    [3] It rings through the Field: 1 ways of working
+ and imagining that led here are strengthened.
+  -> proven right | a free curve in (position x (posi
+tion x position)) (9 knots) | steps 4 | 145.7 s | inv
+ented ['mul(_, mul(_, _))'] | reused [] | sa
+
+--- end of log ---
+ONE SERA DONE {"tasks": 25, "concepts": 18, "concepts_by_subject": {"math": 6, "physics": 2, "code": 10}, "words": 25, "grounded": 3, "coined": 11, "understood": 25, "possibilities": 13, "links": 0, "questions": 12, "inbox": 4}

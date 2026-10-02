@@ -1,0 +1,107 @@
+{
+ "task": "last 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": [
+  "c",
+  2,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "lit",
+    5
+   ],
+   [
+    "c",
+    1,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "lit",
+   2
+  ],
+  [
+   "lit",
+   3
+  ],
+  [
+   "lit",
+   4
+  ]
+ ],
+ "level": 1,
+ "asked": 0,
+ "explored": 0,
+ "tension": [
+  3.846,
+  3.848
+ ],
+ "wall": 1.8,
+ "cpu": 1.8,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  2
+ ],
+ "words_heard": [
+  "last",
+  "word"
+ ],
+ "said": [
+  "last"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.01,
+  "ledger": 0.0,
+  "actions": 0.01,
+  "prove": 0.01,
+  "grow": 0.12,
+  "doubt": 0.01
+ },
+ "built": [],
+ "claim": "last(g)",
+ "verdict": "proven right",
+ "audit": 228,
+ "configs": [
+  "prove+grow",
+  "leave"
+ ],
+ "say": [
+  "My audit passes last(g) on 228 fresh inputs.",
+  "I think bigger (level 1)."
+ ],
+ "answer_repr": "('c', 2, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: kitchen mary moved | question: what is the last word -> moved",
+  "story: garden moved bathroom bathroom mary went | question: what is the last word -> went",
+  "story: kitchen office mary kitchen | question: what is the last word -> kitchen"
+ ]
+}

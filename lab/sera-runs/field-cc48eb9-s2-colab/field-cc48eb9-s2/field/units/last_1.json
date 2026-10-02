@@ -1,0 +1,264 @@
+{
+ "task": "last 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 4,
+ "answer": [
+  "c",
+  3,
+  [
+   "c",
+   2,
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   3,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "c",
+       2,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "head",
+   null,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "c",
+      2,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "var",
+     "e"
+    ]
+   ],
+   [
+    "foldn",
+    null,
+    [
+     "lam",
+     "ae",
+     [
+      "var",
+      "e"
+     ]
+    ],
+    [
+     "zero",
+     null
+    ],
+    [
+     "mapi",
+     null,
+     [
+      "lam",
+      "ie",
+      [
+       "var",
+       "i"
+      ]
+     ],
+     [
+      "map",
+      null,
+      [
+       "lam",
+       "e",
+       [
+        "one",
+        null
+       ]
+      ],
+      [
+       "c",
+       2,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ],
+   [
+    "c",
+    2,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "tail",
+      null,
+      [
+       "tail",
+       null,
+       [
+        "c",
+        2,
+        [
+         "var",
+         "g"
+        ]
+       ]
+      ]
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 2,
+ "asked": 3,
+ "explored": 0,
+ "tension": [
+  1.925,
+  13.545,
+  32.407,
+  32.407
+ ],
+ "wall": 650.4,
+ "cpu": 645.7,
+ "proven": true,
+ "invented": [
+  {
+   "id": 4,
+   "subject": "language",
+   "body": "fofo(ridu(_))"
+  }
+ ],
+ "reused": [
+  3,
+  2
+ ],
+ "words_heard": [
+  "last",
+  "word"
+ ],
+ "said": [
+  "fotu"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.14,
+  "ledger": 0.0,
+  "actions": 0.02,
+  "ask": 0.0,
+  "grow": 1.42,
+  "doubt": 0.1,
+  "imagine": 648.63,
+  "prove": 0.02
+ },
+ "built": [
+  {
+   "id": 3,
+   "name": "fofo",
+   "words": "finish what ridu starts",
+   "body": "foldn(\u03bba,e. e, 3, _)"
+  }
+ ],
+ "peak_mb": 11644.0546875,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "fofo(ridu(g))",
+ "verdict": "proven right",
+ "audit": 298,
+ "imagined_by": {
+  "method": "#1+compose",
+  "moves": "step+wish+compose",
+  "origin": "wished"
+ },
+ "method_named": {
+  "id": 2,
+  "moves": "step then wish then compose"
+ },
+ "configs": [
+  "ask+grow",
+  "imagine+grow+ask",
+  "ask+prove",
+  "leave"
+ ],
+ "say": [
+  "This rings in me: first (15.89).",
+  "I think bigger (level 1).",
+  "I break it into 3 steps (map(\u03bbe. 1, ridu(g)); mapi(\u03bbi,e. i, w1); foldn(\u03bba,e. e, 0, w2)) and the rest follows: foldn(\u03bba,e. e, foldn(\u03bba,e. e, 0, mapi(\u03bbi,e. i, map(\u03bbe. 1, ridu(g)))), ridu(g)).",
+  "I wish I could finish what ridu starts: I build it (fofo = foldn(\u03bba,e. e, 3, _)) and use it.",
+  "I imagine by step then wish then compose: 2 new ideas.",
+  "I break it into 2 steps (sub(first(g), 1); sub(fofo(ridu(g)), w1)) and the rest follows: add(sub(first(g), 1), fofo(range(sub(fofo(ridu(g)), sub(first(g), 1))))).",
+  "I imagine by step then wish: 1 new ideas.",
+  "I keep 3 of my imagined ideas in mind and let 1 go.",
+  "I think bigger (level 2).",
+  "My audit passes fofo(ridu(g)) on 298 fresh inputs.",
+  "It rings through the Field: 9 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('c', 3, ('c', 2, ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: kitchen mary moved | question: what is the last word -> moved",
+  "story: garden moved bathroom bathroom mary went | question: what is the last word -> went",
+  "story: kitchen office mary kitchen | question: what is the last word -> kitchen"
+ ]
+}

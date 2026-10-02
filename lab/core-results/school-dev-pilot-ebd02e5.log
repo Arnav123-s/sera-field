@@ -1,0 +1,3 @@
+﻿name=school-dev-pilot-ebd02e5 from=(review notes, not published) commit=ebd02e5 cmd=school_run.py --seeds 1 2 3 --workers 8 --results (review notes, not published)\core-results\school-dev-ebd02e5 started=2026-09-24T12:38:21
+24 lives to run (ebd02e5), settings {'n_taught': 50, 'n_alone': 30, 'situations': 5, 'eps': 0.5, 'budget': 2, 'repeats': 2, 'n_exam': 12}
+exit=-1 minutes=55.8 finished=2026-09-24T13:34:07

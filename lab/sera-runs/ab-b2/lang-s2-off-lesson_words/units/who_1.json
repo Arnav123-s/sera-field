@@ -1,0 +1,243 @@
+{
+ "task": "who 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 6,
+ "answer": [
+  "c",
+  1,
+  [
+   "filter",
+   null,
+   [
+    "lam",
+    "e",
+    [
+     "eq",
+     null,
+     [
+      "c",
+      3,
+      [
+       "var",
+       "e"
+      ]
+     ],
+     [
+      "c",
+      3,
+      [
+       "head",
+       "list",
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ],
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   1,
+   [
+    "filter",
+    null,
+    [
+     "lam",
+     "e",
+     [
+      "eq",
+      null,
+      [
+       "c",
+       3,
+       [
+        "head",
+        "list",
+        [
+         "var",
+         "g"
+        ]
+       ]
+      ],
+      [
+       "c",
+       3,
+       [
+        "var",
+        "e"
+       ]
+      ]
+     ]
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "foldn",
+   null,
+   [
+    "lam",
+    "ae",
+    [
+     "head",
+     null,
+     [
+      "var",
+      "e"
+     ]
+    ]
+   ],
+   [
+    "lit",
+    5
+   ],
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "tail",
+    null,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 2,
+ "asked": 5,
+ "explored": 0,
+ "tension": [
+  5.37,
+  5.372,
+  32.762,
+  32.762,
+  32.762,
+  32.762
+ ],
+ "wall": 1136.1,
+ "cpu": 1132.2,
+ "proven": true,
+ "invented": [
+  {
+   "id": 5,
+   "subject": "language",
+   "body": "first(filter(\u03bbe. eq(fofo(e), fofo(head(_))), _))"
+  },
+  {
+   "id": 6,
+   "subject": "language",
+   "inner": "the part it works on",
+   "body": "filter(\u03bbe. eq(fofo(e), fofo(head(_))), _)"
+  }
+ ],
+ "reused": [
+  1,
+  3
+ ],
+ "words_heard": [
+  "who"
+ ],
+ "said": [
+  "who"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.17,
+  "ledger": 0.0,
+  "actions": 0.06,
+  "prove": 0.19,
+  "ask": 0.0,
+  "grow": 2.18,
+  "doubt": 0.12,
+  "imagine": 1133.29
+ },
+ "built": [],
+ "peak_mb": 9664.890625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "first(filter(\u03bbe. eq(fofo(e), fofo(head(g))), g))",
+ "verdict": "proven right",
+ "audit": 859,
+ "imagined_by": {
+  "method": "step+wish",
+  "moves": "step+wish",
+  "origin": "wished"
+ },
+ "configs": [
+  "prove+ask+grow",
+  "ask+imagine",
+  "ask+imagine",
+  "ask",
+  "ask+grow+prove",
+  "leave"
+ ],
+ "say": [
+  "My audit found an input it gets wrong; I learn from it.",
+  "I think bigger (level 1).",
+  "I wish my functions could see the whole problem, not only the part they are given. I grow that way of seeing, and 1 ideas fit this, first first(filter(\u03bbe. eq(fofo(e), fofo(head(g))), g)).",
+  "I imagine by step then wish: 1 new ideas.",
+  "I break it into 1 step (fofo(head(g))) and the rest follows: first(filter(\u03bbe. eq(fofo(head(g)), fofo(e)), g)).",
+  "I imagine by compose then step: 1 new ideas.",
+  "I imagine by recall: 1 new ideas.",
+  "I imagine by compose: 0 new ideas.",
+  "I keep 2 of my imagined ideas in mind and let 1 go.",
+  "I think bigger (level 2).",
+  "My audit passes first(filter(\u03bbe. eq(fofo(e), fofo(head(g))), g)) on 859 fresh inputs.",
+  "It rings through the Field: 11 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('c', 1, ('filter', None, ('lam', 'e', ('eq', None, ('c', 3, ('var', 'e')), ('c', 3, ('head', 'list', ('var', 'g'))))), ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: sandra travelled to the hallway; sandra moved to the bedroom | question: who went to the hallway -> sandra",
+  "story: john moved to the garden; daniel moved to the bedroom | question: who went to the bedroom -> daniel",
+  "story: sandra moved to the bedroom; john went to the office; sandra moved to the bathroom | question: who went to the office -> john"
+ ]
+}

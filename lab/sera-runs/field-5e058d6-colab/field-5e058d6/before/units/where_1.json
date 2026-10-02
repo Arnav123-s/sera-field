@@ -1,0 +1,361 @@
+{
+ "task": "where 1",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 48,
+ "answer": [
+  "c",
+  4,
+  [
+   "filter",
+   null,
+   [
+    "lam",
+    "e",
+    [
+     "lt",
+     null,
+     [
+      "c",
+      1,
+      [
+       "tail",
+       null,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ],
+     [
+      "c",
+      3,
+      [
+       "var",
+       "e"
+      ]
+     ]
+    ]
+   ],
+   [
+    "var",
+    "g"
+   ]
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   4,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   3,
+   [
+    "cons",
+    null,
+    [
+     "c",
+     4,
+     [
+      "tail",
+      null,
+      [
+       "var",
+       "g"
+      ]
+     ]
+    ],
+    [
+     "c",
+     2,
+     [
+      "c",
+      6,
+      [
+       "tail",
+       null,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "c",
+   4,
+   [
+    "foldl",
+    null,
+    [
+     "lam",
+     "ae",
+     [
+      "cons",
+      null,
+      [
+       "var",
+       "e"
+      ],
+      [
+       "var",
+       "a"
+      ]
+     ]
+    ],
+    [
+     "var",
+     "g"
+    ],
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "add",
+   null,
+   [
+    "c",
+    4,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "c",
+    1,
+    [
+     "tail",
+     null,
+     [
+      "c",
+      6,
+      [
+       "tail",
+       null,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ]
+  ],
+  [
+   "sub",
+   null,
+   [
+    "c",
+    4,
+    [
+     "tail",
+     null,
+     [
+      "var",
+      "g"
+     ]
+    ]
+   ],
+   [
+    "c",
+    1,
+    [
+     "tail",
+     null,
+     [
+      "c",
+      6,
+      [
+       "tail",
+       null,
+       [
+        "var",
+        "g"
+       ]
+      ]
+     ]
+    ]
+   ]
+  ]
+ ],
+ "level": 5,
+ "asked": 40,
+ "explored": 0,
+ "tension": [
+  2.929,
+  2.929,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.534,
+  5.537,
+  5.537,
+  5.537,
+  5.537,
+  12.756,
+  28.002
+ ],
+ "wall": 1842.5,
+ "cpu": 1822.5,
+ "proven": false,
+ "invented": [],
+ "reused": [],
+ "words_heard": [
+  "where",
+  "is"
+ ],
+ "said": [],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 3.85,
+  "ledger": 0.0,
+  "actions": 0.14,
+  "ask": 0.01,
+  "doubt": 3.8,
+  "imagine": 1460.82,
+  "grow": 371.03
+ },
+ "built": [],
+ "peak_mb": 9775.55078125,
+ "peak_mb_by": {
+  "imagine": 324.9
+ },
+ "memory_stops": 0,
+ "claim": null,
+ "verdict": "not proven",
+ "configs": [
+  "ask",
+  "ask",
+  "ask",
+  "imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "grow",
+  "grow",
+  "imagine",
+  "grow",
+  "grow",
+  "grow"
+ ],
+ "say": [
+  "I imagine by recall then wish: 1 new ideas.",
+  "I imagine by recall then compose: 0 new ideas.",
+  "I keep 0 of my imagined ideas in mind and let 1 go.",
+  "In where 1 my best idea is lolo(tail(g)), but I cannot finish (0.0 nats of doubt). Is it right, or what am I missing?",
+  "I imagine by wish: 0 new ideas.",
+  "I imagine by wish then step: 0 new ideas.",
+  "I think bigger (level 1).",
+  "I think bigger (level 2).",
+  "I imagine by step then wish then step: 0 new ideas.",
+  "I imagine by step then wish: 0 new ideas.",
+  "I think bigger (level 3).",
+  "I think bigger (level 4).",
+  "I think bigger (level 5).",
+  "In where 1 my best idea is lolo(filter(\u03bbe. lt(first(tail(g)), kalo(e)), g)), but I cannot finish (0.0 nats of doubt, and I reached my limit). Is it right, or what am I missing?"
+ ],
+ "answer_repr": "('c', 4, ('filter', None, ('lam', 'e', ('lt', None, ('c', 1, ('tail', None, ('var', 'g'))), ('c', 3, ('var', 'e')))), ('var', 'g')))",
+ "stage": "teach",
+ "english": [
+  "story: john travelled to the kitchen; mary moved to the bedroom | question: where is mary -> bedroom",
+  "story: sandra moved to the hallway; john went to the garden | question: where is sandra -> hallway",
+  "story: john went to the kitchen; mary journeyed to the hallway; daniel moved to the kitchen | question: where is john -> kitchen"
+ ]
+}

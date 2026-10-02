@@ -1,0 +1,143 @@
+{
+ "task": "who 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 12,
+ "answer": [
+  "c",
+  5,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "lit",
+   3
+  ],
+  [
+   "lit",
+   4
+  ],
+  [
+   "lit",
+   5
+  ],
+  [
+   "one",
+   null
+  ]
+ ],
+ "level": 7,
+ "asked": 12,
+ "explored": 0,
+ "tension": [
+  3.433,
+  3.436,
+  3.436,
+  3.436,
+  3.436,
+  3.436,
+  3.436,
+  3.436,
+  3.436,
+  2.154,
+  2.154,
+  2.136,
+  3.228
+ ],
+ "wall": 1800.7,
+ "cpu": 1800.0,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  5
+ ],
+ "words_heard": [
+  "who"
+ ],
+ "said": [
+  "who"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 2.74,
+  "ledger": 0.0,
+  "actions": 0.6,
+  "ask": 0.0,
+  "prove": 0.37,
+  "grow": 1789.37,
+  "doubt": 2.75
+ },
+ "built": [],
+ "peak_mb": 16948.26953125,
+ "peak_mb_by": {
+  "grow": 3747.3
+ },
+ "memory_stops": 0,
+ "claim": "who(g)",
+ "verdict": "proven right",
+ "audit": 232,
+ "configs": [
+  "ask+prove+grow",
+  "ask+grow",
+  "ask+grow",
+  "ask+prove",
+  "ask",
+  "ask+prove+grow",
+  "ask",
+  "prove+ask",
+  "prove+ask+grow",
+  "prove+ask",
+  "prove+ask+grow",
+  "prove+ask+grow"
+ ],
+ "say": [
+  "This rings in me: who (4.76), first (2.32).",
+  "My audit passes who(g) on 232 fresh inputs.",
+  "I think bigger (level 1).",
+  "It rings through the Field: 3 ways of working and imagining that led here are strengthened.",
+  "I think bigger (level 2).",
+  "I think bigger (level 3).",
+  "My audit passes who(g) on 232 fresh inputs.",
+  "It rings through the Field: 6 ways of working and imagining that led here are strengthened.",
+  "My audit passes who(g) on 232 fresh inputs.",
+  "I think bigger (level 4).",
+  "It rings through the Field: 4 ways of working and imagining that led here are strengthened.",
+  "My audit passes who(g) on 232 fresh inputs.",
+  "It rings through the Field: 3 ways of working and imagining that led here are strengthened.",
+  "My audit passes who(g) on 232 fresh inputs.",
+  "I think bigger (level 5).",
+  "It rings through the Field: 3 ways of working and imagining that led here are strengthened.",
+  "My audit passes who(g) on 232 fresh inputs.",
+  "It rings through the Field: 2 ways of working and imagining that led here are strengthened.",
+  "My audit passes who(g) on 232 fresh inputs.",
+  "I think bigger (level 6).",
+  "It rings through the Field: 3 ways of working and imagining that led here are strengthened.",
+  "My audit passes who(g) on 232 fresh inputs.",
+  "I think bigger (level 7).",
+  "It rings through the Field: 3 ways of working and imagining that led here are strengthened."
+ ],
+ "answer_repr": "('c', 5, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: daniel travelled to the office; mary journeyed to the bathroom | question: who went to the office -> daniel",
+  "story: mary moved to the bathroom; daniel moved to the garden | question: who went to the bathroom -> mary",
+  "story: daniel journeyed to the bedroom; daniel moved to the garden; mary moved to the kitchen | question: who went to the kitchen -> mary"
+ ]
+}

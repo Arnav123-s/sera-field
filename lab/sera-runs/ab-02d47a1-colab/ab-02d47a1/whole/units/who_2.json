@@ -1,0 +1,106 @@
+{
+ "task": "who 2",
+ "subject": "language",
+ "kind": "exact:list(list)->num",
+ "teaching": true,
+ "steps": 3,
+ "answer": [
+  "c",
+  5,
+  [
+   "var",
+   "g"
+  ]
+ ],
+ "others": [
+  [
+   "c",
+   1,
+   [
+    "tail",
+    null,
+    [
+     "var",
+     "g"
+    ]
+   ]
+  ],
+  [
+   "c",
+   1,
+   [
+    "var",
+    "g"
+   ]
+  ],
+  [
+   "lit",
+   3
+  ],
+  [
+   "lit",
+   4
+  ],
+  [
+   "lit",
+   5
+  ]
+ ],
+ "level": 0,
+ "asked": 2,
+ "explored": 0,
+ "tension": [
+  3.376,
+  3.427,
+  3.427
+ ],
+ "wall": 3.3,
+ "cpu": 3.3,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  5
+ ],
+ "words_heard": [
+  "who"
+ ],
+ "said": [
+  "who"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.0,
+  "ledger": 0.0,
+  "actions": 0.03,
+  "ask": 0.0,
+  "doubt": 0.0,
+  "prove": 0.05
+ },
+ "built": [],
+ "peak_mb": 4156.625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "who(g)",
+ "verdict": "proven right",
+ "audit": 232,
+ "configs": [
+  "ask",
+  "prove+ask",
+  "leave"
+ ],
+ "say": [
+  "My audit passes who(g) on 232 fresh inputs."
+ ],
+ "answer_repr": "('c', 5, ('var', 'g'))",
+ "stage": "teach",
+ "english": [
+  "story: sandra travelled to the hallway; sandra moved to the bedroom | question: who went to the hallway -> sandra",
+  "story: john moved to the garden; daniel moved to the bedroom | question: who went to the bedroom -> daniel",
+  "story: sandra moved to the bedroom; john went to the office; sandra moved to the bathroom | question: who went to the office -> john"
+ ]
+}

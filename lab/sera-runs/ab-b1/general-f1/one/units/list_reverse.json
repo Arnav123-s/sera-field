@@ -1,0 +1,161 @@
+{
+ "task": "list: reverse",
+ "subject": "code",
+ "kind": "exact:list->list",
+ "teaching": true,
+ "steps": 17,
+ "answer": [
+  "foldl",
+  null,
+  [
+   "lam",
+   "ae",
+   [
+    "cons",
+    null,
+    [
+     "var",
+     "e"
+    ],
+    [
+     "var",
+     "a"
+    ]
+   ]
+  ],
+  [
+   "nil",
+   null
+  ],
+  [
+   "var",
+   "l"
+  ]
+ ],
+ "others": [
+  [
+   "var",
+   "l"
+  ],
+  [
+   "nil",
+   null
+  ],
+  [
+   "c",
+   17,
+   [
+    "var",
+    "l"
+   ]
+  ],
+  [
+   "c",
+   21,
+   [
+    "var",
+    "l"
+   ]
+  ],
+  [
+   "c",
+   11,
+   [
+    "var",
+    "l"
+   ]
+  ]
+ ],
+ "level": 2,
+ "asked": 14,
+ "explored": 0,
+ "tension": [
+  3.158,
+  3.158,
+  3.158,
+  3.158,
+  3.158,
+  3.158,
+  3.158,
+  3.158,
+  3.158,
+  3.158,
+  3.158,
+  3.158,
+  3.158,
+  3.158,
+  8.124,
+  22.904,
+  22.904
+ ],
+ "wall": 900.4,
+ "cpu": 895.1,
+ "proven": true,
+ "invented": [
+  {
+   "id": 23,
+   "subject": "code",
+   "body": "foldl(\u03bba,e. cons(e, a), [], _)"
+  }
+ ],
+ "reused": [],
+ "words_heard": [
+  "reverse"
+ ],
+ "said": [
+  "reverse"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 2.75,
+  "ledger": 0.0,
+  "actions": 0.3,
+  "ask": 0.01,
+  "doubt": 1.39,
+  "imagine": 840.6,
+  "grow": 53.03,
+  "prove": 0.02
+ },
+ "built": [],
+ "peak_mb": 5434.015625,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "foldl(\u03bba,e. cons(e, a), [], l)",
+ "verdict": "proven right",
+ "audit": 635,
+ "configs": [
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+imagine",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask",
+  "ask+grow",
+  "grow",
+  "prove",
+  "leave"
+ ],
+ "say": [
+  "I imagine by wish then step: 0 new ideas.",
+  "I imagine by wish then compose then wish then wish: 0 new ideas.",
+  "In list: reverse my best idea is l, but I cannot finish (none of my ideas fits the examples). Is it right, or what am I missing?",
+  "I think bigger (level 1).",
+  "I think bigger (level 2).",
+  "My audit passes foldl(\u03bba,e. cons(e, a), [], l) on 635 fresh inputs.",
+  "It rings through the Field: 19 ways of working and imagining that led here are strengthened."
+ ],
+ "stage": "teach",
+ "tag": ""
+}

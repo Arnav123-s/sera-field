@@ -21,6 +21,7 @@ those versions separate.
 | [Learning-procedure assessment](CORE_022_LEARNING_WORK.md) | Shared choice, actual practice, independent acquisition/retention checks, delayed credit and exact continuation |
 | [Build and teaching acceptance](CORE_022_BUILD_ACCEPTANCE.md) | Reviewed common-owner connections, source repair, resource checks and foundation launch conditions |
 | [Complete human teaching views](CORE_022_TEACHING_VIEWS.md) | Whole arithmetic questions and checked scalar code targets with label-separated inputs |
+| [Five-use causal assessment](CORE_022_CAUSAL_ASSESSMENT.md) | Shared relationship, identifiable parameters, specified interventions and grounded explanation |
 
 ## Run a task
 

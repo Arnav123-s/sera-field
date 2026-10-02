@@ -1,0 +1,3 @@
+# CPU-only torch, same build as sera-field's venv. Installed with --no-deps (deps are in requirements.txt).
+--index-url https://download.pytorch.org/whl/cpu
+torch==2.10.0+cpu

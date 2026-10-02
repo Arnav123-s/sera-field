@@ -1,0 +1,99 @@
+{
+ "task": "rail: spring and drag 2",
+ "subject": "physics",
+ "kind": "strengths:num->num",
+ "teaching": true,
+ "steps": 2,
+ "answer": null,
+ "others": null,
+ "level": 0,
+ "asked": 1,
+ "explored": 0,
+ "tension": [
+  9.433,
+  8.584
+ ],
+ "wall": 133.6,
+ "cpu": 132.8,
+ "proven": true,
+ "invented": [],
+ "reused": [
+  14,
+  8
+ ],
+ "words_heard": [
+  "fast",
+  "back",
+  "spring",
+  "drag",
+  "far"
+ ],
+ "said": [
+  "mika",
+  "spring",
+  "fast"
+ ],
+ "false_words": [],
+ "serendipity": null,
+ "duality": null,
+ "senses": [],
+ "senses_used": [],
+ "timing": {
+  "other": 0.0,
+  "beliefs": 0.78,
+  "ledger": 15.51,
+  "actions": 33.66,
+  "ask": 0.01,
+  "prove": 80.99,
+  "doubt": 0.07
+ },
+ "built": [],
+ "peak_mb": 6668.0234375,
+ "peak_mb_by": {},
+ "memory_stops": 0,
+ "claim": "my shape 26 of position + my shape 13 of speed",
+ "band": 0.09199069899147946,
+ "verdict": "proven right",
+ "gap": 0.00047064200211432983,
+ "signs": {
+  "position": -1,
+  "speed": -1
+ },
+ "certified": [
+  {
+   "part": 0,
+   "as": "drawing",
+   "on": "position",
+   "shape": 26,
+   "concept": 14
+  },
+  {
+   "part": 1,
+   "as": "drawing",
+   "on": "speed",
+   "shape": 13,
+   "concept": 8
+  }
+ ],
+ "question": {
+  "text": "The 8 things here have only 3 kinds of mass (0.794, 1.944, 2.392). Why so few? What makes a mass? In all 7 worlds I measured so far, things came in fewer kinds of mass than there were things.",
+  "things": 8,
+  "kinds": 3,
+  "masses": [
+   0.794,
+   1.944,
+   2.392
+  ]
+ },
+ "attributed": true,
+ "configs": [
+  "ask+prove",
+  "leave"
+ ],
+ "say": [
+  "The judge accepts: my shape 26 of position + my shape 13 of speed up to 0.2 where I looked.",
+  "It rings through the Field: 1 ways of working and imagining that led here are strengthened."
+ ],
+ "stage": "teach",
+ "tag": ""
+}
