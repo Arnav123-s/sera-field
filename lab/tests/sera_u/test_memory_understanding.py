@@ -141,7 +141,9 @@ def test_learned_projection_and_gate_are_the_only_b_to_boundary_port():
             entity.owner.memory_projection.weight.zero_()
             coupled = entity.memory.features(view())[0]
             native = entity.owner.task_features(view(), state=entity.state)[0]
-            assert torch.equal(coupled, native)
+            # Since US3b the memory read goes through the batched reader: the same meaning within float32 rounding
+            # (measured 6e-8), US/US2's tolerance. A leak from B past its projection and gate would be far larger.
+            torch.testing.assert_close(coupled, native, atol=1e-6, rtol=1e-6)
 
 
 def test_imagined_events_hypothetical_reads_and_dreams_do_not_write_facts():

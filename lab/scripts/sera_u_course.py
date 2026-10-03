@@ -22,6 +22,7 @@ from scripts import sera_u_rsi as RSI
 from sera import crutches as CR, dictionary as DICT, lang as LG, one as ONE, phi as PH, tasks as TS
 from sera_u.mind import SeraU, U_CRUTCHES
 from sera_u.ports import PortBudget, TaskView, digest
+from sera_u.memory import public_context
 
 PHASES = C.PHASES
 ORDER = ('lesson', 'study', 'rsi', 'test1', 'test2', 'test3')
@@ -77,6 +78,7 @@ def book_identity(path):
 
 def u_switches(off=()):
     switches = {k: k not in CR.OFF and k not in off for k in U_CRUTCHES}
+    switches['memory_choice'] = CR.on('memory_choice') and 'memory_choice' not in off
     switches['abstain_bar'] = False
     if 'taught_not_yet' in off:
         switches['abstain_bar'] = 'abstain_bar' not in CR.OFF
@@ -176,6 +178,9 @@ def answer_seam(mind, channel, phase):
         return live(engine, task, *args, **kwargs)
 
     def bit_only(engine, task, law, right, source, reliability=False):
+        memory = getattr(engine, 'memory', None)
+        if memory is not None and memory.choosing:
+            memory.feedback = bool(right)
         if hasattr(engine, '_u_verdict'):
             engine._u_verdict(task, law, right, 'teacher')
         return ONE.Sera.course_verdict(engine, task, law, right, 'test2',
@@ -230,6 +235,16 @@ class UBackend:
                                   origin='book' if phase == 'study' else None, task_wall=wall)
 
     def demonstrate(self, task):
+        if self.mind.crutches.get('memory_choice'):
+            # Teacher policy only. The learner gets a fading demonstration,
+            # never this resemblance test as a decision rule or a target law.
+            kind, cue = public_context(TaskView.from_task(task))
+            head = self.field.memory_choice
+            resembles = any(e['kind'] == kind and len(e['cue']) == len(cue) and
+                            math.dist(e['cue'], cue) <= .25 for e in head.eligible)
+            available = head.options(self.mind.crutches['memory_layer_a'], self.mind.crutches['memory_layer_b'])
+            shown = available[-1] if resembles else 'plain'
+            self.mind.teach_memory_choice(task, shown, phase='lesson')
         if not self.mind.crutches['taught_not_yet'] or task.form != 'exact':
             return
         # Values/probabilities, never a teacher program: a public observed
@@ -284,6 +299,8 @@ def attempt(backend, task, phase, wall, seed, corrected=False, reliability=True)
              if phase == 'test3' and not missing else captured.get('right', False))
     status = 'not-yet' if missing else 'right' if right else 'wrong'
     unit = C.BASE.unit_of(rec)
+    if 'memory_choice' in rec:
+        unit['memory_choice'] = rec['memory_choice']
     unit.update(phase=phase, status=status, observer_right=bool(right),
                 feedback=None if phase == 'test3' or missing else
                 dict(verdict='right' if right else 'wrong', source='book' if phase == 'study' else 'teacher'),
@@ -304,7 +321,7 @@ def attempt(backend, task, phase, wall, seed, corrected=False, reliability=True)
 
 def teacher_arrays(field):
     """Only teacher sufficient statistics; learned evidence is untouched."""
-    for slot in ('loop', 'methods', 'steps'):
+    for slot in ('loop', 'methods', 'steps', 'memory_choice'):
         obj = getattr(field, slot, None)
         if obj is None:
             continue
@@ -341,7 +358,8 @@ def evidence_weight(weight, taught_ways=True):
     """
     patches = []
     for cls, method in ((PH.LoopField, 'teach'), (PH.MethodField, 'teach'),
-                        (PH.StepField, 'teach'), (PH.NotYetWays, 'demonstrate')):
+                        (PH.StepField, 'teach'), (PH.NotYetWays, 'demonstrate'),
+                        (PH.MemoryChoice, 'demonstrate')):
         original = getattr(cls, method)
         scale = weight if taught_ways or method == 'demonstrate' else 0.
 
@@ -432,7 +450,8 @@ class Meter:
                      (PH.FieldWays, 'choose', 'field_ways'), (PH.NotYetWays, 'pick', 'taught_not_yet'),
                      (PH.InnerJudge, 'verdict', 'inner_judge'), (PH.InnerJudge, 'decide', 'abstain_bar'),
                      (Curiosity, 'dream_trial', 'aimed_dreams'),
-                     (PH.NotYetWays, 'demonstrate', 'taught_not_yet')]
+                     (PH.NotYetWays, 'demonstrate', 'taught_not_yet'),
+                     (PH.MemoryChoice, 'pick', 'memory_choice')]
             seams.append((type(backend.engine), 'course_reliable', 'abstain_bar'))
             for cls, method, name in seams:
                 if not hasattr(cls, method):
@@ -447,6 +466,10 @@ class Meter:
                     if switches.get(_name):
                         counts.setdefault(_name, dict(consulted=0, enabled=0, calls=0))['calls'] += 1
                     result = _original(obj, *args, **kwargs)
+                    if _name == 'memory_choice' and switches.get(_name):
+                        decision = args[1] if len(args) > 1 else kwargs['decision']
+                        options = self.state.setdefault('memory_choices', {}).setdefault(decision, {})
+                        options[result[0]] = options.get(result[0], 0) + 1
                     if _name == 'abstain_bar' and switches.get(_name):
                         cf = self.state.setdefault('counterfactuals', {}).setdefault(_name,
                             dict(n=0, changed=0, scope='submission versus bar off; not correctness causality'))
@@ -547,6 +570,8 @@ class Meter:
                 entries[name]['use']['calls'] = None
             if name in self.state.get('action_scopes', {}):
                 entries[name]['action_scope'] = self.state['action_scopes'][name]
+            if name == 'memory_choice' and switches[name]:
+                entries[name]['choices'] = copy.deepcopy(self.state.get('memory_choices', {}))
         row = dict(phase=phase, boundary=edge, weight=weight, crutches=entries,
                    teacher_evidence=sum(float(abs(a).sum()) for a in teacher_arrays(backend.field)),
                    field=backend.field.account(), peak_mb=ONE._peak_mb())

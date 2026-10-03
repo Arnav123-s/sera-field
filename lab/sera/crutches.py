@@ -18,6 +18,26 @@ import sys
 # name -> what it does, where it lives, the commit that added it, how SERA has it (fixed: coded by us; taught: a
 # teacher's way that fades; learned: its own), and the open question about it.
 REGISTRY = {
+    'open_worlds': dict(what='observer-owned worlds without assigned questions; bounded RSI discovery share',
+        where='sera_u/discovery.py; scripts/sera_u_discovery.py', commit='U9', status='fixed',
+        default_on=False, report_default=False, question='does autonomous search rediscover withheld laws?'),
+    'own_questions': dict(what='Field return-trained questions from its own surprise and rival predictions',
+        where='sera_u/discovery.py', commit='U9', status='learned', default_on=False, report_default=False,
+        question='do self-posed public questions improve discoveries per second?'),
+    'designed_experiments': dict(what='learned choice of rival-splitting, surprise or random experiments',
+        where='sera_u/discovery.py; sera/design.py', commit='U9', status='learned',
+        default_on=False, report_default=False, question='do designed inputs beat random inputs?'),
+    'unification_credit': dict(what='learned weight on two-part compression across certified worlds',
+        where='sera_u/discovery.py', commit='U9', status='learned', default_on=False, report_default=False,
+        question='does compression credit encourage reusable explanations? It is not proof of truth.'),
+    'hidden_quantities': dict(what='unnamed per-object scalar fitted from own experiments if it saves bits',
+        where='sera_u/discovery.py; scripts/sera_u_discovery.py', commit='U9', status='learned',
+        default_on=False, report_default=False, question='does one fading taught demonstration help infer quantities?'),
+    'memory_choice': dict(
+        what='Field-learned consult/remember layers, charged returns and delayed memory eligibility',
+        where='sera/phi.py MemoryChoice; sera_u/memory.py Memory; sera_u/mind.py',
+        commit='U8', status='learned', default_on=False, report_default=False,
+        question='does choosing memory improve time to right beside always-on and no-memory?'),
     'taught_not_yet': dict(
         what='taught answer/continue faculty choice, next untried method or step, pending talk and revisits',
         where='sera/phi.py NotYetWays; sera_u/mind.py Engine', commit='U7', status='learned',

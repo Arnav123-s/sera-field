@@ -1,5 +1,7 @@
 """Typed recognition from the same CoreOwner, before enumeration combinations."""
+from contextlib import contextmanager
 from dataclasses import dataclass
+import hashlib
 import json
 import math
 import time
@@ -10,7 +12,26 @@ from torch import nn
 from sera import lang as LG, crutches as CR
 from .field.core_owner import CoreOwner
 from .field.native_owner import NativeOwner
+from .field.unified_energy import UnifiedEnergy
 from .ports import PortBudget, TaskView, digest
+
+
+class _ReadGeometryEnergy(UnifiedEnergy):
+    """The pinned geometry, memoized only inside an outer no-grad read."""
+    _read_geometry_cache = None
+
+    def geometry(self):
+        cache = self._read_geometry_cache
+        if cache is None:
+            return super().geometry()
+        # Echo's functional_call substitutes float64 parameter clones even
+        # during inference. Key the ACTUAL inputs, never reuse float32 geometry
+        # for those clones, and never retain a parameter graph.
+        key = FieldOwner.content_key((('links', self.links), ('anchors', self.anchors)))
+        if key not in cache:
+            with torch.no_grad():
+                cache[key] = super().geometry()
+        return cache[key]
 
 
 class FieldOwner(CoreOwner):
@@ -34,6 +55,166 @@ class FieldOwner(CoreOwner):
             self.understanding_keys = nn.Embedding(keys, 16)
             self.understanding_mix = nn.Parameter(torch.tensor(0.))
         self.understanding_ids = {}
+        self.readout_reuse_enabled = True  # exact engineering path; profile reference disables it
+        self._readout_cache = {}
+        self._prefix_cache = {}
+        self._geometry_cache = {}
+        self._geometry_version = None
+        # Adopt without initialization: preserve all tensors and random draws.
+        self.core.__class__ = _ReadGeometryEnergy
+
+    @staticmethod
+    def content_key(items):
+        """Small retained states and owner tensors: content, never allocator identity.
+
+        Byte views also cover complex buffers without converting their dtype.
+        In-place edits, replacement tensors and optimizer steps all invalidate.
+        """
+        out = []
+        for name, value in sorted(items, key=lambda item: item[0]):
+            t = value.detach().cpu().contiguous()
+            raw = t.reshape(-1).view(torch.uint8).numpy().tobytes()
+            out.append((name, str(value.device), str(t.dtype), tuple(t.shape),
+                        hashlib.blake2b(raw, digest_size=32).digest()))
+        return tuple(out)
+
+    def readout_version(self):
+        return (tuple(sorted(vars(self.config).items())), self.port_enabled,
+                tuple((name, module.training) for name, module in self.named_modules()),
+                self.content_key(self.named_parameters()), self.content_key(self.named_buffers()))
+
+    def record_vocabulary(self, records, *, grow=True):
+        # Appending hypothetical tokens cannot change an already encoded public
+        # prefix. Key the actual encoding of relevant tokens, including fallback.
+        tokens = sorted({token for row in records for token, _, _, _ in row})
+        return tuple((token, tuple(self.token_indices(token, grow=False)),
+                      grow and token not in self.token_ids and len(self.token_ids)+257 < self.words.num_embeddings)
+                     for token in tokens)
+
+    def clear_readouts(self):
+        self._readout_cache.clear()
+        self._prefix_cache.clear()
+        self._geometry_cache.clear()
+        self._geometry_version = None
+
+    @contextmanager
+    def geometry_reads(self, version):
+        """Scope constants across the coordinate-only autograd inside a read."""
+        if torch.is_grad_enabled() or not self.readout_reuse_enabled:
+            yield
+            return
+        if self._geometry_version != version:
+            self._geometry_cache.clear()
+            self._geometry_version = version
+        previous = self.core._read_geometry_cache
+        self.core._read_geometry_cache = self._geometry_cache
+        try:
+            yield
+        finally:
+            self.core._read_geometry_cache = previous
+
+    def read_features_many(self, views, *, grow=True, states=None, rings=None,
+                           memory_read=True, context=()):
+        """Exact public-prefix reuse for independent inference views.
+
+        Keep every source for the original stack/mean reduction; summing a
+        cached prefix separately would change float32 reduction order. A ring
+        is applied to EVERY row, so differing rings cannot share a prefix.
+        Autograd always uses the original fresh complete graphs.
+        """
+        views = tuple(views)
+        if not views:
+            return []
+        if any(type(view) is not TaskView for view in views):
+            raise TypeError('The neural input boundary accepts TaskView only')
+        if torch.is_grad_enabled() or not self.readout_reuse_enabled:
+            return self.task_features_many(views, grow=grow, states=states,
+                                           rings=rings, memory_read=memory_read)
+        if states is not None and len(states) != len(views):
+            raise ValueError('One initial state per view required')
+        if rings is not None and len(rings) != len(views):
+            raise ValueError('One optional ringing per view required')
+        initial = [self.empty(1) for _ in views] if states is None else states
+        rings = [None]*len(views) if rings is None else rings
+        records = ([(view.records(max_examples=max(4, len(view.examples)), max_records=None)
+                     if memory_read else view.records()) for view in views]
+                   if self.port_enabled else [() for _ in views])
+        moments = [(self.content_key(state.items()),
+                    () if ring is None else self.content_key((('ring', ring),)), context)
+                   for state, ring in zip(initial, rings)]
+        version = self.readout_version()
+        with self.geometry_reads(version):
+            return self._cached_features_many(views, grow, initial, rings, memory_read,
+                                              records, moments, version)
+
+    def _cached_features_many(self, views, grow, initial, rings, memory_read, records, moments, version):
+        keys = [(view, grow, version, moment, self.record_vocabulary(rows, grow=grow))
+                for view, moment, rows in zip(views, moments, records)]
+        ready, pending, duplicates = {}, [], {}
+        for j, key in enumerate(keys):
+            if key in self._readout_cache:
+                ready[j] = self._readout_cache[key]
+            elif key in duplicates:
+                duplicates[key].append(j)
+            else:
+                duplicates[key] = [j]
+                pending.append(j)
+        if pending:
+            # Allocate in exactly the old first-view/record order before taking
+            # each record's vocabulary key. Grow=False uses full byte fallback.
+            sources = [self.task_sources(views[j], grow=grow, ring=rings[j], memory_read=memory_read)
+                       for j in pending]
+            # Encoding allocates IDs only: these modules have no running-buffer
+            # writes. The parameter/buffer content version is still unchanged.
+            prefixes, missing, prefix_keys = {}, {}, []
+            suffixes, suffix_slots = [], []
+            for slot, (j, rows) in enumerate(zip(pending, sources)):
+                count = len(records[j])-len(views[j].hypotheses) if self.port_enabled else len(rows)
+                # Hashed text encodes the entire view as one source: it has no
+                # separable public prefix, but identical views can still hit.
+                public = records[j][:count] if self.port_enabled else ('hashed-view', views[j])
+                vocabulary = self.record_vocabulary(records[j][:count], grow=grow) if self.port_enabled else ()
+                key = (public, grow, version, moments[j], vocabulary)
+                prefix_keys.append(key)
+                if key not in prefixes:
+                    if key in self._prefix_cache:
+                        prefixes[key] = self._prefix_cache[key]
+                    elif key not in missing:
+                        missing[key] = (rows[:count], initial[j])
+                if count < len(rows):
+                    suffix_slots.append(slot)
+                    suffixes.append(rows[count:])
+            if missing:
+                # One batch across ALL distinct retained-state/ring/context
+                # groups. First occurrence fixes the deterministic row order.
+                prefix_state = self.observe_sources_many(
+                    [row for row, _ in missing.values()],
+                    states=[state for _, state in missing.values()])
+                for row, key in enumerate(missing):
+                    prefix = {k: v[row:row+1].clone() for k, v in prefix_state.items()}
+                    prefixes[key] = prefix
+                    if len(self._prefix_cache) >= 64:
+                        self._prefix_cache.clear()
+                    self._prefix_cache[key] = prefix
+            # Per-call prefixes survive bounded persistent-cache eviction.
+            # Every branch owns all coordinates, including an empty suffix.
+            settled = [{k: v.clone() for k, v in prefixes[key].items()} for key in prefix_keys]
+            if suffixes:
+                state = self.observe_sources_many(suffixes, states=[settled[s] for s in suffix_slots])
+                for row, slot in enumerate(suffix_slots):
+                    settled[slot] = {k: v[row:row+1] for k, v in state.items()}
+            combined = {k: torch.cat([s[k] for s in settled], 0) for k in settled[0]}
+            mean = torch.cat([torch.stack(row).mean(0) for row in sources], 0)
+            features, diagnostics = self.conditional(combined, mean)
+            for slot, j in enumerate(pending):
+                read = (features[slot], diagnostics['path_probabilities'][slot], settled[slot])
+                if len(self._readout_cache) >= 128:
+                    self._readout_cache.pop(next(iter(self._readout_cache)))
+                self._readout_cache[(views[j], grow, version, moments[j],
+                                     self.record_vocabulary(records[j], grow=grow))] = read
+                for duplicate in duplicates[keys[j]]:
+                    ready[duplicate] = read
+        return [ready[j] for j in range(len(views))]
 
     def token_indices(self, token, *, grow=True):
         if token not in self.token_ids and grow and len(self.token_ids)+257 < self.words.num_embeddings:
@@ -167,9 +348,13 @@ class FieldOwner(CoreOwner):
                                      memory_read=memory_read) for j, view in enumerate(views)]
         return self.features_from_sources_many(sources, states=states)
 
-    def task_features(self, view, *, grow=True, state=None, ring=None, memory_read=False):
+    def task_features(self, view, *, grow=True, state=None, ring=None, memory_read=False, context=()):
         if type(view) is not TaskView:
             raise TypeError('The neural input boundary accepts TaskView only')
+        if not torch.is_grad_enabled() and self.readout_reuse_enabled:
+            return self.read_features_many(
+                [view], grow=grow, states=None if state is None else [state],
+                rings=[ring], memory_read=memory_read, context=context)[0]
         if self.port_enabled:
             records = (view.records(max_examples=max(4, len(view.examples)), max_records=None)
                        if memory_read else view.records())
@@ -318,7 +503,12 @@ class Proposer:
             return cached[:2]
         if self.memory is None:
             retained = self.retained if self.memory_a_enabled else None
-            features, weights, _ = self.owner.task_features(view, grow=grow, state=retained)
+            features, weights, _ = self.owner.task_features(
+                view, grow=grow, state=retained, context=('proposer', self.memory_a_enabled))
+        elif not torch.is_grad_enabled() and self.owner.readout_reuse_enabled:
+            # mind.live's own read uses the same layer context and both caches
+            # as candidate reads, while retaining Memory's touch/cost accounting.
+            features, weights, _ = self.memory.features_many([view], grow=grow)[0]
         else:
             features, weights, _ = self.memory.features(view, grow=grow)
         self.stats['inference'] += time.perf_counter()-start
@@ -338,7 +528,8 @@ class Proposer:
         if self.memory is None:
             retained = self.retained if self.memory_a_enabled else None
             states = None if retained is None else [retained]*len(unique)
-            reads = self.owner.task_features_many(unique, grow=grow, states=states, memory_read=memory_read)
+            reads = self.owner.read_features_many(unique, grow=grow, states=states, memory_read=memory_read,
+                                                  context=('proposer', self.memory_a_enabled))
         else:
             reads = self.memory.features_many(unique, grow=grow)
         cache = dict(zip(unique, reads))
@@ -347,6 +538,8 @@ class Proposer:
 
     def prior(self, view, concepts, constants=()):
         key = (view.identity, library_identity(concepts), self.revision, tuple(sorted(set(constants))))
+        if self.memory is not None and self.memory.choice_on:
+            key += (self.memory.a, self.memory.b)
         if key not in self._scores:
             with torch.no_grad():
                 features, weights = self.features(view, concepts)
@@ -483,6 +676,8 @@ class Proposer:
         order = self.prior(view, concepts, constants)
         identity = digest([view.identity, sorted(inputs.items()), out_type, probes,
                            library_identity(concepts), self.revision, kwargs])
+        if self.memory is not None and self.memory.choice_on:
+            identity = digest([identity, self.memory.a, self.memory.b])
         cursor = self.cursors.setdefault(identity, dict(fallback=0, preferred=0, yielded=set(), done={},
                                                        seconds={'fallback': 0., 'preferred': 0.}, history=[],
                                                        request=(view, inputs, out_type, probes, max_size, concepts, kwargs)))
@@ -597,6 +792,8 @@ class Proposer:
         if not self.within_budget(view):
             return []
         key = (view.identity, library_identity(concepts), self.revision)
+        if self.memory is not None and self.memory.choice_on:
+            key += (self.memory.a, self.memory.b)
         if key in self._beamed:
             return []
         self._beamed.add(key)
@@ -609,6 +806,7 @@ class Proposer:
         return [p for p in candidates if task.consistent(p, concepts)]
 
     def changed(self):
+        self.owner.clear_readouts()
         self._feature_cache.clear()
         if self.memory is not None:
             self.memory._feature_cache.clear()

@@ -21,6 +21,8 @@ def test_every_registered_crutch_has_a_switch_in_the_code():
     used |= set(re.findall(r"_u_on\('(\w+)'\)", u_code))
     for names in re.findall(r"^U\d*_CRUTCHES = \(([^)]*)\)", u_code, re.M):
         used |= set(re.findall(r"'(\w+)'", names))
+    # U9's discovery switches are the entity's own declared set, read as switches['name'] (sera_u/discovery.py)
+    used |= set(re.findall(r"switches\['(\w+)'\]", u_code))
     assert used == set(CR.REGISTRY)
     assert all(c['status'] in ('fixed', 'taught', 'learned') for c in CR.REGISTRY.values())
 

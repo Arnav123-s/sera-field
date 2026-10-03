@@ -18,8 +18,9 @@ from sera import crutches as CR, lang as LG, one as ONE, phi as PH, tasks as TS,
 from .field.native_owner import NativeConfig, detached_state
 from .ports import PortBudget, TaskView, digest
 from .proposer import FieldOwner, Proposer
-from .sleep import Receipt, Sleep, expand, Curiosity, gap_parts, gap_kind, independent
-from .memory import Memory, MemoryField, memory_records, public_context
+from .sleep import Receipt, Sleep, expand, Curiosity, Syndrome, gap_parts, gap_kind, independent
+from .memory import Memory, MemoryField, BranchReadGate, memory_records, public_context
+from .discovery import CRUTCHES as U9_CRUTCHES, Discovery
 
 SCHEMA = 'sera-u-2'
 U1_CRUTCHES = ('field_proposer', 'program_dreams', 'sleep_library', 'field_input_ports')
@@ -27,7 +28,8 @@ U2_CRUTCHES = ('memory_layer_a', 'memory_layer_b', 'field_understanding')
 U3_CRUTCHES = ('field_ways', 'field_methods', 'field_roadmap', 'inner_judge')
 U6_CRUTCHES = ('gap_syndromes', 'aimed_dreams')
 U7_CRUTCHES = ('taught_not_yet', 'abstain_bar')
-U_CRUTCHES = U1_CRUTCHES+U2_CRUTCHES+U3_CRUTCHES+U6_CRUTCHES+U7_CRUTCHES
+U8_CRUTCHES = ('memory_choice',)
+U_CRUTCHES = U1_CRUTCHES+U2_CRUTCHES+U3_CRUTCHES+U6_CRUTCHES+U7_CRUTCHES+U8_CRUTCHES
 ARMS = ('full', 'no-proposer', 'no-dreams', 'no-library')
 CURIOSITY_ARMS = ('aimed', 'unaimed')
 
@@ -48,6 +50,8 @@ def arm_settings(arm):
         added.update({k: CR.on(k) for k in U7_CRUTCHES})
     if any(added.values()):
         settings.update(added)
+    if CR.on('memory_choice') or 'memory_choice' in CR.ON or 'memory_choice' in CR.OFF:
+        settings['memory_choice'] = CR.on('memory_choice')
     return settings
 
 
@@ -63,7 +67,7 @@ def source_identity():
 def code_identity():
     root = Path(__file__).resolve().parents[1]
     paths = sorted([*root.glob('sera/*.py'), *root.glob('ccops5/core/*.py'),
-                    *root.glob('sera_u/*.py'), root/'scripts/sera_u_rsi.py'])
+                    *root.glob('sera_u/*.py'), root/'scripts/sera_u_rsi.py', root/'scripts/sera_u_discovery.py'])
     return digest([(str(p.relative_to(root)).replace('\\', '/'), hashlib.sha256(p.read_bytes()).hexdigest())
                    for p in paths if p.is_file()])
 
@@ -188,6 +192,8 @@ class Engine(ONE.Sera):
             self.proposer.memory = previous
 
     def _u_bind(self, task):
+        if self.memory is not None and getattr(self.memory, 'choosing', False):
+            self.memory.consult(TaskView.from_task(task))
         if not any(self._u_on(k) for k in ('field_ways', 'field_methods', 'field_roadmap', 'taught_not_yet')):
             return
         read = self._u_reads([TaskView.from_task(task)])[0]
@@ -199,6 +205,8 @@ class Engine(ONE.Sera):
     def _moves_available(self, task, *args, **kwargs):
         self._u_bind(task)
         moves = super()._moves_available(task, *args, **kwargs)
+        if self.memory is not None and getattr(self.memory, 'choosing', False) and not self.memory.b:
+            moves.discard('recall')
         if self._u_on('field_methods') or self._u_on('taught_not_yet'):
             if task.form == 'exact':
                 moves.add('dream')
@@ -271,8 +279,9 @@ class Engine(ONE.Sera):
     def _u_memory_checks(self, view, tags):
         with torch.no_grad():
             # Same cue, A recall alone against B familiarity ringing alone.
-            f, w, _ = self.proposer.owner.task_features(view, state=self.memory.mind.state,
-                                                       ring=None, memory_read=True)
+            f, w, _ = self.proposer.owner.read_features_many(
+                [view], states=[self.memory.mind.state], rings=[None], memory_read=True,
+                context=('syndrome-a', self.memory.a, self.memory.b))[0]
             a = self.proposer.owner.familiarity_readout(f, w, tuple(('part', tag) for _, tag in tags))
             kind, public = public_context(view)
             b, _ = self.field.familiarity(kind, public, tuple(tag for _, tag in tags), (),
@@ -330,6 +339,10 @@ class Engine(ONE.Sera):
                                      elapsed=max(time.process_time()-getattr(self, '_u_choice_started', time.process_time()), 1e-6))
 
     def course_verdict(self, task, law, right, source, reliability=False):
+        if self.memory is not None and getattr(self.memory, 'choosing', False):
+            if source not in ('teacher', 'book', 'test1', 'test2') or self._u_phase(task) == 'test3':
+                raise ValueError('Only received course verdicts train memory choice')
+            self.memory.feedback = bool(right)
         if self._u_on('inner_judge') or self._u_on('taught_not_yet'):
             # The S27 caller alone controls whether verdicts are available. It
             # must use these explicit teaching sources, never an observer grade.
@@ -612,6 +625,9 @@ class Engine(ONE.Sera):
         # Ideas. Run each on a disposable symbolic copy with memory writes
         # detached, then expand the returned programs back to the real library.
         original, memory, pmemory = self.field, self.memory, self.proposer.memory
+        original_memory_a = self.proposer.memory_a_enabled
+        if pmemory is not None and getattr(pmemory, 'choosing', False):
+            self.proposer.memory_a_enabled = pmemory.a
         prior_senses = {row['name'] for row in original.senses}
         if self._u_on('inner_judge'):
             local_switches = dict(self.u_switches)
@@ -628,6 +644,9 @@ class Engine(ONE.Sera):
         start = time.process_time()
         local = copy.deepcopy(st)
         self.field = copy.deepcopy(original)
+        if pmemory is not None and getattr(pmemory, 'choosing', False):
+            gate = BranchReadGate(pmemory)
+            self.field._bridge = self.field.ideas._bridge = gate
         self.memory = self.proposer.memory = None
         self.proposer.field = self.field
         self._u_branch = branch
@@ -642,6 +661,7 @@ class Engine(ONE.Sera):
                 out = {expand(p, temporary): (origin, m) for p, (origin, m) in out.items()}
         finally:
             self.field, self.memory, self.proposer.memory = original, memory, pmemory
+            self.proposer.memory_a_enabled = original_memory_a
             if local_switches is not None:
                 self.u_switches = local_switches
             self.proposer.field = pfield
@@ -894,8 +914,11 @@ class Engine(ONE.Sera):
     def _prove(self, task, leader, *args, **kwargs):
         result = super()._prove(task, leader, *args, **kwargs)
         st = args[2]
-        if result and self._u_on('taught_not_yet') and time.time() > LG.DEADLINE[0]:
+        choice_active = self.memory is not None and getattr(self.memory, 'choosing', False)
+        if result and (self._u_on('taught_not_yet') or choice_active) and time.time() > LG.DEADLINE[0]:
             st['proven'], result = None, False
+        if result and choice_active and self.memory.time_to_right is None:
+            self.memory.time_to_right = time.perf_counter()-self.memory.item_started
         if result and self._u_on('taught_not_yet'):
             st['u_time_to_right'] = time.perf_counter()-getattr(self, '_u_item_started', time.perf_counter())
         if result and task.form == 'strengths':
@@ -992,12 +1015,19 @@ class AssessmentTask:
 
 class SeraU:
     def __init__(self, seed=3, *, device='cpu', config=None, arm='full', field=None, crutches=None,
-                 batched_reads=True):
+                 batched_reads=True, discovery=None):
         if type(batched_reads) is not bool:
             raise ValueError('batched_reads must be boolean')
         self.batched_reads = batched_reads
         self.seed, self.arm, self.device = seed, arm, torch.device(device)
         self.crutches = arm_settings(arm) if crutches is None else dict(crutches)
+        discovery_switches = ({k: CR.on(k) for k in U9_CRUTCHES} if discovery is None else dict(discovery))
+        if set(discovery_switches) != set(U9_CRUTCHES) or any(type(v) is not bool for v in discovery_switches.values()):
+            raise ValueError('Declare the registered boolean discovery crutches')
+        # No entity, RNG draw, port, extra record or payload slot on the old path.
+        self.discovery = Discovery(discovery_switches) if discovery_switches['open_worlds'] else None
+        self.u8_declared = 'memory_choice' in self.crutches
+        memory_choice = self.crutches.pop('memory_choice', False)
         self.u7_declared = any(k in self.crutches for k in U7_CRUTCHES)
         if set(self.crutches) == set(U1_CRUTCHES):
             self.crutches.update({k: False for k in U2_CRUTCHES})
@@ -1007,7 +1037,10 @@ class SeraU:
             self.crutches.update({k: False for k in U6_CRUTCHES})
         if set(self.crutches) == set(U1_CRUTCHES+U2_CRUTCHES+U3_CRUTCHES+U6_CRUTCHES):
             self.crutches.update(taught_not_yet=False, abstain_bar=self.crutches['inner_judge'])
-        if set(self.crutches) != set(U_CRUTCHES) or any(type(v) is not bool for v in self.crutches.values()):
+        if self.u8_declared:
+            self.crutches.update(memory_choice=memory_choice)
+        expected = U_CRUTCHES if self.u8_declared else U_CRUTCHES[:-1]
+        if set(self.crutches) != set(expected) or any(type(v) is not bool for v in self.crutches.values()):
             raise ValueError('Declare the registered boolean U crutches')
         self.source = source_identity()
         self.code = code_identity()
@@ -1031,8 +1064,13 @@ class SeraU:
                 raise ValueError('Understanding-off requires its own fresh legacy history')
             if not self.crutches['sleep_library']:
                 self.field.concepts = []
-            if any(self.crutches[k] for k in U2_CRUTCHES):
+            if any(self.crutches[k] for k in U2_CRUTCHES) or self.crutches.get('memory_choice', False):
                 self.field = MemoryField.adopt(self.field, self.crutches['field_understanding'])
+            if self.crutches.get('memory_choice', False):
+                if not hasattr(self.field, 'memory_choice'):
+                    self.field.memory_choice = PH.MemoryChoice()
+            elif hasattr(self.field, 'memory_choice'):
+                raise ValueError('Memory-choice-off requires its own fixed memory history')
             if hasattr(self.field, 'curiosity') and not self.crutches['gap_syndromes']:
                 raise ValueError('Curiosity-off requires its own U3 history')
             self.proposer = Proposer(self.owner, self.field, enabled=self.crutches['field_proposer'])
@@ -1098,11 +1136,18 @@ class SeraU:
         try:
             if bool(getattr(self.field, 'field_understanding', False)) != self.crutches['field_understanding']:
                 raise ValueError('Understanding switch changed; start a fresh history')
+            if hasattr(self.field, 'memory_choice') != self.crutches.get('memory_choice', False):
+                raise ValueError('Memory-choice switch changed; start a fresh history')
             restore_rng(self.rngs)
             scoped = ((U1_CRUTCHES+U2_CRUTCHES) if any(self.crutches[k] for k in U2_CRUTCHES)
                       else U1_CRUTCHES) + (U3_CRUTCHES if any(self.crutches[k] for k in U3_CRUTCHES) else ()) + (U6_CRUTCHES if any(self.crutches[k] for k in U6_CRUTCHES) else ()) + (U7_CRUTCHES if self.u7_declared else ())
+            if self.u8_declared:
+                scoped += U8_CRUTCHES
             CR.ON = (on-set(U_CRUTCHES)) | {k for k in scoped if self.crutches[k]}
             CR.OFF = (off-set(U_CRUTCHES)) | {k for k in scoped if not self.crutches[k]}
+            if self.discovery is not None:
+                CR.ON = (CR.ON-set(U9_CRUTCHES)) | {k for k, v in self.discovery.switches.items() if v}
+                CR.OFF = (CR.OFF-set(U9_CRUTCHES)) | {k for k, v in self.discovery.switches.items() if not v}
             TS.VOCAB, TS.WORDS, TS._NEXT = (copy.deepcopy(self.word_symbols['vocab']),
                                           copy.deepcopy(self.word_symbols['words']), list(self.word_symbols['next']))
             TK.BOOK = self.book
@@ -1114,7 +1159,7 @@ class SeraU:
                 raise ValueError('Readout switches changed; start a fresh history')
             LG._MEMORY['limit'] = 2048.
             LG.EXECUTION_COUNTS = dict(interpreter_calls=0, interpreter_steps=0, primitive_calls=0)
-            if any(self.crutches[k] for k in U2_CRUTCHES):
+            if any(self.crutches[k] for k in U2_CRUTCHES) or self.crutches.get('memory_choice', False):
                 switches = self.field.ideas.u_memory_switches()
                 if switches != {k: self.crutches[k] for k in U1_CRUTCHES+U2_CRUTCHES}:
                     raise ValueError('Memory ledger and entity switches disagree')
@@ -1139,7 +1184,9 @@ class SeraU:
             self.memory.checked_parts.clear()
             self.memory.clear_reads()
             self.memory._prepared = None
+            self.memory.reset_choice()
             self.proposer._feature_cache.clear()
+            self.owner.clear_readouts()
             self.rngs = global_rng()
             restore_rng(outside)
             CR.ON, CR.OFF = on, off
@@ -1159,7 +1206,7 @@ class SeraU:
         rollback = self.dumps()
         saved_wall = ONE.MAX_WALL
         initial = (TaskView.from_task(task) if task.form == 'exact' or
-                   any(self.crutches[k] for k in U2_CRUTCHES+U6_CRUTCHES+U7_CRUTCHES) else None)
+                   any(self.crutches.get(k, False) for k in U2_CRUTCHES+U6_CRUTCHES+U7_CRUTCHES+U8_CRUTCHES) else None)
         receipt_initial = initial
         if self.crutches['taught_not_yet'] and initial is not None:
             queued = next((item for item in self.field.revisit_queue if initial.identity in
@@ -1179,7 +1226,11 @@ class SeraU:
                 self.proposer.imagined.clear()
                 if self.crutches['gap_syndromes']:
                     self.field.curiosity.surprises.clear()
-                if self.proposer.memory is not None:
+                if self.crutches.get('memory_choice', False):
+                    choice_phase = phase or self.engine._u_phase(task, teaching)
+                    self.memory.start_choice(initial, wall=task_wall, phase=choice_phase, started=start)
+                    ONE.MAX_WALL = max(0., task_wall-(time.perf_counter()-start))
+                elif self.proposer.memory is not None:
                     self.memory.begin(initial)
                 if self.crutches['gap_syndromes']:
                     default_phase = 'lesson' if teaching else 'world'
@@ -1195,12 +1246,18 @@ class SeraU:
                 if self.engine._u_phase_name not in ('lesson', 'study', 'test1', 'test2', 'test3', 'talk', 'world'):
                     raise ValueError('Unknown not-yet/course phase')
                 self.engine._u_item_started = time.perf_counter()
-                active_task = (AssessmentTask(task) if self.crutches['taught_not_yet'] and
+                active_task = (AssessmentTask(task) if (self.crutches['taught_not_yet'] or self.crutches.get('memory_choice', False)) and
                                self.engine._u_phase_name in ('test2', 'test3') and task.form == 'exact' and
                                not isinstance(task, AssessmentTask) else task)
                 rec = self.engine.live(active_task, teaching=teaching and self.engine._u_phase_name not in
-                                       ('test2', 'test3') if self.crutches['taught_not_yet'] else teaching,
+                                       ('test2', 'test3') if (self.crutches['taught_not_yet'] or self.crutches.get('memory_choice', False)) else teaching,
                                        max_steps=max_steps)
+                if self.crutches.get('memory_choice', False):
+                    time_to_right = ((self.memory.time_to_right if self.memory.time_to_right is not None
+                                      else time.perf_counter()-start) if rec['proven'] else None)
+                    rec['memory_choice'] = self.memory.finish_choice(TaskView.from_task(active_task),
+                                                                  right=bool(rec['proven']))
+                    rec['memory_choice']['time_to_right'] = time_to_right
                 if self.crutches['taught_not_yet']:
                     self._record_not_yet(initial, rec, self.engine._u_phase_name, TaskView.from_task(active_task))
                 # Only the independent audit grants program targets. Observer
@@ -1245,6 +1302,8 @@ class SeraU:
                 recorded_crutches = {k: self.crutches[k] for k in (
                     ((U1_CRUTCHES+U2_CRUTCHES) if any(self.crutches[k] for k in U2_CRUTCHES)
                      else U1_CRUTCHES) + (U3_CRUTCHES if any(self.crutches[k] for k in U3_CRUTCHES) else ()) + (U6_CRUTCHES if any(self.crutches[k] for k in U6_CRUTCHES) else ()) + (U7_CRUTCHES if self.u7_declared else ()))}
+                if self.crutches.get('memory_choice', False):
+                    recorded_crutches.update(memory_choice=True)
                 rec['sera_u'] = dict(arm=self.arm, crutches=recorded_crutches,
                                      public_digest=None if initial is None else initial.identity,
                                      wall=time.perf_counter()-start, updates=self.updates,
@@ -1331,6 +1390,25 @@ class SeraU:
             self.field.u7_words = tuple(TS.sym(word) for word in words)
             self.field.ideas.read(self.field.u7_words, 'course')
 
+    def teach_memory_choice(self, task, shown, *, decision='consult', phase='lesson'):
+        """Public demonstration only; test2/test3 cannot add teacher evidence."""
+        if phase not in ('lesson', 'study', 'test1', 'world'):
+            raise ValueError('Memory demonstrations are forbidden in test2/test3')
+        if not self.crutches.get('memory_choice', False):
+            return False
+        view = TaskView.from_task(task)
+        with self.scope(), torch.no_grad():
+            self.memory.choosing, self.memory.selected = True, (False, False)
+            try:
+                f, _, _ = self.memory.features(view)
+                feature = PH.MemoryChoice.features(f.detach().cpu().numpy())
+            finally:
+                self.memory.choosing = False
+            head = self.field.memory_choice
+            head.demonstrate(public_context(view)[0], decision, feature,
+                             head.options(self.crutches['memory_layer_a'], self.crutches['memory_layer_b']), shown)
+        return True
+
     def train(self, *args, **kwargs):
         with self.scope():
             return self.sleep.train(*args, **kwargs)
@@ -1363,6 +1441,28 @@ class SeraU:
         records.extend(self.revisit(items, task_wall=task_wall, max_steps=max_steps, deadline=deadline))
         return records
 
+    def discover(self, pool, *, deadline=float('inf')):
+        """One completed discovery unit; the observer's pool is never retained."""
+        if self.discovery is None:
+            return None
+        if self._active:
+            raise ValueError('Nested discovery is unsupported')
+        rollback = self.dumps()
+        self._active = True
+        try:
+            with self.scope():
+                if hasattr(pool, 'sync'):
+                    pool.sync(self.discovery)
+                return self.discovery.tick(self, pool, deadline=deadline)
+        except Exception:
+            self._active = False
+            restored = SeraU.loads(rollback)
+            self.__dict__.update(restored.__dict__)
+            self.sleep.mind = self.memory.mind = self
+            raise
+        finally:
+            self._active = False
+
     def _payload(self):
         if self._active:
             raise ValueError('Checkpoint only at a completed task or training-batch boundary')
@@ -1371,6 +1471,7 @@ class SeraU:
         # Searches are restartable declarative cursors, not serialized Python generators.
         return dict(schema=SCHEMA, seed=self.seed, arm=self.arm, device=str(self.device), config=asdict(self.config),
                     source=self.source, code=self.code, crutches=self.crutches, u7_declared=self.u7_declared,
+                    u8_declared=self.u8_declared,
                     batched_reads=self.batched_reads,
                     owner=self.owner.state_dict(),
                     owner_training=self.owner.training, optimizer=self.optimizer.state_dict(), field=self.field,
@@ -1382,7 +1483,8 @@ class SeraU:
                     updates=self.updates, progress=self.progress, word_symbols=self.word_symbols,
                     book=self.book, runtime=dict(torch=torch.__version__,
                     numpy=np.__version__, threads=torch.get_num_threads(), deterministic=torch.are_deterministic_algorithms_enabled(),
-                    knobs=CR.settings()))
+                    knobs=CR.settings()),
+                    **({'discovery': self.discovery} if self.discovery is not None else {}))
 
     def dumps(self):
         stream = io.BytesIO()
@@ -1417,10 +1519,12 @@ class SeraU:
                       p['runtime']['knobs'] != CR.settings()):
             raise ValueError('Exact resume requires the same device, runtime, threads and lab crutches')
         result = cls(p['seed'], device=selected_device, config=NativeConfig(**p['config']), arm=p['arm'],
-                     field=p['field'], crutches=p['crutches'], batched_reads=p.get('batched_reads', True))
+                     field=p['field'], crutches=p['crutches'], batched_reads=p.get('batched_reads', True),
+                     discovery=p['discovery'].switches if 'discovery' in p else {k: False for k in U9_CRUTCHES})
         if result.crutches != p['crutches']:
             raise ValueError('Changed arm crutch settings')
         result.u7_declared = p.get('u7_declared', False)
+        result.u8_declared = p.get('u8_declared', False)
         result.owner.load_state_dict(p['owner'])
         result.owner.train(p['owner_training'])
         result.owner.token_ids, result.owner.production_ids = p['token_ids'], p['production_ids']
@@ -1442,6 +1546,7 @@ class SeraU:
         result.updates, result.checked_wake, result.progress = p['updates'], p['checked_wake'], p['progress']
         result.word_symbols = p['word_symbols']
         result.book = p['book']
+        result.discovery = p.get('discovery')
         # Runtime LG tables are deliberately rebuilt; no cross-task global cache is learning state.
         LG.forget_searches()
         return result
@@ -1478,6 +1583,9 @@ class SeraU:
                     state = {**state, 'log': [{k: v for k, v in e.items() if k != 'wall'} if isinstance(e, dict)
                                               else e for e in state['log']]}
                 add({k: v for k, v in state.items() if k != 'gen'} if isinstance(value, PH.Ideas) else state)
+            elif isinstance(value, Syndrome):
+                # A self-check's cost is its measured seconds (a record, never learned from): an elapsed-time counter.
+                add({k: v for k, v in value.__dict__.items() if k != 'cost'})
             elif hasattr(value, '__dict__'):
                 add(value.__dict__)
             else:
@@ -1487,6 +1595,8 @@ class SeraU:
         for key in ('owner', 'optimizer', 'field', 'state', 'token_ids', 'production_ids', 'understanding_ids', 'sleep', 'rngs',
                     'random', 'numpy', 'torch_generator', 'checked_wake', 'updates', 'crutches', 'word_symbols', 'book'):
             add(p[key])
+        if self.discovery is not None:
+            add(self.discovery.learning_state())
         return sha.hexdigest()
 
     def assess(self, task, *, task_wall=10., max_steps=None):
@@ -1533,6 +1643,9 @@ class SeraU:
             result['status'] = ('right' if solved else 'wrong' if rec and rec['proven'] and
                                 grade.get('verdict') != 'proven right' else 'not-yet')
             result['time_to_right'] = (rec.get('u7', {}).get('time_to_right', elapsed) if solved else None)
+        if self.crutches.get('memory_choice', False):
+            result['time_to_right'] = ((rec or {}).get('memory_choice', {}).get('time_to_right')
+                                       if solved else None)
         return result
 
     @staticmethod
@@ -1544,6 +1657,11 @@ class SeraU:
         the prepared read, and each trial continues with its isolated history.
         """
         from collections import Counter
+        # Choosing trials must first draw from their own plain read, and may
+        # not write the current item before deciding to remember it. US's fixed
+        # path below remains untouched; memory.features_many still batches reads.
+        if any(clone.crutches.get('memory_choice') for clone in clones):
+            return 0.
         started = time.perf_counter()
         observed_sources, observed_states, active = [], [], []
         for clone, view in zip(clones, views):

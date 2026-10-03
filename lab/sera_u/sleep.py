@@ -16,6 +16,8 @@ from .proposer import legal, bound_types, library_identity
 
 
 def substitute(p, name, value):
+    if p[0] == 'tab' and len(p) == 2 and name == '_':
+        return p+(value,)
     if p[0] == 'var' and p[1] == name:
         return value
     if p[0] == 'lam' and name in p[1]:
@@ -30,7 +32,7 @@ def expand(p, concepts, stack=()):
             raise ValueError('Unknown or recursive concept')
         body, arg = concepts[cid]
         return expand(substitute(body, arg, expand(p[2], concepts, stack)), concepts, stack+(cid,))
-    if p[0] not in LG.INNATE and p[0] not in ('var', 'lit', 'lam'):
+    if p[0] not in LG.INNATE and p[0] not in ('var', 'lit', 'lam', 'tab'):
         raise ValueError('Unsupported executable production')
     return p[:2]+tuple(expand(k, concepts, stack) for k in p[2:])
 
@@ -103,6 +105,24 @@ def independent(p, env, concepts, *, limit=LG.MAX_STEPS):
             return run(body, {arg: run(q[2], bindings, stack)}, stack+(pay,))
         if sym == 'lam':
             raise ValueError('A lambda must be used by an interpreter mechanism')
+        if sym == 'tab':
+            # Independent piecewise-linear execution of an accepted drawing.
+            grid, knots = pay
+            if len(grid) < 2 or len(grid) != len(knots) or any(
+                    b <= a for a, b in zip(grid, grid[1:])):
+                raise ValueError('Ordered finite drawing knots required')
+            for value in (*grid, *knots):
+                real(value)
+            x = real(run(q[2], bindings, stack) if len(q) > 2 else bindings['_'])
+            if x <= grid[0]:
+                return real(knots[0])
+            for j in range(1, len(grid)):
+                if x <= grid[j]:
+                    if x == grid[j]:
+                        return real(knots[j])
+                    slope = (knots[j]-knots[j-1])/(grid[j]-grid[j-1])
+                    return real(knots[j-1]+slope*(x-grid[j-1]))
+            return real(knots[-1])
         if sym == 'if':
             condition = run(q[2], bindings, stack)
             if type(condition) is not bool:
@@ -174,26 +194,39 @@ class Receipt:
     library: str
     families: tuple
     id: str
+    acceptance = ()                    # no extra instance slot on the old path
 
     @classmethod
-    def make(cls, view, targets, concepts, *, scope, origin, source):
+    def make(cls, view, targets, concepts, *, scope, origin, source, acceptance=()):
         if type(view) is not TaskView or view.form != 'exact':
             raise ValueError('Only an exact public view can supply program labels')
         view.records()                       # never admit a target whose complete sensing exceeds budget
         if len(view.examples) != 4:
             raise ValueError('Pilot program receipts require four independently executed examples')
-        if scope not in ('exact-audit', 'dream-self-task') or origin not in ('taught', 'alone', 'book', 'dream'):
+        if scope not in ('exact-audit', 'dream-self-task', 'explore-shape') or origin not in ('taught', 'alone', 'book', 'dream', 'explore'):
             raise ValueError('A checked exact program scope and provenance are required')
+        if origin == 'explore' and (len(acceptance) != 3 or acceptance[1] not in ('curve', 'drawing', 'formula')
+                                    or not acceptance[0] or not acceptance[2]):
+            raise ValueError('Discovery needs an outer judge record, honest kind and acceptance bound')
+        if (scope == 'explore-shape' and origin != 'explore') or (acceptance and origin != 'explore'):
+            raise ValueError('Discovery provenance required for a bound/shape receipt')
+        acceptance = observed(acceptance)
         expanded = {repr(expand(p, concepts)): p for p in targets}
         targets = tuple(expanded[k] for k in sorted(expanded))
         if not targets:
             raise ValueError('Empty positive targets')
         data = dict(view=view.identity, targets=targets, scope=scope, origin=origin, source=source,
                     library=library_identity(concepts), families=tuple(sorted({family(p, concepts) for p in targets})))
-        return cls(view, targets, scope, origin, source, data['library'], data['families'], digest(data))
+        if acceptance:
+            data['acceptance'] = acceptance
+        receipt = cls(view, targets, scope, origin, source, data['library'], data['families'], digest(data))
+        if acceptance:
+            object.__setattr__(receipt, 'acceptance', acceptance)
+        return receipt
 
     def check(self, concepts, *, reserved=(), sources=()):
-        again = Receipt.make(self.view, self.targets, concepts, scope=self.scope, origin=self.origin, source=self.source)
+        again = Receipt.make(self.view, self.targets, concepts, scope=self.scope, origin=self.origin, source=self.source,
+                             acceptance=getattr(self, 'acceptance', ()))
         if self.id != again.id or self.library != library_identity(concepts):
             raise ValueError('Corrupted/stale program receipt')
         if set(self.families) & set(reserved) or self.source in sources:
@@ -330,7 +363,7 @@ class Sleep:
             self.mind.proposer.changed()
         return kept
 
-    def dream(self, count=32, *, attempts=512, deadline=math.inf):
+    def dream(self, count=32, *, attempts=512, deadline=math.inf, filter_program=None):
         if not self.mind.crutches['program_dreams']:
             return []
         started = time.perf_counter()
@@ -384,6 +417,10 @@ class Sleep:
                 p = substitute(right[0], 'x', left[0])
             try:                          # an attempt it cannot form, run or sample inputs for is a failed attempt
                 if LG.size(expand(p, concepts)) > 40 or family(p, concepts) in self.reserved:
+                    continue
+                # Transient observer partition gate. No hidden law/template,
+                # pool, callback or bound method is retained by Sleep.
+                if filter_program is not None and not filter_program(p, concepts):
                     continue
                 xs = tuple(sample_input(left[1], rng) for _ in range(4))
                 ys = tuple(independent(p, {'x': x}, concepts) for x in xs)

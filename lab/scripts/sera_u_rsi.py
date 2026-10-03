@@ -29,6 +29,8 @@ from sera_u import SeraU
 from sera_u.mind import ARMS, CURIOSITY_ARMS, U_CRUTCHES, U3_CRUTCHES, U6_CRUTCHES, arm_settings, code_identity, source_identity
 from sera_u.ports import TaskView, PortBudget, digest
 from sera_u.sleep import Receipt, expand, family, independent, sample_input, substitute
+from sera import crutches as CR
+from sera_u.discovery import CRUTCHES as U9_CRUTCHES, DEFAULT_SHARE, generation_report
 
 
 def write(path, value):
@@ -439,6 +441,10 @@ def report(out):
                      and r['generation'] > 0 and r['solved']}
             result['previously_unsolved_later_solved'][arm] = len(failed & later)
         result['gap_metric_scope'] = 'own public cues with a located gap before acceptance, later outer acceptance; no held-out feedback'
+    if 'discovery' in state['protocol']:
+        from scripts.sera_u_discovery import report as discovery_report
+        result['discovery'] = discovery_report(state.get('discovery_generations', []),
+                                               state.get('discovery_judges', []))
     write(out/'g_curve.json', result)
     return result
 
@@ -459,13 +465,28 @@ def run(args):
                     crutches={arm: arm_settings(arm) for arm in arms}, judge='unchanged Exact audit; observer-only wrapper',
                     budgets=dict(preflight=1440, bootstrap=BOOT_WALL, bootstrap_revisits=REVISIT_WALL, dreams=1440,
                                  wakes=2160, train=5400, assessments=7920, reserve=1800-REVISIT_WALL))
+    discovery_on = CR.on('open_worlds')
+    if discovery_on:
+        share = getattr(args, 'discovery_share', DEFAULT_SHARE)
+        if not math.isfinite(share) or not 0 < share <= .5:
+            raise ValueError('Discovery share must be finite, positive and at most one half')
+        if args.hours*3600*share > 5400:
+            raise ValueError('Discovery must fit the existing training allowance (share <= .25 at six hours)')
+        protocol['discovery'] = dict(share=share, switches={k: CR.on(k) for k in U9_CRUTCHES},
+            generation_wall=args.hours*3600/(len(arms)*(args.generations+1)),
+            suite='frozen observer-owned rediscovery, never supplied questions or laws')
+        protocol['budgets']['discovery'] = args.hours*3600*share
+        protocol['budgets']['train'] = max(0., 5400-protocol['budgets']['discovery'])
+        external_discovery = getattr(args, 'rediscovery_suite', None)
+        if external_discovery:
+            protocol['discovery']['suite_sha256'] = hashlib.sha256(Path(external_discovery).read_bytes()).hexdigest()
     frozen_path = getattr(args, 'frozen_suite', None)
     if arms == CURIOSITY_ARMS and frozen_path is None:
         raise ValueError('Paired U6 A/B requires --frozen-suite pointing to the saved U1 observer.json')
     frozen_bytes = Path(frozen_path).read_bytes() if frozen_path else None
     if frozen_bytes is not None:
-        if arms != CURIOSITY_ARMS:
-            raise ValueError('--frozen-suite is for the paired U6 A/B')
+        # Any paired A/B may share one saved observer suite: each case's own suite is built from its own bootstrap's
+        # proofs, so cases that bootstrap differently would otherwise be assessed on different items.
         validate_frozen_suite(json.loads(frozen_bytes))
         protocol['frozen_suite_sha256'] = hashlib.sha256(frozen_bytes).hexdigest()
     laptop_record = read(args.laptop_preflight) if args.laptop_preflight else None
@@ -520,7 +541,7 @@ def run(args):
                 suite = validate_frozen_suite(json.loads(frozen_bytes))
                 seeds = seed_programs(base)
                 if not seed_gate(seeds):
-                    raise ValueError('U6 bootstrap failed the same eight-program/four-source gate')
+                    raise ValueError('Paired bootstrap failed the same eight-program/four-source gate')
                 trained = {family(p, {}) for p, _, _, _ in seeds}
                 if trained & set(suite['reserved']):
                     raise ValueError('Saved U1 assessment family overlaps current bootstrap; refusing contaminated A/B')
@@ -531,6 +552,13 @@ def run(args):
             else:
                 (out/'observer.json').write_bytes(frozen_bytes)  # preserve exact U1 artifact bytes
             state['suite_sha256'] = hashlib.sha256((out/'observer.json').read_bytes()).hexdigest()
+            if discovery_on:
+                from scripts.sera_u_discovery import freeze as freeze_discovery, validate as validate_discovery
+                external = getattr(args, 'rediscovery_suite', None)
+                manifest = (validate_discovery(read(external), suite, base) if external else
+                            validate_discovery(freeze_discovery(base, suite, args.seed), suite, base))
+                write(out/'observer-discovery.json', manifest)
+                state['discovery_suite_sha256'] = hashlib.sha256((out/'observer-discovery.json').read_bytes()).hexdigest()
             state['base'] = state['checkpoint']
             state['base_sha256'] = state['checkpoint_sha256']
             state['stage'], state['arm_index'] = 'arms', 0
@@ -542,6 +570,12 @@ def run(args):
             if hashlib.sha256((out/state['base']).read_bytes()).hexdigest() != state['base_sha256']:
                 raise ValueError('Shared bootstrap checkpoint changed')
             cap = state['preflight']['common_batches']
+            if discovery_on:
+                cap = max(0, int(cap*protocol['budgets']['train']/5400))
+                if hashlib.sha256((out/'observer-discovery.json').read_bytes()).hexdigest() != state['discovery_suite_sha256']:
+                    raise ValueError('Frozen rediscovery suite changed')
+                from scripts.sera_u_discovery import WorldPool, teach_quantity_once
+                discovery_manifest = read(out/'observer-discovery.json')
             for arm_index in range(state['arm_index'], len(arms)):
                 arm = arms[arm_index]
                 if state.get('active_arm') != arm:
@@ -565,6 +599,13 @@ def run(args):
                     mind.sleep.reserved = set(suite['reserved'])
                     mind.sleep.reserved_sources = {r['source'] for r in suite['assessment']}
                     state.update(active_arm=arm, generation=0, phase='train', unit_index=0, dream_generation=-1)
+                    if discovery_on:
+                        state.update(phase='discovery', discovery_deadline=None)
+                        with mind.scope():
+                            teach_quantity_once(mind)
+                        if mind.discovery.events:
+                            state['costs'].append(dict(phase='quantity-demonstration', arm=arm,
+                                wall=mind.discovery.events[-1]['seconds']))
                     commit(out, state, mind, arm+'-start.pt')
                 else:
                     mind = recover(out, state)
@@ -582,20 +623,67 @@ def run(args):
                             state['costs'].append(dict(phase='wake', arm=arm, generation=generation, wall=time.perf_counter()-start))
                             state['unit_index'] = j+1
                             commit(out, state, mind, f'{arm}-g{generation}-wake{j}.pt')
-                        state.update(phase='sleep', unit_index=0)
+                        state.update(phase='discovery' if discovery_on else 'sleep', unit_index=0)
+                        if discovery_on:
+                            state['discovery_deadline'] = None
                         commit(out, state, mind, f'{arm}-g{generation}-wake-done.pt')
+                    if state['phase'] == 'discovery':
+                        if any(r['false_credit'] for r in state.get('discovery_judges', [])):
+                            raise ValueError('Discovery tripwire persists: false credit must be zero')
+                        pool = WorldPool(discovery_manifest)
+                        if state.get('discovery_deadline') is None:
+                            allowance = protocol['discovery']['generation_wall']*protocol['discovery']['share']
+                            state['discovery_deadline'] = min(state['deadline'], time.time()+allowance)
+                            state['discovery_started'] = time.time()
+                            state['discovery_event_start'] = len(mind.discovery.events)
+                            commit(out, state, mind, f'{arm}-g{generation}-discovery-start.pt')
+                        # The absolute phase deadline and last completed tick are
+                        # committed together; resume never resets the allowance.
+                        while time.time() < state['discovery_deadline']:
+                            unit_started = time.perf_counter()
+                            row = mind.discover(pool, deadline=state['discovery_deadline'])
+                            if row is None:
+                                break
+                            row['seconds'] = time.perf_counter()-unit_started
+                            state['costs'].append(dict(phase='discovery', arm=arm, generation=generation,
+                                                       wall=row['seconds']))
+                            state.setdefault('discovery_judges', []).extend(
+                                dict(r, arm=arm, generation=generation) for r in pool.audit_records)
+                            pool.audit_records.clear()
+                            state['unit_index'] += 1
+                            # Persist even a tripwire before stopping, so a
+                            # false certification is never hidden by rollback.
+                            # A crash between checkpoint save and state.json
+                            # replacement must leave the previous file intact.
+                            commit(out, state, mind, f'{arm}-g{generation}-discovery{state["unit_index"]}.pt')
+                            if any(r['false_credit'] for r in state['discovery_judges']):
+                                raise ValueError('Discovery tripwire: false credit must be zero')
+                        rows = mind.discovery.events[state['discovery_event_start']:]
+                        summary = generation_report(rows)
+                        summary['seconds'] = time.time()-state['discovery_started']
+                        summary['seconds_per_law'] = summary['seconds']/summary['laws'] if summary['laws'] else None
+                        state.setdefault('discovery_generations', []).append(dict(arm=arm, generation=generation, **summary))
+                        state.update(phase='sleep', unit_index=0)
+                        commit(out, state, mind, f'{arm}-g{generation}-discovery-done.pt')
                     if state['phase'] == 'sleep':
                         start = time.perf_counter()
                         with mind.scope():
                             mind.sleep.abstract()
-                            mind.sleep.dream(32, deadline=min(state['deadline'], time.time()+120))
+                            if discovery_on:
+                                dream_pool = WorldPool(discovery_manifest)
+                                dream_pool.sync(mind.discovery)
+                                mind.sleep.dream(32, deadline=min(state['deadline'], time.time()+120),
+                                                 filter_program=dream_pool.dream_allowed)
+                            else:
+                                mind.sleep.dream(32, deadline=min(state['deadline'], time.time()+120))
                         state['costs'].append(dict(phase='dream', arm=arm, generation=generation, wall=time.perf_counter()-start))
                         state.update(phase='train', unit_index=0)
                         commit(out, state, mind, f'{arm}-g{generation}-dream.pt')
                     if state['phase'] == 'train':
                         for j in range(state['unit_index'], cap):
-                            if sum(c['wall'] for c in state['costs'] if c['phase'] == 'train') >= 5400:
-                                raise TimeoutError('Declared 1.5-hour training allowance exhausted')
+                            if sum(c['wall'] for c in state['costs'] if c['phase'] == 'train') >= protocol['budgets']['train']:
+                                raise TimeoutError('Declared training allowance exhausted' if discovery_on else
+                                                   'Declared 1.5-hour training allowance exhausted')
                             trained = mind.train(1, 8, deadline=state['deadline'])
                             if not trained:
                                 raise TimeoutError('Sleep training incomplete')
@@ -657,13 +745,17 @@ def main():
                                 help='Use the complete pre-US single-read execution path')
         if command == 'run':
             parser.add_argument('--laptop-preflight', default=None)
-            parser.add_argument('--frozen-suite', default=None, help='Paired U6: saved U1 observer.json; observer side only')
+            parser.add_argument('--frozen-suite', default=None, help='Paired A/Bs: one saved observer.json shared by every case; observer side only')
             parser.add_argument('--arms', default=','.join(ARMS))
             parser.add_argument('--generations', type=int, default=3)
             parser.add_argument('--task-wall', type=float, default=10.)
             parser.add_argument('--eval-tasks', type=int, default=48)
             parser.add_argument('--wake-tasks', type=int, default=16)
             parser.add_argument('--hours', type=float, default=6.)
+            parser.add_argument('--discovery-share', type=float, default=DEFAULT_SHARE,
+                                help='Open worlds only: fixed fraction of each nominal generation wall (default .10)')
+            parser.add_argument('--rediscovery-suite', default=None,
+                                help='Open worlds only: frozen observer-discovery.json shared by same-VM cases')
         if command == 'preflight':
             parser.add_argument('--laptop', action='store_true', help='This CPU machine is the actual target laptop')
     args = ap.parse_args()

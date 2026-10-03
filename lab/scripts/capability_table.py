@@ -15,7 +15,8 @@ import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
-RUNS = Path(os.environ.get('SERA_RUNS', REPO.parents[2] / 'sera-runs'))
+# The default is only computed when SERA_RUNS is unset: a package unpacked at /content/<name> has no parents[2].
+RUNS = Path(os.environ['SERA_RUNS']) if os.environ.get('SERA_RUNS') else REPO.parents[2] / 'sera-runs'
 DOC = REPO / 'docs' / 'SERA_STATUS.md'
 START, END = '<!-- capability-table:start -->', '<!-- capability-table:end -->'
 JOURNAL = 'git:reports-journal-2026-10-01:docs/SERA_STATUS.md'

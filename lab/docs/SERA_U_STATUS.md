@@ -11,16 +11,21 @@ is loaded; the unified learner initializes its geometric Field from fresh weight
 | U1 Field integration | Merged; 883,411 parameters in the saved initial preflight |
 | U2 two-layer memory and understanding | Merged |
 | US training optimization | Merged; measured standard-batch speedup below |
-| US2 batched memory and caches | Merged; completed before/after timing not saved here |
+| US2 batched memory and caches | Merged; saved timing found no overall gain |
 | U3 imagination and inner judge | Merged; hypothetical examples use a separate channel |
 | U4 adaptive scrutiny | Merged; disabled by default; acceptance requirements preserved |
 | U6 consistency-based curiosity | Merged |
 | U7 answer or continue, revisit queue | Merged; requires teaching of the choice |
 | U5 course, crutch ledger, 12-arm comparison runner | Merged; full comparison not completed |
-| US3 faster faculty readouts | Work in progress; absent from this snapshot |
-| U8 learned memory consultation and retention choices | Work in progress; absent from this snapshot |
+| US3 faster faculty readouts | Merged; mixed measured results below |
+| US3b batched layer-B reads and cache use | Merged; completed before/after timing pending |
+| U8 learned memory consultation and retention choices | Merged; outcome per second and later memory-use eligibility guide learning |
+| U9 autonomous discovery | Merged; learner poses questions, chooses experiments and submits laws to independent judges |
+| U10 scientist-inspired thought experiments and invariance | Work in progress; not implemented in this snapshot |
+| U11 additional scientific and mathematical habits | Planned; not implemented in this snapshot |
+| U12 internal-world lineage and gradual-change reasoning | Planned; not implemented in this snapshot |
 
-The local development record reports 204 SERA-U tests passing after U5 and US2.
+The local development record reports 294 SERA-U tests passing after U9.
 This is a historical test result; see the publication manifest for checks actually
 run on this public snapshot. Test totals from different stages overlap.
 
@@ -37,6 +42,29 @@ run on this public snapshot. Test totals from different stages overlap.
 Single reads remained about 2 seconds. The maximum parameter difference after a
 training step was 1.16e-5; the optimization was not bitwise identical.
 
+## New profiling results
+
+[US2 reference](../sera-runs/us2-memory/prof/memory-reference2.json) and
+[optimized memory](../sera-runs/us2-memory/prof/memory-native2.json) were measured
+side by side on one-thread Xeon cases, 28 items per case. Median item time with
+memory was 15.3 seconds before and 16.0 after; without memory, 11.5 and 10.3.
+There was no demonstrated overall memory speedup. Coupled settling of observed
+records dominated one profiled step (56.6 of 72.9 seconds).
+
+[US3 before](../sera-runs/us3-step-b5a4883/us3-step-before.json) and
+[after](../sera-runs/us3-step-b5a4883/us3-step-after.json), 24 items per case:
+with faculty readouts and memory disabled, median item time improved 21.3 to
+11.4 seconds. With memory enabled, it worsened 24.7 to 34.1 seconds. Configurations
+without faculty readouts were essentially unchanged. All remained over the
+10-second item budget. US3b addresses batching across different layer-B rings and
+using the step-read cache, but no completed speed result is available here.
+
+U8 lets the learner choose plain/A/B/both reads and whether to remember an item.
+Later successful memory use earns eligibility credit; this is not causal proof
+of memory usefulness. U9 adds question selection, discriminating experiments,
+independently checked laws, and compression priors. Full behavioral comparisons
+for these new components have not completed.
+
 ## Incomplete comparisons
 
 The [memory pilot](../sera-runs/u2-ab-f152e14/) completed its first memory-enabled
@@ -44,7 +72,10 @@ assessment at 21/48 solved. The memory-disabled run solved 40 of 46 attempted
 items before stopping (48 planned). Median item time was 11.3 seconds with memory
 versus 1.0 without, against a 10-second budget; median inference was 3.03 versus
 0.35 seconds. Of 46 shared items, both solved 15, memory alone solved 5, memory
-disabled alone solved 25, and neither solved 1. These are time-confounded results.
+disabled alone solved 25, and neither solved 1. These are time-confounded results. The cases also froze different observer
+suites from their own bootstraps: only partly overlapping items were compared.
+They are not a fully matched memory ablation. The newer runner accepts one shared
+frozen observer suite across cases; a completed matched comparison remains pending.
 
 In the [later pilot](../sera-runs/u2-ab-96d1d19/), memory disabled solved 39/48
 at the first assessment. The memory-enabled case stopped at engineering preflight

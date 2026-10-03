@@ -2,6 +2,7 @@
 import copy
 import hashlib
 import math
+import time
 from collections import Counter
 
 import numpy as np
@@ -62,6 +63,9 @@ def counts(ideas, key):
 
 
 def add_count(ideas, key, support=0, refutation=0):
+    bridge = getattr(ideas, '_bridge', None)
+    if bridge is not None and bridge.defer_b(add_count, ideas, key, support, refutation):
+        return
     p, r = counts(ideas, key)
     if type(support) is not int or type(refutation) is not int or min(support, refutation) < 0:
         raise ValueError('Nonnegative integer role increments required')
@@ -89,6 +93,8 @@ class ObservedIdeas(PH.Ideas):
         for j in range(0, len(sentence), 60):
             chunk = sentence[j:j+60]
             bridge.heard(chunk)
+            if bridge.defer_b(PH.Ideas.read, self, chunk, source):
+                continue
             if bridge.b:
                 super().read(chunk, source)
 
@@ -97,12 +103,33 @@ class ObservedIdeas(PH.Ideas):
         return bridge is not None and not bridge.b
 
     def evoked(self, *args, **kwargs):
-        return [] if self._disabled() else super().evoked(*args, **kwargs)
+        bridge = getattr(self, '_bridge', None)
+        started = time.perf_counter() if bridge is not None and bridge.choosing else None
+        result = [] if self._disabled() else super().evoked(*args, **kwargs)
+        if started is not None:
+            if result:
+                things = args[0] if args else kwargs.get('things', ())
+                bridge.touch_b(s for s in sorted(set(things), key=repr)
+                               if s in self.of and s in self._row and self._rare(s) > 0.)
+            bridge._read_cost(started)
+        return result
 
     def comes_to_mind(self, *args, **kwargs):
-        return [] if self._disabled() else super().comes_to_mind(*args, **kwargs)
+        bridge = getattr(self, '_bridge', None)
+        started = time.perf_counter() if bridge is not None and bridge.choosing else None
+        result = [] if self._disabled() else super().comes_to_mind(*args, **kwargs)
+        if started is not None:
+            if result:
+                things = args[0] if args else kwargs.get('things', ())
+                bridge.touch_b(s for s in sorted(set(things), key=repr)
+                               if s in self.of and s in self._row and self._rare(s) > 0.)
+            bridge._read_cost(started)
+        return result
 
     def _ring(self, *args, **kwargs):
+        bridge = getattr(self, '_bridge', None)
+        if bridge is not None and bridge.choosing and args:
+            bridge.touch_b(s for s, weight in args[0] if weight > 0.)
         return [] if self._disabled() else super()._ring(*args, **kwargs)
 
     def kind(self, *args, **kwargs):
@@ -118,6 +145,8 @@ class ObservedIdeas(PH.Ideas):
         bridge = getattr(self, '_bridge', None)
         if bridge is not None:
             bridge.event('checked-role', (s, ability))
+            if bridge.defer_b(PH.Ideas.role, self, s, ability):
+                return None
         return None if self._disabled() else super().role(s, ability)
 
     def perceive_world(self, cues):
@@ -125,9 +154,14 @@ class ObservedIdeas(PH.Ideas):
         bridge = getattr(self, '_bridge', None)
         if bridge is not None:
             bridge.event('world-cues', cues)
+            if bridge.defer_b(PH.Ideas.perceive_world, self, cues):
+                return None
         return None if self._disabled() else super().perceive_world(cues)
 
     def consolidate(self, *args, **kwargs):
+        bridge = getattr(self, '_bridge', None)
+        if bridge is not None and bridge.defer_b(PH.Ideas.consolidate, self, *args, **kwargs):
+            return 0
         result = 0 if self._disabled() else super().consolidate(*args, **kwargs)
         bridge = getattr(self, '_bridge', None)
         if result and bridge is not None:
@@ -135,6 +169,9 @@ class ObservedIdeas(PH.Ideas):
         return result
 
     def redirect(self, *args, **kwargs):
+        bridge = getattr(self, '_bridge', None)
+        if bridge is not None and bridge.defer_b(PH.Ideas.redirect, self, *args, **kwargs):
+            return True
         return True if self._disabled() else super().redirect(*args, **kwargs)
 
     def bind(self, thing, key, amount, *, perceived=True):
@@ -143,9 +180,18 @@ class ObservedIdeas(PH.Ideas):
             raise ValueError('Reserved S18 states cannot receive association writes')
         if bridge is not None and perceived:
             bridge.event('binding', (thing, key, float(amount)))
+            if bridge.defer_b(PH.Ideas.bind, self, thing, key, amount, perceived=perceived):
+                return
             if not bridge.b:
                 return
         return super().bind(thing, key, amount, perceived=perceived)
+
+    def bind_pattern(self, thing, pattern, amount):
+        bridge = getattr(self, '_bridge', None)
+        if bridge is not None and bridge.defer_b(PH.Ideas.bind_pattern, self, thing,
+                                                np.asarray(pattern).copy(), amount):
+            return
+        return super().bind_pattern(thing, pattern, amount)
 
 
 class MemoryField(PH.Field):
@@ -189,6 +235,10 @@ class MemoryField(PH.Field):
         return d
 
     def _write_u(self, kind, context, parts, proven, weight, version='context-v1'):
+        bridge = getattr(self, '_bridge', None)
+        if bridge is not None and bridge.defer_b(self._write_u, kind, tuple(context), tuple(parts),
+                                                proven, weight, version):
+            return True
         if not math.isfinite(weight) or weight < 0:
             raise ValueError('Finite nonnegative understanding weight required')
         try:
@@ -315,7 +365,7 @@ class MemoryField(PH.Field):
             if bridge is not None and bridge.current is not None:
                 kind, context = bridge.context or public_context(bridge.current)
                 version = 'context-v1' if bridge.current.form == 'strengths' else 'u2-public-v1'
-            if bridge is None or bridge.b:
+            if bridge is None or bridge.store_b:
                 self._write_u(kind, context, parts, proven, weight, version)
                 if proven:
                     add_count(self.ideas, ('hypothesis', key), support=1)
@@ -332,7 +382,7 @@ class MemoryField(PH.Field):
             result = super().refute(key)
         else:
             bridge = getattr(self, '_bridge', None)
-            if bridge is None or bridge.b:
+            if bridge is None or bridge.store_b:
                 add_count(self.ideas, ('hypothesis', key), refutation=1)
             result = None
         bridge = getattr(self, '_bridge', None)
@@ -353,7 +403,7 @@ class MemoryField(PH.Field):
             bridge = getattr(self, '_bridge', None)
             if q.get('key') is not None:
                 if verdict == 'right':
-                    if bridge is None or bridge.b:
+                    if bridge is None or bridge.store_b:
                         add_count(self.ideas, ('hypothesis', q['key']), support=1)
                     if words and q.get('meanings'):
                         self.lexicon.hear(words, q['meanings'])
@@ -480,6 +530,154 @@ class Memory:
         self._ring_cache = {}
         self._record_cache = {}
         self._prepared = None
+        self.reset_choice()
+
+    def reset_choice(self):
+        self.choosing = False
+        self.committing = False
+        self.selected = (False, False)
+        self.pending = []
+        self.consults = []
+        self.touched = set()
+        self.item_started = None
+        self.item_wall = float('inf')
+        self.item_phase = 'world'
+        self.feedback = None
+        self.time_to_right = None
+        self.read_seconds = 0.
+        self.cue_read = False
+
+    @property
+    def choice_on(self):
+        return self.mind.crutches.get('memory_choice', False)
+
+    @property
+    def store_b(self):
+        # Writes are buffered independently of the consulted layers.
+        return self.mind.crutches['memory_layer_b'] if self.choosing and not self.committing else self.b
+
+    def defer_b(self, function, *args, **kwargs):
+        if not self.choosing or self.committing:
+            return False
+        if self.mind.crutches['memory_layer_b']:
+            self.pending.append(('b', function, copy.deepcopy(args[1:]) if args and args[0] is self.mind.field.ideas
+                                 else copy.deepcopy(args), copy.deepcopy(kwargs),
+                                 bool(args and args[0] is self.mind.field.ideas)))
+        return True
+
+    def start_choice(self, view, *, wall, phase, started=None):
+        self.reset_choice()
+        self.choosing = True
+        self.item_started = time.perf_counter() if started is None else started
+        self.item_wall, self.item_phase = wall, phase
+        self.begin(view)
+        self.consult(view, moment='start')
+
+    def _plain_features(self, view):
+        # The cue read has an empty retained state and no ring. Layer keys keep
+        # it separate from every actual consulted read, including US3 caches.
+        selected = self.selected
+        self.selected = (False, False)
+        self.cue_read = True
+        try:
+            with torch.no_grad():
+                f, _, _ = self.features(view)
+                spent = ((time.perf_counter()-self.item_started)/max(self.item_wall, 1e-6)
+                         if math.isfinite(self.item_wall) else 0.)
+                return PH.MemoryChoice.features(f.detach().cpu().numpy(), spent)
+        finally:
+            self.selected = selected
+            self.cue_read = False
+
+    def consult(self, view, *, moment='ways'):
+        if not self.choosing or self.committing:
+            return
+        started = time.perf_counter()
+        f = self._plain_features(view)
+        kind = public_context(view)[0]
+        head = self.mind.field.memory_choice
+        available = head.options(self.mind.crutches['memory_layer_a'], self.mind.crutches['memory_layer_b'])
+        option, values = head.pick(kind, 'consult', f, available, self.mind.numpy)
+        self.selected = head.LAYERS[option]
+        self.consults.append(dict(kind=kind, option=option, f=f, values=values, moment=moment,
+                                  seconds=time.perf_counter()-started, read_seconds=0.))
+
+    def _touch(self, view):
+        if not self.choosing or self.committing or not any(self.selected):
+            return
+        # A is an aggregate: every tracked earlier A write is eligible. B's
+        # actual nonzero presses are captured in _compute_ring, including A cues.
+        for e in self.mind.field.memory_choice.eligible:
+            if self.a and PH.MemoryChoice.LAYERS[e['option']][0]:
+                self.touched.add(e['id'])
+
+    def touch_b(self, things):
+        if self.choosing and not self.committing and self.b:
+            pressed = set(things)
+            for e in self.mind.field.memory_choice.eligible:
+                if PH.MemoryChoice.LAYERS[e['option']][1] and pressed.intersection(e['tokens']):
+                    self.touched.add(e['id'])
+
+    def _read_cost(self, started):
+        if self.choosing and not self.committing and not self.cue_read:
+            seconds = time.perf_counter()-started
+            self.read_seconds += seconds
+            if self.consults:
+                self.consults[-1]['read_seconds'] += seconds
+
+    def finish_choice(self, view, *, right):
+        head = self.mind.field.memory_choice
+        started = time.perf_counter()
+        f = self._plain_features(view)
+        kind = public_context(view)[0]
+        option, values = head.pick(kind, 'remember', f,
+            head.options(self.mind.crutches['memory_layer_a'], self.mind.crutches['memory_layer_b']), self.mind.numpy)
+        self.selected = head.LAYERS[option]
+        self.committing = True
+        tokens = set()
+        rows = [entry[1] for entry in self.pending if entry[0] == 'row']
+        # US2's exact-length encoder batching, followed by the same sequential
+        # observations. B callbacks cannot allocate native owner token IDs.
+        sources = iter(self.encode_rows(rows)) if self.a and rows else None
+        for entry in self.pending:
+            if entry[0] == 'row':
+                _, row, progress, write_b = entry
+                tokens.update(t[0] for t in row)
+                if self.a or self.b:
+                    self.write_record(row, progress=progress, write_b=write_b,
+                                      source=next(sources) if sources is not None else None)
+            elif self.b:
+                _, function, args, kwargs, ideas_first = entry
+                call_args = (self.mind.field.ideas, *args) if ideas_first else args
+                function(*call_args, **kwargs)
+        seconds = time.perf_counter()-started
+        total = time.perf_counter()-self.item_started
+        # A received verdict (including test2's bit) can override proof credit;
+        # test3 receives no observer feedback. Assessments train only their clone.
+        right = bool(right if self.feedback is None else self.feedback)
+        rate = float(np.clip(float(right)/max(total, 1e-6), 0., 20.))
+        for row in self.consults:
+            cost = row['seconds'] + row['read_seconds']
+            head.learn(row['kind'], 'consult', row['option'], row['f'], rate-cost)
+        head.learn(kind, 'remember', option, f, -seconds)
+        credited = head.later_return(self.touched, right, total)
+        head.retain(kind, option, f, tokens, public_context(view)[1])
+        head.end_item()
+        def learned(k, decision, feature):
+            return {o: float(head.posterior(k, decision, o)[0] @ feature)
+                    for o in head.options(self.mind.crutches['memory_layer_a'], self.mind.crutches['memory_layer_b'])}
+        report = dict(consult=[dict(option=r['option'], moment=r['moment'], seconds=r['seconds'],
+                                    read_seconds=r['read_seconds'], values=r['values'],
+                                    learned=learned(r['kind'], 'consult', r['f'])) for r in self.consults],
+                      remember=dict(option=option, seconds=seconds, values=values,
+                                    learned=learned(kind, 'remember', f)),
+                      seconds=total, read_seconds=self.read_seconds, right=right,
+                      touched=sorted(self.touched), credited=credited, eligibility='not causal proof',
+                      taken=copy.deepcopy(head.taken))
+        report['learning_seconds'] = time.perf_counter()-self.item_started-total
+        report['seconds'] = time.perf_counter()-self.item_started
+        self.reset_choice()
+        return report
 
     def clear_reads(self):
         self._feature_cache.clear()
@@ -509,29 +707,33 @@ class Memory:
 
     @staticmethod
     def _tensor_versions(items):
-        return tuple((key, id(value), value._version, value.data_ptr(), value.dtype, value.device,
-                      tuple(value.shape)) for key, value in items)
+        from .proposer import FieldOwner
+        return FieldOwner.content_key(items)
 
     def _read_version(self, *, ring_only=False):
         owner, ideas = self.mind.owner, self.mind.field.ideas
         # All supported Ideas state writes advance rev. _at/_idea can introduce
-        # rows/membership without a write, so include structural sizes too.
-        # Tensor versions cover in-place edits/optimizer steps as well as new
-        # retained states; checking them never scans the growing ideas table.
-        vocabulary = () if ring_only else (owner.port_enabled, id(owner.token_ids), len(owner.token_ids))
-        return (self.a, self.b, vocabulary,
-                id(ideas), ideas.rev, ideas._n, len(ideas._row), len(ideas.of),
-                id(ideas._row), id(ideas.of), id(ideas._M), id(ideas._E),
+        # rows/membership without a write, so include their structural content.
+        # gen is the Ideas ledger's persistent nonce, not an allocator ID. Native
+        # writes advance rev; owner/state content also catches tensor replacement.
+        vocabulary = () if ring_only else (owner.port_enabled, tuple(sorted(owner.token_ids.items())))
+        return (self.a, self.b, vocabulary, tuple(sorted(vars(owner.config).items())),
+                tuple((name, module.training) for name, module in owner.named_modules()),
+                ideas.gen, ideas.rev, ideas._n, tuple(ideas._row.items()), tuple(sorted(ideas.of, key=repr)),
                 self._state_fingerprint(self.mind.state.items()) if self.a else (),
                 self._tensor_versions(owner.named_parameters()),
                 self._tensor_versions(owner.named_buffers()))
 
     @property
     def a(self):
+        if self.choosing:
+            return self.mind.crutches['memory_layer_a'] and self.selected[0]
         return self.mind.crutches['memory_layer_a']
 
     @property
     def b(self):
+        if self.choosing:
+            return self.mind.crutches['memory_layer_b'] and self.selected[1]
         return self.mind.crutches['memory_layer_b']
 
     def event(self, kind, content, *, progress=None, imagined=False):
@@ -552,6 +754,9 @@ class Memory:
                               write_b=False)
 
     def write_record(self, row, *, progress=None, write_b=True, source=None):
+        if self.choosing and not self.committing:
+            self.pending.append(('row', tuple(row), progress, write_b))
+            return
         owner = self.mind.owner
         with torch.no_grad():
             state = self.mind.state
@@ -592,7 +797,8 @@ class Memory:
         schedule = [row for row, count in now.items()
                     for _ in range(max(0, count-self.seen_records[row]))]
         with torch.no_grad():
-            sources = self.encode_rows(schedule) if self.a and schedule else [None]*len(schedule)
+            sources = (self.encode_rows(schedule) if self.a and schedule and
+                       not (self.choosing and not self.committing) else [None]*len(schedule))
             for row, source in zip(schedule, sources):
                 self.write_record(row, source=source)
                 self.seen_records[row] += 1
@@ -608,13 +814,14 @@ class Memory:
         if not self.b:
             return None
         version = self._read_version(ring_only=True)
-        cached = self._ring_cache.get(view)
+        key = (view, self.a, self.b) if self.choice_on else view
+        cached = self._ring_cache.get(key)
         if cached is not None and cached[0] == version:
             return cached[1]
         result = self._compute_ring(view)
         if len(self._ring_cache) >= 32:
             self._ring_cache.clear()
-        self._ring_cache[view] = (version, result)
+        self._ring_cache[key] = (version, result)
         return result
 
     def _compute_ring(self, view):
@@ -638,6 +845,11 @@ class Memory:
             w = np.asarray([weights.get(thing, 0) for thing, row in batch], dtype=np.float64)
             if reverse is not None:
                 w += np.maximum(0., ideas._E[rows].astype(np.float64) @ reverse/math.sqrt(D))
+            if self.choosing and not self.committing:
+                pressed = {thing for (thing, _), weight in zip(batch, w) if weight != 0.}
+                for e in self.mind.field.memory_choice.eligible:
+                    if PH.MemoryChoice.LAYERS[e['option']][1] and pressed.intersection(e['tokens']):
+                        self.touched.add(e['id'])
             if np.any(w):
                 pattern += w @ ideas._M[rows].astype(np.float64)
         batch = []
@@ -654,41 +866,50 @@ class Memory:
         return owner.words.weight.new_tensor(pattern/scale)
 
     def features(self, view, *, grow=True):
-        key = (view, grow)
+        started = time.perf_counter()
+        self._touch(view)
+        key = self.read_key(view, grow)
         version = self._read_version()
         cached = self._feature_cache.get(key) if not torch.is_grad_enabled() else None
         ring = self.ring(view)
         if cached is not None:
-            previous = self._feature_rings[(view, grow)]
+            previous = self._feature_rings[key]
             # Legacy alias/association writes can change B without a native event.
             # Reuse only if the actual ringing supplied to this read is unchanged.
             same_ring = (ring is None and previous is None) or (
                 ring is not None and previous is not None and torch.equal(ring, previous))
             if same_ring and self._feature_versions.get(key) == version:
+                self._read_cost(started)
                 return cached
-            self._feature_cache.pop((view, grow))
-            self._feature_rings.pop((view, grow))
+            self._feature_cache.pop(key)
+            self._feature_rings.pop(key)
             self._feature_versions.pop(key, None)
         state = self.mind.state if self.a else self.mind.owner.empty(1)
         read = self.mind.owner.task_features(view, grow=grow, state=state, ring=ring, memory_read=True)
         # Cache only versioned rings. An external/ad-hoc ring provider must
         # retain the old equality-check-and-reread behavior on a changed ring.
-        versioned_ring = ring is None or self._ring_cache.get(view, (None, None))[1] is ring
+        ring_key = (view, self.a, self.b) if self.choice_on else view
+        versioned_ring = ring is None or self._ring_cache.get(ring_key, (None, None))[1] is ring
         if not torch.is_grad_enabled() and versioned_ring:
             self.cache_read(view, grow, read, ring)
+        self._read_cost(started)
         return read
+
+    def read_key(self, view, grow):
+        return (view, grow, self.a, self.b) if self.choice_on else (view, grow)
 
     def cache_read(self, view, grow, read, ring):
         if len(self._feature_cache) >= 32:
             self._feature_cache.clear()
             self._feature_rings.clear()
             self._feature_versions.clear()
-        key = (view, grow)
+        key = self.read_key(view, grow)
         self._feature_cache[key] = read
-        self._feature_rings[key] = ring
+        self._feature_rings[key] = None if ring is None else ring.detach().clone()
         self._feature_versions[key] = self._read_version()
 
     def features_many(self, views, *, grow=True):
+        started = time.perf_counter()
         views = tuple(views)
         if not views:
             return []
@@ -698,7 +919,8 @@ class Memory:
         unique, ready, pending, rings = list(dict.fromkeys(views)), {}, [], []
         version = self._read_version()
         for view in unique:
-            key, ring = (view, grow), self.ring(view)
+            self._touch(view)
+            key, ring = self.read_key(view, grow), self.ring(view)
             cached = self._feature_cache.get(key) if not torch.is_grad_enabled() else None
             previous = self._feature_rings.get(key)
             same_ring = (ring is None and previous is None) or (
@@ -710,12 +932,14 @@ class Memory:
                 rings.append(ring)
         if pending:
             states = [self.mind.state if self.a else owner.empty(1) for _ in pending]
-            reads = owner.task_features_many(pending, grow=grow, states=states,
-                                            rings=rings, memory_read=True)
+            reads = owner.read_features_many(pending, grow=grow, states=states,
+                                            rings=rings, memory_read=True,
+                                            context=('memory', self.a, self.b))
             for view, ring, read in zip(pending, rings, reads):
                 ready[view] = read
                 if not torch.is_grad_enabled():
                     self.cache_read(view, grow, read, ring)
+        self._read_cost(started)
         return [ready[view] for view in views]
 
     def neural(self, parts, pairs):
@@ -786,3 +1010,52 @@ class Memory:
         finally:
             self.current = before
         return sorted(programs, key=lambda p: (-phi[p], repr(p)))
+
+
+class BranchReadGate:
+    """Chosen-layer reads in a disposable imagination Field; writes stay local.
+
+    The normal live bridge cannot be attached here: it would record imagined
+    events as public facts. This facade forwards only reads and their charges.
+    """
+    choosing = True
+
+    def __init__(self, source):
+        self.source = source
+        self.current, self.context = source.current, source.context
+        self.checked_parts = []
+        # ObservedIdeas.consolidate may invalidate its bridge's proposer. A
+        # branch's local changes must not invalidate the real search history.
+        self.mind = self.proposer = self
+
+    @property
+    def a(self):
+        return self.source.a
+
+    @property
+    def b(self):
+        return self.source.b
+
+    @property
+    def store_b(self):
+        return self.b
+
+    def defer_b(self, *args, **kwargs):
+        return False
+
+    def event(self, *args, **kwargs):
+        pass
+
+    heard = changed = event
+
+    def touch_b(self, things):
+        self.source.touch_b(things)
+
+    def _read_cost(self, started):
+        self.source._read_cost(started)
+
+    def neural(self, parts, pairs):
+        return self.source.neural(parts, pairs)
+
+    def mix(self):
+        return self.source.mix()

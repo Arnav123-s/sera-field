@@ -29,7 +29,8 @@ claims, with 51 accepted. These are bounded experimental results, not general
 capability claims. [Full measurements and limitations](lab/docs/SERA_STATUS.md#2-what-it-can-do-measured).
 
 SERA-U now integrates the Field with two-layer memory, imagination, curiosity,
-answer/continue choices, and a teaching course. A one-thread CPU benchmark measured
+answer/continue choices, learned memory selection, autonomous discovery, and a
+teaching course. A one-thread CPU benchmark measured
 an **8x training speedup**. Pilot comparisons remain incomplete and show substantial
 memory and inference costs under time limits. Full course and self-improvement
 claims remain unassessed. [Status and saved evidence](lab/docs/SERA_U_STATUS.md).

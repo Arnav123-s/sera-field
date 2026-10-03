@@ -1385,6 +1385,93 @@ class FieldWays(LoopField):
                                   self.features({}, {}, f))) for f in FACULTIES}
 
 
+class MemoryChoice:
+    """Neutral Bayesian returns over plain/A/B/both; no timing or resemblance rule.
+
+    Sufficient statistics and bounded delayed eligibility live in the one Field.
+    Clocks and item diagnostics live only in Memory's transient orchestration.
+    """
+    LAYERS = {'plain': (False, False), 'a': (True, False),
+              'b': (False, True), 'both': (True, True)}
+    DIM = 66
+
+    def __init__(self):
+        self.stats, self.taught = {}, {}
+        self.eligible = []
+        self.serial = 0
+        self.taken = {'consult': {}, 'remember': {}}
+
+    @classmethod
+    def options(cls, a, b):
+        return tuple(k for k, (aa, bb) in cls.LAYERS.items() if (not aa or a) and (not bb or b))
+
+    @staticmethod
+    def features(branches, spent=0.):
+        branches = np.asarray(branches, float)
+        if branches.shape != (3, 64) or not np.isfinite(branches).all() or not np.isfinite(spent):
+            raise ValueError('Finite plain settled Field and consumed budget required')
+        return np.r_[1., branches.mean(0), float(spent)]
+
+    def posterior(self, kind, decision, option):
+        z = (np.zeros((self.DIM, self.DIM)), np.zeros(self.DIM))
+        A, b = self.stats.get((kind, decision, option), z)
+        At, bt = self.taught.get((kind, decision, option), z)
+        cov = np.linalg.inv(np.eye(self.DIM) + A + At)
+        return cov @ (b + bt), cov
+
+    def pick(self, kind, decision, f, available, rng):
+        if decision not in self.taken or not available:
+            raise ValueError('Consult or remember requires executable options')
+        values = {}
+        for option in sorted(available):
+            mean, cov = self.posterior(kind, decision, option)
+            draw = rng.multivariate_normal(mean, (cov + cov.T)/2)
+            values[option] = (float(draw @ f), float(mean @ f))
+        option = min(values, key=lambda k: (-values[k][0], k))
+        counts = self.taken[decision]
+        counts[option] = counts.get(option, 0) + 1
+        return option, values
+
+    def learn(self, kind, decision, option, f, reward, *, taught=False):
+        f = np.asarray(f, float)
+        if f.shape != (self.DIM,) or not np.isfinite(f).all() or not np.isfinite(reward):
+            raise ValueError('Finite memory return and Field features required')
+        table = self.taught if taught else self.stats
+        A, b = table.setdefault((kind, decision, option),
+                                [np.zeros((self.DIM, self.DIM)), np.zeros(self.DIM)])
+        A += np.outer(f, f)
+        b += f*float(reward)
+
+    def demonstrate(self, kind, decision, f, available, shown):
+        if shown not in available:
+            raise ValueError('A teacher cannot demonstrate an ablated layer')
+        for option in sorted(available):
+            self.learn(kind, decision, option, f,
+                       TAUGHT_Y if option == shown else -TAUGHT_Y, taught=True)
+
+    def end_item(self):
+        for A, b in self.taught.values():
+            A *= TAUGHT_FADE
+            b *= TAUGHT_FADE
+
+    def retain(self, kind, option, f, tokens, cue=()):
+        self.serial += 1
+        if option != 'plain':
+            self.eligible.append(dict(id=self.serial, kind=kind, option=option,
+                                      f=f.copy(), tokens=tuple(sorted(set(tokens))), cue=tuple(cue)))
+            del self.eligible[:-256]
+
+    def later_return(self, touched, right, seconds):
+        """One later-item gain split across touched records; eligibility, not causality."""
+        rows = [e for e in self.eligible if e['id'] in touched]
+        if not right or not rows:
+            return []
+        gain = float(np.clip(1./max(float(seconds), 1e-6), 0., 20.))/len(rows)
+        for e in rows:
+            self.learn(e['kind'], 'remember', e['option'], e['f'], gain)
+        return [e['id'] for e in rows]
+
+
 class NotYetWays(FieldWays):
     """The ways' answer/continue readout. Probability is a sense, never a bar."""
     def __init__(self):

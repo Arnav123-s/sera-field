@@ -3,8 +3,8 @@
   "publication_date": "2026-10-02",
   "source_local_revision": "7c39634b7cc193dfa50c894ec1e69e42993a3f73",
   "lab_source_revision": "04fd415caf790f1476e138809e32e905f7e31392",
-  "integration_plan_revision": "4d157fa561373603ff3dfd43409ae320dfd2396e",
-  "public_base_revision": "0d4741e005e5ad7ff6b21f699fcd2b3a975585dd",
+  "integration_plan_revision": "120fdc46d629923b7c60d010854da297a01a4ed1",
+  "public_base_revision": "f4f0a870ce7e7b93ace6d52d026473ef52d62d86",
   "scope": "Reviewed current files, compact evidence, and preserved assessed inference revisions",
   "excluded": "Private history, raw corpora, complete training states, binary lab Fields, coordination records, preparation tooling",
   "snapshot_adaptations": [
@@ -16,8 +16,8 @@
     "Vendored Field hashes refreshed after prose/LF adaptations; original hashes retained; parity fixture path configured by environment"
   ],
   "file_identity_basis": "Git blob bytes; excludes this manifest",
-  "file_count": 2791,
-  "total_bytes": 90583425,
+  "file_count": 2802,
+  "total_bytes": 92063852,
   "files": [
     {
       "path": ".gitattributes",
@@ -37,12 +37,12 @@
     {
       "path": "PUBLICATION_SCOPE.md",
       "bytes": 1992,
-      "sha256": "afe8c0a81a28c7f2fb006d6e2437bd1af9411bda9f555c65d44db009de161211"
+      "sha256": "617903a835b60ba97f57c71b12b3489f38df8d306289efe077167ec3be976c34"
     },
     {
       "path": "README.md",
-      "bytes": 3704,
-      "sha256": "900e5e41366283d88895acfe022a66c5a542968493a07dcb0866a46102eb1122"
+      "bytes": 3752,
+      "sha256": "c106fcaabf3c7d254991fe69e832d5f1a2341e383a9f762d16b2b4b0b0070f9f"
     },
     {
       "path": "START_CONNECTED.md",
@@ -476,8 +476,8 @@
     },
     {
       "path": "lab/SERA_U_PLAN.md",
-      "bytes": 12123,
-      "sha256": "63f514b523c6e5d45b3cb7880b7fd709a1becc46972de53c6e67e63a57007c4d"
+      "bytes": 15229,
+      "sha256": "78a5973917ef2502266f2dd5e589460bfe49091c22362d8ec70cbc9380d59dcb"
     },
     {
       "path": "lab/SERA_V3_PLAN.md",
@@ -771,8 +771,8 @@
     },
     {
       "path": "lab/docs/SERA_U_STATUS.md",
-      "bytes": 4162,
-      "sha256": "a5e6f745faf0cac659e3eb30a5299bbe315a4df84b7e74a0f944a6876ec14853"
+      "bytes": 6372,
+      "sha256": "8ca5dc086ba7fcf164a151d5dfab05e0403a6584696fc9f9d5edb36def2b4efd"
     },
     {
       "path": "lab/legacy/README.md",
@@ -5941,8 +5941,8 @@
     },
     {
       "path": "lab/scripts/capability_table.py",
-      "bytes": 12298,
-      "sha256": "5f74fabe12a85ce33e50c2a689f0b0d08f11d6ff91fc2427ca4406f3bbc10b6f"
+      "bytes": 12442,
+      "sha256": "b8a1797a619de2c3afc02f0889c49bcf751483272ede7d191f411a39e2d2219c"
     },
     {
       "path": "lab/scripts/check_arxiv.py",
@@ -6146,8 +6146,13 @@
     },
     {
       "path": "lab/scripts/sera_u_course.py",
-      "bytes": 45295,
-      "sha256": "03ca44cab959dd324ce8d199d33f41e12dd8daff55b97b21364bda8e94304e1e"
+      "bytes": 47000,
+      "sha256": "2687263fca8c6ac15ec1727d061d70a40b65367d131faf77607e18bdfa6be7fb"
+    },
+    {
+      "path": "lab/scripts/sera_u_discovery.py",
+      "bytes": 18864,
+      "sha256": "abcffd3d01fda730c0a8fec7f4e8e5b7b8e57d200805dccff8b6b009c4ff3a9b"
     },
     {
       "path": "lab/scripts/sera_u_memory_profile.py",
@@ -6156,13 +6161,18 @@
     },
     {
       "path": "lab/scripts/sera_u_rsi.py",
-      "bytes": 40227,
-      "sha256": "46d44a2a42f63ed747386fb8c8ddfa075e65ac4a2ececbc2c6d43015e6d84b71"
+      "bytes": 47503,
+      "sha256": "748225b05cd898811c1cb8627b3ea50e3cd690877f7a5f2316ddc246e8d658c2"
     },
     {
       "path": "lab/scripts/sera_u_speed.py",
       "bytes": 9144,
       "sha256": "f71e373ac5bfe03e1cd394daa0dacb5b63913ccb59f2ff78fb8b731d855cb32c"
+    },
+    {
+      "path": "lab/scripts/sera_u_step_profile.py",
+      "bytes": 11405,
+      "sha256": "ef2b9f2cdd6aba7db06adb9372aba5069fe568e65334251b7203b1735198e82f"
     },
     {
       "path": "lab/scripts/sera_understand.py",
@@ -9165,6 +9175,26 @@
       "sha256": "2e79f945957c401cce09401c067c57cbede9023c6ca73bb99966149210d17ae7"
     },
     {
+      "path": "lab/sera-runs/us2-memory/prof/memory-native2.json",
+      "bytes": 298628,
+      "sha256": "a92d54f0d53039b889f2d704908ebc2c3fc2b351edf14b7159a10baf8751eb9e"
+    },
+    {
+      "path": "lab/sera-runs/us2-memory/prof/memory-reference2.json",
+      "bytes": 286595,
+      "sha256": "ba976fd48d328e2855917eba65be6fe36a7a7e1a915edc19a99aeb40b21108ca"
+    },
+    {
+      "path": "lab/sera-runs/us3-step-b5a4883/us3-step-after.json",
+      "bytes": 316852,
+      "sha256": "826a95ed9532ef023cfd6745432e9f8c299bd6cbf0f73940791fcf5eda4700e0"
+    },
+    {
+      "path": "lab/sera-runs/us3-step-b5a4883/us3-step-before.json",
+      "bytes": 362561,
+      "sha256": "cc935ca43aeefe66c0fe54779d08145eb640f8a919e174f1af132397cac2fb63"
+    },
+    {
       "path": "lab/sera-runs/where-trace-1001/trace_step.py",
       "bytes": 2173,
       "sha256": "9d78e7c7fe68126408374211bb643131a3c4dbb78246afa8316213dff1244e93"
@@ -9196,8 +9226,8 @@
     },
     {
       "path": "lab/sera/crutches.py",
-      "bytes": 14626,
-      "sha256": "52c2c377a590737c2d60cd626b692861b06f5de7b60d12ce506cc085666c93d0"
+      "bytes": 16561,
+      "sha256": "5c6e9245bbf95093c3a25aa4ec23a599b3381011c35c9cd66d9657311bf77ef1"
     },
     {
       "path": "lab/sera/design.py",
@@ -9241,8 +9271,8 @@
     },
     {
       "path": "lab/sera/phi.py",
-      "bytes": 88309,
-      "sha256": "5d8289f328f5b6aa943461a64085ca5c66b852c27828ea3a296255b2bd9394bc"
+      "bytes": 92144,
+      "sha256": "adfee2bdcfa0b387e919a1e0f29279d5f3276353bb7105bc71db4480f18d3511"
     },
     {
       "path": "lab/sera/pyprint.py",
@@ -9273,6 +9303,11 @@
       "path": "lab/sera_u/__init__.py",
       "bytes": 123,
       "sha256": "7f546cc006a38f3952884e29a7d04f2e28b9e42b317bab9c9dde5bbb80b2cf55"
+    },
+    {
+      "path": "lab/sera_u/discovery.py",
+      "bytes": 44909,
+      "sha256": "15db6b2723114bda6a92665eed3d584a663ea74c12a51bd6c6047ea5368994a1"
     },
     {
       "path": "lab/sera_u/field/SOURCE.json",
@@ -9451,13 +9486,13 @@
     },
     {
       "path": "lab/sera_u/memory.py",
-      "bytes": 39113,
-      "sha256": "3ec0934a540448d3a42ea3f39af3fb0da207ef0e4e9e69e16efc04108ce5a0f1"
+      "bytes": 51813,
+      "sha256": "9770750c7b0abf54e7c87ecbba59d77ea646e7360632662d5ec794364d746b21"
     },
     {
       "path": "lab/sera_u/mind.py",
-      "bytes": 93708,
-      "sha256": "7fe56560f8ef7f3f3c3f9650696665da0b68adf8e91b617b7925bf81dd3b5db7"
+      "bytes": 101375,
+      "sha256": "9e85f8922a6f842545a9181fd34d4042614eebf9367479e74afac32536d605c0"
     },
     {
       "path": "lab/sera_u/ports.py",
@@ -9466,13 +9501,13 @@
     },
     {
       "path": "lab/sera_u/proposer.py",
-      "bytes": 33213,
-      "sha256": "43f92f44506ea0142939ef74b4f4783c85912552f07d84b86e324b3289b1c3cc"
+      "bytes": 44162,
+      "sha256": "0bb79e447c11a86d1674e5ee73947d106613b516e21ec41a9e0fbf0490235f2f"
     },
     {
       "path": "lab/sera_u/sleep.py",
-      "bytes": 45587,
-      "sha256": "28988a64b1f0c70d32e7fb853d9123c82afed5b8f3508551359e96f5497a4b53"
+      "bytes": 47740,
+      "sha256": "e22b0b84625dbd5e949a755a65dc62ed7369b2f41938c26ab6f1ab735f96c541"
     },
     {
       "path": "lab/tests/__init__.py",
@@ -9691,8 +9726,8 @@
     },
     {
       "path": "lab/tests/sera/test_crutches.py",
-      "bytes": 2650,
-      "sha256": "50248654e9c838df4c68b276a24798f8621372e19c5187081a3c72765be9ae94"
+      "bytes": 2822,
+      "sha256": "e0b5469b50757c563bbb85b200a866096d66c490edfb554b8feb7dc2ee6fdf14"
     },
     {
       "path": "lab/tests/sera/test_field.py",
@@ -9810,6 +9845,11 @@
       "sha256": "3dc6705fc97896fe70286b39d1181cb6da5a53b56e9483691161c7215192a12c"
     },
     {
+      "path": "lab/tests/sera_u/test_discovery.py",
+      "bytes": 28956,
+      "sha256": "7b7cffaa701b4aaf6b71905e1dc36b751fa6e37df1fa5cf2862c29a554075268"
+    },
+    {
       "path": "lab/tests/sera_u/test_entity.py",
       "bytes": 29921,
       "sha256": "394d223ac1e44f4626b05c565737c8586955c1c70c246141b5d7c3a5f6ecdda9"
@@ -9820,19 +9860,34 @@
       "sha256": "74333999d60e369e6bb30c20c9bfcb799b2b191dbb50ab7e9a227538d0cc5b61"
     },
     {
+      "path": "lab/tests/sera_u/test_memory_choice.py",
+      "bytes": 21280,
+      "sha256": "c08d4c273d1dbcffe63fe76a7bbb12b0c898bb84978f12f6fcc6e30f16676b5a"
+    },
+    {
+      "path": "lab/tests/sera_u/test_memory_reads.py",
+      "bytes": 17554,
+      "sha256": "6998578b3e4b2057ad483a8de5e4c295806b56439fc19a540f7d2800e59ce570"
+    },
+    {
       "path": "lab/tests/sera_u/test_memory_speed.py",
       "bytes": 13399,
       "sha256": "1e949c64408debe514131f5bd83d696adfb516606116f4cde56b67e99e7ac0cc"
     },
     {
       "path": "lab/tests/sera_u/test_memory_understanding.py",
-      "bytes": 24055,
-      "sha256": "6e0b9f68ff077bc786d1de5b02246f91eece9a1faa35b0cc332bcd734b589955"
+      "bytes": 24315,
+      "sha256": "110cd5aff96046a0695c4dca2bb74106d186a277a75fcb28bfa6cd1ee43711a9"
     },
     {
       "path": "lab/tests/sera_u/test_not_yet.py",
       "bytes": 19037,
       "sha256": "568bf537eceeecae4c9ff8f426b7d64be7467f40c143949e824b1b2dd884cf80"
+    },
+    {
+      "path": "lab/tests/sera_u/test_readout_speed.py",
+      "bytes": 18663,
+      "sha256": "0efa2a114598f07abbba08d9f1b35b7881085337985aad90f8eba80915ca984d"
     },
     {
       "path": "lab/tests/sera_u/test_speed.py",
@@ -13995,8 +14050,8 @@
     "entry_point_links": "passed",
     "credential_review": "no unresolved findings"
   },
-  "unified_source_revision": "4d157fa561373603ff3dfd43409ae320dfd2396e",
-  "validation": {
+  "unified_source_revision": "120fdc46d629923b7c60d010854da297a01a4ed1",
+  "previous_update_validation": {
     "tests": {
       "unified_course_crutches": {
         "tests": 232,
@@ -14023,5 +14078,20 @@
     "credential_review": "no unresolved findings after complete staged-tree term scan and credential review",
     "full_behavioral_assessment": "not run",
     "original_parity_fixture": "passed with SERA_FIELD_PINNED_SOURCE pointing to upstream c67ed27"
+  },
+  "validation": {
+    "tests": {
+      "unified_course_crutches": {
+        "tests": 342,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 3
+      }
+    },
+    "python_parsed": 539,
+    "json_parsed": 1933,
+    "entry_point_links": "passed",
+    "credential_review": "no unresolved findings after staged-tree scan and review",
+    "full_behavioral_assessment": "not run"
   }
 }
