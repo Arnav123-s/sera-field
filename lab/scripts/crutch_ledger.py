@@ -2,12 +2,14 @@
 
   python scripts/crutch_ledger.py            print the ledger
   python scripts/crutch_ledger.py --write    replace it in docs/SERA_STATUS.md between the crutch-ledger markers
+  python scripts/crutch_ledger.py --run RUN  write RUN/LEDGER.md from its saved teaching boundaries
 
 Two tables: the mechanisms we coded into SERA's mind (sera/crutches.py REGISTRY), and the fixed numbers at the top
 of sera/one.py (every module-level constant, with its line, the commit that last set it and its comment). A measured
 effect is read from a saved run, as the capability table reads its numbers; with none it says so.
 """
 import ast
+import json
 import re
 import subprocess
 import sys
@@ -107,7 +109,51 @@ def ledger():
     return '\n'.join(out)
 
 
+def run_ledger(run):
+    """Render saved phase boundaries; no git blame, grading or learner execution.
+
+    Consultation counts are separately named. A measured callable invocation
+    does not establish that a whole task depended on that mechanism. Null
+    dependence remains 'not measured', including for fixed crutches.
+    """
+    run = Path(run)
+    path = run / 'LEDGER.jsonl'
+    if not path.is_file():
+        raise ValueError(f'No saved teaching ledger: {path}')
+    rows = [json.loads(line) for line in path.read_text(encoding='utf-8').splitlines() if line.strip()]
+    lines = ['| phase | boundary | crutch | on | status | teacher weight | consultations | enabled checks | callable uses | outcome dependence / cheap check |',
+             '|---|---|---|---|---|---|---|---|---|---|']
+    for row in rows:
+        for name, entry in sorted(row['crutches'].items()):
+            use = entry['use']
+            cf = entry.get('counterfactual')
+            dependence = entry.get('outcome_dependence')
+            if dependence is None:
+                effect = 'not measured'
+            else:
+                effect = str(dependence)
+            if cf:
+                effect += f"; {cf['changed']}/{cf['n']} channel/decision changes ({cf['scope']})"
+            weight = entry.get('teacher_weight')
+            calls = use.get('calls')
+            lines.append(f"| {row['phase']} | {row['boundary']} | {name} | {entry['on']} | {entry['status']} | "
+                         f"{weight if weight is not None else '-'} | {use['consulted']} | {use['enabled']} | "
+                         f"{calls if calls is not None else 'not instrumented'} | {effect.replace('|', '/')} |")
+    lines += ['', 'Counts are cumulative through each boundary. Callable scopes and teacher evidence totals are in ',
+              '`LEDGER.jsonl`. Fixed mechanisms keep their configured switches; only teacher statistics fade. ',
+              'Cheap checks compare a public channel or answer decision, not causal task success.']
+    table = '\n'.join(lines)+'\n'
+    (run/'LEDGER.md').write_text(table, encoding='utf-8')
+    return table
+
+
 if __name__ == '__main__':
+    if '--run' in sys.argv:
+        i = sys.argv.index('--run')
+        if i+1 >= len(sys.argv) or '--write' in sys.argv:
+            raise SystemExit('Use --run RUN (without --write)')
+        print(run_ledger(sys.argv[i+1]))
+        raise SystemExit(0)
     t = ledger()
     if '--write' in sys.argv:
         with open(DOC, encoding='utf-8', newline='') as f:

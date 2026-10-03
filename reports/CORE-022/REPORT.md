@@ -1,5 +1,13 @@
 # CORE-022: accepted coupled core and fresh teaching in progress
 
+**Status correction (2026-10-02):** The credited foundation training run
+completed all 12,288 updates on 2026-09-21, with saved status PASS and exit code 0.
+The earlier progress descriptions below are preserved snapshots. Completion of
+the withheld control and final whole-owner behavioral assessment has not been
+verified; the development scores are not final assessment results.
+See [the saved completion record](TRAINING_COMPLETION.json).
+
+
 I connected the fresh input maps, reciprocal energy, retained memory, conditional
 fusion and independent reward path through one owner. The build now also uses
 temporal echo, exact protected-state recovery and an actual finite stalk

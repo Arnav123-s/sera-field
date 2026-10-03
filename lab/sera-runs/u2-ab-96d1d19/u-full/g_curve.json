@@ -1,0 +1,234 @@
+{
+  "assessment_load_wall": 0,
+  "assessment_wall": 0,
+  "behavioral_signal": false,
+  "bootstrap": null,
+  "checkpoints": {},
+  "common_g0": [],
+  "complete": false,
+  "costs": [],
+  "curves": {
+    "full": [
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 0,
+        "rows": 0,
+        "solved": 0
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 1,
+        "rows": 0,
+        "solved": 0
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 2,
+        "rows": 0,
+        "solved": 0
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 3,
+        "rows": 0,
+        "solved": 0
+      }
+    ],
+    "no-dreams": [
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 0,
+        "rows": 0,
+        "solved": 0
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 1,
+        "rows": 0,
+        "solved": 0
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 2,
+        "rows": 0,
+        "solved": 0
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 3,
+        "rows": 0,
+        "solved": 0
+      }
+    ],
+    "no-library": [
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 0,
+        "rows": 0,
+        "solved": 0
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 1,
+        "rows": 0,
+        "solved": 0
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 2,
+        "rows": 0,
+        "solved": 0
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 3,
+        "rows": 0,
+        "solved": 0
+      }
+    ],
+    "no-proposer": [
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 0,
+        "rows": 0,
+        "solved": 0
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 1,
+        "rows": 0,
+        "solved": 0
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 2,
+        "rows": 0,
+        "solved": 0
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 3,
+        "rows": 0,
+        "solved": 0
+      }
+    ]
+  },
+  "disclaimer": "One-seed pilot only; no confirmatory RSI claim. Missing/timeout/abstention scores zero.",
+  "domain_g": {
+    "full:0:list": 0.0,
+    "full:0:num": 0.0,
+    "full:1:list": 0.0,
+    "full:1:num": 0.0,
+    "full:2:list": 0.0,
+    "full:2:num": 0.0,
+    "full:3:list": 0.0,
+    "full:3:num": 0.0,
+    "no-dreams:0:list": 0.0,
+    "no-dreams:0:num": 0.0,
+    "no-dreams:1:list": 0.0,
+    "no-dreams:1:num": 0.0,
+    "no-dreams:2:list": 0.0,
+    "no-dreams:2:num": 0.0,
+    "no-dreams:3:list": 0.0,
+    "no-dreams:3:num": 0.0,
+    "no-library:0:list": 0.0,
+    "no-library:0:num": 0.0,
+    "no-library:1:list": 0.0,
+    "no-library:1:num": 0.0,
+    "no-library:2:list": 0.0,
+    "no-library:2:num": 0.0,
+    "no-library:3:list": 0.0,
+    "no-library:3:num": 0.0,
+    "no-proposer:0:list": 0.0,
+    "no-proposer:0:num": 0.0,
+    "no-proposer:1:list": 0.0,
+    "no-proposer:1:num": 0.0,
+    "no-proposer:2:list": 0.0,
+    "no-proposer:2:num": 0.0,
+    "no-proposer:3:list": 0.0,
+    "no-proposer:3:num": 0.0
+  },
+  "engineering": {},
+  "failure": "Engineering tests failed; see engineering.json",
+  "failure_charged_mean": {
+    "full": 10.0,
+    "no-dreams": 10.0,
+    "no-library": 10.0,
+    "no-proposer": 10.0
+  },
+  "hardware_gate": "pending actual laptop measurement",
+  "missing_rows": 768,
+  "pilot_pass": false,
+  "retention": {
+    "full": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "no-dreams": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "no-library": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "no-proposer": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "schema": "s28-pilot-1",
+  "search_ratios": {
+    "full": null,
+    "no-dreams": null,
+    "no-library": null,
+    "no-proposer": null
+  },
+  "search_seconds_per_solved": {
+    "full": null,
+    "no-dreams": null,
+    "no-library": null,
+    "no-proposer": null
+  },
+  "total_wall": 236.49013710021973
+}

@@ -1,0 +1,1255 @@
+{
+  "assessment_load_wall": 7.020261876000404,
+  "assessment_wall": 547.6963838739966,
+  "behavioral_signal": false,
+  "bootstrap": {
+    "accepted_programs": 8,
+    "success": true
+  },
+  "checkpoints": {
+    "full:0": {
+      "file": "full-g0.pt",
+      "sha256": "30e32113054d7898697954cfc4e226716085b28bd3b5551162c3486ce79ef5e0"
+    }
+  },
+  "common_g0": [],
+  "complete": false,
+  "costs": [
+    {
+      "phase": "preflight",
+      "wall": 304.4147159190006
+    },
+    {
+      "phase": "bootstrap",
+      "task": "number: odd",
+      "wall": 74.4513891939996
+    },
+    {
+      "phase": "bootstrap",
+      "task": "number: powers of two",
+      "wall": 123.84843817599995
+    },
+    {
+      "phase": "bootstrap",
+      "task": "list: one more",
+      "wall": 106.40301776900014
+    },
+    {
+      "phase": "bootstrap",
+      "task": "number: square",
+      "wall": 17.47314695499972
+    },
+    {
+      "phase": "bootstrap",
+      "task": "list: sum",
+      "wall": 127.70779082199988
+    },
+    {
+      "phase": "bootstrap",
+      "task": "list: count",
+      "wall": 53.36203875299998
+    },
+    {
+      "phase": "bootstrap",
+      "task": "list: keep positive",
+      "wall": 57.511370690999684
+    },
+    {
+      "phase": "bootstrap",
+      "task": "list: last",
+      "wall": 85.69874966499992
+    },
+    {
+      "phase": "bootstrap",
+      "task": "list: double",
+      "wall": 83.09520757200062
+    },
+    {
+      "phase": "bootstrap",
+      "task": "number: triangle",
+      "wall": 127.25722804699944
+    },
+    {
+      "phase": "bootstrap",
+      "task": "number: twice",
+      "wall": 20.45316821200049
+    },
+    {
+      "phase": "bootstrap",
+      "task": "list: reverse",
+      "wall": 126.48534211599963
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 3.3549587726593018,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.05938443911722973,
+        "input": 2.2806387582885512,
+        "readout": 1.9518588387048974
+      },
+      "kind": "train",
+      "objective": 14.360917091369629,
+      "parameter_change": 0.22788249681880451,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 13.50137710571289,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8595403432846069,
+      "understanding_mix": 0.0009999999310821295,
+      "update": 1,
+      "wake": 8,
+      "wall": 8.050713263999569
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 3.1148321628570557,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.07199570505649755,
+        "input": 1.4338358934366797,
+        "readout": 2.33585366845012
+      },
+      "kind": "train",
+      "objective": 12.80275821685791,
+      "parameter_change": 0.20231615948857545,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 11.943571090698242,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8591870069503784,
+      "understanding_mix": 0.0020011174492537975,
+      "update": 2,
+      "wake": 8,
+      "wall": 8.00150574700001
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 3.343985080718994,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.06625416864377777,
+        "input": 1.7169583772076766,
+        "readout": 2.4275411738414823
+      },
+      "kind": "train",
+      "objective": 12.955742835998535,
+      "parameter_change": 0.18396622660940254,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 12.095993995666504,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8597489595413208,
+      "understanding_mix": 0.003001599106937647,
+      "update": 3,
+      "wake": 8,
+      "wall": 9.296281894999993
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 3.9142298698425293,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.09929154502282553,
+        "input": 1.6882897186968826,
+        "readout": 3.2554462893933107
+      },
+      "kind": "train",
+      "objective": 13.63193416595459,
+      "parameter_change": 0.17778578776268197,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 12.784263610839844,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.84767085313797,
+      "understanding_mix": 0.003985272720456123,
+      "update": 4,
+      "wake": 8,
+      "wall": 8.867266045000179
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 3.4226021766662598,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.07376984891380106,
+        "input": 1.3293073804969462,
+        "readout": 2.7726396836951874
+      },
+      "kind": "train",
+      "objective": 12.317413330078125,
+      "parameter_change": 0.17676306841059222,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 11.459784507751465,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8576288223266602,
+      "understanding_mix": 0.004973357543349266,
+      "update": 5,
+      "wake": 8,
+      "wall": 7.531613537000339
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 4.534987449645996,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.1366458746422434,
+        "input": 1.7048210869156089,
+        "readout": 3.917392138707637
+      },
+      "kind": "train",
+      "objective": 16.29728126525879,
+      "parameter_change": 0.17668960944273854,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 15.44248104095459,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8547998666763306,
+      "understanding_mix": 0.0059484741650521755,
+      "update": 6,
+      "wake": 8,
+      "wall": 8.395409496999491
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 4.551650524139404,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.1446442910754028,
+        "input": 1.8634122504061879,
+        "readout": 3.8668323430824803
+      },
+      "kind": "train",
+      "objective": 14.092978477478027,
+      "parameter_change": 0.17587645151866266,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 13.240057945251465,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8529208898544312,
+      "understanding_mix": 0.006914256606251001,
+      "update": 7,
+      "wake": 8,
+      "wall": 8.857526777999738
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 4.153500080108643,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.1344132600038885,
+        "input": 1.5074533040239253,
+        "readout": 3.5782186327264833
+      },
+      "kind": "train",
+      "objective": 13.15046501159668,
+      "parameter_change": 0.1768581542714462,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 12.304082870483398,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8463821411132812,
+      "understanding_mix": 0.007877522148191929,
+      "update": 8,
+      "wake": 8,
+      "wall": 5.187064382999779
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 5.466853618621826,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.18079805979028055,
+        "input": 1.7988476858954878,
+        "readout": 4.942780239585766
+      },
+      "kind": "train",
+      "objective": 13.914421081542969,
+      "parameter_change": 0.1772527368948719,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 13.065667152404785,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8487535119056702,
+      "understanding_mix": 0.008822448551654816,
+      "update": 9,
+      "wake": 8,
+      "wall": 5.288775453999733
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 4.6012983322143555,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.15531489474427598,
+        "input": 1.2735933399723358,
+        "readout": 4.124412487557395
+      },
+      "kind": "train",
+      "objective": 13.065033912658691,
+      "parameter_change": 0.17535133424312246,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 12.209063529968262,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8559705018997192,
+      "understanding_mix": 0.00976855494081974,
+      "update": 10,
+      "wake": 8,
+      "wall": 4.639039884999875
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 5.23501443862915,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.15764456231954901,
+        "input": 1.315342254713645,
+        "readout": 4.816086021352535
+      },
+      "kind": "train",
+      "objective": 16.04212188720703,
+      "parameter_change": 0.17487073557687358,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 15.191679954528809,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8504413366317749,
+      "understanding_mix": 0.01070712972432375,
+      "update": 11,
+      "wake": 8,
+      "wall": 4.817345936000493
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 5.2132649421691895,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.13892481361036718,
+        "input": 1.236181899708944,
+        "readout": 4.8560764365189995
+      },
+      "kind": "train",
+      "objective": 10.366825103759766,
+      "parameter_change": 0.17358995919449957,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 9.528038024902344,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8387869596481323,
+      "understanding_mix": 0.011633716523647308,
+      "update": 12,
+      "wake": 8,
+      "wall": 5.160196769999857
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 4.962154865264893,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.11932597417687421,
+        "input": 1.049334026804907,
+        "readout": 4.579647172446399
+      },
+      "kind": "train",
+      "objective": 12.972658157348633,
+      "parameter_change": 0.1733926089327966,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 12.116665840148926,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8559919595718384,
+      "understanding_mix": 0.012561012990772724,
+      "update": 13,
+      "wake": 8,
+      "wall": 4.772239518000788
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 5.21122932434082,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.16229580230692855,
+        "input": 1.2195524145493937,
+        "readout": 4.824937085868118
+      },
+      "kind": "train",
+      "objective": 15.239091873168945,
+      "parameter_change": 0.1722204124671054,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 14.399187088012695,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8399047255516052,
+      "understanding_mix": 0.013483859598636627,
+      "update": 14,
+      "wake": 8,
+      "wall": 5.373015560000567
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 4.649885654449463,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.12577708851040478,
+        "input": 0.9554353534212399,
+        "readout": 4.251525657659608
+      },
+      "kind": "train",
+      "objective": 13.790266990661621,
+      "parameter_change": 0.17124750333002,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 12.939597129821777,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.850669801235199,
+      "understanding_mix": 0.014413727447390556,
+      "update": 15,
+      "wake": 8,
+      "wall": 4.609616114000346
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 5.00683069229126,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.10012457705035122,
+        "input": 0.9815871056215609,
+        "readout": 4.648581475344277
+      },
+      "kind": "train",
+      "objective": 15.93466854095459,
+      "parameter_change": 0.1686305021838536,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 15.093889236450195,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8407796025276184,
+      "understanding_mix": 0.015343178063631058,
+      "update": 16,
+      "wake": 8,
+      "wall": 5.296514942000613
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 3.602050542831421,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.0719850801414091,
+        "input": 0.6699475680842941,
+        "readout": 3.146699889727122
+      },
+      "kind": "train",
+      "objective": 10.55678939819336,
+      "parameter_change": 0.1685576302924189,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 9.70279598236084,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8539936542510986,
+      "understanding_mix": 0.016295412555336952,
+      "update": 17,
+      "wake": 8,
+      "wall": 4.784186034999948
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 4.232350826263428,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.11323994253118458,
+        "input": 0.8463737482700329,
+        "readout": 3.842540732951494
+      },
+      "kind": "train",
+      "objective": 13.320101737976074,
+      "parameter_change": 0.16793560640322264,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 12.479504585266113,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8405972719192505,
+      "understanding_mix": 0.017253682017326355,
+      "update": 18,
+      "wake": 8,
+      "wall": 5.186424222999449
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 4.675982475280762,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.06583778039286044,
+        "input": 0.6358644898231656,
+        "readout": 4.353606028450347
+      },
+      "kind": "train",
+      "objective": 13.39268970489502,
+      "parameter_change": 0.1625818474908204,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 12.55308723449707,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8396021127700806,
+      "understanding_mix": 0.01821173168718815,
+      "update": 19,
+      "wake": 8,
+      "wall": 4.710137946000032
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 3.9863758087158203,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.04356632836779817,
+        "input": 0.4045129069037502,
+        "readout": 3.6074291367553255
+      },
+      "kind": "train",
+      "objective": 12.445448875427246,
+      "parameter_change": 0.15862802209377194,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 11.591609001159668,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8538398742675781,
+      "understanding_mix": 0.019183214753866196,
+      "update": 20,
+      "wake": 8,
+      "wall": 5.313552977000654
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 3.3543708324432373,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.060100876751657546,
+        "input": 0.45348161171242873,
+        "readout": 2.918390381466687
+      },
+      "kind": "train",
+      "objective": 11.984890937805176,
+      "parameter_change": 0.1589599284353508,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 11.143025398254395,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8418655395507812,
+      "understanding_mix": 0.020174920558929443,
+      "update": 21,
+      "wake": 8,
+      "wall": 4.7889974140007325
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 4.110707759857178,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.11170505837159334,
+        "input": 0.5927289426075063,
+        "readout": 3.7587302231339708
+      },
+      "kind": "train",
+      "objective": 10.272327423095703,
+      "parameter_change": 0.15961785916156315,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 9.438385009765625,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8339426517486572,
+      "understanding_mix": 0.02116803079843521,
+      "update": 22,
+      "wake": 8,
+      "wall": 4.6991075979995
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 5.552364349365234,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.10485332193224177,
+        "input": 0.5758080300473969,
+        "readout": 5.271867679484587
+      },
+      "kind": "train",
+      "objective": 10.125779151916504,
+      "parameter_change": 0.15304652077206082,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 9.279364585876465,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8464145064353943,
+      "understanding_mix": 0.022147100418806076,
+      "update": 23,
+      "wake": 8,
+      "wall": 5.263275180999699
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 4.545851707458496,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.06761748480437026,
+        "input": 0.3387856265066121,
+        "readout": 4.232421714807357
+      },
+      "kind": "train",
+      "objective": 12.08743667602539,
+      "parameter_change": 0.14840099878217927,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 11.24354076385498,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.843896210193634,
+      "understanding_mix": 0.023126401007175446,
+      "update": 24,
+      "wake": 8,
+      "wall": 4.759704291999697
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 5.111981391906738,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.10147134907843658,
+        "input": 0.578785729212092,
+        "readout": 4.81005604571278
+      },
+      "kind": "train",
+      "objective": 9.413591384887695,
+      "parameter_change": 0.1444093891563987,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 8.571036338806152,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8425546288490295,
+      "understanding_mix": 0.024098282679915428,
+      "update": 25,
+      "wake": 8,
+      "wall": 5.401472782999917
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 3.804241895675659,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.07045411089735319,
+        "input": 0.31947056182544986,
+        "readout": 3.428069859576764
+      },
+      "kind": "train",
+      "objective": 10.988720893859863,
+      "parameter_change": 0.1431441444688982,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 10.148170471191406,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8405507802963257,
+      "understanding_mix": 0.02508387342095375,
+      "update": 26,
+      "wake": 8,
+      "wall": 4.918568287000198
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 5.01218843460083,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.06395067966241616,
+        "input": 0.37953688007762443,
+        "readout": 4.729581083367712
+      },
+      "kind": "train",
+      "objective": 11.130356788635254,
+      "parameter_change": 0.13868217064895366,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 10.29359245300293,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8367647528648376,
+      "understanding_mix": 0.026062002405524254,
+      "update": 27,
+      "wake": 8,
+      "wall": 5.371592541000609
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 4.764763832092285,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.08740095677564821,
+        "input": 0.4375654127708404,
+        "readout": 4.436791580866595
+      },
+      "kind": "train",
+      "objective": 9.03640079498291,
+      "parameter_change": 0.1359144994889976,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 8.18565559387207,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8507453799247742,
+      "understanding_mix": 0.02703961171209812,
+      "update": 28,
+      "wake": 8,
+      "wall": 4.748607124000046
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 4.0425028800964355,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.09264053541298849,
+        "input": 0.33215249824492293,
+        "readout": 3.677170540592301
+      },
+      "kind": "train",
+      "objective": 10.389127731323242,
+      "parameter_change": 0.13633575864073005,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 9.548456192016602,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8406714797019958,
+      "understanding_mix": 0.0280270017683506,
+      "update": 29,
+      "wake": 8,
+      "wall": 5.328957523000099
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 5.67203426361084,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.13280665426686997,
+        "input": 0.44825611448026814,
+        "readout": 5.416305003257775
+      },
+      "kind": "train",
+      "objective": 8.024577140808105,
+      "parameter_change": 0.13467376696927627,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 7.192512512207031,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8320646286010742,
+      "understanding_mix": 0.02899864874780178,
+      "update": 30,
+      "wake": 8,
+      "wall": 4.665979788000186
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 4.881020545959473,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.08335276004708968,
+        "input": 0.4419306310244886,
+        "readout": 4.603482858462731
+      },
+      "kind": "train",
+      "objective": 12.10658073425293,
+      "parameter_change": 0.12852816090504438,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 11.284198760986328,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8223819732666016,
+      "understanding_mix": 0.029963934794068336,
+      "update": 31,
+      "wake": 8,
+      "wall": 5.217251513999145
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 4.915467262268066,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.057294770840112245,
+        "input": 0.4411854853873015,
+        "readout": 4.616309543990499
+      },
+      "kind": "train",
+      "objective": 11.964613914489746,
+      "parameter_change": 0.12085680529509416,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 11.126472473144531,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8381417989730835,
+      "understanding_mix": 0.03092627041041851,
+      "update": 32,
+      "wake": 8,
+      "wall": 4.781134605000261
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 3.8101961612701416,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.10012160031176422,
+        "input": 0.3456588611924165,
+        "readout": 3.438021923128678
+      },
+      "kind": "train",
+      "objective": 8.823957443237305,
+      "parameter_change": 0.12214645368842016,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 7.995815753936768,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8281419277191162,
+      "understanding_mix": 0.031903769820928574,
+      "update": 33,
+      "wake": 8,
+      "wall": 4.811213697000312
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 4.329897880554199,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.1040053023134297,
+        "input": 0.6037770231283712,
+        "readout": 3.985664245109565
+      },
+      "kind": "train",
+      "objective": 10.294260025024414,
+      "parameter_change": 0.12174862174016783,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 9.471719741821289,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.822540283203125,
+      "understanding_mix": 0.03288348391652107,
+      "update": 34,
+      "wake": 8,
+      "wall": 5.1106766640004935
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 3.814908266067505,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.045072038568892955,
+        "input": 0.2562283452570575,
+        "readout": 3.421812482049379
+      },
+      "kind": "train",
+      "objective": 9.36378002166748,
+      "parameter_change": 0.1186447420176205,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 8.523348808288574,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8404313921928406,
+      "understanding_mix": 0.033879395574331284,
+      "update": 35,
+      "wake": 8,
+      "wall": 4.801510319999579
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 3.500819444656372,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.05397086933341556,
+        "input": 0.38573845021408143,
+        "readout": 3.0792637793472943
+      },
+      "kind": "train",
+      "objective": 10.413697242736816,
+      "parameter_change": 0.117702767951517,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 9.581995964050293,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8317013382911682,
+      "understanding_mix": 0.03489416092634201,
+      "update": 36,
+      "wake": 8,
+      "wall": 5.500658605000353
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 3.44579815864563,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.07868395805686672,
+        "input": 0.32425449961760705,
+        "readout": 3.033771082827843
+      },
+      "kind": "train",
+      "objective": 8.567849159240723,
+      "parameter_change": 0.11776828539882252,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 7.744123935699463,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8237254619598389,
+      "understanding_mix": 0.03592534735798836,
+      "update": 37,
+      "wake": 8,
+      "wall": 4.705181357000583
+    },
+    {
+      "arm": "full",
+      "clip_input_norm": 3.1563844680786133,
+      "dreams": 0,
+      "generation": 0,
+      "gradient": {
+        "core": 0.07098807371817226,
+        "input": 0.27447343248537004,
+        "readout": 2.701212867858813
+      },
+      "kind": "train",
+      "objective": 7.884509563446045,
+      "parameter_change": 0.117456512136222,
+      "phase": "train",
+      "portfolio_credit": 0,
+      "program": 7.062949180603027,
+      "reading": 0.0,
+      "reading_slots": 0,
+      "understanding": 0.8215605020523071,
+      "understanding_mix": 0.036978479474782944,
+      "update": 38,
+      "wake": 8,
+      "wall": 5.253758973999538
+    },
+    {
+      "arm": "full",
+      "generation": 1,
+      "phase": "wake",
+      "wall": 13.884650804000557
+    }
+  ],
+  "curves": {
+    "full": [
+      {
+        "N": 48,
+        "complete": true,
+        "g": 0.4375,
+        "generation": 0,
+        "rows": 48,
+        "solved": 21
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 1,
+        "rows": 0,
+        "solved": 0
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 2,
+        "rows": 0,
+        "solved": 0
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 3,
+        "rows": 0,
+        "solved": 0
+      }
+    ],
+    "no-dreams": [
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 0,
+        "rows": 0,
+        "solved": 0
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 1,
+        "rows": 0,
+        "solved": 0
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 2,
+        "rows": 0,
+        "solved": 0
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 3,
+        "rows": 0,
+        "solved": 0
+      }
+    ],
+    "no-library": [
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 0,
+        "rows": 0,
+        "solved": 0
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 1,
+        "rows": 0,
+        "solved": 0
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 2,
+        "rows": 0,
+        "solved": 0
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 3,
+        "rows": 0,
+        "solved": 0
+      }
+    ],
+    "no-proposer": [
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 0,
+        "rows": 0,
+        "solved": 0
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 1,
+        "rows": 0,
+        "solved": 0
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 2,
+        "rows": 0,
+        "solved": 0
+      },
+      {
+        "N": 48,
+        "complete": false,
+        "g": 0.0,
+        "generation": 3,
+        "rows": 0,
+        "solved": 0
+      }
+    ]
+  },
+  "disclaimer": "One-seed pilot only; no confirmatory RSI claim. Missing/timeout/abstention scores zero.",
+  "domain_g": {
+    "full:0:list": 0.3333333333333333,
+    "full:0:num": 0.5416666666666666,
+    "full:1:list": 0.0,
+    "full:1:num": 0.0,
+    "full:2:list": 0.0,
+    "full:2:num": 0.0,
+    "full:3:list": 0.0,
+    "full:3:num": 0.0,
+    "no-dreams:0:list": 0.0,
+    "no-dreams:0:num": 0.0,
+    "no-dreams:1:list": 0.0,
+    "no-dreams:1:num": 0.0,
+    "no-dreams:2:list": 0.0,
+    "no-dreams:2:num": 0.0,
+    "no-dreams:3:list": 0.0,
+    "no-dreams:3:num": 0.0,
+    "no-library:0:list": 0.0,
+    "no-library:0:num": 0.0,
+    "no-library:1:list": 0.0,
+    "no-library:1:num": 0.0,
+    "no-library:2:list": 0.0,
+    "no-library:2:num": 0.0,
+    "no-library:3:list": 0.0,
+    "no-library:3:num": 0.0,
+    "no-proposer:0:list": 0.0,
+    "no-proposer:0:num": 0.0,
+    "no-proposer:1:list": 0.0,
+    "no-proposer:1:num": 0.0,
+    "no-proposer:2:list": 0.0,
+    "no-proposer:2:num": 0.0,
+    "no-proposer:3:list": 0.0,
+    "no-proposer:3:num": 0.0
+  },
+  "engineering": {
+    "batch_seconds": 8.795488277999539,
+    "batched_reads": true,
+    "code": "4c091ea7274f8f3a6f829d90be50d1ab2e0a7da443c2458604d0717b72e877e6",
+    "common_batches": 38,
+    "device": "cpu",
+    "engineering": true,
+    "exact_resume": true,
+    "gpu_peak_bytes": 0,
+    "gradient": {
+      "core.links": 0.10572149604558945,
+      "production_query.weight": 1.3903290033340454,
+      "words.weight": 0.14894194900989532
+    },
+    "laptop_latency_certified": false,
+    "latency_inputs": "balanced number/list, four examples, twenty query/probe records, lists through length eight",
+    "median": 2.7671322449996296,
+    "owner_reference_hash": "b7d5f7e8e73cff33224478bc1f0f991de0a8e1e0235829aede1734402b2fbd8f",
+    "p95": 3.548310930800153,
+    "parameters": 925413,
+    "peak_process_mb": 524.140625,
+    "runtime": {
+      "machine": "Linux-6.6.122+-x86_64-with-glibc2.39",
+      "numpy": "2.3.5",
+      "processor": "x86_64",
+      "threads": 1,
+      "torch": "2.10.0+cpu"
+    },
+    "source": "41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322",
+    "wall": 304.4147159190006
+  },
+  "failure": "Reserved family/source in training target",
+  "failure_charged_mean": {
+    "full": 9.548424017553383,
+    "no-dreams": 10.0,
+    "no-library": 10.0,
+    "no-proposer": 10.0
+  },
+  "hardware_gate": "pending actual laptop measurement",
+  "missing_rows": 720,
+  "pilot_pass": false,
+  "retention": {
+    "full": [
+      0.375,
+      null,
+      null,
+      null
+    ],
+    "no-dreams": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "no-library": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "no-proposer": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "schema": "s28-pilot-1",
+  "search_ratios": {
+    "full": null,
+    "no-dreams": null,
+    "no-library": null,
+    "no-proposer": null
+  },
+  "search_seconds_per_solved": {
+    "full": 3.563709649096251,
+    "no-dreams": null,
+    "no-library": null,
+    "no-proposer": null
+  },
+  "total_wall": 2122.624090194702
+}

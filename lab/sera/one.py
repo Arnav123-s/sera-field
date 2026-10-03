@@ -217,8 +217,10 @@ def _ring_safe(value):
 
 
 class Sera:
-    def __init__(self, seed=1, field=None):
+    def __init__(self, seed=1, field=None, proposer=None, library_enabled=True):
         self.seed = seed
+        self.proposer = proposer
+        self.library_enabled = library_enabled
         self.field = field if field is not None else PH.Field(seed)
         self.field.migrate_loop()
         if not hasattr(self.field, 'costs'):
@@ -242,6 +244,8 @@ class Sera:
 
     # ------------------------------------------------------------------ thinking
     def _concepts(self, masked=()):
+        if not self.library_enabled:
+            return {'_sig': {}}
         table = self.field.concept_table()
         if masked:
             table = {k: v for k, v in table.items() if k not in masked}
@@ -491,10 +495,16 @@ class Sera:
             if H:
                 logU, logL, logB, phi, tension = F.layers(kind, ctx, hparts, logE, bits)
                 order = sorted(H, key=lambda h: -phi[h])
+                if hasattr(self, '_u_syndrome'):
+                    self._u_syndrome(task, order, logU, logB)
+                if hasattr(self, '_u_order'):
+                    order = self._u_order(task, order)
                 leader = order[0]
                 doubt = -phi[leader]
             else:
                 phi, order, leader, doubt, tension = {}, [], None, S_MISS, 0.0
+                if hasattr(self, '_u_syndrome'):
+                    self._u_syndrome(task, [], {}, {})
             st['none_fit'] = st['leader_misfits'] = False  # what the examples say, fresh each time (S09 #4, reviewer: its
             if raw:                                        # doubt is relative - "0.0 nats" while its best idea fits
                 fitting = [h for h in order if raw.get(h, -math.inf) > -1e-9]   # no example - and the judge's "it
@@ -556,6 +566,8 @@ class Sera:
                 else:
                     top = order[:30]
                     cand = task.actions(rng, top, [math.exp(phi[h]) for h in top], concepts)
+            if hasattr(self, '_u_actions'):
+                cand = self._u_actions(task, cand)
             best_info = max((c['info'] for c in cand), default=0.0)
             best_novel = max((c['novel'] for c in cand), default=0.0)
             lap('actions')
@@ -618,7 +630,12 @@ class Sera:
                     F.methods.teach(kind, shown, trig)
                 advice = self.teacher_way(moment, available, st, shown)
                 F.loop.teach(kind, moment, est, available, advice)
-            config, vals = F.loop.choose(kind, moment, est, available, rng)
+            if hasattr(self, '_u_configuration'):
+                st['u_teacher_advice'] = advice
+                selected = self._u_configuration(task, leader, available, moves, moment, trig, st, rng, t0)
+            else:
+                selected = None
+            config, vals = (F.loop.choose(kind, moment, est, available, rng) if selected is None else selected)
             if on_schedule is not None:
                 on_schedule(dict(moment=dict(moment), estimates=dict(est), available=sorted(available),
                                  advice=advice, config=list(config), judge_where=st['judge_where'],
@@ -672,7 +689,8 @@ class Sera:
                     ret['grow'] = None
                     ran.append('grow')
                 elif fac == 'imagine':                     # its methods of imagination: a draw from their superposition
-                    st['methods'] = F.methods.choose(kind, moves, trig, rng)
+                    st['methods'] = (self._u_methods(kind, moves, trig, rng, st) if hasattr(self, '_u_methods')
+                                     else F.methods.choose(kind, moves, trig, rng))
                     st['trig'] = trig
                     for method in st['methods']:
                         new = self._imagine(method, task, kind, leader, concepts, library, mu, st, hyps, extra, speak,
@@ -735,6 +753,8 @@ class Sera:
             lap('doubt')
             after = after_doubt + st['judge_short']
             gain = before - after
+            if hasattr(self, '_u_moment_return'):
+                self._u_moment_return(st, gain)
             F.fade_traces()                                # what took part before fades; what took part now is traced
             result = 'prove' in ran and (st.get('confirmed') or st.get('refuted'))
             causal = ran[:ran.index('prove')] if result else ran   # only what ran before the result led to it; the
@@ -753,7 +773,9 @@ class Sera:
                     F.trace(('loop', fac, x_fac, self._cost(kind, fac)))
             if 'imagine' in config:                        # what its methods of imagining returned, at those triggers
                 for method in st.get('methods') or ():
-                    F.methods.learn(kind, method, st['trig'], float(np.clip(gain, -20.0, 40.0)))
+                    returns = st.get('u_method_returns', {}).get(method)
+                    earned = returns.pop(0) if returns else float(np.clip(gain, -20.0, 40.0))
+                    F.methods.learn(kind, method, st['trig'], earned)
                     if 'imagine' in causal:
                         F.trace(('method', kind, method, dict(st['trig'])))
             if st.pop('confirmed', False):                 # the echo: the whole Field changes with a proof (the
@@ -790,12 +812,27 @@ class Sera:
         of its own expressions, so an idea its language can say is reached in time (a larger level costs more)."""
         return math.inf
 
+    def _search(self, task, *args, **kwargs):
+        if self.proposer is not None and self.proposer.enabled:
+            return self.proposer.search(task, *args, **kwargs)
+        if self.proposer is not None:
+            start = time.perf_counter()
+            result = LG.search(*args, **kwargs)
+            self.proposer.stats['search'] += time.perf_counter()-start
+            self.proposer.stats['candidates'] += len(result)
+            return result
+        return LG.search(*args, **kwargs)
+
     def _generate(self, task, level, concepts):
         if task.form == 'strengths':
             return self._parts_physics(task, level, concepts)
         size = exact_size(level)
         nums = task.numbers() if hasattr(task, 'numbers') else ()
-        found = LG.search(task.inputs, task.out, task.probes(), size, concepts, lambda_size=lambda_size(level),
+        if self.proposer is not None and self.proposer.enabled:
+            preferred = self.proposer.preferred(task, concepts, nums)
+            if preferred:
+                return preferred[:MAX_HYPS]
+        found = self._search(task, task.inputs, task.out, task.probes(), size, concepts, lambda_size=lambda_size(level),
                           constants=nums, values=True, work=LG.MAX_WORK * 2 ** level,   # bigger and harder: a size
                           if_part=if_part(level), sees=self._sees() and seeing_size(level))   # cut short is finished
                                                                                               # before a bigger one
@@ -821,6 +858,30 @@ class Sera:
                                             {h: self._bits(h, task.form, concepts) for h in H})
         return -max(phi.values())
 
+    def _scrutiny_begin(self, task, leader, remaining=None):
+        if not CR.on('judge_scrutiny'):
+            return
+        policy = getattr(self.field, 'judge_scrutiny', None)
+        if policy is None:
+            policy = self.field.judge_scrutiny = TS.JudgeScrutiny()
+        probability, calibration = None, ()
+        # _u_predict has already read the candidate. Reuse that pre-verdict read;
+        # do not ask the Field a second time or train on the pending result.
+        x = getattr(self, '_u_predictions', {}).get((kind_of(task), leader))
+        inner = getattr(self.field, 'inner', None)
+        if x is not None and inner is not None and getattr(self, '_u_on', lambda _: False)('inner_judge'):
+            probability = inner.probability(kind_of(task), x)
+            calibration = inner.curves.get(kind_of(task), ())
+        record = policy.begin(task, probability, calibration)
+        if remaining is not None:
+            record['budget'] = min(record['budget'], remaining)
+        task._scrutiny_prepared = True
+
+    @staticmethod
+    def _scrutiny_record(task, leader, st):
+        if CR.on('judge_scrutiny') and hasattr(task, '_scrutiny_last'):
+            st.setdefault('scrutiny', []).append(dict(task._scrutiny_last, candidate=repr(leader)))
+
     def _prove(self, task, leader, concepts, library, st, speak):
         st['tested'].add((leader, self._n_data(task)))
         self._observe_ring(task, 'attempted', leader, step=st['steps'])
@@ -830,13 +891,22 @@ class Sera:
             tries = ([task.claim_terms(leader, concepts, library, ramp=True)] if TS.RAMP else []) + \
                 [task.claim_terms(leader, concepts, library)]   # Decision 16: its formula first, then the curve
             said, fam = set(), None
+            scrutiny_left = TS.SCRUTINY_THROWS
             for terms in tries:
                 f, credit = terms if terms is not None else (None, None)
                 if f is None or f in said or truth.functional_prior(f) == -math.inf:
                     continue
                 said.add(f)
                 fam = f
+                if hasattr(self, '_u_predict'):
+                    self._u_predict(task, leader)
+                self._scrutiny_begin(task, leader, scrutiny_left)
                 ok, cert, why = task.verify(fam)
+                self._scrutiny_record(task, fam, st)
+                if CR.on('judge_scrutiny'):
+                    scrutiny_left -= task._scrutiny_last['used']
+                if hasattr(self, '_u_verdict'):
+                    self._u_verdict(task, leader, bool(ok), 'proof')
                 self._observe_ring(task, 'judge_result', leader, step=st['steps'], accepted=bool(ok),
                                    family=fam, representation=credit, reason=why,
                                    band=getattr(cert, 'band', None), eps=getattr(cert, 'eps', None))
@@ -860,6 +930,10 @@ class Sera:
             if why and 'something else is here' in why:     # a force its law misses: a counterexample; a band not yet
                 st['misfit'], st['judge_short'] = True, S_MISS  # narrow enough is not one (S06 F1, reviewer)
                 st['counter'] = ('misfit', leader)
+            elif why == 'scrutiny: the band widened':
+                st['judge_short'] = max(st.get('judge_short', 0.), 1.)
+                st['judge_where'] = dict(truth.LAST_WHERE) or None
+                st['shown'] = 0
             elif cert is not None and cert.band is not None and np.isfinite(cert.band):
                 st.setdefault('adequate', set()).add(leader)   # the data support it; the band is not yet narrow
                 st['judge_short'] = BAND_NATS * max(math.log(cert.band / cert.eps), 0.0)
@@ -870,8 +944,14 @@ class Sera:
             speak('refused', f'The judge does not accept {grammar.name(fam)}: {why}.')
             return False
         n = len([k for k in concepts if k != '_sig'])
+        if hasattr(self, '_u_predict'):
+            self._u_predict(task, leader)
+        self._scrutiny_begin(task, leader)
         ok, n_audit, fail = task.verify(leader, concepts, LG.bits(leader, [0] * n), np.random.default_rng(
             [self.seed, 5, self.field.tasks, st['steps']]))
+        self._scrutiny_record(task, leader, st)
+        if hasattr(self, '_u_verdict'):
+            self._u_verdict(task, leader, bool(ok), 'proof')
         self._observe_ring(task, 'judge_result', leader, step=st['steps'], accepted=bool(ok),
                            reason=None if ok else 'input', audit=n_audit)
         self._observe_report(st)
@@ -1508,10 +1588,19 @@ class Sera:
                 ideas.read(s, task.name)
             task.mind = ideas if ideas.read_n else None
             g = task.perceive(x)
+            if hasattr(self, '_u_talk_tick'):
+                self._u_talk_tick(on_say)
             got, cid, rang = self.reply(g, x[0])
             row = dict(kind=kind, question=TS.text(x[0]), said=None if got is None else TS.text(got),
                        idea=names.get(cid, cid) if cid is not None else None, right=got == y,
                        rang=[(names.get(c, c), round(v, 3)) for c, v in rang[:3]])
+            u_inner = hasattr(self, '_u_on') and self._u_on('inner_judge')
+            if u_inner:
+                row['response'] = (TS.text(got) if got is not None else
+                                   'not-yet' if self._u_on('taught_not_yet') else
+                                   CR.REGISTRY['abstain_bar']['response'] if self._u_bar_on() else None)
+            if hasattr(self, '_u_talk_record'):
+                self._u_talk_record(g, x[0], got, row)
             # Observer annotation only: no target or digest enters reply, retrieval, or learning.
             row['observer_digest'] = _digest((tuple(TS.text(sentence) for sentence in x),
                                                ('absent',) if y is None else ('target', TS.text(y)), kind))
@@ -1526,6 +1615,8 @@ class Sera:
                 for c in fits:
                     v = LG.safe(LG.node('c', LG.node('var', payload='g'), payload=c), {'g': g}, concepts)
                     said[c] = v if TS.is_words(v) else None
+                    if u_inner:
+                        continue
                     if ONE_FIELD and CR.on('frame_identity') and frame:   # the record in the Field (S12 F3) -
                         pass                                   # no tally beside it (S15 F6)
                     else:
@@ -1535,7 +1626,11 @@ class Sera:
                     if ONE_FIELD and CR.on('frame_identity') and frame:
                         ideas.bind(('frame', tuple(sorted(frame, key=repr))), ('right', c),
                                    1.0 if said[c] == y else -1.0)
+                if u_inner:
+                    self._u_talk_correct(g, x[0], y, got, cid, said)
                 learned += self._correct(words, frame, y, got, cid, rang, fits, said, tally)
+            if hasattr(self, '_u_talk_end_turn'):
+                self._u_talk_end_turn(x[0])
             rows.append(row)
             if on_say is not None:
                 on_say(row)
@@ -1577,7 +1672,10 @@ class Sera:
         out = []
         if good:
             best = max(good, key=lambda c: (loud.get(c, 0.0), -fits.index(c)))
-            if not CR.on('talk_tally') or self._reliable(best, frame, tally):
+            u_judge = hasattr(self, '_u_on') and self._u_on('inner_judge')
+            trusted = self._reliable(best, frame, tally) if u_judge else (
+                not CR.on('talk_tally') or self._reliable(best, frame, tally))
+            if trusted:
                 for t in words:
                     ideas.bind(t, ('concept', best), TALK_RATE)
                     out.append((best, TS.text(t) if isinstance(t, int) else str(t), TALK_RATE))
@@ -1911,7 +2009,7 @@ class Sera:
             pool = list(dict.fromkeys(p for h in held for p in h))[:256]
             ops = []
             for level in range(BACK_SIZE + 1):           # the last operation: small, over one part
-                for e, _, vals in LG.search({'z': T}, ctx['tout'], [{'z': p} for p in pool], exact_size(level),
+                for e, _, vals in self._search(ctx['task'], {'z': T}, ctx['tout'], [{'z': p} for p in pool], exact_size(level),
                                             concepts, lambda_size=lambda_size(level), values=True,
                                             constants=ctx.get('constants', ())):
                     if e[0] == 'var':
@@ -1928,7 +2026,7 @@ class Sera:
                 for level in range(STEP_REST + 1):       # then forward, from the input to that nearer goal
                     if time.time() > until:
                         return None
-                    for e, _, vals in LG.search({var: tin}, T, [{var: x} for x in xs_seen], exact_size(level),
+                    for e, _, vals in self._search(ctx['task'], {var: tin}, T, [{var: x} for x in xs_seen], exact_size(level),
                                                 concepts, lambda_size=lambda_size(level), values=True,
                                                 constants=ctx.get('constants', ()),
                                                 work=LG.MAX_WORK * 2 ** level, if_part=if_part(level),
@@ -1944,12 +2042,14 @@ class Sera:
         and the features of what it makes on the examples. Not an input itself, nothing undefined on an example."""
         level = min(self._level, STEP_LEVEL)             # a step is small: sizes of its first levels
         types = LG.universe(list(inputs.values()) + [ctx['tout']])
+        if isinstance(ctx['sf'], PH.FieldSteps):
+            types = sorted(types, key=repr)
         out, seen = [], set()
         LG.DEADLINE[0] = until
         for t in types:
             if t == 'real':
                 continue
-            for e, _, vals in LG.search(inputs, t, probes, exact_size(level), ctx['concepts'],
+            for e, _, vals in self._search(ctx['task'], inputs, t, probes, exact_size(level), ctx['concepts'],
                                         constants=ctx['constants'],
                                         lambda_size=lambda_size(level), values=True, work=LG.MAX_WORK * 2 ** level,
                                         if_part=if_part(level), sees=self._sees() and seeing_size(level)):
@@ -1963,6 +2063,14 @@ class Sera:
                             self._step_features(e, made, ctx['pairs'], t, ctx['tout'])))
             if time.time() > until:
                 break
+        if self.proposer is not None and self.proposer.enabled:
+            for e, t, vals in self.proposer.step_fragments(inputs, probes, ctx['concepts'],
+                                                          max_size=exact_size(level)):
+                if e in seen:
+                    continue
+                made = [vals[j] for j in ctx['where']]
+                out.append((e, t, vals, made, self._step_features(e, made, ctx['pairs'], t, ctx['tout'])))
+                seen.add(e)
         return out
 
     def _rest(self, ctx, inputs, probes, until, step):
@@ -1976,7 +2084,7 @@ class Sera:
         for level in range(STEP_REST + 1):
             if time.time() > until:
                 return None, False
-            for e, _, vals in LG.search(inputs, ctx['tout'], probes, exact_size(level), ctx['concepts'],
+            for e, _, vals in self._search(ctx['task'], inputs, ctx['tout'], probes, exact_size(level), ctx['concepts'],
                                         constants=ctx['constants'],
                                         lambda_size=lambda_size(level), values=True, work=LG.MAX_WORK * 2 ** level,
                                         if_part=if_part(level), sees=self._sees() and seeing_size(level)):
@@ -2012,6 +2120,8 @@ class Sera:
                                                          LG.size(cands[k][0]) if k in shown else 0,   # the simplest
                                                          -sf.score(cands[k][4], rng)))              # shown first
         cands = [cands[k] for k in order]
+        if self.proposer is not None and self.proposer.enabled and not shown:
+            cands = self.proposer.order_steps(ctx['task'], cands, ctx['concepts'])
         tried = cands[:STEP_TRY]
         name = f'w{depth + 1}'
         while name in inputs:                            # a name of its own, never an input's (S03 F4, reviewer)
@@ -2060,7 +2170,7 @@ class Sera:
         try:
             level = 0
             while time.time() < until:
-                found = LG.search(task.inputs, task.out, task.probes(), exact_size(level), concepts,
+                found = self._search(task, task.inputs, task.out, task.probes(), exact_size(level), concepts,
                                   lambda_size=lambda_size(level), constants=nums, values=True,
                                   work=LG.MAX_WORK * 2 ** level, if_part=if_part(level), sees=seeing_size(level))
                 fits = [e for e, _, _ in found if LG.sees(e) and task.consistent(e, concepts)]
@@ -2087,6 +2197,8 @@ class Sera:
         and not an idea it has already - by what it does on those values, not only by how it is written (S02, reviewer:
         foldn(λa,e. e, 0, _) and foldn(λa,e. e, 5, _) are one idea on sentences). A way of learning, the same in
         every subject, not an ability. Returns the concepts it kept."""
+        if not self.library_enabled:
+            return []
         path, q = [], law
         while True:                                          # down the one branch that holds the input
             kids = [(i, k) for i, k in enumerate(q[2:], 2) if ('var', var) in LG.parts(k)]
@@ -2270,7 +2382,7 @@ class Sera:
         try:
             level = 0
             while time.time() < until:
-                found = LG.search({'w': spec['tin']}, spec['tout'], probes, exact_size(level), concepts,
+                found = self._search(task, {'w': spec['tin']}, spec['tout'], probes, exact_size(level), concepts,
                                   lambda_size=lambda_size(level), constants=nums, values=True,
                                   work=LG.MAX_WORK * 2 ** level, if_part=if_part(level),
                                   sees=self._sees() and seeing_size(level))
@@ -2356,9 +2468,9 @@ class Sera:
 
     def _ask_us(self, task, leader, doubt, st, speak, cap=False):
         names = self.field.names()
-        what = (LG.show(leader, names) if task.form == 'exact' else
-                ' + '.join(f"{k if k != 'expr' else LG.show(r, names)} of {ch}" for ch, k, r in leader) if leader else
-                'nothing')
+        what = ('nothing' if not leader else           # no idea at all (an exact task out of time, too)
+                LG.show(leader, names) if task.form == 'exact' else
+                ' + '.join(f"{k if k != 'expr' else LG.show(r, names)} of {ch}" for ch, k, r in leader))
         why = ('none of my ideas fits the examples' if st.get('none_fit') else   # its doubt is only against its
                f'{doubt:.1f} nats of doubt')                                      # other ideas (S09 #4)
         text = (f"In {task.name} my best idea is {what}, but I cannot finish ({why}"
@@ -2602,11 +2714,15 @@ class Sera:
                    senses_used=[], timing=dict(st['time']), built=list(self._built),
                    peak_mb=st['peak'][0], peak_mb_by=dict(st['peak_by']), memory_stops=st['memory_stops'],
                    settings=CR.settings())
+        if CR.on('judge_scrutiny'):
+            rec['judge_scrutiny'] = list(st.get('scrutiny', ()))
         off_choice_cpu = rec['cpu']                       # compatibility estimate, never reported as total cost
         course_feedback = None
         course_credit = True
         if answer_channel is not None:
             law = proven['law'] if proven is not None else leader
+            if law is not None and hasattr(self, '_u_predict'):
+                self._u_predict(task, law)
             course_feedback = answer_channel(task, law, concepts, proven)
             if course_feedback is not None:
                 course_credit = course_feedback.get('right') is True
@@ -2686,7 +2802,7 @@ class Sera:
                             F.audited_by(p[1], task.name)
                 var = next(iter(task.inputs))
                 pure = law[0] == 'c' and law[2] == LG.node('var', payload=var)      # a concept, reused as it is
-                if credited and LG.size(law) >= 3 and not pure and len(task.inputs) == 1:   # anything new becomes a
+                if self.library_enabled and credited and LG.size(law) >= 3 and not pure and len(task.inputs) == 1:
                     #                                                                          concept
                     body = _subst(law, var, '_')
                     sig = LG.infer(body, concepts)        # the most general type its body allows (2026-09-28)

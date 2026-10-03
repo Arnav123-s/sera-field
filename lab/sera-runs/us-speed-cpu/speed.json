@@ -1,0 +1,142 @@
+{
+  "audit": "unchanged pinned audited Field on every path",
+  "clone_load_in_timing": false,
+  "code": "5dec2969739068acc82038fade1ee0cfc072fe46b072bd90065451f5f4be1a8f",
+  "cpu_train_target_met": true,
+  "cpu_train_target_seconds": 12.0,
+  "device": "cpu",
+  "dream_check_count": 8,
+  "dream_check_scope": "optional Field log-probability diagnostic; no factual evidence",
+  "fixtures": "preflight: four examples, twenty queries; lists through length eight",
+  "gpu_batching_gained": null,
+  "gpu_peak_bytes": 0,
+  "measurements": {
+    "dream_check": {
+      "new": {
+        "median_seconds": 0.5368242000695318,
+        "seconds": [
+          0.5355065000476316,
+          0.5412631999934092,
+          0.5368242000695318
+        ]
+      },
+      "old": {
+        "median_seconds": 3.8414464000379667,
+        "seconds": [
+          4.147058099973947,
+          3.8414464000379667,
+          3.820764600066468
+        ]
+      },
+      "speedup": 7.155874119572862
+    },
+    "one_list_read": {
+      "new": {
+        "median_seconds": 1.9957104000495747,
+        "seconds": [
+          1.9921353000681847,
+          1.9957104000495747,
+          2.0053230999037623
+        ]
+      },
+      "old": {
+        "median_seconds": 1.9998946000123397,
+        "seconds": [
+          1.9998946000123397,
+          1.9821884999983013,
+          2.0516174000222236
+        ]
+      },
+      "speedup": 1.0020965967620659
+    },
+    "one_number_read": {
+      "new": {
+        "median_seconds": 2.005219000042416,
+        "seconds": [
+          2.005219000042416,
+          1.9951605999376625,
+          2.053219599998556
+        ]
+      },
+      "old": {
+        "median_seconds": 2.0059893999714404,
+        "seconds": [
+          2.0136878000339493,
+          2.0059893999714404,
+          2.0011124999728054
+        ]
+      },
+      "speedup": 1.0003841974013852
+    },
+    "symbolic_dream_generation": {
+      "new": {
+        "median_seconds": 0.004314300022087991,
+        "seconds": [
+          0.004302400047890842,
+          0.004314300022087991,
+          0.005098800058476627
+        ]
+      },
+      "old": {
+        "median_seconds": 0.004452700028195977,
+        "seconds": [
+          0.004675900097936392,
+          0.00419910007622093,
+          0.004452700028195977
+        ]
+      },
+      "speedup": 1.0320793652271323
+    },
+    "train_1_8": {
+      "new": {
+        "median_seconds": 5.918532800045796,
+        "seconds": [
+          5.915299299987964,
+          5.984670000034384,
+          5.918532800045796
+        ]
+      },
+      "old": {
+        "median_seconds": 47.34660569997504,
+        "seconds": [
+          46.89424809999764,
+          47.34660569997504,
+          47.388003100058995
+        ]
+      },
+      "speedup": 7.999720082586801
+    },
+    "train_1_8_varied_queries": {
+      "new": {
+        "median_seconds": 6.431790099944919,
+        "seconds": [
+          6.596824600012042,
+          6.431790099944919,
+          6.386907099978998
+        ]
+      },
+      "old": {
+        "median_seconds": 22.735222200048156,
+        "seconds": [
+          23.288122899946757,
+          22.30347210005857,
+          22.735222200048156
+        ]
+      },
+      "speedup": 3.534820298355641
+    }
+  },
+  "repeats": 3,
+  "runtime": {
+    "machine": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel",
+    "torch": "2.10.0+cpu"
+  },
+  "schema": "sera-u-speed-1",
+  "seed": 3,
+  "source": "41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322",
+  "threads": 1,
+  "train_parameter_max_abs_difference": 1.163780689239502e-05,
+  "u2": false,
+  "warmup": 1
+}

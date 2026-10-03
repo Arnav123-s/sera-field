@@ -1,4 +1,4 @@
-# SERA plan: the directions in force, and revision 9
+# SERA plan: the directions in force, and revision 8
 
 *Rewritten 2026-10-01 (UTC). Revisions 1 to 7.11 (2,342 lines) are distilled here into the author's directions that
 still hold, quoted verbatim with their dates. The full text of every revision is the git tag
@@ -177,22 +177,10 @@ the tripwires (sure-and-wrong, checker refusal) stay at zero.
 
 After each phase: reports in place (two parts), commit, upload to the notebook.
 
-### Decisions (delegated to development review by the author, 2026-10-02 17:45 UTC)
+### Decisions for the author
 
 1. Decision 16, S11's ramp term: **yes** (the author, 2026-10-01); in force since 2026-10-02 (regression: all 306 the same).
-2. **86cf3e5 (`lesson_words`): retired for SERA-U** (decided by development review). Every SERA-U run has it off: it hands SERA
-   the answer words, against the no-given-words rule, and the b2 A/B lost nothing without it (seed 2: 14 vs 12
-   lessons, within timing noise). It stays a registered crutch, on in the lab SERA so that its old records stay
-   comparable, and switchable for any later A/B.
-3. **One Field's gate: replaced** (decided by development review). "No lesson slower or lost" judged a design by run-to-run
-   timing. SERA-U is judged instead by:
-   - no wrong final answers (sure and wrong stays at zero; "I don't know" counts as not wrong);
-   - wrong first thoughts fading with practice;
-   - right answers on the course tests and unseen tasks;
-   - total time and memory, against the controls.
-
-   The lab's `ONE_FIELD` stays off.
-4. **The adaptive judge** (the author's order for SERA-U): an inner, learned judge that earns trust, and an outer judge
-   that looks harder where SERA was wrong. The outer bar is never lowered (decided by development review; `SERA_U_PLAN.md` §1.1).
-5. The old dated copies in the development tool notebook and the staged leftovers on `main`: **left as they are** (deleting
-   is permanent, and they do no harm).
+2. 86cf3e5: keep as a registered crutch, or teach positional lessons instead. The switch-off A/B (b2, seed 2) lost
+   nothing without it (14 vs 12 lessons, within timing noise): removing it is supported.
+3. The old dated copies in the development notebook: the author removes them, if they want to.
+4. The staged working notes and helper scripts on `main` (review notes, not published).

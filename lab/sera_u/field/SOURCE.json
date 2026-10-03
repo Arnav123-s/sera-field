@@ -1,0 +1,247 @@
+{
+  "package": "sera_field",
+  "files": [
+    {
+      "source_sha256": "411ad79310c9e2bcf2038fc35e8c746306d4803502b3fa8aeb9af9e7a896ce80",
+      "path": "__init__.py",
+      "changed": false,
+      "vendored_sha256": "411ad79310c9e2bcf2038fc35e8c746306d4803502b3fa8aeb9af9e7a896ce80",
+      "prepublication_vendored_sha256": "411ad79310c9e2bcf2038fc35e8c746306d4803502b3fa8aeb9af9e7a896ce80"
+    },
+    {
+      "source_sha256": "90dfb74e31578939119a3ab34c4ae3c6c8b1bd0d6b99503a110d917ea1f838a9",
+      "path": "clifford_sheaf.py",
+      "changed": true,
+      "vendored_sha256": "b729f90ff8d6131920716f64f6388849f6e080846520706bd8c702e20f982a08",
+      "prepublication_vendored_sha256": "b729f90ff8d6131920716f64f6388849f6e080846520706bd8c702e20f982a08"
+    },
+    {
+      "source_sha256": "286b58b1b01c1618f4797c342d93c5332bfe2980acbad16b09dcaa178349d4ed",
+      "path": "continuum_core.py",
+      "changed": false,
+      "vendored_sha256": "286b58b1b01c1618f4797c342d93c5332bfe2980acbad16b09dcaa178349d4ed",
+      "prepublication_vendored_sha256": "286b58b1b01c1618f4797c342d93c5332bfe2980acbad16b09dcaa178349d4ed"
+    },
+    {
+      "source_sha256": "c4f6fcd996c1ff14b76409585f5fbdce1060b2b11cbced5b953969e4d9a64ce2",
+      "path": "core_adequacy.py",
+      "changed": false,
+      "vendored_sha256": "c4f6fcd996c1ff14b76409585f5fbdce1060b2b11cbced5b953969e4d9a64ce2",
+      "prepublication_vendored_sha256": "c4f6fcd996c1ff14b76409585f5fbdce1060b2b11cbced5b953969e4d9a64ce2"
+    },
+    {
+      "source_sha256": "d15e6e441f79adbf69651eb295a33feec0ad034f2ea2f93ab13754c995aee5e7",
+      "path": "core_echo.py",
+      "changed": false,
+      "vendored_sha256": "d15e6e441f79adbf69651eb295a33feec0ad034f2ea2f93ab13754c995aee5e7",
+      "prepublication_vendored_sha256": "d15e6e441f79adbf69651eb295a33feec0ad034f2ea2f93ab13754c995aee5e7"
+    },
+    {
+      "source_sha256": "5c3c2485a6a97230fbde9138076371f92d2a15db4107b4b9005152601348f4f5",
+      "path": "core_learning.py",
+      "changed": true,
+      "vendored_sha256": "b819c030a2f203feae30f3f08831d509e214949dc5cc771b88691fab74dc5987",
+      "prepublication_vendored_sha256": "b819c030a2f203feae30f3f08831d509e214949dc5cc771b88691fab74dc5987"
+    },
+    {
+      "source_sha256": "5f656a0fd332a66cc1909c0b0693a598a196bb85eff10e0052b9db75e20c3c95",
+      "path": "core_owner.py",
+      "changed": false,
+      "vendored_sha256": "5f656a0fd332a66cc1909c0b0693a598a196bb85eff10e0052b9db75e20c3c95",
+      "prepublication_vendored_sha256": "5f656a0fd332a66cc1909c0b0693a598a196bb85eff10e0052b9db75e20c3c95"
+    },
+    {
+      "source_sha256": "b96fb1a45c3210ccb2f71eb9b306fc8947b6a68073a915cd35a27df33be7b9ea",
+      "path": "core_portfolio.py",
+      "changed": false,
+      "vendored_sha256": "b96fb1a45c3210ccb2f71eb9b306fc8947b6a68073a915cd35a27df33be7b9ea",
+      "prepublication_vendored_sha256": "b96fb1a45c3210ccb2f71eb9b306fc8947b6a68073a915cd35a27df33be7b9ea"
+    },
+    {
+      "source_sha256": "9179bee5657514b51b144017f34497723bd3806b6d753d72da50072b273e64c6",
+      "path": "core_program_verifier.py",
+      "changed": false,
+      "vendored_sha256": "9179bee5657514b51b144017f34497723bd3806b6d753d72da50072b273e64c6",
+      "prepublication_vendored_sha256": "9179bee5657514b51b144017f34497723bd3806b6d753d72da50072b273e64c6"
+    },
+    {
+      "source_sha256": "9cf663ddfd97345fa41a5caefff6e8daa224e42e96f84e73254cee7c00029f81",
+      "path": "core_programs.py",
+      "changed": false,
+      "vendored_sha256": "9cf663ddfd97345fa41a5caefff6e8daa224e42e96f84e73254cee7c00029f81",
+      "prepublication_vendored_sha256": "9cf663ddfd97345fa41a5caefff6e8daa224e42e96f84e73254cee7c00029f81"
+    },
+    {
+      "source_sha256": "83fa67e8fc634add5d9ca068d676967627aeef5a271dfae84e89e81cd7305832",
+      "path": "core_proposals.py",
+      "changed": false,
+      "vendored_sha256": "83fa67e8fc634add5d9ca068d676967627aeef5a271dfae84e89e81cd7305832",
+      "prepublication_vendored_sha256": "83fa67e8fc634add5d9ca068d676967627aeef5a271dfae84e89e81cd7305832"
+    },
+    {
+      "source_sha256": "308add363d422d5d2367f643269f95c07b7438e413f74a4b82cd18084d1c1b9f",
+      "path": "core_session.py",
+      "changed": true,
+      "vendored_sha256": "27bec29821d223acc434c2f78775065e54d334d03aa63f78a875426000671817",
+      "prepublication_vendored_sha256": "27bec29821d223acc434c2f78775065e54d334d03aa63f78a875426000671817"
+    },
+    {
+      "source_sha256": "f12c44ee3524b2194f866b56e488aba7cb4e7174e0fec33f2eb861682d6bf5b1",
+      "path": "core_storage.py",
+      "changed": false,
+      "vendored_sha256": "f12c44ee3524b2194f866b56e488aba7cb4e7174e0fec33f2eb861682d6bf5b1",
+      "prepublication_vendored_sha256": "f12c44ee3524b2194f866b56e488aba7cb4e7174e0fec33f2eb861682d6bf5b1"
+    },
+    {
+      "source_sha256": "4143302e46b2cb03066301dbcd590d2fbdba4586316916795f2358d54a9a4997",
+      "path": "fibonacci_space.py",
+      "changed": false,
+      "vendored_sha256": "4143302e46b2cb03066301dbcd590d2fbdba4586316916795f2358d54a9a4997",
+      "prepublication_vendored_sha256": "4143302e46b2cb03066301dbcd590d2fbdba4586316916795f2358d54a9a4997"
+    },
+    {
+      "source_sha256": "af6773acf3045db3eb9f8e5c89fdfe10b608d5c4d713e02a9606550c1df95b56",
+      "path": "finite_neural_action.py",
+      "changed": false,
+      "vendored_sha256": "af6773acf3045db3eb9f8e5c89fdfe10b608d5c4d713e02a9606550c1df95b56",
+      "prepublication_vendored_sha256": "af6773acf3045db3eb9f8e5c89fdfe10b608d5c4d713e02a9606550c1df95b56"
+    },
+    {
+      "source_sha256": "054719a6a8bdd0506298d40a60b10b46b7b1406246c5a844d674a45983b4ac45",
+      "path": "gauge.py",
+      "changed": true,
+      "vendored_sha256": "96f602abd7d0c305a6c83ba5411c1445d2b87f62af5035febc7ab4950edb2277",
+      "prepublication_vendored_sha256": "96f602abd7d0c305a6c83ba5411c1445d2b87f62af5035febc7ab4950edb2277"
+    },
+    {
+      "source_sha256": "810d4ccf166a1e9074e86566f00f6115d33e3f359cbed002cd354081daddec3b",
+      "path": "joint_cycle.py",
+      "changed": true,
+      "vendored_sha256": "af17fbbc62e800194ac340318734cb6dcc7755a2f10e0bf8e0c92c988062ac05",
+      "prepublication_vendored_sha256": "af17fbbc62e800194ac340318734cb6dcc7755a2f10e0bf8e0c92c988062ac05"
+    },
+    {
+      "source_sha256": "716adae599ac020b1e5e2fc58dacbb39b8f34b1ded23e28ef4b0d71a13449b7c",
+      "path": "joint_data.py",
+      "changed": false,
+      "vendored_sha256": "716adae599ac020b1e5e2fc58dacbb39b8f34b1ded23e28ef4b0d71a13449b7c",
+      "prepublication_vendored_sha256": "716adae599ac020b1e5e2fc58dacbb39b8f34b1ded23e28ef4b0d71a13449b7c"
+    },
+    {
+      "source_sha256": "d5fc33ee8c3f885c53358b37b9624d47357ff3b9051ab759bb8c0f50429a91ea",
+      "path": "joint_session.py",
+      "changed": true,
+      "vendored_sha256": "b8ea8a56727b20937f12c9dc52158207b0011e36ccddb187a128a22311371010",
+      "prepublication_vendored_sha256": "b8ea8a56727b20937f12c9dc52158207b0011e36ccddb187a128a22311371010"
+    },
+    {
+      "source_sha256": "6ac1002889f3071bf727504b9f8495f08c0b1e733b73588cbb125843efb4d0ae",
+      "path": "joint_training.py",
+      "changed": true,
+      "vendored_sha256": "d4720aa7f76c87b038d7cd9fc3c1c5234b215e2d371880dc8939de8139776c50",
+      "prepublication_vendored_sha256": "d4720aa7f76c87b038d7cd9fc3c1c5234b215e2d371880dc8939de8139776c50"
+    },
+    {
+      "source_sha256": "5eac6c224e2ed9069b457c3bc0d1c5ab3feddfaf2daa5b482ab8d3f9e54b0625",
+      "path": "model.py",
+      "changed": true,
+      "vendored_sha256": "adc869f7a921ac208be73cad15b4ffc5c89345aeaccd1407ff629934f3cc44f5",
+      "prepublication_vendored_sha256": "adc869f7a921ac208be73cad15b4ffc5c89345aeaccd1407ff629934f3cc44f5"
+    },
+    {
+      "source_sha256": "d3461f8eccd32d6bb5bee77771324eb4da05fba5860151206cafd0b37298e768",
+      "path": "native_data.py",
+      "changed": false,
+      "vendored_sha256": "d3461f8eccd32d6bb5bee77771324eb4da05fba5860151206cafd0b37298e768",
+      "prepublication_vendored_sha256": "d3461f8eccd32d6bb5bee77771324eb4da05fba5860151206cafd0b37298e768"
+    },
+    {
+      "source_sha256": "1d48a122cbfe5c660d302614a79cc1eb3340dc7a7e78748da81efee4e9e8d5be",
+      "path": "native_owner.py",
+      "changed": true,
+      "vendored_sha256": "a279bc7f4f4e7c0dce8ea2170d1ed55fe465d57b41e5bf57894bb9ee42784269",
+      "prepublication_vendored_sha256": "a279bc7f4f4e7c0dce8ea2170d1ed55fe465d57b41e5bf57894bb9ee42784269"
+    },
+    {
+      "source_sha256": "f8619a269754a6db2a1a3efb27301e8ae370c7809d7adf1f2186f5bbe2510ced",
+      "path": "native_session.py",
+      "changed": true,
+      "vendored_sha256": "e23d0af8ee1451b8f90189f6cfb7ab1ba85d65faeac37fd143ce8b22281f00c7",
+      "prepublication_vendored_sha256": "e23d0af8ee1451b8f90189f6cfb7ab1ba85d65faeac37fd143ce8b22281f00c7"
+    },
+    {
+      "source_sha256": "844bc211f629e63cc22ce6b1e253920804a3f85a3d6937573c278b3fb1a5b049",
+      "path": "native_training.py",
+      "changed": true,
+      "vendored_sha256": "29e40079f5139a470e4e9e4718baff79ce4e180a078fb3b5040139d4b37bd2ce",
+      "prepublication_vendored_sha256": "29e40079f5139a470e4e9e4718baff79ce4e180a078fb3b5040139d4b37bd2ce"
+    },
+    {
+      "source_sha256": "eff872aeb3e3f1ce6f3a085d008bea2542ec16656d39abd1a81166794f20bc06",
+      "path": "perfect_tensor_memory.py",
+      "changed": true,
+      "vendored_sha256": "141fb54ab8cb8cfee5292917ad5ea70396dddd6199d9b37960e6e55fda5819cc",
+      "prepublication_vendored_sha256": "141fb54ab8cb8cfee5292917ad5ea70396dddd6199d9b37960e6e55fda5819cc"
+    },
+    {
+      "source_sha256": "334d0c7f8f8c7ed561154efd6a697a1c254034e2571d6a565ce42bfaee987154",
+      "path": "records.py",
+      "changed": false,
+      "vendored_sha256": "334d0c7f8f8c7ed561154efd6a697a1c254034e2571d6a565ce42bfaee987154",
+      "prepublication_vendored_sha256": "334d0c7f8f8c7ed561154efd6a697a1c254034e2571d6a565ce42bfaee987154"
+    },
+    {
+      "source_sha256": "45cd7a5873fcd18d536784d461f1be03c55c5da7a24efcb4d9641b0e9f8d385d",
+      "path": "situation_core.py",
+      "changed": false,
+      "vendored_sha256": "45cd7a5873fcd18d536784d461f1be03c55c5da7a24efcb4d9641b0e9f8d385d",
+      "prepublication_vendored_sha256": "45cd7a5873fcd18d536784d461f1be03c55c5da7a24efcb4d9641b0e9f8d385d"
+    },
+    {
+      "source_sha256": "467a8a17f819ee4c0356576611ae0b60570b4a95eb0d46a417a63f1498fa784e",
+      "path": "spd_sheaf.py",
+      "changed": false,
+      "vendored_sha256": "467a8a17f819ee4c0356576611ae0b60570b4a95eb0d46a417a63f1498fa784e",
+      "prepublication_vendored_sha256": "467a8a17f819ee4c0356576611ae0b60570b4a95eb0d46a417a63f1498fa784e"
+    },
+    {
+      "source_sha256": "fbd699c6733f4c9f391d2c26b3517309b0625281dcb7c29a6a2cc5c6490fbbf8",
+      "path": "stationary_field.py",
+      "changed": true,
+      "vendored_sha256": "443ec495e3794adda3948007c170ddf4bc8ba174651e627074c1a7afffbdb2a6",
+      "prepublication_vendored_sha256": "443ec495e3794adda3948007c170ddf4bc8ba174651e627074c1a7afffbdb2a6"
+    },
+    {
+      "source_sha256": "f7d173967d9f16fda350737a28455bf69e33a9c102a614d255b47865ff89f09c",
+      "path": "study_data.py",
+      "changed": false,
+      "vendored_sha256": "f7d173967d9f16fda350737a28455bf69e33a9c102a614d255b47865ff89f09c",
+      "prepublication_vendored_sha256": "f7d173967d9f16fda350737a28455bf69e33a9c102a614d255b47865ff89f09c"
+    },
+    {
+      "source_sha256": "f885553517b183722a5feb8d4b3bf3cf23cdec2ff676472f3c511d6deda4c9eb",
+      "path": "topological_memory.py",
+      "changed": true,
+      "vendored_sha256": "ad9eb6d4d8713d61beb6b6b5f0ffbc1f60dd59d93003722c6df3b430ece084f2",
+      "prepublication_vendored_sha256": "ad9eb6d4d8713d61beb6b6b5f0ffbc1f60dd59d93003722c6df3b430ece084f2"
+    },
+    {
+      "source_sha256": "a89eb0c84e8855fbd63e37c2ebfbcd5fe80616ae1bd626faff7e9d2062cd3656",
+      "path": "unified_energy.py",
+      "changed": false,
+      "vendored_sha256": "a89eb0c84e8855fbd63e37c2ebfbcd5fe80616ae1bd626faff7e9d2062cd3656",
+      "prepublication_vendored_sha256": "a89eb0c84e8855fbd63e37c2ebfbcd5fe80616ae1bd626faff7e9d2062cd3656"
+    },
+    {
+      "source_sha256": "92f723c75c84b8bdee8af3f9a7e8b90ebaa7548d482d167bfbaf565c48827dc5",
+      "path": "variable_sheaf.py",
+      "changed": true,
+      "vendored_sha256": "05b84b7ee9eeb4694a3a60e904fb66241161ed8454da4d01cad2ed3ddafadc26",
+      "prepublication_vendored_sha256": "05b84b7ee9eeb4694a3a60e904fb66241161ed8454da4d01cad2ed3ddafadc26"
+    }
+  ],
+  "commit": "c67ed27c3a13b0a259dd731fc1c439d21991dec5",
+  "notice": "No root licence or notice file found in the supplied source.",
+  "repository": "https://github.com/Arnav123-s/sera-field",
+  "publication_adaptations": "Prose attribution/private paths removed and LF line endings; executable tokens preserved."
+}

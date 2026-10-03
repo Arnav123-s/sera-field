@@ -4,7 +4,7 @@ One learner that proposes ideas, learns across worlds, and retains discoveries
 accepted by an independent judge. Its Field holds learned concepts, words, and
 ways of working. No pretrained language model runs inside SERA.
 
-[Current results and limitations](docs/SERA_STATUS.md) · [How it works](docs/SERA_EXPLAINED.md) · [Research plan](SERA_V3_PLAN.md)
+[SERA-U implementation and results](docs/SERA_U_STATUS.md) · [Discovery-lab results and limitations](docs/SERA_STATUS.md) · [How it works](docs/SERA_EXPLAINED.md) · [Research plan](SERA_V3_PLAN.md)
 
 ## Quick start
 
@@ -51,12 +51,15 @@ JOBS=1 bash scripts/runtests.sh
 Slow and integration checks have separate budgets in `scripts/runtests.sh`.
 Saved measurements are in [sera-runs/](sera-runs/); the [status report](docs/SERA_STATUS.md)
 names the source run for every result. S24/S25 runs are incomplete, and the
-planned SERA-U variant has no completed assessment in this release.
+implemented SERA-U variant has no completed full comparison in this release.
+Its course, comparison runner, and current limitations are documented in
+[SERA-U status](docs/SERA_U_STATUS.md).
 
 ## Layout
 
 | Path | Contents |
 |---|---|
+| [sera_u/](sera_u/) | Unified learner and pinned Field implementation |
 | [sera/](sera/) | Learner, expression language, Field, words, and task interfaces |
 | [ccops5/core/](ccops5/core/) | Grammar, simulator, likelihood, certificates, and independent checker |
 | [scripts/](scripts/) | Teaching, conversation, course runners, and evidence summaries |

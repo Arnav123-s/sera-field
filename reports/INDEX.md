@@ -1,5 +1,13 @@
 # Evidence index
 
+**Status correction (2026-10-02):** The credited foundation training run
+completed all 12,288 updates on 2026-09-21, with saved status PASS and exit code 0.
+The earlier progress descriptions below are preserved snapshots. Completion of
+the withheld control and final whole-owner behavioral assessment has not been
+verified; the development scores are not final assessment results.
+See [the saved completion record](CORE-022/TRAINING_COMPLETION.json).
+
+
 **Fresh complete-core teaching in progress:** [CORE-022 report](CORE-022/REPORT.md),
 [current source identities and checks](CORE-022/ENGINEERING.json),
 [equations](../docs/CORE_022_EQUATIONS.md) and

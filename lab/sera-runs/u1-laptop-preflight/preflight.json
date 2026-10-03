@@ -1,0 +1,30 @@
+{
+  "batch_seconds": 49.50385340000503,
+  "code": "e0588caabb494488d3ca8309b1ad600e017c368d2d717d71ce3f5f611b9ffc68",
+  "common_batches": 6,
+  "device": "cpu",
+  "engineering": true,
+  "exact_resume": true,
+  "gpu_peak_bytes": 0,
+  "gradient": {
+    "core.links": 0.10572151839733124,
+    "production_query.weight": 1.3903290033340454,
+    "words.weight": 0.14894196391105652
+  },
+  "laptop_latency_certified": false,
+  "latency_inputs": "balanced number/list, four examples, twenty query/probe records, lists through length eight",
+  "median": 2.2651944500394166,
+  "owner_reference_hash": "7523a2fde5ab279d7d175ee46d35f861c7dd8aea2f0deb23a224f5017f3a1e73",
+  "p95": 2.365260644978844,
+  "parameters": 883411,
+  "peak_process_mb": 759.46875,
+  "runtime": {
+    "machine": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.3.5",
+    "processor": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel",
+    "threads": 1,
+    "torch": "2.10.0+cpu"
+  },
+  "source": "41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322",
+  "wall": 223.54539769992698
+}

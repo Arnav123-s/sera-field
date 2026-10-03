@@ -18,6 +18,62 @@ import sys
 # name -> what it does, where it lives, the commit that added it, how SERA has it (fixed: coded by us; taught: a
 # teacher's way that fades; learned: its own), and the open question about it.
 REGISTRY = {
+    'taught_not_yet': dict(
+        what='taught answer/continue faculty choice, next untried method or step, pending talk and revisits',
+        where='sera/phi.py NotYetWays; sera_u/mind.py Engine', commit='U7', status='learned',
+        default_on=False, report_default=False,
+        question='does learned persistence improve time to right and later revisit solutions?'),
+    'abstain_bar': dict(
+        what='U3 fixed Bayes-risk decision formula over learned wrong and missed-right costs',
+        where='sera/phi.py InnerJudge.decide; sera_u/mind.py Engine.reply', commit='U7', status='fixed',
+        default_on=False, report_default=False, response="I don't know",
+        question='how does the U3 bar compare with taught answer/continue?'),
+    'judge_scrutiny': dict(
+        what='bounded extra fresh probes and targeted throws after the unchanged proof gate',
+        where='sera/tasks.py JudgeScrutiny, Exact.verify, Rail.verify; sera/one.py Sera._prove',
+        commit='U4', status='fixed', default_on=False, report_default=False,
+        question='do received counterexample regions and inner overconfidence catch additional wrong claims?'),
+    'gap_syndromes': dict(
+        what='eight own-state self-checks and a return-trained Field decoder over gap locations',
+        where='sera_u/sleep.py Curiosity; sera_u/mind.py Engine', commit='U6', status='fixed',
+        default_on=False, report_default=False,
+        question='do fixed syndromes with learned check/path weights locate useful knowledge gaps?'),
+    'aimed_dreams': dict(
+        what='return-trained aimed/random dream budget share; starts at half, uses the same two interpreters',
+        where='sera_u/sleep.py Sleep.dream', commit='U6', status='learned',
+        default_on=False, report_default=False,
+        question='does aiming at decoded gaps improve acquisition per charged second?'),
+    'field_ways': dict(
+        what='settled Field faculty return readouts with fading teacher evidence and Thompson uncertainty',
+        where='sera/phi.py FieldWays; sera_u/mind.py Engine', commit='U3', status='learned',
+        default_on=False, report_default=False, question='do taught Field ways improve gain per second?'),
+    'field_methods': dict(
+        what='three hypothetical branches driven by taught lab imagination methods and learned returns',
+        where='sera/phi.py FieldMethods; sera_u/mind.py Engine', commit='U3', status='learned',
+        default_on=False, report_default=False, question='which methods help in which Field context?'),
+    'field_roadmap': dict(
+        what='whole Field sketch, then one learned next step and a fresh hypothetical read',
+        where='sera/phi.py FieldSteps; sera_u/mind.py Engine._roadmap', commit='U3', status='learned',
+        default_on=False, report_default=False, question='does re-dreaming after one step beat ordered decomposition?'),
+    'inner_judge': dict(
+        what='verdict-trained Field probability, contrastive corrections and adaptive answer costs',
+        where='sera/phi.py InnerJudge; sera_u/mind.py Engine', commit='U3', status='learned',
+        default_on=False, report_default=False, question='does calibration preserve coverage while reducing wrong talk?'),
+    'memory_layer_a': dict(
+        what='CoreOwner observed fast/slow/bulk/marks/flow memory; off removes its retained read and write path',
+        where='sera_u/memory.py; sera/phi.py Ideas.u_memory_switches', commit='U2', status='fixed',
+        default_on=False, report_default=False,
+        question='does native memory improve recall beside or without holographic memory?'),
+    'memory_layer_b': dict(
+        what='2048-dimensional Ideas ringing through a learned gated boundary projection and reciprocal A cue',
+        where='sera_u/memory.py; sera/phi.py Ideas.u_memory_switches', commit='U2; S12; S18', status='fixed',
+        default_on=False, report_default=False,
+        question='does holographic recall improve transfer with an independent native-memory history?'),
+    'field_understanding': dict(
+        what='S18 contextual U and exact two-role standing, pooled with a checked neural familiarity readout',
+        where='sera_u/memory.py; sera/phi.py Ideas.u_memory_switches', commit='U2; S18', status='fixed',
+        default_on=False, report_default=False,
+        question='does Field understanding improve proposal and hypothesis ranking over the legacy counts?'),
     'course_worked_steps': dict(
         what='teacher-side intermediate values in composed course lessons; off: identical lessons without them',
         where='scripts/sera_course.py composed, sera/tasks.py Exact.worked', commit='S27', status='taught',
@@ -27,6 +83,26 @@ REGISTRY = {
         what='course test2 verdicts reach answer-kind reliability; refutations still reach standing when off',
         where='sera/one.py course_verdict, scripts/sera_course.py', commit='S27', status='taught', course_only=True,
         question='does verdict-only practice reduce confident wrong answers without losing coverage?'),
+    'field_proposer': dict(
+        what='fresh CoreOwner typed production prior, bounded beam and 20/80 search scheduling',
+        where='sera_u/proposer.py', commit='U1; CORE-022 c67ed27; S28 section 6', status='fixed',
+        default_on=False, report_default=False,
+        question='does checked training reduce search time against an independent no-proposer history?'),
+    'program_dreams': dict(
+        what='bounded executable compositions checked by two interpreters; dream scope only',
+        where='sera_u/sleep.py', commit='U1; S28 section 2', status='fixed',
+        default_on=False, report_default=False,
+        question='do executable dreams improve held-out acquisition versus matched wake replay?'),
+    'sleep_library': dict(
+        what='checked parameterized subexpressions through the existing inner ability mechanism',
+        where='sera_u/sleep.py; sera/one.py _inner_ability', commit='U1; S28 section 2', status='fixed',
+        default_on=False, report_default=False,
+        question='does callable reuse beat expanded-body search at equal total cost?'),
+    'field_input_ports': dict(
+        what='allowlisted ordered raw public senses, stable token IDs, positions and missing masks',
+        where='sera_u/ports.py; sera_u/proposer.py FieldOwner', commit='U1; S28 section 2', status='fixed',
+        default_on=False, report_default=False,
+        question='do ordered senses improve binding and permutation consistency over the native hash port?'),
     'teach_rechecking': dict(
         what='observable pushes since a judge report and fading teacher-only one-push/recheck advice; opt-in',
         where='sera/phi.py LoopField, sera/one.py Sera.teacher_way', commit='S24', status='taught',
@@ -112,7 +188,8 @@ def settings(include_course=False):
                  if k.isupper() and not k.startswith('_') and type(v) in (bool, int, float)} if one else {}
     return dict(crutches_off=sorted(OFF), crutches_on=sorted(ON),
                 crutches_effective={name: on(name) for name in sorted(REGISTRY)
-                                    if include_course or not REGISTRY[name].get('course_only')},
+                                    if (include_course or not REGISTRY[name].get('course_only'))
+                                    and (REGISTRY[name].get('report_default', True) or name in ON or name in OFF)},
                 knobs=os.environ.get('SERA_KNOBS', ''), effective=effective,
                 field_echo=getattr(phi, 'FIELD_ECHO', None),
                 choice_rate_basis='total_cpu' if getattr(one, 'ONE_FIELD', False) else 'legacy_thinking_cpu')

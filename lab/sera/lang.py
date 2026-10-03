@@ -60,6 +60,7 @@ INNATE = {
 MAX_INT = 10 ** 6
 MAX_LEN = 64
 MAX_STEPS = 20000
+EXECUTION_COUNTS = None             # opt-in U1 measurements; never read by search or credit
 
 
 class Bad(Exception):
@@ -358,6 +359,8 @@ def _held(v):
 
 def _prim(sym, pay, a, b=None):
     """A symbol of the language on its arguments' values (all but choosing, iterating and concepts)."""
+    if EXECUTION_COUNTS is not None:
+        EXECUTION_COUNTS['primitive_calls'] += 1
     if sym in ('add', 'sub', 'mul'):
         a, b = _num(a), _num(b)
         return _num(a + b if sym == 'add' else a - b if sym == 'sub' else a * b)
@@ -420,6 +423,9 @@ def evaluate(p, env, concepts):
 
 
 def _ev(p, env, cs, st):
+    if EXECUTION_COUNTS is not None:
+        EXECUTION_COUNTS['interpreter_calls'] += int(st[0] == 0)
+        EXECUTION_COUNTS['interpreter_steps'] += 1
     st[0] += 1
     if st[0] > MAX_STEPS:
         raise Bad('too many steps')
@@ -521,7 +527,7 @@ def _depth_of(v):
 
 
 def lambda_bodies(kind, out, max_size, acc_type='num', probes=None, concepts=None, constants=(), elem_type='num',
-                  sees=(), work=None):
+                  sees=(), work=None, order=None, namespace=None, chunk=None):
     """[(body, size)] for a lambda binding e (kind 'e'), i, e (kind 'ie': the element's place, from 1) or a, e (kind
     'ae'), one per behaviour on probe values; `constants`: the numbers it perceives in the task; `elem_type`: what the
     list it iterates over holds.
@@ -563,7 +569,8 @@ def lambda_bodies(kind, out, max_size, acc_type='num', probes=None, concepts=Non
         leaves = leaves + [(t, node('var', payload=name)) for name, t, _ in sees]
     lists = is_list(acc_type) or kind == 'ae' or is_list(elem_type) or any(is_list(t) for _, t, _ in sees)
     types = universe([t for t, _ in leaves] + [out], lists)
-    table = _grow(leaves, envs, max_size, concepts, allow_lists=lists, types=types, work=work)
+    table = _grow(leaves, envs, max_size, concepts, allow_lists=lists, types=types, work=work,
+                  order=order, namespace=namespace, chunk=chunk)
     names = {name for name, _, _ in sees}
     return [(p, s) for p, s, _ in table.get(out, [])
             if not names or any(q == ('var', n) for q in parts(p) for n in names)]
@@ -722,7 +729,8 @@ def _values(p, envs, concepts):
     return tuple(vals), tuple(steps)
 
 
-def _grow(leaves, envs, max_size, concepts, allow_lists=True, lambdas=None, types=None, work=None, if_part=IF_PART):
+def _grow(leaves, envs, max_size, concepts, allow_lists=True, lambdas=None, types=None, work=None, if_part=IF_PART,
+          order=None, namespace=None, chunk=None):
     """Bottom-up search: {type: [(expression, size, values)]} with one expression per behaviour on envs. A search with
     the same inputs, probes, concepts and lambdas continues from the size it reached (growing never repeats work).
     Each expression's values (and its evaluation steps, bounded as in evaluate) are made from its parts' values: a
@@ -732,7 +740,11 @@ def _grow(leaves, envs, max_size, concepts, allow_lists=True, lambdas=None, type
     thought): a size is finished before a bigger one is begun; one cut by the bound continues where it stopped when the
     search is asked again with a larger bound - so everything its language can say is reached in time."""
     types = [t for t in (types or universe([t for t, _ in leaves], allow_lists)) if allow_lists or not is_list(t)]
+    if order is not None:
+        types = sorted(types, key=lambda t: (depth(t), t))
     tkey = (repr(leaves), repr(envs), _table_key(concepts), repr(lambdas), allow_lists, tuple(types), if_part)
+    if order is not None or namespace is not None:
+        tkey += (namespace, tuple(sorted((order or {}).items(), key=lambda kv: repr(kv[0]))))
     state = _TABLES.pop(tkey, None)
     if state is None:
         state = dict(seen={}, by={}, done=0, memo={})
@@ -760,6 +772,9 @@ def _grow(leaves, envs, max_size, concepts, allow_lists=True, lambdas=None, type
         base = leaves + ([('real', node('rone'))] if reals else []) + [('num', node('zero')), ('num', node('one'))]
         if allow_lists:
             base += [(t, node('nil')) for t in types if is_list(t)]
+        if order is not None:
+            base.sort(key=lambda q: (-order.get(('c', q[1][1]) if q[1][0] == 'c' else
+                                               (q[1][0], q[1][1]), 0.), repr(q)))
         for typ, p in base:
             r = _values(p, envs, concepts)
             if r is not None:
@@ -775,6 +790,13 @@ def _grow(leaves, envs, max_size, concepts, allow_lists=True, lambdas=None, type
     cons_list = [(cid, a[0], r) for cid, sig in (concepts.get('_sig') or {}).items()
                  for a, r, _ in instances((sig[0],), sig[1], types)]
     lams = list(enumerate(lambdas or ()))
+    if order is not None:
+        rank = lambda name, pay=None: -order.get((name, pay), order.get((name, None), 0.))
+        unary.sort(key=lambda q: (rank(q[0], q[3]), repr(q)))
+        binary.sort(key=lambda q: (rank(q[0], q[3]), repr(q)))
+        cons_list.sort(key=lambda q: (rank('c', q[0]), repr(q)))
+        lams.sort(key=lambda q: (rank(q[1][0]), repr(q[1])))
+    lams_by_id = dict(lams)                         # sorting never changes a body's captured environment
 
     def run(key, body, env, cnt):                      # a body (a λ's or a concept's) at one binding, once
         hit = memo.get(key, _MISS)
@@ -791,7 +813,8 @@ def _grow(leaves, envs, max_size, concepts, allow_lists=True, lambdas=None, type
         return hit[0]
 
     def around(lid, j):                                # what a λ that sees sees at probe j (else nothing)
-        names = lams[lid][1][5] if len(lams[lid][1]) > 5 else ()
+        entry = lams_by_id[lid]
+        names = entry[5] if len(entry) > 5 else ()
         return ({k: envs[j][k] for k in names}, j) if names else ({}, None)
 
     def each(name, lid, body, q):
@@ -884,8 +907,7 @@ def _grow(leaves, envs, max_size, concepts, allow_lists=True, lambdas=None, type
             steps.append(k)
         return tuple(vals), tuple(steps)
 
-    def sized(s):
-        """Every candidate of size s, in order; it yields after each one it has tried (the work bound counts them)."""
+    def lambda_family(s):
         for lid, (name, body, bsize, argtypes, ret, *_) in lams:   # iteration first: its forms are few and often needed
             rest = s - 1 - (1 + bsize)
             if rest < 1:
@@ -905,18 +927,21 @@ def _grow(leaves, envs, max_size, concepts, allow_lists=True, lambdas=None, type
                             if r is not None:
                                 add(ret, node(name, lam, q1[0], q2[0]), s, *r)
                             yield
+    def unary_family(s):
         for name, (a,), r, pay in unary:
             for q in by[s - 1][a]:
                 v = prim1(name, pay, q)
                 if v is not None:
                     add(r, node(name, q[0], payload=pay), s, *v)
                 yield
+    def concept_family(s):
         for cid, a, r in cons_list:
             for q in by[s - 1][a]:
                 v = concept(cid, q)
                 if v is not None:
                     add(r, node('c', q[0], payload=cid), s, *v)
                 yield
+    def binary_family(s):
         for k in range(1, s - 1):                      # smaller parts first: the work bound keeps the simplest
             for name, (a1, a2), r, pay in binary:
                 for q1 in by[k][a1]:
@@ -925,6 +950,7 @@ def _grow(leaves, envs, max_size, concepts, allow_lists=True, lambdas=None, type
                         if v is not None:
                             add(r, node(name, q1[0], q2[0]), s, *v)
                         yield
+    def choice_family(s):
         if s >= 4:                                     # choosing: a small condition, small branches
             for k in range(1, min(s - 2, if_part) + 1):
                 for c in by[k]['bool']:
@@ -939,13 +965,30 @@ def _grow(leaves, envs, max_size, concepts, allow_lists=True, lambdas=None, type
                                     add('num', node('if', c[0], q1[0], q2[0]), s, *v)
                                 yield
 
+    def sized(s):
+        families = [(lambda_family, [q[1][0] for q in lams]),
+                    (unary_family, [q[0] for q in unary]),
+                    (concept_family, [('c', q[0]) for q in cons_list]),
+                    (binary_family, [q[0] for q in binary]), (choice_family, ['if'])]
+        if order is not None:
+            def family_rank(item):
+                scores = [order.get(k if isinstance(k, tuple) else (k, None), 0.) for k in item[1]]
+                return -max(scores, default=-math.inf)
+            families.sort(key=family_rank)         # stable: the old family order breaks ties
+        for family, _ in families:
+            yield from family(s)                   # never sort/materialize a Cartesian product
+
     gens, spent = state.setdefault('gens', {}), state.setdefault('spent', {})
+    chunk_spent = 0
     bound = MAX_WORK if work is None else work
     for s in range(state['done'] + 1, max_size + 1):
         if s not in gens:
             gens[s], spent[s] = sized(s), 0
         finished = late = False
         while spent[s] < bound:
+            if chunk is not None and chunk_spent >= chunk:
+                late = True
+                break
             if not spent[s] & 255 and time.time() > DEADLINE[0]:
                 late = True
                 break
@@ -959,6 +1002,7 @@ def _grow(leaves, envs, max_size, concepts, allow_lists=True, lambdas=None, type
                 finished = True
                 break
             spent[s] += 1
+            chunk_spent += 1
         state.setdefault('capped', {})[s] = not finished
         if late:
             break                                      # the time box ended inside this size: it continues next time
@@ -980,7 +1024,7 @@ def _grow(leaves, envs, max_size, concepts, allow_lists=True, lambdas=None, type
 
 
 def search(inputs, out_type, probes, max_size, concepts=None, lambda_size=3, constants=(), values=False, work=None,
-           if_part=IF_PART, sees=False):
+           if_part=IF_PART, sees=False, order=None, namespace=None, chunk=None):
     """Every expression of `out_type` over the task's inputs ({name: type}) up to `max_size` nodes, one per behaviour on
     the probe environments. concepts: {id: (body, arg)} plus '_sig': {id: (arg type, result type)}. Returns
     [(expression, size)], shortest first; with values, [(expression, size, its values on the probes)]. work: the
@@ -1004,7 +1048,8 @@ def search(inputs, out_type, probes, max_size, concepts=None, lambda_size=3, con
                 kind, lam_out = a[0][4:].split('>')
                 acc = a[1] if kind == 'ae' else 'num'
                 bodies = lambda_bodies(kind, lam_out, lambda_size, acc_type=acc, concepts=concepts,
-                                       constants=constants, elem_type=sub.get('T', 'num'), work=work)
+                                       constants=constants, elem_type=sub.get('T', 'num'), work=work,
+                                       order=order, namespace=namespace, chunk=chunk)
                 bodies_complete = bodies_complete and COMPLETE[0]
                 for body, bsize in bodies:
                     lambdas.append((name, body, bsize, a[1:], ret))
@@ -1012,12 +1057,14 @@ def search(inputs, out_type, probes, max_size, concepts=None, lambda_size=3, con
                     around = [(k, t, [pr[k] for pr in probes]) for k, t in inputs.items() if k not in _BOUND]
                     sees_size = lambda_size if sees is True else int(sees)
                     bodies = lambda_bodies(kind, lam_out, sees_size, acc_type=acc, concepts=concepts,
-                                           constants=constants, elem_type=sub.get('T', 'num'), sees=around, work=work)
+                                           constants=constants, elem_type=sub.get('T', 'num'), sees=around, work=work,
+                                           order=order, namespace=namespace, chunk=chunk)
                     bodies_complete = bodies_complete and COMPLETE[0]
                     for body, bsize in bodies:
                         lambdas.append((name, body, bsize, a[1:], ret, tuple(k for k in inputs if k not in _BOUND)))
     table = _grow(leaves, probes, max_size, concepts, allow_lists=not only_real,
-                  lambdas=lambdas if max_size >= 4 else (), types=types, work=work, if_part=if_part)
+                  lambdas=lambdas if max_size >= 4 else (), types=types, work=work, if_part=if_part,
+                  order=order, namespace=namespace, chunk=chunk)
     COMPLETE[0] = COMPLETE[0] and bodies_complete
     found = table.get(out_type, [])
     return found if values else [(p, s) for p, s, _ in found]

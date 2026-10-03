@@ -5,13 +5,15 @@
 A research project on persistent learners that retain experience, imagine alternatives,
 investigate missing information, and keep independently checked discoveries.
 
-This repository contains two research implementations. Their results and checkpoints
-are recorded separately; neither establishes general intelligence.
+This repository contains the learned Field, discovery lab, and experimental unified
+learner. Their results and checkpoints
+are recorded separately; these studies do not establish general intelligence.
 
 ## Start here
 
 | Track | Implementation | Documentation and evidence |
 |---|---|---|
+| **SERA-U unified learner** | [lab/sera_u](lab/sera_u/) | [Implementation and results](lab/docs/SERA_U_STATUS.md) |
 | **SERA discovery lab** | [lab/sera](lab/sera/) and its independent [judge](lab/ccops5/core/) | [Overview](lab/README.md) · [Current results](lab/docs/SERA_STATUS.md) · [How it works](lab/docs/SERA_EXPLAINED.md) |
 | **Learned SERA Field** | [sera_field](sera_field/) | [Architecture](docs/NATIVE_ARCHITECTURE.md) · [Usage guides](docs/INDEX.md) · [Assessed studies](reports/INDEX.md) |
 
@@ -26,14 +28,18 @@ In the saved four-hour physics/list comparison, both memory configurations prove
 claims, with 51 accepted. These are bounded experimental results, not general
 capability claims. [Full measurements and limitations](lab/docs/SERA_STATUS.md#2-what-it-can-do-measured).
 
-The latest code adds a teaching course with lessons, book study, and three tests
-with progressively less help. S24/S25 experiment records are **incomplete**;
-SERA-U is a research plan, not an assessed release.
+SERA-U now integrates the Field with two-layer memory, imagination, curiosity,
+answer/continue choices, and a teaching course. A one-thread CPU benchmark measured
+an **8x training speedup**. Pilot comparisons remain incomplete and show substantial
+memory and inference costs under time limits. Full course and self-improvement
+claims remain unassessed. [Status and saved evidence](lab/docs/SERA_U_STATUS.md).
+S24/S25 experiment records are also incomplete.
 
 The earlier learned-field track preserves assessed native memory, language,
-prediction, and investigation checkpoints. Its native owner completed 786,432
-matched teaching presentations and passed 11 qualification checks with exact
-replay. [Native study](reports/NATIVE-019/REPORT.md) · [Whole-cycle study](reports/JOINT-021/REPORT.md).
+prediction, and investigation checkpoints. The native study completed 786,432
+presentations across three matched arms and passed 11 qualification checks with exact
+replay. CORE-022 credited training completed 12,288 updates, but its final behavioral
+assessment remains pending. [Native study](reports/NATIVE-019/REPORT.md) · [Whole-cycle study](reports/JOINT-021/REPORT.md).
 
 ## Run
 

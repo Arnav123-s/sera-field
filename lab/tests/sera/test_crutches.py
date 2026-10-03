@@ -8,11 +8,19 @@ import pytest
 from sera import crutches as CR, one as O, tasks as T
 
 SERA = Path(__file__).resolve().parents[2] / 'sera'
+SERA_U = SERA.parent / 'sera_u'
 
 
 def test_every_registered_crutch_has_a_switch_in_the_code():
     code = '\n'.join(p.read_text(encoding='utf-8') for p in SERA.glob('*.py'))
     used = set(re.findall(r"CR\.on\('(\w+)'\)", code))
+    # SERA-U's crutches are switched by its arm (sera_u/mind.py arm_settings) and read as crutches['name']
+    u_code = '\n'.join(p.read_text(encoding='utf-8') for p in SERA_U.glob('*.py'))
+    used |= set(re.findall(r"crutches\['(\w+)'\]", u_code))
+    # U3's switches are read through the entity's _u_on(name), by name or over its declared U*_CRUTCHES tuples
+    used |= set(re.findall(r"_u_on\('(\w+)'\)", u_code))
+    for names in re.findall(r"^U\d*_CRUTCHES = \(([^)]*)\)", u_code, re.M):
+        used |= set(re.findall(r"'(\w+)'", names))
     assert used == set(CR.REGISTRY)
     assert all(c['status'] in ('fixed', 'taught', 'learned') for c in CR.REGISTRY.values())
 

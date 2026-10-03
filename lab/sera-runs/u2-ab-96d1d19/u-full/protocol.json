@@ -1,0 +1,71 @@
+{
+  "arms": [
+    "full",
+    "no-proposer",
+    "no-dreams",
+    "no-library"
+  ],
+  "batched_reads": true,
+  "budgets": {
+    "assessments": 7920,
+    "bootstrap": 1440,
+    "bootstrap_revisits": 1440,
+    "dreams": 1440,
+    "preflight": 1440,
+    "reserve": 360,
+    "train": 5400,
+    "wakes": 2160
+  },
+  "code": "d40afda64fb8efbeb4f618885c1f79a4672588c93b3d926ae9b1f5452ada2c37",
+  "crutches": {
+    "full": {
+      "field_input_ports": true,
+      "field_proposer": true,
+      "field_understanding": true,
+      "memory_layer_a": true,
+      "memory_layer_b": true,
+      "program_dreams": true,
+      "sleep_library": true
+    },
+    "no-dreams": {
+      "field_input_ports": true,
+      "field_proposer": true,
+      "field_understanding": true,
+      "memory_layer_a": true,
+      "memory_layer_b": true,
+      "program_dreams": false,
+      "sleep_library": true
+    },
+    "no-library": {
+      "field_input_ports": true,
+      "field_proposer": true,
+      "field_understanding": true,
+      "memory_layer_a": true,
+      "memory_layer_b": true,
+      "program_dreams": true,
+      "sleep_library": false
+    },
+    "no-proposer": {
+      "field_input_ports": true,
+      "field_proposer": false,
+      "field_understanding": true,
+      "memory_layer_a": true,
+      "memory_layer_b": true,
+      "program_dreams": true,
+      "sleep_library": true
+    }
+  },
+  "device": "cpu",
+  "eval_tasks": 48,
+  "generations": 3,
+  "hours": 6.0,
+  "judge": "unchanged Exact audit; observer-only wrapper",
+  "laptop_preflight_digest": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+  "reading_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "seed": 3,
+  "source": "41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322",
+  "task_wall": 10.0,
+  "teaching": "existing sera_one list/number value-only lessons",
+  "threads": 1,
+  "wake_tasks": 16
+}

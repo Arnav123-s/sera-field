@@ -211,3 +211,12 @@ def test_it_can_see_through_a_sense_of_one_input_and_thinks_bigger_without_a_cei
     assert not any(set(t) <= {'x', 'add', 'sub', '0', '1'} for t in toks)
     assert sera._max_level(task) == math.inf and ONE.part_size(5) > ONE.part_size(4) > ONE.part_size(3) == 8
     assert ONE.exact_size(9) > ONE.exact_size(8) > ONE.exact_size(7) == 12
+
+
+def test_asking_us_with_no_idea_at_all_on_an_exact_task():
+    # Out of time before any idea (SERA-U's 10 s assessment wall reached it): it asks about 'nothing', no crash.
+    sera = ONE.Sera(3)
+    task = TS.number_task('tiny', lambda x: x, 3, 0)
+    said = []
+    sera._ask_us(task, None, 0.0, dict(none_fit=True), lambda kind, text, **kw: said.append(text), cap=True)
+    assert said and 'my best idea is nothing' in said[0]

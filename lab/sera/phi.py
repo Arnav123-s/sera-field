@@ -566,12 +566,47 @@ class Ideas:
         return out
 
     # --- the echo's side in memory (2026-09-29 night; the author's HEB + e-prop, adapted) ---
-    def bind(self, thing, key, amount):
+    def u_memory_switches(self):
+        """Explicit ledger switches for the U owner; ordinary SERA never calls this."""
+        from . import crutches as CR
+        return dict(memory_layer_a=CR.on('memory_layer_a'), memory_layer_b=CR.on('memory_layer_b'),
+                    field_understanding=CR.on('field_understanding'), field_proposer=CR.on('field_proposer'),
+                    program_dreams=CR.on('program_dreams'), sleep_library=CR.on('sleep_library'),
+                    field_input_ports=CR.on('field_input_ports'))
+
+    def bind_pattern(self, thing, pattern, amount):
+        """A continuous press into S18's state-only U namespaces."""
+        pattern = np.asarray(pattern, dtype=np.float64)
+        if (not isinstance(thing, tuple) or thing[0] not in ('u-part', 'u-pair', 'u-context')
+                or pattern.shape != (IDEA_DIM,) or not np.isfinite(pattern).all()
+                or not math.isfinite(amount) or amount < 0):
+            raise ValueError('Finite S18 pattern/amount and a reserved U row required')
+        row = self._at(thing)
+        value = self._M[row].astype(np.float64)+amount*pattern
+        if not np.isfinite(value).all() or np.max(np.abs(value)) > np.finfo(np.float32).max:
+            raise ValueError('Understanding state overflow')
+        self._M[row] = value.astype(np.float32)
+        self.rev += 1
+
+    def project_pattern(self, thing, pattern):
+        pattern = np.asarray(pattern, dtype=np.float64)
+        if pattern.shape != (IDEA_DIM,) or not np.isfinite(pattern).all():
+            raise ValueError('Finite 2048-dimensional query pattern required')
+        row = self._row.get(thing)
+        return 0. if row is None else float(self._M[row].astype(np.float64) @ pattern)
+
+    def bind(self, thing, key, amount, *, perceived=True):
         """Lay something (an idea it proved: ('concept', id)) into what a thing holds, in its own place (unrotated:
         sentences sit in rotated places), as strongly as `amount`: next time the thing is pressed, it rings back."""
         if not amount:
             return
-        self._idea(thing)                                # a word met only in a question is a thing of the Field too
+        reserved = isinstance(thing, tuple) and thing[0] in (
+            'u-part', 'u-pair', 'u-context', 'u-total', 'hypothesis', 'standing-role')
+        if reserved and (perceived or thing[0] not in ('u-total', 'hypothesis')
+                         or not isinstance(key, tuple) or key[0] != 'standing-role'):
+            raise ValueError('Reserved S18 row cannot receive a sentence/association binding')
+        if perceived:
+            self._idea(thing)                            # a genuinely perceived thing
         self._at(thing)
         k = self._at(key)                                # first: meeting a thing may enlarge the Field
         self._M[self._row[thing]] += np.float32(amount / math.sqrt(IDEA_DIM)) * self._E[k].astype(np.float32)
@@ -615,6 +650,12 @@ class Ideas:
         leaving its orthogonal residual intact. A single renamed identity keeps its vector exactly. Row chunks
         bound the temporary matrix. Redirects and the retained vectors survive pickling.
         """
+        if any(isinstance(k, tuple) and k[0] in (
+                'u-part', 'u-pair', 'u-context', 'u-total', 'hypothesis', 'standing-role')
+               for old, new in mapping.items() for k in (old, new)):
+            raise ValueError('Reserved S18 identities cannot be redirected')
+        protected = sorted({r for k, r in self._row.items() if isinstance(k, tuple) and k[0] in (
+            'u-part', 'u-pair', 'u-context', 'u-total', 'hypothesis', 'standing-role')})
         aliases = self.__dict__.setdefault('_aliases', {})
         groups = {}
         for old, new in mapping.items():
@@ -640,7 +681,13 @@ class Ideas:
                     stop = min(start + 256, self._n)
                     M = self._M[start:stop].astype(np.float64)
                     amounts = (M @ E.T) @ inverse
-                    M += amounts.sum(axis=1)[:, None] * E[0] - amounts @ E
+                    changed = M.copy()
+                    changed += amounts.sum(axis=1)[:, None] * E[0] - amounts @ E
+
+                    for r in protected:
+                        if start <= r < stop:
+                            changed[r-start] = M[r-start]
+                    M = changed
                     if deadline is None:
                         self._M[start:stop] = M.astype(np.float32)
                     else:
@@ -766,6 +813,9 @@ class Ideas:
         """A sentence it reads (a tuple of things): laid into the Field - each thing in it holds it, superposed on what
         it held (no record is kept; the old way keeps one only when IDEA_RECORDS is set, for comparison)."""
         sentence = tuple(sentence)
+        if any(isinstance(s, tuple) and s[0] in (
+                'u-part', 'u-pair', 'u-context', 'u-total', 'hypothesis', 'standing-role') for s in sentence):
+            raise ValueError('Reserved S18 states cannot receive sentence writes')
         n = len(sentence)
         self.read_n += 1
         self.rev = getattr(self, 'rev', 0) + 1           # its memory changed: perception sees it anew
@@ -1109,6 +1159,12 @@ class Field:
         out['_sig'] = {c['id']: tuple(c['sig']) for c in self.concepts}
         return out
 
+    def library_revision(self):
+        """Semantic ID/body/type identity; names and display order do not change bindings."""
+        rows = [(c['id'], c['body'], c['sig'], c['id'] in self.proven_ideas())
+                for c in sorted(self.concepts, key=lambda c: c['id'])]
+        return hashlib.sha256(json.dumps(rows, sort_keys=True, default=str).encode()).hexdigest()
+
     def names(self):
         """Its own name for each concept: the word it learned or coined for it."""
         out = {}
@@ -1291,3 +1347,303 @@ class Field:
                     words=len(self.lexicon.heard), grounded=len(self.lexicon.grounded()), coined=len(self.lexicon.coined),
                     understood=len(self.understood), possibilities=len(self.possibilities), links=len(self.links),
                     questions=len(self.questions), inbox=len(self.inbox))
+
+# U3 readouts operate on the settled geometric Field, never on observer records.
+# Detached Bayesian heads are learned online in this same checkpointed Field.
+# Their covariance gives Thompson uncertainty; the three conditional branches
+# supply different contexts. No hand-written estimate is a readout's prior.
+class FieldWays(LoopField):
+    def __init__(self):
+        super().__init__()
+        self.feature_names = tuple('field_' + str(j) for j in range(64)) + self.feature_names
+        self.d = len(self.feature_names)
+        self.bound = np.zeros((3, 64))
+
+    def bind(self, features):
+        self.bound = np.asarray(features, float).copy()
+        if self.bound.shape != (3, 64) or not np.isfinite(self.bound).all():
+            raise ValueError('Three finite Field branches required')
+
+    def features(self, moment, estimates, faculty):
+        old = self.feature_names[64:]
+        x = [1. if k == 'bias' else float(estimates.get(k[4:], 0.))
+             if k.startswith('est_') else float(moment.get(k, 0.)) for k in old]
+        return np.concatenate((np.tanh(self.bound.mean(0)), x))
+
+    def _prior(self, faculty):
+        return np.eye(self.d), np.zeros(self.d)
+
+    def teach(self, kind, moment, estimates, available, shown):
+        return super().teach(kind, moment, estimates, sorted(available), shown)
+
+    def migrate_features(self, names=None):
+        # U3's schema is explicit; legacy feature migration belongs to LoopField.
+        return self.feature_names, self.feature_names
+
+    def habits(self, kind):
+        return {f: dict(mean=float(self.posterior(kind, f)[0] @
+                                  self.features({}, {}, f))) for f in FACULTIES}
+
+
+class NotYetWays(FieldWays):
+    """The ways' answer/continue readout. Probability is a sense, never a bar."""
+    def __init__(self):
+        super().__init__()
+        self.choice_stats, self.choice_taught, self.withheld = {}, {}, {}
+        self.choice_path = []
+
+    @staticmethod
+    def choice_features(x, probability, spent=0.):
+        x = np.asarray(x, float)
+        if x.shape != (65,) or not np.isfinite(x).all() or not 0. <= probability <= 1. or not np.isfinite(spent):
+            raise ValueError('Finite Field candidate, probability and charged budget required')
+        return np.r_[x, float(probability), float(spent)]
+
+    def choice_post(self, kind, action):
+        z = (np.zeros((67, 67)), np.zeros(67))
+        A, b = self.choice_stats.get((kind, action), z)
+        At, bt = self.choice_taught.get((kind, action), z)
+        cov = np.linalg.inv(np.eye(67) + A + At)
+        return cov @ (b + bt), cov
+
+    def pick(self, kind, x, probability, available, rng, spent=0.):
+        f = self.choice_features(x, probability, spent)
+        values = {}
+        for action in sorted(available):
+            mean, cov = self.choice_post(kind, action)
+            draw = rng.multivariate_normal(mean, (cov + cov.T)/2)
+            values[action] = (float(draw @ f), float(mean @ f))
+        action = min(values, key=lambda a: (-values[a][0], a)) if values else None
+        self.choice_path.append(dict(kind=repr(kind), action=action, probability=probability,
+                                     spent=spent, values=values))
+        del self.choice_path[:-256]
+        return action, f, values
+
+    def choice_learn(self, kind, action, f, reward, *, taught=False):
+        table = self.choice_taught if taught else self.choice_stats
+        A, b = table.setdefault((kind, action), [np.zeros((67, 67)), np.zeros(67)])
+        A += np.outer(f, f)
+        b += f*float(reward)
+
+    def demonstrate(self, kind, f, available, shown):
+        for action in sorted(available):
+            self.choice_learn(kind, action, f, TAUGHT_Y if action == shown else -TAUGHT_Y, taught=True)
+
+    def remember(self, kind, candidate, action, f, continuation):
+        # Keep the first decision until an admissible verdict resolves it.
+        self.withheld.setdefault((kind, candidate), (action, f.copy(), continuation))
+
+    def returned(self, kind, candidate, right, *, elapsed=1., correction_cost=1., lost_credit=1.,
+                 source='proof'):
+        if source not in InnerJudge.SOURCES or type(right) is not bool:
+            raise ValueError('Only received verdicts train answer/continue')
+        row = self.withheld.pop((kind, candidate), None)
+        if row is None:
+            return
+        action, f, continuation = row
+        seconds = max(float(elapsed), 1e-6)
+        self.choice_learn(kind, 'answer', f, float(np.clip(
+            (lost_credit if right else -correction_cost)/seconds, -20., 20.)))
+        if continuation is not None:
+            self.choice_learn(kind, continuation, f, float(np.clip(
+                (-lost_credit if right else correction_cost)/seconds, -20., 20.)))
+        if source in ('teacher', 'book', 'talk'):
+            shown = 'answer' if right else continuation
+            if shown is not None:
+                self.demonstrate(kind, f, {'answer', continuation} - {None}, shown)
+
+    def end_task(self, kind, fade=0.98):
+        super().end_task(kind, fade)
+        for (k, _), (A, b) in self.choice_taught.items():
+            if k == kind:
+                A *= TAUGHT_FADE
+                b *= TAUGHT_FADE
+
+
+class FieldMethods(MethodField):
+    def __init__(self):
+        super().__init__()
+        self.d = 64 + len(TRIGGERS)
+        self.bound = np.zeros((3, 64))
+        self.pending = {}
+        self.assignments = []
+
+    bind = FieldWays.bind
+
+    def features(self, moment, branch=None):
+        neural = self.bound.mean(0) if branch is None else self.bound[branch]
+        return np.concatenate((np.tanh(neural), MethodField.features(moment)))
+
+    def candidates(self):
+        return list(dict.fromkeys(super().candidates() + [('dream',), ('back',)]))
+
+    def _post(self, kind, method):
+        z = (np.zeros((self.d, self.d)), np.zeros(self.d))
+        A, b = self.stats.get((kind, method), z)
+        At, bt = self.taught.get((kind, method), z)
+        cov = np.linalg.inv(np.eye(self.d) + A + At)
+        return cov @ (b + bt), cov
+
+    def choose(self, kind, moves, moment, rng):
+        usable = [m for m in self.candidates() if self._usable(m, moves)]
+        self.pending, self.assignments = {}, []
+        chosen = []
+        posts = {m: self._post(kind, m) for m in usable}
+        for branch in range(3):
+            x = self.features(moment, branch)
+            draws = []
+            for m in usable:
+                mean, cov = posts[m]
+                w = rng.multivariate_normal(mean, (cov + cov.T)/2)
+                draws.append((float(w @ x), m))
+            if not draws:
+                continue
+            m = sorted(draws, key=lambda row: (-row[0], row[1]))[0][1]
+            chosen.append(m)
+            self.assignments.append((m, branch))
+            self.pending.setdefault(m, []).append(x.copy())
+        return chosen
+
+    def ranking(self, kind, moves, moment, tried=()):
+        """Next-best usable method by this Field's posterior, without repeats."""
+        x = self.features(moment)
+        usable = [m for m in self.candidates() if self._usable(m, moves) and m not in tried]
+        return sorted(usable, key=lambda m: (-float(self._post(kind, m)[0] @ x), m))
+
+    def next_method(self, kind, method, moment, branch=0):
+        self.assignments = [(method, branch)]
+        self.pending = {method: [self.features(moment, branch).copy()]}
+        return [method]
+
+    def learn(self, kind, method, moment, y, weight=1.):
+        slots = self.pending.get(method)
+        x = slots.pop(0) if slots else self.features(moment)
+        A, b = self.stats.setdefault((kind, method), [np.zeros((self.d, self.d)), np.zeros(self.d)])
+        A += weight*np.outer(x, x)/self.noise**2
+        b += weight*x*float(y)/self.noise**2
+
+    def end_task(self):
+        super().end_task()
+        self.pending, self.assignments = {}, []
+
+
+class FieldSteps(StepField):
+    def __init__(self):
+        super().__init__()
+        self.d = 64 + len(STEP_FEATURES)
+        self.A = np.zeros((self.d, self.d))
+        self.b = np.zeros(self.d)
+        self.At = np.zeros_like(self.A)
+        self.bt = np.zeros_like(self.b)
+        self.bound = np.zeros((3, 64))
+
+    bind = FieldWays.bind
+
+    def features(self, f):
+        return np.concatenate((np.tanh(self.bound.mean(0)), np.asarray(f, float)))
+
+    def score(self, f, rng=None):
+        mean, cov = self._post()
+        w = rng.multivariate_normal(mean, (cov+cov.T)/2) if rng is not None else mean
+        return float(w @ self.features(f))
+
+    def learn(self, f, y):
+        super().learn(self.features(f) if len(f) == len(STEP_FEATURES) else f, y)
+
+    def teach(self, f, y):
+        super().teach(self.features(f), y)
+
+    def weights(self):
+        return dict(zip(tuple('field_' + str(j) for j in range(64)) + STEP_FEATURES,
+                        self._post()[0].tolist()))
+
+
+class InnerJudge:
+    """Predict a verdict; only the outside judge can grant standing/certificates.
+
+    Costs are exponential estimates of actual correction/lost-answer credit.
+    Bayes risk answers when (1-p)*wrong_cost < p*missed_right_cost. Birth is
+    permissive. Later teacher evidence resolves withheld answers as well.
+    """
+    SOURCES = frozenset(('proof', 'refutation', 'teacher', 'book', 'talk'))
+
+    def __init__(self):
+        self.weights = {}
+        self.costs = {}
+        self.curves = {}
+        self.bars = {}
+        self.pending = {}
+        self.contrasts = 0
+
+    @staticmethod
+    def features(branches):
+        z = np.asarray(branches, float)
+        if z.shape != (3, 64) or not np.isfinite(z).all():
+            raise ValueError('Three finite candidate Field branches required')
+        # Normalize without inventing task-specific correctness features.
+        z = np.tanh(z.mean(0))
+        return np.concatenate(([1.], z/max(1., float(np.linalg.norm(z)))))
+
+    def probability(self, kind, x):
+        w = self.weights.get(kind, np.zeros(len(x)))
+        return float(1./(1.+np.exp(-np.clip(w @ x, -30., 30.))))
+
+    def bar(self, kind):
+        wrong, missed = self.costs.get(kind, (.05, .5))
+        return float(wrong/(wrong+missed))
+
+    def decide(self, kind, candidate, x):
+        p = self.probability(kind, x)
+        answer = p >= self.bar(kind)
+        if not answer:
+            self.pending[(kind, candidate)] = (np.asarray(x).copy(), p)
+        return answer, p
+
+    def verdict(self, kind, candidate, x, right, source, *, correction_cost=1., lost_credit=1., action=True):
+        if source not in self.SOURCES or type(right) is not bool:
+            raise ValueError('Only received outer/teacher/book/talk verdicts train the judge')
+        x = np.asarray(x, float)
+        if x.shape != (65,) or not np.isfinite(x).all():
+            raise ValueError('Finite candidate readout required')
+        for cost in (correction_cost, lost_credit):
+            if not np.isfinite(cost) or cost < 0:
+                raise ValueError('Nonnegative observed costs required')
+        withheld = self.pending.pop((kind, candidate), None)
+        # Calibration records predictions made BEFORE their verdict/update.
+        p = self.probability(kind, x) if withheld is None else withheld[1]
+        bins = self.curves.setdefault(kind, [[0, 0., 0] for _ in range(10)])
+        row = bins[min(9, int(p*10))]
+        row[0] += 1
+        row[1] += p
+        row[2] += int(right)
+        wrong, missed = self.costs.get(kind, (.05, .5))
+        if action:
+            wrong = .85*wrong + .15*(0. if right else correction_cost)
+        if action and withheld is not None and right:
+            missed = .85*missed + .15*lost_credit
+        self.costs[kind] = (max(wrong, 1e-6), max(missed, 1e-6))
+        path = self.bars.setdefault(kind, [])
+        path.append(dict(bar=self.bar(kind), right=right, source=source,
+                         withheld=withheld is not None, over_abstention=bool(withheld is not None and right)))
+        w = self.weights.setdefault(kind, np.zeros(65))
+        # Every verdict trains a fresh logistic readout from its own Field view.
+        predicted = self.probability(kind, x)
+        w += .35*(float(right)-predicted)*x
+        if withheld is not None and not np.array_equal(withheld[0], x):
+            old = withheld[0]
+            w += .35*(float(right)-self.probability(kind, old))*old
+
+    def correct(self, kind, wrong, wrong_x, right, right_x, source='talk'):
+        self.verdict(kind, wrong, wrong_x, False, source)
+        self.verdict(kind, right, right_x, True, source, action=False)
+        delta = np.asarray(right_x)-np.asarray(wrong_x)
+        w = self.weights[kind]
+        w += .35*(1.-1./(1.+np.exp(-np.clip(w @ delta, -30., 30.))))*delta
+        self.contrasts += 1
+
+    def report(self):
+        return dict(calibration={repr(k) if not isinstance(k, str) else k: [dict(n=n, predicted=s/n if n else None,
+                                         observed=r/n if n else None) for n, s, r in rows]
+                                 for k, rows in sorted(self.curves.items(), key=lambda row: repr(row[0]))},
+                    bars={repr(k) if not isinstance(k, str) else k: list(v) for k, v in sorted(self.bars.items(), key=lambda row: repr(row[0]))},
+                    contrasts=self.contrasts)

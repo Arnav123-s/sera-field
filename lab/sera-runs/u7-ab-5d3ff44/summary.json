@@ -1,0 +1,355 @@
+{
+ "u-u7": {
+  "failure": "Bootstrap failed: need eight distinct accepted programs from four source families",
+  "stage": "bootstrap",
+  "preflight": {
+   "median": 3.589053053500038,
+   "p95": 4.501398502899974,
+   "batch_seconds": 10.896269100999916,
+   "wall": 430.59922843999993
+  },
+  "bootstrap_proven": {
+   "list: count": false,
+   "list: double": false,
+   "list: keep positive": false,
+   "list: last": false,
+   "list: one more": false,
+   "list: reverse": false,
+   "list: sum": false,
+   "number: odd": false,
+   "number: powers of two": false,
+   "number: square": true,
+   "number: triangle": false,
+   "number: twice": true
+  },
+  "bootstrap_revisits": 2,
+  "bootstrap_walls": [
+   [
+    "number: odd",
+    150.5,
+    false
+   ],
+   [
+    "number: powers of two",
+    69.4,
+    false
+   ],
+   [
+    "list: one more",
+    71.5,
+    false
+   ],
+   [
+    "number: square",
+    67.8,
+    false
+   ],
+   [
+    "list: sum",
+    95.4,
+    false
+   ],
+   [
+    "list: count",
+    94.9,
+    false
+   ],
+   [
+    "list: keep positive",
+    91.3,
+    false
+   ],
+   [
+    "list: last",
+    152.5,
+    false
+   ],
+   [
+    "list: double",
+    32.1,
+    false
+   ],
+   [
+    "number: triangle",
+    89.7,
+    false
+   ],
+   [
+    "number: twice",
+    138.4,
+    false
+   ],
+   [
+    "list: reverse",
+    151.1,
+    false
+   ],
+   [
+    "number: odd",
+    149.2,
+    true
+   ],
+   [
+    "number: powers of two",
+    154.4,
+    true
+   ],
+   [
+    "list: one more",
+    42.3,
+    true
+   ],
+   [
+    "list: sum",
+    41.4,
+    true
+   ],
+   [
+    "list: count",
+    42.5,
+    true
+   ],
+   [
+    "list: keep positive",
+    42.6,
+    true
+   ],
+   [
+    "list: last",
+    42.9,
+    true
+   ],
+   [
+    "list: double",
+    30.8,
+    true
+   ],
+   [
+    "number: triangle",
+    152.5,
+    true
+   ],
+   [
+    "number: twice",
+    151.5,
+    true
+   ],
+   [
+    "list: reverse",
+    93.6,
+    true
+   ],
+   [
+    "number: odd",
+    156.0,
+    true
+   ],
+   [
+    "number: powers of two",
+    151.0,
+    true
+   ],
+   [
+    "list: one more",
+    43.2,
+    true
+   ],
+   [
+    "list: sum",
+    44.1,
+    true
+   ],
+   [
+    "list: count",
+    43.0,
+    true
+   ],
+   [
+    "list: keep positive",
+    40.2,
+    true
+   ],
+   [
+    "list: last",
+    39.9,
+    true
+   ],
+   [
+    "list: double",
+    31.3,
+    true
+   ],
+   [
+    "number: triangle",
+    149.3,
+    true
+   ],
+   [
+    "number: twice",
+    70.4,
+    true
+   ]
+  ],
+  "groups": {}
+ },
+ "u-u7-off": {
+  "failure": "Unsupported dream input type",
+  "stage": "arms",
+  "preflight": {
+   "median": 3.54182888050002,
+   "p95": 4.919477001550069,
+   "batch_seconds": 11.074934418000112,
+   "wall": 430.870425912
+  },
+  "bootstrap_proven": {
+   "list: count": true,
+   "list: double": false,
+   "list: keep positive": false,
+   "list: last": true,
+   "list: one more": true,
+   "list: reverse": false,
+   "list: sum": true,
+   "number: odd": true,
+   "number: powers of two": false,
+   "number: square": true,
+   "number: triangle": true,
+   "number: twice": true
+  },
+  "bootstrap_revisits": 2,
+  "bootstrap_walls": [
+   [
+    "number: odd",
+    111.3,
+    false
+   ],
+   [
+    "number: powers of two",
+    194.2,
+    false
+   ],
+   [
+    "list: one more",
+    163.8,
+    false
+   ],
+   [
+    "number: square",
+    76.0,
+    false
+   ],
+   [
+    "list: sum",
+    131.2,
+    false
+   ],
+   [
+    "list: count",
+    136.2,
+    false
+   ],
+   [
+    "list: keep positive",
+    148.8,
+    false
+   ],
+   [
+    "list: last",
+    163.5,
+    false
+   ],
+   [
+    "list: double",
+    29.8,
+    false
+   ],
+   [
+    "number: triangle",
+    44.2,
+    false
+   ],
+   [
+    "number: twice",
+    104.2,
+    false
+   ],
+   [
+    "list: reverse",
+    159.0,
+    false
+   ],
+   [
+    "number: powers of two",
+    152.5,
+    true
+   ],
+   [
+    "list: one more",
+    121.2,
+    true
+   ],
+   [
+    "list: sum",
+    118.7,
+    true
+   ],
+   [
+    "list: keep positive",
+    148.8,
+    true
+   ],
+   [
+    "list: last",
+    163.9,
+    true
+   ],
+   [
+    "list: double",
+    149.2,
+    true
+   ],
+   [
+    "number: triangle",
+    72.6,
+    true
+   ],
+   [
+    "list: reverse",
+    151.9,
+    true
+   ],
+   [
+    "number: powers of two",
+    159.7,
+    true
+   ],
+   [
+    "list: keep positive",
+    137.4,
+    true
+   ],
+   [
+    "list: last",
+    140.1,
+    true
+   ]
+  ],
+  "groups": {
+   "full:0:list": {
+    "n": 24,
+    "solved": 0,
+    "proven": 10,
+    "wall": 25.43,
+    "inference": 18.74,
+    "search": 0.18
+   },
+   "full:0:num": {
+    "n": 24,
+    "solved": 0,
+    "proven": 12,
+    "wall": 25.35,
+    "inference": 18.84,
+    "search": 0.06
+   }
+  }
+ }
+}

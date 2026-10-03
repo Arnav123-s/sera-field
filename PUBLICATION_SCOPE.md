@@ -5,6 +5,7 @@ and adds a reviewed current-file snapshot of the SERA discovery lab.
 
 - Learned-field source revision: `7c39634b7cc193dfa50c894ec1e69e42993a3f73`.
 - Discovery-lab source revision: `04fd415caf790f1476e138809e32e905f7e31392`.
+- Unified-lab source revision: `4d157fa561373603ff3dfd43409ae320dfd2396e`.
 - Publication date: 2026-10-02.
 
 Included: implementation, tests, prospective protocols, architecture and usage
@@ -25,3 +26,9 @@ or promoted by this publication.
 
 [PUBLICATION_MANIFEST.json](PUBLICATION_MANIFEST.json) records SHA-256 identities
 of Git blob bytes for every published file except the manifest itself.
+
+This update adds the unified implementation and compact incomplete-pilot evidence.
+It preserves older experiment tracks and assessed checkpoints. The unified design
+omits local coordination and operational handoffs; current status is documented separately.
+The vendored Field manifest retains upstream and pre-publication identities and
+records published-file hashes after prose and line-ending adaptations.

@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-09-21T05:56:45Z",
+  "finished_utc": "2026-09-21T16:01:02Z",
+  "returncode": 0,
+  "wall_seconds": 36257.34297939998,
+  "paid_compute": false,
+  "resources": {
+    "limit_bytes": 2147483648,
+    "flags": 8720,
+    "affinity": 1,
+    "peak_committed_bytes": 938557440,
+    "cpu_seconds": 20602.859375,
+    "active_processes": 0,
+    "total_processes": 3
+  },
+  "cursor": 12288,
+  "target": 12288,
+  "selected_cursor": 10240,
+  "exposures": {
+    "semantic": 24576,
+    "physics": 16384,
+    "programs": 16384,
+    "program_subject:whole_human_mathematics": 16374,
+    "pairs": 24576,
+    "pair_subject:calculus": 3512,
+    "reading": 4096,
+    "pair_subject:dailydialog": 3512,
+    "mixed": 4096,
+    "pair_subject:descartes": 3512,
+    "pair_subject:grammar": 3512,
+    "pair_subject:plato": 3512,
+    "pair_subject:programming": 3512,
+    "pair_subject:webster": 3504,
+    "program_subject:human_scalar_programming": 10
+  },
+  "weights": "6c40a11cc7081fc2af1b61faaa757ae8a6193a50d438f32dc62ca39fe2bec8a2",
+  "assessment_complete": false
+}

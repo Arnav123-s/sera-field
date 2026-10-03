@@ -21,12 +21,95 @@ The rail's physics of seeing (a push moves a thing by the force of the hand and 
 SERA's body senses motion: the hand law it learned in the nursery (ccops5.core.worlds.hand). The hidden force is what
 it must find.
 """
+import copy
 import math
 
 import numpy as np
 
 from ccops5.core import checker, grammar, likelihood as L, mind as M1, paths, truth, worlds as W
 from . import compact as C, crutches as CR, design as DS, field as F, lang as LG, synth as S, talk as TK, worlds as SW
+
+# U4 budgets are caller limits, never parameters of the core's acceptance rule.
+SCRUTINY_PROBES = 32
+SCRUTINY_THROWS = 4
+SCRUTINY_CANDIDATES = 32
+SCRUTINY_HISTORY = 32
+SCRUTINY_KINDS = 64
+
+
+class JudgeScrutiny:
+    """Bounded history of received counterexamples, shared across tasks by the saved Field.
+
+    No observer grades/targets enter the policy. Exact regions are coarse input sizes
+    and magnitudes; only fresh draws from the current world's distribution are tested.
+    """
+    def __init__(self):
+        self.history = {}
+
+    @staticmethod
+    def kind(task):
+        return f"{task.form}:{','.join(sorted(task.inputs.values()))}->{task.out}"
+
+    @staticmethod
+    def region(x, depth=0):
+        if isinstance(x, (list, tuple)):
+            # Bounded inspection, including story/grid inputs.
+            children = [JudgeScrutiny.region(v, depth+1) for v in x[:16]] if depth < 3 else []
+            return (math.log1p(len(x)), sum(v[0] for v in children) / max(1, len(children)),
+                    sum(v[2] for v in children) / max(1, len(children)))
+        if isinstance(x, (int, float, np.number)) and math.isfinite(float(x)):
+            return (0., math.copysign(math.log1p(abs(float(x))), float(x)), float(x < 0))
+        return (0., 0., 0.)
+
+    def remember(self, kind, region):
+        if kind not in self.history and len(self.history) >= SCRUTINY_KINDS:
+            del self.history[sorted(self.history)[0]]
+        rows = self.history.setdefault(kind, [])
+        region = tuple(float(v) for v in region)
+        if region in rows:
+            rows.remove(region)
+        rows.append(region)
+        del rows[:-SCRUTINY_HISTORY]
+
+    def begin(self, task, probability=None, calibration=()):
+        kind = self.kind(task)
+        rows = self.history.get(kind, ())
+        p = float(probability) if probability is not None else None
+        if p is not None and not (math.isfinite(p) and 0 <= p <= 1):
+            raise ValueError('Finite inner probability in [0,1] required')
+        # U3 bins are [received verdict count, sum of pre-verdict predictions, right count].
+        n, observed = 0, None
+        if p is not None and len(calibration) == 10:
+            n, _, right = calibration[min(9, int(p * 10))]
+            observed = float(right / n) if n else None
+        excess = max(0., p - observed) if p is not None and p >= .7 and observed is not None else 0.
+        risk = min(1., len(rows) / 8. + excess)
+        limit = SCRUTINY_THROWS if task.form == 'strengths' else SCRUTINY_PROBES
+        budget = min(limit, (1 if task.form == 'strengths' else 4) + int(risk * (limit - 1)))
+        task._scrutiny_policy = self
+        task._scrutiny_last = dict(kind=kind, budget=budget, used=0, candidates=0,
+                                   max_budget=limit, history=len(rows), inner_probability=p,
+                                   calibration_n=int(n), calibration_observed=observed,
+                                   overconfidence=excess, baseline_accepted=None, accepted=None,
+                                   counterexample=None)
+        return task._scrutiny_last
+
+    def distance(self, kind, region):
+        rows = self.history.get(kind, ())
+        return min((sum((a-b)**2 for a, b in zip(region, row)) for row in rows), default=0.)
+
+
+def scrutiny(task):
+    """Standalone tasks get a local policy; Sera._prove binds the Field's shared policy."""
+    policy = getattr(task, '_scrutiny_policy', None)
+    if policy is None:
+        policy = JudgeScrutiny()
+    # A prepared prediction is consumed once, so direct repeated verifies get fresh budgets.
+    if not getattr(task, '_scrutiny_prepared', False):
+        policy.begin(task)
+    task._scrutiny_prepared = False
+    return policy, task._scrutiny_last
+
 
 EPS = 0.2
 MISS_NATS = 30.0                              # an example a program gets wrong costs this much (2026-09-28)
@@ -465,8 +548,100 @@ class Rail:
 
     # --- the judge ---
     def verify(self, family):
-        """The judge's certificate for "the force is this law up to eps where I looked" (Decision 13) and the
-        independent checker. Returns (accepted and re-derived, certificate, why)."""
+        if not CR.on('judge_scrutiny'):
+            return self._verify_plain(family)
+        policy, record = scrutiny(self)
+        ok, cert, why = self._verify_plain(family)
+        where = dict(truth.LAST_WHERE) if cert.band is not None else {}
+        record.update(baseline_accepted=bool(ok), baseline_band=cert.band, baseline_throws=len(self.throws),
+                      certifications=1, checker_calls=int(cert.accepted))
+        # A refusal cannot be rescued by adaptivity. An uncertainty refusal is not a refutation.
+        if not ok:
+            if why and 'something else is here' in why:
+                record['counterexample'] = self._scrutiny_misfit(family, policy, record)
+            record.update(accepted=False, reason=why)
+            return ok, cert, why
+        if record['budget'] == 0:
+            record.update(accepted=True, reason=None)
+            return True, cert, None
+        led = self._ledger
+        targets = list(policy.history.get(record['kind'], ()))
+        if where:
+            targets.append((where['x'], where['v'], where['t']))
+        candidates = []
+        # Fixed small public action menu, ranked only by predicted measurements.
+        for k in range(min(self.world.n_situations, SCRUTINY_CANDIDATES // 4)):
+            for u in (-1., -.5, .5, 1.):
+                a = W.push_of(u)
+                record['candidates'] += 1
+                try:
+                    y, _, _ = DS._own_numbers(led, family, k, a)
+                except (ValueError, np.linalg.LinAlgError):
+                    continue
+                if not np.isfinite(y).all():
+                    continue
+                n = len(y) // 2
+                d = min((min(((float(x)-tx)**2 + (float(v)-tv)**2 + (j*paths.DT_OBS-tt)**2
+                               for j, (x, v) in enumerate(zip(y[:n], y[n:]))), default=math.inf)
+                         for tx, tv, tt in targets), default=0.)
+                candidates.append((d, k, u, a))
+        made = []
+        for _, k, _, a in sorted(candidates, key=lambda v: v[:3])[:record['budget']]:
+            t = self.act(('push', k, a))
+            record['used'] += 1
+            made.append(dict(situation=k, action=a.segments, x=t.x.tolist(), v=t.v.tolist()))
+        if not made:
+            record.update(accepted=True, reason=None)
+            return True, cert, None
+        final_ok, final_cert, final_why = self._verify_plain(family)
+        record['certifications'] += 1
+        record['checker_calls'] += int(final_cert.accepted)
+        witness = dict(truth.LAST_WHERE) if final_cert.band is not None else {}
+        # Widening due to new scope/noise is a caller veto, never a forged tighter certificate.
+        narrow = final_cert.band is not None and final_cert.band <= cert.band
+        accepted = bool(final_ok and narrow)
+        reason = final_why if not final_ok else None if narrow else 'scrutiny: the band widened'
+        record.update(accepted=accepted, final_band=final_cert.band, reason=reason)
+        if not accepted:
+            record['counterexample'] = dict(kind='misfit' if reason and 'something else is here' in reason
+                                            else 'uncertainty', throws=made, where=witness,
+                                            baseline_band=cert.band, final_band=final_cert.band, reason=reason)
+            if reason and 'something else is here' in reason:
+                record['counterexample']['residual'] = self._scrutiny_misfit(family, policy, record)
+        return accepted, final_cert, reason
+
+    def _scrutiny_misfit(self, family, policy, record):
+        """Locate the largest observed residual, respecting the core fit's bump model.
+
+        The core's aggregate adequacy rejection is the refutation; this reading
+        locates it for future throws, without inventing a per-reading verdict.
+        """
+        led = self._ledger
+        fit = led.mle(family)
+        best = None
+        record['residual_probes'] = 0
+        if fit.ok:
+            model = led._models[family]
+            for t in self.throws[-SCRUTINY_CANDIDATES:]:
+                record['residual_probes'] += 1
+                kt = L.knocked(t, (fit.knocks or {}).get(t.situation, 0))
+                r = (L._obs(t) - L._sim(model, fit.coef, fit.mu[t.situation], kt)) * L._scale(self.sigma)
+                if not np.isfinite(r).all():
+                    continue
+                i = int(np.argmax(np.abs(r)))
+                j = i % len(t.x)
+                if best is None or abs(float(r[i])) > best[0]:
+                    best = (abs(float(r[i])), t, j)
+        if best is None:
+            return dict(kind='misfit', reason='aggregate adequacy rejection; no finite residual fit')
+        residual, t, j = best
+        region = (float(t.x[j]), float(t.v[j]), j * paths.DT_OBS)
+        policy.remember(record['kind'], region)
+        return dict(kind='misfit', where=dict(zip(('x', 'v', 't'), region)),
+                    situation=t.situation, action=t.action.segments, residual_sigmas=residual)
+
+    def _verify_plain(self, family):
+        """The unchanged core certificate and independent checker, on the current throws."""
         led = self.ledger(list((self._ledger.families if self._ledger else [])) + [family])
         cert = truth.certify(led, family, EPS, claim='functional')
         if not cert.accepted:
@@ -686,8 +861,41 @@ class Exact:
             y = self._y(x)
             if LG.safe(e, {self.var: list(x) if isinstance(x, tuple) else x}, concepts) != y:
                 self.data.append((x, y))
+                if CR.on('judge_scrutiny'):
+                    return self._scrutinize(e, concepts, n, (x, y), rng)
                 return False, n, (x, y)
+        if CR.on('judge_scrutiny'):
+            return self._scrutinize(e, concepts, n, None, rng)
         return True, n, None
+
+    def _scrutinize(self, e, concepts, n, fail, rng):
+        policy, record = scrutiny(self)
+        record['baseline_accepted'] = fail is None
+        record['baseline_budget'] = n
+        if fail is not None:
+            policy.remember(record['kind'], policy.region(fail[0]))
+            record.update(accepted=False, counterexample=dict(kind='input', input=LG.freeze(fail[0]),
+                                                             expected=LG.freeze(fail[1])))
+            return False, n, fail
+        # Copy AFTER the untouched baseline audit: no extra consumption of its RNG.
+        extra_rng = copy.deepcopy(rng)
+        candidates = [self._fresh(extra_rng) for _ in range(4 * record['budget'])]
+        record['candidates'] = len(candidates)
+        order = sorted(range(len(candidates)),
+                       key=lambda j: (policy.distance(record['kind'], policy.region(candidates[j])), j))
+        for j in order[:record['budget']]:
+            x = candidates[j]
+            y = self._y(x)
+            actual = self._value(e, x, concepts)
+            record['used'] += 1
+            if actual != y:
+                self.data.append((x, y))
+                policy.remember(record['kind'], policy.region(x))
+                record.update(accepted=False, counterexample=dict(kind='input', input=LG.freeze(x),
+                                                                 expected=LG.freeze(y), actual=LG.freeze(actual)))
+                return False, n + record['used'], (x, y)
+        record['accepted'] = True
+        return True, n + record['used'], None
 
     def grade(self, e, concepts, accepted, n=200, seed=0):
         rng = np.random.default_rng([seed, 991, len(self.name)])
@@ -830,6 +1038,10 @@ class Puzzle(Exact):
         """The judge: every example's output exactly, and a grid on every test input (the world's form of an
         answer)."""
         ok = self.consistent(e, concepts) and all(is_grid(v) for v in self.answers(e, concepts))
+        if CR.on('judge_scrutiny'):
+            _, record = scrutiny(self)
+            record.update(baseline_accepted=bool(ok), accepted=bool(ok), budget=0,
+                          scope='given examples and grid form; no fresh-answer oracle')
         return ok, len(self.data), None
 
     def right(self, e, concepts):
@@ -1043,7 +1255,11 @@ class Story(Exact):
             y = self._y(x)
             if LG.safe(e, {'g': self.perceive(x)}, concepts) != y:
                 self.data.append((x, y))
+                if CR.on('judge_scrutiny'):
+                    return self._scrutinize(e, concepts, n, (x, y), rng)
                 return False, n, (x, y)
+        if CR.on('judge_scrutiny'):
+            return self._scrutinize(e, concepts, n, None, rng)
         return True, n, None
 
     def grade(self, e, concepts, accepted, n=200, seed=0):
