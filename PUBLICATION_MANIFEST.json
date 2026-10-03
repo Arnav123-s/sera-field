@@ -1,10 +1,10 @@
 {
   "repository": "https://github.com/Arnav123-s/sera-field",
-  "publication_date": "2026-10-02",
+  "publication_date": "2026-10-03",
   "source_local_revision": "7c39634b7cc193dfa50c894ec1e69e42993a3f73",
   "lab_source_revision": "04fd415caf790f1476e138809e32e905f7e31392",
-  "integration_plan_revision": "120fdc46d629923b7c60d010854da297a01a4ed1",
-  "public_base_revision": "f4f0a870ce7e7b93ace6d52d026473ef52d62d86",
+  "integration_plan_revision": "e1be383cbe90b88785ac1542733563be14eec78a",
+  "public_base_revision": "89155dc119892f792599b8e1991d003ddcfa2325",
   "scope": "Reviewed current files, compact evidence, and preserved assessed inference revisions",
   "excluded": "Private history, raw corpora, complete training states, binary lab Fields, coordination records, preparation tooling",
   "snapshot_adaptations": [
@@ -16,8 +16,8 @@
     "Vendored Field hashes refreshed after prose/LF adaptations; original hashes retained; parity fixture path configured by environment"
   ],
   "file_identity_basis": "Git blob bytes; excludes this manifest",
-  "file_count": 2802,
-  "total_bytes": 92063852,
+  "file_count": 2876,
+  "total_bytes": 99737193,
   "files": [
     {
       "path": ".gitattributes",
@@ -37,12 +37,12 @@
     {
       "path": "PUBLICATION_SCOPE.md",
       "bytes": 1992,
-      "sha256": "617903a835b60ba97f57c71b12b3489f38df8d306289efe077167ec3be976c34"
+      "sha256": "a3c47afb5f66f1231bf8d629abb2ef9e36159e2014ef5de6f2904fd47e9ab05f"
     },
     {
       "path": "README.md",
-      "bytes": 3752,
-      "sha256": "c106fcaabf3c7d254991fe69e832d5f1a2341e383a9f762d16b2b4b0b0070f9f"
+      "bytes": 3877,
+      "sha256": "c0f6e2791eff7e9ab6baf651150691fd5924182f5ca91c82413a63329bc3139b"
     },
     {
       "path": "START_CONNECTED.md",
@@ -471,13 +471,23 @@
     },
     {
       "path": "lab/README.md",
-      "bytes": 3112,
-      "sha256": "2defe084dd53a30d3e0d2a1fe6651af7069bd2d4e7e58757b49fcbb575fbee9f"
+      "bytes": 3086,
+      "sha256": "6adc709e2324a1d6a6eb4b756dbe014e556fe63e1a71c155e4fbb64c55977f98"
     },
     {
       "path": "lab/SERA_U_PLAN.md",
-      "bytes": 15229,
-      "sha256": "78a5973917ef2502266f2dd5e589460bfe49091c22362d8ec70cbc9380d59dcb"
+      "bytes": 15574,
+      "sha256": "ca19daa9efc1c7843bdb7027f7e2e0d938a6c83f54743127aaadec888fa313c2"
+    },
+    {
+      "path": "lab/SERA_U_REPORT.md",
+      "bytes": 11189,
+      "sha256": "a213d719264c1fc9514497b38ae882708181cba085e72e95571fb433e6da9388"
+    },
+    {
+      "path": "lab/SERA_U_REPORT_TABLES.md",
+      "bytes": 572988,
+      "sha256": "68301e559055bf75563c4fc1e368cd7379f768fe4b55f3a32aa39e9b6724b974"
     },
     {
       "path": "lab/SERA_V3_PLAN.md",
@@ -771,8 +781,8 @@
     },
     {
       "path": "lab/docs/SERA_U_STATUS.md",
-      "bytes": 6372,
-      "sha256": "8ca5dc086ba7fcf164a151d5dfab05e0403a6584696fc9f9d5edb36def2b4efd"
+      "bytes": 8767,
+      "sha256": "adf9b6e6631cefd93ce5d9d2b05a2ec8d7ccd7a88b7be762d763c23afbc1a42f"
     },
     {
       "path": "lab/legacy/README.md",
@@ -6146,13 +6156,23 @@
     },
     {
       "path": "lab/scripts/sera_u_course.py",
-      "bytes": 47000,
-      "sha256": "2687263fca8c6ac15ec1727d061d70a40b65367d131faf77607e18bdfa6be7fb"
+      "bytes": 50079,
+      "sha256": "f679961b07dd93ac4e15e36c331910608c8ba399cd630ad55ad995ffc79bf418"
+    },
+    {
+      "path": "lab/scripts/sera_u_darwin.py",
+      "bytes": 15929,
+      "sha256": "5d307f160b0a9d74d40b0c6f621603800de5b84b8eff50d063f86017f08ea1f5"
     },
     {
       "path": "lab/scripts/sera_u_discovery.py",
-      "bytes": 18864,
-      "sha256": "abcffd3d01fda730c0a8fec7f4e8e5b7b8e57d200805dccff8b6b009c4ff3a9b"
+      "bytes": 22592,
+      "sha256": "1b4c8c9e52a6c57b4a2274203546c343f1a666cc5e369ba8ea7fd80a26f5eca8"
+    },
+    {
+      "path": "lab/scripts/sera_u_einstein.py",
+      "bytes": 9421,
+      "sha256": "0fdccdd5107d52ee1d41a905a8effba6d64c90d407cc19eb1185e25edb73aba9"
     },
     {
       "path": "lab/scripts/sera_u_memory_profile.py",
@@ -6160,9 +6180,24 @@
       "sha256": "7e2ef3a488c242e8b0ef3236251bb2758de2d0aa817cefdf743ec0301cccc0c4"
     },
     {
+      "path": "lab/scripts/sera_u_report.py",
+      "bytes": 41619,
+      "sha256": "2f4e6ac81c92c57183a1b8d191bb64d31ddbe987b19e9931143502a437c1e210"
+    },
+    {
+      "path": "lab/scripts/sera_u_roadmap.py",
+      "bytes": 8535,
+      "sha256": "8b628f8f5d040476cdba132b9a98524330d57f1f0de7fccb244bac9e6b361ff0"
+    },
+    {
       "path": "lab/scripts/sera_u_rsi.py",
-      "bytes": 47503,
-      "sha256": "748225b05cd898811c1cb8627b3ea50e3cd690877f7a5f2316ddc246e8d658c2"
+      "bytes": 53906,
+      "sha256": "79aa1ab420806524d1ade869c0aa2c05546676b9dcf79066bcea499a679bc52e"
+    },
+    {
+      "path": "lab/scripts/sera_u_scientists.py",
+      "bytes": 16409,
+      "sha256": "02768eca6fb92b3b98c156e774529ad58b2ac332f2dc5e5acbe781cc4f39d97c"
     },
     {
       "path": "lab/scripts/sera_u_speed.py",
@@ -9050,6 +9085,136 @@
       "sha256": "fb767da7255b162036ae1b45a1442c97e39b957d3fc062973b19cd656f83e0d3"
     },
     {
+      "path": "lab/sera-runs/u10-einstein-vma/discovery_summary.txt",
+      "bytes": 2432,
+      "sha256": "627599775553f3a6484e613376d510d116528d8271b331e28b7ee6d6c9bb6abd"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/summary.txt",
+      "bytes": 2144,
+      "sha256": "0f7c974db161ea475b106751d4eb9f02116daa2ffb6aeeb48e48cbe1d5d558e0"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-discovery/engineering.json",
+      "bytes": 502,
+      "sha256": "59f70d7f8485607bf4003bdccd5d421b82faa3a41964a833d3ce8e6fddbeed67"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-discovery/g_curve.json",
+      "bytes": 544786,
+      "sha256": "6e812463de54470341c9fb060073631c36102b596fb13dc01b89e5deaafc4821"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-discovery/preflight.json",
+      "bytes": 1050,
+      "sha256": "80bb601fb14ee4e0828859ae07cb03dc8ab26b3b1ed7572a7a03e85c3da72b1d"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-discovery/protocol.json",
+      "bytes": 2465,
+      "sha256": "be29356931dd2d5ff57649d827b61b45f08025a33462369a4bad7dd9d2d6876b"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-einstein-no-bold-predictions/engineering.json",
+      "bytes": 502,
+      "sha256": "5b5d595e6abfc800d06df99e6c5497e438b576d9ae613000738deb1e9d432688"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-einstein-no-bold-predictions/g_curve.json",
+      "bytes": 450787,
+      "sha256": "9259842fc19fde4b3f407b406d7d0f929a74e55b2059125431fb267312a2e993"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-einstein-no-bold-predictions/preflight.json",
+      "bytes": 1053,
+      "sha256": "ee29fffe2f27fc6bf9e33e3ee103f31fc43685969a72f66da2008ccd701c886d"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-einstein-no-bold-predictions/protocol.json",
+      "bytes": 2625,
+      "sha256": "fbaee21861c1631344d07b4b46386b0e35a3b6fb300a01db545784bcced9b673"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-einstein-no-doubt-assumptions/engineering.json",
+      "bytes": 502,
+      "sha256": "a3462efaa252e485ceb38497e19f22369ef702865f4b3c2e383fc5733b7d7f9b"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-einstein-no-doubt-assumptions/g_curve.json",
+      "bytes": 561577,
+      "sha256": "958bce2a8a5b3d65f39699691a4476eb6abab8c160291627cfe75a47d6f90a5d"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-einstein-no-doubt-assumptions/preflight.json",
+      "bytes": 1053,
+      "sha256": "e8f36d153c7379611a30342f20e7911e2fd775929fff5a0a8b57bc246c989ea5"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-einstein-no-doubt-assumptions/protocol.json",
+      "bytes": 2625,
+      "sha256": "f337a21bd4fbc84c948aa58e4df1083a4d0fc63be26a2eb1a1e63c6ec5c4e9d6"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-einstein-no-symmetry-principles/engineering.json",
+      "bytes": 502,
+      "sha256": "dcea25b0de8b9ce347118bd1f4b5cbd88c6879535de6b30074aaaa3b15a8f68d"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-einstein-no-symmetry-principles/g_curve.json",
+      "bytes": 577827,
+      "sha256": "51cca4aac46f31dae1461f55d75cefaea81cf4a4391a2ec5dd04b34f474da0fb"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-einstein-no-symmetry-principles/preflight.json",
+      "bytes": 1051,
+      "sha256": "ba452f1cd14de03dd1ba19fc32a64d67634b6959235a3cb71df89e6fc26cdf69"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-einstein-no-symmetry-principles/protocol.json",
+      "bytes": 2625,
+      "sha256": "cfea25f0a9fb2da1477c10f5802c708a4063e8ae6090b602e899ff21cc0e7171"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-einstein-no-thought-experiments/engineering.json",
+      "bytes": 502,
+      "sha256": "74bbb36ff95dae0291d2e9c102465f3ed89f9b9e22c4011809b6e545ad8b17fd"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-einstein-no-thought-experiments/g_curve.json",
+      "bytes": 472600,
+      "sha256": "cfe0223b32d444bb40d4b7d47b43483357cec77ea9eb64ce7875b4c7b31d0ab0"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-einstein-no-thought-experiments/preflight.json",
+      "bytes": 1052,
+      "sha256": "e4ec78927aaad154c33dc27b062a859d40a89b7b074f11ff5317ac078e1f8ca8"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-einstein-no-thought-experiments/protocol.json",
+      "bytes": 2625,
+      "sha256": "cd949fb7b0d7f9e257c77f602913a50190d0197f836bb596ce7403e6f9a2ba59"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-einstein/engineering.json",
+      "bytes": 502,
+      "sha256": "11de33443291a9d3a5a57cdd6f9d7cf3e6d9214814356b08c15a9f6b30cca0ba"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-einstein/g_curve.json",
+      "bytes": 562536,
+      "sha256": "4d6753196c97987f498f7444032ffb2758090102aed08e487b207219d32bc6b4"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-einstein/preflight.json",
+      "bytes": 1046,
+      "sha256": "0e1fabf8a9171f54b11f8debac2a369841951144de817f9885cda7dc39f54d9b"
+    },
+    {
+      "path": "lab/sera-runs/u10-einstein-vma/u-einstein/protocol.json",
+      "bytes": 2624,
+      "sha256": "78b928c8c632b89c00be0dd768cbf625c9cf9bdde80bfc3f66157fbfe82dc451"
+    },
+    {
       "path": "lab/sera-runs/u2-ab-525c7db-crash/u-full/engineering.json",
       "bytes": 259,
       "sha256": "84a2de5a7d563d27bb2cfa773766d8a741ce5ccfeaf29c54fd945417ce635c46"
@@ -9170,6 +9335,161 @@
       "sha256": "922095d9a867898581925af525416166103824fe9d7700438be40cbefeb2d55a"
     },
     {
+      "path": "lab/sera-runs/u8-u9-vmc-9036ca3/summary.txt",
+      "bytes": 1424,
+      "sha256": "b6c2dce72f08d0165566fe87d1c5befe6653f9d211109bd82e2ca9762c254ca1"
+    },
+    {
+      "path": "lab/sera-runs/u8-u9-vmc-9036ca3/u-discovery-off/engineering.json",
+      "bytes": 502,
+      "sha256": "b5c29fa9ddc7f6c86aa487664faaeae868f544c2068afda0a8128867410a811f"
+    },
+    {
+      "path": "lab/sera-runs/u8-u9-vmc-9036ca3/u-discovery-off/g_curve.json",
+      "bytes": 433891,
+      "sha256": "86e3f3bb51a1d28b502744967c875f57935aa60701546b313fbb1accbbe72228"
+    },
+    {
+      "path": "lab/sera-runs/u8-u9-vmc-9036ca3/u-discovery-off/preflight.json",
+      "bytes": 1052,
+      "sha256": "a1e9d303ab401fc3d95f623a7f890fe28f29906beef81de8e169dd664d30047f"
+    },
+    {
+      "path": "lab/sera-runs/u8-u9-vmc-9036ca3/u-discovery-off/protocol.json",
+      "bytes": 2012,
+      "sha256": "9498bfa73fb6eef3a3ecf0d47118f25f8efa8463e401fb5d556c679c00cfabd8"
+    },
+    {
+      "path": "lab/sera-runs/u8-u9-vmc-9036ca3/u-full/engineering.json",
+      "bytes": 502,
+      "sha256": "7ea08571d100456586428dd7c875012aa41dad36bf980aa193283c677bf18d50"
+    },
+    {
+      "path": "lab/sera-runs/u8-u9-vmc-9036ca3/u-full/g_curve.json",
+      "bytes": 484665,
+      "sha256": "c5ee2ed00cef5c5fda0a45a40ec2fcc0d39ad7669a60566c7bf81ebb5eab671f"
+    },
+    {
+      "path": "lab/sera-runs/u8-u9-vmc-9036ca3/u-full/preflight.json",
+      "bytes": 1045,
+      "sha256": "0feca3144ea8bc9a00f667a59e7e02ac4dd30b7009b32bf90d287f9f11efb7a0"
+    },
+    {
+      "path": "lab/sera-runs/u8-u9-vmc-9036ca3/u-full/protocol.json",
+      "bytes": 2004,
+      "sha256": "81a221eb73b6c86b0f7a72f126473164322a140c0f5211b2ef50dda339bc447a"
+    },
+    {
+      "path": "lab/sera-runs/u8-u9-vmc-9036ca3/u-mem-choice/engineering.json",
+      "bytes": 502,
+      "sha256": "cff90ebeda6437e5515ce7f5c16bb8f7aa2cbaf3dea997347e4425b75876cb92"
+    },
+    {
+      "path": "lab/sera-runs/u8-u9-vmc-9036ca3/u-mem-choice/g_curve.json",
+      "bytes": 464383,
+      "sha256": "e419973fdf0375eaafec12b8072003982b768d258d970469a681761d12411ef6"
+    },
+    {
+      "path": "lab/sera-runs/u8-u9-vmc-9036ca3/u-mem-choice/preflight.json",
+      "bytes": 1049,
+      "sha256": "fcdac20103f38de5424695c8630d780c0897dfc882b7c743ffb81ba4186e1636"
+    },
+    {
+      "path": "lab/sera-runs/u8-u9-vmc-9036ca3/u-mem-choice/protocol.json",
+      "bytes": 2120,
+      "sha256": "30d48e529b4bd287b785e4e3f9618c331971b4d0c01fb2616ac06ab02d4f5522"
+    },
+    {
+      "path": "lab/sera-runs/u8-u9-vmc-9036ca3/u-no-memory/engineering.json",
+      "bytes": 502,
+      "sha256": "d58abff36bb4376ba734f4426a292bf4f14e8e15ba45a6eaef8c94b2090d7f83"
+    },
+    {
+      "path": "lab/sera-runs/u8-u9-vmc-9036ca3/u-no-memory/g_curve.json",
+      "bytes": 351966,
+      "sha256": "1feda25c8b3d0b948d48e2b735fea7459f61ad27e9d320bceb5cdc2ab666eb30"
+    },
+    {
+      "path": "lab/sera-runs/u8-u9-vmc-9036ca3/u-no-memory/preflight.json",
+      "bytes": 1050,
+      "sha256": "b11416d4289b0fb35376ace4ea91a34b8700bcce0a7c538f07531303164912b7"
+    },
+    {
+      "path": "lab/sera-runs/u8-u9-vmc-9036ca3/u-no-memory/protocol.json",
+      "bytes": 2012,
+      "sha256": "99718ff75d528cb0a70919f48b2069deb8c18e86505e9dc0f9896702e1253e25"
+    },
+    {
+      "path": "lab/sera-runs/u9-discovery-vmc/discovery_summary.txt",
+      "bytes": 1306,
+      "sha256": "482c82007484c1344d0e72d82c980a1820c18c6784ede9a0a0f0725d532853be"
+    },
+    {
+      "path": "lab/sera-runs/u9-discovery-vmc/summary.txt",
+      "bytes": 1410,
+      "sha256": "99010a0122a62bbe1fe54d84a73eb5890c14e38dcfa210f124213196d9db27ee"
+    },
+    {
+      "path": "lab/sera-runs/u9-discovery-vmc/u-discovery-no-unify/engineering.json",
+      "bytes": 502,
+      "sha256": "922176c0be8231e2631102972034a5cdb4b6a63f7c6a354b0c5a3bbc8bc6cf9b"
+    },
+    {
+      "path": "lab/sera-runs/u9-discovery-vmc/u-discovery-no-unify/g_curve.json",
+      "bytes": 516065,
+      "sha256": "224c356ecf26704a3be332f508fb137f56dd983f43dda77d87b0152dd1f2f1ad"
+    },
+    {
+      "path": "lab/sera-runs/u9-discovery-vmc/u-discovery-no-unify/preflight.json",
+      "bytes": 1050,
+      "sha256": "dac2eafed4d6a4bb7f95d0f6652db9abdcba4e3847318298117ab9f21e8c6f27"
+    },
+    {
+      "path": "lab/sera-runs/u9-discovery-vmc/u-discovery-no-unify/protocol.json",
+      "bytes": 2466,
+      "sha256": "135ebf42cd1943cb2bd1dd84430e563a6aa427ba080baf41c61e006bdac8223e"
+    },
+    {
+      "path": "lab/sera-runs/u9-discovery-vmc/u-discovery-random/engineering.json",
+      "bytes": 583,
+      "sha256": "f5161c141f36d40c41e2fb3b67cc190da1cb737551f3b338ee4114f39e15a0ee"
+    },
+    {
+      "path": "lab/sera-runs/u9-discovery-vmc/u-discovery-random/g_curve.json",
+      "bytes": 579075,
+      "sha256": "3c6ec8b2894f2bc40cd804c59c94e0ba91dcad8cdcf5be44684d4a322f5b15e9"
+    },
+    {
+      "path": "lab/sera-runs/u9-discovery-vmc/u-discovery-random/preflight.json",
+      "bytes": 1053,
+      "sha256": "8d8cae895f38376ef0173cb17ad8fccb32ff3822f6a5f6f82cf4cc3ed74d3389"
+    },
+    {
+      "path": "lab/sera-runs/u9-discovery-vmc/u-discovery-random/protocol.json",
+      "bytes": 2466,
+      "sha256": "be2b5524c55bc6d650c22b1672c8d155ab6fa93e07b0d1d7bb2b04ea2fa18871"
+    },
+    {
+      "path": "lab/sera-runs/u9-discovery-vmc/u-discovery/engineering.json",
+      "bytes": 502,
+      "sha256": "572b0d0d9554ee01eee5aab698bc948c5fa9f29556baac3244b75740b71ce27a"
+    },
+    {
+      "path": "lab/sera-runs/u9-discovery-vmc/u-discovery/g_curve.json",
+      "bytes": 618327,
+      "sha256": "05be015352ab4101a473423fe7d8747f404ee002f046efd4d6193a23c64ae06e"
+    },
+    {
+      "path": "lab/sera-runs/u9-discovery-vmc/u-discovery/preflight.json",
+      "bytes": 1052,
+      "sha256": "155eae5900cfccdccafd1a876c30f5c29bc97067c54de435679a92b4cbe830de"
+    },
+    {
+      "path": "lab/sera-runs/u9-discovery-vmc/u-discovery/protocol.json",
+      "bytes": 2465,
+      "sha256": "e296659102ddeb2164b349075003d11001b2ea9c86e198ab42bdc49798213fc3"
+    },
+    {
       "path": "lab/sera-runs/us-speed-cpu/speed.json",
       "bytes": 3639,
       "sha256": "2e79f945957c401cce09401c067c57cbede9023c6ca73bb99966149210d17ae7"
@@ -9193,6 +9513,11 @@
       "path": "lab/sera-runs/us3-step-b5a4883/us3-step-before.json",
       "bytes": 362561,
       "sha256": "cc935ca43aeefe66c0fe54779d08145eb640f8a919e174f1af132397cac2fb63"
+    },
+    {
+      "path": "lab/sera-runs/us3b-profile-ff5d65a/us3b-summary.txt",
+      "bytes": 306,
+      "sha256": "bb360dfd7dbb0ccd3c7ef106379cde1d6248be10807f2dc6d46eda2fef8af44e"
     },
     {
       "path": "lab/sera-runs/where-trace-1001/trace_step.py",
@@ -9226,8 +9551,8 @@
     },
     {
       "path": "lab/sera/crutches.py",
-      "bytes": 16561,
-      "sha256": "5c6e9245bbf95093c3a25aa4ec23a599b3381011c35c9cd66d9657311bf77ef1"
+      "bytes": 21893,
+      "sha256": "ad5b2a8247172cd74022f8c8e272c3d95ed76d807e8367c32ea0e902520c0289"
     },
     {
       "path": "lab/sera/design.py",
@@ -9251,8 +9576,8 @@
     },
     {
       "path": "lab/sera/lang.py",
-      "bytes": 46710,
-      "sha256": "dbff3fc49410902453d0580cc4733a250036051df54055cdc61f538f28950323"
+      "bytes": 46941,
+      "sha256": "c9a92caef908befec64ad699df95a03bd239e18cda0886a73934ede49d4916e6"
     },
     {
       "path": "lab/sera/lawspace.py",
@@ -9261,8 +9586,8 @@
     },
     {
       "path": "lab/sera/novel.py",
-      "bytes": 6671,
-      "sha256": "b81c3290ca5b0747e93527fa27ee76160049aeb43b3023833f6f32e288302aa7"
+      "bytes": 6916,
+      "sha256": "76b979ea6f973152b4f53f2253c0d09cbe58b854283949f4acd7a58db10d985a"
     },
     {
       "path": "lab/sera/one.py",
@@ -9305,9 +9630,19 @@
       "sha256": "7f546cc006a38f3952884e29a7d04f2e28b9e42b317bab9c9dde5bbb80b2cf55"
     },
     {
+      "path": "lab/sera_u/darwin.py",
+      "bytes": 41458,
+      "sha256": "179d093733dea6315a12f3f5385b1c3d1901ebc90edb6f6fac577dd01a390a56"
+    },
+    {
       "path": "lab/sera_u/discovery.py",
-      "bytes": 44909,
-      "sha256": "15db6b2723114bda6a92665eed3d584a663ea74c12a51bd6c6047ea5368994a1"
+      "bytes": 58969,
+      "sha256": "830d630cbc7383b1baaa7f52ae235fb789ce63d68bd8dd14c7fb991a06b42037"
+    },
+    {
+      "path": "lab/sera_u/einstein.py",
+      "bytes": 27516,
+      "sha256": "aa710c450050420e52df233c29d88f9c7ee3b4da0c47281585f347daa4167943"
     },
     {
       "path": "lab/sera_u/field/SOURCE.json",
@@ -9491,8 +9826,8 @@
     },
     {
       "path": "lab/sera_u/mind.py",
-      "bytes": 101375,
-      "sha256": "9e85f8922a6f842545a9181fd34d4042614eebf9367479e74afac32536d605c0"
+      "bytes": 108027,
+      "sha256": "afa55cbde75afe2e77f8feceabb240802e7abe181dbd3fe73c0bb8f3ff1ad693"
     },
     {
       "path": "lab/sera_u/ports.py",
@@ -9501,13 +9836,23 @@
     },
     {
       "path": "lab/sera_u/proposer.py",
-      "bytes": 44162,
-      "sha256": "0bb79e447c11a86d1674e5ee73947d106613b516e21ec41a9e0fbf0490235f2f"
+      "bytes": 44297,
+      "sha256": "f07d6bb67b3683d5ca406aafd084e8d778879b0604557bb10201383b3143e739"
+    },
+    {
+      "path": "lab/sera_u/roadmap.py",
+      "bytes": 27899,
+      "sha256": "6e7b363c16ecdd88c595716150afbd80c7c8a91d838664ac7b324fa299102b2f"
+    },
+    {
+      "path": "lab/sera_u/scientists.py",
+      "bytes": 37123,
+      "sha256": "55fd50f9057b6a01348988dfc03ab0da01d6e94ce50b979a60995c45048fd59c"
     },
     {
       "path": "lab/sera_u/sleep.py",
-      "bytes": 47740,
-      "sha256": "e22b0b84625dbd5e949a755a65dc62ed7369b2f41938c26ab6f1ab735f96c541"
+      "bytes": 47919,
+      "sha256": "49e1ca304d9a9a83162ff359c0ba10b3b382ee873a45f1a9815673e2faa46cf3"
     },
     {
       "path": "lab/tests/__init__.py",
@@ -9771,8 +10116,8 @@
     },
     {
       "path": "lab/tests/sera/test_nested.py",
-      "bytes": 8905,
-      "sha256": "e8ad865ceda4024014f37c622bfe52fca845478969ee80045b6eb66682bd56bb"
+      "bytes": 9161,
+      "sha256": "d42ba47852d384d55068935e1a7242b76f445e26b2b611b308c0bc71e648c984"
     },
     {
       "path": "lab/tests/sera/test_one.py",
@@ -9845,14 +10190,24 @@
       "sha256": "3dc6705fc97896fe70286b39d1181cb6da5a53b56e9483691161c7215192a12c"
     },
     {
+      "path": "lab/tests/sera_u/test_darwin.py",
+      "bytes": 23112,
+      "sha256": "90f37768c99e70daf2c89d49225a49586d38f62783750d4cbbcc1aa57de2bb0c"
+    },
+    {
       "path": "lab/tests/sera_u/test_discovery.py",
-      "bytes": 28956,
-      "sha256": "7b7cffaa701b4aaf6b71905e1dc36b751fa6e37df1fa5cf2862c29a554075268"
+      "bytes": 31455,
+      "sha256": "c617f32c2477d03c12838569af36cb5667e5583d0806b3850ba5624841b3a8d9"
+    },
+    {
+      "path": "lab/tests/sera_u/test_einstein.py",
+      "bytes": 27095,
+      "sha256": "790805d34f66acff66574b856079314665f5fec0775347a81705d3ba0894db2a"
     },
     {
       "path": "lab/tests/sera_u/test_entity.py",
-      "bytes": 29921,
-      "sha256": "394d223ac1e44f4626b05c565737c8586955c1c70c246141b5d7c3a5f6ecdda9"
+      "bytes": 31172,
+      "sha256": "2078f5c7d5942fb394bc3179ed8719bd8bcbf433232991c7361256da68953d59"
     },
     {
       "path": "lab/tests/sera_u/test_judge_scrutiny.py",
@@ -9888,6 +10243,21 @@
       "path": "lab/tests/sera_u/test_readout_speed.py",
       "bytes": 18663,
       "sha256": "0efa2a114598f07abbba08d9f1b35b7881085337985aad90f8eba80915ca984d"
+    },
+    {
+      "path": "lab/tests/sera_u/test_report.py",
+      "bytes": 36228,
+      "sha256": "20ca8dbdf1396ced50f2a983cdd2fc561bae8ba51ce00afdaf6fc89b1288fc86"
+    },
+    {
+      "path": "lab/tests/sera_u/test_roadmap.py",
+      "bytes": 28184,
+      "sha256": "837eec22120ade9ec8894e2f990ffb471c08c899a1566ed45e85c9d14eea4b1c"
+    },
+    {
+      "path": "lab/tests/sera_u/test_scientists.py",
+      "bytes": 22843,
+      "sha256": "2570cc04c01d55a9fc9160b8a322a30e145baedaa3ffd6b50e6119786a59701b"
     },
     {
       "path": "lab/tests/sera_u/test_speed.py",
@@ -14050,36 +14420,8 @@
     "entry_point_links": "passed",
     "credential_review": "no unresolved findings"
   },
-  "unified_source_revision": "120fdc46d629923b7c60d010854da297a01a4ed1",
+  "unified_source_revision": "e1be383cbe90b88785ac1542733563be14eec78a",
   "previous_update_validation": {
-    "tests": {
-      "unified_course_crutches": {
-        "tests": 232,
-        "failures": 0,
-        "errors": 0,
-        "skipped": 2
-      },
-      "original_tensor_gradient_parity": {
-        "tests": 1,
-        "failures": 0,
-        "errors": 0,
-        "skipped": 0
-      },
-      "no_idea_timeout_regression": {
-        "tests": 1,
-        "failures": 0,
-        "errors": 0,
-        "skipped": 0
-      }
-    },
-    "python_parsed": 532,
-    "json_parsed": 1929,
-    "entry_point_links": "passed",
-    "credential_review": "no unresolved findings after complete staged-tree term scan and credential review",
-    "full_behavioral_assessment": "not run",
-    "original_parity_fixture": "passed with SERA_FIELD_PINNED_SOURCE pointing to upstream c67ed27"
-  },
-  "validation": {
     "tests": {
       "unified_course_crutches": {
         "tests": 342,
@@ -14090,6 +14432,21 @@
     },
     "python_parsed": 539,
     "json_parsed": 1933,
+    "entry_point_links": "passed",
+    "credential_review": "no unresolved findings after staged-tree scan and review",
+    "full_behavioral_assessment": "not run"
+  },
+  "validation": {
+    "tests": {
+      "unified_course_crutches": {
+        "tests": 507,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 3
+      }
+    },
+    "python_parsed": 553,
+    "json_parsed": 1985,
     "entry_point_links": "passed",
     "credential_review": "no unresolved findings after staged-tree scan and review",
     "full_behavioral_assessment": "not run"

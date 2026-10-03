@@ -1,0 +1,14 @@
+discovery false credit 0
+    full        laws 0 0 0 0 (total 0), experiments 40, seconds 925, kinds []
+    no-dreams   laws 0 1 1 1 (total 3), experiments 35, seconds 896, kinds [{'curve': 1, 'drawing': 0, 'formula': 0}, {'curve': 1, 'drawing': 0, 'formula': 0}, {'curve': 1, 'drawing': 0, 'formula': 0}]
+    no-library  laws 0 0 (total 0), experiments 35, seconds 509, kinds []
+    no-proposer laws 0 0 0 1 (total 1), experiments 46, seconds 884, kinds [{'curve': 1, 'drawing': 0, 'formula': 0}]
+discovery-random false credit 0
+    full        laws 0 0 0 2 (total 2), experiments 49, seconds 834, kinds [{'curve': 1, 'drawing': 0, 'formula': 1}]
+    no-dreams   laws 0 0 0 0 (total 0), experiments 38, seconds 848, kinds []
+    no-library  laws 0 (total 0), experiments 26, seconds 234, kinds []
+    no-proposer laws 0 0 2 0 (total 2), experiments 42, seconds 1066, kinds [{'curve': 1, 'drawing': 0, 'formula': 1}]
+discovery-no-unify false credit 0
+    full        laws 2 0 0 0 (total 2), experiments 48, seconds 1007, kinds [{'curve': 0, 'drawing': 0, 'formula': 2}]
+    no-dreams   laws 0 0 0 1 (total 1), experiments 49, seconds 916, kinds [{'curve': 0, 'drawing': 0, 'formula': 1}]
+    no-proposer laws 2 0 0 0 (total 2), experiments 59, seconds 1154, kinds [{'curve': 0, 'drawing': 0, 'formula': 2}]

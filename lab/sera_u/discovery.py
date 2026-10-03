@@ -116,6 +116,16 @@ class Readout:
         b += x
 
 
+def add_proof(field, key, support=1):
+    """One more proof of `key`, counted as every proof is: in layer B's role counts when the Field understands
+    (SERA-U's MemoryField has no standing table), else in the legacy Field's standing table."""
+    if getattr(field, 'field_understanding', False):
+        from .memory import add_count
+        add_count(field.ideas, ('hypothesis', key), support=support)
+    else:
+        field.standing.setdefault(key, [0, 0])[0] += support
+
+
 def compression_credit(bits, coverage):
     """Two-part code: sum of baseline minus residual bits, minus one law code.
 
@@ -223,7 +233,7 @@ def public_rail(world, observations):
 
 
 class Discovery:
-    def __init__(self, switches):
+    def __init__(self, switches, einstein=None, scientists=None, darwin=None, roadmap=None):
         if set(switches) != set(CRUTCHES) or any(type(v) is not bool for v in switches.values()):
             raise ValueError('Declare all registered discovery switches')
         self.switches = dict(switches)
@@ -234,6 +244,31 @@ class Discovery:
         self.active = None
         self.experiments = self.checks = 0
         self.teacher_shown = False
+        from sera import crutches as CR
+        from .einstein import CRUTCHES as U10, Einstein
+        ways = {k: CR.on(k) for k in U10} if einstein is None else dict(einstein)
+        if set(ways) != set(U10) or any(type(v) is not bool for v in ways.values()):
+            raise ValueError('Declare all four boolean U10 switches')
+        if any(ways.values()):
+            self.einstein = Einstein(ways)
+        from .scientists import CRUTCHES as U11, Scientists
+        habits = {k: CR.on(k) for k in U11} if scientists is None else dict(scientists)
+        if set(habits) != set(U11) or any(type(v) is not bool for v in habits.values()):
+            raise ValueError('Declare all five boolean U11 switches')
+        if any(habits.values()):
+            self.scientists = Scientists(habits)
+        from .darwin import CRUTCHES as U12, Darwin
+        habits = {key: CR.on(key) for key in U12} if darwin is None else dict(darwin)
+        if set(habits) != set(U12) or any(type(value) is not bool for value in habits.values()):
+            raise ValueError('Declare all five boolean U12 switches')
+        if any(habits.values()):
+            self.darwin = Darwin(habits)
+        from .roadmap import CRUTCHES as U13, Roadmap
+        habits = {key: CR.on(key) for key in U13} if roadmap is None else dict(roadmap)
+        if set(habits) != set(U13) or any(type(value) is not bool for value in habits.values()):
+            raise ValueError('Declare all three boolean U13 switches')
+        if any(habits.values()):
+            self.roadmap = Roadmap(habits)
 
     def quantity_values(self, wid):
         rows = [v for k, v in self.quantities.items() if k[1] == wid]
@@ -248,7 +283,16 @@ class Discovery:
 
     def learning_state(self):
         # Events contain raw elapsed costs and are observer reporting only.
-        return {k: v for k, v in self.__dict__.items() if k != 'events'}
+        state = {k: v for k, v in self.__dict__.items() if k not in ('events', 'einstein', 'scientists', 'darwin', 'roadmap')}
+        if hasattr(self, 'einstein'):
+            state['einstein'] = self.einstein.learning_state()
+        if hasattr(self, 'scientists'):
+            state['scientists'] = self.scientists.learning_state()
+        if hasattr(self, 'darwin'):
+            state['darwin'] = self.darwin.learning_state()
+        if hasattr(self, 'roadmap'):
+            state['roadmap'] = self.roadmap.learning_state()
+        return state
 
     def view(self, wid, query=()):
         w, rows = self.worlds[wid], self.observations[wid]
@@ -268,7 +312,7 @@ class Discovery:
         return TaskView((('s', 'num'),), 'num', measurements=tuple(measurements), form='strengths')
 
     def own_question(self, wid, reason, query=()):
-        if reason not in ('surprise', 'committee', 'anomaly'):
+        if reason not in ('surprise', 'committee', 'anomaly', 'paradox', 'principle'):
             raise ValueError('Own public reason required')
         q = OwnQuestion(self.view(wid, query), wid, digest(self.observations[wid]), reason)
         self.questions.append(q)
@@ -316,6 +360,10 @@ class Discovery:
                     attempts=1, first_at=mind.field.tasks, last_at=mind.field.tasks,
                     current_identity=view.identity, current_view=view, status='not-yet',
                     origin='explore', discovery_world=wid))
+        if hasattr(self, 'einstein'):
+            self.einstein.doubt(self, wid, (law,), source=verdict.record)
+        if hasattr(self, 'scientists'):
+            self.scientists.anomaly(self, wid, law, verdict)
         # In particular, do not refute this law's certificates in other worlds.
         return q
 
@@ -365,9 +413,13 @@ class Discovery:
                 # Prefer previously discovered laws; they are conjectures here.
                 found += [e['hypothesis'] for e in self.laws.values() if e['form'] == 'exact'
                           and e['signature'] == (w.tin, w.tout)]
+                if hasattr(self, 'scientists'):
+                    found += list(self.scientists.predicted_laws(self, wid))
                 found = sorted(set(found), key=lambda p: (
                     sum(LG.safe(p, dict(b), concepts) != y for b, y in view.examples),
                     LG.bits(p, concepts)-self.reuse_credit(p, w.form), repr(p)))
+                if hasattr(self, 'einstein'):
+                    found = self.einstein.order(mind, self, wid, found)
                 return tuple(found[:16])
             task = public_rail(w, self.observations[wid])
             mu = self.quantity_values(wid) or task.first_masses()
@@ -517,6 +569,7 @@ class Discovery:
         if type(verdict) is not Certification or not verdict.accepted:
             raise ValueError('Only outer acceptance discovers a law')
         w, concepts = self.worlds[wid], copy.deepcopy(mind.field.concept_table())
+        surface_hyp = hyp
         hyp = expand(hyp, concepts) if w.form == 'exact' else hyp
         # A free curve is a hypothesis class, not one reusable function. Its
         # independently fitted coefficients must never unify by syntax alone.
@@ -531,6 +584,8 @@ class Discovery:
             certificates={}, features=x.copy(), concept_ids=[]))
         fresh = wid not in entry['coverage']
         if fresh:
+            if w.form == 'exact' and hasattr(self, 'roadmap'):
+                self.roadmap.reused(surface_hyp, wid)
             entry['certificates'][wid] = verdict
             # Measured outputs' literal code versus one law code plus a world
             # reference and residual, using only its own observations.
@@ -571,11 +626,9 @@ class Discovery:
             # One outer certificate in one more world is one proof of the law, counted as every proof is (SERA-U keeps
             # standing in layer B's role counts; the legacy Field in its table). The compression credit stays this
             # module's search prior (reuse_credit), never a proof count.
-            if getattr(mind.field, 'field_understanding', False):
-                from .memory import add_count
-                add_count(mind.field.ideas, ('hypothesis', ('discovered-law', key)), support=1)
-            else:
-                mind.field.standing.setdefault(('discovered-law', key), [0, 0])[0] += 1
+            add_proof(mind.field, ('discovered-law', key))
+        if hasattr(self, 'scientists'):
+            self.scientists.admitted(mind, self, wid, key, fresh, seconds)
         return key, fresh
 
     def transfer(self, mind, pool, key, deadline):
@@ -724,6 +777,57 @@ class Discovery:
         covered_before = sum(len(e['coverage']) for e in self.laws.values())
         row = dict(world=wid, origin='explore', search_and_retention=True,
                    experiment=None, certified=None, discovered=False, progress=0.)
+        darwin = getattr(self, 'darwin', None)
+        darwin_context, darwin_gain, watching = None, 0., False
+        if darwin is not None:
+            darwin_context = darwin.run(mind, self, wid, deadline=min(deadline, time.time()+.1))
+            watching = darwin_context[2]
+            row['darwin_methods'] = darwin_context[0]
+        if hasattr(pool, 'next_specimen'):
+            incoming = pool.next_specimen(self)
+            if incoming is not None:
+                specimen_world, samples = incoming
+                if specimen_world not in self.worlds:
+                    raise ValueError('Specimen without a public body')
+                for observation in samples:
+                    observation = observed(observation)
+                    body = self.worlds[specimen_world]
+                    action = (('ask', observation[0]) if body.form == 'exact'
+                              else ('push', observation[0], observation[1]))
+                    forecast = darwin.forecast(mind, self, specimen_world, action) if darwin is not None else None
+                    self.observations[specimen_world].append(observation)
+                    if darwin is not None:
+                        darwin_gain += darwin.receive(mind, self, specimen_world, action, observation, forecast)
+                row['received_specimen'] = specimen_world
+        scientists = getattr(self, 'scientists', None)
+        if scientists is not None:
+            science_record_start = scientists.records()
+            science_chosen, science_moment, science_results, science_chase = scientists.run(
+                mind, self, pool, wid, deadline=deadline)
+            # Persistence is allowed to move focus before this item's search.
+            wid = self.active
+            w = self.worlds[wid]
+            x = self.features(mind, self.view(wid))
+            row['world'] = wid
+            row['scientist_methods'] = science_results
+        einstein = getattr(self, 'einstein', None)
+        if einstein is not None:
+            previous_laws = set(self.laws)
+            record_start = dict(predictions=len(einstein.predictions), revisions=len(einstein.revisions),
+                paradoxes={k: len(p['experiments']) for k, p in einstein.paradoxes.items()},
+                principles={k: digest((p['laws'], p['standing'], p['credit'])) for k, p in einstein.principles.items()})
+            chosen, moment, outcomes = einstein.run(mind, self, pool, wid, deadline=deadline)
+            row['einstein_methods'] = outcomes
+        roadmap = getattr(self, 'roadmap', None)
+        roadmap_context, rough_plan, estimate_id, estimate_gain = None, None, None, 0.
+        if roadmap is not None:
+            roadmap_context = roadmap.run(mind, self, pool, wid, deadline=min(deadline, time.time()+.35))
+            row['roadmap_methods'] = roadmap_context[0]
+            if ('rough_estimates',) in roadmap_context[0] and roadmap.switches['rough_estimates']:
+                rough_plan, _ = self.choose_experiment(self.experiment_menu(mind, wid), x, mind.numpy)
+                if rough_plan is not None:
+                    estimate_id = roadmap.predict(mind, self, wid, rough_plan['action'])
+                    row['rough_estimate'] = estimate_id
         count = len(self.observations[wid])
         question_choice = None
         if self.switches['own_questions'] and (self.rivals[wid] or self.surprises[wid] or
@@ -738,9 +842,13 @@ class Discovery:
             # This self-made view conditions both the Field and language search.
             x = self.features(mind, q.view)
             row['question'] = q.view.identity
-        if count >= (4 if w.form == 'exact' else 2) and time.time() < deadline:
+        if not watching and count >= (4 if w.form == 'exact' else 2) and time.time() < deadline:
             self.rivals[wid] = self.propose(mind, wid, min(deadline, time.time()+.5))
             self.levels[wid] = min(3, self.levels[wid]+1)
+            if roadmap is not None and w.form == 'exact' and not any(all(
+                    LG.safe(p, {'x': value}, mind.field.concept_table()) == y
+                    for value, y in self.observations[wid]) for p in self.rivals[wid]):
+                roadmap.wish((w.tin, w.tout), wid)
         rivals = self.rivals[wid]
         if question_choice == 'question':
             checks = ()
@@ -750,7 +858,13 @@ class Discovery:
                 read = mind.engine._u_reads([q.view])[0][0].detach().cpu().numpy()
                 mind.field.curiosity.decode(q.view, checks, read)
             row['question'] = q.view.identity
-        for hyp in rivals[:2]:
+        estimate_trial = None
+        audit_candidates = rivals[:2]
+        if roadmap is not None and not watching and estimate_id is not None:
+            ordered, estimate_trial = roadmap.order(mind, self, wid, audit_candidates)
+            # Original first two remain the unchanged, unpruned fallback.
+            audit_candidates = tuple(dict.fromkeys(ordered[:2]+rivals[:2]))
+        for hyp in (() if watching else audit_candidates):
             if time.time() >= deadline:
                 break
             concepts = mind.field.concept_table()
@@ -770,8 +884,12 @@ class Discovery:
             verdict = pool.certify(wid, hyp, concepts, tuple(self.observations[wid]), library=mind.field.shapes())
             if type(verdict) is not Certification:
                 raise TypeError('Unsafe judge result')
+            if roadmap is not None:
+                roadmap.checked(estimate_trial, hyp, verdict)
             if inner is not None:
                 inner.verdict(kind, hyp, features, verdict.accepted, source='proof')
+            if einstein is not None:
+                einstein.checked(wid, hyp, verdict.accepted)
             row['certified'] = dict(accepted=verdict.accepted, kind=verdict.kind,
                                     bound=verdict.bound, record=verdict.record)
             if verdict.accepted:
@@ -787,12 +905,26 @@ class Discovery:
                     self.anomaly(mind, wid, key, verdict)
         if time.time() < deadline:
             menu = self.experiment_menu(mind, wid)
-            experiment, route = self.choose_experiment(menu, x, mind.numpy)
+            target = einstein.target(self, wid) if einstein is not None else None
+            if rough_plan is not None and estimate_id is not None:
+                experiment, route = rough_plan, 'random'
+            elif target is not None:
+                experiment, route = target, 'split'
+            elif (scientists is not None and scientists.switches['one_change_experiments']
+                    and ('one_change_experiments',) in science_chosen):
+                experiment, route = scientists.choose_experiment(self, menu, wid, x, mind.numpy, mind.field.concept_table())
+            else:
+                experiment, route = self.choose_experiment(menu, x, mind.numpy)
             if experiment is not None:
                 previous_rivals = len(rivals)
                 entropy = self.rival_entropy(mind, wid) if w.form == 'strengths' else 0.
                 action = experiment['action']
+                prediction_id = (einstein.predict(mind, self, wid, action)
+                    if einstein is not None and ('bold_predictions',) in chosen else None)
+                forecast = darwin.forecast(mind, self, wid, action) if darwin is not None else None
                 observation = observed(pool.act(wid, action))
+                if roadmap is not None and estimate_id is not None:
+                    estimate_gain = roadmap.settle(estimate_id, observation)
                 if w.form == 'exact':
                     if observation[0] != action[1]:
                         raise ValueError('World answered an input SERA did not choose')
@@ -808,7 +940,19 @@ class Discovery:
                                    np.full(len(observation[3]), w.sigma[1])]
                     surprise = (float(np.sqrt(np.mean(((y-np.array(prediction))/scales)**2)))
                                 if prediction is not None else 0.)
+                if einstein is not None:
+                    einstein.confirm(mind, self, wid, action, observation)
+                    prediction_gain = einstein.settle(mind, self, prediction_id, observation)
+                    row['bold_prediction'] = prediction_id
+                    row['prediction_gain'] = prediction_gain
+                if scientists is not None:
+                    scientists.meet(self, wid, action, observation)
+                    row['experiment_option'] = route
+                    if 'anchor' in experiment:
+                        row['one_change_anchor'] = experiment['anchor']
                 self.observations[wid].append(observation)
+                if darwin is not None:
+                    darwin_gain += darwin.receive(mind, self, wid, action, observation, forecast)
                 if mind.proposer.memory is not None:
                     mind.memory.refresh(self.view(wid))
                 self.surprises[wid] = surprise
@@ -818,7 +962,7 @@ class Discovery:
                         if w.form == 'exact' else
                         max(0., entropy-self.rival_entropy(mind, wid))/max(1., entropy))
                 row['progress'] = gain
-                if self.switches['designed_experiments']:
+                if self.switches['designed_experiments'] or route == 'one-change':
                     self.policy.learn(route, x, gain, time.perf_counter()-started)
                 if surprise and self.switches['own_questions'] and question_choice == 'question':
                     self.own_question(wid, 'surprise')
@@ -829,9 +973,54 @@ class Discovery:
         self.policy.learn(choice, x, gain, row['seconds'])
         if question_choice is not None:
             self.policy.learn(question_choice, x, gain, row['seconds'])
+        if einstein is not None:
+            doubt_removed = max(0., moment['doubt']-self.rival_entropy(mind, wid))
+            certification_gain = float(sum(len(e['coverage']) for e in self.laws.values())-covered_before)
+            einstein.feedback(chosen, moment, doubt_removed+certification_gain+row.get('prediction_gain', 0.), row['seconds'])
+            row['einstein_doubt_removed'] = doubt_removed
+            row['einstein_law_kinds'] = [self.laws[k]['kind'] for k in sorted(set(self.laws)-previous_laws)]
+            row['einstein'] = einstein.report()
+            # Store deltas, not a growing full history at every tick.
+            row['einstein_records'] = copy.deepcopy(dict(
+                paradoxes={k: p for k, p in einstein.paradoxes.items()
+                           if record_start['paradoxes'].get(k) != len(p['experiments'])},
+                principles={k: p for k, p in einstein.principles.items()
+                            if record_start['principles'].get(k) != digest((p['laws'], p['standing'], p['credit']))},
+                revisions=einstein.revisions[record_start['revisions']:],
+                predictions=einstein.predictions[record_start['predictions']:]))
+        if scientists is not None:
+            scientists.feedback(self, science_chosen, science_moment, science_results, row, science_chase)
+
+            row['scientists'] = scientists.report()
+            row['scientist_records'] = scientists.records_delta(science_record_start)
+        if darwin is not None:
+            darwin.feedback(mind, self, darwin_context, row, darwin_gain)
+            row['darwin'] = darwin.report(mind.field)
+            charged = time.perf_counter()-started
+            darwin.costs['real'] += max(0., charged-row['seconds'])
+            row['seconds'] = charged
+            row['darwin']['seconds'] = dict(darwin.costs)
+        if roadmap is not None:
+            roadmap.feedback(roadmap_context, row, estimate_gain)
+            if estimate_trial is not None and not estimate_trial['solved']:
+                if time.time() >= deadline:
+                    roadmap.pruning_counts['censored_fallbacks'] += 1
+                roadmap.estimate_choice.learn(estimate_trial['method'], estimate_trial['feature'], -.05, 1.)
+            row['roadmap'] = roadmap.report()
         row['experiments_total'] = self.experiments
         self.events.append(row)
         return row
+
+
+def einstein_records(rows):
+    result = dict(paradoxes={}, principles={}, revisions=[], predictions=[])
+    for row in rows:
+        record = row.get('einstein_records', {})
+        result['paradoxes'].update(record.get('paradoxes', {}))
+        result['principles'].update(record.get('principles', {}))
+        result['revisions'].extend(record.get('revisions', ()))
+        result['predictions'].extend(record.get('predictions', ()))
+    return result
 
 
 def generation_report(rows):
@@ -840,7 +1029,47 @@ def generation_report(rows):
     experiments = sum(r.get('experiment') is not None for r in rows)
     kinds = {k: sum(r['certified']['kind'] == k for r in discoveries) for k in ('curve', 'drawing', 'formula')}
     n = len(discoveries)
-    return dict(laws=n, by_kind=kinds, seconds=seconds, experiments=experiments,
+    if any('einstein_law_kinds' in r for r in rows):
+        accepted = [kind for r in rows for kind in r.get('einstein_law_kinds', ())]
+        kinds = {kind: accepted.count(kind) for kind in ('curve', 'drawing', 'formula')}
+        n = len(accepted)
+    result = dict(laws=n, by_kind=kinds, seconds=seconds, experiments=experiments,
                 seconds_per_law=seconds/n if n else None, experiments_per_law=experiments/n if n else None,
                 reuse=sum(bool(r.get('reused'))+sum(t['accepted'] for t in r.get('transfer', ())) for r in rows),
                 credit='compression credit, not proof of truth; rediscovery of laws we hid')
+    latest = next((r for r in reversed(rows) if 'einstein' in r), None)
+    if latest is not None:
+        result['einstein'] = copy.deepcopy(latest['einstein'])
+        result['einstein_records'] = copy.deepcopy(einstein_records(rows))
+    latest_science = next((r for r in reversed(rows) if 'scientists' in r), None)
+    if latest_science is not None:
+        result['scientists'] = copy.deepcopy(latest_science['scientists'])
+        result['scientist_records'] = scientist_records(rows)
+    latest_darwin = next((row for row in reversed(rows) if 'darwin' in row), None)
+    if latest_darwin is not None:
+        result['darwin'] = copy.deepcopy(latest_darwin['darwin'])
+    latest_roadmap = next((row for row in reversed(rows) if 'roadmap' in row), None)
+    if latest_roadmap is not None:
+        result['roadmap'] = copy.deepcopy(latest_roadmap['roadmap'])
+    return result
+
+
+def scientist_records(rows):
+    """Combine changed records; append chase attempts and experiment histories."""
+    result = dict(families={}, predictions={}, relations={}, conserved={}, chases={}, experiment_origins={})
+    for row in rows:
+        record = row.get('scientist_records', {})
+        for group in ('families', 'relations', 'conserved'):
+            result[group].update(copy.deepcopy(record.get(group, {})))
+        predictions = record.get('predictions', {})
+        if isinstance(predictions, list):
+            predictions = {p['id']: p for p in predictions}
+        result['predictions'].update(copy.deepcopy(predictions))
+        for key, value in record.get('chases', {}).items():
+            old = result['chases'].get(key, {})
+            result['chases'][key] = {**copy.deepcopy(value),
+                'attempts': old.get('attempts', [])+copy.deepcopy(value.get('attempts', [])),
+                'gains': old.get('gains', [])+copy.deepcopy(value.get('gains', []))}
+        for key, values in record.get('experiment_origins', {}).items():
+            result['experiment_origins'].setdefault(key, []).extend(copy.deepcopy(values))
+    return result

@@ -231,10 +231,40 @@ class UBackend:
 
     def live(self, task, phase, wall, channel, teaching=False):
         with answer_seam(self.mind, channel, phase):
-            return self.mind.live(task, phase=phase, teaching=teaching,
-                                  origin='book' if phase == 'study' else None, task_wall=wall)
+            result = self.mind.live(task, phase=phase, teaching=teaching,
+                                    origin='book' if phase == 'study' else None, task_wall=wall)
+            if self.mind.discovery is not None and hasattr(self.mind.discovery, 'einstein'):
+                self.mind.discovery.einstein.methods.end_task()
+            if self.mind.discovery is not None and hasattr(self.mind.discovery, 'scientists'):
+                self.mind.discovery.scientists.methods.end_task()
+            if self.mind.discovery is not None and hasattr(self.mind.discovery, 'darwin'):
+                self.mind.discovery.darwin.methods.end_task()
+            if self.mind.discovery is not None and hasattr(self.mind.discovery, 'roadmap'):
+                self.mind.discovery.roadmap.methods.end_task()
+            return result
 
     def demonstrate(self, task):
+        if self.mind.discovery is not None and hasattr(self.mind.discovery, 'roadmap'):
+            with self.mind.scope():
+                self.mind.discovery.roadmap.demonstrate(self.mind, TaskView.from_task(task),
+                                                       phase='lesson', origin='taught')
+        if self.mind.discovery is not None and hasattr(self.mind.discovery, 'darwin'):
+            with self.mind.scope():
+                self.mind.discovery.darwin.demonstrate(self.mind, TaskView.from_task(task),
+                                                      phase='lesson', origin='taught')
+        if self.mind.discovery is not None and hasattr(self.mind.discovery, 'scientists'):
+            with self.mind.scope():
+                self.mind.discovery.scientists.demonstrate(self.mind, TaskView.from_task(task),
+                                                          phase='lesson', origin='taught')
+                habits = self.mind.discovery.scientists
+                if habits.switches['conserved_quantities'] and not habits.conservation_shown:
+                    from scripts.sera_u_scientists import taught_motion_view
+                    habits.demonstrate(self.mind, taught_motion_view(self.mind.seed),
+                                       phase='lesson', origin='taught')
+        if self.mind.discovery is not None and hasattr(self.mind.discovery, 'einstein'):
+            with self.mind.scope():
+                self.mind.discovery.einstein.demonstrate(self.mind, TaskView.from_task(task),
+                                                       phase='lesson', origin='taught')
         if self.mind.crutches.get('memory_choice'):
             # Teacher policy only. The learner gets a fading demonstration,
             # never this resemblance test as a decision rule or a target law.
@@ -799,6 +829,14 @@ def run(out, *, seed=3, hours=5.75, device='cpu', shares=SHARES, task_wall=30., 
             if state['active'] != phase:
                 weight = WEIGHTS[phase] if backend.kind == 'U' else 1.
                 fade(backend.field, state['weight'], weight)
+                if hasattr(backend, 'mind') and backend.mind.discovery is not None and hasattr(backend.mind.discovery, 'einstein'):
+                    backend.mind.discovery.einstein.phase(phase)
+                if hasattr(backend, 'mind') and backend.mind.discovery is not None and hasattr(backend.mind.discovery, 'scientists'):
+                    backend.mind.discovery.scientists.phase(phase, backend.mind.discovery)
+                if hasattr(backend, 'mind') and backend.mind.discovery is not None and hasattr(backend.mind.discovery, 'darwin'):
+                    backend.mind.discovery.darwin.phase(phase)
+                if hasattr(backend, 'mind') and backend.mind.discovery is not None and hasattr(backend.mind.discovery, 'roadmap'):
+                    backend.mind.discovery.roadmap.phase(phase)
                 state['weight'], state['active'] = weight, phase
                 state['phase_deadlines'][phase] = min(state['total_deadline'], clock()+state['budgets'][phase])
                 if phase == 'lesson' and hasattr(backend, 'teach_words'):

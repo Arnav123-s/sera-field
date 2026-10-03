@@ -67,9 +67,19 @@ def source_identity():
 def code_identity():
     root = Path(__file__).resolve().parents[1]
     paths = sorted([*root.glob('sera/*.py'), *root.glob('ccops5/core/*.py'),
-                    *root.glob('sera_u/*.py'), root/'scripts/sera_u_rsi.py', root/'scripts/sera_u_discovery.py'])
+                    *root.glob('sera_u/*.py'), root/'scripts/sera_u_rsi.py', root/'scripts/sera_u_discovery.py',
+                    root/'scripts/sera_u_einstein.py', root/'scripts/sera_u_scientists.py', root/'scripts/sera_u_darwin.py', root/'scripts/sera_u_roadmap.py'])
     return digest([(str(p.relative_to(root)).replace('\\', '/'), hashlib.sha256(p.read_bytes()).hexdigest())
                    for p in paths if p.is_file()])
+
+
+def expanded_size(p, concepts):
+    """A program's size with its concept calls expanded; None when it calls a concept this mind does not hold (VM C's
+    no-library arm, 25d7a29: an unproven answer kept a call from before the arm's library was taken away)."""
+    try:
+        return LG.size(expand(p, concepts))
+    except ValueError:
+        return None
 
 
 def global_rng():
@@ -658,7 +668,13 @@ class Engine(ONE.Sera):
             if task.form == 'exact':
                 temporary = self._concepts()
                 temporary.update(concepts)
-                out = {expand(p, temporary): (origin, m) for p, (origin, m) in out.items()}
+                expanded = {}
+                for p, (origin, m) in out.items():
+                    try:
+                        expanded[expand(p, temporary)] = (origin, m)
+                    except ValueError:      # it calls a concept this arm does not hold: it cannot run, so it is dropped
+                        continue
+                out = expanded
         finally:
             self.field, self.memory, self.proposer.memory = original, memory, pmemory
             self.proposer.memory_a_enabled = original_memory_a
@@ -957,6 +973,11 @@ class Engine(ONE.Sera):
         return super()._correct(words, frame, y, got, cid if type(cid) is int else None, *args, **kwargs)
 
     def _wish(self, *args, **kwargs):
+        roadmap = getattr(self.field, 'roadmap_readout', None)
+        if roadmap is not None and args and args[0].form == 'exact' and len(args[0].inputs) == 1:
+            task = args[0]
+            roadmap.wish((next(iter(task.inputs.values())), task.out),
+                         digest((tuple(sorted(task.inputs.items())), task.out, task.data)))
         return super()._wish(*args, **kwargs) if self.library_enabled else []
 
     def _build(self, *args, **kwargs):
@@ -1015,7 +1036,7 @@ class AssessmentTask:
 
 class SeraU:
     def __init__(self, seed=3, *, device='cpu', config=None, arm='full', field=None, crutches=None,
-                 batched_reads=True, discovery=None):
+                 batched_reads=True, discovery=None, einstein=None, scientists=None, darwin=None, roadmap=None):
         if type(batched_reads) is not bool:
             raise ValueError('batched_reads must be boolean')
         self.batched_reads = batched_reads
@@ -1025,7 +1046,7 @@ class SeraU:
         if set(discovery_switches) != set(U9_CRUTCHES) or any(type(v) is not bool for v in discovery_switches.values()):
             raise ValueError('Declare the registered boolean discovery crutches')
         # No entity, RNG draw, port, extra record or payload slot on the old path.
-        self.discovery = Discovery(discovery_switches) if discovery_switches['open_worlds'] else None
+        self.discovery = Discovery(discovery_switches, einstein=einstein, scientists=scientists, darwin=darwin, roadmap=roadmap) if discovery_switches['open_worlds'] else None
         self.u8_declared = 'memory_choice' in self.crutches
         memory_choice = self.crutches.pop('memory_choice', False)
         self.u7_declared = any(k in self.crutches for k in U7_CRUTCHES)
@@ -1060,6 +1081,9 @@ class SeraU:
             self.owner.port_enabled = self.crutches['field_input_ports']
             self.optimizer = torch.optim.AdamW(self.owner.parameters(), lr=.001, weight_decay=.0001)
             self.field = copy.deepcopy(field) if field is not None else PH.Field(seed)
+            if hasattr(self.field, 'einstein_methods') and not (self.discovery is not None
+                                                                and hasattr(self.discovery, 'einstein')):
+                raise ValueError('U10-off requires its own U9 history')
             if getattr(self.field, 'field_understanding', False) and not self.crutches['field_understanding']:
                 raise ValueError('Understanding-off requires its own fresh legacy history')
             if not self.crutches['sleep_library']:
@@ -1071,6 +1095,24 @@ class SeraU:
                     self.field.memory_choice = PH.MemoryChoice()
             elif hasattr(self.field, 'memory_choice'):
                 raise ValueError('Memory-choice-off requires its own fixed memory history')
+            if self.discovery is not None and hasattr(self.discovery, 'einstein'):
+                # After MemoryField.adopt (it rebuilds the Field): the Field holds the very head discovery trains.
+                self.field.einstein_methods = self.discovery.einstein.methods
+            if self.discovery is not None and hasattr(self.discovery, 'scientists'):
+                self.field.scientist_methods = self.discovery.scientists.methods
+            elif hasattr(self.field, 'scientist_methods'):
+                raise ValueError('U11-off requires its own U10 history')
+            if self.discovery is not None and hasattr(self.discovery, 'darwin'):
+                self.discovery.darwin.attach(self.field)
+            elif hasattr(self.field, 'hologram'):
+                raise ValueError('U12-off requires its own fresh history')
+            if self.discovery is not None and hasattr(self.discovery, 'roadmap'):
+                previous = getattr(self.field, 'roadmap_readout', None)
+                if previous is not None and previous.switches != self.discovery.roadmap.switches:
+                    raise ValueError('U13 ablation requires its own fresh history')
+                self.discovery.roadmap.attach(self.field)
+            elif hasattr(self.field, 'roadmap_readout'):
+                raise ValueError('U13-off requires its own fresh history')
             if hasattr(self.field, 'curiosity') and not self.crutches['gap_syndromes']:
                 raise ValueError('Curiosity-off requires its own U3 history')
             self.proposer = Proposer(self.owner, self.field, enabled=self.crutches['field_proposer'])
@@ -1148,6 +1190,26 @@ class SeraU:
             if self.discovery is not None:
                 CR.ON = (CR.ON-set(U9_CRUTCHES)) | {k for k, v in self.discovery.switches.items() if v}
                 CR.OFF = (CR.OFF-set(U9_CRUTCHES)) | {k for k, v in self.discovery.switches.items() if not v}
+                if hasattr(self.discovery, 'einstein'):
+                    from .einstein import CRUTCHES as U10_CRUTCHES
+                    ways = self.discovery.einstein.switches
+                    CR.ON = (CR.ON-set(U10_CRUTCHES)) | {k for k, v in ways.items() if v}
+                    CR.OFF = (CR.OFF-set(U10_CRUTCHES)) | {k for k, v in ways.items() if not v}
+                if hasattr(self.discovery, 'scientists'):
+                    from .scientists import CRUTCHES as U11_CRUTCHES
+                    habits = self.discovery.scientists.switches
+                    CR.ON = (CR.ON-set(U11_CRUTCHES)) | {k for k, v in habits.items() if v}
+                    CR.OFF = (CR.OFF-set(U11_CRUTCHES)) | {k for k, v in habits.items() if not v}
+                if hasattr(self.discovery, 'darwin'):
+                    from .darwin import CRUTCHES as U12_CRUTCHES
+                    habits = self.discovery.darwin.switches
+                    CR.ON = (CR.ON-set(U12_CRUTCHES)) | {key for key, value in habits.items() if value}
+                    CR.OFF = (CR.OFF-set(U12_CRUTCHES)) | {key for key, value in habits.items() if not value}
+                if hasattr(self.discovery, 'roadmap'):
+                    from .roadmap import CRUTCHES as U13_CRUTCHES
+                    habits = self.discovery.roadmap.switches
+                    CR.ON = (CR.ON-set(U13_CRUTCHES)) | {key for key, value in habits.items() if value}
+                    CR.OFF = (CR.OFF-set(U13_CRUTCHES)) | {key for key, value in habits.items() if not value}
             TS.VOCAB, TS.WORDS, TS._NEXT = (copy.deepcopy(self.word_symbols['vocab']),
                                           copy.deepcopy(self.word_symbols['words']), list(self.word_symbols['next']))
             TK.BOOK = self.book
@@ -1520,7 +1582,18 @@ class SeraU:
             raise ValueError('Exact resume requires the same device, runtime, threads and lab crutches')
         result = cls(p['seed'], device=selected_device, config=NativeConfig(**p['config']), arm=p['arm'],
                      field=p['field'], crutches=p['crutches'], batched_reads=p.get('batched_reads', True),
-                     discovery=p['discovery'].switches if 'discovery' in p else {k: False for k in U9_CRUTCHES})
+                     discovery=p['discovery'].switches if 'discovery' in p else {k: False for k in U9_CRUTCHES},
+                     einstein=(p['discovery'].einstein.switches if 'discovery' in p and hasattr(p['discovery'], 'einstein')
+                               else dict.fromkeys(('thought_experiments', 'symmetry_principles',
+                                                   'doubt_assumptions', 'bold_predictions'), False)),
+                     scientists=(p['discovery'].scientists.switches if 'discovery' in p and hasattr(p['discovery'], 'scientists')
+                                 else dict.fromkeys(('one_change_experiments', 'gap_predictions', 'number_conjectures',
+                                                     'conserved_quantities', 'anomaly_pursuit'), False)),
+                     darwin=(p['discovery'].darwin.switches if 'discovery' in p and hasattr(p['discovery'], 'darwin')
+                             else dict.fromkeys(('world_hologram', 'patient_observation', 'lineage_trees',
+                                                 'change_mechanisms', 'deep_time'), False)),
+                     roadmap=(p['discovery'].roadmap.switches if 'discovery' in p and hasattr(p['discovery'], 'roadmap')
+                              else dict.fromkeys(('own_operations', 'rederive_concepts', 'rough_estimates'), False)))
         if result.crutches != p['crutches']:
             raise ValueError('Changed arm crutch settings')
         result.u7_declared = p.get('u7_declared', False)
@@ -1547,6 +1620,14 @@ class SeraU:
         result.word_symbols = p['word_symbols']
         result.book = p['book']
         result.discovery = p.get('discovery')
+        if result.discovery is not None and hasattr(result.discovery, 'einstein'):
+            result.field.einstein_methods = result.discovery.einstein.methods
+        if result.discovery is not None and hasattr(result.discovery, 'scientists'):
+            result.field.scientist_methods = result.discovery.scientists.methods
+        if result.discovery is not None and hasattr(result.discovery, 'darwin'):
+            result.discovery.darwin.attach(result.field)
+        if result.discovery is not None and hasattr(result.discovery, 'roadmap'):
+            result.discovery.roadmap.attach(result.field)
         # Runtime LG tables are deliberately rebuilt; no cross-task global cache is learning state.
         LG.forget_searches()
         return result
@@ -1582,6 +1663,11 @@ class SeraU:
                     # The log's per-task wall seconds are an elapsed-time counter (0.5 vs 0.6 s flipped the hash).
                     state = {**state, 'log': [{k: v for k, v in e.items() if k != 'wall'} if isinstance(e, dict)
                                               else e for e in state['log']]}
+                if isinstance(value, PH.Field) and 'hologram' in state:
+                    from .darwin import clean
+                    state = {**state, 'hologram': clean(state['hologram'])}
+                if isinstance(value, PH.Field) and 'roadmap_readout' in state:
+                    state = {**state, 'roadmap_readout': state['roadmap_readout'].learning_state()}
                 add({k: v for k, v in state.items() if k != 'gen'} if isinstance(value, PH.Ideas) else state)
             elif isinstance(value, Syndrome):
                 # A self-check's cost is its measured seconds (a record, never learned from): an elapsed-time counter.
@@ -1633,7 +1719,7 @@ class SeraU:
                     proposal=clone.proposer.stats['proposal']-self.proposer.stats['proposal'],
                     judge=(rec or {}).get('timing', {}).get('prove', 0.)+judge_wall,
                     expanded_size=None if not rec or rec.get('answer') is None else
-                        LG.size(expand(rec['answer'], clone.engine._concepts())),
+                        expanded_size(rec['answer'], clone.engine._concepts()),
                     surface_size=None if not rec or rec.get('answer') is None else LG.size(rec['answer']),
                     execution=(rec or {}).get('sera_u', {}).get('execution', {}),
                     candidates=clone.proposer.stats['candidates']-self.proposer.stats['candidates'],

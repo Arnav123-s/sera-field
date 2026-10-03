@@ -1,0 +1,8 @@
+ref r0 m0 wall 10.2 p95 13.1 inf 8.91
+ref r0 m1 wall 13.2 p95 15.4 inf 2.13
+ref r1 m0 wall 16.0 p95 19.4 inf 15.88
+ref r1 m1 wall 17.8 p95 22.4 inf 10.57
+nat r0 m0 wall 10.2 p95 10.3 inf 2.29
+nat r0 m1 wall 12.8 p95 14.6 inf 1.59
+nat r1 m0 wall 10.5 p95 11.6 inf 8.36
+nat r1 m1 wall 16.5 p95 19.8 inf 9.24

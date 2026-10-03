@@ -29,6 +29,9 @@ def test_lists_hold_lists_and_nothing_about_grids_is_given():
     mirror = LG.node('map', LG.node('lam', LG.node('c', E, payload=1), payload='e'), G)
     assert LG.safe(mirror, {'g': g}, cs) == ((2, 1), (4, 3), (6, 5))
     assert LG.safe(LG.node('c', G, payload=1), {'g': g}, cs) == ((5, 6), (3, 4), (1, 2))
+    # A call of a concept the mind does not hold (U pilot, no-library arm: KeyError 4) is a bad program, not a crash.
+    assert LG.safe(LG.node('c', G, payload=4), {'g': g}, cs) is None
+    assert LG.safe(LG.node('c', G, payload=1), {'g': g}, {}) is None
 
 
 def test_a_concept_has_the_most_general_type_its_body_allows():

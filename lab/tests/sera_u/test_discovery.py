@@ -21,6 +21,7 @@ from sera_u.field.native_owner import NativeConfig
 from sera_u.mind import Engine, U_CRUTCHES, arm_settings
 from sera_u.ports import TaskView, digest
 from sera_u.sleep import Receipt, expand, family, independent
+from scripts import sera_u_discovery as SD
 from scripts.sera_u_discovery import WorldPool, report, validate
 
 
@@ -116,8 +117,10 @@ def test_registered_removable_default_off_and_old_payload(monkeypatch):
     monkeypatch.setattr(Engine, '_u_reads', read_stub)
     task1 = TS.number_task('old', lambda x: x, 3, 1)
     task2 = TS.number_task('old', lambda x: x, 3, 1)
-    a = baseline.live(task1, max_steps=1)
-    b = off.live(task2, max_steps=1)
+    # One step, never the 10 s wall: six engineering gates at once on one VM (Colab, 2026-10-03) cut one live's
+    # search at the wall and not the other's, so their unproven best guesses differed.
+    a = baseline.live(task1, max_steps=1, task_wall=math.inf)
+    b = off.live(task2, max_steps=1, task_wall=math.inf)
     def logical(value):
         if isinstance(value, dict):
             # 'execution' counts interpreter work, which shared search caches change between two lives (Colab,
@@ -624,3 +627,43 @@ def test_rail_pool_noise_counters_restore_from_own_acts_only():
     b.sync(copy.deepcopy(d))
     assert bodies[0].made == bodies[1].made == {0: 2, 1: 1}
     assert bodies[0].log == bodies[1].log == []
+
+
+def test_novel_worlds_are_built_once_when_frozen_and_unbuildable_ones_dropped(monkeypatch):
+    calls = []
+
+    def novel_world(shape, seed, n, tries=40, *, known=None):
+        calls.append((shape, n, tries, known))
+        if shape == 'dead zone':
+            raise RuntimeError('no novel world of dead zone: [...]')
+        return SimpleNamespace(novelty=dict(gap=.9, nearest='some list law', attempt=2), shape=shape, n=n,
+                               n_situations=0)
+
+    monkeypatch.setattr(SD.NV, 'novel_world', novel_world)
+    rows = [dict(id='d0', form='strengths', novel='dead zone', seed=9003, index=90000),
+            dict(id='d1', form='strengths', novel='ripple', seed=9003, index=90001),
+            dict(id='d2', form='strengths', level=2, units=False, seed=9003, index=90002)]
+    kept, dropped = SD.buildable(rows)
+    assert [r['id'] for r in kept] == ['d1', 'd2'] and [d['id'] for d in dropped] == ['d0']
+    assert kept[0]['attempt'] == 2 and kept[0]['gap'] == .9 and 'attempt' not in kept[1]
+    assert calls == [('dead zone', 90000, SD.FREEZE_TRIES, None), ('ripple', 90001, SD.FREEZE_TRIES, None)]
+    suite = dict(assessment=[], wake=[], retention=[])
+    validate(dict(schema='u9-discovery-1', worlds=kept[:1]), suite)
+    with pytest.raises(ValueError, match='freeze again'):
+        validate(dict(schema='u9-discovery-1', worlds=rows[1:2]), suite)
+    world = WorldPool(dict(schema='u9-discovery-1', worlds=kept[:1])).body('d1')
+    assert world.n == 90001 and calls[-1] == ('ripple', 90001, 40, (2, .9, 'some list law'))
+
+
+def test_a_proof_counts_on_both_field_kinds():
+    # VM A's U12 A/B (477f36d): every Darwin case stopped writing a MemoryField's standing table, which it has not.
+    from sera_u.discovery import add_proof
+    from sera_u.memory import MemoryField, counts
+    legacy = PH.Field(3)
+    add_proof(legacy, ('discovered-law', 'k'))
+    add_proof(legacy, ('discovered-law', 'k'))
+    assert legacy.standing[('discovered-law', 'k')] == [2, 0]
+    field = MemoryField.adopt(PH.Field(3), True)
+    assert not hasattr(field, 'standing')
+    add_proof(field, ('concept-relation', 't'))
+    assert counts(field.ideas, ('hypothesis', ('concept-relation', 't'))) == (1, 0)

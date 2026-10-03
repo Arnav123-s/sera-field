@@ -1,0 +1,31 @@
+{
+  "batch_seconds": 8.48663992999991,
+  "batched_reads": true,
+  "code": "08736dc899fdf3c1e67941666000c00c19cf26e922f0bc0e7ee8a5438cf81f5c",
+  "common_batches": 39,
+  "device": "cpu",
+  "engineering": true,
+  "exact_resume": true,
+  "gpu_peak_bytes": 0,
+  "gradient": {
+    "core.links": 0.10572149604558945,
+    "production_query.weight": 1.3903290033340454,
+    "words.weight": 0.14894194900989532
+  },
+  "laptop_latency_certified": false,
+  "latency_inputs": "balanced number/list, four examples, twenty query/probe records, lists through length eight",
+  "median": 0.012566926000090461,
+  "owner_reference_hash": "dfe84ed56e2b790c20323cf971194d236c506c14f1ce70c820b78a926dd14fb8",
+  "p95": 1.7813185557001812,
+  "parameters": 925413,
+  "peak_process_mb": 539.6953125,
+  "runtime": {
+    "machine": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "numpy": "2.3.5",
+    "processor": "x86_64",
+    "threads": 1,
+    "torch": "2.10.0+cpu"
+  },
+  "source": "41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322",
+  "wall": 347.7511739010006
+}

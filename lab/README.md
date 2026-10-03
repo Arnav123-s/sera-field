@@ -4,7 +4,7 @@ One learner that proposes ideas, learns across worlds, and retains discoveries
 accepted by an independent judge. Its Field holds learned concepts, words, and
 ways of working. No pretrained language model runs inside SERA.
 
-[SERA-U implementation and results](docs/SERA_U_STATUS.md) · [Discovery-lab results and limitations](docs/SERA_STATUS.md) · [How it works](docs/SERA_EXPLAINED.md) · [Research plan](SERA_V3_PLAN.md)
+[SERA-U results](SERA_U_REPORT.md) · [Implementation status](docs/SERA_U_STATUS.md) · [Discovery-lab results](docs/SERA_STATUS.md) · [How it works](docs/SERA_EXPLAINED.md)
 
 ## Quick start
 

@@ -6,7 +6,7 @@ and adds a reviewed current-file snapshot of the SERA discovery lab.
 - Learned-field source revision: `7c39634b7cc193dfa50c894ec1e69e42993a3f73`.
 - Discovery-lab source revision: `04fd415caf790f1476e138809e32e905f7e31392`.
 - Unified-lab source revision: `120fdc46d629923b7c60d010854da297a01a4ed1`.
-- Publication date: 2026-10-02.
+- Publication date: 2026-10-03.
 
 Included: implementation, tests, prospective protocols, architecture and usage
 guides, compact results, costs, and assessed inference checkpoints already in

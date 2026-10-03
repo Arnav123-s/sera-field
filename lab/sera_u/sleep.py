@@ -66,6 +66,14 @@ def rewrite(p, concept):
     return p[:2]+tuple(rewrite(k, concept) for k in p[2:])
 
 
+def checked_substitution(expanded, rewritten, environments, concepts):
+    """The shared Sleep.abstract admission check, with both interpreters."""
+    for env in environments:
+        if (LG.evaluate(rewritten, env, concepts) != LG.evaluate(expanded, env, {}) or
+                independent(rewritten, env, concepts) != independent(expanded, env, {})):
+            raise ValueError('Library rewrite failed checked substitution')
+
+
 def independent(p, env, concepts, *, limit=LG.MAX_STEPS):
     steps = [0]
 
@@ -354,11 +362,8 @@ class Sleep:
                     if LG.infer(c['body'], concepts) is None:
                         raise ValueError('Inner ability failed type validation')
                     rewritten = rewrite(expanded, c)
-                    for bindings, _ in receipt.view.examples:
-                        env = dict(bindings)
-                        if (LG.evaluate(rewritten, env, concepts) != LG.evaluate(expanded, env, {}) or
-                                independent(rewritten, env, concepts) != independent(expanded, env, {})):
-                            raise ValueError('Library rewrite failed checked substitution')
+                    checked_substitution(expanded, rewritten,
+                        (dict(bindings) for bindings, _ in receipt.view.examples), concepts)
         if kept:
             self.mind.proposer.changed()
         return kept

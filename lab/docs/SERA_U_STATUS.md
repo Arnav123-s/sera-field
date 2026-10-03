@@ -18,14 +18,15 @@ is loaded; the unified learner initializes its geometric Field from fresh weight
 | U7 answer or continue, revisit queue | Merged; requires teaching of the choice |
 | U5 course, crutch ledger, 12-arm comparison runner | Merged; full comparison not completed |
 | US3 faster faculty readouts | Merged; mixed measured results below |
-| US3b batched layer-B reads and cache use | Merged; completed before/after timing pending |
+| US3b batched layer-B reads and cache use | Merged; saved profile shows modest memory-on improvement |
 | U8 learned memory consultation and retention choices | Merged; outcome per second and later memory-use eligibility guide learning |
 | U9 autonomous discovery | Merged; learner poses questions, chooses experiments and submits laws to independent judges |
-| U10 scientist-inspired thought experiments and invariance | Work in progress; not implemented in this snapshot |
-| U11 additional scientific and mathematical habits | Planned; not implemented in this snapshot |
-| U12 internal-world lineage and gradual-change reasoning | Planned; not implemented in this snapshot |
+| U10 thought experiments, invariance, assumptions and predictions | Merged; comparison runs partly complete |
+| U11 scientific and mathematical habits | Merged; comparisons pending |
+| U12 internal-world lineage and gradual-change reasoning | Merged; comparisons pending |
+| U13 typed operations, reconstruction and calibrated estimates | Merged; comparisons pending |
 
-The local development record reports 294 SERA-U tests passing after U9.
+The local development record reports 429 SERA-U tests passing after U13.
 This is a historical test result; see the publication manifest for checks actually
 run on this public snapshot. Test totals from different stages overlap.
 
@@ -57,15 +58,53 @@ with faculty readouts and memory disabled, median item time improved 21.3 to
 11.4 seconds. With memory enabled, it worsened 24.7 to 34.1 seconds. Configurations
 without faculty readouts were essentially unchanged. All remained over the
 10-second item budget. US3b addresses batching across different layer-B rings and
-using the step-read cache, but no completed speed result is available here.
+using the step-read cache, and its newer profile is reported below.
 
 U8 lets the learner choose plain/A/B/both reads and whether to remember an item.
 Later successful memory use earns eligibility credit; this is not causal proof
 of memory usefulness. U9 adds question selection, discriminating experiments,
-independently checked laws, and compression priors. Full behavioral comparisons
-for these new components have not completed.
+independently checked laws, and compression priors. New full-arm comparisons for memory and discovery are reported below;
+some other arms stopped early, and broader capability claims remain unassessed.
 
-## Incomplete comparisons
+## Latest comparisons (2026-10-03)
+
+The [research report](../SERA_U_REPORT.md) and [detail tables](../SERA_U_REPORT_TABLES.md)
+retain the generated measurements, suite identities and interpretation. Some
+underlying runtime-state snapshots referenced by those tables remain in the local
+archive; compact curves, protocols and summaries are published here.
+
+On one shared assessment suite, full-arm solved counts out of 48 across g0-g3:
+
+| Memory configuration | g0 | g1 | g2 | g3 |
+|---|---:|---:|---:|---:|
+| Layers disabled | 26 | 48 | 39 | 47 |
+| Always enabled | 28 | 40 | 38 | 34 |
+| Learner chooses | 26 | 33 | 38 | 36 |
+
+One replicate pair differed by up to 10/48 items and 4.3 seconds. This is an
+observed spread, not a confidence interval. Most differences are within it; a
+single run per configuration does not establish a memory benefit or disadvantage.
+The full-arm generations are available even where later ablation arms stopped.
+
+Discovery found few of 14 hidden laws in approximately 15 minutes per full arm:
+designed experiments certified 0, random experiments 2, and no unification credit 2.
+Certificate kinds differ: curves must not be described as formula proofs.
+Discovery assessment was 42/45/47/43 of 48, versus 36/39/39/41 for the off control;
+these gaps are within the observed spread. Recorded false credit was zero.
+This does not establish an autonomous-discovery gain. Short proposal budgets and
+few observations are the current diagnosis, not a verified remedy.
+
+[US3b profile](../sera-runs/us3b-profile-ff5d65a/us3b-summary.txt), eight tasks with
+three repeats under concurrent VM load: with readouts and memory enabled, median
+item time improved 17.8 to 16.5 seconds; with readouts but memory disabled,
+16.0 to 10.5 seconds. All configurations remained at or above the 10-second budget.
+
+U10-U13 are implemented. Their scientist-inspired methods are learned search and
+reasoning mechanisms; the names do not establish scientist-level capability.
+Saved U10 summaries are included, but complete replicated comparisons for these
+components are pending. Full course and whole-system evaluation also remain open.
+
+## Earlier incomplete comparisons
 
 The [memory pilot](../sera-runs/u2-ab-f152e14/) completed its first memory-enabled
 assessment at 21/48 solved. The memory-disabled run solved 40 of 46 attempted
@@ -90,8 +129,9 @@ not a fair efficacy test of U7. The control later stopped on an unsupported
 dream-input bug, subsequently fixed in the source.
 
 Other interrupted pilots and their stop records remain in the evidence directory.
-No completed multi-generation self-improvement curve, full course assessment,
-or 12-arm comparison is available. Zero placeholders for unattempted generations
+The earlier pilots below did not complete. Newer full-arm generation curves are
+available above, but a completed full course or 12-arm comparison is unavailable.
+Their noisy scores do not establish consistent self-improvement. Zero placeholders for unattempted generations
 must not be interpreted as measured performance.
 
 ## Run and inspect

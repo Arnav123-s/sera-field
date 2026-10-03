@@ -1,0 +1,19 @@
+full suite c809fde3 failure None
+    full        g0 28/48 (8.5s) | g1 40/48 (4.0s) | g2 38/48 (3.7s) | g3 34/48 (4.6s)
+    no-proposer g0 11/48 (15.2s) | g1 6/48 (13.7s) | g2 26/48 (7.2s) | g3 22/48 (11.3s)
+    no-dreams   g0 27/48 (9.0s) | g1 37/48 (3.9s) | g2 42/48 (4.1s) | g3 34/48 (4.9s)
+    no-library  g0 11/48 (11.2s) | g1 8/48 (11.1s) | g2 6/48 (11.0s) | g3 14/48 (11.0s)
+mem-choice suite c809fde3 failure Declared 1.5-hour training allowance exhausted
+    full        g0 26/48 (9.4s) | g1 33/48 (4.3s) | g2 38/48 (5.0s) | g3 36/48 (3.4s)
+    no-proposer g0 4/48 (14.2s) | g1 2/48 (13.8s) | g2 24/48 (9.9s) | g3 19/48 (12.1s)
+    no-dreams   g0 27/48 (9.1s) | g1 25/48 (9.5s) | g2 35/48 (5.3s)
+no-memory suite c809fde3 failure None
+    full        g0 26/48 (8.8s) | g1 48/48 (0.8s) | g2 39/48 (0.9s) | g3 47/48 (2.4s)
+    no-proposer g0 20/48 (13.8s) | g1 6/48 (14.3s) | g2 24/48 (9.9s) | g3 20/48 (12.0s)
+    no-dreams   g0 25/48 (9.4s) | g1 46/48 (1.3s) | g2 45/48 (1.4s) | g3 45/48 (3.3s)
+    no-library  g0 11/27 (10.6s)
+discovery-off suite c809fde3 failure None
+    full        g0 36/48 (4.5s) | g1 39/48 (4.0s) | g2 39/48 (1.2s) | g3 41/48 (3.7s)
+    no-proposer g0 37/48 (5.9s) | g1 26/48 (9.4s) | g2 32/48 (6.7s) | g3 17/48 (11.4s)
+    no-dreams   g0 38/48 (4.4s) | g1 39/48 (0.9s) | g2 40/48 (0.9s) | g3 40/48 (2.2s)
+    no-library  g0 10/48 (10.5s) | g1 15/48 (10.6s) | g2 7/48 (10.6s) | g3 10/48 (10.6s)

@@ -557,8 +557,10 @@ class Proposer:
 
     def admitted(self, concepts):
         verified = self.field.proven_ideas()
-        return {**{k: v for k, v in concepts.items() if k != '_sig' and k in verified},
-                '_sig': {k: v for k, v in concepts.get('_sig', {}).items() if k in verified}}
+        table = {**{k: v for k, v in concepts.items() if k != '_sig' and k in verified},
+                 '_sig': {k: v for k, v in concepts.get('_sig', {}).items() if k in verified}}
+        roadmap = getattr(self.field, 'roadmap_readout', None)
+        return roadmap.basis(table) if roadmap is not None else table
 
     def beam(self, view, concepts, constants=(), *, width=32, nodes=9, deadline=math.inf, read=None, branch=None):
         """Task-conditioned typed holes; 32 complete programs and 32 partial fragments."""

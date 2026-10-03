@@ -1,0 +1,18 @@
+discovery suite c809fde3 failure Declared training allowance exhausted
+    full        g0 42/48 (2.6s) | g1 45/48 (2.9s) | g2 47/48 (0.8s) | g3 43/48 (0.6s)
+    no-proposer g0 30/48 (2.3s) | g1 19/48 (11.7s) | g2 38/48 (0.8s) | g3 37/48 (0.9s)
+    no-dreams   g0 46/48 (2.3s) | g1 46/48 (1.7s) | g2 47/48 (0.8s) | g3 46/48 (1.3s)
+    no-library  g0 11/48 (10.8s)
+discovery-random suite c809fde3 failure Declared training allowance exhausted
+    full        g0 39/48 (1.9s) | g1 48/48 (2.0s) | g2 47/48 (0.8s) | g3 46/48 (1.5s)
+    no-proposer g0 30/48 (4.4s) | g1 9/48 (15.9s) | g2 28/48 (1.2s) | g3 41/48 (1.2s)
+    no-dreams   g0 36/48 (2.9s) | g1 47/48 (1.4s) | g2 46/48 (1.0s) | g3 46/48 (1.3s)
+discovery-no-unify suite c809fde3 failure Declared training allowance exhausted
+    full        g0 31/48 (6.9s) | g1 46/48 (3.7s) | g2 38/48 (5.4s) | g3 33/48 (4.2s)
+    no-proposer g0 30/48 (7.6s) | g1 20/48 (11.9s) | g2 40/48 (5.7s) | g3 37/48 (6.2s)
+    no-dreams   g0 28/48 (7.1s) | g1 41/48 (5.0s) | g2 25/48 (7.0s)
+discovery-off suite c809fde3 failure None
+    full        g0 36/48 (4.5s) | g1 39/48 (4.0s) | g2 39/48 (1.2s) | g3 41/48 (3.7s)
+    no-proposer g0 37/48 (5.9s) | g1 26/48 (9.4s) | g2 32/48 (6.7s) | g3 17/48 (11.4s)
+    no-dreams   g0 38/48 (4.4s) | g1 39/48 (0.9s) | g2 40/48 (0.9s) | g3 40/48 (2.2s)
+    no-library  g0 10/48 (10.5s) | g1 15/48 (10.6s) | g2 7/48 (10.6s) | g3 10/48 (10.6s)

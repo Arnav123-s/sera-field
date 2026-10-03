@@ -52,12 +52,13 @@ def knots(shape):
     return inp, f(np.linspace(paths.CELL_LO[j], paths.CELL_HI[j], K))
 
 
-def novel_world(shape, seed, n, tries=40):
+def novel_world(shape, seed, n, tries=40, *, known=None):
     """World n of a hidden shape (deterministic in seed, shape and n): 8 objects, the teacher's 2 pushes each, M-1
-    knocks at the usual rate; drawn again until no list law comes within NOVEL_GAP."""
+    knocks at the usual rate; drawn again until no list law comes within NOVEL_GAP. known=(attempt, gap, nearest): an
+    observer that already measured this world's novelty rebuilds that same attempt without measuring it again."""
     inp, w = knots(shape)
     reasons = []
-    for attempt in range(tries):
+    for attempt in (range(tries) if known is None else (known[0],)):
         rng = np.random.default_rng([seed, 83, list(SHAPES).index(shape), n, attempt])
         strength = float(rng.uniform(1.5, 2.5))
         term = ('cell', inp, K)
@@ -84,9 +85,9 @@ def novel_world(shape, seed, n, tries=40):
         world.level = 8
         world.spec = types.SimpleNamespace(seed=seed, index=index, level=8, family=(term,), coefs=coefs,
                                            sigma=(0.001, 0.001), shape=shape)
-        gap, nearest = list_gap(world)
+        gap, nearest = list_gap(world) if known is None else known[1:]
         if gap >= NOVEL_GAP:
-            world.novelty = dict(gap=gap, nearest=nearest)
+            world.novelty = dict(gap=gap, nearest=nearest, attempt=attempt)
             return world
         reasons.append(f'{nearest} comes within {gap:.2g}')
     raise RuntimeError(f'no novel world of {shape}: {reasons[-3:]}')

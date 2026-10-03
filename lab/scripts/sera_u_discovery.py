@@ -22,10 +22,17 @@ from sera_u.proposer import library_identity
 
 
 class Distribution:
-    def __init__(self, typ):
+    def __init__(self, typ, interval=None, length=None):
         self.typ = typ
+        self.interval, self.length = interval, length
 
     def __call__(self, rng):
+        if self.interval is not None:
+            lo, hi = self.interval
+            if self.typ == 'num':
+                return int(rng.integers(lo, hi))
+            length = self.length if self.length is not None else int(rng.integers(0, 9))
+            return tuple(int(v) for v in rng.integers(lo, hi, size=length))
         if self.typ == 'num':
             return int(rng.integers(-8, 9))
         return tuple(int(v) for v in rng.integers(-8, 9, size=int(rng.integers(0, 9))))
@@ -107,15 +114,48 @@ def freeze(mind, old_suite, seed):
         rows.extend([dict(form='strengths', novel=shape), dict(form='strengths', novel=shape)])
     for j, row in enumerate(rows):
         row.update(id='d'+str(j), seed=seed+9000, index=90000+j)
-    return dict(schema=SCHEMA, seed=seed, worlds=rows,
+    rows, dropped = buildable(rows)
+    return dict(schema=SCHEMA, seed=seed, worlds=rows, dropped=dropped,
                 split='untaught expanded compositions disjoint from all RSI suites; held physics structures and novel shapes',
                 claim='rediscovery of laws we hid, not demonstrated open-ended scientific discovery')
+
+
+FREEZE_TRIES = 4
+
+
+def buildable(rows, tries=FREEZE_TRIES):
+    """Build every novel world once, here, observer-side and off SERA's clock: a world that no list law misses by
+    NOVEL_GAP within `tries` draws is dropped and listed; a kept one records its draw, so a body rebuilds it in one
+    step without measuring again (one draw measures every list law: about 30 s; 40 failed draws stopped a run)."""
+    kept, dropped = [], []
+    for row in rows:
+        if 'novel' in row:
+            try:
+                world = NV.novel_world(row['novel'], row['seed'], row['index'], tries)
+            except RuntimeError as exc:
+                dropped.append(dict(id=row['id'], novel=row['novel'], index=row['index'], reason=str(exc)[-200:]))
+                continue
+            row = dict(row, attempt=world.novelty['attempt'], gap=float(world.novelty['gap']),
+                       nearest=str(world.novelty['nearest']))
+        kept.append(row)
+    return kept, dropped
 
 
 def validate(manifest, old_suite, mind=None):
     if manifest['schema'] != SCHEMA:
         raise ValueError('Rediscovery suite schema changed')
     rows = manifest['worlds']
+    if 'scientists_suite' in manifest and manifest['scientists_suite'] != 'u11-scientists-1':
+        raise ValueError('Scientists suite schema changed')
+    if 'scientists_suite' in manifest:
+        groups = sorted({r['observer_group'] for r in rows if 'observer_group' in r})
+        for group in groups:
+            members = [r for r in rows if r.get('observer_group') == group]
+            if (len(members) != 4 or sorted(r.get('observer_coordinate') for r in members) != [0, 1, 2, 3]
+                    or any(r.get('withheld') != (r.get('observer_coordinate') == 2) for r in members)):
+                raise ValueError('Scientists withholding schedule changed')
+    if 'einstein_suite' in manifest and manifest['einstein_suite'] != 'u10-einstein-1':
+        raise ValueError('Einstein suite schema changed')
     if not rows or len({r['id'] for r in rows}) != len(rows):
         raise ValueError('Rediscovery IDs must be unique')
     excluded = {r['family'] for label in ('assessment', 'wake', 'retention') for r in old_suite[label]}
@@ -126,6 +166,12 @@ def validate(manifest, old_suite, mind=None):
         if type(row['id']) is not str or any(type(row[k]) is not int or row[k] < 0 for k in ('seed', 'index')):
             raise ValueError('Opaque IDs and nonnegative integer world seeds required')
         if row['form'] == 'exact':
+            if 'audit_range' in row:
+                interval = row['audit_range']
+                if (manifest.get('einstein_suite') != 'u10-einstein-1' or len(interval) != 2 or
+                        any(type(v) is not int or abs(v) > 100 for v in interval) or interval[0] >= interval[1] or
+                        row.get('audit_length') not in (None, 2)):
+                    raise ValueError('Invalid observer Einstein audit scope')
             if family(LG.freeze(row['program']), {}) != row['family'] or row['family'] in excluded:
                 raise ValueError('Rediscovery law overlaps course/assessment or its manifest changed')
             if row['tin'] not in ('num', 'list') or row['tout'] not in ('num', 'list'):
@@ -139,8 +185,21 @@ def validate(manifest, old_suite, mind=None):
         elif 'novel' in row:
             if row['novel'] not in NV.SHAPES:
                 raise ValueError('Unknown observer novel shape')
+            if (type(row.get('attempt')) is not int or row['attempt'] < 0 or type(row.get('gap')) is not float
+                    or row['gap'] < NV.NOVEL_GAP or type(row.get('nearest')) is not str):
+                raise ValueError('A novel world must be built once by the observer when frozen: freeze again')
+        elif row.get('motion_sensor'):
+            if (manifest.get('scientists_suite') != 'u11-scientists-1'
+                    or row.get('motion_sensor') is not True or type(row.get('has_conserved')) is not bool):
+                raise ValueError('Invalid observer-only scientists motion sensor')
         elif row.get('level') not in (2, 3, 4) or type(row.get('units')) is not bool:
             raise ValueError('Rails must draw held structural levels with an explicit units switch')
+    if 'roadmap_suite' in manifest:
+        from scripts.sera_u_roadmap import validate_roadmap
+        validate_roadmap(manifest)
+    if 'lineage_suite' in manifest:
+        from scripts.sera_u_darwin import validate_lineage
+        validate_lineage(manifest)
     return manifest
 
 
@@ -156,10 +215,12 @@ class WorldPool:
             spec = self.specs[wid]
             if spec['form'] == 'exact':
                 self.bodies[wid] = TS.Exact('code' if spec['tin'] == 'list' else 'math', wid,
-                    Machine(spec['program']), {'x': spec['tin']}, spec['tout'], [], [], Distribution(spec['tin']))
+                    Machine(spec['program']), {'x': spec['tin']}, spec['tout'], [], [],
+                    Distribution(spec['tin'], spec.get('audit_range'), spec.get('audit_length')))
             else:
                 if 'novel' in spec:
-                    world = NV.novel_world(spec['novel'], spec['seed'], spec['index'])
+                    world = NV.novel_world(spec['novel'], spec['seed'], spec['index'],
+                                           known=(spec['attempt'], spec['gap'], spec['nearest']))
                     # NovelWorld supplies no held_out by default. The observer
                     # makes its own independent test pushes and retains them.
                     from ccops5.core.worlds import Action

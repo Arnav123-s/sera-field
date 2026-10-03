@@ -583,3 +583,26 @@ def test_bootstrap_lessons_not_yet_proven_come_back_until_the_seed_gate(monkeypa
     monkeypatch.setattr(R, 'seed_gate', lambda seeds: True)
     tries, state, saves = run({'b': 9})                    # the gate is met: no revisits
     assert tries == {'a': 1, 'b': 1, 'c': 1} and 'bootstrap_revisits' not in state
+
+
+def test_state_writer_keeps_non_finite_values_as_strings(tmp_path, capsys):
+    # VM A's U10 control (25d7a29) stopped at a discovery commit: an inf reached state.json's strict JSON writer.
+    import json
+    import scripts.sera_u_rsi as R
+    value = dict(a=[1., float('inf'), (2, float('-inf'))], b=dict(c=float('nan'), d='x'), e=3)
+    R.write(tmp_path/'state.json', value)
+    back = json.loads((tmp_path/'state.json').read_text(encoding='utf-8'))
+    assert back == dict(a=[1., 'inf', [2, '-inf']], b=dict(c='nan', d='x'), e=3)
+    assert value['a'][1] == float('inf')                     # the caller's state is not changed
+    assert '/a/1' in capsys.readouterr().err
+
+
+def test_expanded_size_of_an_answer_calling_a_concept_no_longer_held():
+    # VM C's no-library arm (25d7a29): an unproven answer kept a call of concept 13 after the library was taken away.
+    from sera import lang as LG
+    from sera_u.mind import expanded_size
+    x = LG.node('var', payload='x')
+    call = LG.node('c', x, payload=13)
+    held = {13: (LG.node('add', LG.node('var', payload='_'), LG.node('lit', payload=1)), '_')}
+    assert expanded_size(call, held) == LG.size(LG.node('add', x, LG.node('lit', payload=1)))
+    assert expanded_size(call, {}) is None

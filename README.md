@@ -31,9 +31,10 @@ capability claims. [Full measurements and limitations](lab/docs/SERA_STATUS.md#2
 SERA-U now integrates the Field with two-layer memory, imagination, curiosity,
 answer/continue choices, learned memory selection, autonomous discovery, and a
 teaching course. A one-thread CPU benchmark measured
-an **8x training speedup**. Pilot comparisons remain incomplete and show substantial
-memory and inference costs under time limits. Full course and self-improvement
-claims remain unassessed. [Status and saved evidence](lab/docs/SERA_U_STATUS.md).
+an **8x training speedup**. New memory and discovery comparisons span four
+generations, but most differences are within the measured run-to-run spread.
+Scientist-inspired methods are implemented; their behavioral comparisons and
+the full course remain incomplete. [Generated research report](lab/SERA_U_REPORT.md). [Status and saved evidence](lab/docs/SERA_U_STATUS.md).
 S24/S25 experiment records are also incomplete.
 
 The earlier learned-field track preserves assessed native memory, language,

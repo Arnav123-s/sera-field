@@ -465,6 +465,8 @@ def _ev(p, env, cs, st):
         x = _num(_ev(p[2], env, cs, st)) if len(p) > 2 else _num(env['_'])   # of its input (a kept foothold's own)
         return float(np.interp(x, grid, knots))
     if sym == 'c':
+        if pay not in cs:                               # a call of a concept this mind does not hold (an idea kept
+            raise Bad('no such concept')                # from before its library was taken away) is a bad program
         body, arg = cs[pay]
         x = _ev(p[2], env, cs, st)
         return _ev(body, {arg: x}, cs, st)

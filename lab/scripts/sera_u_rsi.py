@@ -33,10 +33,28 @@ from sera import crutches as CR
 from sera_u.discovery import CRUTCHES as U9_CRUTCHES, DEFAULT_SHARE, generation_report
 
 
+def finite(value, where, found):
+    """A copy with each non-finite float as its repr ('inf', '-inf', 'nan'): strict JSON keeps it, said plainly.
+
+    VM A's U10 control (25d7a29) stopped writing state.json on an inf from a discovery commit; `found` names where."""
+    if isinstance(value, float) and not math.isfinite(value):
+        found.append(where)
+        return repr(value)
+    if isinstance(value, dict):
+        return {k: finite(v, f'{where}/{k}', found) for k, v in value.items()}
+    if isinstance(value, (list, tuple)):
+        return [finite(v, f'{where}/{i}', found) for i, v in enumerate(value)]
+    return value
+
+
 def write(path, value):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     pending = path.with_name(path.name+'.pending')
+    found = []
+    value = finite(value, '', found)
+    if found:
+        print(f'{path.name}: non-finite values written as strings at', found[:8], file=sys.stderr, flush=True)
     with pending.open('w', encoding='utf-8') as fh:
         json.dump(value, fh, sort_keys=True, indent=2, default=str, allow_nan=False)
         fh.flush()
@@ -445,6 +463,12 @@ def report(out):
         from scripts.sera_u_discovery import report as discovery_report
         result['discovery'] = discovery_report(state.get('discovery_generations', []),
                                                state.get('discovery_judges', []))
+        if any('einstein' in r for r in state.get('discovery_generations', [])):
+            from scripts.sera_u_einstein import report_einstein
+            result['einstein'] = report_einstein(state['discovery_generations'], state.get('discovery_judges', []))
+        if any('scientists' in r for r in state.get('discovery_generations', [])):
+            from scripts.sera_u_scientists import report_scientists
+            result['scientists'] = report_scientists(state['discovery_generations'], state.get('discovery_judges', []))
     write(out/'g_curve.json', result)
     return result
 
@@ -475,6 +499,26 @@ def run(args):
         protocol['discovery'] = dict(share=share, switches={k: CR.on(k) for k in U9_CRUTCHES},
             generation_wall=args.hours*3600/(len(arms)*(args.generations+1)),
             suite='frozen observer-owned rediscovery, never supplied questions or laws')
+        from sera_u.einstein import CRUTCHES as U10_CRUTCHES
+        if any(CR.on(k) for k in U10_CRUTCHES):
+            protocol['discovery']['einstein'] = {k: CR.on(k) for k in U10_CRUTCHES}
+            if not getattr(args, 'rediscovery_suite', None):
+                raise ValueError('U10 A/B requires one frozen observer Einstein suite')
+        from sera_u.scientists import CRUTCHES as U11_CRUTCHES
+        if any(CR.on(k) for k in U11_CRUTCHES):
+            protocol['discovery']['scientists'] = {k: CR.on(k) for k in U11_CRUTCHES}
+            if not getattr(args, 'rediscovery_suite', None):
+                raise ValueError('U11 A/B requires one frozen scientists suite')
+        from sera_u.roadmap import CRUTCHES as U13_CRUTCHES
+        if any(CR.on(key) for key in U13_CRUTCHES):
+            protocol['discovery']['roadmap'] = {key: CR.on(key) for key in U13_CRUTCHES}
+            if not args.rediscovery_suite:
+                raise ValueError('U13 A/B requires one frozen roadmap suite')
+        from sera_u.darwin import CRUTCHES as U12_CRUTCHES
+        if any(CR.on(key) for key in U12_CRUTCHES):
+            protocol['discovery']['darwin'] = {key: CR.on(key) for key in U12_CRUTCHES}
+            if not getattr(args, 'rediscovery_suite', None):
+                raise ValueError('U12 requires one frozen lineage suite')
         protocol['budgets']['discovery'] = args.hours*3600*share
         protocol['budgets']['train'] = max(0., 5400-protocol['budgets']['discovery'])
         external_discovery = getattr(args, 'rediscovery_suite', None)
@@ -557,6 +601,14 @@ def run(args):
                 external = getattr(args, 'rediscovery_suite', None)
                 manifest = (validate_discovery(read(external), suite, base) if external else
                             validate_discovery(freeze_discovery(base, suite, args.seed), suite, base))
+                if 'einstein' in protocol['discovery'] and manifest.get('einstein_suite') != 'u10-einstein-1':
+                    raise ValueError('U10 requires an observer Einstein suite, frozen once and never taught')
+                if 'scientists' in protocol['discovery'] and manifest.get('scientists_suite') != 'u11-scientists-1':
+                    raise ValueError('U11 requires a scientists suite, frozen once and never taught')
+                if 'darwin' in protocol['discovery'] and manifest.get('lineage_suite') != 'u12-lineage-1':
+                    raise ValueError('U12 requires a lineage suite, frozen once and never taught')
+                if 'roadmap' in protocol['discovery'] and manifest.get('roadmap_suite') != 'u13-roadmap-1':
+                    raise ValueError('U13 requires a roadmap suite, frozen once and never taught')
                 write(out/'observer-discovery.json', manifest)
                 state['discovery_suite_sha256'] = hashlib.sha256((out/'observer-discovery.json').read_bytes()).hexdigest()
             state['base'] = state['checkpoint']
@@ -601,11 +653,24 @@ def run(args):
                     state.update(active_arm=arm, generation=0, phase='train', unit_index=0, dream_generation=-1)
                     if discovery_on:
                         state.update(phase='discovery', discovery_deadline=None)
+                        demo_start = len(mind.discovery.events)
                         with mind.scope():
                             teach_quantity_once(mind)
-                        if mind.discovery.events:
-                            state['costs'].append(dict(phase='quantity-demonstration', arm=arm,
-                                wall=mind.discovery.events[-1]['seconds']))
+                            if hasattr(mind.discovery, 'einstein'):
+                                from scripts.sera_u_einstein import teach_einstein_once
+                                teach_einstein_once(mind)
+                            if hasattr(mind.discovery, 'scientists'):
+                                from scripts.sera_u_scientists import teach_scientists_once
+                                teach_scientists_once(mind)
+                            if hasattr(mind.discovery, 'darwin'):
+                                from scripts.sera_u_darwin import teach_darwin_once
+                                teach_darwin_once(mind)
+                            if hasattr(mind.discovery, 'roadmap'):
+                                from scripts.sera_u_roadmap import teach_roadmap_once
+                                teach_roadmap_once(mind)
+                        for demo in mind.discovery.events[demo_start:]:
+                            state['costs'].append(dict(phase='roadmap-method-demonstration' if demo.get('roadmap_demo') else 'darwin-method-demonstration' if demo.get('darwin_demo') else 'scientists-method-demonstration' if demo.get('scientist_demo') else 'einstein-method-demonstration' if demo.get('einstein_demo')
+                                else 'quantity-demonstration', arm=arm, wall=demo['seconds']))
                     commit(out, state, mind, arm+'-start.pt')
                 else:
                     mind = recover(out, state)
@@ -630,7 +695,17 @@ def run(args):
                     if state['phase'] == 'discovery':
                         if any(r['false_credit'] for r in state.get('discovery_judges', [])):
                             raise ValueError('Discovery tripwire persists: false credit must be zero')
-                        pool = WorldPool(discovery_manifest)
+                        if discovery_manifest.get('roadmap_suite'):
+                            from scripts.sera_u_roadmap import RoadmapPool
+                            pool = RoadmapPool(discovery_manifest, generation=generation)
+                        elif discovery_manifest.get('lineage_suite'):
+                            from scripts.sera_u_darwin import LineagePool
+                            pool = LineagePool(discovery_manifest, generation=generation)
+                        elif discovery_manifest.get('scientists_suite'):
+                            from scripts.sera_u_scientists import ScientistsPool
+                            pool = ScientistsPool(discovery_manifest)
+                        else:
+                            pool = WorldPool(discovery_manifest)
                         if state.get('discovery_deadline') is None:
                             allowance = protocol['discovery']['generation_wall']*protocol['discovery']['share']
                             state['discovery_deadline'] = min(state['deadline'], time.time()+allowance)
@@ -640,6 +715,8 @@ def run(args):
                         # The absolute phase deadline and last completed tick are
                         # committed together; resume never resets the allowance.
                         while time.time() < state['discovery_deadline']:
+                            if hasattr(mind.discovery, 'darwin'):
+                                mind.field.hologram['generation'] = generation
                             unit_started = time.perf_counter()
                             row = mind.discover(pool, deadline=state['discovery_deadline'])
                             if row is None:
@@ -670,7 +747,17 @@ def run(args):
                         with mind.scope():
                             mind.sleep.abstract()
                             if discovery_on:
-                                dream_pool = WorldPool(discovery_manifest)
+                                if discovery_manifest.get('roadmap_suite'):
+                                    from scripts.sera_u_roadmap import RoadmapPool
+                                    dream_pool = RoadmapPool(discovery_manifest, generation=generation)
+                                elif discovery_manifest.get('lineage_suite'):
+                                    from scripts.sera_u_darwin import LineagePool
+                                    dream_pool = LineagePool(discovery_manifest, generation=generation)
+                                elif discovery_manifest.get('scientists_suite'):
+                                    from scripts.sera_u_scientists import ScientistsPool
+                                    dream_pool = ScientistsPool(discovery_manifest)
+                                else:
+                                    dream_pool = WorldPool(discovery_manifest)
                                 dream_pool.sync(mind.discovery)
                                 mind.sleep.dream(32, deadline=min(state['deadline'], time.time()+120),
                                                  filter_program=dream_pool.dream_allowed)

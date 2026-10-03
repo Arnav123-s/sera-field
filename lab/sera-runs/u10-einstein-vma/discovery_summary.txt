@@ -1,0 +1,28 @@
+einstein false credit 0
+    full        laws 0 0 0 0 (total 0), experiments 68, seconds 904, kinds []
+    no-dreams   laws 0 1 2 (total 3), experiments 62, seconds 711, kinds [{'curve': 1, 'drawing': 0, 'formula': 0}, {'curve': 1, 'drawing': 0, 'formula': 1}]
+    no-proposer laws 0 0 0 1 (total 1), experiments 88, seconds 948, kinds [{'curve': 0, 'drawing': 0, 'formula': 1}]
+einstein-no-thought-experiments false credit 0
+    full        laws 0 0 0 1 (total 1), experiments 81, seconds 876, kinds [{'curve': 1, 'drawing': 0, 'formula': 0}]
+    no-dreams   laws 0 0 0 (total 0), experiments 67, seconds 618, kinds []
+    no-proposer laws 0 0 0 0 (total 0), experiments 81, seconds 831, kinds []
+einstein-no-symmetry-principles false credit 0
+    full        laws 0 0 1 0 (total 1), experiments 97, seconds 878, kinds [{'curve': 0, 'drawing': 0, 'formula': 1}]
+    no-dreams   laws 0 0 0 0 (total 0), experiments 78, seconds 1114, kinds []
+    no-library  laws 0 0 0 0 (total 0), experiments 89, seconds 837, kinds []
+    no-proposer laws 0 0 1 0 (total 1), experiments 60, seconds 955, kinds [{'curve': 1, 'drawing': 0, 'formula': 0}]
+einstein-no-doubt-assumptions false credit 0
+    full        laws 0 0 0 0 (total 0), experiments 77, seconds 988, kinds []
+    no-dreams   laws 0 0 0 1 (total 1), experiments 89, seconds 1076, kinds [{'curve': 0, 'drawing': 0, 'formula': 1}]
+    no-library  laws 0 0 0 0 (total 0), experiments 76, seconds 1048, kinds []
+    no-proposer laws 0 0 0 0 (total 0), experiments 71, seconds 955, kinds []
+einstein-no-bold-predictions false credit 0
+    full        laws 0 0 0 0 (total 0), experiments 72, seconds 1344, kinds []
+    no-dreams   laws 0 0 0 0 (total 0), experiments 71, seconds 1302, kinds []
+    no-library  laws 0 (total 0), experiments 52, seconds 205, kinds []
+    no-proposer laws 0 0 0 0 (total 0), experiments 71, seconds 1212, kinds []
+discovery false credit 0
+    full        laws 0 0 1 1 (total 2), experiments 62, seconds 1001, kinds [{'curve': 0, 'drawing': 0, 'formula': 1}, {'curve': 1, 'drawing': 0, 'formula': 0}]
+    no-dreams   laws 0 0 0 0 (total 0), experiments 70, seconds 864, kinds []
+    no-library  laws 0 1 0 0 (total 1), experiments 94, seconds 906, kinds [{'curve': 0, 'drawing': 0, 'formula': 1}]
+    no-proposer laws 0 0 1 2 (total 3), experiments 86, seconds 1068, kinds [{'curve': 0, 'drawing': 0, 'formula': 1}, {'curve': 1, 'drawing': 0, 'formula': 1}]
