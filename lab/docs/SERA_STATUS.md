@@ -1,7 +1,12 @@
 # SERA status: one living document, rewritten in place
 
+This page records the older discovery-lab experiments. For the implemented
+unified learner and its newer measurements, see [SERA-U status](SERA_U_STATUS.md)
+and the [research report](../SERA_U_REPORT.md). The historical results below
+are separate studies.
+
 *Last rewritten 2026-10-02 (UTC). Part 1 is technical; Part 2 says the same in plain words. How SERA works:
-`docs/SERA_EXPLAINED.md`. The plan: `SERA_V3_PLAN.md` (revision 9); `SERA_U_PLAN.md` records the proposed integration. The
+`docs/SERA_EXPLAINED.md`. The plan: `SERA_V3_PLAN.md` (revision 9); `SERA_U_PLAN.md` records the integration design. The
 day-by-day story up to 2026-10-01 is the git tag `reports-journal-2026-10-01` (this file, 2,708 lines, as it was).
 Every number below comes from a saved run named beside it.*
 

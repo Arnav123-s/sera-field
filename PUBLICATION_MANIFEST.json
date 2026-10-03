@@ -4,7 +4,7 @@
   "source_local_revision": "7c39634b7cc193dfa50c894ec1e69e42993a3f73",
   "lab_source_revision": "04fd415caf790f1476e138809e32e905f7e31392",
   "integration_plan_revision": "e1be383cbe90b88785ac1542733563be14eec78a",
-  "public_base_revision": "89155dc119892f792599b8e1991d003ddcfa2325",
+  "public_base_revision": "a8c1c5432a294b8226b5ba40e4c4fed2cba1a82b",
   "scope": "Reviewed current files, compact evidence, and preserved assessed inference revisions",
   "excluded": "Private history, raw corpora, complete training states, binary lab Fields, coordination records, preparation tooling",
   "snapshot_adaptations": [
@@ -17,7 +17,7 @@
   ],
   "file_identity_basis": "Git blob bytes; excludes this manifest",
   "file_count": 2876,
-  "total_bytes": 99737193,
+  "total_bytes": 99739000,
   "files": [
     {
       "path": ".gitattributes",
@@ -41,8 +41,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3877,
-      "sha256": "c0f6e2791eff7e9ab6baf651150691fd5924182f5ca91c82413a63329bc3139b"
+      "bytes": 3863,
+      "sha256": "fae13d1320b065e8a8a35109113d66b6a49830b4b1d19867fcaae56d4bda82ea"
     },
     {
       "path": "START_CONNECTED.md",
@@ -471,18 +471,18 @@
     },
     {
       "path": "lab/README.md",
-      "bytes": 3086,
-      "sha256": "6adc709e2324a1d6a6eb4b756dbe014e556fe63e1a71c155e4fbb64c55977f98"
+      "bytes": 3704,
+      "sha256": "8e8eac41ff11080bd199728b06d4a4f811eef5a2710e21773bcc8b54923ae415"
     },
     {
       "path": "lab/SERA_U_PLAN.md",
-      "bytes": 15574,
-      "sha256": "ca19daa9efc1c7843bdb7027f7e2e0d938a6c83f54743127aaadec888fa313c2"
+      "bytes": 15634,
+      "sha256": "55b0e38b369f97a239c67803fff3e0887dd9ed68f46fac9a2d1606dff2c1f12c"
     },
     {
       "path": "lab/SERA_U_REPORT.md",
-      "bytes": 11189,
-      "sha256": "a213d719264c1fc9514497b38ae882708181cba085e72e95571fb433e6da9388"
+      "bytes": 11471,
+      "sha256": "0d2c29e100a2dfaecacb5465271a8c803486a0262af5c35c28fff9e231652d27"
     },
     {
       "path": "lab/SERA_U_REPORT_TABLES.md",
@@ -776,13 +776,13 @@
     },
     {
       "path": "lab/docs/SERA_STATUS.md",
-      "bytes": 37009,
-      "sha256": "a82137d940212c0669ca7de78ac716f0f5b42a33f215a1fa934e3a2b24115c24"
+      "bytes": 37264,
+      "sha256": "3e3f991521ae0a2d369a5b3b00f2c2868a245b685fdf464478c4f4dcc0b527e0"
     },
     {
       "path": "lab/docs/SERA_U_STATUS.md",
-      "bytes": 8767,
-      "sha256": "adf9b6e6631cefd93ce5d9d2b05a2ec8d7ccd7a88b7be762d763c23afbc1a42f"
+      "bytes": 9310,
+      "sha256": "a2cc254344696a944e28c0885aa7977c3ff861280d85c3d699c8fca788475b71"
     },
     {
       "path": "lab/legacy/README.md",
@@ -11466,8 +11466,8 @@
     },
     {
       "path": "reports/CORE-022/REPORT.md",
-      "bytes": 10080,
-      "sha256": "ee7f1520c510f6621784a98bfbec62584282c05c0c938fc89a837562ca866571"
+      "bytes": 10103,
+      "sha256": "29021a468704f9f02d26bbf04f977a5be99455d756b6c3be99e78af03026296a"
     },
     {
       "path": "reports/CORE-022/STABILITY.json",
@@ -12326,8 +12326,8 @@
     },
     {
       "path": "reports/INDEX.md",
-      "bytes": 13361,
-      "sha256": "d5dc91ffe3ec9d7fcfd4f042ed1e589db474175a9ed92fa0aacd1c9bc790ab9c"
+      "bytes": 13401,
+      "sha256": "62436ff3b51f71e9ac38464d1420fbb376d47b15d9b206eacfbb5b3ae66e3974"
     },
     {
       "path": "reports/INQUIRY-014/COSTS.json",
@@ -14449,6 +14449,12 @@
     "json_parsed": 1985,
     "entry_point_links": "passed",
     "credential_review": "no unresolved findings after staged-tree scan and review",
-    "full_behavioral_assessment": "not run"
+    "full_behavioral_assessment": "not run",
+    "documentation_review": {
+      "date": "2026-10-03",
+      "files": 8,
+      "local_links_checked": 237,
+      "tests": "implementation unchanged; previous 504 passing and 3 skipped tests retained"
+    }
   }
 }

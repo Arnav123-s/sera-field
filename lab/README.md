@@ -40,6 +40,20 @@ The course progresses through lessons, book study, corrected tests, tests with
 only a wrong-answer signal, and finally tests without help. The short command
 above is a smoke run; it does not reproduce the longer reported studies.
 
+For the unified learner, inspect the course and frozen comparison interfaces:
+
+```sh
+python scripts/sera_u_course.py --help
+python scripts/sera_bakeoff.py --help
+python scripts/sera_u_report.py --help
+python -m pytest -q tests/sera_u
+```
+
+The commands above inspect the interfaces and run regression checks. Reproducing
+the experiments requires their frozen suites and original runtime states; some
+of that evidence remains in the local archive. The published curves and summaries
+support inspecting the reported scores.
+
 ## Tests and evidence
 
 ```sh
@@ -51,7 +65,8 @@ JOBS=1 bash scripts/runtests.sh
 Slow and integration checks have separate budgets in `scripts/runtests.sh`.
 Saved measurements are in [sera-runs/](sera-runs/); the [status report](docs/SERA_STATUS.md)
 names the source run for every result. S24/S25 runs are incomplete, and the
-implemented SERA-U variant has no completed full comparison in this release.
+SERA-U release contains four-generation full-arm memory and discovery comparisons.
+Some ablation arms stopped early; the full course and replicated comparisons remain open.
 Its course, comparison runner, and current limitations are documented in
 [SERA-U status](docs/SERA_U_STATUS.md).
 

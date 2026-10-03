@@ -1,4 +1,4 @@
-# CORE-022: accepted coupled core and fresh teaching in progress
+# CORE-022: accepted coupled core and completed credited teaching
 
 **Status correction (2026-10-02):** The credited foundation training run
 completed all 12,288 updates on 2026-09-21, with saved status PASS and exit code 0.
@@ -112,7 +112,7 @@ Its five-use coherent-correction assessment is adopted prospectively. Some of
 its historical status claims are superseded by trained ECHO, UNIFIED and NATIVE
 studies. None of their completed finals were reopened for tuning.
 
-The fresh `credited` foundation course is now running. An independently audited
+The following snapshot was recorded during the `credited` foundation course. An independently audited
 prefix contains **576 saved updates and 4,224 presentations**, spanning 2,715
 distinct human source groups. The [receipt audit](COURSE_PREFIX_AUDIT_001.json)
 checks the exact schedule, source order, reserved-group exclusion, finite logged

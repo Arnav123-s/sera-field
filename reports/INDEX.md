@@ -8,13 +8,14 @@ verified; the development scores are not final assessment results.
 See [the saved completion record](CORE-022/TRAINING_COMPLETION.json).
 
 
-**Fresh complete-core teaching in progress:** [CORE-022 report](CORE-022/REPORT.md),
+**Credited CORE-022 teaching completed; final assessment pending:** [CORE-022 report](CORE-022/REPORT.md),
 [current source identities and checks](CORE-022/ENGINEERING.json),
 [equations](../docs/CORE_022_EQUATIONS.md) and
 [complete work order](../docs/COMPLETE_CORE_WORK_ORDER.md). The accepted build is
-now learning from fresh weights. [First scheduled development](CORE-022/DEVELOPMENT_01024.json)
+was taught from fresh weights. [First scheduled development](CORE-022/DEVELOPMENT_01024.json)
 and the [independent teaching-prefix audit](CORE-022/COURSE_PREFIX_AUDIT_001.json)
-record observed progress; the complete course and whole assessment remain active.
+record historical progress; the credited arm completed, while final whole-owner
+assessment remains unverified.
 The executable [portfolio](CORE-022/PORTFOLIO.json),
 [program replay](CORE-022/PROGRAM_REPLAY.json),
 [learning-procedure replay](CORE-022/LEARNING_REPLAY.json) and
@@ -163,7 +164,7 @@ cross-goal regression, bringing the verified test set to 56 distinct tests.
 | [Post-final engineering record](FIELD-001/post-final-engineering.json) | Reporting and interface fixes, separated from frozen model training |
 | [Costs](COSTS.json) | Every supervised attempt, including the failed comparator, tests, replays and demonstrations |
 | [Checkpoint manifest](../checkpoints/FIELD-001/manifest.json) | Ready-to-use weights, file and tensor identities, initialization lineage |
-| [Raw evidence archive](FIELD-001/raw-evidence.zip) | Full runs tree: initial and intermediate checkpoints, optimizer/RNG state, training logs, selected models, final case records, both replay attempts and supervisor logs |
+| Raw evidence archive (local; not bundled) | Full runs tree: initial and intermediate checkpoints, optimizer/RNG state, training logs, selected models, final case records, both replay attempts and supervisor logs |
 | [Archive manifest](FIELD-001/artifacts.json) | Archive and member SHA-256 identities |
 | [Continuation state](STATE.json) | Completed work, retained goal, default owner and next research gate |
 

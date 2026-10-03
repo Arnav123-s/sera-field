@@ -141,7 +141,8 @@ looking harder where SERA was wrong, but never lowers its bar.
 
 Beyond that, it learns to find things out for itself, the way great scientists did: Newton (worlds with no question), Einstein (thought experiments, what stays the same, bold predictions), and the habits of Galileo, Mendeleev, Euler, Noether and Curie. For Darwin, it does not need our world: it builds its own rough picture of the worlds it has met, watches patiently, sorts what it sees by likeness, and looks for the slow process that made the variety, testing its guesses on what turns up next.
 
-It is built in five steps, each tested. Then it is taught with the course, verified, and measured against your
+The implementation now includes U1-U13 and the speed refinements, with their status recorded separately.
+It is taught with the course, verified, and measured against your
 Field alone and the lab SERA alone, on the same tests. Then you get the report.
 
 Latest implementation and evidence: [SERA-U status](docs/SERA_U_STATUS.md).

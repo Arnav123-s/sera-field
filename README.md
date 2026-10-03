@@ -6,8 +6,8 @@ A research project on persistent learners that retain experience, imagine altern
 investigate missing information, and keep independently checked discoveries.
 
 This repository contains the learned Field, discovery lab, and experimental unified
-learner. Their results and checkpoints
-are recorded separately; these studies do not establish general intelligence.
+learner. Results and checkpoints are recorded separately; these studies do not
+establish general intelligence.
 
 ## Start here
 
@@ -30,11 +30,12 @@ capability claims. [Full measurements and limitations](lab/docs/SERA_STATUS.md#2
 
 SERA-U now integrates the Field with two-layer memory, imagination, curiosity,
 answer/continue choices, learned memory selection, autonomous discovery, and a
-teaching course. A one-thread CPU benchmark measured
-an **8x training speedup**. New memory and discovery comparisons span four
+teaching course. A one-thread CPU benchmark measured an **8x training speedup**.
+New memory and discovery comparisons span four
 generations, but most differences are within the measured run-to-run spread.
 Scientist-inspired methods are implemented; their behavioral comparisons and
-the full course remain incomplete. [Generated research report](lab/SERA_U_REPORT.md). [Status and saved evidence](lab/docs/SERA_U_STATUS.md).
+the full course remain incomplete.
+[Research report](lab/SERA_U_REPORT.md) · [Status and saved evidence](lab/docs/SERA_U_STATUS.md).
 S24/S25 experiment records are also incomplete.
 
 The earlier learned-field track preserves assessed native memory, language,

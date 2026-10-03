@@ -26,9 +26,11 @@ is loaded; the unified learner initializes its geometric Field from fresh weight
 | U12 internal-world lineage and gradual-change reasoning | Merged; comparisons pending |
 | U13 typed operations, reconstruction and calibrated estimates | Merged; comparisons pending |
 
-The local development record reports 429 SERA-U tests passing after U13.
-This is a historical test result; see the publication manifest for checks actually
-run on this public snapshot. Test totals from different stages overlap.
+Publication validation recorded **504 passing tests and 3 skips** across SERA-U,
+the course, and crutch checks. This is a selected regression suite, not a claim
+that every historical repository test passes. See the
+[publication manifest](../../PUBLICATION_MANIFEST.json) for the source and checks.
+The earlier development count of 429 tests overlaps this suite; do not add it.
 
 ## Measured speed
 
@@ -101,8 +103,13 @@ item time improved 17.8 to 16.5 seconds; with readouts but memory disabled,
 
 U10-U13 are implemented. Their scientist-inspired methods are learned search and
 reasoning mechanisms; the names do not establish scientist-level capability.
-Saved U10 summaries are included, but complete replicated comparisons for these
-components are pending. Full course and whole-system evaluation also remain open.
+The saved U10 full arm solved 41/41/42/42 of 48 across g0-g3, versus
+36/40/41/37 for its discovery control. Removing the assumption-revision method
+scored 47/46/46/47, so the results do not support claiming that every method helps.
+These are individual runs, and several other arms stopped early. See the
+[U10 summary](../sera-runs/u10-einstein-vma/summary.txt). Complete replicated
+comparisons for U10-U13 are pending. Full course and whole-system evaluation
+also remain open.
 
 ## Earlier incomplete comparisons
 
@@ -114,7 +121,8 @@ versus 1.0 without, against a 10-second budget; median inference was 3.03 versus
 disabled alone solved 25, and neither solved 1. These are time-confounded results. The cases also froze different observer
 suites from their own bootstraps: only partly overlapping items were compared.
 They are not a fully matched memory ablation. The newer runner accepts one shared
-frozen observer suite across cases; a completed matched comparison remains pending.
+frozen observer suite across cases. Its newer full-arm comparison is reported
+above; replicated confirmation and complete comparisons across all arms remain pending.
 
 In the [later pilot](../sera-runs/u2-ab-96d1d19/), memory disabled solved 39/48
 at the first assessment. The memory-enabled case stopped at engineering preflight
@@ -129,7 +137,7 @@ not a fair efficacy test of U7. The control later stopped on an unsupported
 dream-input bug, subsequently fixed in the source.
 
 Other interrupted pilots and their stop records remain in the evidence directory.
-The earlier pilots below did not complete. Newer full-arm generation curves are
+These earlier pilots did not complete. Newer full-arm generation curves are
 available above, but a completed full course or 12-arm comparison is unavailable.
 Their noisy scores do not establish consistent self-improvement. Zero placeholders for unattempted generations
 must not be interpreted as measured performance.

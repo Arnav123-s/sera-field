@@ -17,8 +17,11 @@ saved run folders under `sera-runs/` (never typed); the text around them is deve
   false credit 0 (`sera-runs/u9-discovery-vmc/discovery_summary.txt`). Its held-out assessment (42 45 47 43 of 48 against
   the discovery-off control's 36 39 39 41) is within the measured spread: discovery as built neither helps nor hurts
   there yet, and it finds hardly any laws in its time.
-- **Einstein, scientists, Darwin (U10-U12):** running or finishing on Colab; tables are added as each batch comes home.
-  U13 (Newton, Feynman, Fermi) is built and waits for a free machine.
+- **U10-U13:** implemented. Saved U10 full-arm scores are 41/41/42/42 of 48,
+  against 36/40/41/37 for the discovery control. The assumption-revision ablation
+  scored 47/46/46/47; this does not establish that every method helps. Several
+  later arms stopped early. Replicated assessment of these methods remains pending.
+  [Saved U10 summary](sera-runs/u10-einstein-vma/summary.txt).
 - **False credit:** 0 in every saved case so far.
 
 <!-- generated:begin outcome -->
@@ -101,5 +104,7 @@ out of forty-eight, and most of the gap is inside that. So it leans towards "mem
 runs to be sure. Letting SERA decide when to remember has not shown a benefit yet either.
 
 The second answer is about discovery: when SERA is left alone with worlds that hide a law, it finds very few of them in
-the time we give it (none to two out of fourteen), never claims a wrong one, and is no worse at its tests for trying. It
-needs either more time or better ways to look; the Einstein, scientists' and Darwin habits are the next things we measure.
+the time we give it (none to two out of fourteen). Recorded false credit was zero;
+this is a result of the saved cases, not a universal guarantee. Its assessment
+differences from the control were within the observed spread. More time and better
+search are hypotheses to test; benefits from the newer reasoning methods remain open.
