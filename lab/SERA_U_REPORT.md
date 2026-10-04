@@ -1,14 +1,14 @@
 # SERA-U report
 
-Living report, updated in place. Every table between `generated` markers is written by `scripts/sera_u_report.py` from
-saved run folders under `sera-runs/` (never typed); the text around them is development review reading of those tables.
+Living report with tables generated from saved runs by `scripts/sera_u_report.py`.
+This public edition omits unsupported U14 habit rows and includes a direct saved-schema summary.
 
-## Outcome (2026-10-03)
+## Outcome (2026-10-04)
 
 - **In one line:** none of the discovery habits (U9-U12) has shown a measured benefit yet. Discovery certifies almost
   no laws (0-3 per case over four generations), so the habits built on laws barely run; the same switches differ by up to 10 of 48 between
   runs (measured twice); false credit is 0 everywhere. Short probes implicate the clock cap and thin observation; this diagnosis is provisional, and
-  U14 changes it.
+  U14 changes the protocol; its saved results and failures are summarized below.
 - **Memory (U8), one shared suite, one run per case:** without its memory layers SERA solved 26 48 39 47 of 48 in the
   full arm; with memory always on 28 40 38 34; with SERA choosing 26 33 38 36. Against the measured run-to-run spread
   (10 of 48, from one replicate pair), no-memory beats memory-always only in g3, and beats SERA's choice in g1 and g3;
@@ -19,8 +19,7 @@ saved run folders under `sera-runs/` (never typed); the text around them is deve
 - **Discovery (U9), finished:** in about 15 minutes of discovery per arm (4 generations, ~230 s each), SERA certified very
   few of the 14 hidden laws: full arm 0 (with designed experiments), 2 (random experiments), 2 (no unification credit);
   false credit 0 (`sera-runs/u9-discovery-vmc/discovery_summary.txt`). Its held-out assessment (42 45 47 43 of 48 against
-  the discovery-off control's 36 39 39 41) is within the measured spread: discovery as built neither helps nor hurts
-  there reliably yet, and it finds hardly any laws in its time. This does not establish equivalence.
+  the discovery-off control's 36 39 39 41) is within the measured spread: no reliable discovery effect is established by these runs. This does not establish equivalence.
 - **Why so few laws (probe, `sera-runs/u9-discovery-vmc/probe-u9.json`):** 6 of 9 exact worlds never reached the 4
   observations discovery needs before it proposes; in the two that did, a 0.5 s proposal found nothing, and 2 s found
   the hidden law (in 0.67 s) and the unchanged judge certified it. A wall-clock cap and thin observation starve it.
@@ -42,10 +41,39 @@ saved run folders under `sera-runs/` (never typed); the text around them is deve
   by up to 10 again, and every Darwin A/B gap is within that spread except no-lineage-trees in g0 (30 of 48, 10-11
   below two other cases; one generation of single runs). All eight full arms are complete; later arms ended at the
   wall-clock cap, which counted a 4-hour pause for a full disk as time spent.
-- U13 comparison runs have started; complete results remain pending. **U14 is implemented:** it checks the wiring between the parts and gives SERA its
+- U13 full-arm results are saved for all five cases; only one case completed every arm. **U14 is implemented:** it checks the wiring between the parts and gives SERA its
   own clock (work, not seconds), one continuing life, questions first, and the holes a law leaves
   (development design; implementation and current limitations are in [SERA-U status](docs/SERA_U_STATUS.md)).
 - **False credit:** 0 recorded in the saved cases reviewed here; not a universal guarantee.
+
+## Saved U13/U14 update (2026-10-04)
+
+U13 full-arm solved counts out of 48 across g0-g3 are 36/42/42/40 (roadmap),
+41/47/45/47 (without own operations), 40/39/41/40 (without reconstruction),
+47/46/47/46 (Darwin control), and 40/42/42/41 (without rough estimates).
+Only the last case completed all arms; the others exhausted their allowance.
+There are no replicates in this batch and no established benefit from U13.
+
+Both completed U14 gap cases, seeds 3 and 5, recorded 0/384 eventual exam answers:
+each full and no-holes arm answered 0/48 at each of g0-g3. Both recorded zero gaps
+found and zero false credit. Finishing a run does not establish question solving.
+The seed-5 question-priority case stopped on a receipt-provenance error; its five
+saved generation assessments also recorded zero answers (0/240). Its full arm
+reached g3, but the comparison did not complete. The seed-3 priority snapshot is
+partial, not a completed comparison, and is excluded from these totals.
+
+The [saved-schema summary](sera-runs/u14-vma/saved-summary.json) preserves exam
+generation rows, gap counters, protocol identity, source hashes and stop records.
+Legacy generated tables below still show U14 scores as MISSING because the reader
+expects `rows`, while these files store `exam` and `holes`. Their U14 habit zeros
+are unsupported by that reader and are omitted here. The raw saved exam and gap
+counters above are read directly; per-item payloads and full life states stay local.
+
+The development memory log records peaks near 10.9 GB per life, superseding the
+earlier 0.7-1.1 GB snapshot. Table-count limits do not bound all retained values.
+That memory issue and rejection of the question origin `interaction` remain
+unfixed in this source revision. Cross-machine work-clock equivalence is untested.
+Implementation code is unchanged in this publication update.
 
 <!-- generated:begin outcome -->
 Frozen suites: c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f / 4944c914d4a29ac2553e8e37aaa3a340afe617b2990244592656ed5285a4129e. Cases are comparable only on equal frozen suites.
@@ -83,6 +111,24 @@ Frozen suites: c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f 
 | u12-darwin-vma/darwin-no-world-hologram | unfinished saved snapshot; stage=arms | 0 1 2 3 | 41 39 42 41 /48 | 2.9 3.6 3.3 1.4 | 0 |
 | u12-darwin-vma/darwin-rep | unfinished saved snapshot; stage=arms | 0 1 2 3 | 36 39 37 42 /48 | 3.4 4.2 1.5 3.0 | 0 |
 | u12-darwin-vma/scientists | unfinished saved snapshot; stage=arms | 0 1 2 3 | 35 42 40 40 /48 | 5.2 1.3 3.5 4.0 | 0 |
+
+Frozen suites: c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f / cec6b3be2e5c1b297f65c0bf9b9d5fad7bbfff7261b2a857f60c356136d92781. Cases are comparable only on equal frozen suites.
+
+| case | outcome | full generations | full solved /N | median item seconds | false credit |
+|---|---|---|---|---|---|
+| u14-vma/holes-s3 | finished | 0 1 2 3 | MISSING MISSING MISSING MISSING /48 | MISSING MISSING MISSING MISSING | 0 |
+| u14-vma/holes-s5 | finished | 0 1 2 3 | MISSING MISSING MISSING MISSING /48 | MISSING MISSING MISSING MISSING | 0 |
+| u14-vma/priority-s5 | stop: A checked exact program scope and provenance are required | 0 1 2 3 | MISSING MISSING MISSING MISSING /48 | MISSING MISSING MISSING MISSING | 0 |
+
+Frozen suites: c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f / d64f3f8b41e53e8d764bc96ae58cd78fdaf42ebb07f98c7cd8fc6e374a32c862. Cases are comparable only on equal frozen suites.
+
+| case | outcome | full generations | full solved /N | median item seconds | false credit |
+|---|---|---|---|---|---|
+| u13-roadmap-vma/roadmap | declared allowance: Declared training allowance exhausted | 0 1 2 3 | 36 42 42 40 /48 | 2.1 2.1 4.0 2.3 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | declared allowance: Declared training allowance exhausted | 0 1 2 3 | 41 47 45 47 /48 | 2.7 3.2 1.9 2.8 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | declared allowance: Declared training allowance exhausted | 0 1 2 3 | 40 39 41 40 /48 | 6.5 2.8 1.1 3.0 | 0 |
+| u13-roadmap-vmc/darwin | declared allowance: Declared training allowance exhausted | 0 1 2 3 | 47 46 47 46 /48 | 2.3 2.7 1.1 2.9 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | finished | 0 1 2 3 | 40 42 42 41 /48 | 4.4 1.1 1.5 1.7 | 0 |
 
 Frozen suites: c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f / f2a2bf86ff5041d695b0e8621e1c47ebeb070900f3b16d870e45e4f8acb37214. Cases are comparable only on equal frozen suites.
 
@@ -150,28 +196,8 @@ Full arm: comparison totals when saved; otherwise latest saved habit snapshot. S
 | u12-darwin-vma/darwin-rep | laws/experiments=0/29; seconds=202.9 | correct/trials=0.22; Brier/trial=0.19 | trees/mechanisms=13/0 | made=0; confirmed=0; failed=0 | scientists:g3; u12-comparison.json:glatest | 0 |
 | u12-darwin-vma/scientists | laws/experiments=0/40; seconds=203.6 | correct/trials=MISSING; Brier/trial=MISSING | trees/mechanisms=MISSING/MISSING | made=MISSING; confirmed=MISSING; failed=MISSING | scientists:g3; u11-comparison.json MISSING (not zero) | 0 |
 
-### u9-discovery-vmc (discovery)
+U14 habit rows are omitted because the legacy reader does not support the saved schema.
 
-Frozen suites: c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f / f2a2bf86ff5041d695b0e8621e1c47ebeb070900f3b16d870e45e4f8acb37214. Cases are comparable only on equal frozen suites.
-Full arm: comparison totals when saved; otherwise latest saved habit snapshot. Sources identify each snapshot; other habits and arms are in the detail file.
-
-| case | certified laws / experiments / seconds | saved evidence | false credit |
-|---|---|---|---|
-| u9-discovery-vmc/discovery | laws/experiments=0/5; seconds=210.0 | discovery:g3; comparison JSON MISSING (not zero; optional for memory-only cases) | 0 |
-| u9-discovery-vmc/discovery-no-unify | laws/experiments=0/2; seconds=245.2 | discovery:g3; comparison JSON MISSING (not zero; optional for memory-only cases) | 0 |
-| u9-discovery-vmc/discovery-random | laws/experiments=2/4; seconds=205.6 | discovery:g3; comparison JSON MISSING (not zero; optional for memory-only cases) | 0 |
-
-### u8-u9-vmc-9036ca3 (discovery)
-
-Frozen suites: c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f / no discovery suite declared. Cases are comparable only on equal frozen suites.
-Full arm: comparison totals when saved; otherwise latest saved habit snapshot. Sources identify each snapshot; other habits and arms are in the detail file.
-
-| case | certified laws / experiments / seconds | saved evidence | false credit |
-|---|---|---|---|
-| u8-u9-vmc-9036ca3/discovery-off | laws/experiments=MISSING/MISSING; seconds=MISSING | habit metrics MISSING; comparison JSON MISSING (not zero; optional for memory-only cases) | 0 |
-| u8-u9-vmc-9036ca3/full | laws/experiments=MISSING/MISSING; seconds=MISSING | habit metrics MISSING; comparison JSON MISSING (not zero; optional for memory-only cases) | 0 |
-| u8-u9-vmc-9036ca3/mem-choice | laws/experiments=MISSING/MISSING; seconds=MISSING | habit metrics MISSING; comparison JSON MISSING (not zero; optional for memory-only cases) | 0 |
-| u8-u9-vmc-9036ca3/no-memory | laws/experiments=MISSING/MISSING; seconds=MISSING | habit metrics MISSING; comparison JSON MISSING (not zero; optional for memory-only cases) | 0 |
 <!-- generated:end habits -->
 
 <!-- generated:begin noise -->
@@ -257,6 +283,29 @@ Full arm: right - left / maximum replicate spread over all generations, shown pe
 | u12-darwin-vma/darwin-no-world-hologram | u12-darwin-vma/scientists | A/B | g0: -6 / 10 within noise; g1: 3 / 10 within noise; g2: -2 / 10 within noise; g3: -1 / 10 within noise | g0: 2.3 / 1.4 at or above measured spread; g1: -2.3 / 1.4 at or above measured spread; g2: 0.2 / 1.4 within noise; g3: 2.6 / 1.4 at or above measured spread | u12-darwin-vma/darwin-no-world-hologram: 0; u12-darwin-vma/scientists: 0 |
 | u12-darwin-vma/darwin-rep | u12-darwin-vma/scientists | A/B | g0: -1 / 10 within noise; g1: 3 / 10 within noise; g2: 3 / 10 within noise; g3: -2 / 10 within noise | g0: 1.8 / 1.4 at or above measured spread; g1: -2.9 / 1.4 at or above measured spread; g2: 1.9 / 1.4 at or above measured spread; g3: 1.1 / 1.4 within noise | u12-darwin-vma/darwin-rep: 0; u12-darwin-vma/scientists: 0 |
 
+Frozen suites: c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f / cec6b3be2e5c1b297f65c0bf9b9d5fad7bbfff7261b2a857f60c356136d92781. Cases are comparable only on equal frozen suites.
+Full arm: right - left / maximum replicate spread over all generations, shown per generation. Smaller absolute gaps are within noise; verdicts use unrounded values. Pairs match saved seed, device, allowances and evaluation sizes. Every arm and generation is in the detail file.
+
+| left | right | pair | solved: delta / spread | item seconds: delta / spread | false credit |
+|---|---|---|---|---|---|
+| MISSING | MISSING | MISSING | MISSING | MISSING | u14-vma/holes-s3: 0; u14-vma/holes-s5: 0; u14-vma/priority-s5: 0 |
+
+Frozen suites: c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f / d64f3f8b41e53e8d764bc96ae58cd78fdaf42ebb07f98c7cd8fc6e374a32c862. Cases are comparable only on equal frozen suites.
+Full arm: right - left / maximum replicate spread over all generations, shown per generation. Smaller absolute gaps are within noise; verdicts use unrounded values. Pairs match saved seed, device, allowances and evaluation sizes. Every arm and generation is in the detail file.
+
+| left | right | pair | solved: delta / spread | item seconds: delta / spread | false credit |
+|---|---|---|---|---|---|
+| u13-roadmap-vma/roadmap | u13-roadmap-vma/roadmap-no-own-operations | A/B | g0: 5 / MISSING noise MISSING; g1: 5 / MISSING noise MISSING; g2: 3 / MISSING noise MISSING; g3: 7 / MISSING noise MISSING | g0: 0.6 / MISSING noise MISSING; g1: 1.1 / MISSING noise MISSING; g2: -2.1 / MISSING noise MISSING; g3: 0.5 / MISSING noise MISSING | u13-roadmap-vma/roadmap: 0; u13-roadmap-vma/roadmap-no-own-operations: 0 |
+| u13-roadmap-vma/roadmap | u13-roadmap-vma/roadmap-no-rederive-concepts | A/B | g0: 4 / MISSING noise MISSING; g1: -3 / MISSING noise MISSING; g2: -1 / MISSING noise MISSING; g3: 0 / MISSING noise MISSING | g0: 4.4 / MISSING noise MISSING; g1: 0.7 / MISSING noise MISSING; g2: -2.9 / MISSING noise MISSING; g3: 0.7 / MISSING noise MISSING | u13-roadmap-vma/roadmap: 0; u13-roadmap-vma/roadmap-no-rederive-concepts: 0 |
+| u13-roadmap-vma/roadmap | u13-roadmap-vmc/darwin | A/B | g0: 11 / MISSING noise MISSING; g1: 4 / MISSING noise MISSING; g2: 5 / MISSING noise MISSING; g3: 6 / MISSING noise MISSING | g0: 0.2 / MISSING noise MISSING; g1: 0.6 / MISSING noise MISSING; g2: -2.8 / MISSING noise MISSING; g3: 0.6 / MISSING noise MISSING | u13-roadmap-vma/roadmap: 0; u13-roadmap-vmc/darwin: 0 |
+| u13-roadmap-vma/roadmap | u13-roadmap-vmc/roadmap-no-rough-estimates | A/B | g0: 4 / MISSING noise MISSING; g1: 0 / MISSING noise MISSING; g2: 0 / MISSING noise MISSING; g3: 1 / MISSING noise MISSING | g0: 2.3 / MISSING noise MISSING; g1: -1.0 / MISSING noise MISSING; g2: -2.4 / MISSING noise MISSING; g3: -0.6 / MISSING noise MISSING | u13-roadmap-vma/roadmap: 0; u13-roadmap-vmc/roadmap-no-rough-estimates: 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | u13-roadmap-vma/roadmap-no-rederive-concepts | A/B | g0: -1 / MISSING noise MISSING; g1: -8 / MISSING noise MISSING; g2: -4 / MISSING noise MISSING; g3: -7 / MISSING noise MISSING | g0: 3.8 / MISSING noise MISSING; g1: -0.4 / MISSING noise MISSING; g2: -0.8 / MISSING noise MISSING; g3: 0.2 / MISSING noise MISSING | u13-roadmap-vma/roadmap-no-own-operations: 0; u13-roadmap-vma/roadmap-no-rederive-concepts: 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | u13-roadmap-vmc/darwin | A/B | g0: 6 / MISSING noise MISSING; g1: -1 / MISSING noise MISSING; g2: 2 / MISSING noise MISSING; g3: -1 / MISSING noise MISSING | g0: -0.4 / MISSING noise MISSING; g1: -0.5 / MISSING noise MISSING; g2: -0.7 / MISSING noise MISSING; g3: 0.1 / MISSING noise MISSING | u13-roadmap-vma/roadmap-no-own-operations: 0; u13-roadmap-vmc/darwin: 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | u13-roadmap-vmc/roadmap-no-rough-estimates | A/B | g0: -1 / MISSING noise MISSING; g1: -5 / MISSING noise MISSING; g2: -3 / MISSING noise MISSING; g3: -6 / MISSING noise MISSING | g0: 1.7 / MISSING noise MISSING; g1: -2.1 / MISSING noise MISSING; g2: -0.4 / MISSING noise MISSING; g3: -1.1 / MISSING noise MISSING | u13-roadmap-vma/roadmap-no-own-operations: 0; u13-roadmap-vmc/roadmap-no-rough-estimates: 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | u13-roadmap-vmc/darwin | A/B | g0: 7 / MISSING noise MISSING; g1: 7 / MISSING noise MISSING; g2: 6 / MISSING noise MISSING; g3: 6 / MISSING noise MISSING | g0: -4.2 / MISSING noise MISSING; g1: -0.1 / MISSING noise MISSING; g2: 0.1 / MISSING noise MISSING; g3: -0.1 / MISSING noise MISSING | u13-roadmap-vma/roadmap-no-rederive-concepts: 0; u13-roadmap-vmc/darwin: 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | u13-roadmap-vmc/roadmap-no-rough-estimates | A/B | g0: 0 / MISSING noise MISSING; g1: 3 / MISSING noise MISSING; g2: 1 / MISSING noise MISSING; g3: 1 / MISSING noise MISSING | g0: -2.1 / MISSING noise MISSING; g1: -1.6 / MISSING noise MISSING; g2: 0.4 / MISSING noise MISSING; g3: -1.4 / MISSING noise MISSING | u13-roadmap-vma/roadmap-no-rederive-concepts: 0; u13-roadmap-vmc/roadmap-no-rough-estimates: 0 |
+| u13-roadmap-vmc/darwin | u13-roadmap-vmc/roadmap-no-rough-estimates | A/B | g0: -7 / MISSING noise MISSING; g1: -4 / MISSING noise MISSING; g2: -5 / MISSING noise MISSING; g3: -5 / MISSING noise MISSING | g0: 2.1 / MISSING noise MISSING; g1: -1.5 / MISSING noise MISSING; g2: 0.4 / MISSING noise MISSING; g3: -1.2 / MISSING noise MISSING | u13-roadmap-vmc/darwin: 0; u13-roadmap-vmc/roadmap-no-rough-estimates: 0 |
+
 Frozen suites: c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f / f2a2bf86ff5041d695b0e8621e1c47ebeb070900f3b16d870e45e4f8acb37214. Cases are comparable only on equal frozen suites.
 Full arm: right - left / maximum replicate spread over all generations, shown per generation. Smaller absolute gaps are within noise; verdicts use unrounded values. Pairs match saved seed, device, allowances and evaluation sizes. Every arm and generation is in the detail file.
 
@@ -304,7 +353,7 @@ family trees of the worlds it saw and a rough picture of them, but its picture g
 five, and none of its predictions came true yet. None of these runs says yet whether a habit helps: one run each is not
 enough, and two runs of the same SERA again differed by ten questions.
 
-So the next step follows your words: SERA will keep time by its own work instead of the clock, live one life that
-continues each time it starts, answer your questions first and then go back to growing, and, once it understands
-something, go after what that leaves unexplained. First we check that every part actually receives what the part before
-it makes.
+U14 now implements counted work, a continuing life, question priority and gaps left by laws.
+The saved gap cases produced no exam answers; the priority comparison crashed.
+Repairing provenance, memory bounds and report-schema support remains necessary before
+a complete matched comparison can assess these mechanisms.

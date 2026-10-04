@@ -85,3 +85,8 @@ Its course, comparison runner, and current limitations are documented in
 
 Raw corpora, binary Fields, full run logs, and development coordination records
 stay local. External comparison and curriculum data are not bundled.
+
+The 2026-10-04 update adds U13 full-arm results and a compact U14 saved-schema
+summary. The legacy report generator cannot yet read the U14 exam schema; consult
+[implementation status](docs/SERA_U_STATUS.md#u13u14-completion-and-failures) for
+the verified zero-answer results, interrupted comparison and open memory issue.

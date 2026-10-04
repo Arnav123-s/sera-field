@@ -35,7 +35,9 @@ New memory and discovery comparisons span four
 generations, but most differences are within the measured run-to-run spread.
 Scientist-inspired methods are implemented; their behavioral comparisons and
 the full course remain incomplete. U14 adds counted-work timing, a continuing
-life and question priority; its behavioral comparison is pending.
+life and question priority. Two saved gap runs finished with zero exam answers;
+a question-priority comparison crashed. U13 has five full-arm curves, with no
+established benefit. Known memory and provenance issues remain open.
 [Research report](lab/SERA_U_REPORT.md) · [Status and saved evidence](lab/docs/SERA_U_STATUS.md).
 S24/S25 experiment records are also incomplete.
 

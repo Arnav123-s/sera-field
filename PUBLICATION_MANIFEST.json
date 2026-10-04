@@ -1,10 +1,10 @@
 {
   "repository": "https://github.com/Arnav123-s/sera-field",
-  "publication_date": "2026-10-03",
+  "publication_date": "2026-10-04",
   "source_local_revision": "7c39634b7cc193dfa50c894ec1e69e42993a3f73",
   "lab_source_revision": "04fd415caf790f1476e138809e32e905f7e31392",
   "integration_plan_revision": "897c26b35976e93be8cb5e4f9286a2fb0a8b282f",
-  "public_base_revision": "a476d03916deabd56a740536d2df0bcfa6cf845c",
+  "public_base_revision": "43b83165c7a4b93848b1029190296a8f69a7d482",
   "scope": "Reviewed current files, compact evidence, and preserved assessed inference revisions",
   "excluded": "Private history, raw corpora, complete training states, binary lab Fields, coordination records, preparation tooling",
   "snapshot_adaptations": [
@@ -17,8 +17,8 @@
     "Compact generated report omits exhaustive per-unit and per-metric inventories; new run JSON whitespace compacted"
   ],
   "file_identity_basis": "Git blob bytes; excludes this manifest",
-  "file_count": 2938,
-  "total_bytes": 101957324,
+  "file_count": 2939,
+  "total_bytes": 102020478,
   "files": [
     {
       "path": ".gitattributes",
@@ -42,8 +42,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3972,
-      "sha256": "167fd725a4aee2931b8e8e1bd999db24340a466068eb8cb68aa62397278e9d93"
+      "bytes": 4133,
+      "sha256": "3c060e46475948dd908b7341c1ee1d77ee13a10395c4d3d543911a299e1bc71d"
     },
     {
       "path": "START_CONNECTED.md",
@@ -472,8 +472,8 @@
     },
     {
       "path": "lab/README.md",
-      "bytes": 3704,
-      "sha256": "8e8eac41ff11080bd199728b06d4a4f811eef5a2710e21773bcc8b54923ae415"
+      "bytes": 4028,
+      "sha256": "f79a547aca8fdd54fe1e9305021d7943260df3ca444924099b87121518e2f883"
     },
     {
       "path": "lab/SERA_U_PLAN.md",
@@ -482,13 +482,13 @@
     },
     {
       "path": "lab/SERA_U_REPORT.md",
-      "bytes": 55166,
-      "sha256": "83e49739f952d0a58b48722d7fad8911e481e0ed73349b0be6060af7f46db3cc"
+      "bytes": 62204,
+      "sha256": "e131ace8b47971f58fb7c7f02b1b390a844af0c43ec5dfd65a8e5684d64901f3"
     },
     {
       "path": "lab/SERA_U_REPORT_TABLES.md",
-      "bytes": 213843,
-      "sha256": "71d600a7d644140e6b90d4b35bf4c228b47ac8547e0e9919318643347e8fa0d6"
+      "bytes": 250634,
+      "sha256": "147870934868172b5b4b6fb44ecedeee0386527b0f20237721896a116e131d90"
     },
     {
       "path": "lab/SERA_V3_PLAN.md",
@@ -782,8 +782,8 @@
     },
     {
       "path": "lab/docs/SERA_U_STATUS.md",
-      "bytes": 11753,
-      "sha256": "22a90b069127c9af284ea43dc2c13db3baaba0d1d945c5fbab04f1b85dc373fc"
+      "bytes": 12769,
+      "sha256": "df69c4aeaa27359fde3d22360a5f69dad62d05674ab8baa5be0045ff3de19448"
     },
     {
       "path": "lab/legacy/README.md",
@@ -9481,6 +9481,11 @@
       "sha256": "ebad0e21634d378b0512e52998462b339ea444738874103df225e91e4070bbfe"
     },
     {
+      "path": "lab/sera-runs/u14-vma/saved-summary.json",
+      "bytes": 17824,
+      "sha256": "0c7aaf3ec4065502e90b89cdcad9b05b5dcd781dacb11db697ef43b197a175ee"
+    },
+    {
       "path": "lab/sera-runs/u2-ab-525c7db-crash/u-full/engineering.json",
       "bytes": 259,
       "sha256": "84a2de5a7d563d27bb2cfa773766d8a741ce5ccfeaf29c54fd945417ce635c46"
@@ -14731,7 +14736,7 @@
     "entry_point_links": "passed",
     "credential_review": "no unresolved findings"
   },
-  "unified_source_revision": "897c26b35976e93be8cb5e4f9286a2fb0a8b282f",
+  "unified_source_revision": "ca1199f81c6037b451fadf5456bb9c90ce7140e2",
   "previous_update_validation": {
     "tests": {
       "unified_course_crutches": {
@@ -14766,6 +14771,13 @@
     "json_parsed": 2037,
     "entry_point_links": "passed",
     "credential_review": "no unresolved findings after staged-tree scan and review",
-    "full_behavioral_assessment": "not run"
+    "full_behavioral_assessment": "not run",
+    "documentation_review": {
+      "date": "2026-10-04",
+      "files": 6,
+      "local_links_checked": 66,
+      "tests": "Implementation unchanged; previous 531 passing and 3 skipped selected regression tests retained, not rerun.",
+      "saved_results": "Directly verified zero-answer U14 exam aggregates and generation rows; provenance hashes included."
+    }
   }
 }

@@ -1,0 +1,600 @@
+{
+  "schema": "public-u14-saved-summary-1",
+  "review_date": "2026-10-04",
+  "source_revision": "ca1199f81c6037b451fadf5456bb9c90ce7140e2",
+  "scope": "Direct extraction of saved exam summaries, gap counters and protocol metadata; per-item payloads omitted.",
+  "excluded_partial_case": "priority-s3 snapshot at 2026-10-04 03:23 UTC; no completed result",
+  "cases": [
+    {
+      "case": "u-holes-s3",
+      "source_sha256": "66c77970c070e992db492cce9d67c6ce422b4e23da96a4f02a09eea20df38f0c",
+      "schema": "u14-work-1",
+      "complete": true,
+      "failure": null,
+      "false_credit": 0,
+      "protocol": {
+        "arms": [
+          "full",
+          "no-holes"
+        ],
+        "batched_reads": true,
+        "clock": "work",
+        "code": "fd75b49b79aaa721caa9e060febb2a2b5f505b091dbae02184d1df62961e5dd4",
+        "crutches": {
+          "full": {
+            "field_input_ports": true,
+            "field_proposer": true,
+            "field_understanding": true,
+            "memory_layer_a": false,
+            "memory_layer_b": false,
+            "program_dreams": true,
+            "sleep_library": true
+          },
+          "no-holes": {
+            "field_input_ports": true,
+            "field_proposer": true,
+            "field_understanding": true,
+            "memory_layer_a": false,
+            "memory_layer_b": false,
+            "program_dreams": true,
+            "sleep_library": true
+          }
+        },
+        "device": "cpu",
+        "discovery": {
+          "darwin": {
+            "change_mechanisms": true,
+            "deep_time": true,
+            "lineage_trees": true,
+            "patient_observation": true,
+            "world_hologram": true
+          },
+          "einstein": {
+            "bold_predictions": true,
+            "doubt_assumptions": true,
+            "symmetry_principles": true,
+            "thought_experiments": true
+          },
+          "roadmap": {
+            "own_operations": true,
+            "rederive_concepts": true,
+            "rough_estimates": true
+          },
+          "scientists": {
+            "anomaly_pursuit": true,
+            "conserved_quantities": true,
+            "gap_predictions": true,
+            "number_conjectures": true,
+            "one_change_experiments": true
+          },
+          "switches": {
+            "designed_experiments": true,
+            "hidden_quantities": true,
+            "open_worlds": true,
+            "own_questions": true,
+            "unification_credit": true
+          }
+        },
+        "eval_tasks": 48,
+        "frozen_suite_sha256": "c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f",
+        "generations": 3,
+        "rediscovery_sha256": "cec6b3be2e5c1b297f65c0bf9b9d5fad7bbfff7261b2a857f60c356136d92781",
+        "seed": 3,
+        "source": "41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322",
+        "u14": {
+          "discovery_memory": true,
+          "holes_constant": true,
+          "holes_domain": true,
+          "holes_failure": true,
+          "holes_join": true,
+          "holes_term": true,
+          "holes_uncovered": true,
+          "observe_to_floor": true,
+          "questions_first": true,
+          "retire_understood": true,
+          "work_doubling": true
+        },
+        "u14_arms": {
+          "no-holes": [
+            "holes_constant",
+            "holes_domain",
+            "holes_failure",
+            "holes_join",
+            "holes_term",
+            "holes_uncovered"
+          ]
+        },
+        "wake_tasks": 16,
+        "work": 1000000000
+      },
+      "digests": {
+        "full": "52f97d456a5e7575e65ff79597973006aa49e51eeeeaf24032d729212420e188",
+        "no-holes": "7270fc9440a7210b6e7c43303b4db50a0768048ec8444ca9b20d483f33f1b59f"
+      },
+      "exam": {
+        "answered_eventually": 0,
+        "asked": 384,
+        "false_credit": 0,
+        "generations": [
+          {
+            "answered_eventually": 0,
+            "arm": "full",
+            "asked": 48,
+            "generation": 0,
+            "right_at_first_answer": 0,
+            "still_open": 48,
+            "work_to_answer": []
+          },
+          {
+            "answered_eventually": 0,
+            "arm": "full",
+            "asked": 48,
+            "generation": 1,
+            "right_at_first_answer": 0,
+            "still_open": 48,
+            "work_to_answer": []
+          },
+          {
+            "answered_eventually": 0,
+            "arm": "full",
+            "asked": 48,
+            "generation": 2,
+            "right_at_first_answer": 0,
+            "still_open": 48,
+            "work_to_answer": []
+          },
+          {
+            "answered_eventually": 0,
+            "arm": "full",
+            "asked": 48,
+            "generation": 3,
+            "right_at_first_answer": 0,
+            "still_open": 48,
+            "work_to_answer": []
+          },
+          {
+            "answered_eventually": 0,
+            "arm": "no-holes",
+            "asked": 48,
+            "generation": 0,
+            "right_at_first_answer": 0,
+            "still_open": 48,
+            "work_to_answer": []
+          },
+          {
+            "answered_eventually": 0,
+            "arm": "no-holes",
+            "asked": 48,
+            "generation": 1,
+            "right_at_first_answer": 0,
+            "still_open": 48,
+            "work_to_answer": []
+          },
+          {
+            "answered_eventually": 0,
+            "arm": "no-holes",
+            "asked": 48,
+            "generation": 2,
+            "right_at_first_answer": 0,
+            "still_open": 48,
+            "work_to_answer": []
+          },
+          {
+            "answered_eventually": 0,
+            "arm": "no-holes",
+            "asked": 48,
+            "generation": 3,
+            "right_at_first_answer": 0,
+            "still_open": 48,
+            "work_to_answer": []
+          }
+        ],
+        "right_at_first_answer": 0,
+        "still_open": 384
+      },
+      "holes": {
+        "full": {
+          "answered": 0,
+          "chain_depth": 0,
+          "distinct_laws": 0,
+          "found": 0,
+          "records": [],
+          "retired_worlds": [],
+          "zero_progress_repeat_visits": 0
+        },
+        "no-holes": {
+          "answered": 0,
+          "chain_depth": 0,
+          "distinct_laws": 0,
+          "found": 0,
+          "records": [],
+          "retired_worlds": [],
+          "zero_progress_repeat_visits": 0
+        }
+      }
+    },
+    {
+      "case": "u-holes-s5",
+      "source_sha256": "f18029cea622eb9a8baec8aa32297f12d45a269bf52e1687ead29a4bd7146890",
+      "schema": "u14-work-1",
+      "complete": true,
+      "failure": null,
+      "false_credit": 0,
+      "protocol": {
+        "arms": [
+          "full",
+          "no-holes"
+        ],
+        "batched_reads": true,
+        "clock": "work",
+        "code": "fd75b49b79aaa721caa9e060febb2a2b5f505b091dbae02184d1df62961e5dd4",
+        "crutches": {
+          "full": {
+            "field_input_ports": true,
+            "field_proposer": true,
+            "field_understanding": true,
+            "memory_layer_a": false,
+            "memory_layer_b": false,
+            "program_dreams": true,
+            "sleep_library": true
+          },
+          "no-holes": {
+            "field_input_ports": true,
+            "field_proposer": true,
+            "field_understanding": true,
+            "memory_layer_a": false,
+            "memory_layer_b": false,
+            "program_dreams": true,
+            "sleep_library": true
+          }
+        },
+        "device": "cpu",
+        "discovery": {
+          "darwin": {
+            "change_mechanisms": true,
+            "deep_time": true,
+            "lineage_trees": true,
+            "patient_observation": true,
+            "world_hologram": true
+          },
+          "einstein": {
+            "bold_predictions": true,
+            "doubt_assumptions": true,
+            "symmetry_principles": true,
+            "thought_experiments": true
+          },
+          "roadmap": {
+            "own_operations": true,
+            "rederive_concepts": true,
+            "rough_estimates": true
+          },
+          "scientists": {
+            "anomaly_pursuit": true,
+            "conserved_quantities": true,
+            "gap_predictions": true,
+            "number_conjectures": true,
+            "one_change_experiments": true
+          },
+          "switches": {
+            "designed_experiments": true,
+            "hidden_quantities": true,
+            "open_worlds": true,
+            "own_questions": true,
+            "unification_credit": true
+          }
+        },
+        "eval_tasks": 48,
+        "frozen_suite_sha256": "c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f",
+        "generations": 3,
+        "rediscovery_sha256": "cec6b3be2e5c1b297f65c0bf9b9d5fad7bbfff7261b2a857f60c356136d92781",
+        "seed": 5,
+        "source": "41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322",
+        "u14": {
+          "discovery_memory": true,
+          "holes_constant": true,
+          "holes_domain": true,
+          "holes_failure": true,
+          "holes_join": true,
+          "holes_term": true,
+          "holes_uncovered": true,
+          "observe_to_floor": true,
+          "questions_first": true,
+          "retire_understood": true,
+          "work_doubling": true
+        },
+        "u14_arms": {
+          "no-holes": [
+            "holes_constant",
+            "holes_domain",
+            "holes_failure",
+            "holes_join",
+            "holes_term",
+            "holes_uncovered"
+          ]
+        },
+        "wake_tasks": 16,
+        "work": 1000000000
+      },
+      "digests": {
+        "full": "45c1e7b0df71b42f31b316862af78dafb076e6253852a85c0aef44395acc2c30",
+        "no-holes": "72eec094c5e57a605ad01dbc30d1f4e9de21d8aecc8787c477a07d367fba7ee2"
+      },
+      "exam": {
+        "answered_eventually": 0,
+        "asked": 384,
+        "false_credit": 0,
+        "generations": [
+          {
+            "answered_eventually": 0,
+            "arm": "full",
+            "asked": 48,
+            "generation": 0,
+            "right_at_first_answer": 0,
+            "still_open": 48,
+            "work_to_answer": []
+          },
+          {
+            "answered_eventually": 0,
+            "arm": "full",
+            "asked": 48,
+            "generation": 1,
+            "right_at_first_answer": 0,
+            "still_open": 48,
+            "work_to_answer": []
+          },
+          {
+            "answered_eventually": 0,
+            "arm": "full",
+            "asked": 48,
+            "generation": 2,
+            "right_at_first_answer": 0,
+            "still_open": 48,
+            "work_to_answer": []
+          },
+          {
+            "answered_eventually": 0,
+            "arm": "full",
+            "asked": 48,
+            "generation": 3,
+            "right_at_first_answer": 0,
+            "still_open": 48,
+            "work_to_answer": []
+          },
+          {
+            "answered_eventually": 0,
+            "arm": "no-holes",
+            "asked": 48,
+            "generation": 0,
+            "right_at_first_answer": 0,
+            "still_open": 48,
+            "work_to_answer": []
+          },
+          {
+            "answered_eventually": 0,
+            "arm": "no-holes",
+            "asked": 48,
+            "generation": 1,
+            "right_at_first_answer": 0,
+            "still_open": 48,
+            "work_to_answer": []
+          },
+          {
+            "answered_eventually": 0,
+            "arm": "no-holes",
+            "asked": 48,
+            "generation": 2,
+            "right_at_first_answer": 0,
+            "still_open": 48,
+            "work_to_answer": []
+          },
+          {
+            "answered_eventually": 0,
+            "arm": "no-holes",
+            "asked": 48,
+            "generation": 3,
+            "right_at_first_answer": 0,
+            "still_open": 48,
+            "work_to_answer": []
+          }
+        ],
+        "right_at_first_answer": 0,
+        "still_open": 384
+      },
+      "holes": {
+        "full": {
+          "answered": 0,
+          "chain_depth": 0,
+          "distinct_laws": 0,
+          "found": 0,
+          "records": [],
+          "retired_worlds": [],
+          "zero_progress_repeat_visits": 0
+        },
+        "no-holes": {
+          "answered": 0,
+          "chain_depth": 0,
+          "distinct_laws": 0,
+          "found": 0,
+          "records": [],
+          "retired_worlds": [],
+          "zero_progress_repeat_visits": 0
+        }
+      }
+    },
+    {
+      "case": "u-priority-s5",
+      "source_sha256": "7938c605d758a6a1feb74bbf50351dc208135c1c24edc0b7c961420090980a9b",
+      "schema": "u14-work-1",
+      "complete": false,
+      "failure": "A checked exact program scope and provenance are required",
+      "false_credit": 0,
+      "protocol": {
+        "arms": [
+          "full",
+          "no-questions-first"
+        ],
+        "batched_reads": true,
+        "clock": "work",
+        "code": "fd75b49b79aaa721caa9e060febb2a2b5f505b091dbae02184d1df62961e5dd4",
+        "crutches": {
+          "full": {
+            "field_input_ports": true,
+            "field_proposer": true,
+            "field_understanding": true,
+            "memory_layer_a": false,
+            "memory_layer_b": false,
+            "program_dreams": true,
+            "sleep_library": true
+          },
+          "no-questions-first": {
+            "field_input_ports": true,
+            "field_proposer": true,
+            "field_understanding": true,
+            "memory_layer_a": false,
+            "memory_layer_b": false,
+            "program_dreams": true,
+            "sleep_library": true
+          }
+        },
+        "device": "cpu",
+        "discovery": {
+          "darwin": {
+            "change_mechanisms": true,
+            "deep_time": true,
+            "lineage_trees": true,
+            "patient_observation": true,
+            "world_hologram": true
+          },
+          "einstein": {
+            "bold_predictions": true,
+            "doubt_assumptions": true,
+            "symmetry_principles": true,
+            "thought_experiments": true
+          },
+          "roadmap": {
+            "own_operations": true,
+            "rederive_concepts": true,
+            "rough_estimates": true
+          },
+          "scientists": {
+            "anomaly_pursuit": true,
+            "conserved_quantities": true,
+            "gap_predictions": true,
+            "number_conjectures": true,
+            "one_change_experiments": true
+          },
+          "switches": {
+            "designed_experiments": true,
+            "hidden_quantities": true,
+            "open_worlds": true,
+            "own_questions": true,
+            "unification_credit": true
+          }
+        },
+        "eval_tasks": 48,
+        "frozen_suite_sha256": "c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f",
+        "generations": 3,
+        "rediscovery_sha256": "cec6b3be2e5c1b297f65c0bf9b9d5fad7bbfff7261b2a857f60c356136d92781",
+        "seed": 5,
+        "source": "41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322",
+        "u14": {
+          "discovery_memory": true,
+          "holes_constant": true,
+          "holes_domain": true,
+          "holes_failure": true,
+          "holes_join": true,
+          "holes_term": true,
+          "holes_uncovered": true,
+          "observe_to_floor": true,
+          "questions_first": true,
+          "retire_understood": true,
+          "work_doubling": true
+        },
+        "u14_arms": {
+          "no-questions-first": [
+            "questions_first"
+          ]
+        },
+        "wake_tasks": 16,
+        "work": 1000000000
+      },
+      "digests": {
+        "full": "45c1e7b0df71b42f31b316862af78dafb076e6253852a85c0aef44395acc2c30"
+      },
+      "exam": {
+        "answered_eventually": 0,
+        "asked": 240,
+        "false_credit": 0,
+        "generations": [
+          {
+            "answered_eventually": 0,
+            "arm": "full",
+            "asked": 48,
+            "generation": 0,
+            "right_at_first_answer": 0,
+            "still_open": 48,
+            "work_to_answer": []
+          },
+          {
+            "answered_eventually": 0,
+            "arm": "full",
+            "asked": 48,
+            "generation": 1,
+            "right_at_first_answer": 0,
+            "still_open": 48,
+            "work_to_answer": []
+          },
+          {
+            "answered_eventually": 0,
+            "arm": "full",
+            "asked": 48,
+            "generation": 2,
+            "right_at_first_answer": 0,
+            "still_open": 48,
+            "work_to_answer": []
+          },
+          {
+            "answered_eventually": 0,
+            "arm": "full",
+            "asked": 48,
+            "generation": 3,
+            "right_at_first_answer": 0,
+            "still_open": 48,
+            "work_to_answer": []
+          },
+          {
+            "answered_eventually": 0,
+            "arm": "no-questions-first",
+            "asked": 48,
+            "generation": 0,
+            "right_at_first_answer": 0,
+            "still_open": 48,
+            "work_to_answer": []
+          }
+        ],
+        "right_at_first_answer": 0,
+        "still_open": 240
+      },
+      "holes": {
+        "full": {
+          "answered": 0,
+          "chain_depth": 0,
+          "distinct_laws": 0,
+          "found": 0,
+          "records": [],
+          "retired_worlds": [],
+          "zero_progress_repeat_visits": 0
+        },
+        "no-questions-first": {
+          "answered": 0,
+          "chain_depth": 0,
+          "distinct_laws": 0,
+          "found": 0,
+          "records": [],
+          "retired_worlds": [],
+          "zero_progress_repeat_visits": 0
+        }
+      }
+    }
+  ]
+}

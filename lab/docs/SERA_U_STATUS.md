@@ -24,8 +24,8 @@ is loaded; the unified learner initializes its geometric Field from fresh weight
 | U10 thought experiments, invariance, assumptions and predictions | Merged; comparison runs partly complete |
 | U11 scientific and mathematical habits | Merged; comparisons pending |
 | U12 internal-world lineage and gradual-change reasoning | Merged; comparisons pending |
-| U13 typed operations, reconstruction and calibrated estimates | Merged; new comparison snapshots remain incomplete |
-| U14 work clock, one continuing life, question priority and holes | Merged with wiring and clock-loop fixes; behavioral comparisons pending |
+| U13 typed operations, reconstruction and calibrated estimates | Merged; five full-arm curves saved; one complete all-arm case |
+| U14 work clock, one continuing life, question priority and holes | Merged; two gap cases finished with zero exam answers; priority comparison crashed |
 
 Publication regression checks and exact source identity are recorded in the
 [manifest](../../PUBLICATION_MANIFEST.json). The suite covers SERA-U, the course
@@ -67,7 +67,7 @@ of memory usefulness. U9 adds question selection, discriminating experiments,
 independently checked laws, and compression priors. New full-arm comparisons for memory and discovery are reported below;
 some other arms stopped early, and broader capability claims remain unassessed.
 
-## Latest comparisons (2026-10-03)
+## Latest comparisons (2026-10-04)
 
 The [research report](../SERA_U_REPORT.md) and [detail tables](../SERA_U_REPORT_TABLES.md)
 retain the generated measurements, suite identities and interpretation. Some
@@ -134,20 +134,37 @@ found nothing while a 2-second allowance found a law, certified by the same judg
 This supports a budget/observation diagnosis in those cases; it does not establish
 the efficacy of the redesign.
 
-U14 repairs discovery proof delivery to memory layer A and per-item memory choice.
-It adds a clock based on counted work, persistent life checkpoints, a question
-agenda and gaps left by known laws. Initial work-clock runs stalled in loops that
-waited without charging work and used about 6.4-11.6 GB per life. The committed
-fix charges waiting loops and bounds search tables by work. The development record
-reports relaunched lives at roughly 0.7-1.1 GB, but no completed behavioral result
-or independent cross-machine determinism comparison is available here.
-Counted-work budgets change the experimental protocol. Future U14 comparisons
-must match work definitions, budgets and suites; they cannot be treated as direct
-replications of the earlier wall-clock assessments.
+## U13/U14 completion and failures
 
-U13 comparison runs have started; the earlier report's waiting-for-a-machine
-wording is superseded. Current U13 snapshots are incomplete. Replicated benefit,
-full-course completion and whole-system comparison remain open.
+U13 full-arm solved counts out of 48 across g0-g3 are 36/42/42/40 (roadmap),
+41/47/45/47 (without own operations), 40/39/41/40 (without reconstruction),
+47/46/47/46 (Darwin control), and 40/42/42/41 (without rough estimates).
+Only the last case completed all arms; the others exhausted their allowance.
+There are no replicates in this batch and no established benefit from U13.
+
+Both completed U14 gap cases, seeds 3 and 5, recorded 0/384 eventual exam answers:
+each full and no-holes arm answered 0/48 at each of g0-g3. Both recorded zero gaps
+found and zero false credit. Finishing a run does not establish question solving.
+The seed-5 question-priority case stopped on a receipt-provenance error; its five
+saved generation assessments also recorded zero answers (0/240). Its full arm
+reached g3, but the comparison did not complete. The seed-3 priority snapshot is
+partial, not a completed comparison, and is excluded from these totals.
+
+The [saved-schema summary](../sera-runs/u14-vma/saved-summary.json) preserves exam
+generation rows, gap counters, protocol identity, source hashes and stop records.
+Legacy generated tables below still show U14 scores as MISSING because the reader
+expects `rows`, while these files store `exam` and `holes`. Their U14 habit zeros
+are unsupported by that reader and are omitted here. The raw saved exam and gap
+counters above are read directly; per-item payloads and full life states stay local.
+
+The development memory log records peaks near 10.9 GB per life, superseding the
+earlier 0.7-1.1 GB snapshot. Table-count limits do not bound all retained values.
+That memory issue and rejection of the question origin `interaction` remain
+unfixed in this source revision. Cross-machine work-clock equivalence is untested.
+Implementation code is unchanged in this publication update.
+
+Counted-work U14 budgets differ from earlier wall-clock assessments. Comparisons
+require matched work definitions, budgets and suites.
 
 ## Earlier incomplete comparisons
 

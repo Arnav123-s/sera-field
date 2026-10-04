@@ -1,9 +1,9 @@
 # SERA-U report tables
 
-Public compact edition: outcome, scope, assessment, retention and comparison tables
-are retained verbatim from the generated report. Per-unit habit traces and full
-source inventories remain in the local archive; scientific habit summaries are
-in [the main report](SERA_U_REPORT.md).
+Compact edition of generated outcome, scope, assessment, retention and noise tables.
+Exhaustive differences, per-unit traces and source inventories remain local.
+U14 MISSING entries reflect an unsupported schema, not an absent saved exam.
+See [the main report](SERA_U_REPORT.md#saved-u13u14-update-2026-10-04) for direct saved-schema results and known failures.
 
 <!-- generated:begin outcome -->
 | case | outcome | saved evidence | false credit |
@@ -29,6 +29,14 @@ in [the main report](SERA_U_REPORT.md).
 | u12-darwin-vma/darwin-no-world-hologram | unfinished saved snapshot; stage=arms | saved JSON read | 0 |
 | u12-darwin-vma/darwin-rep | unfinished saved snapshot; stage=arms | saved JSON read | 0 |
 | u12-darwin-vma/scientists | unfinished saved snapshot; stage=arms | u11-comparison.json MISSING (not zero) | 0 |
+| u13-roadmap-vma/roadmap | declared allowance: Declared training allowance exhausted | u13-comparison.json: case entry MISSING or ambiguous | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | declared allowance: Declared training allowance exhausted | u13-comparison.json: case entry MISSING or ambiguous | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | declared allowance: Declared training allowance exhausted | saved JSON read | 0 |
+| u13-roadmap-vmc/darwin | declared allowance: Declared training allowance exhausted | u12-comparison.json MISSING (not zero) | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | finished | saved JSON read | 0 |
+| u14-vma/holes-s3 | finished | comparison JSON MISSING (not zero; optional for memory-only cases) | 0 |
+| u14-vma/holes-s5 | finished | comparison JSON MISSING (not zero; optional for memory-only cases) | 0 |
+| u14-vma/priority-s5 | stop: A checked exact program scope and provenance are required | comparison JSON MISSING (not zero; optional for memory-only cases) | 0 |
 | u8-u9-vmc-9036ca3/discovery-off | finished | comparison JSON MISSING (not zero; optional for memory-only cases) | 0 |
 | u8-u9-vmc-9036ca3/full | finished | comparison JSON MISSING (not zero; optional for memory-only cases) | 0 |
 | u8-u9-vmc-9036ca3/mem-choice | declared allowance: Declared 1.5-hour training allowance exhausted | comparison JSON MISSING (not zero; optional for memory-only cases) | 0 |
@@ -41,34 +49,42 @@ in [the main report](SERA_U_REPORT.md).
 <!-- generated:begin batches -->
 | batch / case | package code | assessment suite sha256 | discovery suite sha256 | machine | start UTC | end UTC | declared allowance | ending | switch changes from first case | false credit |
 |---|---|---|---|---|---|---|---|---|---|---|
-| u10-einstein-vma/discovery | 9e0b39a5bcd2 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 4944c914d4a29ac2553e8e37aaa3a340afe617b2990244592656ed5285a4129e | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 07:14 | 2026-10-03 11:43 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 13:14; hours=6.00 | finished | same as first case | 0 |
-| u10-einstein-vma/einstein | ae1ac9ff9a3c | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 4944c914d4a29ac2553e8e37aaa3a340afe617b2990244592656ed5285a4129e | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 06:40 | 2026-10-03 09:39 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 12:40; hours=6.00 | declared allowance: Declared training allowance exhausted | discovery.einstein.bold_predictions=true; discovery.einstein.doubt_assumptions=true; discovery.einstein.symmetry_principles=true; discovery.einstein.thought_experiments=true | 0 |
-| u10-einstein-vma/einstein-no-bold-predictions | ae1ac9ff9a3c | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 4944c914d4a29ac2553e8e37aaa3a340afe617b2990244592656ed5285a4129e | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 06:55 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 12:55; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.einstein.doubt_assumptions=true; discovery.einstein.symmetry_principles=true; discovery.einstein.thought_experiments=true | 0 |
-| u10-einstein-vma/einstein-no-doubt-assumptions | 9e0b39a5bcd2 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 4944c914d4a29ac2553e8e37aaa3a340afe617b2990244592656ed5285a4129e | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 08:09 | 2026-10-03 12:24 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 14:09; hours=6.00 | finished | discovery.einstein.bold_predictions=true; discovery.einstein.symmetry_principles=true; discovery.einstein.thought_experiments=true | 0 |
-| u10-einstein-vma/einstein-no-symmetry-principles | 9e0b39a5bcd2 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 4944c914d4a29ac2553e8e37aaa3a340afe617b2990244592656ed5285a4129e | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 08:37 | 2026-10-03 13:11 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 14:37; hours=6.00 | finished | discovery.einstein.bold_predictions=true; discovery.einstein.doubt_assumptions=true; discovery.einstein.thought_experiments=true | 0 |
-| u10-einstein-vma/einstein-no-thought-experiments | ae1ac9ff9a3c | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 4944c914d4a29ac2553e8e37aaa3a340afe617b2990244592656ed5285a4129e | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 06:55 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 12:55; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.einstein.bold_predictions=true; discovery.einstein.doubt_assumptions=true; discovery.einstein.symmetry_principles=true | 0 |
-| u11-scientists-vmc/einstein | 116124db8749 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 10:29 | 2026-10-03 14:55 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 16:29; hours=6.00 | finished | same as first case | 0 |
-| u11-scientists-vmc/scientists | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 12:43 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 18:43; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.scientists.anomaly_pursuit=true; discovery.scientists.conserved_quantities=true; discovery.scientists.gap_predictions=true; discovery.scientists.number_conjectures=true; discovery.scientists.one_change_experiments=true | 0 |
-| u11-scientists-vmc/scientists-no-anomaly-pursuit | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 12:43 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 18:43; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.scientists.conserved_quantities=true; discovery.scientists.gap_predictions=true; discovery.scientists.number_conjectures=true; discovery.scientists.one_change_experiments=true | 0 |
-| u11-scientists-vmc/scientists-no-conserved-quantities | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:22 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 17:22; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.scientists.anomaly_pursuit=true; discovery.scientists.gap_predictions=true; discovery.scientists.number_conjectures=true; discovery.scientists.one_change_experiments=true | 0 |
-| u11-scientists-vmc/scientists-no-gap-predictions | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:22 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 17:22; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.scientists.anomaly_pursuit=true; discovery.scientists.conserved_quantities=true; discovery.scientists.number_conjectures=true; discovery.scientists.one_change_experiments=true | 0 |
-| u11-scientists-vmc/scientists-no-number-conjectures | 116124db8749 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 10:29 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 16:29; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.scientists.anomaly_pursuit=true; discovery.scientists.conserved_quantities=true; discovery.scientists.gap_predictions=true; discovery.scientists.one_change_experiments=true | 0 |
-| u11-scientists-vmc/scientists-no-one-change-experiments | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:22 | 2026-10-03 15:17 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 17:22; hours=6.00 | declared allowance: Declared training allowance exhausted | discovery.scientists.anomaly_pursuit=true; discovery.scientists.conserved_quantities=true; discovery.scientists.gap_predictions=true; discovery.scientists.number_conjectures=true | 0 |
-| u12-darwin-vma/darwin | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:21 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 17:21; hours=6.00 | unfinished saved snapshot; stage=arms | same as first case | 0 |
-| u12-darwin-vma/darwin-no-change-mechanisms | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:21 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 17:21; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.darwin.change_mechanisms=false | 0 |
-| u12-darwin-vma/darwin-no-deep-time | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 13:17 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 19:17; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.darwin.deep_time=false | 0 |
-| u12-darwin-vma/darwin-no-lineage-trees | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 13:17 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 19:17; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.darwin.lineage_trees=false | 0 |
-| u12-darwin-vma/darwin-no-patient-observation | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:21 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 17:21; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.darwin.patient_observation=false | 0 |
-| u12-darwin-vma/darwin-no-world-hologram | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:21 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 17:21; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.darwin.world_hologram=false | 0 |
-| u12-darwin-vma/darwin-rep | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 13:17 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 19:17; hours=6.00 | unfinished saved snapshot; stage=arms | same as first case | 0 |
-| u12-darwin-vma/scientists | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:21 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 17:21; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.darwin.change_mechanisms=false; discovery.darwin.deep_time=false; discovery.darwin.lineage_trees=false; discovery.darwin.patient_observation=false; discovery.darwin.world_hologram=false | 0 |
-| u8-u9-vmc-9036ca3/discovery-off | ae1ac9ff9a3c | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | no discovery suite declared | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 06:23 | 2026-10-03 10:06 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=5400; budgets.wakes=2160; deadline UTC=2026-10-03 12:23; hours=6.00 | finished | same as first case | 0 |
-| u8-u9-vmc-9036ca3/full | 08736dc899fd | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | no discovery suite declared | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 04:48 | 2026-10-03 09:38 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=5400; budgets.wakes=2160; deadline UTC=2026-10-03 10:48; hours=6.00 | finished | crutches.full.memory_layer_a=true; crutches.full.memory_layer_b=true; crutches.no-dreams.memory_layer_a=true; crutches.no-dreams.memory_layer_b=true; crutches.no-library.memory_layer_a=true; crutches.no-library.memory_layer_b=true; crutches.no-proposer.memory_layer_a=true; crutches.no-proposer.memory_layer_b=true | 0 |
-| u8-u9-vmc-9036ca3/mem-choice | 08736dc899fd | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | no discovery suite declared | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 04:48 | 2026-10-03 08:46 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=5400; budgets.wakes=2160; deadline UTC=2026-10-03 10:48; hours=6.00 | declared allowance: Declared 1.5-hour training allowance exhausted | crutches.full.memory_choice=true; crutches.full.memory_layer_a=true; crutches.full.memory_layer_b=true; crutches.no-dreams.memory_choice=true; crutches.no-dreams.memory_layer_a=true; crutches.no-dreams.memory_layer_b=true; crutches.no-library.memory_choice=true; crutches.no-library.memory_layer_a=true; crutches.no-library.memory_layer_b=true; crutches.no-proposer.memory_choice=true; crutches.no-proposer.memory_layer_a=true; crutches.no-proposer.memory_layer_b=true | 0 |
-| u8-u9-vmc-9036ca3/no-memory | 08736dc899fd | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | no discovery suite declared | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 04:48 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=5400; budgets.wakes=2160; deadline UTC=2026-10-03 10:48; hours=6.00 | unfinished saved snapshot; stage=arms | same as first case | 0 |
-| u9-discovery-vmc/discovery | 9e0b39a5bcd2 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | f2a2bf86ff5041d695b0e8621e1c47ebeb070900f3b16d870e45e4f8acb37214 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 08:11 | 2026-10-03 11:05 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 14:11; hours=6.00 | declared allowance: Declared training allowance exhausted | same as first case | 0 |
-| u9-discovery-vmc/discovery-no-unify | 9e0b39a5bcd2 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | f2a2bf86ff5041d695b0e8621e1c47ebeb070900f3b16d870e45e4f8acb37214 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 09:04 | 2026-10-03 12:19 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 15:04; hours=6.00 | declared allowance: Declared training allowance exhausted | discovery.switches.unification_credit=false | 0 |
-| u9-discovery-vmc/discovery-random | 614e0457f753 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | f2a2bf86ff5041d695b0e8621e1c47ebeb070900f3b16d870e45e4f8acb37214 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 09:34 | 2026-10-03 12:23 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 15:34; hours=6.00 | declared allowance: Declared training allowance exhausted | discovery.switches.designed_experiments=false | 0 |
+| u10-einstein-vma/discovery | 9e0b39a5bcd2 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 4944c914d4a29ac2553e8e37aaa3a340afe617b2990244592656ed5285a4129e | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 07:14 | 2026-10-03 11:43 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 13:14; hours=6.00; work=MISSING | finished | same as first case | 0 |
+| u10-einstein-vma/einstein | ae1ac9ff9a3c | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 4944c914d4a29ac2553e8e37aaa3a340afe617b2990244592656ed5285a4129e | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 06:40 | 2026-10-03 09:39 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 12:40; hours=6.00; work=MISSING | declared allowance: Declared training allowance exhausted | discovery.einstein.bold_predictions=true; discovery.einstein.doubt_assumptions=true; discovery.einstein.symmetry_principles=true; discovery.einstein.thought_experiments=true | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | ae1ac9ff9a3c | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 4944c914d4a29ac2553e8e37aaa3a340afe617b2990244592656ed5285a4129e | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 06:55 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 12:55; hours=6.00; work=MISSING | unfinished saved snapshot; stage=arms | discovery.einstein.doubt_assumptions=true; discovery.einstein.symmetry_principles=true; discovery.einstein.thought_experiments=true | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | 9e0b39a5bcd2 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 4944c914d4a29ac2553e8e37aaa3a340afe617b2990244592656ed5285a4129e | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 08:09 | 2026-10-03 12:24 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 14:09; hours=6.00; work=MISSING | finished | discovery.einstein.bold_predictions=true; discovery.einstein.symmetry_principles=true; discovery.einstein.thought_experiments=true | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | 9e0b39a5bcd2 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 4944c914d4a29ac2553e8e37aaa3a340afe617b2990244592656ed5285a4129e | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 08:37 | 2026-10-03 13:11 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 14:37; hours=6.00; work=MISSING | finished | discovery.einstein.bold_predictions=true; discovery.einstein.doubt_assumptions=true; discovery.einstein.thought_experiments=true | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | ae1ac9ff9a3c | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 4944c914d4a29ac2553e8e37aaa3a340afe617b2990244592656ed5285a4129e | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 06:55 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 12:55; hours=6.00; work=MISSING | unfinished saved snapshot; stage=arms | discovery.einstein.bold_predictions=true; discovery.einstein.doubt_assumptions=true; discovery.einstein.symmetry_principles=true | 0 |
+| u11-scientists-vmc/einstein | 116124db8749 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 10:29 | 2026-10-03 14:55 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 16:29; hours=6.00; work=MISSING | finished | same as first case | 0 |
+| u11-scientists-vmc/scientists | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 12:43 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 18:43; hours=6.00; work=MISSING | unfinished saved snapshot; stage=arms | discovery.scientists.anomaly_pursuit=true; discovery.scientists.conserved_quantities=true; discovery.scientists.gap_predictions=true; discovery.scientists.number_conjectures=true; discovery.scientists.one_change_experiments=true | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 12:43 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 18:43; hours=6.00; work=MISSING | unfinished saved snapshot; stage=arms | discovery.scientists.conserved_quantities=true; discovery.scientists.gap_predictions=true; discovery.scientists.number_conjectures=true; discovery.scientists.one_change_experiments=true | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:22 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 17:22; hours=6.00; work=MISSING | unfinished saved snapshot; stage=arms | discovery.scientists.anomaly_pursuit=true; discovery.scientists.gap_predictions=true; discovery.scientists.number_conjectures=true; discovery.scientists.one_change_experiments=true | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:22 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 17:22; hours=6.00; work=MISSING | unfinished saved snapshot; stage=arms | discovery.scientists.anomaly_pursuit=true; discovery.scientists.conserved_quantities=true; discovery.scientists.number_conjectures=true; discovery.scientists.one_change_experiments=true | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | 116124db8749 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 10:29 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 16:29; hours=6.00; work=MISSING | unfinished saved snapshot; stage=arms | discovery.scientists.anomaly_pursuit=true; discovery.scientists.conserved_quantities=true; discovery.scientists.gap_predictions=true; discovery.scientists.one_change_experiments=true | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:22 | 2026-10-03 15:17 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 17:22; hours=6.00; work=MISSING | declared allowance: Declared training allowance exhausted | discovery.scientists.anomaly_pursuit=true; discovery.scientists.conserved_quantities=true; discovery.scientists.gap_predictions=true; discovery.scientists.number_conjectures=true | 0 |
+| u12-darwin-vma/darwin | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:21 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 17:21; hours=6.00; work=MISSING | unfinished saved snapshot; stage=arms | same as first case | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:21 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 17:21; hours=6.00; work=MISSING | unfinished saved snapshot; stage=arms | discovery.darwin.change_mechanisms=false | 0 |
+| u12-darwin-vma/darwin-no-deep-time | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 13:17 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 19:17; hours=6.00; work=MISSING | unfinished saved snapshot; stage=arms | discovery.darwin.deep_time=false | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 13:17 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 19:17; hours=6.00; work=MISSING | unfinished saved snapshot; stage=arms | discovery.darwin.lineage_trees=false | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:21 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 17:21; hours=6.00; work=MISSING | unfinished saved snapshot; stage=arms | discovery.darwin.patient_observation=false | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:21 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 17:21; hours=6.00; work=MISSING | unfinished saved snapshot; stage=arms | discovery.darwin.world_hologram=false | 0 |
+| u12-darwin-vma/darwin-rep | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 13:17 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 19:17; hours=6.00; work=MISSING | unfinished saved snapshot; stage=arms | same as first case | 0 |
+| u12-darwin-vma/scientists | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:21 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 17:21; hours=6.00; work=MISSING | unfinished saved snapshot; stage=arms | discovery.darwin.change_mechanisms=false; discovery.darwin.deep_time=false; discovery.darwin.lineage_trees=false; discovery.darwin.patient_observation=false; discovery.darwin.world_hologram=false | 0 |
+| u13-roadmap-vma/roadmap | 90c707e3e7de | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | d64f3f8b41e53e8d764bc96ae58cd78fdaf42ebb07f98c7cd8fc6e374a32c862 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 20:57 | 2026-10-04 00:07 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-04 02:57; hours=6.00; work=MISSING | declared allowance: Declared training allowance exhausted | same as first case | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | 90c707e3e7de | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | d64f3f8b41e53e8d764bc96ae58cd78fdaf42ebb07f98c7cd8fc6e374a32c862 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 21:04 | 2026-10-03 23:53 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-04 03:04; hours=6.00; work=MISSING | declared allowance: Declared training allowance exhausted | discovery.roadmap.own_operations=false | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | 90c707e3e7de | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | d64f3f8b41e53e8d764bc96ae58cd78fdaf42ebb07f98c7cd8fc6e374a32c862 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 21:10 | 2026-10-04 00:41 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-04 03:10; hours=6.00; work=MISSING | declared allowance: Declared training allowance exhausted | discovery.roadmap.rederive_concepts=false | 0 |
+| u13-roadmap-vmc/darwin | 90c707e3e7de | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | d64f3f8b41e53e8d764bc96ae58cd78fdaf42ebb07f98c7cd8fc6e374a32c862 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 20:03 | 2026-10-03 23:35 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-04 02:03; hours=6.00; work=MISSING | declared allowance: Declared training allowance exhausted | same as first case | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | 90c707e3e7de | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | d64f3f8b41e53e8d764bc96ae58cd78fdaf42ebb07f98c7cd8fc6e374a32c862 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 20:03 | 2026-10-04 00:02 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-04 02:03; hours=6.00; work=MISSING | finished | discovery.roadmap.own_operations=true; discovery.roadmap.rederive_concepts=true | 0 |
+| u14-vma/holes-s3 | fd75b49b79aa | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | cec6b3be2e5c1b297f65c0bf9b9d5fad7bbfff7261b2a857f60c356136d92781 | MISSING | 2026-10-03 22:44 | 2026-10-04 01:33 | budgets=MISSING; clock=work; deadline UTC=MISSING; hours=MISSING; work=1000000000 | finished | same as first case | 0 |
+| u14-vma/holes-s5 | fd75b49b79aa | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | cec6b3be2e5c1b297f65c0bf9b9d5fad7bbfff7261b2a857f60c356136d92781 | MISSING | 2026-10-03 22:46 | 2026-10-04 01:31 | budgets=MISSING; clock=work; deadline UTC=MISSING; hours=MISSING; work=1000000000 | finished | same as first case | 0 |
+| u14-vma/priority-s5 | fd75b49b79aa | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | cec6b3be2e5c1b297f65c0bf9b9d5fad7bbfff7261b2a857f60c356136d92781 | MISSING | 2026-10-03 22:47 | 2026-10-04 00:24 | budgets=MISSING; clock=work; deadline UTC=MISSING; hours=MISSING; work=1000000000 | stop: A checked exact program scope and provenance are required | crutches.no-holes.field_input_ports=false; crutches.no-holes.field_proposer=false; crutches.no-holes.field_understanding=false; crutches.no-holes.program_dreams=false; crutches.no-holes.sleep_library=false; crutches.no-questions-first.field_input_ports=true; crutches.no-questions-first.field_proposer=true; crutches.no-questions-first.field_understanding=true; crutches.no-questions-first.program_dreams=true; crutches.no-questions-first.sleep_library=true | 0 |
+| u8-u9-vmc-9036ca3/discovery-off | ae1ac9ff9a3c | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | no discovery suite declared | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 06:23 | 2026-10-03 10:06 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=5400; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 12:23; hours=6.00; work=MISSING | finished | same as first case | 0 |
+| u8-u9-vmc-9036ca3/full | 08736dc899fd | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | no discovery suite declared | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 04:48 | 2026-10-03 09:38 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=5400; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 10:48; hours=6.00; work=MISSING | finished | crutches.full.memory_layer_a=true; crutches.full.memory_layer_b=true; crutches.no-dreams.memory_layer_a=true; crutches.no-dreams.memory_layer_b=true; crutches.no-library.memory_layer_a=true; crutches.no-library.memory_layer_b=true; crutches.no-proposer.memory_layer_a=true; crutches.no-proposer.memory_layer_b=true | 0 |
+| u8-u9-vmc-9036ca3/mem-choice | 08736dc899fd | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | no discovery suite declared | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 04:48 | 2026-10-03 08:46 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=5400; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 10:48; hours=6.00; work=MISSING | declared allowance: Declared 1.5-hour training allowance exhausted | crutches.full.memory_choice=true; crutches.full.memory_layer_a=true; crutches.full.memory_layer_b=true; crutches.no-dreams.memory_choice=true; crutches.no-dreams.memory_layer_a=true; crutches.no-dreams.memory_layer_b=true; crutches.no-library.memory_choice=true; crutches.no-library.memory_layer_a=true; crutches.no-library.memory_layer_b=true; crutches.no-proposer.memory_choice=true; crutches.no-proposer.memory_layer_a=true; crutches.no-proposer.memory_layer_b=true | 0 |
+| u8-u9-vmc-9036ca3/no-memory | 08736dc899fd | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | no discovery suite declared | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 04:48 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=5400; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 10:48; hours=6.00; work=MISSING | unfinished saved snapshot; stage=arms | same as first case | 0 |
+| u9-discovery-vmc/discovery | 9e0b39a5bcd2 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | f2a2bf86ff5041d695b0e8621e1c47ebeb070900f3b16d870e45e4f8acb37214 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 08:11 | 2026-10-03 11:05 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 14:11; hours=6.00; work=MISSING | declared allowance: Declared training allowance exhausted | same as first case | 0 |
+| u9-discovery-vmc/discovery-no-unify | 9e0b39a5bcd2 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | f2a2bf86ff5041d695b0e8621e1c47ebeb070900f3b16d870e45e4f8acb37214 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 09:04 | 2026-10-03 12:19 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 15:04; hours=6.00; work=MISSING | declared allowance: Declared training allowance exhausted | discovery.switches.unification_credit=false | 0 |
+| u9-discovery-vmc/discovery-random | 614e0457f753 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | f2a2bf86ff5041d695b0e8621e1c47ebeb070900f3b16d870e45e4f8acb37214 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 09:34 | 2026-10-03 12:23 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; clock=wall; deadline UTC=2026-10-03 15:34; hours=6.00; work=MISSING | declared allowance: Declared training allowance exhausted | discovery.switches.designed_experiments=false | 0 |
 
 | case | saved source | provenance path | value | false credit |
 |---|---|---|---|---|
@@ -114,6 +130,22 @@ in [the main report](SERA_U_REPORT.md).
 | u12-darwin-vma/darwin-rep | state | .count | 0 | 0 |
 | u12-darwin-vma/scientists | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
 | u12-darwin-vma/scientists | state | .count | 0 | 0 |
+| u13-roadmap-vma/roadmap | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u13-roadmap-vma/roadmap | state | .count | 0 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | state | .count | 0 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | state | .count | 0 | 0 |
+| u13-roadmap-vmc/darwin | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u13-roadmap-vmc/darwin | state | .count | 0 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | state | .count | 0 | 0 |
+| u14-vma/holes-s3 | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u14-vma/holes-s3 | state | .count | 0 | 0 |
+| u14-vma/holes-s5 | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u14-vma/holes-s5 | state | .count | 0 | 0 |
+| u14-vma/priority-s5 | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u14-vma/priority-s5 | state | .count | 0 | 0 |
 | u8-u9-vmc-9036ca3/discovery-off | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
 | u8-u9-vmc-9036ca3/discovery-off | state | .count | 0 | 0 |
 | u8-u9-vmc-9036ca3/full | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
@@ -481,6 +513,120 @@ Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9
 | u12-darwin-vma/scientists | no-proposer | 1 | 31 | 48 | 48 | 6.9 | 0.65 | 0 |
 | u12-darwin-vma/scientists | no-proposer | 2 | 37 | 48 | 48 | 6.4 | 0.77 | 0 |
 | u12-darwin-vma/scientists | no-proposer | 3 | 36 | 48 | 48 | 5.7 | 0.75 | 0 |
+
+Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "cec6b3be2e5c1b297f65c0bf9b9d5fad7bbfff7261b2a857f60c356136d92781"]. Cases are comparable only on equal frozen suites.
+
+| case | arm | generation | solved | N (declared) | rows saved | median item wall seconds | fraction of declared N | false credit |
+|---|---|---|---|---|---|---|---|---|
+| u14-vma/holes-s3 | full | 0 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s3 | full | 1 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s3 | full | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s3 | full | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s3 | no-holes | 0 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s3 | no-holes | 1 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s3 | no-holes | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s3 | no-holes | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s5 | full | 0 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s5 | full | 1 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s5 | full | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s5 | full | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s5 | no-holes | 0 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s5 | no-holes | 1 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s5 | no-holes | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s5 | no-holes | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u14-vma/priority-s5 | full | 0 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u14-vma/priority-s5 | full | 1 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u14-vma/priority-s5 | full | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u14-vma/priority-s5 | full | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u14-vma/priority-s5 | no-questions-first | 0 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u14-vma/priority-s5 | no-questions-first | 1 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u14-vma/priority-s5 | no-questions-first | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u14-vma/priority-s5 | no-questions-first | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+
+Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "d64f3f8b41e53e8d764bc96ae58cd78fdaf42ebb07f98c7cd8fc6e374a32c862"]. Cases are comparable only on equal frozen suites.
+
+| case | arm | generation | solved | N (declared) | rows saved | median item wall seconds | fraction of declared N | false credit |
+|---|---|---|---|---|---|---|---|---|
+| u13-roadmap-vma/roadmap | full | 0 | 36 | 48 | 48 | 2.1 | 0.75 | 0 |
+| u13-roadmap-vma/roadmap | full | 1 | 42 | 48 | 48 | 2.1 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap | full | 2 | 42 | 48 | 48 | 4.0 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap | full | 3 | 40 | 48 | 48 | 2.3 | 0.83 | 0 |
+| u13-roadmap-vma/roadmap | no-dreams | 0 | 35 | 48 | 48 | 4.7 | 0.73 | 0 |
+| u13-roadmap-vma/roadmap | no-dreams | 1 | 40 | 48 | 48 | 3.7 | 0.83 | 0 |
+| u13-roadmap-vma/roadmap | no-dreams | 2 | 42 | 48 | 48 | 2.4 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap | no-dreams | 3 | 42 | 48 | 48 | 1.8 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap | no-library | 0 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap | no-library | 1 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap | no-library | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap | no-library | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap | no-proposer | 0 | 30 | 48 | 48 | 5.8 | 0.62 | 0 |
+| u13-roadmap-vma/roadmap | no-proposer | 1 | 36 | 48 | 48 | 6.2 | 0.75 | 0 |
+| u13-roadmap-vma/roadmap | no-proposer | 2 | 29 | 48 | 48 | 2.6 | 0.60 | 0 |
+| u13-roadmap-vma/roadmap | no-proposer | 3 | 27 | 48 | 48 | 3.8 | 0.56 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 0 | 41 | 48 | 48 | 2.7 | 0.85 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 1 | 47 | 48 | 48 | 3.2 | 0.98 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 2 | 45 | 48 | 48 | 1.9 | 0.94 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 3 | 47 | 48 | 48 | 2.8 | 0.98 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-dreams | 0 | 43 | 48 | 48 | 3.6 | 0.90 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-dreams | 1 | 48 | 48 | 48 | 1.4 | 1.00 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-dreams | 2 | 46 | 48 | 48 | 2.8 | 0.96 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-dreams | 3 | 48 | 48 | 48 | 1.8 | 1.00 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-library | 0 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-library | 1 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-library | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-library | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-proposer | 0 | 34 | 48 | 48 | 6.8 | 0.71 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-proposer | 1 | 42 | 48 | 48 | 3.9 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-proposer | 2 | 38 | 48 | 48 | 1.1 | 0.79 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-proposer | 3 | 31 | 48 | 48 | 7.1 | 0.65 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 0 | 40 | 48 | 48 | 6.5 | 0.83 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 1 | 39 | 48 | 48 | 2.8 | 0.81 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 2 | 41 | 48 | 48 | 1.1 | 0.85 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 3 | 40 | 48 | 48 | 3.0 | 0.83 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-dreams | 0 | 38 | 48 | 48 | 7.4 | 0.79 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-dreams | 1 | 41 | 48 | 48 | 1.7 | 0.85 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-dreams | 2 | 39 | 48 | 48 | 2.7 | 0.81 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-dreams | 3 | 41 | 48 | 48 | 1.4 | 0.85 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-library | 0 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-library | 1 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-library | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-library | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-proposer | 0 | 40 | 48 | 48 | 6.2 | 0.83 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-proposer | 1 | 15 | 48 | 48 | 11.6 | 0.31 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-proposer | 2 | 3 | 48 | 48 | 17.8 | 0.06 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-proposer | 3 | 6 | 48 | 48 | 16.2 | 0.12 | 0 |
+| u13-roadmap-vmc/darwin | full | 0 | 47 | 48 | 48 | 2.3 | 0.98 | 0 |
+| u13-roadmap-vmc/darwin | full | 1 | 46 | 48 | 48 | 2.7 | 0.96 | 0 |
+| u13-roadmap-vmc/darwin | full | 2 | 47 | 48 | 48 | 1.1 | 0.98 | 0 |
+| u13-roadmap-vmc/darwin | full | 3 | 46 | 48 | 48 | 2.9 | 0.96 | 0 |
+| u13-roadmap-vmc/darwin | no-dreams | 0 | 47 | 48 | 48 | 2.1 | 0.98 | 0 |
+| u13-roadmap-vmc/darwin | no-dreams | 1 | 47 | 48 | 48 | 2.2 | 0.98 | 0 |
+| u13-roadmap-vmc/darwin | no-dreams | 2 | 47 | 48 | 48 | 1.3 | 0.98 | 0 |
+| u13-roadmap-vmc/darwin | no-dreams | 3 | 46 | 48 | 48 | 2.8 | 0.96 | 0 |
+| u13-roadmap-vmc/darwin | no-library | 0 | 16 | 48 | 48 | 10.8 | 0.33 | 0 |
+| u13-roadmap-vmc/darwin | no-library | 1 | 7 | 48 | 48 | 11.0 | 0.15 | 0 |
+| u13-roadmap-vmc/darwin | no-library | 2 | 13 | 48 | 48 | 11.1 | 0.27 | 0 |
+| u13-roadmap-vmc/darwin | no-library | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vmc/darwin | no-proposer | 0 | 37 | 48 | 48 | 2.2 | 0.77 | 0 |
+| u13-roadmap-vmc/darwin | no-proposer | 1 | 36 | 48 | 48 | 7.5 | 0.75 | 0 |
+| u13-roadmap-vmc/darwin | no-proposer | 2 | 41 | 48 | 48 | 1.1 | 0.85 | 0 |
+| u13-roadmap-vmc/darwin | no-proposer | 3 | 27 | 48 | 48 | 1.2 | 0.56 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 0 | 40 | 48 | 48 | 4.4 | 0.83 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 1 | 42 | 48 | 48 | 1.1 | 0.88 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 2 | 42 | 48 | 48 | 1.5 | 0.88 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 3 | 41 | 48 | 48 | 1.7 | 0.85 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-dreams | 0 | 40 | 48 | 48 | 6.0 | 0.83 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-dreams | 1 | 41 | 48 | 48 | 3.3 | 0.85 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-dreams | 2 | 41 | 48 | 48 | 1.5 | 0.85 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-dreams | 3 | 38 | 48 | 48 | 3.2 | 0.79 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-library | 0 | 16 | 48 | 48 | 10.7 | 0.33 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-library | 1 | 13 | 48 | 48 | 11.0 | 0.27 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-library | 2 | 14 | 48 | 48 | 11.1 | 0.29 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-library | 3 | 9 | 48 | 48 | 11.2 | 0.19 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-proposer | 0 | 41 | 48 | 48 | 5.7 | 0.85 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-proposer | 1 | 24 | 48 | 48 | 9.3 | 0.50 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-proposer | 2 | 36 | 48 | 48 | 1.1 | 0.75 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-proposer | 3 | 40 | 48 | 48 | 1.2 | 0.83 | 0 |
 
 Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "f2a2bf86ff5041d695b0e8621e1c47ebeb070900f3b16d870e45e4f8acb37214"]. Cases are comparable only on equal frozen suites.
 
@@ -1041,6 +1187,117 @@ Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9
 | u12-darwin-vma/scientists | full | 3 | rows | 48 | 0 |
 | u12-darwin-vma/scientists | full | 3 | solved | 40 | 0 |
 
+Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "cec6b3be2e5c1b297f65c0bf9b9d5fad7bbfff7261b2a857f60c356136d92781"]. Cases are comparable only on equal frozen suites.
+
+| case | arm | generation | saved curve metric | value | false credit |
+|---|---|---|---|---|---|
+| MISSING | MISSING | MISSING | MISSING | MISSING | u14-vma/holes-s3: 0; u14-vma/holes-s5: 0; u14-vma/priority-s5: 0 |
+
+Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "d64f3f8b41e53e8d764bc96ae58cd78fdaf42ebb07f98c7cd8fc6e374a32c862"]. Cases are comparable only on equal frozen suites.
+
+| case | arm | generation | saved curve metric | value | false credit |
+|---|---|---|---|---|---|
+| u13-roadmap-vma/roadmap | full | 0 | N | 48 | 0 |
+| u13-roadmap-vma/roadmap | full | 0 | complete | true | 0 |
+| u13-roadmap-vma/roadmap | full | 0 | g | 0.75 | 0 |
+| u13-roadmap-vma/roadmap | full | 0 | rows | 48 | 0 |
+| u13-roadmap-vma/roadmap | full | 0 | solved | 36 | 0 |
+| u13-roadmap-vma/roadmap | full | 1 | N | 48 | 0 |
+| u13-roadmap-vma/roadmap | full | 1 | complete | true | 0 |
+| u13-roadmap-vma/roadmap | full | 1 | g | 0.88 | 0 |
+| u13-roadmap-vma/roadmap | full | 1 | rows | 48 | 0 |
+| u13-roadmap-vma/roadmap | full | 1 | solved | 42 | 0 |
+| u13-roadmap-vma/roadmap | full | 2 | N | 48 | 0 |
+| u13-roadmap-vma/roadmap | full | 2 | complete | true | 0 |
+| u13-roadmap-vma/roadmap | full | 2 | g | 0.88 | 0 |
+| u13-roadmap-vma/roadmap | full | 2 | rows | 48 | 0 |
+| u13-roadmap-vma/roadmap | full | 2 | solved | 42 | 0 |
+| u13-roadmap-vma/roadmap | full | 3 | N | 48 | 0 |
+| u13-roadmap-vma/roadmap | full | 3 | complete | true | 0 |
+| u13-roadmap-vma/roadmap | full | 3 | g | 0.83 | 0 |
+| u13-roadmap-vma/roadmap | full | 3 | rows | 48 | 0 |
+| u13-roadmap-vma/roadmap | full | 3 | solved | 40 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 0 | N | 48 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 0 | complete | true | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 0 | g | 0.85 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 0 | rows | 48 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 0 | solved | 41 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 1 | N | 48 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 1 | complete | true | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 1 | g | 0.98 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 1 | rows | 48 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 1 | solved | 47 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 2 | N | 48 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 2 | complete | true | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 2 | g | 0.94 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 2 | rows | 48 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 2 | solved | 45 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 3 | N | 48 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 3 | complete | true | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 3 | g | 0.98 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 3 | rows | 48 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 3 | solved | 47 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 0 | N | 48 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 0 | complete | true | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 0 | g | 0.83 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 0 | rows | 48 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 0 | solved | 40 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 1 | N | 48 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 1 | complete | true | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 1 | g | 0.81 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 1 | rows | 48 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 1 | solved | 39 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 2 | N | 48 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 2 | complete | true | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 2 | g | 0.85 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 2 | rows | 48 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 2 | solved | 41 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 3 | N | 48 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 3 | complete | true | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 3 | g | 0.83 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 3 | rows | 48 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 3 | solved | 40 | 0 |
+| u13-roadmap-vmc/darwin | full | 0 | N | 48 | 0 |
+| u13-roadmap-vmc/darwin | full | 0 | complete | true | 0 |
+| u13-roadmap-vmc/darwin | full | 0 | g | 0.98 | 0 |
+| u13-roadmap-vmc/darwin | full | 0 | rows | 48 | 0 |
+| u13-roadmap-vmc/darwin | full | 0 | solved | 47 | 0 |
+| u13-roadmap-vmc/darwin | full | 1 | N | 48 | 0 |
+| u13-roadmap-vmc/darwin | full | 1 | complete | true | 0 |
+| u13-roadmap-vmc/darwin | full | 1 | g | 0.96 | 0 |
+| u13-roadmap-vmc/darwin | full | 1 | rows | 48 | 0 |
+| u13-roadmap-vmc/darwin | full | 1 | solved | 46 | 0 |
+| u13-roadmap-vmc/darwin | full | 2 | N | 48 | 0 |
+| u13-roadmap-vmc/darwin | full | 2 | complete | true | 0 |
+| u13-roadmap-vmc/darwin | full | 2 | g | 0.98 | 0 |
+| u13-roadmap-vmc/darwin | full | 2 | rows | 48 | 0 |
+| u13-roadmap-vmc/darwin | full | 2 | solved | 47 | 0 |
+| u13-roadmap-vmc/darwin | full | 3 | N | 48 | 0 |
+| u13-roadmap-vmc/darwin | full | 3 | complete | true | 0 |
+| u13-roadmap-vmc/darwin | full | 3 | g | 0.96 | 0 |
+| u13-roadmap-vmc/darwin | full | 3 | rows | 48 | 0 |
+| u13-roadmap-vmc/darwin | full | 3 | solved | 46 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 0 | N | 48 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 0 | complete | true | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 0 | g | 0.83 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 0 | rows | 48 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 0 | solved | 40 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 1 | N | 48 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 1 | complete | true | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 1 | g | 0.88 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 1 | rows | 48 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 1 | solved | 42 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 2 | N | 48 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 2 | complete | true | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 2 | g | 0.88 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 2 | rows | 48 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 2 | solved | 42 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 3 | N | 48 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 3 | complete | true | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 3 | g | 0.85 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 3 | rows | 48 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 3 | solved | 41 | 0 |
+
 Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "f2a2bf86ff5041d695b0e8621e1c47ebeb070900f3b16d870e45e4f8acb37214"]. Cases are comparable only on equal frozen suites.
 
 | case | arm | generation | saved curve metric | value | false credit |
@@ -1544,6 +1801,120 @@ Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9
 | u12-darwin-vma/scientists | no-proposer | 2 | 7 | 8 | 8 | 1.1 | 0.88 | 0 |
 | u12-darwin-vma/scientists | no-proposer | 3 | 7 | 8 | 8 | 6.2 | 0.88 | 0 |
 
+Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "cec6b3be2e5c1b297f65c0bf9b9d5fad7bbfff7261b2a857f60c356136d92781"]. Cases are comparable only on equal frozen suites.
+
+| case | arm | generation | solved | N (declared) | rows saved | median item wall seconds | fraction of declared N | false credit |
+|---|---|---|---|---|---|---|---|---|
+| u14-vma/holes-s3 | full | 0 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s3 | full | 1 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s3 | full | 2 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s3 | full | 3 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s3 | no-holes | 0 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s3 | no-holes | 1 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s3 | no-holes | 2 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s3 | no-holes | 3 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s5 | full | 0 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s5 | full | 1 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s5 | full | 2 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s5 | full | 3 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s5 | no-holes | 0 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s5 | no-holes | 1 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s5 | no-holes | 2 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+| u14-vma/holes-s5 | no-holes | 3 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+| u14-vma/priority-s5 | full | 0 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+| u14-vma/priority-s5 | full | 1 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+| u14-vma/priority-s5 | full | 2 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+| u14-vma/priority-s5 | full | 3 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+| u14-vma/priority-s5 | no-questions-first | 0 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+| u14-vma/priority-s5 | no-questions-first | 1 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+| u14-vma/priority-s5 | no-questions-first | 2 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+| u14-vma/priority-s5 | no-questions-first | 3 | MISSING | MISSING | 0 | MISSING | MISSING | 0 |
+
+Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "d64f3f8b41e53e8d764bc96ae58cd78fdaf42ebb07f98c7cd8fc6e374a32c862"]. Cases are comparable only on equal frozen suites.
+
+| case | arm | generation | solved | N (declared) | rows saved | median item wall seconds | fraction of declared N | false credit |
+|---|---|---|---|---|---|---|---|---|
+| u13-roadmap-vma/roadmap | full | 0 | 7 | 8 | 8 | 1.7 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap | full | 1 | 7 | 8 | 8 | 1.4 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap | full | 2 | 7 | 8 | 8 | 1.6 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap | full | 3 | 7 | 8 | 8 | 1.6 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap | no-dreams | 0 | 7 | 8 | 8 | 2.6 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap | no-dreams | 1 | 7 | 8 | 8 | 2.6 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap | no-dreams | 2 | 6 | 8 | 8 | 2.9 | 0.75 | 0 |
+| u13-roadmap-vma/roadmap | no-dreams | 3 | 7 | 8 | 8 | 2.2 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap | no-library | 0 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap | no-library | 1 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap | no-library | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap | no-library | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap | no-proposer | 0 | 7 | 8 | 8 | 1.5 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap | no-proposer | 1 | 7 | 8 | 8 | 5.8 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap | no-proposer | 2 | 7 | 8 | 8 | 1.0 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap | no-proposer | 3 | 4 | 8 | 8 | 6.3 | 0.50 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 0 | 8 | 8 | 8 | 1.9 | 1.00 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 1 | 8 | 8 | 8 | 3.0 | 1.00 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 2 | 8 | 8 | 8 | 1.3 | 1.00 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | full | 3 | 8 | 8 | 8 | 2.2 | 1.00 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-dreams | 0 | 7 | 8 | 8 | 2.5 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-dreams | 1 | 8 | 8 | 8 | 1.3 | 1.00 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-dreams | 2 | 8 | 8 | 8 | 1.9 | 1.00 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-dreams | 3 | 8 | 8 | 8 | 1.4 | 1.00 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-library | 0 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-library | 1 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-library | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-library | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-proposer | 0 | 8 | 8 | 8 | 0.5 | 1.00 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-proposer | 1 | 8 | 8 | 8 | 0.9 | 1.00 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-proposer | 2 | 8 | 8 | 8 | 0.9 | 1.00 | 0 |
+| u13-roadmap-vma/roadmap-no-own-operations | no-proposer | 3 | 5 | 8 | 8 | 8.0 | 0.62 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 0 | 7 | 8 | 8 | 1.1 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 1 | 7 | 8 | 8 | 2.0 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 2 | 7 | 8 | 8 | 1.0 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | full | 3 | 7 | 8 | 8 | 2.3 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-dreams | 0 | 7 | 8 | 8 | 0.8 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-dreams | 1 | 7 | 8 | 8 | 1.2 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-dreams | 2 | 7 | 8 | 8 | 2.1 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-dreams | 3 | 7 | 8 | 8 | 2.1 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-library | 0 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-library | 1 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-library | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-library | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-proposer | 0 | 7 | 8 | 8 | 0.5 | 0.88 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-proposer | 1 | 2 | 8 | 8 | 11.2 | 0.25 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-proposer | 2 | 0 | 8 | 8 | 15.8 | 0.00 | 0 |
+| u13-roadmap-vma/roadmap-no-rederive-concepts | no-proposer | 3 | 2 | 8 | 8 | 14.9 | 0.25 | 0 |
+| u13-roadmap-vmc/darwin | full | 0 | 8 | 8 | 8 | 1.9 | 1.00 | 0 |
+| u13-roadmap-vmc/darwin | full | 1 | 8 | 8 | 8 | 2.0 | 1.00 | 0 |
+| u13-roadmap-vmc/darwin | full | 2 | 8 | 8 | 8 | 1.0 | 1.00 | 0 |
+| u13-roadmap-vmc/darwin | full | 3 | 8 | 8 | 8 | 2.2 | 1.00 | 0 |
+| u13-roadmap-vmc/darwin | no-dreams | 0 | 8 | 8 | 8 | 1.8 | 1.00 | 0 |
+| u13-roadmap-vmc/darwin | no-dreams | 1 | 8 | 8 | 8 | 1.5 | 1.00 | 0 |
+| u13-roadmap-vmc/darwin | no-dreams | 2 | 8 | 8 | 8 | 1.0 | 1.00 | 0 |
+| u13-roadmap-vmc/darwin | no-dreams | 3 | 8 | 8 | 8 | 2.2 | 1.00 | 0 |
+| u13-roadmap-vmc/darwin | no-library | 0 | 7 | 8 | 8 | 3.8 | 0.88 | 0 |
+| u13-roadmap-vmc/darwin | no-library | 1 | 5 | 8 | 8 | 4.2 | 0.62 | 0 |
+| u13-roadmap-vmc/darwin | no-library | 2 | 5 | 8 | 8 | 8.3 | 0.62 | 0 |
+| u13-roadmap-vmc/darwin | no-library | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u13-roadmap-vmc/darwin | no-proposer | 0 | 8 | 8 | 8 | 1.3 | 1.00 | 0 |
+| u13-roadmap-vmc/darwin | no-proposer | 1 | 5 | 8 | 8 | 2.0 | 0.62 | 0 |
+| u13-roadmap-vmc/darwin | no-proposer | 2 | 8 | 8 | 8 | 1.1 | 1.00 | 0 |
+| u13-roadmap-vmc/darwin | no-proposer | 3 | 7 | 8 | 8 | 1.1 | 0.88 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 0 | 7 | 8 | 8 | 0.7 | 0.88 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 1 | 7 | 8 | 8 | 1.0 | 0.88 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 2 | 8 | 8 | 8 | 1.1 | 1.00 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | full | 3 | 7 | 8 | 8 | 1.5 | 0.88 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-dreams | 0 | 7 | 8 | 8 | 1.5 | 0.88 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-dreams | 1 | 7 | 8 | 8 | 2.3 | 0.88 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-dreams | 2 | 7 | 8 | 8 | 1.1 | 0.88 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-dreams | 3 | 7 | 8 | 8 | 1.8 | 0.88 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-library | 0 | 5 | 8 | 8 | 6.5 | 0.62 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-library | 1 | 5 | 8 | 8 | 4.8 | 0.62 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-library | 2 | 5 | 8 | 8 | 6.2 | 0.62 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-library | 3 | 4 | 8 | 8 | 10.4 | 0.50 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-proposer | 0 | 7 | 8 | 8 | 0.3 | 0.88 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-proposer | 1 | 7 | 8 | 8 | 7.0 | 0.88 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-proposer | 2 | 7 | 8 | 8 | 1.2 | 0.88 | 0 |
+| u13-roadmap-vmc/roadmap-no-rough-estimates | no-proposer | 3 | 7 | 8 | 8 | 4.1 | 0.88 | 0 |
+
 Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "f2a2bf86ff5041d695b0e8621e1c47ebeb070900f3b16d870e45e4f8acb37214"]. Cases are comparable only on equal frozen suites.
 
 | case | arm | generation | solved | N (declared) | rows saved | median item wall seconds | fraction of declared N | false credit |
@@ -1848,6 +2219,18 @@ Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9
 | u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | scientists | no-proposer | 3 | laws | 0 | 1 | 1 | 1 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
 | u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | scientists | no-proposer | 3 | seconds | 228.3 | 202.8 | -25.5 | 25.5 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
 
+Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "cec6b3be2e5c1b297f65c0bf9b9d5fad7bbfff7261b2a857f60c356136d92781"]. Cases are comparable only on equal frozen suites. Matching saved switches; code digests may differ (see provenance). Largest replicate gap is used per metric/generation. Comparisons additionally match saved seed, device, allowances and evaluation sizes.
+
+| left | right | section | arm | generation | metric | left value | right value | right - left | measured absolute spread | false credit |
+|---|---|---|---|---|---|---|---|---|---|---|
+| MISSING | MISSING | MISSING | MISSING | MISSING | MISSING | MISSING | MISSING | MISSING | MISSING | u14-vma/holes-s3: 0; u14-vma/holes-s5: 0; u14-vma/priority-s5: 0 |
+
+Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "d64f3f8b41e53e8d764bc96ae58cd78fdaf42ebb07f98c7cd8fc6e374a32c862"]. Cases are comparable only on equal frozen suites. Matching saved switches; code digests may differ (see provenance). Largest replicate gap is used per metric/generation. Comparisons additionally match saved seed, device, allowances and evaluation sizes.
+
+| left | right | section | arm | generation | metric | left value | right value | right - left | measured absolute spread | false credit |
+|---|---|---|---|---|---|---|---|---|---|---|
+| MISSING | MISSING | MISSING | MISSING | MISSING | MISSING | MISSING | MISSING | MISSING | MISSING | u13-roadmap-vma/roadmap: 0; u13-roadmap-vma/roadmap-no-own-operations: 0; u13-roadmap-vma/roadmap-no-rederive-concepts: 0; u13-roadmap-vmc/darwin: 0; u13-roadmap-vmc/roadmap-no-rough-estimates: 0 |
+
 Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "f2a2bf86ff5041d695b0e8621e1c47ebeb070900f3b16d870e45e4f8acb37214"]. Cases are comparable only on equal frozen suites. Matching saved switches; code digests may differ (see provenance). Largest replicate gap is used per metric/generation. Comparisons additionally match saved seed, device, allowances and evaluation sizes.
 
 | left | right | section | arm | generation | metric | left value | right value | right - left | measured absolute spread | false credit |
@@ -1998,6 +2381,3 @@ Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9
 | u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 3 | rows | 8 | 8 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
 | u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 3 | solved | 3 | 4 | 1 | 1 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
 <!-- generated:end noise -->
-
-Detailed per-metric difference inventories remain in the local archive.
-The noise section above retains the summarized comparisons.
