@@ -31,6 +31,7 @@ class WorldView:
     tout: str = 'num'
     objects: int = 1
     sigma: tuple = (.001, .001)
+    object_ids: tuple = ()       # optional public continuity of the same bodies
 
     def __post_init__(self):
         if (type(self.id) is not str or type(self.form) is not str or type(self.tin) is not str or
@@ -38,6 +39,9 @@ class WorldView:
                 self.form not in ('exact', 'strengths') or not self.id or self.objects < 1):
             raise ValueError('Invalid open-world interface')
         object.__setattr__(self, 'sigma', observed(self.sigma))
+        object.__setattr__(self, 'object_ids', observed(self.object_ids))
+        if any(type(k) is not str for k in self.object_ids):
+            raise ValueError('Public object identities must be opaque strings')
         if (self.tin not in ('num', 'list') or self.tout not in ('num', 'list') or
                 len(self.sigma) != 2 or any(type(s) not in (int, float) or
                     not math.isfinite(s) or s <= 0 for s in self.sigma)):
@@ -283,7 +287,7 @@ class Discovery:
 
     def learning_state(self):
         # Events contain raw elapsed costs and are observer reporting only.
-        state = {k: v for k, v in self.__dict__.items() if k not in ('events', 'einstein', 'scientists', 'darwin', 'roadmap')}
+        state = {k: v for k, v in self.__dict__.items() if k not in ('events', 'einstein', 'scientists', 'darwin', 'roadmap', '_wiring_hops', '_wiring_enabled')}
         if hasattr(self, 'einstein'):
             state['einstein'] = self.einstein.learning_state()
         if hasattr(self, 'scientists'):
@@ -294,12 +298,32 @@ class Discovery:
             state['roadmap'] = self.roadmap.learning_state()
         return state
 
+    def trace(self, name, laws, outputs=()):
+        """Observer-only receipts at consumer entry/output, no inferred credit."""
+        if not getattr(self, '_wiring_enabled', False):
+            return
+        entry = self.__dict__.setdefault('_wiring_hops', {}).setdefault(name, dict(received=set(), outputs=set()))
+        entry['received'].update(laws)
+        entry['outputs'].update(outputs)
+        self.events.append(dict(seconds=0., wiring_hop=dict(habit=name,
+            received=sorted(laws, key=repr), outputs=sorted(outputs, key=repr))))
+
+    def syndromes(self, mind, view, rivals):
+        checks = mind.field.curiosity.checks(view, rivals, mind.field.concept_table())
+        if checks:
+            read = mind.engine._u_reads([view])[0][0].detach().cpu().numpy()
+            mind.field.curiosity.decode(view, checks, read)
+            self.trace('gap_syndromes', [k for k, e in self.laws.items() if e['hypothesis'] in rivals],
+                       ['checks:'+digest(tuple(s.check for s in checks))])
+        return checks
+
     def view(self, wid, query=()):
         w, rows = self.worlds[wid], self.observations[wid]
         if w.form == 'exact':
             return TaskView((('x', w.tin),), w.tout,
                 tuple(((('x', x),), y) for x, y in rows[-4:]),
-                tuple((('x', observed(x)),) for x in query))
+                tuple((('x', observed(x)),) for x in query),
+                measurements=tuple(('object-identity', k) for k in w.object_ids))
         # Raw observations, deterministic bounded sampling for the neural port.
         # The symbolic fitter still uses every own observed reading.
         measurements = []
@@ -352,6 +376,8 @@ class Discovery:
         entry = dict(world=wid, law=law, status='not-yet', scope='own-question', origin='explore')
         if entry not in self.pending:
             self.pending.append(entry)
+        if hasattr(mind, 'holes'):
+            mind.holes.anomaly(mind, wid, law=law)
         q = self.own_question(wid, 'anomaly') if self.switches['own_questions'] else None
         if mind.crutches.get('taught_not_yet'):
             view = self.view(wid)
@@ -391,6 +417,8 @@ class Discovery:
 
     def propose(self, mind, wid, deadline):
         """Field proposals plus bounded language search; never a law dictionary."""
+        if getattr(self, '_wiring_enabled', False):
+            self.events.append(dict(seconds=0., wiring_proposal=wid))
         w, view = self.worlds[wid], self.search_view(wid)
         concepts = mind.proposer.admitted(mind.field.concept_table())
         level = self.levels[wid]
@@ -409,7 +437,9 @@ class Discovery:
                     from .sleep import sample_input
                     probes += [{'x': sample_input(w.tin, mind.random)} for _ in range(8)]
                     found += [p for p, _ in LG.search(dict(view.inputs), w.tout, probes,
-                        3+2*level, concepts, constants=nums, work=256*(level+1), lambda_size=3+level)]
+                        3+2*level, concepts, constants=nums,
+                        work=max(1, int(deadline-mind.clock.count)) if getattr(mind, 'clock_mode', 'wall') == 'work' else 256*(level+1),
+                        lambda_size=3+level)]
                 # Prefer previously discovered laws; they are conjectures here.
                 found += [e['hypothesis'] for e in self.laws.values() if e['form'] == 'exact'
                           and e['signature'] == (w.tin, w.tout)]
@@ -627,8 +657,19 @@ class Discovery:
             # standing in layer B's role counts; the legacy Field in its table). The compression credit stays this
             # module's search prior (reuse_credit), never a proof count.
             add_proof(mind.field, ('discovered-law', key))
+            if getattr(mind, 'u14', {}).get('discovery_memory') and mind.proposer.memory is not None:
+                # Open-world proof previously reached layer B/library replay,
+                # but omitted the native audit-result experience used by live.
+                mind.memory.event('audit-result', (hyp, True), progress=1.)
+                mind.memory.refresh(self.view(wid))
         if hasattr(self, 'scientists'):
             self.scientists.admitted(mind, self, wid, key, fresh, seconds)
+        if hasattr(mind, 'holes'):
+            mind.holes.settle(mind, wid, key)
+            mind.holes.raise_questions(mind, wid, key, surface_hyp)
+        if getattr(mind, 'wiring', False):
+            self.events.append(dict(seconds=0., admission_record=dict(law=key, world=wid,
+                record=verdict.record, fresh=fresh, kind=verdict.kind)))
         return key, fresh
 
     def transfer(self, mind, pool, key, deadline):
@@ -756,6 +797,9 @@ class Discovery:
         if not self.switches['open_worlds'] or time.time() >= deadline:
             return None
         started = time.perf_counter()
+        work = getattr(mind, 'clock_mode', 'wall') == 'work'
+        if work:
+            mind.clock.charge('tick')
         from ccops5.core import grammar
         grammar.use_library(mind.field.shapes())
         self.register_worlds(pool.public())
@@ -763,8 +807,11 @@ class Discovery:
             return None
         wid = self.active or sorted(self.worlds)[0]
         x = self.features(mind, self.view(wid))
-        choices = ['visit:'+k for k in sorted(self.worlds)]
-        if self.active is not None:
+        retired = getattr(getattr(mind, 'holes', None), 'retired', {}) if getattr(mind, 'u14', {}).get('retire_understood') else {}
+        choices = ['visit:'+k for k in sorted(self.worlds) if k not in retired]
+        if not choices:
+            return None
+        if self.active is not None and self.active not in retired:
             choices.append('stay')
         choice = self.policy.pick(choices, x, mind.numpy)
         if choice != 'stay':
@@ -772,15 +819,27 @@ class Discovery:
         self.active = wid
         w = self.worlds[wid]
         if mind.proposer.memory is not None:
-            mind.memory.begin(self.view(wid))
+            if getattr(mind, 'u14', {}).get('discovery_memory') and mind.crutches.get('memory_choice'):
+                mind.memory.start_choice(self.view(wid), wall=math.inf if work else max(0., deadline-time.time()),
+                                         phase='world', started=started)
+            else:
+                mind.memory.begin(self.view(wid))
         x = self.features(mind, self.view(wid))
         covered_before = sum(len(e['coverage']) for e in self.laws.values())
         row = dict(world=wid, origin='explore', search_and_retention=True,
                    experiment=None, certified=None, discovered=False, progress=0.)
+        wiring = getattr(mind, 'wiring', False)
+        if wiring:
+            row['wiring'] = dict(observations=sum(map(len, self.observations.values())),
+                floor_worlds=[k for k in sorted(self.worlds) if len(self.observations[k]) >=
+                              (4 if self.worlds[k].form == 'exact' else 2)],
+                proposals=0, candidates_audited=0, certified=0, admitted=0, habits={})
+            before_habits = wiring_snapshot(mind)
         darwin = getattr(self, 'darwin', None)
         darwin_context, darwin_gain, watching = None, 0., False
         if darwin is not None:
-            darwin_context = darwin.run(mind, self, wid, deadline=min(deadline, time.time()+.1))
+            darwin_context = darwin.run(mind, self, wid, deadline=min(deadline,
+                mind.clock.bound('darwin', mind) if work else time.time()+.1))
             watching = darwin_context[2]
             row['darwin_methods'] = darwin_context[0]
         if hasattr(pool, 'next_specimen'):
@@ -821,7 +880,8 @@ class Discovery:
         roadmap = getattr(self, 'roadmap', None)
         roadmap_context, rough_plan, estimate_id, estimate_gain = None, None, None, 0.
         if roadmap is not None:
-            roadmap_context = roadmap.run(mind, self, pool, wid, deadline=min(deadline, time.time()+.35))
+            roadmap_context = roadmap.run(mind, self, pool, wid, deadline=min(deadline,
+                mind.clock.bound('roadmap', mind) if work else time.time()+.35))
             row['roadmap_methods'] = roadmap_context[0]
             if ('rough_estimates',) in roadmap_context[0] and roadmap.switches['rough_estimates']:
                 rough_plan, _ = self.choose_experiment(self.experiment_menu(mind, wid), x, mind.numpy)
@@ -829,6 +889,22 @@ class Discovery:
                     estimate_id = roadmap.predict(mind, self, wid, rough_plan['action'])
                     row['rough_estimate'] = estimate_id
         count = len(self.observations[wid])
+        if getattr(mind, 'u14', {}).get('observe_to_floor') and count < (4 if w.form == 'exact' else 2):
+            floor_choice = self.policy.pick(('observe-to-floor', 'continue'), x, mind.numpy)
+            if floor_choice == 'observe-to-floor':
+                while count < (4 if w.form == 'exact' else 2) and time.time() < deadline:
+                    menu = self.experiment_menu(mind, wid)
+                    experiment, _ = self.choose_experiment(menu, x, mind.numpy)
+                    if experiment is None:
+                        break
+                    action = experiment['action']
+                    self.observations[wid].append(observed(pool.act(wid, action)))
+                    if work:
+                        mind.clock.charge('act')
+                    self.experiments += 1
+                    count += 1
+                self.policy.learn(floor_choice, x, float(count >= (4 if w.form == 'exact' else 2)),
+                                  max(1, count) if work else time.perf_counter()-started)
         question_choice = None
         if self.switches['own_questions'] and (self.rivals[wid] or self.surprises[wid] or
                                                any(r['world'] == wid for r in self.pending)):
@@ -843,8 +919,16 @@ class Discovery:
             x = self.features(mind, q.view)
             row['question'] = q.view.identity
         if not watching and count >= (4 if w.form == 'exact' else 2) and time.time() < deadline:
-            self.rivals[wid] = self.propose(mind, wid, min(deadline, time.time()+.5))
-            self.levels[wid] = min(3, self.levels[wid]+1)
+            if wiring:
+                row['wiring']['proposals'] += 1
+            proposal_start = time.perf_counter()
+            proposal_bound = min(deadline, mind.clock.bound('proposal:'+wid, mind) if work else time.time()+.5)
+            self.rivals[wid] = self.propose(mind, wid, proposal_bound)
+            if work:
+                fit = any(all(LG.safe(p, {'x': v}, mind.field.concept_table()) == y
+                    for v, y in self.observations[wid]) for p in self.rivals[wid]) if w.form == 'exact' else bool(self.rivals[wid])
+                mind.clock.finish('proposal:'+wid, mind, time.perf_counter()-proposal_start, float(fit))
+            self.levels[wid] = (self.levels[wid]+1 if work else min(3, self.levels[wid]+1))
             if roadmap is not None and w.form == 'exact' and not any(all(
                     LG.safe(p, {'x': value}, mind.field.concept_table()) == y
                     for value, y in self.observations[wid]) for p in self.rivals[wid]):
@@ -853,13 +937,10 @@ class Discovery:
         if question_choice == 'question':
             checks = ()
             if mind.crutches.get('gap_syndromes') and w.form == 'exact':
-                checks = mind.field.curiosity.checks(q.view, rivals, mind.field.concept_table())
-            if checks:
-                read = mind.engine._u_reads([q.view])[0][0].detach().cpu().numpy()
-                mind.field.curiosity.decode(q.view, checks, read)
+                checks = self.syndromes(mind, q.view, rivals)
             row['question'] = q.view.identity
         estimate_trial = None
-        audit_candidates = rivals[:2]
+        audit_candidates = rivals if work else rivals[:2]
         if roadmap is not None and not watching and estimate_id is not None:
             ordered, estimate_trial = roadmap.order(mind, self, wid, audit_candidates)
             # Original first two remain the unchanged, unpruned fallback.
@@ -882,6 +963,9 @@ class Discovery:
             self.tried[trial] = True
             self.checks += 1
             verdict = pool.certify(wid, hyp, concepts, tuple(self.observations[wid]), library=mind.field.shapes())
+            if wiring:
+                row['wiring']['candidates_audited'] += 1
+                row['wiring']['certified'] += int(verdict.accepted)
             if type(verdict) is not Certification:
                 raise TypeError('Unsafe judge result')
             if roadmap is not None:
@@ -895,6 +979,8 @@ class Discovery:
             if verdict.accepted:
                 old_laws = len(self.laws)
                 key, fresh = self.admit(mind, wid, hyp, verdict, x, time.perf_counter()-started)
+                if wiring:
+                    row['wiring']['admitted'] += int(fresh)
                 row.update(law=key, discovered=len(self.laws) > old_laws,
                            reused=fresh and len(self.laws[key]['coverage']) > 1)
                 if len(self.laws) > old_laws:
@@ -923,6 +1009,8 @@ class Discovery:
                     if einstein is not None and ('bold_predictions',) in chosen else None)
                 forecast = darwin.forecast(mind, self, wid, action) if darwin is not None else None
                 observation = observed(pool.act(wid, action))
+                if work:
+                    mind.clock.charge('act')
                 if roadmap is not None and estimate_id is not None:
                     estimate_gain = roadmap.settle(estimate_id, observation)
                 if w.form == 'exact':
@@ -956,6 +1044,8 @@ class Discovery:
                 if mind.proposer.memory is not None:
                     mind.memory.refresh(self.view(wid))
                 self.surprises[wid] = surprise
+                if surprise and hasattr(mind, 'holes'):
+                    mind.holes.anomaly(mind, wid)
                 self.experiments += 1
                 row['experiment'] = action
                 gain = ((previous_rivals-len(self.rivals[wid]))/max(1, previous_rivals)
@@ -969,6 +1059,12 @@ class Discovery:
                 if w.form == 'strengths' and len(self.observations[wid]) >= 2:
                     row['quantity'] = self.fit_quantity(mind, wid, x)
         row['seconds'] = time.perf_counter()-started
+        if hasattr(mind, 'holes'):
+            row['learning_progress'] = mind.holes.visit(mind, wid)
+            row['progress'] += row['learning_progress']
+            row['holes'] = mind.holes.report(mind)
+        if work:
+            row.update(work=row['seconds'], cost_unit='work')
         gain = float(sum(len(e['coverage']) for e in self.laws.values())-covered_before)+row['progress']
         self.policy.learn(choice, x, gain, row['seconds'])
         if question_choice is not None:
@@ -1008,6 +1104,19 @@ class Discovery:
                 roadmap.estimate_choice.learn(estimate_trial['method'], estimate_trial['feature'], -.05, 1.)
             row['roadmap'] = roadmap.report()
         row['experiments_total'] = self.experiments
+        if getattr(mind, 'u14', {}).get('discovery_memory') and mind.proposer.memory is not None and mind.memory.choice_on:
+            row['discovery_memory'] = mind.memory.finish_choice(self.view(wid), right=bool(
+                row.get('certified') and row['certified']['accepted']))
+        if wiring:
+            after_habits = wiring_snapshot(mind)
+            row['wiring']['observations'] = sum(map(len, self.observations.values()))
+            row['wiring']['floor_worlds'] = [k for k in sorted(self.worlds) if len(self.observations[k]) >=
+                                            (4 if self.worlds[k].form == 'exact' else 2)]
+            for name in sorted(after_habits):
+                received, outputs = after_habits[name]
+                old = before_habits.get(name, ([], []))[1]
+                row['wiring']['habits'][name] = dict(received=received,
+                    outputs=[k for k in outputs if k not in old])
         self.events.append(row)
         return row
 
@@ -1037,6 +1146,10 @@ def generation_report(rows):
                 seconds_per_law=seconds/n if n else None, experiments_per_law=experiments/n if n else None,
                 reuse=sum(bool(r.get('reused'))+sum(t['accepted'] for t in r.get('transfer', ())) for r in rows),
                 credit='compression credit, not proof of truth; rediscovery of laws we hid')
+    if any('admission_record' in row for row in rows):
+        result['admission_records'] = [row['admission_record'] for row in rows if 'admission_record' in row]
+    if any('wiring' in row for row in rows):
+        result['wiring'] = wiring_report(rows)
     latest = next((r for r in reversed(rows) if 'einstein' in r), None)
     if latest is not None:
         result['einstein'] = copy.deepcopy(latest['einstein'])
@@ -1051,6 +1164,86 @@ def generation_report(rows):
     latest_roadmap = next((row for row in reversed(rows) if 'roadmap' in row), None)
     if latest_roadmap is not None:
         result['roadmap'] = copy.deepcopy(latest_roadmap['roadmap'])
+    latest_holes = next((row for row in reversed(rows) if 'holes' in row), None)
+    if latest_holes is not None:
+        result['holes'] = copy.deepcopy(latest_holes['holes'])
+    return result
+
+
+def wiring_snapshot(mind):
+    """Observer diagnostics of actual retained references, never policy inputs.
+
+    Merely enabling a habit is not evidence that it consumed a law. Empty
+    references and outputs remain empty, including unmet method prerequisites.
+    """
+    d, result = mind.discovery, {}
+    if hasattr(d, 'einstein'):
+        e = d.einstein
+        result['einstein'] = (sorted({k for p in e.predictions for k in (p['law'],)} |
+            {k for p in e.principles.values() for k in p['laws']} |
+            {k for p in e.paradoxes.values() for k in p['laws']} |
+            {k for p in e.doubts.values() for k in p['laws']}),
+            sorted(['prediction:'+p['id'] for p in e.predictions] +
+                   ['principle:'+k for k in e.principles] + ['paradox:'+k for k in e.paradoxes]))
+    if hasattr(d, 'scientists'):
+        s = d.scientists
+        result['scientists'] = (sorted({c['anomaly'] for c in s.chases.values()
+            if isinstance(c['anomaly'], str)} | {c['explained_by'] for c in s.chases.values()
+            if c['explained_by'] is not None}),
+            sorted(['chase:'+k for k in s.chases] + ['relation:'+k for k in s.relations] +
+                   ['conserved:'+k for k in s.conserved] + ['gap:'+p['id'] for p in s.predictions]))
+    if hasattr(d, 'darwin'):
+        atlas = mind.field.hologram
+        hops = getattr(d, '_wiring_hops', {})
+        result['darwin'] = (sorted({k for name in ('world_hologram', 'lineage_trees')
+                                   for k in hops.get(name, {}).get('received', ())}),
+                            sorted(['tree:'+k for k in atlas['trees']]))
+    if hasattr(d, 'roadmap'):
+        r = d.roadmap
+        received = sorted(k for k, law in d.laws.items() if any(cid in
+            {p[1] for p in LG.parts(law['hypothesis']) if p[0] == 'concept'} or
+            cid in law['concept_ids'] for cid in (v['original'] for v in r.rebuilds.values())))
+        result['roadmap'] = (received, sorted(['rebuild:'+k for k in r.rebuilds] +
+                                              ['operation:'+k for k in r.operations]))
+    if hasattr(mind.field, 'curiosity'):
+        result['curiosity'] = ([], sorted(mind.field.curiosity.found))
+    result['memory'] = (sorted(k for k, law in d.laws.items() if any(
+        receipt.acceptance and receipt.acceptance[0] in
+        {v.record for v in law['certificates'].values()} for receipt, _ in mind.sleep.replay)),
+        sorted(receipt.id for receipt, _ in mind.sleep.replay))
+    if hasattr(mind, 'holes'):
+        result['holes'] = (sorted({q['law'] for q in mind.holes.questions.values()}),
+                           sorted(mind.holes.questions))
+    for name, hop in sorted(getattr(d, '_wiring_hops', {}).items()):
+        result[name] = (sorted(hop['received']), sorted(hop['outputs']))
+    for owner, names in (('einstein', ('thought_experiments', 'symmetry_principles', 'doubt_assumptions', 'bold_predictions')),
+                         ('scientists', ('one_change_experiments', 'gap_predictions', 'number_conjectures', 'conserved_quantities', 'anomaly_pursuit')),
+                         ('darwin', ('lineage_trees',)), ('roadmap', ('rederive_concepts',))):
+        if hasattr(d, owner):
+            for name in names:
+                if getattr(d, owner).switches.get(name):
+                    result.setdefault(name, ([], []))
+    if hasattr(mind, 'holes'):
+        for reason, enabled in mind.holes.switches.items():
+            if enabled:
+                result.setdefault('holes_'+reason, ([], []))
+    return result
+
+
+def wiring_report(rows):
+    records = [r['wiring'] for r in rows if 'wiring' in r]
+    result = {k: sum(r.get(k, 0) for r in records) for k in
+              ('proposals', 'candidates_audited', 'certified', 'admitted')}
+    result.update(observations=records[-1]['observations'] if records else 0,
+                  floor_worlds=records[-1]['floor_worlds'] if records else [], habits={})
+    if any('wiring_proposal' in r for r in rows):
+        result['proposals'] = sum('wiring_proposal' in r for r in rows)
+    hops = [r['wiring_hop'] for r in rows if 'wiring_hop' in r]
+    for name in sorted({name for r in records for name in r['habits']} | {r['habit'] for r in hops}):
+        result['habits'][name] = {key: sorted({v for r in records
+            for v in r['habits'].get(name, {}).get(key, [])} |
+            {v for r in hops if r['habit'] == name for v in r[key]}, key=repr)
+            for key in ('received', 'outputs')}
     return result
 
 

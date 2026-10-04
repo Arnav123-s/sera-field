@@ -161,8 +161,14 @@ class ScientistsPool(WorldPool):
 
     def certify(self, wid, hypothesis, concepts, observations, *, library=()):
         if self.specs[wid].get('motion_sensor'):
-            return Certification(False, 'formula', (('sensor_only', True),),
-                                 digest((wid, hypothesis, observations)))
+            from sera_u.clock import charge
+            charge('judge')
+            record = digest((wid, hypothesis, observations))
+            if getattr(self, 'wiring', False):
+                self.audit_records.append(dict(record=record, world=wid, accepted=False, kind='formula',
+                    bound=(('sensor_only', True),), hypothesis=hypothesis, false_credit=False, found=False,
+                    grade=dict(verdict='not proven'), judge=dict(sensor_only=True)))
+            return Certification(False, 'formula', (('sensor_only', True),), record)
         result = super().certify(wid, hypothesis, concepts, observations, library=library)
         if result.accepted:
             self.met_certified.add(wid)

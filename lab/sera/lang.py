@@ -710,6 +710,13 @@ def forget_searches():
 MAX_WORK = 150_000               # candidate expressions tried per size (a bound on thinking, not on what exists)
 IF_PART = 3                      # the parts of a choice are at most this big
 DEADLINE = [math.inf]            # a world's time box (set by the mind): a size not finished by then is thought again
+DEADLINE_CHECK = lambda deadline: time.time() > deadline
+WORK_CHARGE = None              # installed only in a SeraU work scope: called with the evaluations a candidate cost
+# A work scope cannot ask the machine how much memory is free (that would make a life depend on the machine), so one
+# search's kept table is bounded by what it holds, counted (Colab, 2026-10-03 21:50: a 'see around' wish evaluated each
+# candidate on hundreds of probes, charged one unit for it, and held 6-12 GB per life with the machine's wall off).
+WORK_TABLE_ENTRIES = 1_000_000   # behaviours and memoized bodies one search may keep in a work scope
+WORK_TABLE_VALUES = 30_000_000   # and their values (entries x probes)
 _MISS = object()
 _KIND = {'map': 'e', 'filter': 'e', 'mapi': 'ie', 'filteri': 'ie', 'foldn': 'ae', 'foldl': 'ae'}
 
@@ -991,11 +998,16 @@ def _grow(leaves, envs, max_size, concepts, allow_lists=True, lambdas=None, type
             if chunk is not None and chunk_spent >= chunk:
                 late = True
                 break
-            if not spent[s] & 255 and time.time() > DEADLINE[0]:
+            if (WORK_CHARGE is not None or not spent[s] & 255) and DEADLINE_CHECK(DEADLINE[0]):
                 late = True
                 break
             if not spent[s] & 4095 and spent[s] and _over_memory():
                 MEMORY_STOPS[0] += 1           # it thinks with what it has; this size waits, as at the time box
+                late = True
+                break
+            if WORK_CHARGE is not None and not spent[s] & 255 and (
+                    _held_by(state) > WORK_TABLE_ENTRIES or _held_by(state)*max(1, len(envs)) > WORK_TABLE_VALUES):
+                MEMORY_STOPS[0] += 1           # the same wait, counted instead of read from the machine
                 late = True
                 break
             try:
@@ -1004,6 +1016,8 @@ def _grow(leaves, envs, max_size, concepts, allow_lists=True, lambdas=None, type
                 finished = True
                 break
             spent[s] += 1
+            if WORK_CHARGE is not None:
+                WORK_CHARGE(max(1, len(envs)))  # its work is one evaluation per probe, what the time box measured
             chunk_spent += 1
         state.setdefault('capped', {})[s] = not finished
         if late:

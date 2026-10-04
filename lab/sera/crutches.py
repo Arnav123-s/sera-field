@@ -18,6 +18,20 @@ import sys
 # name -> what it does, where it lives, the commit that added it, how SERA has it (fixed: coded by us; taught: a
 # teacher's way that fades; learned: its own), and the open question about it.
 REGISTRY = {
+    **{name: dict(what=what, where='sera_u/clock.py; sera_u/mind.py; sera_u/discovery.py',
+        commit='U14', status='learned', default_on=False, report_default=False,
+        question='does this removable Field choice improve progress per own work?') for name, what in (
+        ('work_doubling', 'neutral work bounds that expose larger doublings after unsuccessful visits'),
+        ('observe_to_floor', 'Field choice to observe a public world until proposals have enough evidence'),
+        ('questions_first', 'Field choice to interrupt own growth for an outside question then resume'),
+        ('retire_understood', 'Field retirement on own error or code-length progress, reopened by anomaly'),
+        ('discovery_memory', 'open-world proof experiences use the existing Field consult/remember choices'),
+        ('holes_constant', 'own questions about unexplained fitted constants or per-object values'),
+        ('holes_term', 'own questions about acquired terms without their own law'),
+        ('holes_domain', 'own questions about untested law domains'),
+        ('holes_failure', 'own questions about residuals and anomalies'),
+        ('holes_join', 'own questions joining laws with an acquired quantity'),
+        ('holes_uncovered', 'own questions about observations outside acquired law coverage'))},
     'own_operations': dict(what='own typed macros from repeated wishes, checked execution and exact substitution',
         where='sera_u/roadmap.py', commit='U13', status='learned', default_on=False, report_default=False,
         question='does changing the search basis reduce later composition cost?'),

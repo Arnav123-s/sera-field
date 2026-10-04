@@ -83,6 +83,7 @@ It has two parts:
 | **U11 the scientists' habits** (the author, 2026-10-03) | Galileo (one change at a time), Mendeleev (predict the withheld member of a family), Euler/Gauss/Ramanujan (conjectures about its own concepts, audited), Noether (conserved quantities, one fading lesson), Curie/Pasteur (chase an anomaly across items until explained); Kepler is U9. Roadmap, not built: Newton's new mathematics (new operations in its own language), Feynman (rebuild to understand), Fermi (rough estimates); Darwin is U12 | U10's records unchanged with it off; scientists suite A/B |
 | **U12 Darwin in its own picture of the world** (the author, 2026-10-03: SERA need not live in our world; it builds a rough picture, a hologram, from what it receives, and thinks like Darwin there on its own problems) | The hologram (its own fuzzy, measured picture of the worlds it met, in the Field; renders imagined worlds and runs imagined time; never certifies anything), patient observation (a field notebook kept across generations), likeness trees (shared structure in its own language; compression, not true history), a mechanism of gradual change (its own edits plus a sorting rule from its concepts, run in imagined time, predictions recorded first), deep imagined time; all taught then learned. Roadmap: feed it information about our world (books, public data), each download with the author's permission | U11's records unchanged with it off; lineage suite A/B (a hidden branching process of worlds; SERA sees only specimens) |
 | **U13 Newton, Feynman, Fermi** (the author's roadmap, 2026-10-03) | Own new operations from old primitives (a new basis for search, not new primitive semantics), rebuilding concepts from their own values, calibrated rough estimates that may prune once earned; all taught then learned | U12's records unchanged with it off; roadmap suite A/B |
+| **U14 its own clock, one life, questions first, the holes a law leaves** (the author, 2026-10-03 evening) | Check the wiring between the parts first (a test that hands SERA one certified law and checks every habit reacts; a wiring table per run). SERA's clock is its own work, not seconds ("like light"): no wall caps inside SERA, the observer's patience is the observer's. One life: every start continues the last SERA; experiments branch from it; one rolling checkpoint. An outside question goes first, with no time limit; then SERA goes back to its own growth; "not yet" stays open. No loops: an understood law pays nothing more; SERA asks what it leaves open (its constants, terms, untested ranges, failures, joins, what nothing covers): Newton, then what is mass | with it off and the wall clock, all records as before; same seed and work give the same SERA on any machine; holes suite A/B |
 
 S27 (the course on the lab SERA) is merged into `sera-v4` first, once its tests pass. U5 reuses it.
 
@@ -141,8 +142,13 @@ looking harder where SERA was wrong, but never lowers its bar.
 
 Beyond that, it learns to find things out for itself, the way great scientists did: Newton (worlds with no question), Einstein (thought experiments, what stays the same, bold predictions), and the habits of Galileo, Mendeleev, Euler, Noether and Curie. For Darwin, it does not need our world: it builds its own rough picture of the worlds it has met, watches patiently, sorts what it sees by likeness, and looks for the slow process that made the variety, testing its guesses on what turns up next.
 
-The implementation now includes U1-U13 and the speed refinements, with their status recorded separately.
-It is taught with the course, verified, and measured against your
+U14 is implemented: it counts work rather than elapsed seconds, retains a continuing
+life, prioritizes questions within its work budget, and investigates gaps left by
+known laws. Independence from machine speed is an intended experimental property;
+the cross-machine comparison and behavioral benefits remain unverified.
+
+The implementation now includes U1-U14 and the speed refinements. It is taught
+with the course, verified, and measured against your
 Field alone and the lab SERA alone, on the same tests. Then you get the report.
 
 Latest implementation and evidence: [SERA-U status](docs/SERA_U_STATUS.md).

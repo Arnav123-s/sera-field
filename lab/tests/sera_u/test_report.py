@@ -168,6 +168,9 @@ def test_missing_comparison_is_missing_and_habit_numbers_are_saved(tmp_path, sav
     assert 'comparison JSON MISSING (not zero' in text
     data = read(saved_batch / 'u-no-memory' / 'g_curve.json')['discovery']['generations'][0]
     for name, value in report.leaves({key: value for key, value in data.items() if key not in ('arm', 'generation')}):
+        if report.record_detail(name):  # a list entry's own fields stay in the saved JSON; its .count is printed
+            assert f'| {report.cell(name)} |' not in text
+            continue
         assert f'| {report.cell(name)} | {report.cell(value, 1 if report.seconds_metric(name) else 2)} |' in text
     assert '| roadmap.operations.built | 1 |' in text  # derived from admitted fixture entries
     assert '| roadmap.rebuilds.kept | 1 |' in text
@@ -680,3 +683,16 @@ def test_a_discovery_off_control_shares_the_assessment_scope_with_discovery_case
     rewrite(root / 'state.json', lambda value: value.update(protocol=p))
     with pytest.raises(ValueError, match='Different frozen suites'):
         report.load_batches([saved_batch])
+
+
+def test_detail_tables_stay_short_records_and_side_arms_stay_in_saved_json(tmp_path, saved_batch):
+    add_discovery(saved_batch)
+    assert report.record_detail('scientists.records[3].seconds') and not report.record_detail('scientists.records.count')
+    assert report.compared(('assessment', 'no-dreams', 2, 'solved'))
+    assert report.compared(('discovery', 'full', 1, 'laws'))
+    assert not report.compared(('discovery', 'full', 1, 'scientists.habits.gap_predictions.seconds'))
+    target, _ = generate(tmp_path, saved_batch)
+    text = detail_text(target)
+    habits = text.split('<!-- generated:begin habits -->')[1].split('<!-- generated:end habits -->')[0]
+    rows = [line.split('|') for line in habits.splitlines() if line.startswith('| ') and not line.startswith('| case')]
+    assert rows and all(row[3].strip() in ('full', 'case') and '[' not in row[5] for row in rows)

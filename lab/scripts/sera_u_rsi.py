@@ -73,15 +73,35 @@ def commit(out, state, mind, checkpoint):
     mind.progress['protocol_digest'] = digest(state['protocol'])
     if hasattr(mind.field, 'curiosity'):
         state.setdefault('curiosity', {})[mind.arm] = mind.field.curiosity.report()
+    # Named generation samples survive; every other unit replaces one rolling
+    # file. Bootstrap's rolling file remains the immutable shared arm parent.
+    named = (checkpoint == f'{mind.arm}-g{state.get("generation", 0)}.pt' or
+             any(r['file'] == checkpoint for r in state.get('checkpoints', {}).values()))
+    checkpoint = checkpoint if named else ('bootstrap-rolling.pt' if state.get('stage') != 'arms'
+                                           else mind.arm+'-rolling.pt')
     state['checkpoint'] = checkpoint
-    state['checkpoint_sha256'] = mind.save(out/checkpoint)
+    data = mind.dumps()
+    state['checkpoint_sha256'] = hashlib.sha256(data).hexdigest()
+    temporary = (out/checkpoint).with_name(checkpoint+'.pending')
+    with temporary.open('wb') as fh:
+        fh.write(data)
+        fh.flush()
+        os.fsync(fh.fileno())
+    # A journal is observer metadata only. Either old state+checkpoint, or this
+    # journal+new checkpoint, is valid after a crash between the two replaces.
+    write(out/'state.pending', state)
+    os.replace(temporary, out/checkpoint)
     write(out/'state.json', state)
 
 
 def recover(out, state):
     path = out/state['checkpoint']
     if hashlib.sha256(path.read_bytes()).hexdigest() != state['checkpoint_sha256']:
-        raise ValueError('Stale/corrupt runner checkpoint')
+        journal = read(out/'state.pending') if (out/'state.pending').exists() else {}
+        if journal.get('checkpoint') != state['checkpoint'] or hashlib.sha256(path.read_bytes()).hexdigest() != journal.get('checkpoint_sha256'):
+            raise ValueError('Stale/corrupt runner checkpoint')
+        state.update(journal)
+        write(out/'state.json', state)
     return SeraU.load(path)
 
 
@@ -371,6 +391,8 @@ def validate_frozen_suite(suite):
 def report(out):
     out = Path(out)
     state = read(out/'state.json')
+    if state['protocol'].get('clock') == 'work' or state.get('life_session'):
+        return work_report(out, state)
     rows = state.get('rows', [])
     arms = tuple(state['protocol'].get('arms', ARMS))
     curves, retention, groups = {}, {}, {}
@@ -474,6 +496,8 @@ def report(out):
 
 
 def run(args):
+    if getattr(args, 'clock', 'wall') == 'work' or getattr(args, 'life', None):
+        return run_work(args)
     protocol_start = time.time()
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
@@ -819,6 +843,493 @@ def run(args):
     return report(out)
 
 
+def work_report(out, state):
+    """Everything here is computed from persisted observer records."""
+    from scripts.sera_u_discovery import report as discovery_report
+    result = dict(schema='u14-work-1', protocol=state['protocol'],
+        complete=state['stage'] == 'complete', observer_stop=state.get('observer_stop'),
+        failure=state.get('failure'), checkpoints=state['checkpoints'],
+        costs=state['costs'], questions=state.get('rows', []),
+        digests=state.get('digests', {}), holes=state.get('holes', {}),
+        discovery=discovery_report(state.get('discovery_generations', []), state.get('discovery_judges', [])))
+    result['exam'] = dict(asked=len(state.get('exam_items', {})),
+        right_at_first_answer=sum(r.get('right_at_first_answer') is True for r in state.get('exam_items', {}).values()),
+        answered_eventually=sum(r.get('answered_eventually') is True for r in state.get('exam_items', {}).values()),
+        still_open=sum(r.get('status') == 'not-yet' for r in state.get('exam_items', {}).values()),
+        items=state.get('exam_items', {}))
+    result['exam']['generations'] = []
+    for arm in state['protocol']['arms']:
+        for generation in sorted({r['generation'] for r in state.get('exam_items', {}).values() if r['arm'] == arm}):
+            items = [r for r in state['exam_items'].values() if r['arm'] == arm and r['generation'] == generation]
+            result['exam']['generations'].append(dict(arm=arm, generation=generation, asked=len(items),
+                right_at_first_answer=sum(r['right_at_first_answer'] is True for r in items),
+                answered_eventually=sum(r['answered_eventually'] is True for r in items),
+                still_open=sum(r['status'] == 'not-yet' for r in items),
+                work_to_answer=[r['work_to_answer'] for r in items if r['work_to_answer'] is not None]))
+    result['exam']['false_credit'] = sum(r.get('grade', {}).get('verdict') == 'SURE AND WRONG'
+                                      for r in state.get('exam_items', {}).values())
+    result['false_credit'] = result['exam']['false_credit'] + result['discovery']['false_credit']
+    if (Path(out)/'observer-discovery.json').exists():
+        manifest = read(Path(out)/'observer-discovery.json')
+        if manifest.get('holes_suite'):
+            from scripts.sera_u_holes import report_holes
+            result['holes_suite'] = report_holes(state.get('discovery_generations', []), manifest)
+    write(Path(out)/'g_curve.json', result)
+    return result
+
+
+def run_work(args):
+    """One observer work allowance; SERA allocates it through learned methods.
+
+    Generation boundaries are observer sampling points, never inner method
+    quotas. Absolute work limits are saved with the cursor and survive pauses.
+    """
+    from sera_u.mind import U14_CRUTCHES
+    from sera_u.discovery import Readout
+    from scripts.sera_u_discovery import WorldPool, validate, freeze
+    from scripts.sera_one import teaching
+    from sera_u.life import Life
+    life = Life(args.life) if getattr(args, 'life', None) else None
+    if args.work <= 0 or args.observer_wall <= 0:
+        raise ValueError('Positive session work and observer wall required')
+    out = Path(args.out)
+    out.mkdir(parents=True, exist_ok=True)
+    arms = tuple(args.arms.split(','))
+    if any(a not in ARMS+CURIOSITY_ARMS+('no-holes', 'no-questions-first') for a in arms) or len(set(arms)) != len(arms):
+        raise ValueError('Unknown or repeated work arm')
+    protocol = dict(seed=args.seed, device=args.device, clock=args.clock, work=args.work,
+        generations=args.generations, eval_tasks=args.eval_tasks, wake_tasks=args.wake_tasks,
+        arms=list(arms), code=code_identity(), source=source_identity(),
+        batched_reads=not args.no_batched_reads,
+        u14={k: CR.on(k) for k in U14_CRUTCHES},
+        # U14's two arms are the full arm with some U14 switches off (configure_fork); they had no settings of their
+        # own here and stopped every work run at its start (Colab, 2026-10-03 21:17).
+        crutches={a: arm_settings('full' if a in ('no-holes', 'no-questions-first') else a) for a in arms},
+        u14_arms={a: sorted(k for k in U14_CRUTCHES if (a == 'no-holes' and k.startswith('holes_')) or
+                            (a == 'no-questions-first' and k == 'questions_first'))
+                  for a in arms if a in ('no-holes', 'no-questions-first')},
+        discovery=dict(switches={k: CR.on(k) for k in U9_CRUTCHES}),
+        frozen_suite_sha256=hashlib.sha256(Path(args.frozen_suite).read_bytes()).hexdigest() if args.frozen_suite else None,
+        rediscovery_sha256=hashlib.sha256(Path(args.rediscovery_suite).read_bytes()).hexdigest() if args.rediscovery_suite else None)
+    for module, group in (('einstein', 'einstein'), ('scientists', 'scientists'),
+                          ('darwin', 'darwin'), ('roadmap', 'roadmap')):
+        import importlib
+        switches = importlib.import_module('sera_u.'+module).CRUTCHES
+        protocol['discovery'][group] = {k: CR.on(k) for k in switches}
+    if (out/'state.json').exists():
+        state = read(out/'state.json')
+        if state['protocol'] != protocol:
+            raise ValueError('Exact work resume requires the same frozen protocol')
+        if bool(life) != bool(state.get('life_session')) or (args.session is not None and
+                args.session != state.get('life_session')):
+            raise ValueError('Changed life/session on exact work resume')
+        mind = recover(out, state)
+    else:
+        factory = lambda: SeraU(args.seed, device=args.device, clock=args.clock, wiring=True,
+                                batched_reads=not args.no_batched_reads)
+        mind, parent = life.open(factory, carry=args.carry) if life else (factory(), None)
+        if mind.clock_mode != args.clock:
+            # Work/wall is an observer protocol choice; retaining its learned
+            # policies and Field does not create a new mind.
+            from sera_u.clock import Clock
+            mind.clock_mode = args.clock
+            if args.clock == 'work' and not hasattr(mind, 'clock'):
+                mind.clock, mind.work_policy = Clock(), Readout()
+        if args.clock == 'work':
+            mind.clock.start(args.work)
+        state = dict(protocol=protocol, stage='bootstrap', started=time.time(), rows=[], costs=[],
+            checkpoints={}, bootstrap_index=0, arm_index=0, active_arm=None, generation=0,
+            phase='growth', unit_index=0, parent_count=mind.clock.count if args.clock == 'work' else 0)
+        if life:
+            row = life.begin(mind, args.work, parent, session=getattr(args, 'session', None))
+            state.update(life_session=row['id'], life_parent=parent)
+            if life.ledger['born']:
+                state['stage'] = 'prepare'
+            else:
+                state['bootstrap_index'] = life.ledger.get('birth_index', 0)
+        commit(out, state, mind, 'bootstrap.pt')
+        write(out/'protocol.json', protocol)
+    stop = threading.Event()
+    timer = threading.Timer(args.observer_wall, stop.set)
+    timer.daemon = True
+    timer.start()
+    state.pop('observer_stop', None)
+    life_row = next((r for r in life.ledger['sessions'] if r['id'] == state['life_session']), None) if life else None
+    if life and life_row is None:
+        timer.cancel()
+        raise ValueError('Runner session is absent from this life ledger')
+    working = args.clock == 'work'
+    if not working and not hasattr(mind, 'work_policy'):
+        mind.work_policy = Readout()
+    used = lambda: mind.clock.count if working else sum(c['wall'] for c in state['costs']
+        if c.get('arm', state.get('active_arm')) == state.get('active_arm'))
+    spent_out = lambda: mind.clock.expired() if working else used() >= args.hours*3600
+    try:
+        if state['stage'] == 'bootstrap':
+            lessons = [(n, b) for n, b in teaching(args.seed) if n.startswith(('number:', 'list:'))]
+            for index in range(state['bootstrap_index'], len(lessons)):
+                if stop.is_set() or spent_out():
+                    state['observer_stop'] = 'safety_wall' if stop.is_set() else 'session_work'
+                    break
+                name, builder = lessons[index]
+                task = builder()
+                if len(task.data) < 4:
+                    x = task.pool[0]
+                    task.data.append((x, task._y(x)))
+                started, count = time.perf_counter(), used()
+                mind.live(task, teaching=True, task_wall=math.inf if working else args.task_wall)
+                state['bootstrap_index'] = index+1
+                state['costs'].append(dict(phase='bootstrap', task=name, work=used()-count if working else 0,
+                                           wall=time.perf_counter()-started))
+                commit(out, state, mind, 'bootstrap.pt')
+                if life:
+                    life.save_birth(mind, index+1)
+            if state['bootstrap_index'] == len(lessons):
+                if not state.get('methods_taught'):
+                    started, count = time.perf_counter(), used()
+                    with mind.scope():
+                        from scripts.sera_u_discovery import teach_quantity_once
+                        from scripts.sera_u_einstein import teach_einstein_once
+                        from scripts.sera_u_scientists import teach_scientists_once
+                        from scripts.sera_u_darwin import teach_darwin_once
+                        from scripts.sera_u_roadmap import teach_roadmap_once
+                        if mind.discovery:
+                            teach_quantity_once(mind)
+                            if hasattr(mind.discovery, 'einstein'):
+                                teach_einstein_once(mind)
+                            if hasattr(mind.discovery, 'scientists'):
+                                teach_scientists_once(mind)
+                            if hasattr(mind.discovery, 'darwin'):
+                                teach_darwin_once(mind)
+                            if hasattr(mind.discovery, 'roadmap'):
+                                teach_roadmap_once(mind)
+                        if hasattr(mind, 'agenda') and mind.u14['questions_first']:
+                            mind.agenda.demonstrate(phase='lesson', origin='taught')
+                        if hasattr(mind, 'holes'):
+                            mind.holes.demonstrate(phase='lesson', origin='taught')
+                    state['methods_taught'] = True
+                    state['costs'].append(dict(phase='birth-method-demonstrations',
+                        work=used()-count if working else 0, wall=time.perf_counter()-started))
+                    commit(out, state, mind, 'bootstrap.pt')
+                if life and not life.ledger['born']:
+                    life.born(mind)
+                state['stage'] = 'prepare'
+        if state['stage'] == 'prepare':
+            suite = validate_frozen_suite(read(args.frozen_suite)) if args.frozen_suite else freeze_suite(mind, args.seed)
+            manifest = validate(read(args.rediscovery_suite), suite, mind) if args.rediscovery_suite else freeze(mind, suite, args.seed)
+            write(out/'observer.json', suite)
+            write(out/'observer-discovery.json', manifest)
+            state.update(stage='arms', suite_sha256=hashlib.sha256((out/'observer.json').read_bytes()).hexdigest(),
+                discovery_suite_sha256=hashlib.sha256((out/'observer-discovery.json').read_bytes()).hexdigest(),
+                base='base.pt', base_sha256=mind.save(out/'base.pt'))
+            if life:
+                life_row['fork_parent_digest'] = state['base_sha256']
+                from sera_u.life import atomic_json
+                atomic_json(life.ledger_path, life.ledger)
+            write(out/'state.json', state)
+        if state['stage'] == 'arms':
+            suite, manifest = read(out/'observer.json'), read(out/'observer-discovery.json')
+            if hashlib.sha256((out/'observer.json').read_bytes()).hexdigest() != state['suite_sha256'] or \
+                    hashlib.sha256((out/'observer-discovery.json').read_bytes()).hexdigest() != state['discovery_suite_sha256']:
+                raise ValueError('Frozen observer suite changed')
+            for arm_index in range(state['arm_index'], len(arms)):
+                arm = arms[arm_index]
+                if state['active_arm'] != arm:
+                    mind = SeraU.load(out/'base.pt')
+                    # A fork carries all learned state; only the requested
+                    # removable method switches differ. No fresh owner or RNG.
+                    configure_fork(mind, arm)
+                    if not working and not hasattr(mind, 'work_policy'):
+                        mind.work_policy = Readout()
+                    mind.sleep.reserved = set(suite['reserved'])
+                    mind.sleep.reserved_sources = {r['source'] for r in suite['assessment']}
+                    state.update(active_arm=arm, generation=0, unit_index=0)
+                    queue_exam(mind, suite, state, life, life_row, 0)
+                    commit(out, state, mind, arm+'-rolling.pt')
+                    if life:
+                        life.checkpoint(life_row, mind)
+                pool = work_pool(manifest, state['generation'])
+                if mind.discovery:
+                    pool.sync(mind.discovery)
+                while not spent_out() and not stop.is_set():
+                    start, count = time.perf_counter(), used()
+                    event_start = len(mind.discovery.events) if mind.discovery else 0
+                    x = mind.choice_features()
+                    choices = ['wake']
+                    if mind.discovery is not None:
+                        choices.append('discover')
+                    if mind.sleep.replay:
+                        choices.extend(('dream', 'train'))
+                    allowed_questions = {q['id'] for q in getattr(getattr(mind, 'agenda', None), 'items', {}).values()
+                        if q['status'] == 'open' and (q['outside'] or any(h['agenda'] == q['id'] and
+                            mind.holes.switches[h['reason']] for h in getattr(getattr(mind, 'holes', None), 'questions', {}).values()))}
+                    if allowed_questions:
+                        choices.append('question')
+                    first = [q for q in getattr(getattr(mind, 'agenda', None), 'items', {}).values()
+                             if q['outside'] and q['status'] == 'open' and not q['not_yet']]
+                    choice = ('question' if first and mind.u14['questions_first'] else
+                                mind.work_policy.pick(choices, x, mind.numpy))
+                    bound = mind.clock.bound(choice, mind) if working else time.time()+args.task_wall
+                    gain = 0.
+                    if choice == 'question':
+                        key = mind.agenda.next(mind, priority=mind.u14['questions_first'], allowed=allowed_questions)
+                        if not mind.agenda.items[key]['outside'] and hasattr(mind, 'holes'):
+                            row = mind.work_hole(key, pool, deadline=bound)
+                            gain = float(mind.agenda.items[key]['status'] == 'answered')
+                            response = None
+                        else:
+                            response = 'outside'
+                        item = state['exam_items'].get(arm+':'+key)
+                        # Previous sessions' public questions also remain open;
+                        # their observer bodies are loaded from the life ledger.
+                        if item is None and life:
+                            item = next((q for q in life.ledger.get('exam_records', {}).values()
+                                         if q['id'] == key), None)
+                        body = build_task(item['spec']) if item else None
+                        if response is not None:
+                            response = mind.work_question(key, body=body, task_wall=args.task_wall)
+                            gain = float(response['answer'] is not None)
+                        if item and response is not None:
+                            grade_question(item, response, body, args.seed)
+                            state['exam_items'][arm+':'+key] = item
+                            if life and arm == 'full':
+                                life.ledger.setdefault('exam_records', {})[key] = copy.deepcopy(item)
+                                from sera_u.life import atomic_json
+                                atomic_json(life.ledger_path, life.ledger)
+                    elif choice == 'discover':
+                        row = mind.discover(pool, deadline=bound)
+                        if row is not None:
+                            row['seconds'] = time.perf_counter()-start
+                            gain = row['progress']+float(row['discovered'])
+                    elif choice == 'dream':
+                        with mind.scope():
+                            allowance = max(1, int(bound-mind.clock.count)) if working else 32
+                            gain = len(mind.sleep.dream(count=allowance,
+                                attempts=allowance if working else 512, deadline=bound, filter_program=pool.dream_allowed))
+                    elif choice == 'train':
+                        batches = max(1, int(bound-mind.clock.count)) if working else 1
+                        previous = next((r['objective'] for r in reversed(mind.sleep.logs) if r['kind'] == 'train'), None)
+                        trained = mind.train(batches, 8, deadline=bound)
+                        if trained and previous is not None:
+                            gain = max(0., previous-trained[-1]['objective'])
+                    else:
+                        spec = suite['wake'][state['unit_index'] % len(suite['wake'])]
+                        from sera_u.mind import AssessmentTask
+                        record = mind.live(AssessmentTask(build_task(spec)), task_wall=math.inf if working else args.task_wall)
+                        gain = float(record['proven'])
+                    # Every route can ask the judge, including a hole chase.
+                    state.setdefault('discovery_judges', []).extend(dict(r, arm=arm,
+                        generation=state['generation']) for r in pool.audit_records)
+                    pool.audit_records.clear()
+                    if mind.discovery:
+                        state.setdefault('discovery_records', []).extend(dict(copy.deepcopy(r),
+                            arm=arm, generation=state['generation']) for r in mind.discovery.events[event_start:])
+                    if hasattr(mind, 'holes'):
+                        state.setdefault('holes', {})[arm] = copy.deepcopy(mind.holes.report(mind))
+                    if any(r['false_credit'] for r in state['discovery_judges']):
+                        commit(out, state, mind, arm+'-rolling.pt')
+                        raise ValueError('Discovery tripwire: false credit must be zero')
+                    spent = mind.clock.count-count if working else time.perf_counter()-start
+                    if not spent:
+                        if working:
+                            mind.clock.charge('method')
+                        spent = 1
+                    mind.work_policy.learn(choice, x, gain, spent)
+                    if working:
+                        mind.clock.finish(choice, mind, spent, gain)
+                        spent = mind.clock.count-count
+                    state['costs'].append(dict(phase=choice, arm=arm, generation=state['generation'],
+                        work=spent if working else 0, wall=time.perf_counter()-start))
+                    state['unit_index'] += 1
+                    milestone = state['parent_count'] + (args.work if working else args.hours*3600)*(state['generation']+1)/(args.generations+1)
+                    while state['generation'] <= args.generations and used() >= milestone:
+                        if mind.discovery:
+                            records = [r for r in state.get('discovery_records', []) if
+                                       r['arm'] == arm and r['generation'] == state['generation']]
+                            summary = generation_report(records)
+                            if 'wiring' not in summary:
+                                # An empty interval still displays the last
+                                # recorded public snapshot, with zero new work.
+                                prior = next((r for r in reversed(state.get('discovery_records', []))
+                                              if r['arm'] == arm and 'wiring' in r), None)
+                                if prior is not None:
+                                    summary['wiring'] = copy.deepcopy(prior['wiring'])
+                                    summary['wiring'].update(proposals=0, candidates_audited=0, certified=0, admitted=0)
+                                    for hop in summary['wiring']['habits'].values():
+                                        hop['outputs'] = []
+                            if 'wiring' in summary:
+                                audits = [r for r in state.get('discovery_judges', []) if
+                                          r['arm'] == arm and r['generation'] == state['generation']]
+                                summary['wiring'].update(candidates_audited=len(audits),
+                                    certified=sum(r['accepted'] for r in audits),
+                                    admitted=sum(bool(r.get('fresh')) for r in summary.get('admission_records', [])))
+                            if arm in state.get('holes', {}):
+                                summary['holes'] = copy.deepcopy(state['holes'][arm])
+                            state.setdefault('discovery_generations', []).append(dict(arm=arm,
+                                generation=state['generation'], **summary))
+                        name = f'{arm}-g{state["generation"]}.pt'
+                        sha = mind.save(out/name)
+                        state['checkpoints'][arm+':'+str(state['generation'])] = dict(file=name, sha256=sha)
+                        state['generation'] += 1
+                        if hasattr(pool, 'generation'):
+                            pool.generation = state['generation']
+                        if state['generation'] <= args.generations:
+                            queue_exam(mind, suite, state, life, life_row, state['generation'])
+                        milestone = state['parent_count'] + (args.work if working else args.hours*3600)*(state['generation']+1)/(args.generations+1)
+                    commit(out, state, mind, arm+'-rolling.pt')
+                    if life:
+                        life.checkpoint(life_row, mind)
+                if stop.is_set():
+                    state['observer_stop'] = 'safety_wall'
+                    if life:
+                        life.finish_arm(life_row, mind, dict(costs=state['costs'], questions=state.get('exam_items', {}),
+                            discovery_judges=state.get('discovery_judges', [])), complete=False)
+                    break
+                state.setdefault('digests', {})[arm] = mind.learning_hash()
+                if hasattr(mind, 'holes'):
+                    state.setdefault('holes', {})[arm] = mind.holes.report(mind)
+                if life:
+                    life.finish_arm(life_row, mind, dict(costs=state['costs'], questions=state.get('exam_items', {}),
+                        discovery_generations=state.get('discovery_generations', []),
+                        discovery_judges=state.get('discovery_judges', [])), complete=True)
+                state.update(arm_index=arm_index+1, active_arm=None)
+                write(out/'state.json', state)
+            if state['arm_index'] == len(arms):
+                state['stage'] = 'complete'
+        state['finished'] = time.time()
+        write(out/'state.json', state)
+        if life:
+            if state['stage'] == 'bootstrap':
+                life.save_birth(mind, state['bootstrap_index'])
+                life_row['work_done'] = max(0, mind.clock.count-life_row['start_work']) if working else 0
+            life.finish(life_row, 'complete' if state['stage'] == 'complete' else 'observer_stop')
+    except (ValueError, TimeoutError) as exc:
+        state.update(failure=str(exc), failure_trace=traceback.format_exc()[-6000:], finished=time.time())
+        commit(out, state, mind, mind.arm+'-rolling.pt')
+        if life:
+            life.finish_arm(life_row, mind, dict(costs=state['costs'], questions=state.get('exam_items', {}),
+                discovery_judges=state.get('discovery_judges', []), failure=str(exc)), complete=False)
+            life.finish(life_row, 'failure')
+    finally:
+        timer.cancel()
+    return work_report(out, state)
+
+
+def fresh_exam(spec, seed, serial):
+    """Fresh inputs from a frozen generator. All outputs stay observer-side
+    until they are the four public examples of the once-asked question."""
+    rng = np.random.default_rng([seed, 1403, serial])
+    distribution = Distribution(spec['tin'])
+    xs = tuple(distribution(rng) for _ in range(20))
+    public = copy.deepcopy(spec)
+    public.update(examples=xs[:4], pool=xs[4:], name='exam-'+str(serial))
+    return public
+
+
+def queue_exam(mind, suite, state, life, life_row, generation):
+    state.setdefault('exam_items', {})
+    history = set(life.ledger['exam_asked']) if life else set()
+    history.update(r['public_digest'] for r in state['exam_items'].values() if r['arm'] == mind.arm)
+    serial = (len(life.ledger['exam_asked']) if life else 0) + generation*len(suite['assessment'])
+    # Every paired arm uses the same parent's draw sequence, even after full
+    # has advanced the ledger. Its initial history/count are saved once.
+    state.setdefault('exam_parent_count', len(life.ledger['exam_asked']) if life else 0)
+    state.setdefault('exam_parent_history', sorted(history))
+    serial = state['exam_parent_count'] + generation*len(suite['assessment'])
+    history = set(state['exam_parent_history']) | {r['public_digest'] for r in
+        state['exam_items'].values() if r['arm'] == mind.arm}
+    for j, original in enumerate(suite['assessment']):
+        attempt = 0
+        while True:
+            spec = fresh_exam(original, state['protocol']['seed'], serial+j+attempt*1000000)
+            body = build_task(spec)
+            view = TaskView.from_task(body)
+            if view.identity not in history:
+                break
+            attempt += 1
+        key = mind.ask(view, 'exam:'+view.identity)
+        history.add(view.identity)
+        item = dict(id=key, arm=mind.arm, generation=generation, spec=spec,
+            public_digest=view.identity, status='not-yet', right_at_first_answer=None,
+            answered_eventually=False, work_to_answer=None, responses=0)
+        state['exam_items'][mind.arm+':'+key] = item
+        # After the single ask it is experience. Teaching demonstrations still
+        # cannot run here; only an unchanged proof can create a replay receipt.
+        mind.sleep.reserved.discard(original['family'])
+        mind.sleep.reserved_sources.discard(original['source'])
+        if life and mind.arm == 'full':
+            life.ledger['exam_asked'].append(view.identity)
+            life.ledger.setdefault('exam_records', {})[key] = copy.deepcopy(item)
+            life_row['questions_asked'].append(key)
+    if life:
+        from sera_u.life import atomic_json
+        atomic_json(life.ledger_path, life.ledger)
+
+
+def grade_question(item, response, body, seed):
+    """Observer-only. Nothing returned to SERA from this function."""
+    item['responses'] += 1
+    item['work'] = response['work']
+    if response['answer'] is None:
+        item['status'] = 'not-yet'
+        return
+    grade = body.grade(LG.freeze(response['answer']), {}, True, seed=seed)
+    right = grade['verdict'] == 'proven right'
+    first_answer = item['right_at_first_answer']
+    if first_answer is None:
+        first_answer = right
+    item.update(status='answered', answered_eventually=right, work_to_answer=response['work'],
+                right_at_first_answer=first_answer, grade=grade, late=response['late'])
+    if grade['verdict'] == 'SURE AND WRONG':
+        raise ValueError('Exam tripwire: sure and wrong')
+
+
+def work_pool(manifest, generation):
+    from scripts.sera_u_discovery import WorldPool
+    if manifest.get('roadmap_suite'):
+        from scripts.sera_u_roadmap import RoadmapPool as Pool
+    elif manifest.get('lineage_suite'):
+        from scripts.sera_u_darwin import LineagePool as Pool
+    elif manifest.get('scientists_suite'):
+        from scripts.sera_u_scientists import ScientistsPool as Pool
+    else:
+        Pool = WorldPool
+    if manifest.get('holes_suite'):
+        from scripts.sera_u_holes import HolesPool
+        if Pool is WorldPool:
+            Pool = HolesPool
+        else:
+            class LinkedPool(HolesPool, Pool):
+                pass
+            Pool = LinkedPool
+    return Pool(manifest, generation=generation) if manifest.get('lineage_suite') else Pool(manifest)
+
+
+def configure_fork(mind, arm):
+    mind.arm = arm
+    from sera_u.mind import U14_CRUTCHES
+    settings = arm_settings('full' if arm in ('no-holes', 'no-questions-first') else arm)
+    mind.u14 = {k: CR.on(k) for k in U14_CRUTCHES}
+    if arm == 'no-holes':
+        for key in sorted(mind.u14):
+            if key.startswith('holes_'):
+                mind.u14[key] = False
+    if arm == 'no-questions-first':
+        mind.u14['questions_first'] = False
+    if any(mind.u14.values()) and not hasattr(mind, 'agenda'):
+        from sera_u.agenda import Agenda
+        mind.agenda = Agenda()
+    if any(mind.u14.values()) and not hasattr(mind, 'holes'):
+        from sera_u.holes import Holes
+        mind.holes = Holes(mind.u14)
+    if hasattr(mind, 'holes'):
+        mind.holes.switches = {k: mind.u14['holes_'+k] for k in mind.holes.switches}
+    for key in ('field_proposer', 'program_dreams', 'sleep_library'):
+        mind.crutches[key] = settings[key]
+    mind.proposer.enabled = mind.crutches['field_proposer']
+    mind.engine.library_enabled = mind.crutches['sleep_library']
+
+
 def main():
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest='command', required=True)
@@ -828,9 +1339,19 @@ def main():
         if command != 'report':
             parser.add_argument('--device', choices=('cpu', 'cuda'), default='cpu')
             parser.add_argument('--seed', type=int, default=3)
+            parser.add_argument('--threads', type=int, default=1,
+                                help='Work-mode observer thread count; learner reductions always use one thread')
             parser.add_argument('--no-batched-reads', action='store_true',
                                 help='Use the complete pre-US single-read execution path')
         if command == 'run':
+            parser.add_argument('--clock', choices=('work', 'wall'), default='wall')
+            parser.add_argument('--life', default=None, help='Continue one rolling SERA; full advances it, ablations fork')
+            parser.add_argument('--session', default=None, help='Stable optional life session identity')
+            parser.add_argument('--carry', action='store_true', help='Explicit new-code carry; exact load still refuses changed code')
+            parser.add_argument('--work', type=int, default=100000,
+                                help='Observer total session work per paired arm, including shared birth')
+            parser.add_argument('--observer-wall', type=float, default=21600.,
+                                help='Work mode: outer observer stop, never a learner deadline')
             parser.add_argument('--laptop-preflight', default=None)
             parser.add_argument('--frozen-suite', default=None, help='Paired A/Bs: one saved observer.json shared by every case; observer side only')
             parser.add_argument('--arms', default=','.join(ARMS))
@@ -846,7 +1367,9 @@ def main():
         if command == 'preflight':
             parser.add_argument('--laptop', action='store_true', help='This CPU machine is the actual target laptop')
     args = ap.parse_args()
-    torch.set_num_threads(1)
+    if getattr(args, 'threads', 1) <= 0:
+        ap.error('--threads must be positive')
+    torch.set_num_threads(args.threads if getattr(args, 'clock', 'wall') == 'work' else 1)
     if args.command == 'preflight':
         result = timed_preflight(args.device, args.seed, Path(args.out), laptop=args.laptop, batched_reads=not args.no_batched_reads)
     elif args.command == 'report':

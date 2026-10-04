@@ -169,6 +169,8 @@ class Darwin:
         state = mind.field.hologram['regions'].setdefault(region, dict(seen={}, trials=0,
             correct=0, loss=0., baseline_loss=0., brier=0., bins={}))
         state['material'] = self.material(discovery, region)
+        discovery.trace('world_hologram', [r['law'] for r in state['material'] if 'law' in r],
+                        ['picture:'+digest(region)])
         state['quantities'] = {key: copy.deepcopy(value) for key, value in discovery.quantities.items()
                                if self.region(discovery, key[1]) == region}
         state['anomalies'] = [copy.deepcopy(row) for row in discovery.pending
@@ -281,6 +283,7 @@ class Darwin:
         if not self.switches['lineage_trees']:
             return None
         specimens = self.material(discovery, region)
+        discovery.trace('lineage_trees', [s['law'] for s in specimens if 'law' in s])
         if len(specimens) < 3:
             return None
         if region[0] == 'strengths':
@@ -335,6 +338,7 @@ class Darwin:
             entry['earned'] = previous.get('earned', False)
         mind.field.hologram['trees'][key] = entry
         self.superpose(mind.field, ('lineage-tree', key), ('hologram-region', region), credit)
+        discovery.trace('lineage_trees', [s['law'] for s in specimens if 'law' in s], ['tree:'+key])
         # Compression credit is a search prior, never standing (U9's rule; no MemoryField has a standing table).
         return entry
 

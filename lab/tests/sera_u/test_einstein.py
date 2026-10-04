@@ -389,7 +389,9 @@ def test_frozen_observer_suite_never_teaches_and_worldview_has_no_law(monkeypatc
     pool = WorldPool(manifest)
     d = discovery()
     d.register_worlds(pool.public())
-    assert all(set(w.__dict__) == {'id', 'form', 'tin', 'tout', 'objects', 'sigma'} for w in pool.public())
+    # U14 adds opaque public body identities (the same object seen in two worlds); the Einstein suite declares none.
+    assert all(set(w.__dict__) == {'id', 'form', 'tin', 'tout', 'objects', 'sigma', 'object_ids'} and w.object_ids == ()
+               for w in pool.public())
     assert observer.teach_einstein_once(SimpleNamespace(discovery=d, sleep=SimpleNamespace(replay=[]))) is False
     assert not d.einstein.teacher_shown
     bad = copy.deepcopy(manifest)

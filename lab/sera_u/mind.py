@@ -5,10 +5,12 @@ from dataclasses import asdict, replace
 import hashlib
 import io
 import json
+import math
 import os
 from pathlib import Path
 import pickle
 import random
+import sys
 import time
 
 import numpy as np
@@ -21,6 +23,10 @@ from .proposer import FieldOwner, Proposer
 from .sleep import Receipt, Sleep, expand, Curiosity, Syndrome, gap_parts, gap_kind, independent
 from .memory import Memory, MemoryField, BranchReadGate, memory_records, public_context
 from .discovery import CRUTCHES as U9_CRUTCHES, Discovery
+from .clock import Clock, activate, operation, work_constructor
+
+U14_CRUTCHES = ('work_doubling', 'observe_to_floor', 'questions_first', 'retire_understood', 'discovery_memory',
+    'holes_constant', 'holes_term', 'holes_domain', 'holes_failure', 'holes_join', 'holes_uncovered')
 
 SCHEMA = 'sera-u-2'
 U1_CRUTCHES = ('field_proposer', 'program_dreams', 'sleep_library', 'field_input_ports')
@@ -68,7 +74,8 @@ def code_identity():
     root = Path(__file__).resolve().parents[1]
     paths = sorted([*root.glob('sera/*.py'), *root.glob('ccops5/core/*.py'),
                     *root.glob('sera_u/*.py'), root/'scripts/sera_u_rsi.py', root/'scripts/sera_u_discovery.py',
-                    root/'scripts/sera_u_einstein.py', root/'scripts/sera_u_scientists.py', root/'scripts/sera_u_darwin.py', root/'scripts/sera_u_roadmap.py'])
+                    root/'scripts/sera_u_einstein.py', root/'scripts/sera_u_scientists.py', root/'scripts/sera_u_darwin.py', root/'scripts/sera_u_roadmap.py',
+                    root/'scripts/sera_u_holes.py'])
     return digest([(str(p.relative_to(root)).replace('\\', '/'), hashlib.sha256(p.read_bytes()).hexdigest())
                    for p in paths if p.is_file()])
 
@@ -987,6 +994,142 @@ class Engine(ONE.Sera):
         return super()._invent_part(*args, **kwargs) if self.library_enabled else None
 
 
+def validate_carry_shapes(payload):
+    """Reject unknown object slots using the new body's declared vocabulary.
+
+    Dynamic dictionary entries (laws, words, policies) are learned data, but an
+    unknown owner/Field/engine member is a code migration requiring a new rule.
+    """
+    import ast
+    root = Path(__file__).resolve().parents[1]
+    known = set()
+    # Every module whose objects a life can retain (a talk Lexicon lives in the Field): the body's whole vocabulary.
+    for relative in sorted(str(p.relative_to(root)) for folder in ('sera', 'sera_u') for p in (root/folder).glob('*.py')):
+        tree = ast.parse((root/relative).read_text(encoding='utf-8-sig'))
+        for node in ast.walk(tree):
+            if isinstance(node, ast.ClassDef):
+                known.update(child.target.id for child in node.body if isinstance(child, ast.AnnAssign)
+                             and isinstance(child.target, ast.Name))
+            if isinstance(node, ast.Attribute) and isinstance(node.value, ast.Name) and node.value.id == 'self':
+                known.add(node.attr)
+            # Members a body sets on another object (`self.field.rates = []`, `F.off_choice_rates`) are code too.
+            if isinstance(node, ast.Attribute) and isinstance(node.ctx, ast.Store):
+                known.add(node.attr)
+            if isinstance(node, ast.Call) and isinstance(node.func, ast.Name) and node.func.id in ('setattr', 'getattr', 'hasattr'):
+                if len(node.args) >= 2 and isinstance(node.args[1], ast.Constant) and isinstance(node.args[1].value, str):
+                    known.add(node.args[1].value)
+            if isinstance(node, ast.Call) and isinstance(node.func, ast.Attribute) and node.func.attr == 'setdefault':
+                if node.args and isinstance(node.args[0], ast.Constant) and isinstance(node.args[0].value, str):
+                    known.add(node.args[0].value)
+    # Field attachments made by the body rather than Field's own methods.
+    known.update(('einstein_methods', 'scientist_methods', 'darwin_methods', 'roadmap_readout',
+                  'hologram', 'inner', 'curiosity', 'memory_choice', 'revisit_queue',
+                  'u7_revisits_solved', 'u7_talk_pending', 'u7_talk_events', 'u7_turn',
+                  'field_understanding', 'u_schema', '_task_senses'))
+    groups = {'field': payload['field'].__dict__, 'engine': payload['engine'],
+              'proposer': payload['proposer']}
+    if 'discovery' in payload:
+        groups['discovery'] = payload['discovery'].__dict__
+        for name in ('einstein', 'scientists', 'darwin', 'roadmap'):
+            if hasattr(payload['discovery'], name):
+                groups[name] = getattr(payload['discovery'], name).__dict__
+    for name, state in groups.items():
+        unknown = set(state)-known
+        if unknown:
+            raise ValueError('Unknown '+name+' carry shape: '+repr(sorted(unknown)))
+    seen = set()
+    def inspect_nested(value):
+        if id(value) in seen:
+            return
+        seen.add(id(value))
+        if isinstance(value, (torch.Tensor, np.ndarray)):
+            return
+        if isinstance(value, dict):
+            for item in value.values():
+                inspect_nested(item)
+        elif isinstance(value, (list, tuple, set)):
+            for item in sorted(value, key=repr) if isinstance(value, set) else value:
+                inspect_nested(item)
+        elif hasattr(value, '__dict__') and type(value).__module__.startswith(('sera.', 'sera_u.')):
+            if type(value).__module__.startswith('sera_u.field.'):
+                raise ValueError('Unknown retained native object shape')
+            if type(value) is TaskView:
+                if set(value.__dict__) != set(TaskView.__dataclass_fields__):
+                    raise ValueError('Unknown public-view carry shape')
+            else:
+                unknown = set(value.__dict__)-known
+                if unknown:
+                    raise ValueError('Unknown nested carry shape: '+repr(sorted(unknown)))
+            from .discovery import Readout
+            if isinstance(value, Readout):
+                for table in (value.own, value.taught):
+                    for pair in table.values():
+                        if not isinstance(pair, (tuple, list)) or len(pair) != 2 or \
+                                not all(isinstance(a, np.ndarray) for a in pair) or \
+                                pair[0].shape != (65, 65) or pair[1].shape != (65,) or \
+                                not all(np.isfinite(a).all() for a in pair):
+                            raise ValueError('Unknown learned policy shape')
+            inspect_nested(value.__dict__)
+    for name in ('field', 'discovery', 'agenda', 'holes', 'work_policy'):
+        if name in payload:
+            inspect_nested(payload[name])
+
+
+class _CanonicalSet(set):
+    def __reduce__(self):
+        return set, (sorted(self, key=repr),)
+
+
+def canonical_payload(value, visited=None):
+    """Stable pickle ordering on a detached checkpoint copy, including sets."""
+    visited = {} if visited is None else visited
+    if id(value) in visited:
+        return visited[id(value)]
+    if type(value) is str:
+        # Pickle shares a string by object identity: a reloaded key 'cpu' is a fresh object where the running one is
+        # the interned 'cpu' torch also names a storage location with, so the same state saved 8 bytes apart (development review).
+        return sys.intern(value)
+    if (isinstance(value, np.ndarray) and value.dtype.kind in 'biufc' and value.dtype.fields is None
+            and value.dtype == np.dtype(value.dtype.type)):
+        # The same holds for a reloaded array's dtype, an equal copy of numpy's shared one (numpy no longer calls it
+        # builtin): rebuild plain numeric arrays on the shared dtype.
+        result = value.astype(value.dtype.type)
+        visited[id(value)] = result
+        return result
+    if isinstance(value, np.random.Generator) and isinstance(value.bit_generator.seed_seq, np.random.SeedSequence):
+        # A reloaded generator's seed pool is such an array too: rebuild it from its seed, then its exact state.
+        bits, seq = value.bit_generator, value.bit_generator.seed_seq
+        result = np.random.Generator(type(bits)(np.random.SeedSequence(
+            entropy=seq.entropy, spawn_key=seq.spawn_key, pool_size=seq.pool_size,
+            n_children_spawned=seq.n_children_spawned)))
+        result.bit_generator.state = bits.state
+        visited[id(value)] = result
+        return result
+    if isinstance(value, (torch.Tensor, np.ndarray)) or type(value) in (bytes, int, float, bool, type(None)):
+        return value
+    if isinstance(value, set):
+        result = _CanonicalSet(canonical_payload(v, visited) for v in sorted(value, key=repr))
+        visited[id(value)] = result
+        return result
+    if isinstance(value, dict):
+        visited[id(value)] = value
+        # Dictionary insertion order can be learned chronology (for example,
+        # the latest fitted quantity). Preserve it across a save/reload.
+        items = [(canonical_payload(k, visited), canonical_payload(v, visited)) for k, v in value.items()]
+        value.clear()
+        value.update(items)
+        return value
+    if isinstance(value, list):
+        visited[id(value)] = value
+        value[:] = [canonical_payload(v, visited) for v in value]
+    elif isinstance(value, tuple):
+        value = tuple(canonical_payload(v, visited) for v in value)
+    elif hasattr(value, '__dict__') and type(value).__module__.startswith(('sera.', 'sera_u.')):
+        visited[id(value)] = value
+        canonical_payload(value.__dict__, visited)
+    return value
+
+
 class AssessmentTask:
     """Read-only observer adapter: judge verdicts, no audit counterexample feedback.
 
@@ -1035,8 +1178,25 @@ class AssessmentTask:
 
 
 class SeraU:
+    @work_constructor
     def __init__(self, seed=3, *, device='cpu', config=None, arm='full', field=None, crutches=None,
-                 batched_reads=True, discovery=None, einstein=None, scientists=None, darwin=None, roadmap=None):
+                 batched_reads=True, discovery=None, einstein=None, scientists=None, darwin=None, roadmap=None,
+                 wiring=False, clock='wall', u14=None):
+        if clock not in ('work', 'wall'):
+            raise ValueError('Unknown learner clock')
+        self.clock_mode = clock
+        self.u14 = {k: CR.on(k) for k in U14_CRUTCHES} if u14 is None else dict(u14)
+        if set(self.u14) != set(U14_CRUTCHES) or any(type(v) is not bool for v in self.u14.values()):
+            raise ValueError('Declare all boolean U14 switches')
+        if clock == 'work':
+            from .discovery import Readout
+            self.clock, self.work_policy = Clock(), Readout()
+        if any(self.u14.values()):
+            from .agenda import Agenda
+            self.agenda = Agenda()
+            from .holes import Holes
+            self.holes = Holes(self.u14)
+        self.wiring = bool(wiring)
         if type(batched_reads) is not bool:
             raise ValueError('batched_reads must be boolean')
         self.batched_reads = batched_reads
@@ -1047,6 +1207,8 @@ class SeraU:
             raise ValueError('Declare the registered boolean discovery crutches')
         # No entity, RNG draw, port, extra record or payload slot on the old path.
         self.discovery = Discovery(discovery_switches, einstein=einstein, scientists=scientists, darwin=darwin, roadmap=roadmap) if discovery_switches['open_worlds'] else None
+        if self.discovery is not None and self.wiring:
+            self.discovery._wiring_enabled = True
         self.u8_declared = 'memory_choice' in self.crutches
         memory_choice = self.crutches.pop('memory_choice', False)
         self.u7_declared = any(k in self.crutches for k in U7_CRUTCHES)
@@ -1175,6 +1337,8 @@ class SeraU:
         memory_limit = LG._MEMORY.get('limit')
         had_memory_limit = 'limit' in LG._MEMORY
         counts = LG.EXECUTION_COUNTS
+        work_scope = activate(self)
+        work_scope.__enter__()
         try:
             if bool(getattr(self.field, 'field_understanding', False)) != self.crutches['field_understanding']:
                 raise ValueError('Understanding switch changed; start a fresh history')
@@ -1187,6 +1351,9 @@ class SeraU:
                 scoped += U8_CRUTCHES
             CR.ON = (on-set(U_CRUTCHES)) | {k for k in scoped if self.crutches[k]}
             CR.OFF = (off-set(U_CRUTCHES)) | {k for k in scoped if not self.crutches[k]}
+            if any(self.u14.values()):
+                CR.ON = (CR.ON-set(U14_CRUTCHES)) | {k for k, v in self.u14.items() if v}
+                CR.OFF = (CR.OFF-set(U14_CRUTCHES)) | {k for k, v in self.u14.items() if not v}
             if self.discovery is not None:
                 CR.ON = (CR.ON-set(U9_CRUTCHES)) | {k for k, v in self.discovery.switches.items() if v}
                 CR.OFF = (CR.OFF-set(U9_CRUTCHES)) | {k for k, v in self.discovery.switches.items() if not v}
@@ -1260,8 +1427,15 @@ class SeraU:
             else:
                 LG._MEMORY.pop('limit', None)
             LG.EXECUTION_COUNTS = counts
+            work_scope.__exit__(None, None, None)
 
+    @operation
     def live(self, task, *, teaching=False, task_wall=10., max_steps=None, origin=None, phase=None):
+        if self.clock_mode == 'work':
+            # Inherited ONE's loop uses MAX_WALL as well as LG.DEADLINE.
+            # Here its numeric unit is work, bounded by the learned call.
+            task_wall = max(0., self.clock.ceiling-self.clock.count)
+            max_steps = math.inf
         if self._active:
             raise ValueError('Nested task living is unsupported')
         start = time.perf_counter()
@@ -1471,6 +1645,7 @@ class SeraU:
                              head.options(self.crutches['memory_layer_a'], self.crutches['memory_layer_b']), shown)
         return True
 
+    @operation
     def train(self, *args, **kwargs):
         with self.scope():
             return self.sleep.train(*args, **kwargs)
@@ -1491,6 +1666,55 @@ class SeraU:
         views = [item if type(item) is TaskView else TaskView.from_task(item) for item in items]
         return [items[j] for j in self.field.curiosity.study_order(views)]
 
+    def choice_features(self):
+        """The actual retained Field read, using only its current public view."""
+        if self.discovery is not None and self.discovery.active in self.discovery.worlds:
+            view = self.discovery.view(self.discovery.active)
+        else:
+            view = next((q['question'] for q in getattr(getattr(self, 'agenda', None), 'items', {}).values()
+                         if q['status'] == 'open' and type(q['question']) is TaskView),
+                        TaskView((('x', 'num'),), 'num'))
+        def read():
+            return PH.InnerJudge.features(self.engine._u_reads([view])[0][0].detach().cpu().numpy())
+        if getattr(self, '_clock_active', False):
+            return read()
+        with self.scope():
+            return read()
+
+    def ask(self, question, source):
+        """Put actually received words or public task data first, retaining it."""
+        from .agenda import Agenda
+        if not hasattr(self, 'agenda'):
+            self.agenda = Agenda()
+        return self.agenda.ask(question, source, self.clock.count if self.clock_mode == 'work' else 0)
+
+    def work_question(self, key=None, *, body=None, task_wall=10.):
+        """Body/judge is ephemeral. A late revisit never calls ask again."""
+        if not hasattr(self, 'agenda'):
+            return None
+        key = key or self.agenda.next(self, priority=self.u14['questions_first'])
+        if key is None:
+            return None
+        item = self.agenda.items[key]
+        question = item['question']
+        count = self.clock.count if self.clock_mode == 'work' else 0
+        features = self.choice_features()
+        if type(question) is str:
+            with self.scope():
+                words = tuple(TS.sym(w) for w in question.split())
+                answer, _, _ = self.engine.reply((words,), words)
+        elif body is not None:
+            if TaskView.from_task(body).identity != question.identity:
+                raise ValueError('Question body does not match its saved public view')
+            result = self.live(AssessmentTask(body), task_wall=task_wall, phase='world',
+                               origin='interaction', max_steps=math.inf if self.clock_mode == 'work' else None)
+            answer = expand(result['answer'], self.field.concept_table()) if result['proven'] else None
+        else:
+            answer = None
+        spent = self.clock.count-count if self.clock_mode == 'work' else 0
+        return self.agenda.settle(key, answer, spent, self.clock.count if self.clock_mode == 'work' else 0,
+                                  features=features)
+
     def study(self, items, *, task_wall=10., max_steps=None, deadline=float('inf')):
         """Read supplied book tasks in gap order, within the study answer boundary."""
         records = []
@@ -1503,6 +1727,7 @@ class SeraU:
         records.extend(self.revisit(items, task_wall=task_wall, max_steps=max_steps, deadline=deadline))
         return records
 
+    @operation
     def discover(self, pool, *, deadline=float('inf')):
         """One completed discovery unit; the observer's pool is never retained."""
         if self.discovery is None:
@@ -1515,7 +1740,34 @@ class SeraU:
             with self.scope():
                 if hasattr(pool, 'sync'):
                     pool.sync(self.discovery)
+                if self.wiring:
+                    pool.wiring = True
                 return self.discovery.tick(self, pool, deadline=deadline)
+        except Exception:
+            self._active = False
+            restored = SeraU.loads(rollback)
+            self.__dict__.update(restored.__dict__)
+            self.sleep.mind = self.memory.mind = self
+            raise
+        finally:
+            self._active = False
+
+    @operation
+    def work_hole(self, key, pool, *, deadline=float('inf')):
+        if not hasattr(self, 'holes') or self.discovery is None:
+            return None
+        q = next(q for q in self.holes.questions.values() if q['agenda'] == key)
+        if not self.holes.switches[q['reason']]:
+            return None
+        rollback = self.dumps()
+        self._active = True
+        try:
+            with self.scope():
+                if hasattr(pool, 'sync'):
+                    pool.sync(self.discovery)
+                if self.wiring:
+                    pool.wiring = True
+                return self.holes.work(self, key, pool, deadline)
         except Exception:
             self._active = False
             restored = SeraU.loads(rollback)
@@ -1531,7 +1783,7 @@ class SeraU:
         engine = {k: v for k, v in self.engine.__dict__.items() if k not in ('field', 'proposer', 'memory', '_u_last_talk', '_u_predictions')}
         proposer = {k: v for k, v in self.proposer.__dict__.items() if k not in ('owner', 'field', '_scores', 'memory', '_feature_cache')}
         # Searches are restartable declarative cursors, not serialized Python generators.
-        return dict(schema=SCHEMA, seed=self.seed, arm=self.arm, device=str(self.device), config=asdict(self.config),
+        payload = dict(schema=SCHEMA, seed=self.seed, arm=self.arm, device=str(self.device), config=asdict(self.config),
                     source=self.source, code=self.code, crutches=self.crutches, u7_declared=self.u7_declared,
                     u8_declared=self.u8_declared,
                     batched_reads=self.batched_reads,
@@ -1544,9 +1796,32 @@ class SeraU:
                     torch_generator=self.torch_generator.get_state(), checked_wake=self.checked_wake,
                     updates=self.updates, progress=self.progress, word_symbols=self.word_symbols,
                     book=self.book, runtime=dict(torch=torch.__version__,
-                    numpy=np.__version__, threads=torch.get_num_threads(), deterministic=torch.are_deterministic_algorithms_enabled(),
+                    numpy=np.__version__, threads=1 if self.clock_mode == 'work' else torch.get_num_threads(), deterministic=torch.are_deterministic_algorithms_enabled(),
                     knobs=CR.settings()),
+                    **({'clock': self.clock.state(), 'work_policy': self.work_policy,
+                        'clock_mode': self.clock_mode} if hasattr(self, 'clock') else {}),
+                    **({'allocation_policy': self.work_policy} if self.clock_mode == 'wall' and
+                        hasattr(self, 'work_policy') and not hasattr(self, 'clock') else {}),
+                    **({'u14': self.u14} if any(self.u14.values()) else {}),
+                    **({'agenda': self.agenda} if hasattr(self, 'agenda') else {}),
+                    **({'holes': self.holes} if hasattr(self, 'holes') else {}),
+                    **({'wiring': True} if self.wiring else {}),
                     **({'discovery': self.discovery} if self.discovery is not None else {}))
+        if self.clock_mode == 'work':
+            # Cache UUIDs and measured observer seconds cannot distinguish two
+            # identical learned checkpoints. The original reporting events
+            # remain in the observer's journal; work costs remain in learning.
+            payload = copy.deepcopy(payload)
+            if self.device.type == 'cpu':
+                payload['rngs']['cuda'] = []  # CPU life is independent of unrelated GPUs
+            payload['field'].ideas.gen = 'work-cache'
+            if 'discovery' in payload:
+                payload['discovery'] = copy.deepcopy(payload['discovery'])
+                for event in payload['discovery'].events:
+                    if event.get('cost_unit') == 'work':
+                        event['seconds'] = event.get('work', 0)
+            payload = canonical_payload(payload)
+        return payload
 
     def dumps(self):
         stream = io.BytesIO()
@@ -1568,20 +1843,22 @@ class SeraU:
         return hashlib.sha256(path.read_bytes()).hexdigest()
 
     @classmethod
-    def loads(cls, data, *, device=None, exact=True):
+    def loads(cls, data, *, device=None, exact=True, _carry=False):
         outer = torch.load(io.BytesIO(data), map_location='cpu', weights_only=False)
         if outer['schema'] != SCHEMA or hashlib.sha256(outer['payload']).hexdigest() != outer['sha256']:
             raise ValueError('Corrupt or incompatible checkpoint envelope')
         p = torch.load(io.BytesIO(outer['payload']), map_location='cpu', weights_only=False)
         selected_device = str(device) if device is not None else p['device']
-        if p['schema'] != SCHEMA or p['source'] != source_identity() or p['code'] != code_identity():
+        if p['schema'] != SCHEMA or p['source'] != source_identity() or (not _carry and p['code'] != code_identity()):
             raise ValueError('Checkpoint schema/source/learner changed')
         if exact and (selected_device != p['device'] or p['runtime']['torch'] != torch.__version__ or
-                      p['runtime']['numpy'] != np.__version__ or p['runtime']['threads'] != torch.get_num_threads() or
+                      p['runtime']['numpy'] != np.__version__ or (p.get('clock_mode', 'wall') == 'wall' and
+                      p['runtime']['threads'] != torch.get_num_threads()) or
                       p['runtime']['knobs'] != CR.settings()):
             raise ValueError('Exact resume requires the same device, runtime, threads and lab crutches')
         result = cls(p['seed'], device=selected_device, config=NativeConfig(**p['config']), arm=p['arm'],
                      field=p['field'], crutches=p['crutches'], batched_reads=p.get('batched_reads', True),
+                     clock=p.get('clock_mode', 'wall'), u14=p.get('u14', dict.fromkeys(U14_CRUTCHES, False)),
                      discovery=p['discovery'].switches if 'discovery' in p else {k: False for k in U9_CRUTCHES},
                      einstein=(p['discovery'].einstein.switches if 'discovery' in p and hasattr(p['discovery'], 'einstein')
                                else dict.fromkeys(('thought_experiments', 'symmetry_principles',
@@ -1620,6 +1897,18 @@ class SeraU:
         result.word_symbols = p['word_symbols']
         result.book = p['book']
         result.discovery = p.get('discovery')
+        result.wiring = p.get('wiring', False)
+        if 'agenda' in p:
+            p['agenda'].validate()
+            result.agenda = p['agenda']
+        if 'holes' in p:
+            p['holes'].validate()
+            result.holes = p['holes']
+        if 'clock' in p:
+            result.clock = Clock(p['clock'])
+            result.work_policy = p['work_policy']
+        elif 'allocation_policy' in p:
+            result.work_policy = p['allocation_policy']
         if result.discovery is not None and hasattr(result.discovery, 'einstein'):
             result.field.einstein_methods = result.discovery.einstein.methods
         if result.discovery is not None and hasattr(result.discovery, 'scientists'):
@@ -1635,6 +1924,54 @@ class SeraU:
     @classmethod
     def load(cls, path, **kwargs):
         return cls.loads(Path(path).read_bytes(), **kwargs)
+
+    @classmethod
+    def carry(cls, path, *, device=None):
+        """Explicit new body, same learned life; exact load still rejects code.
+
+        Only the documented sera-u-2 shapes are accepted. No tensor is resized,
+        no policy head is silently discarded, and pinned Field code must match.
+        """
+        data = Path(path).read_bytes()
+        outer = torch.load(io.BytesIO(data), map_location='cpu', weights_only=False)
+        if set(outer) != {'schema', 'sha256', 'payload'} or outer['schema'] != SCHEMA or \
+                hashlib.sha256(outer['payload']).hexdigest() != outer['sha256']:
+            raise ValueError('Unknown/corrupt carry envelope')
+        p = torch.load(io.BytesIO(outer['payload']), map_location='cpu', weights_only=False)
+        required = {'schema', 'seed', 'arm', 'device', 'config', 'source', 'code', 'crutches',
+            'u7_declared', 'u8_declared', 'batched_reads', 'owner', 'owner_training', 'optimizer',
+            'field', 'state', 'token_ids', 'production_ids', 'understanding_ids', 'engine', 'proposer',
+            'sleep', 'rngs', 'random', 'numpy', 'torch_generator', 'checked_wake', 'updates',
+            'progress', 'word_symbols', 'book', 'runtime'}
+        optional = {'discovery', 'wiring', 'clock', 'clock_mode', 'work_policy', 'allocation_policy', 'u14', 'agenda', 'holes'}
+        if not required <= set(p) or set(p)-required-optional:
+            raise ValueError('Unknown carry payload shape: '+repr(sorted(set(p)-required-optional)))
+        if set(p['sleep']) != {'replay', 'dreams', 'consumed', 'reserved', 'reserved_sources', 'logs'}:
+            raise ValueError('Unknown sleep shape')
+        if not isinstance(p['field'], PH.Field) or set(p['state']) != set(
+                FieldOwner(NativeConfig(**p['config'])).empty(1)):
+            raise ValueError('Unknown learned Field/state shape')
+        validate_carry_shapes(p)
+        result = cls.loads(data, device=device, exact=False, _carry=True)
+        # state_dict loading checks every owner/optimizer tensor shape. Verify
+        # retained state too: it is not an nn.Module's state_dict.
+        expected = result.owner.empty(1)
+        for key, value in result.state.items():
+            if not isinstance(value, torch.Tensor) or value.shape != expected[key].shape:
+                raise ValueError('Unknown retained tensor shape: '+key)
+        for parameter, state in result.optimizer.state.items():
+            if set(state)-{'step', 'exp_avg', 'exp_avg_sq', 'max_exp_avg_sq'}:
+                raise ValueError('Unknown optimizer state shape')
+            for name, value in state.items():
+                if isinstance(value, torch.Tensor) and name != 'step' and value.shape != parameter.shape:
+                    raise ValueError('Unknown optimizer tensor shape')
+        result.carry_manifest = dict(from_code=p['code'], to_code=result.code,
+            parent_digest=hashlib.sha256(data).hexdigest(),
+            carried=sorted(set(p)-{'schema', 'code', 'source', 'runtime', 'progress'}),
+            renamed=[], dropped=['progress (observer runner cursor)'],
+            rebound=['code', 'source', 'runtime'], schema=SCHEMA)
+        result.progress = {}
+        return result
 
     def learning_hash(self):
         """Stable learning-state hash, excluding allocator IDs and elapsed-time counters."""
@@ -1683,6 +2020,16 @@ class SeraU:
             add(p[key])
         if self.discovery is not None:
             add(self.discovery.learning_state())
+        if hasattr(self, 'clock'):
+            add(self.clock.state()); add(self.work_policy)
+        elif hasattr(self, 'work_policy'):
+            add(self.work_policy)
+        if any(self.u14.values()):
+            add(self.u14)
+        if hasattr(self, 'agenda'):
+            add(self.agenda.learning_state())
+        if hasattr(self, 'holes'):
+            add(self.holes.learning_state())
         return sha.hexdigest()
 
     def assess(self, task, *, task_wall=10., max_steps=None):

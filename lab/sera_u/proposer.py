@@ -496,6 +496,8 @@ class Proposer:
         return tuple(p for p, _ in indexed), logits.log_softmax(-1), weights
 
     def features(self, view, concepts, *, grow=True):
+        from .clock import charge
+        charge('field_read')
         self.concepts(concepts)
         start = time.perf_counter()
         cached = (self._feature_cache.get((view, grow)) if self.memory is None and not torch.is_grad_enabled() else None)
@@ -515,6 +517,8 @@ class Proposer:
         return features, weights
 
     def features_many(self, views, libraries, *, grow=True, memory_read=False):
+        from .clock import charge
+        charge('field_read', len(views))
         """One read per distinct view within this call; no cache survives an update."""
         views, libraries = tuple(views), tuple(libraries)
         if len(views) != len(libraries):
@@ -598,6 +602,10 @@ class Proposer:
                             best = choices[j]
                             self._gap_surest = ('concept', best.pay) if best.sym == 'c' else ('production', best.sym)
                     for i, prod in enumerate(choices):
+                        if LG.WORK_CHARGE is not None:
+                            if LG.DEADLINE_CHECK(deadline):
+                                break
+                            LG.WORK_CHARGE()
                         args = []
                         for a in prod.args:
                             if a.startswith('lam:'):
@@ -824,7 +832,10 @@ class Proposer:
     def restore_searches(self):
         """Rebuild only the recorded deterministic frontier, without executing a judge."""
         saved_deadline, saved_stats = LG.DEADLINE[0], self.stats.copy()
+        saved_charge, saved_check = LG.WORK_CHARGE, LG.DEADLINE_CHECK
         try:
+            LG.WORK_CHARGE = None
+            LG.DEADLINE_CHECK = lambda deadline: False
             LG.forget_searches()
             LG.DEADLINE[0] = math.inf
             for identity, cursor in sorted(self.cursors.items()):
@@ -836,3 +847,4 @@ class Proposer:
             self._restore_pending = False
         finally:
             LG.DEADLINE[0], self.stats = saved_deadline, saved_stats
+            LG.WORK_CHARGE, LG.DEADLINE_CHECK = saved_charge, saved_check

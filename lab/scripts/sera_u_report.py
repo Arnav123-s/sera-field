@@ -175,7 +175,7 @@ class Case:
         # assessment suite (development review, 2026-10-03); discovery's own suite and share belong to the case's switches.
         return canonical([self.suite[0], {key: p.get(key) for key in
             ('seed', 'device', 'task_wall', 'eval_tasks', 'generations', 'wake_tasks',
-             'hours', 'budgets', 'batched_reads', 'threads', 'reading_digest', 'teaching')},
+             'hours', 'budgets', 'batched_reads', 'threads', 'reading_digest', 'teaching', 'clock', 'work')},
             self.state.get('retention_count')])
 
     @property
@@ -185,7 +185,7 @@ class Case:
         # Missing optional switches and explicitly false switches are equivalent.
         # Code/package digests are deliberately NOT switches: the motivating
         # no-memory/discovery-off replicate has different code digests.
-        groups = {'crutches': p.get('crutches', {}),
+        groups = {'crutches': p.get('crutches', {}), 'u14': p.get('u14', {}),
                   'discovery': {key: d.get(key, {}) for key in
                                 ('switches', 'einstein', 'scientists', 'darwin', 'roadmap')}}
         on = {path: value for path, value in leaves(groups) if value is True}
@@ -197,6 +197,8 @@ class Case:
 
     @property
     def ending(self):
+        if self.state.get('observer_stop') and not self.state.get('failure'):
+            return 'observer_stop: '+str(self.state['observer_stop'])
         failure = self.state.get('failure') or self.curve.get('failure')
         if failure:
             kind = 'declared allowance' if 'allowance' in failure.lower() and 'exhaust' in failure.lower() else 'stop'
@@ -242,6 +244,12 @@ def extract(case):
             discovery_counts.append(sum(bool(row['false_credit']) for row in judges))
     case.false_values.extend(discovery_counts)
     case.discovery_credit_known = bool(discovery_counts)
+    for row in curve.get('exam', {}).get('generations', []):
+        for name, value in leaves({k: v for k, v in row.items() if k not in ('arm', 'generation')}):
+            case.metrics[('exam', row['arm'], row['generation'], name)] = value
+    for arm, value in curve.get('holes', {}).items():
+        for name, item in leaves(value):
+            case.metrics[('holes', arm, 'latest', name)] = item
     # U8 has no explicit false_credit count. Its observer grades are evidence;
     # do not infer an all-clear if the grades are absent or partial.
     grades = [row.get('grade', {}).get('verdict') for row in rows]
@@ -389,12 +397,24 @@ def pooled(key):
     return (key[0], key[1], key[3]) if len(key) == 4 else key
 
 
+def record_detail(metric):
+    # One saved record's own fields (a list entry such as `records[12].seconds`) stay in the saved JSON; the tables
+    # keep every metric above them and each list's `.count` (U11's records made a 184,000-line detail file, 2026-10-03).
+    return '[' in metric
+
+
+def compared(key):
+    # Differences and spreads are kept for what the outcome is read from: assessment and retention per arm and
+    # generation, and each discovery snapshot's certified laws, experiments and seconds (development review, 2026-10-03).
+    return key[0] in ('assessment', 'retention') or key[3] in ('laws', 'experiments', 'seconds')
+
+
 def differences(cases):
     noise, spread_rows, diff_rows = {}, [], []
     for left, right in combinations(cases, 2):
         if left.scope != right.scope or left.switches != right.switches:
             continue
-        for key in sorted(set(left.metrics) & set(right.metrics), key=canonical):
+        for key in sorted((key for key in set(left.metrics) & set(right.metrics) if compared(key)), key=canonical):
             a, b = left.metrics[key], right.metrics[key]
             if not numeric(a) or not numeric(b):
                 continue
@@ -406,7 +426,7 @@ def differences(cases):
     for left, right in combinations(cases, 2):
         if left.scope != right.scope:
             continue
-        for key in sorted(set(left.metrics) & set(right.metrics), key=canonical):
+        for key in sorted((key for key in set(left.metrics) & set(right.metrics) if compared(key)), key=canonical):
             a, b = left.metrics[key], right.metrics[key]
             if not numeric(a) or not numeric(b):
                 continue
@@ -431,7 +451,8 @@ def render_sections(cases, files):
           case.state.get('preflight', {}).get('runtime') or case.curve.get('engineering', {}).get('runtime') or case.protocol.get('machine'),
           utc_minute(case.state.get('started')), utc_minute(case.state.get('finished')),
           {'hours': case.protocol.get('hours'), 'budgets': case.protocol.get('budgets'),
-           'deadline UTC': utc_minute(case.state.get('deadline'))},
+           'deadline UTC': utc_minute(case.state.get('deadline')),
+           'clock': case.protocol.get('clock', 'wall'), 'work': case.protocol.get('work')},
           case.ending, switch_delta(case, first[case.batch]), case.false_credit) for case in cases])
     provenance = [(case.label, where, path,
                    str(value)[:12] if path.split('.')[-1] in ('code', 'code_sha256') and value else value,
@@ -467,10 +488,19 @@ def render_sections(cases, files):
             elif section == 'habits':
                 rows = [(case.label, kind, arm, generation, metric, value, case.false_credit)
                         for case in group for (kind, arm, generation, metric), value in sorted(case.metrics.items(), key=lambda item: canonical(item[0]))
-                        if kind not in ('assessment', 'retention', 'curve')]
+                        if kind not in ('assessment', 'retention', 'curve') and arm in ('full', 'case') and not record_detail(metric)]
                 rows.extend((case.label, 'availability', 'case', 'saved', 'evidence', notice, case.false_credit)
                             for case in group for notice in case.notices)
                 body = table(('case', 'saved source / section', 'arm', 'generation', 'metric / JSON path', 'value', 'false credit'), rows)
+                wiring_rows = [(case.label, r['arm'], r['generation'], r['observations'],
+                    len(r['floor_worlds']), r['proposals'], r['candidates_audited'],
+                    r['certified'], r['admitted'], name, len(h['received']), len(h['outputs']), case.false_credit)
+                    for case in group for r in case.curve.get('discovery', {}).get('wiring', [])
+                    for name, h in sorted(r['habits'].items())]
+                if wiring_rows:
+                    body += '\n\nWiring (saved records only; zero is a stopped hop).\n\n' + table(
+                        ('case', 'arm', 'generation', 'observations', 'worlds at floor',
+                         'proposals', 'audited', 'certified', 'admitted', 'habit', 'laws received', 'outputs', 'false credit'), wiring_rows)
             else:
                 spreads, diffs = differences(group)
                 base = ('left', 'right', 'section', 'arm', 'generation', 'metric', 'left value', 'right value', 'right - left')
@@ -635,7 +665,7 @@ def render_summary_sections(cases):
         credit = '; '.join(f'{case.label}: {case.false_credit}' for case in group)
         noise.append(title + '\nFull arm: right - left / maximum replicate spread over all generations, shown per generation. '
                      'Smaller absolute gaps are within noise; verdicts use unrounded values. '
-                     'Pairs match saved seed, device, allowances and evaluation sizes. All metrics are in the detail file.\n\n' +
+                     'Pairs match saved seed, device, allowances and evaluation sizes. Every arm and generation is in the detail file.\n\n' +
                      table(('left', 'right', 'pair', 'solved: delta / spread', 'item seconds: delta / spread', 'false credit'),
                            rows, credit))
         for batch in sorted({case.batch for case in group}):

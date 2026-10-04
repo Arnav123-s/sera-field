@@ -32,3 +32,8 @@ It preserves older experiment tracks and assessed checkpoints. The unified desig
 omits local coordination and operational handoffs; current status is documented separately.
 The vendored Field manifest retains upstream and pre-publication identities and
 records published-file hashes after prose and line-ending adaptations.
+
+The current detailed report is a compact edition of generated outcome, scope,
+assessment, retention and comparison tables. Full per-unit habit traces, per-metric difference inventories and
+source inventories stay local. New run JSON uses compact whitespace without
+changing numerical contents.

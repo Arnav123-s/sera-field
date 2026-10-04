@@ -3,8 +3,8 @@
   "publication_date": "2026-10-03",
   "source_local_revision": "7c39634b7cc193dfa50c894ec1e69e42993a3f73",
   "lab_source_revision": "04fd415caf790f1476e138809e32e905f7e31392",
-  "integration_plan_revision": "e1be383cbe90b88785ac1542733563be14eec78a",
-  "public_base_revision": "a8c1c5432a294b8226b5ba40e4c4fed2cba1a82b",
+  "integration_plan_revision": "897c26b35976e93be8cb5e4f9286a2fb0a8b282f",
+  "public_base_revision": "a476d03916deabd56a740536d2df0bcfa6cf845c",
   "scope": "Reviewed current files, compact evidence, and preserved assessed inference revisions",
   "excluded": "Private history, raw corpora, complete training states, binary lab Fields, coordination records, preparation tooling",
   "snapshot_adaptations": [
@@ -13,11 +13,12 @@
     "Both lab packages included in editable installation",
     "Declared report-path and validation-name renames retained",
     "Reported trailing whitespace removed",
-    "Vendored Field hashes refreshed after prose/LF adaptations; original hashes retained; parity fixture path configured by environment"
+    "Vendored Field hashes refreshed after prose/LF adaptations; original hashes retained; parity fixture path configured by environment",
+    "Compact generated report omits exhaustive per-unit and per-metric inventories; new run JSON whitespace compacted"
   ],
   "file_identity_basis": "Git blob bytes; excludes this manifest",
-  "file_count": 2876,
-  "total_bytes": 99739000,
+  "file_count": 2938,
+  "total_bytes": 101957324,
   "files": [
     {
       "path": ".gitattributes",
@@ -36,13 +37,13 @@
     },
     {
       "path": "PUBLICATION_SCOPE.md",
-      "bytes": 1992,
-      "sha256": "a3c47afb5f66f1231bf8d629abb2ef9e36159e2014ef5de6f2904fd47e9ab05f"
+      "bytes": 2287,
+      "sha256": "f5467fbc3e751bd4a6fa7499949a91a137df7123f138a43574e0fc481b82fd5e"
     },
     {
       "path": "README.md",
-      "bytes": 3863,
-      "sha256": "fae13d1320b065e8a8a35109113d66b6a49830b4b1d19867fcaae56d4bda82ea"
+      "bytes": 3972,
+      "sha256": "167fd725a4aee2931b8e8e1bd999db24340a466068eb8cb68aa62397278e9d93"
     },
     {
       "path": "START_CONNECTED.md",
@@ -476,18 +477,18 @@
     },
     {
       "path": "lab/SERA_U_PLAN.md",
-      "bytes": 15634,
-      "sha256": "55b0e38b369f97a239c67803fff3e0887dd9ed68f46fac9a2d1606dff2c1f12c"
+      "bytes": 16816,
+      "sha256": "0b5b0292a40e93434491874e64c69caba3cb41022ae09ed5df491ea1885459fa"
     },
     {
       "path": "lab/SERA_U_REPORT.md",
-      "bytes": 11471,
-      "sha256": "0d2c29e100a2dfaecacb5465271a8c803486a0262af5c35c28fff9e231652d27"
+      "bytes": 55166,
+      "sha256": "83e49739f952d0a58b48722d7fad8911e481e0ed73349b0be6060af7f46db3cc"
     },
     {
       "path": "lab/SERA_U_REPORT_TABLES.md",
-      "bytes": 572988,
-      "sha256": "68301e559055bf75563c4fc1e368cd7379f768fe4b55f3a32aa39e9b6724b974"
+      "bytes": 213843,
+      "sha256": "71d600a7d644140e6b90d4b35bf4c228b47ac8547e0e9919318643347e8fa0d6"
     },
     {
       "path": "lab/SERA_V3_PLAN.md",
@@ -781,8 +782,8 @@
     },
     {
       "path": "lab/docs/SERA_U_STATUS.md",
-      "bytes": 9310,
-      "sha256": "a2cc254344696a944e28c0885aa7977c3ff861280d85c3d699c8fca788475b71"
+      "bytes": 11753,
+      "sha256": "22a90b069127c9af284ea43dc2c13db3baaba0d1d945c5fbab04f1b85dc373fc"
     },
     {
       "path": "lab/legacy/README.md",
@@ -6166,13 +6167,18 @@
     },
     {
       "path": "lab/scripts/sera_u_discovery.py",
-      "bytes": 22592,
-      "sha256": "1b4c8c9e52a6c57b4a2274203546c343f1a666cc5e369ba8ea7fd80a26f5eca8"
+      "bytes": 23700,
+      "sha256": "6d65c7f6a853b1b943f597d785a580c23665c5c50fc2ef998bbda2ea57085459"
     },
     {
       "path": "lab/scripts/sera_u_einstein.py",
       "bytes": 9421,
       "sha256": "0fdccdd5107d52ee1d41a905a8effba6d64c90d407cc19eb1185e25edb73aba9"
+    },
+    {
+      "path": "lab/scripts/sera_u_holes.py",
+      "bytes": 6225,
+      "sha256": "73dce213c6e44b236132c5f9a5ec59d5df0ab57d5c9ca5d7b5856384c3346dab"
     },
     {
       "path": "lab/scripts/sera_u_memory_profile.py",
@@ -6181,8 +6187,8 @@
     },
     {
       "path": "lab/scripts/sera_u_report.py",
-      "bytes": 41619,
-      "sha256": "2f4e6ac81c92c57183a1b8d191bb64d31ddbe987b19e9931143502a437c1e210"
+      "bytes": 43893,
+      "sha256": "c781026ef426a920ce72339f4ac836b4f80f2c04ecd2fa05a4f293d3f7ef59d5"
     },
     {
       "path": "lab/scripts/sera_u_roadmap.py",
@@ -6191,13 +6197,13 @@
     },
     {
       "path": "lab/scripts/sera_u_rsi.py",
-      "bytes": 53906,
-      "sha256": "79aa1ab420806524d1ade869c0aa2c05546676b9dcf79066bcea499a679bc52e"
+      "bytes": 86777,
+      "sha256": "aa62785064295bb1cfb018ce0dcc12e7339856eff8c71033e3030f88a3ff8489"
     },
     {
       "path": "lab/scripts/sera_u_scientists.py",
-      "bytes": 16409,
-      "sha256": "02768eca6fb92b3b98c156e774529ad58b2ac332f2dc5e5acbe781cc4f39d97c"
+      "bytes": 16821,
+      "sha256": "f916f8f79382d6bf7e849907001072a970cc0cb38baca56311ccc72e15cf5be3"
     },
     {
       "path": "lab/scripts/sera_u_speed.py",
@@ -9215,6 +9221,266 @@
       "sha256": "78b928c8c632b89c00be0dd768cbf625c9cf9bdde80bfc3f66157fbfe82dc451"
     },
     {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-einstein/engineering.json",
+      "bytes": 571,
+      "sha256": "c8bbe472bca3aec004c4f9697309109bd2d014b31bf3c3399fe6a5cf1f1b1a23"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-einstein/g_curve.json",
+      "bytes": 250440,
+      "sha256": "d510c85521da505ac2612a490aef4935c1d0e6940e266772cca8b69064779623"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-einstein/preflight.json",
+      "bytes": 920,
+      "sha256": "7584ad8c6faf9684918b47e097731cce7a55d088c12d8ba2188b600034e25834"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-einstein/protocol.json",
+      "bytes": 2072,
+      "sha256": "22b780572956afad0740ce67c9af6cf092d49a0a21611f369562f0f2f632ad2d"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-scientists-no-anomaly-pursuit/engineering.json",
+      "bytes": 571,
+      "sha256": "c2c959eda57ae4f0e69783bd2569b0a39d5712b5dd4baba04b185456d4a951af"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-scientists-no-anomaly-pursuit/g_curve.json",
+      "bytes": 299585,
+      "sha256": "dc2ef73480fde88e3956e1f9ebf325e3de011556a9d88a8ca9edb92be0debf7d"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-scientists-no-anomaly-pursuit/preflight.json",
+      "bytes": 922,
+      "sha256": "3ec8d1d2c1d5e53cd6f2f95add6b2b687b75ef7eab4b1a09b32cc8c2836f51f4"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-scientists-no-anomaly-pursuit/protocol.json",
+      "bytes": 2218,
+      "sha256": "a64193b8a7075af341751ae97b8fa372b1df3ea230aace7ddd60ca7ec64a7635"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-scientists-no-conserved-quantities/engineering.json",
+      "bytes": 571,
+      "sha256": "32e8780d00478f9794834e384a4be67c75c8e18869d8d45b8db65c6490d75e81"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-scientists-no-conserved-quantities/g_curve.json",
+      "bytes": 377712,
+      "sha256": "2328512c715e14ad947a44c763d505366d38965c84ea13a8b36a5e2bc5c3dad5"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-scientists-no-conserved-quantities/preflight.json",
+      "bytes": 923,
+      "sha256": "fd8a55fb87a7a85cf1fb092e594e3138b84aafa9eb5ceda4cb161374d71053bb"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-scientists-no-conserved-quantities/protocol.json",
+      "bytes": 2218,
+      "sha256": "045e3c7063414a4c3c66b120178820b7fd297dedda3a7f891313e52afed9b49a"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-scientists-no-gap-predictions/engineering.json",
+      "bytes": 571,
+      "sha256": "f7957bbe0c1d6d8e7eba903ae00bc52f258155c198ff42e675aff78d6748950d"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-scientists-no-gap-predictions/preflight.json",
+      "bytes": 922,
+      "sha256": "80b56f50da2e41237e466d779036389ac2dc16a43fa255cd1c916b430fb2f7de"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-scientists-no-gap-predictions/protocol.json",
+      "bytes": 2218,
+      "sha256": "8b76bb1bd98a292a028e5cac62b5118cabd2b130b6df0421b61f3429d51440d0"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-scientists-no-number-conjectures/engineering.json",
+      "bytes": 571,
+      "sha256": "75f0872c2a6ce75cc61232254612c1cfdc17b7262987dc097dd37c08c3920416"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-scientists-no-number-conjectures/g_curve.json",
+      "bytes": 315541,
+      "sha256": "6427328eb29f3583e437853f6cfeb92e77dd17d682eb8c9071e6466a53957d6e"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-scientists-no-number-conjectures/preflight.json",
+      "bytes": 923,
+      "sha256": "b2a07b1f61873190b500ee4856c5918485f3c422fed1b28f161b42b8880719e5"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-scientists-no-number-conjectures/protocol.json",
+      "bytes": 2218,
+      "sha256": "319a273539196cda52818307082ee5d8fbc9b88c278ad74c10724f4c529edf54"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-scientists-no-one-change-experiments/engineering.json",
+      "bytes": 571,
+      "sha256": "20e2e5e9d71a94e9421f85881badd4bbe6d745fd235d9273006ce60409fc9552"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-scientists-no-one-change-experiments/g_curve.json",
+      "bytes": 413736,
+      "sha256": "be2dbf9c1f85b1114e2c32213f24e1ff792f6947539481341bdbeb8f1fd84117"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-scientists-no-one-change-experiments/preflight.json",
+      "bytes": 920,
+      "sha256": "e2aa61fdbd6c36fae99632299d266e74d583aea6dc81d4a8d7d716c948fdf327"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-scientists-no-one-change-experiments/protocol.json",
+      "bytes": 2218,
+      "sha256": "6b973b361ba5f0e3d3b017861ff74e3b22aa5beaed1e10b95438dffbbf23e83c"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-scientists/engineering.json",
+      "bytes": 571,
+      "sha256": "c4d5d725609869b6f2c9cebcd6735e21dfc99e82b8ea96edc9ca2f80fd930967"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-scientists/g_curve.json",
+      "bytes": 301200,
+      "sha256": "516d2d71f33132568bd23840294b393e11a6e6293796cf6d9b670497fd4c1951"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-scientists/preflight.json",
+      "bytes": 922,
+      "sha256": "5ec97d0b708d9f564d692af26b705e56d7e59b426b29a7e4fa8089e7d0eb1d83"
+    },
+    {
+      "path": "lab/sera-runs/u11-scientists-vmc/u-scientists/protocol.json",
+      "bytes": 2217,
+      "sha256": "365f4139c04a33b48b0d691193de595d4d70b8d58c6ea5fa4309f06571b940f3"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-darwin-no-change-mechanisms/engineering.json",
+      "bytes": 571,
+      "sha256": "658aa1ba9907ab8c916374f86ccae74e169859b1ba6ac22e85d6aab5b7a2d1eb"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-darwin-no-change-mechanisms/preflight.json",
+      "bytes": 922,
+      "sha256": "cbfb41fdc89ecbc07fa871afbbe55932ec9898dbcab2d77ecc9f7402c27a1052"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-darwin-no-change-mechanisms/protocol.json",
+      "bytes": 2341,
+      "sha256": "5c12a30972d4a0bdb725dbff2344f7a8a383839bf5a78bccfd2ead46a85f7dff"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-darwin-no-deep-time/engineering.json",
+      "bytes": 571,
+      "sha256": "c06b6ec9365ba8b8a9e99a201070ffd2ac9fdbc960f88a80f223b6550ccb2bfd"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-darwin-no-deep-time/preflight.json",
+      "bytes": 921,
+      "sha256": "09639f52fb00a9e6c4997e87feee8890bdfd941c3ca420ea37b35a0c0fb88222"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-darwin-no-deep-time/protocol.json",
+      "bytes": 2341,
+      "sha256": "15ed921c3162897edde05127f09223ed9ce6d0524a88955a193f71121fa61727"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-darwin-no-lineage-trees/engineering.json",
+      "bytes": 571,
+      "sha256": "9c32e516ff3748f82aad8cee6f4c9b45f5ed7953ae7f2147cf3893bcdbf4cb17"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-darwin-no-lineage-trees/preflight.json",
+      "bytes": 923,
+      "sha256": "41311b948908305c6435ca3ea92044801e976412f8010a52979cb9c3094233a3"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-darwin-no-lineage-trees/protocol.json",
+      "bytes": 2341,
+      "sha256": "c63854dc9639c16cbe983e08b77f68e5af0cc246ee8e271dd3ca4f820b55ae1b"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-darwin-no-patient-observation/engineering.json",
+      "bytes": 571,
+      "sha256": "820c9f5303a73568f65dc4921c4cff649a12d044eead425fbce17eecfad4bd55"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-darwin-no-patient-observation/preflight.json",
+      "bytes": 919,
+      "sha256": "d02f82d8db1b5285da55a3ddb85cfffc1eb4c9dae52b8516e5d7acafa7f0d327"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-darwin-no-patient-observation/protocol.json",
+      "bytes": 2341,
+      "sha256": "2afc228c844fdbaf76e67a59543aa6d62a6670adfe43bd5a88c9d3f83f348877"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-darwin-no-world-hologram/engineering.json",
+      "bytes": 571,
+      "sha256": "0296970e5ddd828fcf8fd34d0d8fad531d018d9bb518d84d9e38b9893bdd62af"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-darwin-no-world-hologram/preflight.json",
+      "bytes": 920,
+      "sha256": "6c1a7b0b47a2b6dced6f6ca26e7f01e792799b6b07010744d8865eb4a165c075"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-darwin-no-world-hologram/protocol.json",
+      "bytes": 2341,
+      "sha256": "2c5ab4e7f00628659738e3f09dadfe46106e587dc40712c4d38819a2f8392eb9"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-darwin-rep/engineering.json",
+      "bytes": 571,
+      "sha256": "57af4cc26a2a82f676f3bd2e03f5c1a17204a4092ad82113f7c1cdf28b429406"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-darwin-rep/preflight.json",
+      "bytes": 921,
+      "sha256": "7399e7994f9a06ecab3834a638aaeabc4fcbe411c6a821f366a856619c1fd03b"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-darwin-rep/protocol.json",
+      "bytes": 2340,
+      "sha256": "15dfad0aa7b441d1a23ef5afff3c8ab93306423c0e12dbd82bb43dd0fe9b9e43"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-darwin/engineering.json",
+      "bytes": 571,
+      "sha256": "07df6df241c91655234321cf475f3caadf0ab38ffd07de808e3be49853e380b1"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-darwin/preflight.json",
+      "bytes": 921,
+      "sha256": "e711b0eca0e5b0d55ed42c937c12497736f0a95ecc0dbf97e4695642f123baa5"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-darwin/protocol.json",
+      "bytes": 2340,
+      "sha256": "15dfad0aa7b441d1a23ef5afff3c8ab93306423c0e12dbd82bb43dd0fe9b9e43"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-scientists/engineering.json",
+      "bytes": 571,
+      "sha256": "d88019f5c44b1465a785c6f68b2e602aea71ede64f234824a2b93a7944c6c065"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-scientists/g_curve.json",
+      "bytes": 368673,
+      "sha256": "f6ab197fc7e00e0e6439e5ab42c7c384ea6cb790e7fdff331b51a3c198dc258f"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-scientists/preflight.json",
+      "bytes": 924,
+      "sha256": "f1fcea413db723530d2c8aeea6642da304a856ed82b62eed346eadf3b3e58314"
+    },
+    {
+      "path": "lab/sera-runs/u12-darwin-vma/u-scientists/protocol.json",
+      "bytes": 2217,
+      "sha256": "ebad0e21634d378b0512e52998462b339ea444738874103df225e91e4070bbfe"
+    },
+    {
       "path": "lab/sera-runs/u2-ab-525c7db-crash/u-full/engineering.json",
       "bytes": 259,
       "sha256": "84a2de5a7d563d27bb2cfa773766d8a741ce5ccfeaf29c54fd945417ce635c46"
@@ -9551,8 +9817,8 @@
     },
     {
       "path": "lab/sera/crutches.py",
-      "bytes": 21893,
-      "sha256": "ad5b2a8247172cd74022f8c8e272c3d95ed76d807e8367c32ea0e902520c0289"
+      "bytes": 23212,
+      "sha256": "2f37a6ac330edfec02e0c4ef3efbec833a2629be8b910935c1796ca647de1501"
     },
     {
       "path": "lab/sera/design.py",
@@ -9576,8 +9842,8 @@
     },
     {
       "path": "lab/sera/lang.py",
-      "bytes": 46941,
-      "sha256": "c9a92caef908befec64ad699df95a03bd239e18cda0886a73934ede49d4916e6"
+      "bytes": 48166,
+      "sha256": "315ac93d2425b23d3e609fdc2bde405d8647b995000f788b2e3b37fbd80721da"
     },
     {
       "path": "lab/sera/lawspace.py",
@@ -9630,19 +9896,29 @@
       "sha256": "7f546cc006a38f3952884e29a7d04f2e28b9e42b317bab9c9dde5bbb80b2cf55"
     },
     {
+      "path": "lab/sera_u/agenda.py",
+      "bytes": 4287,
+      "sha256": "3d01c60cff466d8dc1ac4626d468d8323c03f09b0c1f471705ae789d56182d40"
+    },
+    {
+      "path": "lab/sera_u/clock.py",
+      "bytes": 11176,
+      "sha256": "aa0e8c787bea862717b64cd1d2e46881c61a6c6dd20d0a24e90416239ffd6229"
+    },
+    {
       "path": "lab/sera_u/darwin.py",
-      "bytes": 41458,
-      "sha256": "179d093733dea6315a12f3f5385b1c3d1901ebc90edb6f6fac577dd01a390a56"
+      "bytes": 41793,
+      "sha256": "debdc3c9dca698a4eb5c32791a815a0159c84987d8b08b8a4f2cb1f858425587"
     },
     {
       "path": "lab/sera_u/discovery.py",
-      "bytes": 58969,
-      "sha256": "830d630cbc7383b1baaa7f52ae235fb789ce63d68bd8dd14c7fb991a06b42037"
+      "bytes": 70783,
+      "sha256": "40dce26d58dd2c0e69862390c35e897eb2ec7c96c9ed34062fdfa8c6a05e9209"
     },
     {
       "path": "lab/sera_u/einstein.py",
-      "bytes": 27516,
-      "sha256": "aa710c450050420e52df233c29d88f9c7ee3b4da0c47281585f347daa4167943"
+      "bytes": 27999,
+      "sha256": "68fae387b332973211e96738bbec2a8be75760a58ced085a299ff6387358cec2"
     },
     {
       "path": "lab/sera_u/field/SOURCE.json",
@@ -9820,14 +10096,24 @@
       "sha256": "05b84b7ee9eeb4694a3a60e904fb66241161ed8454da4d01cad2ed3ddafadc26"
     },
     {
+      "path": "lab/sera_u/holes.py",
+      "bytes": 14174,
+      "sha256": "61bbb7910a66265cb3bcaf686085dced9ccd576f506621f3d6ebc7a91349ac70"
+    },
+    {
+      "path": "lab/sera_u/life.py",
+      "bytes": 4778,
+      "sha256": "4246362a22fc7809ca2ff38dd10c8e83e7216561c42ef1ed79b61fe2f62d8769"
+    },
+    {
       "path": "lab/sera_u/memory.py",
       "bytes": 51813,
       "sha256": "9770750c7b0abf54e7c87ecbba59d77ea646e7360632662d5ec794364d746b21"
     },
     {
       "path": "lab/sera_u/mind.py",
-      "bytes": 108027,
-      "sha256": "afa55cbde75afe2e77f8feceabb240802e7abe181dbd3fe73c0bb8f3ff1ad693"
+      "bytes": 127127,
+      "sha256": "63fcf355903a58f685e80700d4d2fb869eeb31419f2c1421638674b3cdba4fcb"
     },
     {
       "path": "lab/sera_u/ports.py",
@@ -9836,23 +10122,23 @@
     },
     {
       "path": "lab/sera_u/proposer.py",
-      "bytes": 44297,
-      "sha256": "f07d6bb67b3683d5ca406aafd084e8d778879b0604557bb10201383b3143e739"
+      "bytes": 44866,
+      "sha256": "8b3c26708dcf3cdf11c0ca494c3fef34358f728619752ddfed5c4d37ac36af86"
     },
     {
       "path": "lab/sera_u/roadmap.py",
-      "bytes": 27899,
-      "sha256": "6e7b363c16ecdd88c595716150afbd80c7c8a91d838664ac7b324fa299102b2f"
+      "bytes": 28051,
+      "sha256": "71696ed069b847e2c3d8ec249018847ca02adeea5f1f576617baf604defec42f"
     },
     {
       "path": "lab/sera_u/scientists.py",
-      "bytes": 37123,
-      "sha256": "55fd50f9057b6a01348988dfc03ab0da01d6e94ce50b979a60995c45048fd59c"
+      "bytes": 37945,
+      "sha256": "a17a70f9a213f7ecbe0f46686059a7d5abf4d7977894d598c2fb6456f78ed182"
     },
     {
       "path": "lab/sera_u/sleep.py",
-      "bytes": 47919,
-      "sha256": "49e1ca304d9a9a83162ff359c0ba10b3b382ee873a45f1a9815673e2faa46cf3"
+      "bytes": 48149,
+      "sha256": "cb99f3a0506396745ec75ba09f3b6f49bea9cd23f13524adf1a150c264a7b535"
     },
     {
       "path": "lab/tests/__init__.py",
@@ -10196,13 +10482,13 @@
     },
     {
       "path": "lab/tests/sera_u/test_discovery.py",
-      "bytes": 31455,
-      "sha256": "c617f32c2477d03c12838569af36cb5667e5583d0806b3850ba5624841b3a8d9"
+      "bytes": 32303,
+      "sha256": "dceeafef6b46e8fd81195df112ecc73eaf6d15be1f8882cd756b9f0dc9cd4a7d"
     },
     {
       "path": "lab/tests/sera_u/test_einstein.py",
-      "bytes": 27095,
-      "sha256": "790805d34f66acff66574b856079314665f5fec0775347a81705d3ba0894db2a"
+      "bytes": 27264,
+      "sha256": "1c87e03e12871728f11506c7bb62094a8b91bcb1042e0d5f1ab881326b2f7850"
     },
     {
       "path": "lab/tests/sera_u/test_entity.py",
@@ -10210,9 +10496,19 @@
       "sha256": "2078f5c7d5942fb394bc3179ed8719bd8bcbf433232991c7361256da68953d59"
     },
     {
+      "path": "lab/tests/sera_u/test_holes.py",
+      "bytes": 5333,
+      "sha256": "d29ffcab0382d8b022d4dd15595f5ff821502d87904a2b3a636aa08e1a34ddc1"
+    },
+    {
       "path": "lab/tests/sera_u/test_judge_scrutiny.py",
       "bytes": 11998,
       "sha256": "74333999d60e369e6bb30c20c9bfcb799b2b191dbb50ab7e9a227538d0cc5b61"
+    },
+    {
+      "path": "lab/tests/sera_u/test_life.py",
+      "bytes": 4357,
+      "sha256": "d5df65c07126ee36a4afb9dea0c806107722b042edd7171eb1a7ba68e4eeb2b3"
     },
     {
       "path": "lab/tests/sera_u/test_memory_choice.py",
@@ -10240,14 +10536,19 @@
       "sha256": "568bf537eceeecae4c9ff8f426b7d64be7467f40c143949e824b1b2dd884cf80"
     },
     {
+      "path": "lab/tests/sera_u/test_questions_first.py",
+      "bytes": 3350,
+      "sha256": "36bce93f99f604b9d4eaff277f6bdd9761c7e21ca76a058cd9ae1a42d4f7a651"
+    },
+    {
       "path": "lab/tests/sera_u/test_readout_speed.py",
       "bytes": 18663,
       "sha256": "0efa2a114598f07abbba08d9f1b35b7881085337985aad90f8eba80915ca984d"
     },
     {
       "path": "lab/tests/sera_u/test_report.py",
-      "bytes": 36228,
-      "sha256": "20ca8dbdf1396ced50f2a983cdd2fc561bae8ba51ce00afdaf6fc89b1288fc86"
+      "bytes": 37308,
+      "sha256": "420ce1078f150b679da8b9657ea376563a4e4d231322fe7491854e2fb1a031d9"
     },
     {
       "path": "lab/tests/sera_u/test_roadmap.py",
@@ -10268,6 +10569,16 @@
       "path": "lab/tests/sera_u/test_u3.py",
       "bytes": 23499,
       "sha256": "263c0688e0c8f60d5a0ede452f8f537f9e9c63372331c328b16dd6b5d215c9d7"
+    },
+    {
+      "path": "lab/tests/sera_u/test_wiring.py",
+      "bytes": 8601,
+      "sha256": "46d74e6e913a7306294f6c1ca32ce4c8d0e8cb5f4856201590ea91bdae2441bc"
+    },
+    {
+      "path": "lab/tests/sera_u/test_work_clock.py",
+      "bytes": 9397,
+      "sha256": "88c69dadbc56e560dbac01f255a2f6fd11cfcb8a836b47aa2b03614d0eb7f222"
     },
     {
       "path": "protocols/ATTACH-018-ENGINEERING.md",
@@ -14420,23 +14731,8 @@
     "entry_point_links": "passed",
     "credential_review": "no unresolved findings"
   },
-  "unified_source_revision": "e1be383cbe90b88785ac1542733563be14eec78a",
+  "unified_source_revision": "897c26b35976e93be8cb5e4f9286a2fb0a8b282f",
   "previous_update_validation": {
-    "tests": {
-      "unified_course_crutches": {
-        "tests": 342,
-        "failures": 0,
-        "errors": 0,
-        "skipped": 3
-      }
-    },
-    "python_parsed": 539,
-    "json_parsed": 1933,
-    "entry_point_links": "passed",
-    "credential_review": "no unresolved findings after staged-tree scan and review",
-    "full_behavioral_assessment": "not run"
-  },
-  "validation": {
     "tests": {
       "unified_course_crutches": {
         "tests": 507,
@@ -14456,5 +14752,20 @@
       "local_links_checked": 237,
       "tests": "implementation unchanged; previous 504 passing and 3 skipped tests retained"
     }
+  },
+  "validation": {
+    "tests": {
+      "unified_course_crutches": {
+        "tests": 534,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 3
+      }
+    },
+    "python_parsed": 563,
+    "json_parsed": 2037,
+    "entry_point_links": "passed",
+    "credential_review": "no unresolved findings after staged-tree scan and review",
+    "full_behavioral_assessment": "not run"
   }
 }

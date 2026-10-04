@@ -396,6 +396,8 @@ class Sleep:
         for attempt in range(attempts):
             if len(made) >= count or time.time() >= deadline or len(self.dreams) >= 10_000:
                 break
+            if getattr(self.mind, 'clock_mode', 'wall') == 'work':
+                self.mind.clock.charge('dream')
             aimed = math.floor((attempt+1)*share) > math.floor(attempt*share)
             route = 'aimed' if aimed else 'random'
             if aimed:
@@ -493,6 +495,8 @@ class Sleep:
         for _ in range(batches):
             if time.time() >= deadline:
                 break
+            if getattr(self.mind, 'clock_mode', 'wall') == 'work':
+                self.mind.clock.charge('batch')
             start = time.perf_counter()
             # Eight slots round 40/50/10 to 3/4/1. Reading is authorized text only;
             # if absent that slot becomes checked wake replay and is disclosed.

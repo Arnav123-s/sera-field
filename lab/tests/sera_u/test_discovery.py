@@ -132,6 +132,17 @@ def test_registered_removable_default_off_and_old_payload(monkeypatch):
         return value
     # Exact disabled path has no U9 metadata even when the other U9 flags are on.
     assert set(a) == set(b) and 'discovery' not in b
+    # On the wall clock an unproven best guess is wherever the clock cut the search: three gates at once on one VM
+    # (Colab, 2026-10-03 20:00) cut one life's step and not the other's (`var n` against `head(tail(range n))`).
+    assert a['proven'] == b['proven'] and (not a['proven'] or a['answer'] == b['answer'])
+    # On SERA's own work clock nothing depends on the machine: the same two lives agree in full (U14).
+    lives = []
+    for life in (SeraU(3, config=NativeConfig(nodes=3, rounds=1), clock='work'),
+                 SeraU(3, config=NativeConfig(nodes=3, rounds=1), discovery=switches(open_worlds=False), clock='work')):
+        life.clock.start(200000)
+        lives.append(life.live(TS.number_task('old', lambda x: x, 3, 1), max_steps=1, task_wall=math.inf))
+    a, b = lives
+    assert set(a) == set(b) and 'discovery' not in b
     assert a['proven'] == b['proven'] and a['answer'] == b['answer']
     assert logical(a['sera_u']) == logical(b['sera_u'])
 

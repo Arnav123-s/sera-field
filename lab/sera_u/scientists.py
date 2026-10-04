@@ -274,6 +274,7 @@ class Scientists:
         if not self.switches['gap_predictions']:
             return 0
         concepts = mind.field.concept_table()
+        discovery.trace('gap_predictions', sorted(discovery.laws))
         groups = {}
         for key, law in sorted(discovery.laws.items()):
             if law['form'] != 'exact' or not law['coverage']:
@@ -338,6 +339,7 @@ class Scientists:
                 seconds=time.perf_counter()-started,
                 checks=[]))
             made += 1
+            discovery.trace('gap_predictions', [r[1] for r in members], ['gap:'+pid])
         return made
 
     def predicted_laws(self, discovery, wid):
@@ -366,6 +368,7 @@ class Scientists:
         if not self.switches['number_conjectures'] or not hasattr(pool, 'audit_relation'):
             return 0
         concepts = copy.deepcopy(mind.field.concept_table())
+        discovery.trace('number_conjectures', sorted(discovery.laws))
         ids = sorted(k for k in concepts.get('_sig', {}) if k in concepts)
         for cid in ids[:32]:
             if time.time() >= deadline:
@@ -412,6 +415,8 @@ class Scientists:
                     concept=cid, own_values=own, status='audited' if verdict.accepted else 'refuted',
                     standing=int(verdict.accepted), evidence='exact checked rewrite' if verdict.accepted and exact
                     else 'strong sampled evidence, not proof', certificate=verdict)
+                discovery.trace('number_conjectures', [k for k, e in discovery.laws.items()
+                    if cid in e['concept_ids']], ['relation:'+token])
                 if verdict.accepted:
                     mind.field.ideas.bind(('concept', cid), ('concept-relation', token), 1.)
                     add_proof(mind.field, ('concept-relation', token))
@@ -431,6 +436,7 @@ class Scientists:
         return 0.
 
     def conservation(self, mind, discovery, pool, wid, *, deadline=math.inf):
+        discovery.trace('conserved_quantities', sorted(k for k, e in discovery.laws.items() if wid in e['coverage']))
         if (not self.switches['conserved_quantities'] or discovery.worlds[wid].form != 'strengths'
                 or not hasattr(pool, 'audit_conserved')):
             return 0.
@@ -454,6 +460,8 @@ class Scientists:
             if token in self.attempted or not conserved_fit(p, trajectories, concepts, discovery.worlds[wid].sigma):
                 continue
             self.attempted.add(token)
+            from .clock import charge
+            charge('judge')
             verdict = pool.audit_conserved(wid, p, concepts, quantities)
             if type(verdict) is not Certification:
                 raise TypeError('Unsafe conservation audit')
@@ -467,6 +475,8 @@ class Scientists:
             entry = self.conserved.setdefault(key, dict(key=('conserved', key), program=p,
                 worlds=[], certificates={}, quantity_keys=[], standing=0,
                 evidence='sampled trajectory constancy, not a universal proof'))
+            discovery.trace('conserved_quantities', [k for k, e in discovery.laws.items()
+                if wid in e['coverage']], ['conserved:'+key])
             if wid not in entry['worlds']:
                 entry['worlds'].append(wid)
                 entry['worlds'].sort()
@@ -513,6 +523,7 @@ class Scientists:
             self.chases[token] = dict(id=token, world=wid, anomaly=law, source=verdict.record,
                 status='pending', started=self.serial, ended=None, attempts=[], seconds=0.,
                 eligibility=[], explained_by=None, gains=[])
+        discovery.trace('anomaly_pursuit', [law] if law in discovery.laws else [], ['chase:'+token])
         return token
 
     def pursue(self, mind, discovery):

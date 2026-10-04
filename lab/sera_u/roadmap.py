@@ -242,6 +242,8 @@ class Roadmap:
             record = dict(original=cid, own_values=own, body_hidden=True, primitives_only=True,
                           reconstruction=cost, audited=False, kept=False, original_preserved=True, reuse=0, original_reuse=0)
             self.rebuilds[token] = record
+            discovery.trace('rederive_concepts', [k for k, e in discovery.laws.items()
+                if cid in e['concept_ids']], ['rebuild:'+token])
             if not alternatives:
                 return 0.
             rhs = alternatives[0]

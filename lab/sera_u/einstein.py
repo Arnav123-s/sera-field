@@ -187,6 +187,7 @@ class Einstein:
         concepts = mind.field.concept_table()
         laws = self.compatible(discovery, wid)
         xs = imagined_inputs(discovery.observations[wid], discovery.worlds[wid].tin)
+        discovery.trace('symmetry_principles', [k for k, _ in laws])
         fresh = 0
         for transform in self.transforms(discovery, wid, concepts):
             supporters = sorted(k for k, e in laws if self.keeps(e['hypothesis'], transform, xs, concepts))
@@ -206,6 +207,7 @@ class Einstein:
                 fresh += 1
             entry['laws'] = supporters
             entry['standing'] = len(entry['laws'])
+            discovery.trace('symmetry_principles', supporters, ['principle:'+key])
             for law in supporters:
                 mind.field.ideas.bind(('discovered-law', law), entry['key'], 1.)
         return fresh
@@ -326,6 +328,7 @@ class Einstein:
             return None
         compatible = dict(self.compatible(discovery, wid))
         laws = tuple(sorted(k for k in laws if k in compatible))
+        discovery.trace('doubt_assumptions', laws)
         if len(laws) < 2:
             others = [k for k in sorted(compatible) if k not in laws]
             laws = tuple(sorted(set(laws) | set(others[:2-len(laws)])))
@@ -333,6 +336,7 @@ class Einstein:
             key = digest((wid, laws, source))
             self.doubts.setdefault(key, dict(world=wid, laws=laws, source=source,
                 shared=(), status='not-yet', waiting_pair=True))
+            discovery.trace('doubt_assumptions', laws, ['doubt:'+key])
             return key
         exact = discovery.worlds[wid].form == 'exact'
         shared = set(nodes(compatible[laws[0]]['hypothesis']) if exact else compatible[laws[0]]['hypothesis'])
@@ -345,6 +349,7 @@ class Einstein:
         key = digest((wid, laws, source))
         self.doubts.setdefault(key, dict(world=wid, laws=laws, source=source,
                                         shared=tuple(shared), status='not-yet'))
+        discovery.trace('doubt_assumptions', laws, ['doubt:'+key])
         return key
 
     def revise(self, mind, discovery, pool, wid, *, deadline):
@@ -452,6 +457,7 @@ class Einstein:
         laws = self.compatible(discovery, wid)
         if not laws:
             return None
+        discovery.trace('bold_predictions', [k for k, _ in laws])
         key, law = max(laws, key=lambda pair: (self.law_credit.get(pair[0], 0.), pair[0]))
         y = value(law['hypothesis'], x, concepts)
         if y is None:
@@ -462,6 +468,7 @@ class Einstein:
         p = prediction_record(digest((wid, action, key, len(self.predictions))),
                               wid, action, key, y, principles)
         self.predictions.append(p)  # before the only world call in Discovery.tick
+        discovery.trace('bold_predictions', [key], ['prediction:'+p['id']])
         return p['id']
 
     def settle(self, mind, discovery, pid, observation):

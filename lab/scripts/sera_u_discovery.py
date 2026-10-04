@@ -158,6 +158,17 @@ def validate(manifest, old_suite, mind=None):
         raise ValueError('Einstein suite schema changed')
     if not rows or len({r['id'] for r in rows}) != len(rows):
         raise ValueError('Rediscovery IDs must be unique')
+    if 'holes_suite' in manifest:
+        bodies = {r['id']: r for r in rows}
+        links = manifest.get('observer_links', [])
+        if manifest['holes_suite'] != 'u14-holes-1' or len(links) != 4 or \
+                {r['reason'] for r in links} != {'constant', 'term', 'failure', 'uncovered'} or \
+                any(r['source'] not in bodies or r['target'] not in bodies for r in links):
+            raise ValueError('Invalid frozen holes links')
+        link = next(r for r in links if r['reason'] == 'constant')
+        if link.get('direct_measurement') is not True or not set(bodies[link['source']].get('object_ids', [])) & \
+                set(bodies[link['target']].get('object_ids', [])):
+            raise ValueError('Linked per-object quantity needs shared identity and direct measurement')
     excluded = {r['family'] for label in ('assessment', 'wake', 'retention') for r in old_suite[label]}
     if mind is not None:
         excluded.update(family(p, concepts) for receipt, concepts in mind.sleep.replay
@@ -243,7 +254,8 @@ class WorldPool:
         for wid in sorted(self.specs):
             spec = self.specs[wid]
             if spec['form'] == 'exact':
-                out.append(WorldView(wid, 'exact', spec['tin'], spec['tout']))
+                out.append(WorldView(wid, 'exact', spec['tin'], spec['tout'],
+                                     object_ids=tuple(spec.get('object_ids', ()))))
             else:
                 # The body schema is public and fixed by these generators.
                 # Visiting an unrelated world must not build every hidden rail.
@@ -411,7 +423,10 @@ def report(generations, judge_records):
         previous[row['arm']] = row
         rows.append(row)
     false = sum(bool(r['false_credit']) for r in judge_records)
-    return dict(generations=rows, false_credit=false, zero_false_credit=not false,
+    return dict(generations=rows,
+                **({'wiring': [dict(arm=r['arm'], generation=r['generation'], **r['wiring'])
+                              for r in rows if 'wiring' in r]} if any('wiring' in r for r in rows) else {}),
+                false_credit=false, zero_false_credit=not false,
                 found=[r for r in judge_records if r['found']], judge_records=judge_records,
                 claim='Rediscovery of laws we hid; search plus retention, not a claim of Newton-level discovery.',
                 limit='Audit bounds are probabilistic; found means not the planted structural spelling, not new science.')

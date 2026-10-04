@@ -1,8 +1,34 @@
 # SERA-U report tables
 
+Public compact edition: outcome, scope, assessment, retention and comparison tables
+are retained verbatim from the generated report. Per-unit habit traces and full
+source inventories remain in the local archive; scientific habit summaries are
+in [the main report](SERA_U_REPORT.md).
+
 <!-- generated:begin outcome -->
 | case | outcome | saved evidence | false credit |
 |---|---|---|---|
+| u10-einstein-vma/discovery | finished | saved JSON read | 0 |
+| u10-einstein-vma/einstein | declared allowance: Declared training allowance exhausted | saved JSON read | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | unfinished saved snapshot; stage=arms | saved JSON read | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | finished | saved JSON read | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | finished | saved JSON read | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | unfinished saved snapshot; stage=arms | saved JSON read | 0 |
+| u11-scientists-vmc/einstein | finished | u10-comparison.json MISSING (not zero) | 0 |
+| u11-scientists-vmc/scientists | unfinished saved snapshot; stage=arms | saved JSON read | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | unfinished saved snapshot; stage=arms | saved JSON read | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | unfinished saved snapshot; stage=arms | saved JSON read | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | unfinished saved snapshot; stage=arms | saved JSON read | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | unfinished saved snapshot; stage=arms | saved JSON read | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | declared allowance: Declared training allowance exhausted | saved JSON read | 0 |
+| u12-darwin-vma/darwin | unfinished saved snapshot; stage=arms | saved JSON read | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | unfinished saved snapshot; stage=arms | saved JSON read | 0 |
+| u12-darwin-vma/darwin-no-deep-time | unfinished saved snapshot; stage=arms | saved JSON read | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | unfinished saved snapshot; stage=arms | saved JSON read | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | unfinished saved snapshot; stage=arms | saved JSON read | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | unfinished saved snapshot; stage=arms | saved JSON read | 0 |
+| u12-darwin-vma/darwin-rep | unfinished saved snapshot; stage=arms | saved JSON read | 0 |
+| u12-darwin-vma/scientists | unfinished saved snapshot; stage=arms | u11-comparison.json MISSING (not zero) | 0 |
 | u8-u9-vmc-9036ca3/discovery-off | finished | comparison JSON MISSING (not zero; optional for memory-only cases) | 0 |
 | u8-u9-vmc-9036ca3/full | finished | comparison JSON MISSING (not zero; optional for memory-only cases) | 0 |
 | u8-u9-vmc-9036ca3/mem-choice | declared allowance: Declared 1.5-hour training allowance exhausted | comparison JSON MISSING (not zero; optional for memory-only cases) | 0 |
@@ -15,6 +41,27 @@
 <!-- generated:begin batches -->
 | batch / case | package code | assessment suite sha256 | discovery suite sha256 | machine | start UTC | end UTC | declared allowance | ending | switch changes from first case | false credit |
 |---|---|---|---|---|---|---|---|---|---|---|
+| u10-einstein-vma/discovery | 9e0b39a5bcd2 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 4944c914d4a29ac2553e8e37aaa3a340afe617b2990244592656ed5285a4129e | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 07:14 | 2026-10-03 11:43 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 13:14; hours=6.00 | finished | same as first case | 0 |
+| u10-einstein-vma/einstein | ae1ac9ff9a3c | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 4944c914d4a29ac2553e8e37aaa3a340afe617b2990244592656ed5285a4129e | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 06:40 | 2026-10-03 09:39 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 12:40; hours=6.00 | declared allowance: Declared training allowance exhausted | discovery.einstein.bold_predictions=true; discovery.einstein.doubt_assumptions=true; discovery.einstein.symmetry_principles=true; discovery.einstein.thought_experiments=true | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | ae1ac9ff9a3c | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 4944c914d4a29ac2553e8e37aaa3a340afe617b2990244592656ed5285a4129e | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 06:55 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 12:55; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.einstein.doubt_assumptions=true; discovery.einstein.symmetry_principles=true; discovery.einstein.thought_experiments=true | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | 9e0b39a5bcd2 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 4944c914d4a29ac2553e8e37aaa3a340afe617b2990244592656ed5285a4129e | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 08:09 | 2026-10-03 12:24 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 14:09; hours=6.00 | finished | discovery.einstein.bold_predictions=true; discovery.einstein.symmetry_principles=true; discovery.einstein.thought_experiments=true | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | 9e0b39a5bcd2 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 4944c914d4a29ac2553e8e37aaa3a340afe617b2990244592656ed5285a4129e | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 08:37 | 2026-10-03 13:11 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 14:37; hours=6.00 | finished | discovery.einstein.bold_predictions=true; discovery.einstein.doubt_assumptions=true; discovery.einstein.thought_experiments=true | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | ae1ac9ff9a3c | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 4944c914d4a29ac2553e8e37aaa3a340afe617b2990244592656ed5285a4129e | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 06:55 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 12:55; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.einstein.bold_predictions=true; discovery.einstein.doubt_assumptions=true; discovery.einstein.symmetry_principles=true | 0 |
+| u11-scientists-vmc/einstein | 116124db8749 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 10:29 | 2026-10-03 14:55 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 16:29; hours=6.00 | finished | same as first case | 0 |
+| u11-scientists-vmc/scientists | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 12:43 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 18:43; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.scientists.anomaly_pursuit=true; discovery.scientists.conserved_quantities=true; discovery.scientists.gap_predictions=true; discovery.scientists.number_conjectures=true; discovery.scientists.one_change_experiments=true | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 12:43 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 18:43; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.scientists.conserved_quantities=true; discovery.scientists.gap_predictions=true; discovery.scientists.number_conjectures=true; discovery.scientists.one_change_experiments=true | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:22 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 17:22; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.scientists.anomaly_pursuit=true; discovery.scientists.gap_predictions=true; discovery.scientists.number_conjectures=true; discovery.scientists.one_change_experiments=true | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:22 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 17:22; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.scientists.anomaly_pursuit=true; discovery.scientists.conserved_quantities=true; discovery.scientists.number_conjectures=true; discovery.scientists.one_change_experiments=true | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | 116124db8749 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 10:29 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 16:29; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.scientists.anomaly_pursuit=true; discovery.scientists.conserved_quantities=true; discovery.scientists.gap_predictions=true; discovery.scientists.one_change_experiments=true | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | 7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:22 | 2026-10-03 15:17 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 17:22; hours=6.00 | declared allowance: Declared training allowance exhausted | discovery.scientists.anomaly_pursuit=true; discovery.scientists.conserved_quantities=true; discovery.scientists.gap_predictions=true; discovery.scientists.number_conjectures=true | 0 |
+| u12-darwin-vma/darwin | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:21 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 17:21; hours=6.00 | unfinished saved snapshot; stage=arms | same as first case | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:21 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 17:21; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.darwin.change_mechanisms=false | 0 |
+| u12-darwin-vma/darwin-no-deep-time | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 13:17 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 19:17; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.darwin.deep_time=false | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 13:17 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 19:17; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.darwin.lineage_trees=false | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:21 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 17:21; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.darwin.patient_observation=false | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:21 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 17:21; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.darwin.world_hologram=false | 0 |
+| u12-darwin-vma/darwin-rep | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 13:17 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 19:17; hours=6.00 | unfinished saved snapshot; stage=arms | same as first case | 0 |
+| u12-darwin-vma/scientists | 73cf25e01b91 | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535 | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 11:21 | MISSING | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.discovery=3240.00; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=2160.00; budgets.wakes=2160; deadline UTC=2026-10-03 17:21; hours=6.00 | unfinished saved snapshot; stage=arms | discovery.darwin.change_mechanisms=false; discovery.darwin.deep_time=false; discovery.darwin.lineage_trees=false; discovery.darwin.patient_observation=false; discovery.darwin.world_hologram=false | 0 |
 | u8-u9-vmc-9036ca3/discovery-off | ae1ac9ff9a3c | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | no discovery suite declared | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 06:23 | 2026-10-03 10:06 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=5400; budgets.wakes=2160; deadline UTC=2026-10-03 12:23; hours=6.00 | finished | same as first case | 0 |
 | u8-u9-vmc-9036ca3/full | 08736dc899fd | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | no discovery suite declared | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 04:48 | 2026-10-03 09:38 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=5400; budgets.wakes=2160; deadline UTC=2026-10-03 10:48; hours=6.00 | finished | crutches.full.memory_layer_a=true; crutches.full.memory_layer_b=true; crutches.no-dreams.memory_layer_a=true; crutches.no-dreams.memory_layer_b=true; crutches.no-library.memory_layer_a=true; crutches.no-library.memory_layer_b=true; crutches.no-proposer.memory_layer_a=true; crutches.no-proposer.memory_layer_b=true | 0 |
 | u8-u9-vmc-9036ca3/mem-choice | 08736dc899fd | c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f | no discovery suite declared | machine=Linux-6.6.122+-x86_64-with-glibc2.39; numpy=2.3.5; processor=x86_64; threads=1; torch=2.10.0+cpu | 2026-10-03 04:48 | 2026-10-03 08:46 | budgets.assessments=7920; budgets.bootstrap=1440; budgets.bootstrap_revisits=1440; budgets.dreams=1440; budgets.preflight=1440; budgets.reserve=360; budgets.train=5400; budgets.wakes=2160; deadline UTC=2026-10-03 10:48; hours=6.00 | declared allowance: Declared 1.5-hour training allowance exhausted | crutches.full.memory_choice=true; crutches.full.memory_layer_a=true; crutches.full.memory_layer_b=true; crutches.no-dreams.memory_choice=true; crutches.no-dreams.memory_layer_a=true; crutches.no-dreams.memory_layer_b=true; crutches.no-library.memory_choice=true; crutches.no-library.memory_layer_a=true; crutches.no-library.memory_layer_b=true; crutches.no-proposer.memory_choice=true; crutches.no-proposer.memory_layer_a=true; crutches.no-proposer.memory_layer_b=true | 0 |
@@ -25,6 +72,48 @@
 
 | case | saved source | provenance path | value | false credit |
 |---|---|---|---|---|
+| u10-einstein-vma/discovery | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u10-einstein-vma/discovery | state | .count | 0 | 0 |
+| u10-einstein-vma/einstein | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u10-einstein-vma/einstein | state | .count | 0 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | state | .count | 0 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | state | .count | 0 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | state | .count | 0 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | state | .count | 0 | 0 |
+| u11-scientists-vmc/einstein | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u11-scientists-vmc/einstein | state | .count | 0 | 0 |
+| u11-scientists-vmc/scientists | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u11-scientists-vmc/scientists | state | .count | 0 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | state | .count | 0 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | state | .count | 0 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | state | .count | 0 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | state | .count | 0 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | state | .count | 0 | 0 |
+| u12-darwin-vma/darwin | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u12-darwin-vma/darwin | state | .count | 0 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | state | .count | 0 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | state | .count | 0 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | state | .count | 0 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | state | .count | 0 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | state | .count | 0 | 0 |
+| u12-darwin-vma/darwin-rep | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u12-darwin-vma/darwin-rep | state | .count | 0 | 0 |
+| u12-darwin-vma/scientists | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
+| u12-darwin-vma/scientists | state | .count | 0 | 0 |
 | u8-u9-vmc-9036ca3/discovery-off | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
 | u8-u9-vmc-9036ca3/discovery-off | state | .count | 0 | 0 |
 | u8-u9-vmc-9036ca3/full | protocol | source | 41b3cab29f9d905dabf2da84a367e0bae145363605f1c28fb27d82f09c191322 | 0 |
@@ -42,6 +131,357 @@
 <!-- generated:end batches -->
 
 <!-- generated:begin assessment -->
+Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "4944c914d4a29ac2553e8e37aaa3a340afe617b2990244592656ed5285a4129e"]. Cases are comparable only on equal frozen suites.
+
+| case | arm | generation | solved | N (declared) | rows saved | median item wall seconds | fraction of declared N | false credit |
+|---|---|---|---|---|---|---|---|---|
+| u10-einstein-vma/discovery | full | 0 | 36 | 48 | 48 | 4.0 | 0.75 | 0 |
+| u10-einstein-vma/discovery | full | 1 | 40 | 48 | 48 | 3.7 | 0.83 | 0 |
+| u10-einstein-vma/discovery | full | 2 | 41 | 48 | 48 | 2.2 | 0.85 | 0 |
+| u10-einstein-vma/discovery | full | 3 | 37 | 48 | 48 | 1.8 | 0.77 | 0 |
+| u10-einstein-vma/discovery | no-dreams | 0 | 37 | 48 | 48 | 3.9 | 0.77 | 0 |
+| u10-einstein-vma/discovery | no-dreams | 1 | 34 | 48 | 48 | 3.3 | 0.71 | 0 |
+| u10-einstein-vma/discovery | no-dreams | 2 | 39 | 48 | 48 | 2.5 | 0.81 | 0 |
+| u10-einstein-vma/discovery | no-dreams | 3 | 39 | 48 | 48 | 2.7 | 0.81 | 0 |
+| u10-einstein-vma/discovery | no-library | 0 | 10 | 48 | 48 | 10.6 | 0.21 | 0 |
+| u10-einstein-vma/discovery | no-library | 1 | 10 | 48 | 48 | 10.7 | 0.21 | 0 |
+| u10-einstein-vma/discovery | no-library | 2 | 10 | 48 | 48 | 10.7 | 0.21 | 0 |
+| u10-einstein-vma/discovery | no-library | 3 | 14 | 48 | 48 | 10.8 | 0.29 | 0 |
+| u10-einstein-vma/discovery | no-proposer | 0 | 30 | 48 | 48 | 7.8 | 0.62 | 0 |
+| u10-einstein-vma/discovery | no-proposer | 1 | 34 | 48 | 48 | 1.3 | 0.71 | 0 |
+| u10-einstein-vma/discovery | no-proposer | 2 | 5 | 48 | 48 | 26.0 | 0.10 | 0 |
+| u10-einstein-vma/discovery | no-proposer | 3 | 0 | 48 | 48 | 24.0 | 0.00 | 0 |
+| u10-einstein-vma/einstein | full | 0 | 41 | 48 | 48 | 1.9 | 0.85 | 0 |
+| u10-einstein-vma/einstein | full | 1 | 41 | 48 | 48 | 0.9 | 0.85 | 0 |
+| u10-einstein-vma/einstein | full | 2 | 42 | 48 | 48 | 0.9 | 0.88 | 0 |
+| u10-einstein-vma/einstein | full | 3 | 42 | 48 | 48 | 1.1 | 0.88 | 0 |
+| u10-einstein-vma/einstein | no-dreams | 0 | 41 | 48 | 48 | 2.9 | 0.85 | 0 |
+| u10-einstein-vma/einstein | no-dreams | 1 | 42 | 48 | 48 | 3.0 | 0.88 | 0 |
+| u10-einstein-vma/einstein | no-dreams | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein | no-dreams | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein | no-library | 0 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein | no-library | 1 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein | no-library | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein | no-library | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein | no-proposer | 0 | 24 | 48 | 48 | 10.0 | 0.50 | 0 |
+| u10-einstein-vma/einstein | no-proposer | 1 | 15 | 48 | 48 | 11.6 | 0.31 | 0 |
+| u10-einstein-vma/einstein | no-proposer | 2 | 2 | 48 | 48 | 22.0 | 0.04 | 0 |
+| u10-einstein-vma/einstein | no-proposer | 3 | 23 | 48 | 48 | 11.0 | 0.48 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 0 | 42 | 48 | 48 | 2.8 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 1 | 24 | 48 | 48 | 9.5 | 0.50 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 2 | 41 | 48 | 48 | 1.2 | 0.85 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 3 | 42 | 48 | 48 | 2.1 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-dreams | 0 | 41 | 48 | 48 | 3.2 | 0.85 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-dreams | 1 | 40 | 48 | 48 | 3.0 | 0.83 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-dreams | 2 | 40 | 48 | 48 | 3.1 | 0.83 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-dreams | 3 | 42 | 48 | 48 | 2.5 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-library | 0 | 12 | 48 | 48 | 10.7 | 0.25 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-library | 1 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-library | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-library | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-proposer | 0 | 22 | 48 | 48 | 10.3 | 0.46 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-proposer | 1 | 23 | 48 | 48 | 10.5 | 0.48 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-proposer | 2 | 34 | 48 | 48 | 1.4 | 0.71 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-proposer | 3 | 20 | 48 | 48 | 11.9 | 0.42 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 0 | 47 | 48 | 48 | 1.9 | 0.98 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 1 | 46 | 48 | 48 | 3.4 | 0.96 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 2 | 46 | 48 | 48 | 1.4 | 0.96 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 3 | 47 | 48 | 48 | 2.6 | 0.98 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-dreams | 0 | 46 | 48 | 48 | 2.2 | 0.96 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-dreams | 1 | 47 | 48 | 48 | 2.2 | 0.98 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-dreams | 2 | 47 | 48 | 48 | 0.9 | 0.98 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-dreams | 3 | 45 | 48 | 48 | 1.7 | 0.94 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-library | 0 | 13 | 48 | 48 | 10.6 | 0.27 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-library | 1 | 7 | 48 | 48 | 10.9 | 0.15 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-library | 2 | 7 | 48 | 48 | 10.8 | 0.15 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-library | 3 | 2 | 48 | 48 | 10.9 | 0.04 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-proposer | 0 | 24 | 48 | 48 | 9.6 | 0.50 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-proposer | 1 | 15 | 48 | 48 | 14.3 | 0.31 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-proposer | 2 | 29 | 48 | 48 | 1.4 | 0.60 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-proposer | 3 | 27 | 48 | 48 | 1.4 | 0.56 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 0 | 37 | 48 | 48 | 3.9 | 0.77 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 1 | 37 | 48 | 48 | 2.3 | 0.77 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 2 | 39 | 48 | 48 | 2.7 | 0.81 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 3 | 36 | 48 | 48 | 1.5 | 0.75 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-dreams | 0 | 42 | 48 | 48 | 3.4 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-dreams | 1 | 36 | 48 | 48 | 4.2 | 0.75 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-dreams | 2 | 40 | 48 | 48 | 1.0 | 0.83 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-dreams | 3 | 42 | 48 | 48 | 1.2 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-library | 0 | 12 | 48 | 48 | 10.8 | 0.25 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-library | 1 | 9 | 48 | 48 | 10.7 | 0.19 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-library | 2 | 7 | 48 | 48 | 10.9 | 0.15 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-library | 3 | 7 | 48 | 48 | 10.8 | 0.15 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-proposer | 0 | 9 | 48 | 48 | 17.2 | 0.19 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-proposer | 1 | 33 | 48 | 48 | 1.4 | 0.69 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-proposer | 2 | 6 | 48 | 48 | 26.2 | 0.12 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-proposer | 3 | 11 | 48 | 48 | 21.1 | 0.23 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 0 | 38 | 48 | 48 | 6.2 | 0.79 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 1 | 38 | 48 | 48 | 3.2 | 0.79 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 2 | 40 | 48 | 48 | 1.1 | 0.83 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 3 | 42 | 48 | 48 | 2.1 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-dreams | 0 | 42 | 48 | 48 | 5.8 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-dreams | 1 | 37 | 48 | 48 | 3.3 | 0.77 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-dreams | 2 | 42 | 48 | 48 | 0.8 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-dreams | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-library | 0 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-library | 1 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-library | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-library | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-proposer | 0 | 19 | 48 | 48 | 11.7 | 0.40 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-proposer | 1 | 19 | 48 | 48 | 11.4 | 0.40 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-proposer | 2 | 37 | 48 | 48 | 1.0 | 0.77 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-proposer | 3 | 6 | 48 | 48 | 23.4 | 0.12 | 0 |
+
+Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2"]. Cases are comparable only on equal frozen suites.
+
+| case | arm | generation | solved | N (declared) | rows saved | median item wall seconds | fraction of declared N | false credit |
+|---|---|---|---|---|---|---|---|---|
+| u11-scientists-vmc/einstein | full | 0 | 40 | 48 | 48 | 5.3 | 0.83 | 0 |
+| u11-scientists-vmc/einstein | full | 1 | 40 | 48 | 48 | 1.2 | 0.83 | 0 |
+| u11-scientists-vmc/einstein | full | 2 | 34 | 48 | 48 | 1.0 | 0.71 | 0 |
+| u11-scientists-vmc/einstein | full | 3 | 37 | 48 | 48 | 2.9 | 0.77 | 0 |
+| u11-scientists-vmc/einstein | no-dreams | 0 | 40 | 48 | 48 | 5.6 | 0.83 | 0 |
+| u11-scientists-vmc/einstein | no-dreams | 1 | 41 | 48 | 48 | 4.0 | 0.85 | 0 |
+| u11-scientists-vmc/einstein | no-dreams | 2 | 42 | 48 | 48 | 1.1 | 0.88 | 0 |
+| u11-scientists-vmc/einstein | no-dreams | 3 | 42 | 48 | 48 | 2.0 | 0.88 | 0 |
+| u11-scientists-vmc/einstein | no-library | 0 | 14 | 48 | 48 | 10.8 | 0.29 | 0 |
+| u11-scientists-vmc/einstein | no-library | 1 | 12 | 48 | 48 | 10.8 | 0.25 | 0 |
+| u11-scientists-vmc/einstein | no-library | 2 | 8 | 48 | 48 | 11.0 | 0.17 | 0 |
+| u11-scientists-vmc/einstein | no-library | 3 | 6 | 48 | 48 | 10.8 | 0.12 | 0 |
+| u11-scientists-vmc/einstein | no-proposer | 0 | 26 | 48 | 48 | 7.4 | 0.54 | 0 |
+| u11-scientists-vmc/einstein | no-proposer | 1 | 18 | 48 | 48 | 19.3 | 0.38 | 0 |
+| u11-scientists-vmc/einstein | no-proposer | 2 | 18 | 48 | 48 | 19.2 | 0.38 | 0 |
+| u11-scientists-vmc/einstein | no-proposer | 3 | 24 | 48 | 48 | 6.1 | 0.50 | 0 |
+| u11-scientists-vmc/scientists | full | 0 | 45 | 48 | 48 | 3.5 | 0.94 | 0 |
+| u11-scientists-vmc/scientists | full | 1 | 45 | 48 | 48 | 3.8 | 0.94 | 0 |
+| u11-scientists-vmc/scientists | full | 2 | 46 | 48 | 48 | 1.3 | 0.96 | 0 |
+| u11-scientists-vmc/scientists | full | 3 | 46 | 48 | 48 | 5.3 | 0.96 | 0 |
+| u11-scientists-vmc/scientists | no-dreams | 0 | 43 | 48 | 48 | 3.6 | 0.90 | 0 |
+| u11-scientists-vmc/scientists | no-dreams | 1 | 46 | 48 | 48 | 0.9 | 0.96 | 0 |
+| u11-scientists-vmc/scientists | no-dreams | 2 | 47 | 48 | 48 | 0.8 | 0.98 | 0 |
+| u11-scientists-vmc/scientists | no-dreams | 3 | 46 | 48 | 48 | 2.0 | 0.96 | 0 |
+| u11-scientists-vmc/scientists | no-library | 0 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists | no-library | 1 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists | no-library | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists | no-library | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists | no-proposer | 0 | 24 | 48 | 48 | 10.1 | 0.50 | 0 |
+| u11-scientists-vmc/scientists | no-proposer | 1 | 23 | 48 | 48 | 13.2 | 0.48 | 0 |
+| u11-scientists-vmc/scientists | no-proposer | 2 | 20 | 48 | 48 | 22.0 | 0.42 | 0 |
+| u11-scientists-vmc/scientists | no-proposer | 3 | 39 | 48 | 48 | 1.6 | 0.81 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 0 | 38 | 48 | 48 | 4.3 | 0.79 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 1 | 43 | 48 | 48 | 2.9 | 0.90 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 2 | 44 | 48 | 48 | 2.1 | 0.92 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 3 | 42 | 48 | 48 | 1.5 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-dreams | 0 | 37 | 48 | 48 | 3.6 | 0.77 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-dreams | 1 | 45 | 48 | 48 | 1.1 | 0.94 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-dreams | 2 | 38 | 48 | 48 | 0.9 | 0.79 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-dreams | 3 | 46 | 48 | 48 | 1.0 | 0.96 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-library | 0 | 7 | 48 | 48 | 10.6 | 0.15 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-library | 1 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-library | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-library | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-proposer | 0 | 31 | 48 | 48 | 5.1 | 0.65 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-proposer | 1 | 40 | 48 | 48 | 1.0 | 0.83 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-proposer | 2 | 8 | 48 | 48 | 21.8 | 0.17 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-proposer | 3 | 23 | 48 | 48 | 10.3 | 0.48 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 0 | 39 | 48 | 48 | 3.3 | 0.81 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 1 | 39 | 48 | 48 | 1.1 | 0.81 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 2 | 39 | 48 | 48 | 2.8 | 0.81 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 3 | 40 | 48 | 48 | 3.8 | 0.83 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-dreams | 0 | 39 | 48 | 48 | 3.7 | 0.81 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-dreams | 1 | 39 | 48 | 48 | 1.4 | 0.81 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-dreams | 2 | 38 | 48 | 48 | 4.9 | 0.79 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-dreams | 3 | 38 | 48 | 48 | 4.0 | 0.79 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-library | 0 | 10 | 48 | 48 | 10.9 | 0.21 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-library | 1 | 12 | 48 | 48 | 10.7 | 0.25 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-library | 2 | 7 | 48 | 17 | 10.6 | 0.15 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-library | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-proposer | 0 | 25 | 48 | 48 | 8.2 | 0.52 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-proposer | 1 | 20 | 48 | 48 | 11.8 | 0.42 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-proposer | 2 | 35 | 48 | 48 | 1.3 | 0.73 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-proposer | 3 | 0 | 48 | 48 | 27.7 | 0.00 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 0 | 36 | 48 | 48 | 5.8 | 0.75 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 1 | 39 | 48 | 48 | 3.3 | 0.81 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 2 | 41 | 48 | 48 | 1.3 | 0.85 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 3 | 42 | 48 | 48 | 3.4 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-dreams | 0 | 32 | 48 | 48 | 7.3 | 0.67 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-dreams | 1 | 42 | 48 | 48 | 3.4 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-dreams | 2 | 42 | 48 | 48 | 1.4 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-dreams | 3 | 39 | 48 | 48 | 1.5 | 0.81 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-library | 0 | 10 | 48 | 48 | 10.9 | 0.21 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-library | 1 | 11 | 48 | 48 | 10.7 | 0.23 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-library | 2 | 13 | 48 | 48 | 10.6 | 0.27 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-library | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-proposer | 0 | 26 | 48 | 48 | 5.1 | 0.54 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-proposer | 1 | 18 | 48 | 48 | 12.8 | 0.38 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-proposer | 2 | 17 | 48 | 48 | 15.8 | 0.35 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-proposer | 3 | 37 | 48 | 48 | 1.7 | 0.77 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 0 | 37 | 48 | 48 | 3.9 | 0.77 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 1 | 42 | 48 | 48 | 1.5 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 2 | 48 | 48 | 48 | 0.9 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 3 | 45 | 48 | 48 | 1.6 | 0.94 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-dreams | 0 | 36 | 48 | 48 | 3.8 | 0.75 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-dreams | 1 | 42 | 48 | 48 | 1.5 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-dreams | 2 | 47 | 48 | 48 | 1.5 | 0.98 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-dreams | 3 | 41 | 48 | 48 | 4.9 | 0.85 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-library | 0 | 14 | 48 | 48 | 10.8 | 0.29 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-library | 1 | 8 | 48 | 48 | 10.9 | 0.17 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-library | 2 | 3 | 48 | 48 | 10.9 | 0.06 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-library | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-proposer | 0 | 18 | 48 | 48 | 14.8 | 0.38 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-proposer | 1 | 23 | 48 | 48 | 11.8 | 0.48 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-proposer | 2 | 10 | 48 | 48 | 26.3 | 0.21 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-proposer | 3 | 20 | 48 | 48 | 25.1 | 0.42 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 0 | 48 | 48 | 48 | 2.8 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 1 | 47 | 48 | 48 | 2.5 | 0.98 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 2 | 48 | 48 | 48 | 1.1 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 3 | 47 | 48 | 48 | 2.7 | 0.98 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-dreams | 0 | 47 | 48 | 48 | 3.3 | 0.98 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-dreams | 1 | 43 | 48 | 48 | 3.0 | 0.90 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-dreams | 2 | 47 | 48 | 48 | 1.4 | 0.98 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-dreams | 3 | 45 | 48 | 48 | 1.5 | 0.94 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-library | 0 | 14 | 48 | 48 | 10.9 | 0.29 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-library | 1 | 11 | 48 | 48 | 10.6 | 0.23 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-library | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-library | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-proposer | 0 | 32 | 48 | 48 | 2.0 | 0.67 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-proposer | 1 | 26 | 48 | 48 | 2.7 | 0.54 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-proposer | 2 | 18 | 48 | 48 | 11.9 | 0.38 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-proposer | 3 | 8 | 48 | 48 | 26.7 | 0.17 | 0 |
+
+Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535"]. Cases are comparable only on equal frozen suites.
+
+| case | arm | generation | solved | N (declared) | rows saved | median item wall seconds | fraction of declared N | false credit |
+|---|---|---|---|---|---|---|---|---|
+| u12-darwin-vma/darwin | full | 0 | 37 | 48 | 48 | 4.8 | 0.77 | 0 |
+| u12-darwin-vma/darwin | full | 1 | 43 | 48 | 48 | 4.4 | 0.90 | 0 |
+| u12-darwin-vma/darwin | full | 2 | 47 | 48 | 48 | 2.0 | 0.98 | 0 |
+| u12-darwin-vma/darwin | full | 3 | 45 | 48 | 48 | 3.7 | 0.94 | 0 |
+| u12-darwin-vma/darwin | no-dreams | 0 | 36 | 48 | 48 | 5.3 | 0.75 | 0 |
+| u12-darwin-vma/darwin | no-dreams | 1 | 46 | 48 | 48 | 4.2 | 0.96 | 0 |
+| u12-darwin-vma/darwin | no-dreams | 2 | 46 | 48 | 48 | 3.6 | 0.96 | 0 |
+| u12-darwin-vma/darwin | no-dreams | 3 | 8 | 48 | 8 | 4.8 | 0.17 | 0 |
+| u12-darwin-vma/darwin | no-library | 0 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin | no-library | 1 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin | no-library | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin | no-library | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin | no-proposer | 0 | 34 | 48 | 48 | 6.1 | 0.71 | 0 |
+| u12-darwin-vma/darwin | no-proposer | 1 | 44 | 48 | 48 | 1.3 | 0.92 | 0 |
+| u12-darwin-vma/darwin | no-proposer | 2 | 27 | 48 | 48 | 1.9 | 0.56 | 0 |
+| u12-darwin-vma/darwin | no-proposer | 3 | 21 | 48 | 48 | 12.1 | 0.44 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 0 | 40 | 48 | 48 | 4.0 | 0.83 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 1 | 38 | 48 | 48 | 1.7 | 0.79 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 2 | 39 | 48 | 48 | 4.6 | 0.81 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 3 | 41 | 48 | 48 | 2.3 | 0.85 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-dreams | 0 | 40 | 48 | 48 | 4.7 | 0.83 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-dreams | 1 | 38 | 48 | 48 | 4.6 | 0.79 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-dreams | 2 | 39 | 48 | 48 | 4.8 | 0.81 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-dreams | 3 | 12 | 48 | 12 | 4.2 | 0.25 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-library | 0 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-library | 1 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-library | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-library | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-proposer | 0 | 37 | 48 | 48 | 5.9 | 0.77 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-proposer | 1 | 33 | 48 | 48 | 1.5 | 0.69 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-proposer | 2 | 18 | 48 | 48 | 11.7 | 0.38 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-proposer | 3 | 38 | 48 | 48 | 1.5 | 0.79 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 0 | 39 | 48 | 48 | 3.2 | 0.81 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 1 | 38 | 48 | 48 | 3.5 | 0.79 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 2 | 42 | 48 | 48 | 1.8 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 3 | 42 | 48 | 48 | 1.2 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-dreams | 0 | 40 | 48 | 48 | 2.0 | 0.83 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-dreams | 1 | 40 | 48 | 48 | 2.4 | 0.83 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-dreams | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-dreams | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-library | 0 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-library | 1 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-library | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-library | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-proposer | 0 | 24 | 48 | 48 | 10.0 | 0.50 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-proposer | 1 | 29 | 48 | 48 | 6.8 | 0.60 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-proposer | 2 | 29 | 48 | 48 | 7.8 | 0.60 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-proposer | 3 | 28 | 48 | 48 | 6.4 | 0.58 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 0 | 30 | 48 | 48 | 7.8 | 0.62 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 1 | 47 | 48 | 48 | 1.7 | 0.98 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 2 | 45 | 48 | 48 | 1.7 | 0.94 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 3 | 43 | 48 | 48 | 2.6 | 0.90 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-dreams | 0 | 38 | 48 | 48 | 5.2 | 0.79 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-dreams | 1 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-dreams | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-dreams | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-library | 0 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-library | 1 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-library | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-library | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-proposer | 0 | 28 | 48 | 48 | 8.7 | 0.58 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-proposer | 1 | 25 | 48 | 48 | 5.8 | 0.52 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-proposer | 2 | 8 | 48 | 48 | 16.9 | 0.17 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-proposer | 3 | 25 | 48 | 48 | 1.7 | 0.52 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 0 | 39 | 48 | 48 | 6.8 | 0.81 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 1 | 43 | 48 | 48 | 4.6 | 0.90 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 2 | 46 | 48 | 48 | 1.9 | 0.96 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 3 | 44 | 48 | 48 | 3.8 | 0.92 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-dreams | 0 | 40 | 48 | 48 | 6.6 | 0.83 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-dreams | 1 | 46 | 48 | 48 | 3.8 | 0.96 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-dreams | 2 | 17 | 48 | 18 | 1.7 | 0.35 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-dreams | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-library | 0 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-library | 1 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-library | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-library | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-proposer | 0 | 29 | 48 | 48 | 8.2 | 0.60 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-proposer | 1 | 25 | 48 | 48 | 9.2 | 0.52 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-proposer | 2 | 22 | 48 | 48 | 12.5 | 0.46 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-proposer | 3 | 7 | 48 | 48 | 27.3 | 0.15 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 0 | 41 | 48 | 48 | 2.9 | 0.85 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 1 | 39 | 48 | 48 | 3.6 | 0.81 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 2 | 42 | 48 | 48 | 3.3 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 3 | 41 | 48 | 48 | 1.4 | 0.85 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-dreams | 0 | 41 | 48 | 48 | 3.2 | 0.85 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-dreams | 1 | 38 | 48 | 48 | 4.4 | 0.79 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-dreams | 2 | 23 | 48 | 23 | 3.5 | 0.48 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-dreams | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-library | 0 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-library | 1 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-library | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-library | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-proposer | 0 | 27 | 48 | 48 | 6.3 | 0.56 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-proposer | 1 | 32 | 48 | 48 | 1.2 | 0.67 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-proposer | 2 | 11 | 48 | 48 | 14.6 | 0.23 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-proposer | 3 | 9 | 48 | 48 | 18.4 | 0.19 | 0 |
+| u12-darwin-vma/darwin-rep | full | 0 | 36 | 48 | 48 | 3.4 | 0.75 | 0 |
+| u12-darwin-vma/darwin-rep | full | 1 | 39 | 48 | 48 | 4.2 | 0.81 | 0 |
+| u12-darwin-vma/darwin-rep | full | 2 | 37 | 48 | 48 | 1.5 | 0.77 | 0 |
+| u12-darwin-vma/darwin-rep | full | 3 | 42 | 48 | 48 | 3.0 | 0.88 | 0 |
+| u12-darwin-vma/darwin-rep | no-dreams | 0 | 38 | 48 | 48 | 1.8 | 0.79 | 0 |
+| u12-darwin-vma/darwin-rep | no-dreams | 1 | 22 | 48 | 25 | 1.0 | 0.46 | 0 |
+| u12-darwin-vma/darwin-rep | no-dreams | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-rep | no-dreams | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-rep | no-library | 0 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-rep | no-library | 1 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-rep | no-library | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-rep | no-library | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-rep | no-proposer | 0 | 35 | 48 | 48 | 2.8 | 0.73 | 0 |
+| u12-darwin-vma/darwin-rep | no-proposer | 1 | 6 | 48 | 48 | 15.1 | 0.12 | 0 |
+| u12-darwin-vma/darwin-rep | no-proposer | 2 | 39 | 48 | 48 | 1.2 | 0.81 | 0 |
+| u12-darwin-vma/darwin-rep | no-proposer | 3 | 17 | 48 | 48 | 13.4 | 0.35 | 0 |
+| u12-darwin-vma/scientists | full | 0 | 35 | 48 | 48 | 5.2 | 0.73 | 0 |
+| u12-darwin-vma/scientists | full | 1 | 42 | 48 | 48 | 1.3 | 0.88 | 0 |
+| u12-darwin-vma/scientists | full | 2 | 40 | 48 | 48 | 3.5 | 0.83 | 0 |
+| u12-darwin-vma/scientists | full | 3 | 40 | 48 | 48 | 4.0 | 0.83 | 0 |
+| u12-darwin-vma/scientists | no-dreams | 0 | 34 | 48 | 48 | 6.5 | 0.71 | 0 |
+| u12-darwin-vma/scientists | no-dreams | 1 | 38 | 48 | 48 | 3.8 | 0.79 | 0 |
+| u12-darwin-vma/scientists | no-dreams | 2 | 42 | 48 | 48 | 4.1 | 0.88 | 0 |
+| u12-darwin-vma/scientists | no-dreams | 3 | 42 | 48 | 48 | 3.1 | 0.88 | 0 |
+| u12-darwin-vma/scientists | no-library | 0 | 2 | 48 | 3 | 8.7 | 0.04 | 0 |
+| u12-darwin-vma/scientists | no-library | 1 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/scientists | no-library | 2 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/scientists | no-library | 3 | MISSING | 48 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/scientists | no-proposer | 0 | 17 | 48 | 48 | 11.2 | 0.35 | 0 |
+| u12-darwin-vma/scientists | no-proposer | 1 | 31 | 48 | 48 | 6.9 | 0.65 | 0 |
+| u12-darwin-vma/scientists | no-proposer | 2 | 37 | 48 | 48 | 6.4 | 0.77 | 0 |
+| u12-darwin-vma/scientists | no-proposer | 3 | 36 | 48 | 48 | 5.7 | 0.75 | 0 |
+
 Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "f2a2bf86ff5041d695b0e8621e1c47ebeb070900f3b16d870e45e4f8acb37214"]. Cases are comparable only on equal frozen suites.
 
 | case | arm | generation | solved | N (declared) | rows saved | median item wall seconds | fraction of declared N | false credit |
@@ -166,6 +606,441 @@ Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9
 <!-- generated:end assessment -->
 
 <!-- generated:begin full-curve -->
+Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "4944c914d4a29ac2553e8e37aaa3a340afe617b2990244592656ed5285a4129e"]. Cases are comparable only on equal frozen suites.
+
+| case | arm | generation | saved curve metric | value | false credit |
+|---|---|---|---|---|---|
+| u10-einstein-vma/discovery | full | 0 | N | 48 | 0 |
+| u10-einstein-vma/discovery | full | 0 | complete | true | 0 |
+| u10-einstein-vma/discovery | full | 0 | g | 0.75 | 0 |
+| u10-einstein-vma/discovery | full | 0 | rows | 48 | 0 |
+| u10-einstein-vma/discovery | full | 0 | solved | 36 | 0 |
+| u10-einstein-vma/discovery | full | 1 | N | 48 | 0 |
+| u10-einstein-vma/discovery | full | 1 | complete | true | 0 |
+| u10-einstein-vma/discovery | full | 1 | g | 0.83 | 0 |
+| u10-einstein-vma/discovery | full | 1 | rows | 48 | 0 |
+| u10-einstein-vma/discovery | full | 1 | solved | 40 | 0 |
+| u10-einstein-vma/discovery | full | 2 | N | 48 | 0 |
+| u10-einstein-vma/discovery | full | 2 | complete | true | 0 |
+| u10-einstein-vma/discovery | full | 2 | g | 0.85 | 0 |
+| u10-einstein-vma/discovery | full | 2 | rows | 48 | 0 |
+| u10-einstein-vma/discovery | full | 2 | solved | 41 | 0 |
+| u10-einstein-vma/discovery | full | 3 | N | 48 | 0 |
+| u10-einstein-vma/discovery | full | 3 | complete | true | 0 |
+| u10-einstein-vma/discovery | full | 3 | g | 0.77 | 0 |
+| u10-einstein-vma/discovery | full | 3 | rows | 48 | 0 |
+| u10-einstein-vma/discovery | full | 3 | solved | 37 | 0 |
+| u10-einstein-vma/einstein | full | 0 | N | 48 | 0 |
+| u10-einstein-vma/einstein | full | 0 | complete | true | 0 |
+| u10-einstein-vma/einstein | full | 0 | g | 0.85 | 0 |
+| u10-einstein-vma/einstein | full | 0 | rows | 48 | 0 |
+| u10-einstein-vma/einstein | full | 0 | solved | 41 | 0 |
+| u10-einstein-vma/einstein | full | 1 | N | 48 | 0 |
+| u10-einstein-vma/einstein | full | 1 | complete | true | 0 |
+| u10-einstein-vma/einstein | full | 1 | g | 0.85 | 0 |
+| u10-einstein-vma/einstein | full | 1 | rows | 48 | 0 |
+| u10-einstein-vma/einstein | full | 1 | solved | 41 | 0 |
+| u10-einstein-vma/einstein | full | 2 | N | 48 | 0 |
+| u10-einstein-vma/einstein | full | 2 | complete | true | 0 |
+| u10-einstein-vma/einstein | full | 2 | g | 0.88 | 0 |
+| u10-einstein-vma/einstein | full | 2 | rows | 48 | 0 |
+| u10-einstein-vma/einstein | full | 2 | solved | 42 | 0 |
+| u10-einstein-vma/einstein | full | 3 | N | 48 | 0 |
+| u10-einstein-vma/einstein | full | 3 | complete | true | 0 |
+| u10-einstein-vma/einstein | full | 3 | g | 0.88 | 0 |
+| u10-einstein-vma/einstein | full | 3 | rows | 48 | 0 |
+| u10-einstein-vma/einstein | full | 3 | solved | 42 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 0 | N | 48 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 0 | complete | true | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 0 | g | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 0 | rows | 48 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 0 | solved | 42 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 1 | N | 48 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 1 | complete | true | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 1 | g | 0.50 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 1 | rows | 48 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 1 | solved | 24 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 2 | N | 48 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 2 | complete | true | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 2 | g | 0.85 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 2 | rows | 48 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 2 | solved | 41 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 3 | N | 48 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 3 | complete | true | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 3 | g | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 3 | rows | 48 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 3 | solved | 42 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 0 | N | 48 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 0 | complete | true | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 0 | g | 0.98 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 0 | rows | 48 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 0 | solved | 47 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 1 | N | 48 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 1 | complete | true | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 1 | g | 0.96 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 1 | rows | 48 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 1 | solved | 46 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 2 | N | 48 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 2 | complete | true | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 2 | g | 0.96 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 2 | rows | 48 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 2 | solved | 46 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 3 | N | 48 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 3 | complete | true | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 3 | g | 0.98 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 3 | rows | 48 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 3 | solved | 47 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 0 | N | 48 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 0 | complete | true | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 0 | g | 0.77 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 0 | rows | 48 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 0 | solved | 37 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 1 | N | 48 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 1 | complete | true | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 1 | g | 0.77 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 1 | rows | 48 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 1 | solved | 37 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 2 | N | 48 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 2 | complete | true | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 2 | g | 0.81 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 2 | rows | 48 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 2 | solved | 39 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 3 | N | 48 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 3 | complete | true | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 3 | g | 0.75 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 3 | rows | 48 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 3 | solved | 36 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 0 | N | 48 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 0 | complete | true | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 0 | g | 0.79 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 0 | rows | 48 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 0 | solved | 38 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 1 | N | 48 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 1 | complete | true | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 1 | g | 0.79 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 1 | rows | 48 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 1 | solved | 38 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 2 | N | 48 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 2 | complete | true | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 2 | g | 0.83 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 2 | rows | 48 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 2 | solved | 40 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 3 | N | 48 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 3 | complete | true | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 3 | g | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 3 | rows | 48 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 3 | solved | 42 | 0 |
+
+Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2"]. Cases are comparable only on equal frozen suites.
+
+| case | arm | generation | saved curve metric | value | false credit |
+|---|---|---|---|---|---|
+| u11-scientists-vmc/einstein | full | 0 | N | 48 | 0 |
+| u11-scientists-vmc/einstein | full | 0 | complete | true | 0 |
+| u11-scientists-vmc/einstein | full | 0 | g | 0.83 | 0 |
+| u11-scientists-vmc/einstein | full | 0 | rows | 48 | 0 |
+| u11-scientists-vmc/einstein | full | 0 | solved | 40 | 0 |
+| u11-scientists-vmc/einstein | full | 1 | N | 48 | 0 |
+| u11-scientists-vmc/einstein | full | 1 | complete | true | 0 |
+| u11-scientists-vmc/einstein | full | 1 | g | 0.83 | 0 |
+| u11-scientists-vmc/einstein | full | 1 | rows | 48 | 0 |
+| u11-scientists-vmc/einstein | full | 1 | solved | 40 | 0 |
+| u11-scientists-vmc/einstein | full | 2 | N | 48 | 0 |
+| u11-scientists-vmc/einstein | full | 2 | complete | true | 0 |
+| u11-scientists-vmc/einstein | full | 2 | g | 0.71 | 0 |
+| u11-scientists-vmc/einstein | full | 2 | rows | 48 | 0 |
+| u11-scientists-vmc/einstein | full | 2 | solved | 34 | 0 |
+| u11-scientists-vmc/einstein | full | 3 | N | 48 | 0 |
+| u11-scientists-vmc/einstein | full | 3 | complete | true | 0 |
+| u11-scientists-vmc/einstein | full | 3 | g | 0.77 | 0 |
+| u11-scientists-vmc/einstein | full | 3 | rows | 48 | 0 |
+| u11-scientists-vmc/einstein | full | 3 | solved | 37 | 0 |
+| u11-scientists-vmc/scientists | full | 0 | N | 48 | 0 |
+| u11-scientists-vmc/scientists | full | 0 | complete | true | 0 |
+| u11-scientists-vmc/scientists | full | 0 | g | 0.94 | 0 |
+| u11-scientists-vmc/scientists | full | 0 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists | full | 0 | solved | 45 | 0 |
+| u11-scientists-vmc/scientists | full | 1 | N | 48 | 0 |
+| u11-scientists-vmc/scientists | full | 1 | complete | true | 0 |
+| u11-scientists-vmc/scientists | full | 1 | g | 0.94 | 0 |
+| u11-scientists-vmc/scientists | full | 1 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists | full | 1 | solved | 45 | 0 |
+| u11-scientists-vmc/scientists | full | 2 | N | 48 | 0 |
+| u11-scientists-vmc/scientists | full | 2 | complete | true | 0 |
+| u11-scientists-vmc/scientists | full | 2 | g | 0.96 | 0 |
+| u11-scientists-vmc/scientists | full | 2 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists | full | 2 | solved | 46 | 0 |
+| u11-scientists-vmc/scientists | full | 3 | N | 48 | 0 |
+| u11-scientists-vmc/scientists | full | 3 | complete | true | 0 |
+| u11-scientists-vmc/scientists | full | 3 | g | 0.96 | 0 |
+| u11-scientists-vmc/scientists | full | 3 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists | full | 3 | solved | 46 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 0 | N | 48 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 0 | complete | true | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 0 | g | 0.79 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 0 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 0 | solved | 38 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 1 | N | 48 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 1 | complete | true | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 1 | g | 0.90 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 1 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 1 | solved | 43 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 2 | N | 48 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 2 | complete | true | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 2 | g | 0.92 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 2 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 2 | solved | 44 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 3 | N | 48 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 3 | complete | true | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 3 | g | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 3 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 3 | solved | 42 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 0 | N | 48 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 0 | complete | true | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 0 | g | 0.81 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 0 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 0 | solved | 39 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 1 | N | 48 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 1 | complete | true | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 1 | g | 0.81 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 1 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 1 | solved | 39 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 2 | N | 48 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 2 | complete | true | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 2 | g | 0.81 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 2 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 2 | solved | 39 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 3 | N | 48 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 3 | complete | true | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 3 | g | 0.83 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 3 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 3 | solved | 40 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 0 | N | 48 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 0 | complete | true | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 0 | g | 0.75 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 0 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 0 | solved | 36 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 1 | N | 48 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 1 | complete | true | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 1 | g | 0.81 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 1 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 1 | solved | 39 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 2 | N | 48 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 2 | complete | true | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 2 | g | 0.85 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 2 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 2 | solved | 41 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 3 | N | 48 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 3 | complete | true | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 3 | g | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 3 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 3 | solved | 42 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 0 | N | 48 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 0 | complete | true | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 0 | g | 0.77 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 0 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 0 | solved | 37 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 1 | N | 48 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 1 | complete | true | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 1 | g | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 1 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 1 | solved | 42 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 2 | N | 48 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 2 | complete | true | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 2 | g | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 2 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 2 | solved | 48 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 3 | N | 48 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 3 | complete | true | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 3 | g | 0.94 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 3 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 3 | solved | 45 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 0 | N | 48 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 0 | complete | true | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 0 | g | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 0 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 0 | solved | 48 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 1 | N | 48 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 1 | complete | true | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 1 | g | 0.98 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 1 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 1 | solved | 47 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 2 | N | 48 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 2 | complete | true | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 2 | g | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 2 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 2 | solved | 48 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 3 | N | 48 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 3 | complete | true | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 3 | g | 0.98 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 3 | rows | 48 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 3 | solved | 47 | 0 |
+
+Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535"]. Cases are comparable only on equal frozen suites.
+
+| case | arm | generation | saved curve metric | value | false credit |
+|---|---|---|---|---|---|
+| u12-darwin-vma/darwin | full | 0 | N | 48 | 0 |
+| u12-darwin-vma/darwin | full | 0 | complete | true | 0 |
+| u12-darwin-vma/darwin | full | 0 | g | 0.77 | 0 |
+| u12-darwin-vma/darwin | full | 0 | rows | 48 | 0 |
+| u12-darwin-vma/darwin | full | 0 | solved | 37 | 0 |
+| u12-darwin-vma/darwin | full | 1 | N | 48 | 0 |
+| u12-darwin-vma/darwin | full | 1 | complete | true | 0 |
+| u12-darwin-vma/darwin | full | 1 | g | 0.90 | 0 |
+| u12-darwin-vma/darwin | full | 1 | rows | 48 | 0 |
+| u12-darwin-vma/darwin | full | 1 | solved | 43 | 0 |
+| u12-darwin-vma/darwin | full | 2 | N | 48 | 0 |
+| u12-darwin-vma/darwin | full | 2 | complete | true | 0 |
+| u12-darwin-vma/darwin | full | 2 | g | 0.98 | 0 |
+| u12-darwin-vma/darwin | full | 2 | rows | 48 | 0 |
+| u12-darwin-vma/darwin | full | 2 | solved | 47 | 0 |
+| u12-darwin-vma/darwin | full | 3 | N | 48 | 0 |
+| u12-darwin-vma/darwin | full | 3 | complete | true | 0 |
+| u12-darwin-vma/darwin | full | 3 | g | 0.94 | 0 |
+| u12-darwin-vma/darwin | full | 3 | rows | 48 | 0 |
+| u12-darwin-vma/darwin | full | 3 | solved | 45 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 0 | N | 48 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 0 | complete | true | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 0 | g | 0.83 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 0 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 0 | solved | 40 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 1 | N | 48 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 1 | complete | true | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 1 | g | 0.79 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 1 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 1 | solved | 38 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 2 | N | 48 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 2 | complete | true | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 2 | g | 0.81 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 2 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 2 | solved | 39 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 3 | N | 48 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 3 | complete | true | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 3 | g | 0.85 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 3 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 3 | solved | 41 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 0 | N | 48 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 0 | complete | true | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 0 | g | 0.81 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 0 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 0 | solved | 39 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 1 | N | 48 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 1 | complete | true | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 1 | g | 0.79 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 1 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 1 | solved | 38 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 2 | N | 48 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 2 | complete | true | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 2 | g | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 2 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 2 | solved | 42 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 3 | N | 48 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 3 | complete | true | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 3 | g | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 3 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 3 | solved | 42 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 0 | N | 48 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 0 | complete | true | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 0 | g | 0.62 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 0 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 0 | solved | 30 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 1 | N | 48 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 1 | complete | true | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 1 | g | 0.98 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 1 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 1 | solved | 47 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 2 | N | 48 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 2 | complete | true | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 2 | g | 0.94 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 2 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 2 | solved | 45 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 3 | N | 48 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 3 | complete | true | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 3 | g | 0.90 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 3 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 3 | solved | 43 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 0 | N | 48 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 0 | complete | true | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 0 | g | 0.81 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 0 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 0 | solved | 39 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 1 | N | 48 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 1 | complete | true | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 1 | g | 0.90 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 1 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 1 | solved | 43 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 2 | N | 48 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 2 | complete | true | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 2 | g | 0.96 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 2 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 2 | solved | 46 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 3 | N | 48 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 3 | complete | true | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 3 | g | 0.92 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 3 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 3 | solved | 44 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 0 | N | 48 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 0 | complete | true | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 0 | g | 0.85 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 0 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 0 | solved | 41 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 1 | N | 48 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 1 | complete | true | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 1 | g | 0.81 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 1 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 1 | solved | 39 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 2 | N | 48 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 2 | complete | true | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 2 | g | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 2 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 2 | solved | 42 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 3 | N | 48 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 3 | complete | true | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 3 | g | 0.85 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 3 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 3 | solved | 41 | 0 |
+| u12-darwin-vma/darwin-rep | full | 0 | N | 48 | 0 |
+| u12-darwin-vma/darwin-rep | full | 0 | complete | true | 0 |
+| u12-darwin-vma/darwin-rep | full | 0 | g | 0.75 | 0 |
+| u12-darwin-vma/darwin-rep | full | 0 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-rep | full | 0 | solved | 36 | 0 |
+| u12-darwin-vma/darwin-rep | full | 1 | N | 48 | 0 |
+| u12-darwin-vma/darwin-rep | full | 1 | complete | true | 0 |
+| u12-darwin-vma/darwin-rep | full | 1 | g | 0.81 | 0 |
+| u12-darwin-vma/darwin-rep | full | 1 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-rep | full | 1 | solved | 39 | 0 |
+| u12-darwin-vma/darwin-rep | full | 2 | N | 48 | 0 |
+| u12-darwin-vma/darwin-rep | full | 2 | complete | true | 0 |
+| u12-darwin-vma/darwin-rep | full | 2 | g | 0.77 | 0 |
+| u12-darwin-vma/darwin-rep | full | 2 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-rep | full | 2 | solved | 37 | 0 |
+| u12-darwin-vma/darwin-rep | full | 3 | N | 48 | 0 |
+| u12-darwin-vma/darwin-rep | full | 3 | complete | true | 0 |
+| u12-darwin-vma/darwin-rep | full | 3 | g | 0.88 | 0 |
+| u12-darwin-vma/darwin-rep | full | 3 | rows | 48 | 0 |
+| u12-darwin-vma/darwin-rep | full | 3 | solved | 42 | 0 |
+| u12-darwin-vma/scientists | full | 0 | N | 48 | 0 |
+| u12-darwin-vma/scientists | full | 0 | complete | true | 0 |
+| u12-darwin-vma/scientists | full | 0 | g | 0.73 | 0 |
+| u12-darwin-vma/scientists | full | 0 | rows | 48 | 0 |
+| u12-darwin-vma/scientists | full | 0 | solved | 35 | 0 |
+| u12-darwin-vma/scientists | full | 1 | N | 48 | 0 |
+| u12-darwin-vma/scientists | full | 1 | complete | true | 0 |
+| u12-darwin-vma/scientists | full | 1 | g | 0.88 | 0 |
+| u12-darwin-vma/scientists | full | 1 | rows | 48 | 0 |
+| u12-darwin-vma/scientists | full | 1 | solved | 42 | 0 |
+| u12-darwin-vma/scientists | full | 2 | N | 48 | 0 |
+| u12-darwin-vma/scientists | full | 2 | complete | true | 0 |
+| u12-darwin-vma/scientists | full | 2 | g | 0.83 | 0 |
+| u12-darwin-vma/scientists | full | 2 | rows | 48 | 0 |
+| u12-darwin-vma/scientists | full | 2 | solved | 40 | 0 |
+| u12-darwin-vma/scientists | full | 3 | N | 48 | 0 |
+| u12-darwin-vma/scientists | full | 3 | complete | true | 0 |
+| u12-darwin-vma/scientists | full | 3 | g | 0.83 | 0 |
+| u12-darwin-vma/scientists | full | 3 | rows | 48 | 0 |
+| u12-darwin-vma/scientists | full | 3 | solved | 40 | 0 |
+
 Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "f2a2bf86ff5041d695b0e8621e1c47ebeb070900f3b16d870e45e4f8acb37214"]. Cases are comparable only on equal frozen suites.
 
 | case | arm | generation | saved curve metric | value | false credit |
@@ -318,6 +1193,357 @@ Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9
 <!-- generated:end full-curve -->
 
 <!-- generated:begin retention -->
+Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "4944c914d4a29ac2553e8e37aaa3a340afe617b2990244592656ed5285a4129e"]. Cases are comparable only on equal frozen suites.
+
+| case | arm | generation | solved | N (declared) | rows saved | median item wall seconds | fraction of declared N | false credit |
+|---|---|---|---|---|---|---|---|---|
+| u10-einstein-vma/discovery | full | 0 | 7 | 8 | 8 | 2.3 | 0.88 | 0 |
+| u10-einstein-vma/discovery | full | 1 | 7 | 8 | 8 | 1.9 | 0.88 | 0 |
+| u10-einstein-vma/discovery | full | 2 | 7 | 8 | 8 | 0.8 | 0.88 | 0 |
+| u10-einstein-vma/discovery | full | 3 | 7 | 8 | 8 | 1.0 | 0.88 | 0 |
+| u10-einstein-vma/discovery | no-dreams | 0 | 5 | 8 | 8 | 3.3 | 0.62 | 0 |
+| u10-einstein-vma/discovery | no-dreams | 1 | 5 | 8 | 8 | 3.7 | 0.62 | 0 |
+| u10-einstein-vma/discovery | no-dreams | 2 | 7 | 8 | 8 | 1.8 | 0.88 | 0 |
+| u10-einstein-vma/discovery | no-dreams | 3 | 5 | 8 | 8 | 2.0 | 0.62 | 0 |
+| u10-einstein-vma/discovery | no-library | 0 | 6 | 8 | 8 | 2.7 | 0.75 | 0 |
+| u10-einstein-vma/discovery | no-library | 1 | 3 | 8 | 8 | 10.8 | 0.38 | 0 |
+| u10-einstein-vma/discovery | no-library | 2 | 4 | 8 | 8 | 10.1 | 0.50 | 0 |
+| u10-einstein-vma/discovery | no-library | 3 | 6 | 8 | 8 | 4.7 | 0.75 | 0 |
+| u10-einstein-vma/discovery | no-proposer | 0 | 7 | 8 | 8 | 4.2 | 0.88 | 0 |
+| u10-einstein-vma/discovery | no-proposer | 1 | 7 | 8 | 8 | 1.3 | 0.88 | 0 |
+| u10-einstein-vma/discovery | no-proposer | 2 | 4 | 8 | 8 | 6.0 | 0.50 | 0 |
+| u10-einstein-vma/discovery | no-proposer | 3 | 0 | 8 | 8 | 24.7 | 0.00 | 0 |
+| u10-einstein-vma/einstein | full | 0 | 7 | 8 | 8 | 1.6 | 0.88 | 0 |
+| u10-einstein-vma/einstein | full | 1 | 7 | 8 | 8 | 0.9 | 0.88 | 0 |
+| u10-einstein-vma/einstein | full | 2 | 7 | 8 | 8 | 0.9 | 0.88 | 0 |
+| u10-einstein-vma/einstein | full | 3 | 7 | 8 | 8 | 2.1 | 0.88 | 0 |
+| u10-einstein-vma/einstein | no-dreams | 0 | 7 | 8 | 8 | 2.8 | 0.88 | 0 |
+| u10-einstein-vma/einstein | no-dreams | 1 | 7 | 8 | 8 | 4.2 | 0.88 | 0 |
+| u10-einstein-vma/einstein | no-dreams | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein | no-dreams | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein | no-library | 0 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein | no-library | 1 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein | no-library | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein | no-library | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein | no-proposer | 0 | 7 | 8 | 8 | 2.0 | 0.88 | 0 |
+| u10-einstein-vma/einstein | no-proposer | 1 | 3 | 8 | 8 | 14.0 | 0.38 | 0 |
+| u10-einstein-vma/einstein | no-proposer | 2 | 3 | 8 | 8 | 11.3 | 0.38 | 0 |
+| u10-einstein-vma/einstein | no-proposer | 3 | 5 | 8 | 8 | 1.6 | 0.62 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 0 | 7 | 8 | 8 | 1.9 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 1 | 7 | 8 | 8 | 1.8 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 2 | 7 | 8 | 8 | 0.7 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | full | 3 | 7 | 8 | 8 | 1.3 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-dreams | 0 | 7 | 8 | 8 | 3.1 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-dreams | 1 | 7 | 8 | 8 | 2.7 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-dreams | 2 | 7 | 8 | 8 | 2.1 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-dreams | 3 | 7 | 8 | 8 | 2.0 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-library | 0 | 6 | 8 | 8 | 4.6 | 0.75 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-library | 1 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-library | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-library | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-proposer | 0 | 7 | 8 | 8 | 4.7 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-proposer | 1 | 5 | 8 | 8 | 1.3 | 0.62 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-proposer | 2 | 5 | 8 | 8 | 1.3 | 0.62 | 0 |
+| u10-einstein-vma/einstein-no-bold-predictions | no-proposer | 3 | 6 | 8 | 8 | 1.0 | 0.75 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 0 | 8 | 8 | 8 | 1.4 | 1.00 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 1 | 8 | 8 | 8 | 2.6 | 1.00 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 2 | 8 | 8 | 8 | 0.7 | 1.00 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | full | 3 | 8 | 8 | 8 | 2.1 | 1.00 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-dreams | 0 | 8 | 8 | 8 | 1.4 | 1.00 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-dreams | 1 | 8 | 8 | 8 | 2.0 | 1.00 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-dreams | 2 | 8 | 8 | 8 | 0.6 | 1.00 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-dreams | 3 | 8 | 8 | 8 | 1.1 | 1.00 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-library | 0 | 6 | 8 | 8 | 0.8 | 0.75 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-library | 1 | 5 | 8 | 8 | 5.9 | 0.62 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-library | 2 | 5 | 8 | 8 | 4.2 | 0.62 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-library | 3 | 3 | 8 | 8 | 10.7 | 0.38 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-proposer | 0 | 6 | 8 | 8 | 3.0 | 0.75 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-proposer | 1 | 2 | 8 | 8 | 11.6 | 0.25 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-proposer | 2 | 8 | 8 | 8 | 1.1 | 1.00 | 0 |
+| u10-einstein-vma/einstein-no-doubt-assumptions | no-proposer | 3 | 3 | 8 | 8 | 24.0 | 0.38 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 0 | 7 | 8 | 8 | 3.8 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 1 | 7 | 8 | 8 | 2.0 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 2 | 7 | 8 | 8 | 0.8 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | full | 3 | 5 | 8 | 8 | 0.8 | 0.62 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-dreams | 0 | 7 | 8 | 8 | 2.5 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-dreams | 1 | 7 | 8 | 8 | 3.2 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-dreams | 2 | 7 | 8 | 8 | 0.9 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-dreams | 3 | 7 | 8 | 8 | 1.1 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-library | 0 | 7 | 8 | 8 | 5.1 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-library | 1 | 4 | 8 | 8 | 8.0 | 0.50 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-library | 2 | 5 | 8 | 8 | 5.0 | 0.62 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-library | 3 | 3 | 8 | 8 | 10.6 | 0.38 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-proposer | 0 | 6 | 8 | 8 | 4.9 | 0.75 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-proposer | 1 | 5 | 8 | 8 | 0.8 | 0.62 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-proposer | 2 | 5 | 8 | 8 | 0.8 | 0.62 | 0 |
+| u10-einstein-vma/einstein-no-symmetry-principles | no-proposer | 3 | 0 | 8 | 8 | 23.6 | 0.00 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 0 | 7 | 8 | 8 | 2.7 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 1 | 5 | 8 | 8 | 3.0 | 0.62 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 2 | 7 | 8 | 8 | 0.9 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | full | 3 | 7 | 8 | 8 | 0.8 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-dreams | 0 | 5 | 8 | 8 | 3.3 | 0.62 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-dreams | 1 | 6 | 8 | 8 | 3.5 | 0.75 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-dreams | 2 | 7 | 8 | 8 | 1.1 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-dreams | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-library | 0 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-library | 1 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-library | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-library | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-proposer | 0 | 7 | 8 | 8 | 5.6 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-proposer | 1 | 0 | 8 | 8 | 24.1 | 0.00 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-proposer | 2 | 7 | 8 | 8 | 1.3 | 0.88 | 0 |
+| u10-einstein-vma/einstein-no-thought-experiments | no-proposer | 3 | 4 | 8 | 8 | 5.9 | 0.50 | 0 |
+
+Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2"]. Cases are comparable only on equal frozen suites.
+
+| case | arm | generation | solved | N (declared) | rows saved | median item wall seconds | fraction of declared N | false credit |
+|---|---|---|---|---|---|---|---|---|
+| u11-scientists-vmc/einstein | full | 0 | 7 | 8 | 8 | 2.8 | 0.88 | 0 |
+| u11-scientists-vmc/einstein | full | 1 | 7 | 8 | 8 | 1.2 | 0.88 | 0 |
+| u11-scientists-vmc/einstein | full | 2 | 7 | 8 | 8 | 0.6 | 0.88 | 0 |
+| u11-scientists-vmc/einstein | full | 3 | 7 | 8 | 8 | 1.1 | 0.88 | 0 |
+| u11-scientists-vmc/einstein | no-dreams | 0 | 7 | 8 | 8 | 2.9 | 0.88 | 0 |
+| u11-scientists-vmc/einstein | no-dreams | 1 | 7 | 8 | 8 | 3.1 | 0.88 | 0 |
+| u11-scientists-vmc/einstein | no-dreams | 2 | 7 | 8 | 8 | 0.9 | 0.88 | 0 |
+| u11-scientists-vmc/einstein | no-dreams | 3 | 7 | 8 | 8 | 1.1 | 0.88 | 0 |
+| u11-scientists-vmc/einstein | no-library | 0 | 7 | 8 | 8 | 4.2 | 0.88 | 0 |
+| u11-scientists-vmc/einstein | no-library | 1 | 6 | 8 | 8 | 3.7 | 0.75 | 0 |
+| u11-scientists-vmc/einstein | no-library | 2 | 3 | 8 | 8 | 10.6 | 0.38 | 0 |
+| u11-scientists-vmc/einstein | no-library | 3 | 6 | 8 | 8 | 7.7 | 0.75 | 0 |
+| u11-scientists-vmc/einstein | no-proposer | 0 | 7 | 8 | 8 | 4.2 | 0.88 | 0 |
+| u11-scientists-vmc/einstein | no-proposer | 1 | 4 | 8 | 8 | 5.9 | 0.50 | 0 |
+| u11-scientists-vmc/einstein | no-proposer | 2 | 7 | 8 | 8 | 1.2 | 0.88 | 0 |
+| u11-scientists-vmc/einstein | no-proposer | 3 | 5 | 8 | 8 | 1.3 | 0.62 | 0 |
+| u11-scientists-vmc/scientists | full | 0 | 8 | 8 | 8 | 0.8 | 1.00 | 0 |
+| u11-scientists-vmc/scientists | full | 1 | 8 | 8 | 8 | 1.6 | 1.00 | 0 |
+| u11-scientists-vmc/scientists | full | 2 | 8 | 8 | 8 | 1.0 | 1.00 | 0 |
+| u11-scientists-vmc/scientists | full | 3 | 8 | 8 | 8 | 3.3 | 1.00 | 0 |
+| u11-scientists-vmc/scientists | no-dreams | 0 | 8 | 8 | 8 | 0.6 | 1.00 | 0 |
+| u11-scientists-vmc/scientists | no-dreams | 1 | 8 | 8 | 8 | 0.6 | 1.00 | 0 |
+| u11-scientists-vmc/scientists | no-dreams | 2 | 8 | 8 | 8 | 0.6 | 1.00 | 0 |
+| u11-scientists-vmc/scientists | no-dreams | 3 | 8 | 8 | 8 | 0.6 | 1.00 | 0 |
+| u11-scientists-vmc/scientists | no-library | 0 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists | no-library | 1 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists | no-library | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists | no-library | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists | no-proposer | 0 | 8 | 8 | 8 | 0.4 | 1.00 | 0 |
+| u11-scientists-vmc/scientists | no-proposer | 1 | 8 | 8 | 8 | 1.0 | 1.00 | 0 |
+| u11-scientists-vmc/scientists | no-proposer | 2 | 6 | 8 | 8 | 1.3 | 0.75 | 0 |
+| u11-scientists-vmc/scientists | no-proposer | 3 | 5 | 8 | 8 | 1.5 | 0.62 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 0 | 8 | 8 | 8 | 1.0 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 1 | 8 | 8 | 8 | 1.1 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 2 | 8 | 8 | 8 | 0.9 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | full | 3 | 8 | 8 | 8 | 1.1 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-dreams | 0 | 8 | 8 | 8 | 0.9 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-dreams | 1 | 8 | 8 | 8 | 1.9 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-dreams | 2 | 8 | 8 | 8 | 0.7 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-dreams | 3 | 8 | 8 | 8 | 0.7 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-library | 0 | 2 | 8 | 3 | 9.5 | 0.25 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-library | 1 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-library | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-library | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-proposer | 0 | 8 | 8 | 8 | 0.4 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-proposer | 1 | 6 | 8 | 8 | 0.9 | 0.75 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-proposer | 2 | 6 | 8 | 8 | 1.3 | 0.75 | 0 |
+| u11-scientists-vmc/scientists-no-anomaly-pursuit | no-proposer | 3 | 6 | 8 | 8 | 0.8 | 0.75 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 0 | 7 | 8 | 8 | 2.5 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 1 | 7 | 8 | 8 | 1.1 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 2 | 7 | 8 | 8 | 2.4 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | full | 3 | 7 | 8 | 8 | 1.8 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-dreams | 0 | 7 | 8 | 8 | 3.1 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-dreams | 1 | 7 | 8 | 8 | 2.1 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-dreams | 2 | 7 | 8 | 8 | 1.0 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-dreams | 3 | 7 | 8 | 8 | 1.1 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-library | 0 | 5 | 8 | 8 | 7.3 | 0.62 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-library | 1 | 5 | 8 | 8 | 8.5 | 0.62 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-library | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-library | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-proposer | 0 | 7 | 8 | 8 | 3.0 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-proposer | 1 | 3 | 8 | 8 | 11.1 | 0.38 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-proposer | 2 | 5 | 8 | 8 | 1.7 | 0.62 | 0 |
+| u11-scientists-vmc/scientists-no-conserved-quantities | no-proposer | 3 | 0 | 8 | 8 | 28.4 | 0.00 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 0 | 6 | 8 | 8 | 2.5 | 0.75 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 1 | 7 | 8 | 8 | 2.7 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 2 | 7 | 8 | 8 | 0.9 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | full | 3 | 7 | 8 | 8 | 2.7 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-dreams | 0 | 7 | 8 | 8 | 3.8 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-dreams | 1 | 6 | 8 | 8 | 2.8 | 0.75 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-dreams | 2 | 7 | 8 | 8 | 0.9 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-dreams | 3 | 7 | 8 | 8 | 1.1 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-library | 0 | 6 | 8 | 8 | 3.9 | 0.75 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-library | 1 | 4 | 8 | 8 | 8.1 | 0.50 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-library | 2 | 7 | 8 | 8 | 3.9 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-library | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-proposer | 0 | 7 | 8 | 8 | 4.8 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-proposer | 1 | 4 | 8 | 8 | 6.8 | 0.50 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-proposer | 2 | 5 | 8 | 8 | 1.3 | 0.62 | 0 |
+| u11-scientists-vmc/scientists-no-gap-predictions | no-proposer | 3 | 4 | 8 | 8 | 7.0 | 0.50 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 0 | 8 | 8 | 8 | 3.1 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 1 | 8 | 8 | 8 | 0.7 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 2 | 8 | 8 | 8 | 0.6 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | full | 3 | 8 | 8 | 8 | 3.0 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-dreams | 0 | 4 | 8 | 8 | 8.4 | 0.50 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-dreams | 1 | 8 | 8 | 8 | 1.2 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-dreams | 2 | 8 | 8 | 8 | 2.1 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-dreams | 3 | 8 | 8 | 8 | 2.1 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-library | 0 | 5 | 8 | 8 | 6.0 | 0.62 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-library | 1 | 5 | 8 | 8 | 5.2 | 0.62 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-library | 2 | 5 | 8 | 8 | 8.6 | 0.62 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-library | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-proposer | 0 | 5 | 8 | 8 | 3.2 | 0.62 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-proposer | 1 | 3 | 8 | 8 | 12.0 | 0.38 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-proposer | 2 | 6 | 8 | 8 | 0.9 | 0.75 | 0 |
+| u11-scientists-vmc/scientists-no-number-conjectures | no-proposer | 3 | 3 | 8 | 8 | 27.3 | 0.38 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 0 | 8 | 8 | 8 | 0.7 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 1 | 8 | 8 | 8 | 1.0 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 2 | 8 | 8 | 8 | 1.0 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | full | 3 | 8 | 8 | 8 | 0.9 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-dreams | 0 | 8 | 8 | 8 | 2.2 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-dreams | 1 | 8 | 8 | 8 | 2.0 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-dreams | 2 | 8 | 8 | 8 | 0.9 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-dreams | 3 | 8 | 8 | 8 | 0.9 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-library | 0 | 7 | 8 | 8 | 3.9 | 0.88 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-library | 1 | 6 | 8 | 8 | 4.0 | 0.75 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-library | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-library | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-proposer | 0 | 8 | 8 | 8 | 0.4 | 1.00 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-proposer | 1 | 6 | 8 | 8 | 1.1 | 0.75 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-proposer | 2 | 5 | 8 | 8 | 1.4 | 0.62 | 0 |
+| u11-scientists-vmc/scientists-no-one-change-experiments | no-proposer | 3 | 5 | 8 | 8 | 1.8 | 0.62 | 0 |
+
+Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535"]. Cases are comparable only on equal frozen suites.
+
+| case | arm | generation | solved | N (declared) | rows saved | median item wall seconds | fraction of declared N | false credit |
+|---|---|---|---|---|---|---|---|---|
+| u12-darwin-vma/darwin | full | 0 | 8 | 8 | 8 | 1.1 | 1.00 | 0 |
+| u12-darwin-vma/darwin | full | 1 | 8 | 8 | 8 | 3.3 | 1.00 | 0 |
+| u12-darwin-vma/darwin | full | 2 | 8 | 8 | 8 | 1.5 | 1.00 | 0 |
+| u12-darwin-vma/darwin | full | 3 | 8 | 8 | 8 | 1.5 | 1.00 | 0 |
+| u12-darwin-vma/darwin | no-dreams | 0 | 8 | 8 | 8 | 1.1 | 1.00 | 0 |
+| u12-darwin-vma/darwin | no-dreams | 1 | 8 | 8 | 8 | 4.4 | 1.00 | 0 |
+| u12-darwin-vma/darwin | no-dreams | 2 | 8 | 8 | 8 | 3.6 | 1.00 | 0 |
+| u12-darwin-vma/darwin | no-dreams | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin | no-library | 0 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin | no-library | 1 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin | no-library | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin | no-library | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin | no-proposer | 0 | 8 | 8 | 8 | 0.6 | 1.00 | 0 |
+| u12-darwin-vma/darwin | no-proposer | 1 | 8 | 8 | 8 | 1.4 | 1.00 | 0 |
+| u12-darwin-vma/darwin | no-proposer | 2 | 7 | 8 | 8 | 1.1 | 0.88 | 0 |
+| u12-darwin-vma/darwin | no-proposer | 3 | 6 | 8 | 8 | 9.3 | 0.75 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 0 | 7 | 8 | 8 | 3.0 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 1 | 5 | 8 | 8 | 1.4 | 0.62 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 2 | 7 | 8 | 8 | 3.6 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | full | 3 | 7 | 8 | 8 | 4.2 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-dreams | 0 | 7 | 8 | 8 | 3.4 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-dreams | 1 | 5 | 8 | 8 | 4.6 | 0.62 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-dreams | 2 | 7 | 8 | 8 | 2.9 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-dreams | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-library | 0 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-library | 1 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-library | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-library | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-proposer | 0 | 7 | 8 | 8 | 2.2 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-proposer | 1 | 4 | 8 | 8 | 10.5 | 0.50 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-proposer | 2 | 5 | 8 | 8 | 1.4 | 0.62 | 0 |
+| u12-darwin-vma/darwin-no-change-mechanisms | no-proposer | 3 | 4 | 8 | 8 | 6.3 | 0.50 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 0 | 7 | 8 | 8 | 3.1 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 1 | 7 | 8 | 8 | 2.2 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 2 | 7 | 8 | 8 | 0.8 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | full | 3 | 7 | 8 | 8 | 0.9 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-dreams | 0 | 7 | 8 | 8 | 1.8 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-dreams | 1 | 7 | 8 | 8 | 1.0 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-dreams | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-dreams | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-library | 0 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-library | 1 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-library | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-library | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-proposer | 0 | 7 | 8 | 8 | 1.5 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-proposer | 1 | 7 | 8 | 8 | 6.9 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-proposer | 2 | 7 | 8 | 8 | 2.5 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-deep-time | no-proposer | 3 | 5 | 8 | 8 | 7.5 | 0.62 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 0 | 8 | 8 | 8 | 3.1 | 1.00 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 1 | 8 | 8 | 8 | 1.6 | 1.00 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 2 | 8 | 8 | 8 | 0.9 | 1.00 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | full | 3 | 8 | 8 | 8 | 2.2 | 1.00 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-dreams | 0 | 7 | 8 | 8 | 2.9 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-dreams | 1 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-dreams | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-dreams | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-library | 0 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-library | 1 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-library | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-library | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-proposer | 0 | 5 | 8 | 8 | 2.9 | 0.62 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-proposer | 1 | 6 | 8 | 8 | 0.9 | 0.75 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-proposer | 2 | 5 | 8 | 8 | 1.0 | 0.62 | 0 |
+| u12-darwin-vma/darwin-no-lineage-trees | no-proposer | 3 | 8 | 8 | 8 | 1.2 | 1.00 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 0 | 8 | 8 | 8 | 0.9 | 1.00 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 1 | 8 | 8 | 8 | 3.2 | 1.00 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 2 | 8 | 8 | 8 | 1.3 | 1.00 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | full | 3 | 8 | 8 | 8 | 3.4 | 1.00 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-dreams | 0 | 8 | 8 | 8 | 1.1 | 1.00 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-dreams | 1 | 8 | 8 | 8 | 2.9 | 1.00 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-dreams | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-dreams | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-library | 0 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-library | 1 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-library | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-library | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-proposer | 0 | 7 | 8 | 8 | 0.5 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-proposer | 1 | 8 | 8 | 8 | 1.0 | 1.00 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-proposer | 2 | 8 | 8 | 8 | 0.9 | 1.00 | 0 |
+| u12-darwin-vma/darwin-no-patient-observation | no-proposer | 3 | 4 | 8 | 8 | 13.0 | 0.50 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 0 | 7 | 8 | 8 | 2.9 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 1 | 7 | 8 | 8 | 1.9 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 2 | 7 | 8 | 8 | 2.9 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | full | 3 | 7 | 8 | 8 | 1.2 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-dreams | 0 | 7 | 8 | 8 | 3.3 | 0.88 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-dreams | 1 | 5 | 8 | 8 | 3.3 | 0.62 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-dreams | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-dreams | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-library | 0 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-library | 1 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-library | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-library | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-proposer | 0 | 5 | 8 | 8 | 2.8 | 0.62 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-proposer | 1 | 5 | 8 | 8 | 1.3 | 0.62 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-proposer | 2 | 5 | 8 | 8 | 1.3 | 0.62 | 0 |
+| u12-darwin-vma/darwin-no-world-hologram | no-proposer | 3 | 4 | 8 | 8 | 10.3 | 0.50 | 0 |
+| u12-darwin-vma/darwin-rep | full | 0 | 7 | 8 | 8 | 3.4 | 0.88 | 0 |
+| u12-darwin-vma/darwin-rep | full | 1 | 6 | 8 | 8 | 3.4 | 0.75 | 0 |
+| u12-darwin-vma/darwin-rep | full | 2 | 7 | 8 | 8 | 1.0 | 0.88 | 0 |
+| u12-darwin-vma/darwin-rep | full | 3 | 7 | 8 | 8 | 2.2 | 0.88 | 0 |
+| u12-darwin-vma/darwin-rep | no-dreams | 0 | 7 | 8 | 8 | 1.8 | 0.88 | 0 |
+| u12-darwin-vma/darwin-rep | no-dreams | 1 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-rep | no-dreams | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-rep | no-dreams | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-rep | no-library | 0 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-rep | no-library | 1 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-rep | no-library | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-rep | no-library | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/darwin-rep | no-proposer | 0 | 7 | 8 | 8 | 2.5 | 0.88 | 0 |
+| u12-darwin-vma/darwin-rep | no-proposer | 1 | 2 | 8 | 8 | 12.1 | 0.25 | 0 |
+| u12-darwin-vma/darwin-rep | no-proposer | 2 | 7 | 8 | 8 | 1.3 | 0.88 | 0 |
+| u12-darwin-vma/darwin-rep | no-proposer | 3 | 4 | 8 | 8 | 6.5 | 0.50 | 0 |
+| u12-darwin-vma/scientists | full | 0 | 6 | 8 | 8 | 0.8 | 0.75 | 0 |
+| u12-darwin-vma/scientists | full | 1 | 7 | 8 | 8 | 1.0 | 0.88 | 0 |
+| u12-darwin-vma/scientists | full | 2 | 7 | 8 | 8 | 2.9 | 0.88 | 0 |
+| u12-darwin-vma/scientists | full | 3 | 7 | 8 | 8 | 3.3 | 0.88 | 0 |
+| u12-darwin-vma/scientists | no-dreams | 0 | 5 | 8 | 8 | 1.1 | 0.62 | 0 |
+| u12-darwin-vma/scientists | no-dreams | 1 | 7 | 8 | 8 | 3.1 | 0.88 | 0 |
+| u12-darwin-vma/scientists | no-dreams | 2 | 7 | 8 | 8 | 3.0 | 0.88 | 0 |
+| u12-darwin-vma/scientists | no-dreams | 3 | 7 | 8 | 8 | 2.2 | 0.88 | 0 |
+| u12-darwin-vma/scientists | no-library | 0 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/scientists | no-library | 1 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/scientists | no-library | 2 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/scientists | no-library | 3 | MISSING | 8 | 0 | MISSING | MISSING | 0 |
+| u12-darwin-vma/scientists | no-proposer | 0 | 7 | 8 | 8 | 0.4 | 0.88 | 0 |
+| u12-darwin-vma/scientists | no-proposer | 1 | 6 | 8 | 8 | 3.0 | 0.75 | 0 |
+| u12-darwin-vma/scientists | no-proposer | 2 | 7 | 8 | 8 | 1.1 | 0.88 | 0 |
+| u12-darwin-vma/scientists | no-proposer | 3 | 7 | 8 | 8 | 6.2 | 0.88 | 0 |
+
 Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "f2a2bf86ff5041d695b0e8621e1c47ebeb070900f3b16d870e45e4f8acb37214"]. Cases are comparable only on equal frozen suites.
 
 | case | arm | generation | solved | N (declared) | rows saved | median item wall seconds | fraction of declared N | false credit |
@@ -441,494 +1667,187 @@ Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9
 | u8-u9-vmc-9036ca3/no-memory | no-proposer | 3 | 4 | 8 | 8 | 9.7 | 0.50 | 0 |
 <!-- generated:end retention -->
 
-<!-- generated:begin habits -->
-Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "f2a2bf86ff5041d695b0e8621e1c47ebeb070900f3b16d870e45e4f8acb37214"]. Cases are comparable only on equal frozen suites.
-
-| case | saved source / section | arm | generation | metric / JSON path | value | false credit |
-|---|---|---|---|---|---|---|
-| u9-discovery-vmc/discovery | discovery | full | 0 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 0 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 0 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 0 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 0 | experiments | 24 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 0 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 0 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 0 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 0 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 0 | seconds | 269.0 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 0 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 0 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 1 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 1 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 1 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 1 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 1 | experiments | 9 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 1 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 1 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 1 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 1 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 1 | seconds | 216.6 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 1 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 1 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 2 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 2 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 2 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 2 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 2 | experiments | 2 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 2 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 2 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 2 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 2 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 2 | seconds | 228.9 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 2 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 2 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 3 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 3 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 3 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 3 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 3 | experiments | 5 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 3 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 3 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 3 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 3 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 3 | seconds | 210.0 | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 3 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | full | 3 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 0 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 0 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 0 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 0 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 0 | experiments | 24 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 0 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 0 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 0 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 0 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 0 | seconds | 213.7 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 0 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 0 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 1 | by_kind.curve | 1 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 1 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 1 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 1 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 1 | experiments | 10 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 1 | experiments_per_law | 10.00 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 1 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 1 | laws | 1 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 1 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 1 | seconds | 203.7 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 1 | seconds_per_law | 203.7 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 1 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 2 | by_kind.curve | 1 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 2 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 2 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 2 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 2 | experiments | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 2 | experiments_per_law | 0.00 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 2 | experiments_per_law_improved | true | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 2 | laws | 1 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 2 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 2 | seconds | 270.2 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 2 | seconds_per_law | 270.2 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 2 | seconds_per_law_improved | false | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 3 | by_kind.curve | 1 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 3 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 3 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 3 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 3 | experiments | 1 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 3 | experiments_per_law | 1.00 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 3 | experiments_per_law_improved | false | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 3 | laws | 1 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 3 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 3 | seconds | 208.2 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 3 | seconds_per_law | 208.2 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-dreams | 3 | seconds_per_law_improved | true | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 0 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 0 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 0 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 0 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 0 | experiments | 24 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 0 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 0 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 0 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 0 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 0 | seconds | 225.0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 0 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 0 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 1 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 1 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 1 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 1 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 1 | experiments | 11 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 1 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 1 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 1 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 1 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 1 | seconds | 283.9 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 1 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-library | 1 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 0 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 0 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 0 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 0 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 0 | experiments | 24 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 0 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 0 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 0 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 0 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 0 | seconds | 237.6 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 0 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 0 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 1 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 1 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 1 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 1 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 1 | experiments | 9 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 1 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 1 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 1 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 1 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 1 | seconds | 204.5 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 1 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 1 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 2 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 2 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 2 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 2 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 2 | experiments | 2 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 2 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 2 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 2 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 2 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 2 | seconds | 234.6 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 2 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 2 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 3 | by_kind.curve | 1 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 3 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 3 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 3 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 3 | experiments | 11 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 3 | experiments_per_law | 11.00 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 3 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 3 | laws | 1 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 3 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 3 | seconds | 207.0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 3 | seconds_per_law | 207.0 | 0 |
-| u9-discovery-vmc/discovery | discovery | no-proposer | 3 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 0 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 0 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 0 | by_kind.formula | 2 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 0 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 0 | experiments | 41 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 0 | experiments_per_law | 20.50 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 0 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 0 | laws | 2 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 0 | reuse | 2 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 0 | seconds | 222.0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 0 | seconds_per_law | 111.0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 0 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 1 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 1 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 1 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 1 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 1 | experiments | 2 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 1 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 1 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 1 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 1 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 1 | seconds | 294.1 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 1 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 1 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 2 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 2 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 2 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 2 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 2 | experiments | 3 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 2 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 2 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 2 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 2 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 2 | seconds | 246.1 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 2 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 2 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 3 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 3 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 3 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 3 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 3 | experiments | 2 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 3 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 3 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 3 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 3 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 3 | seconds | 245.2 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 3 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | full | 3 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 0 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 0 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 0 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 0 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 0 | experiments | 24 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 0 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 0 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 0 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 0 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 0 | seconds | 204.0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 0 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 0 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 1 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 1 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 1 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 1 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 1 | experiments | 7 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 1 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 1 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 1 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 1 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 1 | seconds | 225.8 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 1 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 1 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 2 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 2 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 2 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 2 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 2 | experiments | 3 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 2 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 2 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 2 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 2 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 2 | seconds | 203.6 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 2 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 2 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 3 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 3 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 3 | by_kind.formula | 1 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 3 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 3 | experiments | 15 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 3 | experiments_per_law | 15.00 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 3 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 3 | laws | 1 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 3 | reuse | 1 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 3 | seconds | 282.5 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 3 | seconds_per_law | 282.5 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 3 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 0 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 0 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 0 | by_kind.formula | 2 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 0 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 0 | experiments | 41 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 0 | experiments_per_law | 20.50 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 0 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 0 | laws | 2 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 0 | reuse | 2 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 0 | seconds | 221.6 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 0 | seconds_per_law | 110.8 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 0 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 1 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 1 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 1 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 1 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 1 | experiments | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 1 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 1 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 1 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 1 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 1 | seconds | 438.4 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 1 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 1 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 2 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 2 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 2 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 2 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 2 | experiments | 2 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 2 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 2 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 2 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 2 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 2 | seconds | 281.0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 2 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 2 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 3 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 3 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 3 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 3 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 3 | experiments | 16 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 3 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 3 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 3 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 3 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 3 | seconds | 213.3 | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 3 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 3 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 0 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 0 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 0 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 0 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 0 | experiments | 30 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 0 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 0 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 0 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 0 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 0 | seconds | 202.6 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 0 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 0 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 1 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 1 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 1 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 1 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 1 | experiments | 7 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 1 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 1 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 1 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 1 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 1 | seconds | 223.3 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 1 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 1 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 2 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 2 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 2 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 2 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 2 | experiments | 8 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 2 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 2 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 2 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 2 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 2 | seconds | 202.9 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 2 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 2 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 3 | by_kind.curve | 1 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 3 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 3 | by_kind.formula | 1 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 3 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 3 | experiments | 4 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 3 | experiments_per_law | 2.00 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 3 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 3 | laws | 2 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 3 | reuse | 1 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 3 | seconds | 205.6 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 3 | seconds_per_law | 102.8 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | full | 3 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | experiments | 26 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | seconds | 204.5 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | experiments | 8 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | seconds | 221.4 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | experiments | 2 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | seconds | 210.6 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | experiments | 2 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | seconds | 211.5 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-library | 0 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-library | 0 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-library | 0 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-library | 0 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-library | 0 | experiments | 26 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-library | 0 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-library | 0 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-library | 0 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-library | 0 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-library | 0 | seconds | 234.2 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-library | 0 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-library | 0 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | experiments | 32 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | seconds | 203.0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | experiments | 3 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | seconds | 223.3 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | by_kind.curve | 1 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | by_kind.formula | 1 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | experiments | 7 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | experiments_per_law | 3.50 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | laws | 2 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | reuse | 1 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | seconds | 324.1 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | seconds_per_law | 162.0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | by_kind.curve | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | by_kind.drawing | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | by_kind.formula | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | credit | compression credit, not proof of truth; rediscovery of laws we hid | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | experiments | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | experiments_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | experiments_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | laws | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | reuse | 0 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | seconds | 315.3 | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | seconds_per_law | MISSING | 0 |
-| u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | seconds_per_law_improved | MISSING | 0 |
-| u9-discovery-vmc/discovery | availability | case | saved | evidence | comparison JSON MISSING (not zero; optional for memory-only cases) | 0 |
-| u9-discovery-vmc/discovery-no-unify | availability | case | saved | evidence | comparison JSON MISSING (not zero; optional for memory-only cases) | 0 |
-| u9-discovery-vmc/discovery-random | availability | case | saved | evidence | comparison JSON MISSING (not zero; optional for memory-only cases) | 0 |
-
-Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", null]. Cases are comparable only on equal frozen suites.
-
-| case | saved source / section | arm | generation | metric / JSON path | value | false credit |
-|---|---|---|---|---|---|---|
-| u8-u9-vmc-9036ca3/discovery-off | availability | case | saved | evidence | comparison JSON MISSING (not zero; optional for memory-only cases) | 0 |
-| u8-u9-vmc-9036ca3/full | availability | case | saved | evidence | comparison JSON MISSING (not zero; optional for memory-only cases) | 0 |
-| u8-u9-vmc-9036ca3/mem-choice | availability | case | saved | evidence | comparison JSON MISSING (not zero; optional for memory-only cases) | 0 |
-| u8-u9-vmc-9036ca3/no-memory | availability | case | saved | evidence | comparison JSON MISSING (not zero; optional for memory-only cases) | 0 |
-<!-- generated:end habits -->
-
 <!-- generated:begin noise -->
+Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "4944c914d4a29ac2553e8e37aaa3a340afe617b2990244592656ed5285a4129e"]. Cases are comparable only on equal frozen suites. Matching saved switches; code digests may differ (see provenance). Largest replicate gap is used per metric/generation. Comparisons additionally match saved seed, device, allowances and evaluation sizes.
+
+| left | right | section | arm | generation | metric | left value | right value | right - left | measured absolute spread | false credit |
+|---|---|---|---|---|---|---|---|---|---|---|
+| MISSING | MISSING | MISSING | MISSING | MISSING | MISSING | MISSING | MISSING | MISSING | MISSING | u10-einstein-vma/discovery: 0; u10-einstein-vma/einstein: 0; u10-einstein-vma/einstein-no-bold-predictions: 0; u10-einstein-vma/einstein-no-doubt-assumptions: 0; u10-einstein-vma/einstein-no-symmetry-principles: 0; u10-einstein-vma/einstein-no-thought-experiments: 0 |
+
+Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "7e074fe4fa2891213ea447156770ce4774c828eb8fa7d15dbbcd82bb89a165e2"]. Cases are comparable only on equal frozen suites. Matching saved switches; code digests may differ (see provenance). Largest replicate gap is used per metric/generation. Comparisons additionally match saved seed, device, allowances and evaluation sizes.
+
+| left | right | section | arm | generation | metric | left value | right value | right - left | measured absolute spread | false credit |
+|---|---|---|---|---|---|---|---|---|---|---|
+| MISSING | MISSING | MISSING | MISSING | MISSING | MISSING | MISSING | MISSING | MISSING | MISSING | u11-scientists-vmc/einstein: 0; u11-scientists-vmc/scientists: 0; u11-scientists-vmc/scientists-no-anomaly-pursuit: 0; u11-scientists-vmc/scientists-no-conserved-quantities: 0; u11-scientists-vmc/scientists-no-gap-predictions: 0; u11-scientists-vmc/scientists-no-number-conjectures: 0; u11-scientists-vmc/scientists-no-one-change-experiments: 0 |
+
+Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "bba3a22d0c667016d6128ee862116b2575bba12e943250fd8525abc7bdea4535"]. Cases are comparable only on equal frozen suites. Matching saved switches; code digests may differ (see provenance). Largest replicate gap is used per metric/generation. Comparisons additionally match saved seed, device, allowances and evaluation sizes.
+
+| left | right | section | arm | generation | metric | left value | right value | right - left | measured absolute spread | false credit |
+|---|---|---|---|---|---|---|---|---|---|---|
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | full | 0 | N | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | full | 0 | fraction | 0.77 | 0.75 | -0.02 | 0.02 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | full | 0 | median item wall seconds | 4.8 | 3.4 | -1.4 | 1.4 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | full | 0 | rows | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | full | 0 | solved | 37 | 36 | -1 | 1 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | full | 1 | N | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | full | 1 | fraction | 0.90 | 0.81 | -0.08 | 0.08 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | full | 1 | median item wall seconds | 4.4 | 4.2 | -0.2 | 0.2 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | full | 1 | rows | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | full | 1 | solved | 43 | 39 | -4 | 4 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | full | 2 | N | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | full | 2 | fraction | 0.98 | 0.77 | -0.21 | 0.21 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | full | 2 | median item wall seconds | 2.0 | 1.5 | -0.4 | 0.4 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | full | 2 | rows | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | full | 2 | solved | 47 | 37 | -10 | 10 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | full | 3 | N | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | full | 3 | fraction | 0.94 | 0.88 | -0.06 | 0.06 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | full | 3 | median item wall seconds | 3.7 | 3.0 | -0.8 | 0.8 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | full | 3 | rows | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | full | 3 | solved | 45 | 42 | -3 | 3 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-dreams | 0 | N | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-dreams | 0 | fraction | 0.75 | 0.79 | 0.04 | 0.04 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-dreams | 0 | median item wall seconds | 5.3 | 1.8 | -3.5 | 3.5 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-dreams | 0 | rows | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-dreams | 0 | solved | 36 | 38 | 2 | 2 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-dreams | 1 | N | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-dreams | 1 | fraction | 0.96 | 0.46 | -0.50 | 0.50 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-dreams | 1 | median item wall seconds | 4.2 | 1.0 | -3.2 | 3.2 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-dreams | 1 | rows | 48 | 25 | -23 | 23 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-dreams | 1 | solved | 46 | 22 | -24 | 24 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-dreams | 2 | N | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-dreams | 2 | rows | 48 | 0 | -48 | 48 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-dreams | 3 | N | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-dreams | 3 | rows | 8 | 0 | -8 | 8 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-library | 0 | N | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-library | 0 | rows | 0 | 0 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-library | 1 | N | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-library | 1 | rows | 0 | 0 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-library | 2 | N | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-library | 2 | rows | 0 | 0 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-library | 3 | N | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-library | 3 | rows | 0 | 0 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-proposer | 0 | N | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-proposer | 0 | fraction | 0.71 | 0.73 | 0.02 | 0.02 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-proposer | 0 | median item wall seconds | 6.1 | 2.8 | -3.3 | 3.3 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-proposer | 0 | rows | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-proposer | 0 | solved | 34 | 35 | 1 | 1 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-proposer | 1 | N | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-proposer | 1 | fraction | 0.92 | 0.12 | -0.79 | 0.79 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-proposer | 1 | median item wall seconds | 1.3 | 15.1 | 13.8 | 13.8 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-proposer | 1 | rows | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-proposer | 1 | solved | 44 | 6 | -38 | 38 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-proposer | 2 | N | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-proposer | 2 | fraction | 0.56 | 0.81 | 0.25 | 0.25 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-proposer | 2 | median item wall seconds | 1.9 | 1.2 | -0.6 | 0.6 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-proposer | 2 | rows | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-proposer | 2 | solved | 27 | 39 | 12 | 12 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-proposer | 3 | N | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-proposer | 3 | fraction | 0.44 | 0.35 | -0.08 | 0.08 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-proposer | 3 | median item wall seconds | 12.1 | 13.4 | 1.3 | 1.3 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-proposer | 3 | rows | 48 | 48 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | assessment | no-proposer | 3 | solved | 21 | 17 | -4 | 4 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | full | 0 | experiments | 42 | 40 | -2 | 2 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | full | 0 | laws | 0 | 0 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | full | 0 | seconds | 234.2 | 203.6 | -30.6 | 30.6 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | full | 1 | experiments | 42 | 41 | -1 | 1 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | full | 1 | laws | 0 | 0 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | full | 1 | seconds | 203.8 | 202.9 | -0.8 | 0.8 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | full | 2 | experiments | 32 | 51 | 19 | 19 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | full | 2 | laws | 0 | 0 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | full | 2 | seconds | 210.0 | 203.8 | -6.3 | 6.3 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | full | 3 | experiments | 25 | 29 | 4 | 4 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | full | 3 | laws | 0 | 0 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | full | 3 | seconds | 204.5 | 202.9 | -1.6 | 1.6 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | no-dreams | 0 | experiments | 41 | 80 | 39 | 39 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | no-dreams | 0 | laws | 0 | 0 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | no-dreams | 0 | seconds | 227.2 | 204.0 | -23.2 | 23.2 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | no-dreams | 1 | experiments | 31 | 61 | 30 | 30 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | no-dreams | 1 | laws | 0 | 0 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | no-dreams | 1 | seconds | 202.5 | 203.3 | 0.8 | 0.8 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | no-proposer | 0 | experiments | 59 | 75 | 16 | 16 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | no-proposer | 0 | laws | 0 | 3 | 3 | 3 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | no-proposer | 0 | seconds | 267.0 | 202.6 | -64.4 | 64.4 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | no-proposer | 1 | experiments | 25 | 27 | 2 | 2 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | no-proposer | 1 | laws | 0 | 1 | 1 | 1 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | no-proposer | 1 | seconds | 204.6 | 13090.5 | 12885.9 | 12885.9 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | no-proposer | 2 | experiments | 30 | 42 | 12 | 12 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | no-proposer | 2 | laws | 0 | 1 | 1 | 1 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | no-proposer | 2 | seconds | 248.7 | 204.7 | -43.9 | 43.9 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | no-proposer | 3 | experiments | 22 | 37 | 15 | 15 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | no-proposer | 3 | laws | 0 | 1 | 1 | 1 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | discovery | no-proposer | 3 | seconds | 228.3 | 202.8 | -25.5 | 25.5 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | einstein | full | 3 | experiments | 25 | 29 | 4 | 4 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | einstein | full | 3 | laws | 0 | 0 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | einstein | full | 3 | seconds | 204.5 | 202.9 | -1.6 | 1.6 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | einstein | no-proposer | 3 | experiments | 22 | 37 | 15 | 15 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | einstein | no-proposer | 3 | laws | 0 | 1 | 1 | 1 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | einstein | no-proposer | 3 | seconds | 228.3 | 202.8 | -25.5 | 25.5 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | full | 0 | N | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | full | 0 | fraction | 1.00 | 0.88 | -0.12 | 0.12 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | full | 0 | median item wall seconds | 1.1 | 3.4 | 2.3 | 2.3 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | full | 0 | rows | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | full | 0 | solved | 8 | 7 | -1 | 1 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | full | 1 | N | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | full | 1 | fraction | 1.00 | 0.75 | -0.25 | 0.25 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | full | 1 | median item wall seconds | 3.3 | 3.4 | 0.1 | 0.1 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | full | 1 | rows | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | full | 1 | solved | 8 | 6 | -2 | 2 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | full | 2 | N | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | full | 2 | fraction | 1.00 | 0.88 | -0.12 | 0.12 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | full | 2 | median item wall seconds | 1.5 | 1.0 | -0.5 | 0.5 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | full | 2 | rows | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | full | 2 | solved | 8 | 7 | -1 | 1 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | full | 3 | N | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | full | 3 | fraction | 1.00 | 0.88 | -0.12 | 0.12 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | full | 3 | median item wall seconds | 1.5 | 2.2 | 0.7 | 0.7 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | full | 3 | rows | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | full | 3 | solved | 8 | 7 | -1 | 1 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-dreams | 0 | N | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-dreams | 0 | fraction | 1.00 | 0.88 | -0.12 | 0.12 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-dreams | 0 | median item wall seconds | 1.1 | 1.8 | 0.7 | 0.7 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-dreams | 0 | rows | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-dreams | 0 | solved | 8 | 7 | -1 | 1 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-dreams | 1 | N | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-dreams | 1 | rows | 8 | 0 | -8 | 8 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-dreams | 2 | N | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-dreams | 2 | rows | 8 | 0 | -8 | 8 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-dreams | 3 | N | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-dreams | 3 | rows | 0 | 0 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-library | 0 | N | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-library | 0 | rows | 0 | 0 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-library | 1 | N | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-library | 1 | rows | 0 | 0 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-library | 2 | N | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-library | 2 | rows | 0 | 0 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-library | 3 | N | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-library | 3 | rows | 0 | 0 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-proposer | 0 | N | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-proposer | 0 | fraction | 1.00 | 0.88 | -0.12 | 0.12 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-proposer | 0 | median item wall seconds | 0.6 | 2.5 | 1.9 | 1.9 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-proposer | 0 | rows | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-proposer | 0 | solved | 8 | 7 | -1 | 1 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-proposer | 1 | N | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-proposer | 1 | fraction | 1.00 | 0.25 | -0.75 | 0.75 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-proposer | 1 | median item wall seconds | 1.4 | 12.1 | 10.7 | 10.7 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-proposer | 1 | rows | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-proposer | 1 | solved | 8 | 2 | -6 | 6 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-proposer | 2 | N | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-proposer | 2 | fraction | 0.88 | 0.88 | 0.00 | 0.00 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-proposer | 2 | median item wall seconds | 1.1 | 1.3 | 0.2 | 0.2 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-proposer | 2 | rows | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-proposer | 2 | solved | 7 | 7 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-proposer | 3 | N | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-proposer | 3 | fraction | 0.75 | 0.50 | -0.25 | 0.25 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-proposer | 3 | median item wall seconds | 9.3 | 6.5 | -2.8 | 2.8 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-proposer | 3 | rows | 8 | 8 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | retention | no-proposer | 3 | solved | 6 | 4 | -2 | 2 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | scientists | full | 3 | experiments | 25 | 29 | 4 | 4 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | scientists | full | 3 | laws | 0 | 0 | 0 | 0 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | scientists | full | 3 | seconds | 204.5 | 202.9 | -1.6 | 1.6 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | scientists | no-proposer | 3 | experiments | 22 | 37 | 15 | 15 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | scientists | no-proposer | 3 | laws | 0 | 1 | 1 | 1 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+| u12-darwin-vma/darwin | u12-darwin-vma/darwin-rep | scientists | no-proposer | 3 | seconds | 228.3 | 202.8 | -25.5 | 25.5 | u12-darwin-vma/darwin: 0; u12-darwin-vma/darwin-rep: 0 |
+
 Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "f2a2bf86ff5041d695b0e8621e1c47ebeb070900f3b16d870e45e4f8acb37214"]. Cases are comparable only on equal frozen suites. Matching saved switches; code digests may differ (see provenance). Largest replicate gap is used per metric/generation. Comparisons additionally match saved seed, device, allowances and evaluation sizes.
 
 | left | right | section | arm | generation | metric | left value | right value | right - left | measured absolute spread | false credit |
@@ -1010,70 +1929,6 @@ Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9
 | u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 3 | median item wall seconds | 11.4 | 12.0 | 0.6 | 0.6 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
 | u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 3 | rows | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
 | u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 3 | solved | 17 | 20 | 3 | 3 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 0 | N | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 0 | g | 0.75 | 0.54 | -0.21 | 0.21 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 0 | rows | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 0 | solved | 36 | 26 | -10 | 10 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 1 | N | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 1 | g | 0.81 | 1.00 | 0.19 | 0.19 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 1 | rows | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 1 | solved | 39 | 48 | 9 | 9 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 2 | N | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 2 | g | 0.81 | 0.81 | 0.00 | 0.00 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 2 | rows | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 2 | solved | 39 | 39 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 3 | N | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 3 | g | 0.85 | 0.98 | 0.12 | 0.12 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 3 | rows | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 3 | solved | 41 | 47 | 6 | 6 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 0 | N | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 0 | g | 0.79 | 0.52 | -0.27 | 0.27 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 0 | rows | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 0 | solved | 38 | 25 | -13 | 13 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 1 | N | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 1 | g | 0.81 | 0.96 | 0.15 | 0.15 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 1 | rows | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 1 | solved | 39 | 46 | 7 | 7 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 2 | N | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 2 | g | 0.83 | 0.94 | 0.10 | 0.10 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 2 | rows | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 2 | solved | 40 | 45 | 5 | 5 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 3 | N | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 3 | g | 0.83 | 0.94 | 0.10 | 0.10 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 3 | rows | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 3 | solved | 40 | 45 | 5 | 5 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 0 | N | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 0 | g | 0.21 | 0.23 | 0.02 | 0.02 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 0 | rows | 48 | 27 | -21 | 21 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 0 | solved | 10 | 11 | 1 | 1 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 1 | N | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 1 | g | 0.31 | 0.00 | -0.31 | 0.31 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 1 | rows | 48 | 0 | -48 | 48 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 1 | solved | 15 | 0 | -15 | 15 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 2 | N | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 2 | g | 0.15 | 0.00 | -0.15 | 0.15 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 2 | rows | 48 | 0 | -48 | 48 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 2 | solved | 7 | 0 | -7 | 7 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 3 | N | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 3 | g | 0.21 | 0.00 | -0.21 | 0.21 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 3 | rows | 48 | 0 | -48 | 48 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 3 | solved | 10 | 0 | -10 | 10 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 0 | N | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 0 | g | 0.77 | 0.42 | -0.35 | 0.35 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 0 | rows | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 0 | solved | 37 | 20 | -17 | 17 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 1 | N | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 1 | g | 0.54 | 0.12 | -0.42 | 0.42 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 1 | rows | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 1 | solved | 26 | 6 | -20 | 20 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 2 | N | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 2 | g | 0.67 | 0.50 | -0.17 | 0.17 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 2 | rows | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 2 | solved | 32 | 24 | -8 | 8 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 3 | N | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 3 | g | 0.35 | 0.42 | 0.06 | 0.06 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 3 | rows | 48 | 48 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 3 | solved | 17 | 20 | 3 | 3 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
 | u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | full | 0 | N | 8 | 8 | 0 | 0 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
 | u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | full | 0 | fraction | 0.88 | 0.75 | -0.12 | 0.12 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
 | u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | full | 0 | median item wall seconds | 2.4 | 3.6 | 1.2 | 1.2 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
@@ -1144,2101 +1999,5 @@ Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9
 | u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 3 | solved | 3 | 4 | 1 | 1 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
 <!-- generated:end noise -->
 
-<!-- generated:begin differences -->
-Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", "f2a2bf86ff5041d695b0e8621e1c47ebeb070900f3b16d870e45e4f8acb37214"]. Cases are comparable only on equal frozen suites. Smaller absolute differences are within noise; no replicate evidence means noise MISSING. Comparisons additionally match saved seed, device, allowances and evaluation sizes.
-
-| left | right | section | arm | generation | metric | left value | right value | right - left | maximum replicate spread | interpretation | false credit |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | full | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | full | 0 | fraction | 0.88 | 0.65 | -0.23 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | full | 0 | median item wall seconds | 2.6 | 6.9 | 4.3 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | full | 0 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | full | 0 | solved | 42 | 31 | -11 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | full | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | full | 1 | fraction | 0.94 | 0.96 | 0.02 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | full | 1 | median item wall seconds | 2.9 | 3.7 | 0.8 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | full | 1 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | full | 1 | solved | 45 | 46 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | full | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | full | 2 | fraction | 0.98 | 0.79 | -0.19 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | full | 2 | median item wall seconds | 0.8 | 5.4 | 4.5 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | full | 2 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | full | 2 | solved | 47 | 38 | -9 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | full | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | full | 3 | fraction | 0.90 | 0.69 | -0.21 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | full | 3 | median item wall seconds | 0.6 | 4.2 | 3.6 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | full | 3 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | full | 3 | solved | 43 | 33 | -10 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-dreams | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-dreams | 0 | fraction | 0.96 | 0.58 | -0.38 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-dreams | 0 | median item wall seconds | 2.3 | 7.1 | 4.8 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-dreams | 0 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-dreams | 0 | solved | 46 | 28 | -18 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-dreams | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-dreams | 1 | fraction | 0.96 | 0.85 | -0.10 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-dreams | 1 | median item wall seconds | 1.7 | 5.0 | 3.3 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-dreams | 1 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-dreams | 1 | solved | 46 | 41 | -5 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-dreams | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-dreams | 2 | fraction | 0.98 | 0.52 | -0.46 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-dreams | 2 | median item wall seconds | 0.8 | 7.0 | 6.2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-dreams | 2 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-dreams | 2 | solved | 47 | 25 | -22 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-dreams | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-dreams | 3 | rows | 48 | 0 | -48 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-library | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-library | 0 | rows | 48 | 0 | -48 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-library | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-library | 1 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-library | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-library | 2 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-library | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-library | 3 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-proposer | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-proposer | 0 | fraction | 0.62 | 0.62 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-proposer | 0 | median item wall seconds | 2.3 | 7.6 | 5.3 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-proposer | 0 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-proposer | 0 | solved | 30 | 30 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-proposer | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-proposer | 1 | fraction | 0.40 | 0.42 | 0.02 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-proposer | 1 | median item wall seconds | 11.7 | 11.9 | 0.3 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-proposer | 1 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-proposer | 1 | solved | 19 | 20 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-proposer | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-proposer | 2 | fraction | 0.79 | 0.83 | 0.04 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-proposer | 2 | median item wall seconds | 0.8 | 5.7 | 4.9 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-proposer | 2 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-proposer | 2 | solved | 38 | 40 | 2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-proposer | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-proposer | 3 | fraction | 0.77 | 0.77 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-proposer | 3 | median item wall seconds | 0.9 | 6.2 | 5.3 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-proposer | 3 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | assessment | no-proposer | 3 | solved | 37 | 37 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | full | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | full | 0 | g | 0.88 | 0.65 | -0.23 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | full | 0 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | full | 0 | solved | 42 | 31 | -11 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | full | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | full | 1 | g | 0.94 | 0.96 | 0.02 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | full | 1 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | full | 1 | solved | 45 | 46 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | full | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | full | 2 | g | 0.98 | 0.79 | -0.19 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | full | 2 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | full | 2 | solved | 47 | 38 | -9 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | full | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | full | 3 | g | 0.90 | 0.69 | -0.21 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | full | 3 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | full | 3 | solved | 43 | 33 | -10 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-dreams | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-dreams | 0 | g | 0.96 | 0.58 | -0.38 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-dreams | 0 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-dreams | 0 | solved | 46 | 28 | -18 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-dreams | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-dreams | 1 | g | 0.96 | 0.85 | -0.10 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-dreams | 1 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-dreams | 1 | solved | 46 | 41 | -5 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-dreams | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-dreams | 2 | g | 0.98 | 0.52 | -0.46 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-dreams | 2 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-dreams | 2 | solved | 47 | 25 | -22 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-dreams | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-dreams | 3 | g | 0.96 | 0.00 | -0.96 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-dreams | 3 | rows | 48 | 0 | -48 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-dreams | 3 | solved | 46 | 0 | -46 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-library | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-library | 0 | g | 0.23 | 0.00 | -0.23 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-library | 0 | rows | 48 | 0 | -48 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-library | 0 | solved | 11 | 0 | -11 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-library | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-library | 1 | g | 0.00 | 0.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-library | 1 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-library | 1 | solved | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-library | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-library | 2 | g | 0.00 | 0.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-library | 2 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-library | 2 | solved | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-library | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-library | 3 | g | 0.00 | 0.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-library | 3 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-library | 3 | solved | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-proposer | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-proposer | 0 | g | 0.62 | 0.62 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-proposer | 0 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-proposer | 0 | solved | 30 | 30 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-proposer | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-proposer | 1 | g | 0.40 | 0.42 | 0.02 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-proposer | 1 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-proposer | 1 | solved | 19 | 20 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-proposer | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-proposer | 2 | g | 0.79 | 0.83 | 0.04 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-proposer | 2 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-proposer | 2 | solved | 38 | 40 | 2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-proposer | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-proposer | 3 | g | 0.77 | 0.77 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-proposer | 3 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | curve | no-proposer | 3 | solved | 37 | 37 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 0 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 0 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 0 | by_kind.formula | 0 | 2 | 2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 0 | experiments | 24 | 41 | 17 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 0 | laws | 0 | 2 | 2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 0 | reuse | 0 | 2 | 2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 0 | seconds | 269.0 | 222.0 | -47.1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 1 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 1 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 1 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 1 | experiments | 9 | 2 | -7 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 1 | laws | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 1 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 1 | seconds | 216.6 | 294.1 | 77.5 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 2 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 2 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 2 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 2 | experiments | 2 | 3 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 2 | laws | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 2 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 2 | seconds | 228.9 | 246.1 | 17.2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 3 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 3 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 3 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 3 | experiments | 5 | 2 | -3 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 3 | laws | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 3 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | full | 3 | seconds | 210.0 | 245.2 | 35.2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 0 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 0 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 0 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 0 | experiments | 24 | 24 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 0 | laws | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 0 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 0 | seconds | 213.7 | 204.0 | -9.7 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 1 | by_kind.curve | 1 | 0 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 1 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 1 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 1 | experiments | 10 | 7 | -3 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 1 | laws | 1 | 0 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 1 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 1 | seconds | 203.7 | 225.8 | 22.1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 2 | by_kind.curve | 1 | 0 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 2 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 2 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 2 | experiments | 0 | 3 | 3 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 2 | laws | 1 | 0 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 2 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 2 | seconds | 270.2 | 203.6 | -66.7 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 3 | by_kind.curve | 1 | 0 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 3 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 3 | by_kind.formula | 0 | 1 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 3 | experiments | 1 | 15 | 14 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 3 | experiments_per_law | 1.00 | 15.00 | 14.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 3 | laws | 1 | 1 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 3 | reuse | 0 | 1 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 3 | seconds | 208.2 | 282.5 | 74.3 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-dreams | 3 | seconds_per_law | 208.2 | 282.5 | 74.3 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 0 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 0 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 0 | by_kind.formula | 0 | 2 | 2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 0 | experiments | 24 | 41 | 17 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 0 | laws | 0 | 2 | 2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 0 | reuse | 0 | 2 | 2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 0 | seconds | 237.6 | 221.6 | -15.9 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 1 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 1 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 1 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 1 | experiments | 9 | 0 | -9 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 1 | laws | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 1 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 1 | seconds | 204.5 | 438.4 | 233.8 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 2 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 2 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 2 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 2 | experiments | 2 | 2 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 2 | laws | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 2 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 2 | seconds | 234.6 | 281.0 | 46.4 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 3 | by_kind.curve | 1 | 0 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 3 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 3 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 3 | experiments | 11 | 16 | 5 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 3 | laws | 1 | 0 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 3 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | discovery | no-proposer | 3 | seconds | 207.0 | 213.3 | 6.3 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | full | 0 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | full | 0 | fraction | 1.00 | 1.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | full | 0 | median item wall seconds | 1.3 | 1.4 | 0.1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | full | 0 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | full | 0 | solved | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | full | 1 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | full | 1 | fraction | 0.88 | 1.00 | 0.12 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | full | 1 | median item wall seconds | 1.5 | 0.6 | -0.9 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | full | 1 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | full | 1 | solved | 7 | 8 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | full | 2 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | full | 2 | fraction | 1.00 | 1.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | full | 2 | median item wall seconds | 0.5 | 1.4 | 0.9 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | full | 2 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | full | 2 | solved | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | full | 3 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | full | 3 | fraction | 1.00 | 1.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | full | 3 | median item wall seconds | 0.7 | 0.7 | 0.0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | full | 3 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | full | 3 | solved | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-dreams | 0 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-dreams | 0 | fraction | 1.00 | 0.88 | -0.12 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-dreams | 0 | median item wall seconds | 1.3 | 4.8 | 3.5 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-dreams | 0 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-dreams | 0 | solved | 8 | 7 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-dreams | 1 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-dreams | 1 | fraction | 1.00 | 1.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-dreams | 1 | median item wall seconds | 0.6 | 0.8 | 0.2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-dreams | 1 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-dreams | 1 | solved | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-dreams | 2 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-dreams | 2 | fraction | 1.00 | 0.88 | -0.12 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-dreams | 2 | median item wall seconds | 0.6 | 0.8 | 0.2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-dreams | 2 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-dreams | 2 | solved | 8 | 7 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-dreams | 3 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-dreams | 3 | rows | 8 | 0 | -8 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-library | 0 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-library | 0 | rows | 8 | 0 | -8 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-library | 1 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-library | 1 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-library | 2 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-library | 2 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-library | 3 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-library | 3 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-proposer | 0 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-proposer | 0 | fraction | 1.00 | 0.62 | -0.38 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-proposer | 0 | median item wall seconds | 1.5 | 7.2 | 5.7 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-proposer | 0 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-proposer | 0 | solved | 8 | 5 | -3 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-proposer | 1 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-proposer | 1 | fraction | 0.50 | 0.62 | 0.12 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-proposer | 1 | median item wall seconds | 9.8 | 8.3 | -1.5 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-proposer | 1 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-proposer | 1 | solved | 4 | 5 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-proposer | 2 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-proposer | 2 | fraction | 0.75 | 0.88 | 0.12 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-proposer | 2 | median item wall seconds | 0.8 | 4.9 | 4.1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-proposer | 2 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-proposer | 2 | solved | 6 | 7 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-proposer | 3 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-proposer | 3 | fraction | 0.62 | 0.62 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-proposer | 3 | median item wall seconds | 0.8 | 9.3 | 8.5 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-proposer | 3 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-no-unify | retention | no-proposer | 3 | solved | 5 | 5 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | full | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | full | 0 | fraction | 0.88 | 0.81 | -0.06 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | full | 0 | median item wall seconds | 2.6 | 1.9 | -0.7 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | full | 0 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | full | 0 | solved | 42 | 39 | -3 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | full | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | full | 1 | fraction | 0.94 | 1.00 | 0.06 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | full | 1 | median item wall seconds | 2.9 | 2.0 | -1.0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | full | 1 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | full | 1 | solved | 45 | 48 | 3 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | full | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | full | 2 | fraction | 0.98 | 0.98 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | full | 2 | median item wall seconds | 0.8 | 0.8 | -0.0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | full | 2 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | full | 2 | solved | 47 | 47 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | full | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | full | 3 | fraction | 0.90 | 0.96 | 0.06 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | full | 3 | median item wall seconds | 0.6 | 1.5 | 0.8 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | full | 3 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | full | 3 | solved | 43 | 46 | 3 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-dreams | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-dreams | 0 | fraction | 0.96 | 0.75 | -0.21 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-dreams | 0 | median item wall seconds | 2.3 | 2.9 | 0.6 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-dreams | 0 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-dreams | 0 | solved | 46 | 36 | -10 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-dreams | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-dreams | 1 | fraction | 0.96 | 0.98 | 0.02 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-dreams | 1 | median item wall seconds | 1.7 | 1.4 | -0.3 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-dreams | 1 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-dreams | 1 | solved | 46 | 47 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-dreams | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-dreams | 2 | fraction | 0.98 | 0.96 | -0.02 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-dreams | 2 | median item wall seconds | 0.8 | 1.0 | 0.2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-dreams | 2 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-dreams | 2 | solved | 47 | 46 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-dreams | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-dreams | 3 | fraction | 0.96 | 0.96 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-dreams | 3 | median item wall seconds | 1.3 | 1.3 | -0.0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-dreams | 3 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-dreams | 3 | solved | 46 | 46 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-library | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-library | 0 | rows | 48 | 0 | -48 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-library | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-library | 1 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-library | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-library | 2 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-library | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-library | 3 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-proposer | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-proposer | 0 | fraction | 0.62 | 0.62 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-proposer | 0 | median item wall seconds | 2.3 | 4.4 | 2.1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-proposer | 0 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-proposer | 0 | solved | 30 | 30 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-proposer | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-proposer | 1 | fraction | 0.40 | 0.19 | -0.21 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-proposer | 1 | median item wall seconds | 11.7 | 15.9 | 4.2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-proposer | 1 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-proposer | 1 | solved | 19 | 9 | -10 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-proposer | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-proposer | 2 | fraction | 0.79 | 0.58 | -0.21 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-proposer | 2 | median item wall seconds | 0.8 | 1.2 | 0.4 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-proposer | 2 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-proposer | 2 | solved | 38 | 28 | -10 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-proposer | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-proposer | 3 | fraction | 0.77 | 0.85 | 0.08 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-proposer | 3 | median item wall seconds | 0.9 | 1.2 | 0.3 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-proposer | 3 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | assessment | no-proposer | 3 | solved | 37 | 41 | 4 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | full | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | full | 0 | g | 0.88 | 0.81 | -0.06 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | full | 0 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | full | 0 | solved | 42 | 39 | -3 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | full | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | full | 1 | g | 0.94 | 1.00 | 0.06 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | full | 1 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | full | 1 | solved | 45 | 48 | 3 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | full | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | full | 2 | g | 0.98 | 0.98 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | full | 2 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | full | 2 | solved | 47 | 47 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | full | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | full | 3 | g | 0.90 | 0.96 | 0.06 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | full | 3 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | full | 3 | solved | 43 | 46 | 3 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-dreams | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-dreams | 0 | g | 0.96 | 0.75 | -0.21 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-dreams | 0 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-dreams | 0 | solved | 46 | 36 | -10 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-dreams | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-dreams | 1 | g | 0.96 | 0.98 | 0.02 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-dreams | 1 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-dreams | 1 | solved | 46 | 47 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-dreams | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-dreams | 2 | g | 0.98 | 0.96 | -0.02 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-dreams | 2 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-dreams | 2 | solved | 47 | 46 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-dreams | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-dreams | 3 | g | 0.96 | 0.96 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-dreams | 3 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-dreams | 3 | solved | 46 | 46 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-library | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-library | 0 | g | 0.23 | 0.00 | -0.23 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-library | 0 | rows | 48 | 0 | -48 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-library | 0 | solved | 11 | 0 | -11 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-library | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-library | 1 | g | 0.00 | 0.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-library | 1 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-library | 1 | solved | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-library | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-library | 2 | g | 0.00 | 0.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-library | 2 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-library | 2 | solved | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-library | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-library | 3 | g | 0.00 | 0.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-library | 3 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-library | 3 | solved | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-proposer | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-proposer | 0 | g | 0.62 | 0.62 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-proposer | 0 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-proposer | 0 | solved | 30 | 30 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-proposer | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-proposer | 1 | g | 0.40 | 0.19 | -0.21 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-proposer | 1 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-proposer | 1 | solved | 19 | 9 | -10 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-proposer | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-proposer | 2 | g | 0.79 | 0.58 | -0.21 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-proposer | 2 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-proposer | 2 | solved | 38 | 28 | -10 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-proposer | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-proposer | 3 | g | 0.77 | 0.85 | 0.08 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-proposer | 3 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | curve | no-proposer | 3 | solved | 37 | 41 | 4 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 0 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 0 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 0 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 0 | experiments | 24 | 30 | 6 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 0 | laws | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 0 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 0 | seconds | 269.0 | 202.6 | -66.5 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 1 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 1 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 1 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 1 | experiments | 9 | 7 | -2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 1 | laws | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 1 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 1 | seconds | 216.6 | 223.3 | 6.6 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 2 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 2 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 2 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 2 | experiments | 2 | 8 | 6 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 2 | laws | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 2 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 2 | seconds | 228.9 | 202.9 | -26.0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 3 | by_kind.curve | 0 | 1 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 3 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 3 | by_kind.formula | 0 | 1 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 3 | experiments | 5 | 4 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 3 | laws | 0 | 2 | 2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 3 | reuse | 0 | 1 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | full | 3 | seconds | 210.0 | 205.6 | -4.4 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | experiments | 24 | 26 | 2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | laws | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | seconds | 213.7 | 204.5 | -9.2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | by_kind.curve | 1 | 0 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | experiments | 10 | 8 | -2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | laws | 1 | 0 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | seconds | 203.7 | 221.4 | 17.6 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | by_kind.curve | 1 | 0 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | experiments | 0 | 2 | 2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | laws | 1 | 0 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | seconds | 270.2 | 210.6 | -59.7 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | by_kind.curve | 1 | 0 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | experiments | 1 | 2 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | laws | 1 | 0 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | seconds | 208.2 | 211.5 | 3.2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-library | 0 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-library | 0 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-library | 0 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-library | 0 | experiments | 24 | 26 | 2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-library | 0 | laws | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-library | 0 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-library | 0 | seconds | 225.0 | 234.2 | 9.2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | experiments | 24 | 32 | 8 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | laws | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | seconds | 237.6 | 203.0 | -34.6 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | experiments | 9 | 3 | -6 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | laws | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | seconds | 204.5 | 223.3 | 18.8 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | by_kind.curve | 0 | 1 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | by_kind.formula | 0 | 1 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | experiments | 2 | 7 | 5 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | laws | 0 | 2 | 2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | reuse | 0 | 1 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | seconds | 234.6 | 324.1 | 89.5 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | by_kind.curve | 1 | 0 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | experiments | 11 | 0 | -11 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | laws | 1 | 0 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | seconds | 207.0 | 315.3 | 108.3 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | full | 0 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | full | 0 | fraction | 1.00 | 1.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | full | 0 | median item wall seconds | 1.3 | 1.1 | -0.2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | full | 0 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | full | 0 | solved | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | full | 1 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | full | 1 | fraction | 0.88 | 1.00 | 0.12 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | full | 1 | median item wall seconds | 1.5 | 1.2 | -0.4 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | full | 1 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | full | 1 | solved | 7 | 8 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | full | 2 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | full | 2 | fraction | 1.00 | 1.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | full | 2 | median item wall seconds | 0.5 | 0.7 | 0.1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | full | 2 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | full | 2 | solved | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | full | 3 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | full | 3 | fraction | 1.00 | 1.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | full | 3 | median item wall seconds | 0.7 | 0.6 | -0.0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | full | 3 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | full | 3 | solved | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-dreams | 0 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-dreams | 0 | fraction | 1.00 | 1.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-dreams | 0 | median item wall seconds | 1.3 | 2.4 | 1.1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-dreams | 0 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-dreams | 0 | solved | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-dreams | 1 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-dreams | 1 | fraction | 1.00 | 1.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-dreams | 1 | median item wall seconds | 0.6 | 0.8 | 0.2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-dreams | 1 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-dreams | 1 | solved | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-dreams | 2 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-dreams | 2 | fraction | 1.00 | 1.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-dreams | 2 | median item wall seconds | 0.6 | 0.8 | 0.2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-dreams | 2 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-dreams | 2 | solved | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-dreams | 3 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-dreams | 3 | fraction | 1.00 | 1.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-dreams | 3 | median item wall seconds | 1.0 | 0.8 | -0.2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-dreams | 3 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-dreams | 3 | solved | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-library | 0 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-library | 0 | rows | 8 | 0 | -8 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-library | 1 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-library | 1 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-library | 2 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-library | 2 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-library | 3 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-library | 3 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-proposer | 0 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-proposer | 0 | fraction | 1.00 | 0.88 | -0.12 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-proposer | 0 | median item wall seconds | 1.5 | 2.9 | 1.5 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-proposer | 0 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-proposer | 0 | solved | 8 | 7 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-proposer | 1 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-proposer | 1 | fraction | 0.50 | 0.38 | -0.12 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-proposer | 1 | median item wall seconds | 9.8 | 13.1 | 3.3 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-proposer | 1 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-proposer | 1 | solved | 4 | 3 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-proposer | 2 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-proposer | 2 | fraction | 0.75 | 1.00 | 0.25 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-proposer | 2 | median item wall seconds | 0.8 | 0.9 | 0.2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-proposer | 2 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-proposer | 2 | solved | 6 | 8 | 2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-proposer | 3 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-proposer | 3 | fraction | 0.62 | 0.88 | 0.25 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-proposer | 3 | median item wall seconds | 0.8 | 1.1 | 0.3 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-proposer | 3 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery | u9-discovery-vmc/discovery-random | retention | no-proposer | 3 | solved | 5 | 7 | 2 | MISSING | noise MISSING | u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | full | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | full | 0 | fraction | 0.65 | 0.81 | 0.17 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | full | 0 | median item wall seconds | 6.9 | 1.9 | -5.0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | full | 0 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | full | 0 | solved | 31 | 39 | 8 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | full | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | full | 1 | fraction | 0.96 | 1.00 | 0.04 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | full | 1 | median item wall seconds | 3.7 | 2.0 | -1.8 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | full | 1 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | full | 1 | solved | 46 | 48 | 2 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | full | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | full | 2 | fraction | 0.79 | 0.98 | 0.19 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | full | 2 | median item wall seconds | 5.4 | 0.8 | -4.5 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | full | 2 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | full | 2 | solved | 38 | 47 | 9 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | full | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | full | 3 | fraction | 0.69 | 0.96 | 0.27 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | full | 3 | median item wall seconds | 4.2 | 1.5 | -2.7 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | full | 3 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | full | 3 | solved | 33 | 46 | 13 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-dreams | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-dreams | 0 | fraction | 0.58 | 0.75 | 0.17 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-dreams | 0 | median item wall seconds | 7.1 | 2.9 | -4.1 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-dreams | 0 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-dreams | 0 | solved | 28 | 36 | 8 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-dreams | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-dreams | 1 | fraction | 0.85 | 0.98 | 0.12 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-dreams | 1 | median item wall seconds | 5.0 | 1.4 | -3.6 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-dreams | 1 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-dreams | 1 | solved | 41 | 47 | 6 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-dreams | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-dreams | 2 | fraction | 0.52 | 0.96 | 0.44 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-dreams | 2 | median item wall seconds | 7.0 | 1.0 | -6.0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-dreams | 2 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-dreams | 2 | solved | 25 | 46 | 21 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-dreams | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-dreams | 3 | rows | 0 | 48 | 48 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-library | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-library | 0 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-library | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-library | 1 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-library | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-library | 2 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-library | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-library | 3 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-proposer | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-proposer | 0 | fraction | 0.62 | 0.62 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-proposer | 0 | median item wall seconds | 7.6 | 4.4 | -3.2 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-proposer | 0 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-proposer | 0 | solved | 30 | 30 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-proposer | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-proposer | 1 | fraction | 0.42 | 0.19 | -0.23 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-proposer | 1 | median item wall seconds | 11.9 | 15.9 | 4.0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-proposer | 1 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-proposer | 1 | solved | 20 | 9 | -11 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-proposer | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-proposer | 2 | fraction | 0.83 | 0.58 | -0.25 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-proposer | 2 | median item wall seconds | 5.7 | 1.2 | -4.4 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-proposer | 2 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-proposer | 2 | solved | 40 | 28 | -12 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-proposer | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-proposer | 3 | fraction | 0.77 | 0.85 | 0.08 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-proposer | 3 | median item wall seconds | 6.2 | 1.2 | -5.0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-proposer | 3 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | assessment | no-proposer | 3 | solved | 37 | 41 | 4 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | full | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | full | 0 | g | 0.65 | 0.81 | 0.17 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | full | 0 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | full | 0 | solved | 31 | 39 | 8 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | full | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | full | 1 | g | 0.96 | 1.00 | 0.04 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | full | 1 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | full | 1 | solved | 46 | 48 | 2 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | full | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | full | 2 | g | 0.79 | 0.98 | 0.19 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | full | 2 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | full | 2 | solved | 38 | 47 | 9 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | full | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | full | 3 | g | 0.69 | 0.96 | 0.27 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | full | 3 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | full | 3 | solved | 33 | 46 | 13 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-dreams | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-dreams | 0 | g | 0.58 | 0.75 | 0.17 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-dreams | 0 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-dreams | 0 | solved | 28 | 36 | 8 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-dreams | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-dreams | 1 | g | 0.85 | 0.98 | 0.12 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-dreams | 1 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-dreams | 1 | solved | 41 | 47 | 6 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-dreams | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-dreams | 2 | g | 0.52 | 0.96 | 0.44 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-dreams | 2 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-dreams | 2 | solved | 25 | 46 | 21 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-dreams | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-dreams | 3 | g | 0.00 | 0.96 | 0.96 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-dreams | 3 | rows | 0 | 48 | 48 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-dreams | 3 | solved | 0 | 46 | 46 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-library | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-library | 0 | g | 0.00 | 0.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-library | 0 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-library | 0 | solved | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-library | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-library | 1 | g | 0.00 | 0.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-library | 1 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-library | 1 | solved | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-library | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-library | 2 | g | 0.00 | 0.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-library | 2 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-library | 2 | solved | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-library | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-library | 3 | g | 0.00 | 0.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-library | 3 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-library | 3 | solved | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-proposer | 0 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-proposer | 0 | g | 0.62 | 0.62 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-proposer | 0 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-proposer | 0 | solved | 30 | 30 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-proposer | 1 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-proposer | 1 | g | 0.42 | 0.19 | -0.23 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-proposer | 1 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-proposer | 1 | solved | 20 | 9 | -11 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-proposer | 2 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-proposer | 2 | g | 0.83 | 0.58 | -0.25 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-proposer | 2 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-proposer | 2 | solved | 40 | 28 | -12 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-proposer | 3 | N | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-proposer | 3 | g | 0.77 | 0.85 | 0.08 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-proposer | 3 | rows | 48 | 48 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | curve | no-proposer | 3 | solved | 37 | 41 | 4 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 0 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 0 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 0 | by_kind.formula | 2 | 0 | -2 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 0 | experiments | 41 | 30 | -11 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 0 | laws | 2 | 0 | -2 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 0 | reuse | 2 | 0 | -2 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 0 | seconds | 222.0 | 202.6 | -19.4 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 1 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 1 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 1 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 1 | experiments | 2 | 7 | 5 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 1 | laws | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 1 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 1 | seconds | 294.1 | 223.3 | -70.9 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 2 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 2 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 2 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 2 | experiments | 3 | 8 | 5 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 2 | laws | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 2 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 2 | seconds | 246.1 | 202.9 | -43.2 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 3 | by_kind.curve | 0 | 1 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 3 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 3 | by_kind.formula | 0 | 1 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 3 | experiments | 2 | 4 | 2 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 3 | laws | 0 | 2 | 2 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 3 | reuse | 0 | 1 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | full | 3 | seconds | 245.2 | 205.6 | -39.7 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | experiments | 24 | 26 | 2 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | laws | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 0 | seconds | 204.0 | 204.5 | 0.5 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | experiments | 7 | 8 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | laws | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 1 | seconds | 225.8 | 221.4 | -4.4 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | experiments | 3 | 2 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | laws | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 2 | seconds | 203.6 | 210.6 | 7.0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | by_kind.formula | 1 | 0 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | experiments | 15 | 2 | -13 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | laws | 1 | 0 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | reuse | 1 | 0 | -1 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-dreams | 3 | seconds | 282.5 | 211.5 | -71.1 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | by_kind.formula | 2 | 0 | -2 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | experiments | 41 | 32 | -9 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | laws | 2 | 0 | -2 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | reuse | 2 | 0 | -2 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 0 | seconds | 221.6 | 203.0 | -18.7 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | experiments | 0 | 3 | 3 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | laws | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 1 | seconds | 438.4 | 223.3 | -215.0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | by_kind.curve | 0 | 1 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | by_kind.formula | 0 | 1 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | experiments | 2 | 7 | 5 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | laws | 0 | 2 | 2 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | reuse | 0 | 1 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 2 | seconds | 281.0 | 324.1 | 43.1 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | by_kind.curve | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | by_kind.drawing | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | by_kind.formula | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | experiments | 16 | 0 | -16 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | laws | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | reuse | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | discovery | no-proposer | 3 | seconds | 213.3 | 315.3 | 101.9 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | full | 0 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | full | 0 | fraction | 1.00 | 1.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | full | 0 | median item wall seconds | 1.4 | 1.1 | -0.4 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | full | 0 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | full | 0 | solved | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | full | 1 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | full | 1 | fraction | 1.00 | 1.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | full | 1 | median item wall seconds | 0.6 | 1.2 | 0.5 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | full | 1 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | full | 1 | solved | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | full | 2 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | full | 2 | fraction | 1.00 | 1.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | full | 2 | median item wall seconds | 1.4 | 0.7 | -0.7 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | full | 2 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | full | 2 | solved | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | full | 3 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | full | 3 | fraction | 1.00 | 1.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | full | 3 | median item wall seconds | 0.7 | 0.6 | -0.0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | full | 3 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | full | 3 | solved | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-dreams | 0 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-dreams | 0 | fraction | 0.88 | 1.00 | 0.12 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-dreams | 0 | median item wall seconds | 4.8 | 2.4 | -2.4 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-dreams | 0 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-dreams | 0 | solved | 7 | 8 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-dreams | 1 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-dreams | 1 | fraction | 1.00 | 1.00 | 0.00 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-dreams | 1 | median item wall seconds | 0.8 | 0.8 | 0.0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-dreams | 1 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-dreams | 1 | solved | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-dreams | 2 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-dreams | 2 | fraction | 0.88 | 1.00 | 0.12 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-dreams | 2 | median item wall seconds | 0.8 | 0.8 | -0.0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-dreams | 2 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-dreams | 2 | solved | 7 | 8 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-dreams | 3 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-dreams | 3 | rows | 0 | 8 | 8 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-library | 0 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-library | 0 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-library | 1 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-library | 1 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-library | 2 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-library | 2 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-library | 3 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-library | 3 | rows | 0 | 0 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-proposer | 0 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-proposer | 0 | fraction | 0.62 | 0.88 | 0.25 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-proposer | 0 | median item wall seconds | 7.2 | 2.9 | -4.2 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-proposer | 0 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-proposer | 0 | solved | 5 | 7 | 2 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-proposer | 1 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-proposer | 1 | fraction | 0.62 | 0.38 | -0.25 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-proposer | 1 | median item wall seconds | 8.3 | 13.1 | 4.8 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-proposer | 1 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-proposer | 1 | solved | 5 | 3 | -2 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-proposer | 2 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-proposer | 2 | fraction | 0.88 | 1.00 | 0.12 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-proposer | 2 | median item wall seconds | 4.9 | 0.9 | -4.0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-proposer | 2 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-proposer | 2 | solved | 7 | 8 | 1 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-proposer | 3 | N | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-proposer | 3 | fraction | 0.62 | 0.88 | 0.25 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-proposer | 3 | median item wall seconds | 9.3 | 1.1 | -8.2 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-proposer | 3 | rows | 8 | 8 | 0 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| u9-discovery-vmc/discovery-no-unify | u9-discovery-vmc/discovery-random | retention | no-proposer | 3 | solved | 5 | 7 | 2 | MISSING | noise MISSING | u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-
-Frozen suites: ["c809fde39db5ec5ecd6085986294c1dd3c53636c039058b511e90481e5081b9f", null]. Cases are comparable only on equal frozen suites. Smaller absolute differences are within noise; no replicate evidence means noise MISSING. Comparisons additionally match saved seed, device, allowances and evaluation sizes.
-
-| left | right | section | arm | generation | metric | left value | right value | right - left | maximum replicate spread | interpretation | false credit |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | full | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | full | 0 | fraction | 0.75 | 0.58 | -0.17 | 0.21 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | full | 0 | median item wall seconds | 4.5 | 8.5 | 4.1 | 4.3 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | full | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | full | 0 | solved | 36 | 28 | -8 | 10 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | full | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | full | 1 | fraction | 0.81 | 0.83 | 0.02 | 0.21 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | full | 1 | median item wall seconds | 4.0 | 4.0 | -0.0 | 4.3 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | full | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | full | 1 | solved | 39 | 40 | 1 | 10 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | full | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | full | 2 | fraction | 0.81 | 0.79 | -0.02 | 0.21 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | full | 2 | median item wall seconds | 1.2 | 3.7 | 2.4 | 4.3 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | full | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | full | 2 | solved | 39 | 38 | -1 | 10 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | full | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | full | 3 | fraction | 0.85 | 0.71 | -0.15 | 0.21 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | full | 3 | median item wall seconds | 3.7 | 4.6 | 0.8 | 4.3 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | full | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | full | 3 | solved | 41 | 34 | -7 | 10 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-dreams | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-dreams | 0 | fraction | 0.79 | 0.56 | -0.23 | 0.27 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-dreams | 0 | median item wall seconds | 4.4 | 9.0 | 4.6 | 4.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-dreams | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-dreams | 0 | solved | 38 | 27 | -11 | 13 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-dreams | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-dreams | 1 | fraction | 0.81 | 0.77 | -0.04 | 0.27 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-dreams | 1 | median item wall seconds | 0.9 | 3.9 | 3.0 | 4.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-dreams | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-dreams | 1 | solved | 39 | 37 | -2 | 13 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-dreams | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-dreams | 2 | fraction | 0.83 | 0.88 | 0.04 | 0.27 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-dreams | 2 | median item wall seconds | 0.9 | 4.1 | 3.3 | 4.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-dreams | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-dreams | 2 | solved | 40 | 42 | 2 | 13 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-dreams | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-dreams | 3 | fraction | 0.83 | 0.71 | -0.12 | 0.27 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-dreams | 3 | median item wall seconds | 2.2 | 4.9 | 2.7 | 4.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-dreams | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-dreams | 3 | solved | 40 | 34 | -6 | 13 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-library | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-library | 0 | fraction | 0.21 | 0.23 | 0.02 | 0.02 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-library | 0 | median item wall seconds | 10.5 | 11.2 | 0.7 | 0.1 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-library | 0 | rows | 48 | 48 | 0 | 48 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-library | 0 | solved | 10 | 11 | 1 | 1 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-library | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-library | 1 | fraction | 0.31 | 0.17 | -0.15 | 0.02 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-library | 1 | median item wall seconds | 10.6 | 11.1 | 0.5 | 0.1 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-library | 1 | rows | 48 | 48 | 0 | 48 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-library | 1 | solved | 15 | 8 | -7 | 1 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-library | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-library | 2 | fraction | 0.15 | 0.12 | -0.02 | 0.02 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-library | 2 | median item wall seconds | 10.6 | 11.0 | 0.4 | 0.1 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-library | 2 | rows | 48 | 48 | 0 | 48 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-library | 2 | solved | 7 | 6 | -1 | 1 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-library | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-library | 3 | fraction | 0.21 | 0.29 | 0.08 | 0.02 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-library | 3 | median item wall seconds | 10.6 | 11.0 | 0.4 | 0.1 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-library | 3 | rows | 48 | 48 | 0 | 48 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-library | 3 | solved | 10 | 14 | 4 | 1 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-proposer | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-proposer | 0 | fraction | 0.77 | 0.23 | -0.54 | 0.42 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-proposer | 0 | median item wall seconds | 5.9 | 15.2 | 9.3 | 7.9 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-proposer | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-proposer | 0 | solved | 37 | 11 | -26 | 20 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-proposer | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-proposer | 1 | fraction | 0.54 | 0.12 | -0.42 | 0.42 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-proposer | 1 | median item wall seconds | 9.4 | 13.7 | 4.3 | 7.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-proposer | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-proposer | 1 | solved | 26 | 6 | -20 | 20 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-proposer | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-proposer | 2 | fraction | 0.67 | 0.54 | -0.12 | 0.42 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-proposer | 2 | median item wall seconds | 6.7 | 7.2 | 0.5 | 7.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-proposer | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-proposer | 2 | solved | 32 | 26 | -6 | 20 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-proposer | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-proposer | 3 | fraction | 0.35 | 0.46 | 0.10 | 0.42 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-proposer | 3 | median item wall seconds | 11.4 | 11.3 | -0.1 | 7.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-proposer | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | assessment | no-proposer | 3 | solved | 17 | 22 | 5 | 20 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | full | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | full | 0 | g | 0.75 | 0.58 | -0.17 | 0.21 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | full | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | full | 0 | solved | 36 | 28 | -8 | 10 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | full | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | full | 1 | g | 0.81 | 0.83 | 0.02 | 0.21 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | full | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | full | 1 | solved | 39 | 40 | 1 | 10 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | full | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | full | 2 | g | 0.81 | 0.79 | -0.02 | 0.21 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | full | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | full | 2 | solved | 39 | 38 | -1 | 10 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | full | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | full | 3 | g | 0.85 | 0.71 | -0.15 | 0.21 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | full | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | full | 3 | solved | 41 | 34 | -7 | 10 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-dreams | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-dreams | 0 | g | 0.79 | 0.56 | -0.23 | 0.27 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-dreams | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-dreams | 0 | solved | 38 | 27 | -11 | 13 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-dreams | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-dreams | 1 | g | 0.81 | 0.77 | -0.04 | 0.27 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-dreams | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-dreams | 1 | solved | 39 | 37 | -2 | 13 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-dreams | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-dreams | 2 | g | 0.83 | 0.88 | 0.04 | 0.27 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-dreams | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-dreams | 2 | solved | 40 | 42 | 2 | 13 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-dreams | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-dreams | 3 | g | 0.83 | 0.71 | -0.12 | 0.27 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-dreams | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-dreams | 3 | solved | 40 | 34 | -6 | 13 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-library | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-library | 0 | g | 0.21 | 0.23 | 0.02 | 0.31 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-library | 0 | rows | 48 | 48 | 0 | 48 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-library | 0 | solved | 10 | 11 | 1 | 15 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-library | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-library | 1 | g | 0.31 | 0.17 | -0.15 | 0.31 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-library | 1 | rows | 48 | 48 | 0 | 48 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-library | 1 | solved | 15 | 8 | -7 | 15 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-library | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-library | 2 | g | 0.15 | 0.12 | -0.02 | 0.31 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-library | 2 | rows | 48 | 48 | 0 | 48 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-library | 2 | solved | 7 | 6 | -1 | 15 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-library | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-library | 3 | g | 0.21 | 0.29 | 0.08 | 0.31 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-library | 3 | rows | 48 | 48 | 0 | 48 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-library | 3 | solved | 10 | 14 | 4 | 15 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-proposer | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-proposer | 0 | g | 0.77 | 0.23 | -0.54 | 0.42 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-proposer | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-proposer | 0 | solved | 37 | 11 | -26 | 20 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-proposer | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-proposer | 1 | g | 0.54 | 0.12 | -0.42 | 0.42 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-proposer | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-proposer | 1 | solved | 26 | 6 | -20 | 20 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-proposer | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-proposer | 2 | g | 0.67 | 0.54 | -0.12 | 0.42 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-proposer | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-proposer | 2 | solved | 32 | 26 | -6 | 20 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-proposer | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-proposer | 3 | g | 0.35 | 0.46 | 0.10 | 0.42 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-proposer | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | curve | no-proposer | 3 | solved | 17 | 22 | 5 | 20 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | full | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | full | 0 | fraction | 0.88 | 0.38 | -0.50 | 0.25 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | full | 0 | median item wall seconds | 2.4 | 11.2 | 8.8 | 2.8 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | full | 0 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | full | 0 | solved | 7 | 3 | -4 | 2 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | full | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | full | 1 | fraction | 0.88 | 0.88 | 0.00 | 0.25 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | full | 1 | median item wall seconds | 3.4 | 2.7 | -0.7 | 2.8 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | full | 1 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | full | 1 | solved | 7 | 7 | 0 | 2 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | full | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | full | 2 | fraction | 0.88 | 0.88 | 0.00 | 0.25 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | full | 2 | median item wall seconds | 1.0 | 3.1 | 2.1 | 2.8 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | full | 2 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | full | 2 | solved | 7 | 7 | 0 | 2 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | full | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | full | 3 | fraction | 0.75 | 0.88 | 0.12 | 0.25 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | full | 3 | median item wall seconds | 2.9 | 4.4 | 1.5 | 2.8 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | full | 3 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | full | 3 | solved | 6 | 7 | 1 | 2 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-dreams | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-dreams | 0 | fraction | 0.88 | 0.38 | -0.50 | 0.12 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-dreams | 0 | median item wall seconds | 1.2 | 10.8 | 9.5 | 4.5 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-dreams | 0 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-dreams | 0 | solved | 7 | 3 | -4 | 1 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-dreams | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-dreams | 1 | fraction | 0.75 | 0.88 | 0.12 | 0.12 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-dreams | 1 | median item wall seconds | 0.8 | 2.8 | 1.9 | 4.5 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-dreams | 1 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-dreams | 1 | solved | 6 | 7 | 1 | 1 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-dreams | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-dreams | 2 | fraction | 0.88 | 0.88 | 0.00 | 0.12 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-dreams | 2 | median item wall seconds | 0.6 | 4.1 | 3.5 | 4.5 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-dreams | 2 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-dreams | 2 | solved | 7 | 7 | 0 | 1 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-dreams | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-dreams | 3 | fraction | 0.88 | 0.88 | 0.00 | 0.12 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-dreams | 3 | median item wall seconds | 0.5 | 4.1 | 3.5 | 4.5 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-dreams | 3 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-dreams | 3 | solved | 7 | 7 | 0 | 1 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-library | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-library | 0 | fraction | 0.75 | 0.50 | -0.25 | MISSING | noise MISSING | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-library | 0 | median item wall seconds | 4.0 | 9.8 | 5.7 | MISSING | noise MISSING | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-library | 0 | rows | 8 | 8 | 0 | 8 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-library | 0 | solved | 6 | 4 | -2 | MISSING | noise MISSING | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-library | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-library | 1 | fraction | 0.88 | 0.50 | -0.38 | MISSING | noise MISSING | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-library | 1 | median item wall seconds | 5.5 | 9.6 | 4.1 | MISSING | noise MISSING | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-library | 1 | rows | 8 | 8 | 0 | 8 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-library | 1 | solved | 7 | 4 | -3 | MISSING | noise MISSING | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-library | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-library | 2 | fraction | 0.75 | 0.50 | -0.25 | MISSING | noise MISSING | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-library | 2 | median item wall seconds | 6.4 | 9.9 | 3.5 | MISSING | noise MISSING | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-library | 2 | rows | 8 | 8 | 0 | 8 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-library | 2 | solved | 6 | 4 | -2 | MISSING | noise MISSING | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-library | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-library | 3 | fraction | 0.62 | 0.38 | -0.25 | MISSING | noise MISSING | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-library | 3 | median item wall seconds | 5.0 | 11.3 | 6.2 | MISSING | noise MISSING | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-library | 3 | rows | 8 | 8 | 0 | 8 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-library | 3 | solved | 5 | 3 | -2 | MISSING | noise MISSING | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-proposer | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-proposer | 0 | fraction | 0.88 | 0.75 | -0.12 | 0.38 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-proposer | 0 | median item wall seconds | 2.0 | 6.3 | 4.3 | 5.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-proposer | 0 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-proposer | 0 | solved | 7 | 6 | -1 | 3 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-proposer | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-proposer | 1 | fraction | 0.50 | 0.25 | -0.25 | 0.38 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-proposer | 1 | median item wall seconds | 10.1 | 14.6 | 4.5 | 5.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-proposer | 1 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-proposer | 1 | solved | 4 | 2 | -2 | 3 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-proposer | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-proposer | 2 | fraction | 0.88 | 0.38 | -0.50 | 0.38 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-proposer | 2 | median item wall seconds | 0.6 | 12.6 | 12.0 | 5.9 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-proposer | 2 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-proposer | 2 | solved | 7 | 3 | -4 | 3 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-proposer | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-proposer | 3 | fraction | 0.38 | 0.38 | 0.00 | 0.38 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-proposer | 3 | median item wall seconds | 11.5 | 12.0 | 0.5 | 5.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-proposer | 3 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/full | retention | no-proposer | 3 | solved | 3 | 3 | 0 | 3 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 0 | fraction | 0.75 | 0.54 | -0.21 | 0.21 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 0 | median item wall seconds | 4.5 | 9.4 | 5.0 | 4.3 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 0 | solved | 36 | 26 | -10 | 10 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 1 | fraction | 0.81 | 0.69 | -0.12 | 0.21 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 1 | median item wall seconds | 4.0 | 4.3 | 0.2 | 4.3 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 1 | solved | 39 | 33 | -6 | 10 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 2 | fraction | 0.81 | 0.79 | -0.02 | 0.21 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 2 | median item wall seconds | 1.2 | 5.0 | 3.8 | 4.3 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 2 | solved | 39 | 38 | -1 | 10 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 3 | fraction | 0.85 | 0.75 | -0.10 | 0.21 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 3 | median item wall seconds | 3.7 | 3.4 | -0.3 | 4.3 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 3 | solved | 41 | 36 | -5 | 10 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 0 | fraction | 0.79 | 0.56 | -0.23 | 0.27 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 0 | median item wall seconds | 4.4 | 9.1 | 4.7 | 4.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 0 | solved | 38 | 27 | -11 | 13 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 1 | fraction | 0.81 | 0.52 | -0.29 | 0.27 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 1 | median item wall seconds | 0.9 | 9.5 | 8.6 | 4.9 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 1 | solved | 39 | 25 | -14 | 13 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 2 | fraction | 0.83 | 0.73 | -0.10 | 0.27 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 2 | median item wall seconds | 0.9 | 5.3 | 4.4 | 4.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 2 | solved | 40 | 35 | -5 | 13 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 3 | rows | 48 | 0 | -48 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-library | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-library | 0 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-library | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-library | 1 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-library | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-library | 2 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-library | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-library | 3 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 0 | fraction | 0.77 | 0.08 | -0.69 | 0.42 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 0 | median item wall seconds | 5.9 | 14.2 | 8.3 | 7.9 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 0 | solved | 37 | 4 | -33 | 20 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 1 | fraction | 0.54 | 0.04 | -0.50 | 0.42 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 1 | median item wall seconds | 9.4 | 13.8 | 4.4 | 7.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 1 | solved | 26 | 2 | -24 | 20 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 2 | fraction | 0.67 | 0.50 | -0.17 | 0.42 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 2 | median item wall seconds | 6.7 | 9.9 | 3.2 | 7.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 2 | solved | 32 | 24 | -8 | 20 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 3 | fraction | 0.35 | 0.40 | 0.04 | 0.42 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 3 | median item wall seconds | 11.4 | 12.1 | 0.6 | 7.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 3 | solved | 17 | 19 | 2 | 20 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | full | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | full | 0 | g | 0.75 | 0.54 | -0.21 | 0.21 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | full | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | full | 0 | solved | 36 | 26 | -10 | 10 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | full | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | full | 1 | g | 0.81 | 0.69 | -0.12 | 0.21 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | full | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | full | 1 | solved | 39 | 33 | -6 | 10 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | full | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | full | 2 | g | 0.81 | 0.79 | -0.02 | 0.21 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | full | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | full | 2 | solved | 39 | 38 | -1 | 10 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | full | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | full | 3 | g | 0.85 | 0.75 | -0.10 | 0.21 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | full | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | full | 3 | solved | 41 | 36 | -5 | 10 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 0 | g | 0.79 | 0.56 | -0.23 | 0.27 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 0 | solved | 38 | 27 | -11 | 13 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 1 | g | 0.81 | 0.52 | -0.29 | 0.27 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 1 | solved | 39 | 25 | -14 | 13 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 2 | g | 0.83 | 0.73 | -0.10 | 0.27 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 2 | solved | 40 | 35 | -5 | 13 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 3 | g | 0.83 | 0.00 | -0.83 | 0.27 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 3 | rows | 48 | 0 | -48 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 3 | solved | 40 | 0 | -40 | 13 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 0 | g | 0.21 | 0.00 | -0.21 | 0.31 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 0 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 0 | solved | 10 | 0 | -10 | 15 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 1 | g | 0.31 | 0.00 | -0.31 | 0.31 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 1 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 1 | solved | 15 | 0 | -15 | 15 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 2 | g | 0.15 | 0.00 | -0.15 | 0.31 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 2 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 2 | solved | 7 | 0 | -7 | 15 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 3 | g | 0.21 | 0.00 | -0.21 | 0.31 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 3 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 3 | solved | 10 | 0 | -10 | 15 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 0 | g | 0.77 | 0.08 | -0.69 | 0.42 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 0 | solved | 37 | 4 | -33 | 20 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 1 | g | 0.54 | 0.04 | -0.50 | 0.42 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 1 | solved | 26 | 2 | -24 | 20 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 2 | g | 0.67 | 0.50 | -0.17 | 0.42 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 2 | solved | 32 | 24 | -8 | 20 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 3 | g | 0.35 | 0.40 | 0.04 | 0.42 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 3 | solved | 17 | 19 | 2 | 20 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | full | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | full | 0 | fraction | 0.88 | 0.88 | 0.00 | 0.25 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | full | 0 | median item wall seconds | 2.4 | 9.1 | 6.7 | 2.8 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | full | 0 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | full | 0 | solved | 7 | 7 | 0 | 2 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | full | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | full | 1 | fraction | 0.88 | 0.62 | -0.25 | 0.25 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | full | 1 | median item wall seconds | 3.4 | 4.2 | 0.9 | 2.8 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | full | 1 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | full | 1 | solved | 7 | 5 | -2 | 2 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | full | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | full | 2 | fraction | 0.88 | 0.88 | 0.00 | 0.25 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | full | 2 | median item wall seconds | 1.0 | 3.6 | 2.6 | 2.8 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | full | 2 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | full | 2 | solved | 7 | 7 | 0 | 2 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | full | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | full | 3 | fraction | 0.75 | 0.88 | 0.12 | 0.25 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | full | 3 | median item wall seconds | 2.9 | 3.4 | 0.5 | 2.8 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | full | 3 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | full | 3 | solved | 6 | 7 | 1 | 2 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 0 | fraction | 0.88 | 0.88 | 0.00 | 0.12 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 0 | median item wall seconds | 1.2 | 6.7 | 5.5 | 4.5 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 0 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 0 | solved | 7 | 7 | 0 | 1 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 1 | fraction | 0.75 | 0.62 | -0.12 | 0.12 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 1 | median item wall seconds | 0.8 | 5.8 | 5.0 | 4.5 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 1 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 1 | solved | 6 | 5 | -1 | 1 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 2 | fraction | 0.88 | 0.88 | 0.00 | 0.12 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 2 | median item wall seconds | 0.6 | 3.0 | 2.4 | 4.5 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 2 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 2 | solved | 7 | 7 | 0 | 1 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 3 | rows | 8 | 0 | -8 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-library | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-library | 0 | rows | 8 | 0 | -8 | 8 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-library | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-library | 1 | rows | 8 | 0 | -8 | 8 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-library | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-library | 2 | rows | 8 | 0 | -8 | 8 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-library | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-library | 3 | rows | 8 | 0 | -8 | 8 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 0 | fraction | 0.88 | 0.25 | -0.62 | 0.38 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 0 | median item wall seconds | 2.0 | 13.0 | 11.0 | 5.9 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 0 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 0 | solved | 7 | 2 | -5 | 3 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 1 | fraction | 0.50 | 0.00 | -0.50 | 0.38 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 1 | median item wall seconds | 10.1 | 13.3 | 3.2 | 5.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 1 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 1 | solved | 4 | 0 | -4 | 3 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 2 | fraction | 0.88 | 0.88 | 0.00 | 0.38 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 2 | median item wall seconds | 0.6 | 5.0 | 4.3 | 5.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 2 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 2 | solved | 7 | 7 | 0 | 3 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 3 | fraction | 0.38 | 0.38 | 0.00 | 0.38 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 3 | median item wall seconds | 11.5 | 11.8 | 0.2 | 5.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 3 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 3 | solved | 3 | 3 | 0 | 3 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | full | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | full | 0 | fraction | 0.75 | 0.54 | -0.21 | 0.21 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | full | 0 | median item wall seconds | 4.5 | 8.8 | 4.3 | 4.3 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | full | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | full | 0 | solved | 36 | 26 | -10 | 10 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | full | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | full | 1 | fraction | 0.81 | 1.00 | 0.19 | 0.21 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | full | 1 | median item wall seconds | 4.0 | 0.8 | -3.2 | 4.3 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | full | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | full | 1 | solved | 39 | 48 | 9 | 10 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | full | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | full | 2 | fraction | 0.81 | 0.81 | 0.00 | 0.21 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | full | 2 | median item wall seconds | 1.2 | 0.9 | -0.4 | 4.3 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | full | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | full | 2 | solved | 39 | 39 | 0 | 10 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | full | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | full | 3 | fraction | 0.85 | 0.98 | 0.12 | 0.21 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | full | 3 | median item wall seconds | 3.7 | 2.4 | -1.3 | 4.3 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | full | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | full | 3 | solved | 41 | 47 | 6 | 10 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 0 | fraction | 0.79 | 0.52 | -0.27 | 0.27 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 0 | median item wall seconds | 4.4 | 9.4 | 4.9 | 4.9 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 0 | solved | 38 | 25 | -13 | 13 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 1 | fraction | 0.81 | 0.96 | 0.15 | 0.27 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 1 | median item wall seconds | 0.9 | 1.3 | 0.4 | 4.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 1 | solved | 39 | 46 | 7 | 13 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 2 | fraction | 0.83 | 0.94 | 0.10 | 0.27 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 2 | median item wall seconds | 0.9 | 1.4 | 0.5 | 4.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 2 | solved | 40 | 45 | 5 | 13 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 3 | fraction | 0.83 | 0.94 | 0.10 | 0.27 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 3 | median item wall seconds | 2.2 | 3.3 | 1.1 | 4.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 3 | solved | 40 | 45 | 5 | 13 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 0 | fraction | 0.21 | 0.23 | 0.02 | 0.02 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 0 | median item wall seconds | 10.5 | 10.6 | 0.1 | 0.1 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 0 | rows | 48 | 27 | -21 | 48 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 0 | solved | 10 | 11 | 1 | 1 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 1 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 2 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 3 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 0 | fraction | 0.77 | 0.42 | -0.35 | 0.42 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 0 | median item wall seconds | 5.9 | 13.8 | 7.9 | 7.9 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 0 | solved | 37 | 20 | -17 | 20 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 1 | fraction | 0.54 | 0.12 | -0.42 | 0.42 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 1 | median item wall seconds | 9.4 | 14.3 | 4.9 | 7.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 1 | solved | 26 | 6 | -20 | 20 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 2 | fraction | 0.67 | 0.50 | -0.17 | 0.42 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 2 | median item wall seconds | 6.7 | 9.9 | 3.2 | 7.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 2 | solved | 32 | 24 | -8 | 20 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 3 | fraction | 0.35 | 0.42 | 0.06 | 0.42 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 3 | median item wall seconds | 11.4 | 12.0 | 0.6 | 7.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 3 | solved | 17 | 20 | 3 | 20 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 0 | g | 0.75 | 0.54 | -0.21 | 0.21 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 0 | solved | 36 | 26 | -10 | 10 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 1 | g | 0.81 | 1.00 | 0.19 | 0.21 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 1 | solved | 39 | 48 | 9 | 10 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 2 | g | 0.81 | 0.81 | 0.00 | 0.21 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 2 | solved | 39 | 39 | 0 | 10 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 3 | g | 0.85 | 0.98 | 0.12 | 0.21 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | full | 3 | solved | 41 | 47 | 6 | 10 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 0 | g | 0.79 | 0.52 | -0.27 | 0.27 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 0 | solved | 38 | 25 | -13 | 13 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 1 | g | 0.81 | 0.96 | 0.15 | 0.27 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 1 | solved | 39 | 46 | 7 | 13 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 2 | g | 0.83 | 0.94 | 0.10 | 0.27 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 2 | solved | 40 | 45 | 5 | 13 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 3 | g | 0.83 | 0.94 | 0.10 | 0.27 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 3 | solved | 40 | 45 | 5 | 13 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 0 | g | 0.21 | 0.23 | 0.02 | 0.31 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 0 | rows | 48 | 27 | -21 | 48 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 0 | solved | 10 | 11 | 1 | 15 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 1 | g | 0.31 | 0.00 | -0.31 | 0.31 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 1 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 1 | solved | 15 | 0 | -15 | 15 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 2 | g | 0.15 | 0.00 | -0.15 | 0.31 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 2 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 2 | solved | 7 | 0 | -7 | 15 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 3 | g | 0.21 | 0.00 | -0.21 | 0.31 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 3 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 3 | solved | 10 | 0 | -10 | 15 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 0 | g | 0.77 | 0.42 | -0.35 | 0.42 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 0 | solved | 37 | 20 | -17 | 20 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 1 | g | 0.54 | 0.12 | -0.42 | 0.42 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 1 | solved | 26 | 6 | -20 | 20 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 2 | g | 0.67 | 0.50 | -0.17 | 0.42 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 2 | solved | 32 | 24 | -8 | 20 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 3 | g | 0.35 | 0.42 | 0.06 | 0.42 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 3 | solved | 17 | 20 | 3 | 20 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | full | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | full | 0 | fraction | 0.88 | 0.75 | -0.12 | 0.25 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | full | 0 | median item wall seconds | 2.4 | 3.6 | 1.2 | 2.8 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | full | 0 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | full | 0 | solved | 7 | 6 | -1 | 2 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | full | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | full | 1 | fraction | 0.88 | 1.00 | 0.12 | 0.25 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | full | 1 | median item wall seconds | 3.4 | 0.6 | -2.8 | 2.8 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | full | 1 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | full | 1 | solved | 7 | 8 | 1 | 2 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | full | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | full | 2 | fraction | 0.88 | 1.00 | 0.12 | 0.25 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | full | 2 | median item wall seconds | 1.0 | 0.6 | -0.4 | 2.8 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | full | 2 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | full | 2 | solved | 7 | 8 | 1 | 2 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | full | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | full | 3 | fraction | 0.75 | 1.00 | 0.25 | 0.25 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | full | 3 | median item wall seconds | 2.9 | 2.1 | -0.9 | 2.8 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | full | 3 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | full | 3 | solved | 6 | 8 | 2 | 2 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 0 | fraction | 0.88 | 0.75 | -0.12 | 0.12 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 0 | median item wall seconds | 1.2 | 5.8 | 4.5 | 4.5 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 0 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 0 | solved | 7 | 6 | -1 | 1 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 1 | fraction | 0.75 | 0.75 | 0.00 | 0.12 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 1 | median item wall seconds | 0.8 | 2.2 | 1.4 | 4.5 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 1 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 1 | solved | 6 | 6 | 0 | 1 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 2 | fraction | 0.88 | 1.00 | 0.12 | 0.12 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 2 | median item wall seconds | 0.6 | 1.5 | 1.0 | 4.5 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 2 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 2 | solved | 7 | 8 | 1 | 1 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 3 | fraction | 0.88 | 1.00 | 0.12 | 0.12 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 3 | median item wall seconds | 0.5 | 2.2 | 1.7 | 4.5 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 3 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 3 | solved | 7 | 8 | 1 | 1 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 0 | rows | 8 | 0 | -8 | 8 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 1 | rows | 8 | 0 | -8 | 8 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 2 | rows | 8 | 0 | -8 | 8 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 3 | rows | 8 | 0 | -8 | 8 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 0 | fraction | 0.88 | 0.50 | -0.38 | 0.38 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 0 | median item wall seconds | 2.0 | 7.9 | 5.9 | 5.9 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 0 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 0 | solved | 7 | 4 | -3 | 3 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 1 | fraction | 0.50 | 0.25 | -0.25 | 0.38 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 1 | median item wall seconds | 10.1 | 11.8 | 1.8 | 5.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 1 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 1 | solved | 4 | 2 | -2 | 3 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 2 | fraction | 0.88 | 0.62 | -0.25 | 0.38 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 2 | median item wall seconds | 0.6 | 1.2 | 0.6 | 5.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 2 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 2 | solved | 7 | 5 | -2 | 3 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 3 | fraction | 0.38 | 0.50 | 0.12 | 0.38 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 3 | median item wall seconds | 11.5 | 9.7 | -1.8 | 5.9 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 3 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/discovery-off | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 3 | solved | 3 | 4 | 1 | 3 | within noise | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 0 | fraction | 0.58 | 0.54 | -0.04 | 0.21 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 0 | median item wall seconds | 8.5 | 9.4 | 0.9 | 4.3 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 0 | solved | 28 | 26 | -2 | 10 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 1 | fraction | 0.83 | 0.69 | -0.15 | 0.21 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 1 | median item wall seconds | 4.0 | 4.3 | 0.3 | 4.3 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 1 | solved | 40 | 33 | -7 | 10 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 2 | fraction | 0.79 | 0.79 | 0.00 | 0.21 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 2 | median item wall seconds | 3.7 | 5.0 | 1.4 | 4.3 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 2 | solved | 38 | 38 | 0 | 10 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 3 | fraction | 0.71 | 0.75 | 0.04 | 0.21 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 3 | median item wall seconds | 4.6 | 3.4 | -1.1 | 4.3 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | full | 3 | solved | 34 | 36 | 2 | 10 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 0 | fraction | 0.56 | 0.56 | 0.00 | 0.27 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 0 | median item wall seconds | 9.0 | 9.1 | 0.1 | 4.9 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 0 | solved | 27 | 27 | 0 | 13 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 1 | fraction | 0.77 | 0.52 | -0.25 | 0.27 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 1 | median item wall seconds | 3.9 | 9.5 | 5.5 | 4.9 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 1 | solved | 37 | 25 | -12 | 13 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 2 | fraction | 0.88 | 0.73 | -0.15 | 0.27 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 2 | median item wall seconds | 4.1 | 5.3 | 1.1 | 4.9 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 2 | solved | 42 | 35 | -7 | 13 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-dreams | 3 | rows | 48 | 0 | -48 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-library | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-library | 0 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-library | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-library | 1 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-library | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-library | 2 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-library | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-library | 3 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 0 | fraction | 0.23 | 0.08 | -0.15 | 0.42 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 0 | median item wall seconds | 15.2 | 14.2 | -1.0 | 7.9 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 0 | solved | 11 | 4 | -7 | 20 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 1 | fraction | 0.12 | 0.04 | -0.08 | 0.42 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 1 | median item wall seconds | 13.7 | 13.8 | 0.1 | 7.9 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 1 | solved | 6 | 2 | -4 | 20 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 2 | fraction | 0.54 | 0.50 | -0.04 | 0.42 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 2 | median item wall seconds | 7.2 | 9.9 | 2.7 | 7.9 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 2 | solved | 26 | 24 | -2 | 20 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 3 | fraction | 0.46 | 0.40 | -0.06 | 0.42 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 3 | median item wall seconds | 11.3 | 12.1 | 0.8 | 7.9 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | assessment | no-proposer | 3 | solved | 22 | 19 | -3 | 20 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | full | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | full | 0 | g | 0.58 | 0.54 | -0.04 | 0.21 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | full | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | full | 0 | solved | 28 | 26 | -2 | 10 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | full | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | full | 1 | g | 0.83 | 0.69 | -0.15 | 0.21 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | full | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | full | 1 | solved | 40 | 33 | -7 | 10 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | full | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | full | 2 | g | 0.79 | 0.79 | 0.00 | 0.21 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | full | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | full | 2 | solved | 38 | 38 | 0 | 10 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | full | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | full | 3 | g | 0.71 | 0.75 | 0.04 | 0.21 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | full | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | full | 3 | solved | 34 | 36 | 2 | 10 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 0 | g | 0.56 | 0.56 | 0.00 | 0.27 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 0 | solved | 27 | 27 | 0 | 13 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 1 | g | 0.77 | 0.52 | -0.25 | 0.27 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 1 | solved | 37 | 25 | -12 | 13 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 2 | g | 0.88 | 0.73 | -0.15 | 0.27 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 2 | solved | 42 | 35 | -7 | 13 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 3 | g | 0.71 | 0.00 | -0.71 | 0.27 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 3 | rows | 48 | 0 | -48 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-dreams | 3 | solved | 34 | 0 | -34 | 13 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 0 | g | 0.23 | 0.00 | -0.23 | 0.31 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 0 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 0 | solved | 11 | 0 | -11 | 15 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 1 | g | 0.17 | 0.00 | -0.17 | 0.31 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 1 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 1 | solved | 8 | 0 | -8 | 15 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 2 | g | 0.12 | 0.00 | -0.12 | 0.31 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 2 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 2 | solved | 6 | 0 | -6 | 15 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 3 | g | 0.29 | 0.00 | -0.29 | 0.31 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 3 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-library | 3 | solved | 14 | 0 | -14 | 15 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 0 | g | 0.23 | 0.08 | -0.15 | 0.42 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 0 | solved | 11 | 4 | -7 | 20 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 1 | g | 0.12 | 0.04 | -0.08 | 0.42 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 1 | solved | 6 | 2 | -4 | 20 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 2 | g | 0.54 | 0.50 | -0.04 | 0.42 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 2 | solved | 26 | 24 | -2 | 20 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 3 | g | 0.46 | 0.40 | -0.06 | 0.42 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | curve | no-proposer | 3 | solved | 22 | 19 | -3 | 20 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | full | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | full | 0 | fraction | 0.38 | 0.88 | 0.50 | 0.25 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | full | 0 | median item wall seconds | 11.2 | 9.1 | -2.1 | 2.8 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | full | 0 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | full | 0 | solved | 3 | 7 | 4 | 2 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | full | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | full | 1 | fraction | 0.88 | 0.62 | -0.25 | 0.25 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | full | 1 | median item wall seconds | 2.7 | 4.2 | 1.5 | 2.8 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | full | 1 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | full | 1 | solved | 7 | 5 | -2 | 2 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | full | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | full | 2 | fraction | 0.88 | 0.88 | 0.00 | 0.25 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | full | 2 | median item wall seconds | 3.1 | 3.6 | 0.5 | 2.8 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | full | 2 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | full | 2 | solved | 7 | 7 | 0 | 2 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | full | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | full | 3 | fraction | 0.88 | 0.88 | 0.00 | 0.25 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | full | 3 | median item wall seconds | 4.4 | 3.4 | -1.0 | 2.8 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | full | 3 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | full | 3 | solved | 7 | 7 | 0 | 2 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 0 | fraction | 0.38 | 0.88 | 0.50 | 0.12 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 0 | median item wall seconds | 10.8 | 6.7 | -4.1 | 4.5 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 0 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 0 | solved | 3 | 7 | 4 | 1 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 1 | fraction | 0.88 | 0.62 | -0.25 | 0.12 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 1 | median item wall seconds | 2.8 | 5.8 | 3.0 | 4.5 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 1 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 1 | solved | 7 | 5 | -2 | 1 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 2 | fraction | 0.88 | 0.88 | 0.00 | 0.12 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 2 | median item wall seconds | 4.1 | 3.0 | -1.1 | 4.5 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 2 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 2 | solved | 7 | 7 | 0 | 1 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-dreams | 3 | rows | 8 | 0 | -8 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-library | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-library | 0 | rows | 8 | 0 | -8 | 8 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-library | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-library | 1 | rows | 8 | 0 | -8 | 8 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-library | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-library | 2 | rows | 8 | 0 | -8 | 8 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-library | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-library | 3 | rows | 8 | 0 | -8 | 8 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 0 | fraction | 0.75 | 0.25 | -0.50 | 0.38 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 0 | median item wall seconds | 6.3 | 13.0 | 6.7 | 5.9 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 0 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 0 | solved | 6 | 2 | -4 | 3 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 1 | fraction | 0.25 | 0.00 | -0.25 | 0.38 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 1 | median item wall seconds | 14.6 | 13.3 | -1.3 | 5.9 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 1 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 1 | solved | 2 | 0 | -2 | 3 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 2 | fraction | 0.38 | 0.88 | 0.50 | 0.38 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 2 | median item wall seconds | 12.6 | 5.0 | -7.6 | 5.9 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 2 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 2 | solved | 3 | 7 | 4 | 3 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 3 | fraction | 0.38 | 0.38 | 0.00 | 0.38 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 3 | median item wall seconds | 12.0 | 11.8 | -0.2 | 5.9 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 3 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/mem-choice | retention | no-proposer | 3 | solved | 3 | 3 | 0 | 3 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | full | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | full | 0 | fraction | 0.58 | 0.54 | -0.04 | 0.21 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | full | 0 | median item wall seconds | 8.5 | 8.8 | 0.2 | 4.3 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | full | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | full | 0 | solved | 28 | 26 | -2 | 10 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | full | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | full | 1 | fraction | 0.83 | 1.00 | 0.17 | 0.21 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | full | 1 | median item wall seconds | 4.0 | 0.8 | -3.2 | 4.3 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | full | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | full | 1 | solved | 40 | 48 | 8 | 10 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | full | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | full | 2 | fraction | 0.79 | 0.81 | 0.02 | 0.21 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | full | 2 | median item wall seconds | 3.7 | 0.9 | -2.8 | 4.3 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | full | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | full | 2 | solved | 38 | 39 | 1 | 10 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | full | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | full | 3 | fraction | 0.71 | 0.98 | 0.27 | 0.21 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | full | 3 | median item wall seconds | 4.6 | 2.4 | -2.1 | 4.3 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | full | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | full | 3 | solved | 34 | 47 | 13 | 10 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 0 | fraction | 0.56 | 0.52 | -0.04 | 0.27 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 0 | median item wall seconds | 9.0 | 9.4 | 0.3 | 4.9 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 0 | solved | 27 | 25 | -2 | 13 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 1 | fraction | 0.77 | 0.96 | 0.19 | 0.27 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 1 | median item wall seconds | 3.9 | 1.3 | -2.6 | 4.9 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 1 | solved | 37 | 46 | 9 | 13 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 2 | fraction | 0.88 | 0.94 | 0.06 | 0.27 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 2 | median item wall seconds | 4.1 | 1.4 | -2.7 | 4.9 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 2 | solved | 42 | 45 | 3 | 13 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 3 | fraction | 0.71 | 0.94 | 0.23 | 0.27 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 3 | median item wall seconds | 4.9 | 3.3 | -1.6 | 4.9 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 3 | solved | 34 | 45 | 11 | 13 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 0 | fraction | 0.23 | 0.23 | 0.00 | 0.02 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 0 | median item wall seconds | 11.2 | 10.6 | -0.6 | 0.1 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 0 | rows | 48 | 27 | -21 | 48 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 0 | solved | 11 | 11 | 0 | 1 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 1 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 2 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 3 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 0 | fraction | 0.23 | 0.42 | 0.19 | 0.42 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 0 | median item wall seconds | 15.2 | 13.8 | -1.4 | 7.9 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 0 | solved | 11 | 20 | 9 | 20 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 1 | fraction | 0.12 | 0.12 | 0.00 | 0.42 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 1 | median item wall seconds | 13.7 | 14.3 | 0.5 | 7.9 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 1 | solved | 6 | 6 | 0 | 20 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 2 | fraction | 0.54 | 0.50 | -0.04 | 0.42 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 2 | median item wall seconds | 7.2 | 9.9 | 2.7 | 7.9 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 2 | solved | 26 | 24 | -2 | 20 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 3 | fraction | 0.46 | 0.42 | -0.04 | 0.42 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 3 | median item wall seconds | 11.3 | 12.0 | 0.7 | 7.9 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 3 | solved | 22 | 20 | -2 | 20 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | full | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | full | 0 | g | 0.58 | 0.54 | -0.04 | 0.21 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | full | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | full | 0 | solved | 28 | 26 | -2 | 10 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | full | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | full | 1 | g | 0.83 | 1.00 | 0.17 | 0.21 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | full | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | full | 1 | solved | 40 | 48 | 8 | 10 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | full | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | full | 2 | g | 0.79 | 0.81 | 0.02 | 0.21 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | full | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | full | 2 | solved | 38 | 39 | 1 | 10 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | full | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | full | 3 | g | 0.71 | 0.98 | 0.27 | 0.21 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | full | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | full | 3 | solved | 34 | 47 | 13 | 10 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 0 | g | 0.56 | 0.52 | -0.04 | 0.27 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 0 | solved | 27 | 25 | -2 | 13 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 1 | g | 0.77 | 0.96 | 0.19 | 0.27 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 1 | solved | 37 | 46 | 9 | 13 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 2 | g | 0.88 | 0.94 | 0.06 | 0.27 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 2 | solved | 42 | 45 | 3 | 13 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 3 | g | 0.71 | 0.94 | 0.23 | 0.27 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 3 | solved | 34 | 45 | 11 | 13 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 0 | g | 0.23 | 0.23 | 0.00 | 0.31 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 0 | rows | 48 | 27 | -21 | 48 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 0 | solved | 11 | 11 | 0 | 15 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 1 | g | 0.17 | 0.00 | -0.17 | 0.31 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 1 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 1 | solved | 8 | 0 | -8 | 15 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 2 | g | 0.12 | 0.00 | -0.12 | 0.31 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 2 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 2 | solved | 6 | 0 | -6 | 15 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 3 | g | 0.29 | 0.00 | -0.29 | 0.31 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 3 | rows | 48 | 0 | -48 | 48 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 3 | solved | 14 | 0 | -14 | 15 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 0 | g | 0.23 | 0.42 | 0.19 | 0.42 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 0 | solved | 11 | 20 | 9 | 20 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 1 | g | 0.12 | 0.12 | 0.00 | 0.42 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 1 | solved | 6 | 6 | 0 | 20 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 2 | g | 0.54 | 0.50 | -0.04 | 0.42 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 2 | solved | 26 | 24 | -2 | 20 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 3 | g | 0.46 | 0.42 | -0.04 | 0.42 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 3 | solved | 22 | 20 | -2 | 20 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | full | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | full | 0 | fraction | 0.38 | 0.75 | 0.38 | 0.25 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | full | 0 | median item wall seconds | 11.2 | 3.6 | -7.6 | 2.8 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | full | 0 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | full | 0 | solved | 3 | 6 | 3 | 2 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | full | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | full | 1 | fraction | 0.88 | 1.00 | 0.12 | 0.25 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | full | 1 | median item wall seconds | 2.7 | 0.6 | -2.2 | 2.8 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | full | 1 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | full | 1 | solved | 7 | 8 | 1 | 2 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | full | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | full | 2 | fraction | 0.88 | 1.00 | 0.12 | 0.25 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | full | 2 | median item wall seconds | 3.1 | 0.6 | -2.5 | 2.8 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | full | 2 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | full | 2 | solved | 7 | 8 | 1 | 2 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | full | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | full | 3 | fraction | 0.88 | 1.00 | 0.12 | 0.25 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | full | 3 | median item wall seconds | 4.4 | 2.1 | -2.4 | 2.8 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | full | 3 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | full | 3 | solved | 7 | 8 | 1 | 2 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 0 | fraction | 0.38 | 0.75 | 0.38 | 0.12 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 0 | median item wall seconds | 10.8 | 5.8 | -5.0 | 4.5 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 0 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 0 | solved | 3 | 6 | 3 | 1 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 1 | fraction | 0.88 | 0.75 | -0.12 | 0.12 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 1 | median item wall seconds | 2.8 | 2.2 | -0.5 | 4.5 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 1 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 1 | solved | 7 | 6 | -1 | 1 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 2 | fraction | 0.88 | 1.00 | 0.12 | 0.12 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 2 | median item wall seconds | 4.1 | 1.5 | -2.5 | 4.5 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 2 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 2 | solved | 7 | 8 | 1 | 1 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 3 | fraction | 0.88 | 1.00 | 0.12 | 0.12 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 3 | median item wall seconds | 4.1 | 2.2 | -1.8 | 4.5 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 3 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 3 | solved | 7 | 8 | 1 | 1 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 0 | rows | 8 | 0 | -8 | 8 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 1 | rows | 8 | 0 | -8 | 8 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 2 | rows | 8 | 0 | -8 | 8 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 3 | rows | 8 | 0 | -8 | 8 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 0 | fraction | 0.75 | 0.50 | -0.25 | 0.38 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 0 | median item wall seconds | 6.3 | 7.9 | 1.6 | 5.9 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 0 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 0 | solved | 6 | 4 | -2 | 3 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 1 | fraction | 0.25 | 0.25 | 0.00 | 0.38 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 1 | median item wall seconds | 14.6 | 11.8 | -2.8 | 5.9 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 1 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 1 | solved | 2 | 2 | 0 | 3 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 2 | fraction | 0.38 | 0.62 | 0.25 | 0.38 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 2 | median item wall seconds | 12.6 | 1.2 | -11.4 | 5.9 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 2 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 2 | solved | 3 | 5 | 2 | 3 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 3 | fraction | 0.38 | 0.50 | 0.12 | 0.38 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 3 | median item wall seconds | 12.0 | 9.7 | -2.3 | 5.9 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 3 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/full | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 3 | solved | 3 | 4 | 1 | 3 | within noise | u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | full | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | full | 0 | fraction | 0.54 | 0.54 | 0.00 | 0.21 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | full | 0 | median item wall seconds | 9.4 | 8.8 | -0.6 | 4.3 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | full | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | full | 0 | solved | 26 | 26 | 0 | 10 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | full | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | full | 1 | fraction | 0.69 | 1.00 | 0.31 | 0.21 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | full | 1 | median item wall seconds | 4.3 | 0.8 | -3.5 | 4.3 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | full | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | full | 1 | solved | 33 | 48 | 15 | 10 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | full | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | full | 2 | fraction | 0.79 | 0.81 | 0.02 | 0.21 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | full | 2 | median item wall seconds | 5.0 | 0.9 | -4.2 | 4.3 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | full | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | full | 2 | solved | 38 | 39 | 1 | 10 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | full | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | full | 3 | fraction | 0.75 | 0.98 | 0.23 | 0.21 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | full | 3 | median item wall seconds | 3.4 | 2.4 | -1.0 | 4.3 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | full | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | full | 3 | solved | 36 | 47 | 11 | 10 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 0 | fraction | 0.56 | 0.52 | -0.04 | 0.27 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 0 | median item wall seconds | 9.1 | 9.4 | 0.3 | 4.9 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 0 | solved | 27 | 25 | -2 | 13 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 1 | fraction | 0.52 | 0.96 | 0.44 | 0.27 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 1 | median item wall seconds | 9.5 | 1.3 | -8.2 | 4.9 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 1 | solved | 25 | 46 | 21 | 13 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 2 | fraction | 0.73 | 0.94 | 0.21 | 0.27 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 2 | median item wall seconds | 5.3 | 1.4 | -3.8 | 4.9 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 2 | solved | 35 | 45 | 10 | 13 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-dreams | 3 | rows | 0 | 48 | 48 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 0 | rows | 0 | 27 | 27 | 48 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 1 | rows | 0 | 0 | 0 | 48 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 2 | rows | 0 | 0 | 0 | 48 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-library | 3 | rows | 0 | 0 | 0 | 48 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 0 | fraction | 0.08 | 0.42 | 0.33 | 0.42 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 0 | median item wall seconds | 14.2 | 13.8 | -0.4 | 7.9 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 0 | solved | 4 | 20 | 16 | 20 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 1 | fraction | 0.04 | 0.12 | 0.08 | 0.42 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 1 | median item wall seconds | 13.8 | 14.3 | 0.4 | 7.9 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 1 | solved | 2 | 6 | 4 | 20 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 2 | fraction | 0.50 | 0.50 | 0.00 | 0.42 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 2 | median item wall seconds | 9.9 | 9.9 | -0.0 | 7.9 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 2 | solved | 24 | 24 | 0 | 20 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 3 | fraction | 0.40 | 0.42 | 0.02 | 0.42 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 3 | median item wall seconds | 12.1 | 12.0 | -0.1 | 7.9 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | assessment | no-proposer | 3 | solved | 19 | 20 | 1 | 20 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | full | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | full | 0 | g | 0.54 | 0.54 | 0.00 | 0.21 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | full | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | full | 0 | solved | 26 | 26 | 0 | 10 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | full | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | full | 1 | g | 0.69 | 1.00 | 0.31 | 0.21 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | full | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | full | 1 | solved | 33 | 48 | 15 | 10 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | full | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | full | 2 | g | 0.79 | 0.81 | 0.02 | 0.21 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | full | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | full | 2 | solved | 38 | 39 | 1 | 10 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | full | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | full | 3 | g | 0.75 | 0.98 | 0.23 | 0.21 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | full | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | full | 3 | solved | 36 | 47 | 11 | 10 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 0 | g | 0.56 | 0.52 | -0.04 | 0.27 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 0 | solved | 27 | 25 | -2 | 13 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 1 | g | 0.52 | 0.96 | 0.44 | 0.27 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 1 | solved | 25 | 46 | 21 | 13 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 2 | g | 0.73 | 0.94 | 0.21 | 0.27 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 2 | solved | 35 | 45 | 10 | 13 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 3 | g | 0.00 | 0.94 | 0.94 | 0.27 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 3 | rows | 0 | 48 | 48 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-dreams | 3 | solved | 0 | 45 | 45 | 13 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 0 | g | 0.00 | 0.23 | 0.23 | 0.31 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 0 | rows | 0 | 27 | 27 | 48 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 0 | solved | 0 | 11 | 11 | 15 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 1 | g | 0.00 | 0.00 | 0.00 | 0.31 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 1 | rows | 0 | 0 | 0 | 48 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 1 | solved | 0 | 0 | 0 | 15 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 2 | g | 0.00 | 0.00 | 0.00 | 0.31 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 2 | rows | 0 | 0 | 0 | 48 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 2 | solved | 0 | 0 | 0 | 15 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 3 | g | 0.00 | 0.00 | 0.00 | 0.31 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 3 | rows | 0 | 0 | 0 | 48 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-library | 3 | solved | 0 | 0 | 0 | 15 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 0 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 0 | g | 0.08 | 0.42 | 0.33 | 0.42 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 0 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 0 | solved | 4 | 20 | 16 | 20 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 1 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 1 | g | 0.04 | 0.12 | 0.08 | 0.42 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 1 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 1 | solved | 2 | 6 | 4 | 20 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 2 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 2 | g | 0.50 | 0.50 | 0.00 | 0.42 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 2 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 2 | solved | 24 | 24 | 0 | 20 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 3 | N | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 3 | g | 0.40 | 0.42 | 0.02 | 0.42 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 3 | rows | 48 | 48 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | curve | no-proposer | 3 | solved | 19 | 20 | 1 | 20 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | full | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | full | 0 | fraction | 0.88 | 0.75 | -0.12 | 0.25 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | full | 0 | median item wall seconds | 9.1 | 3.6 | -5.5 | 2.8 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | full | 0 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | full | 0 | solved | 7 | 6 | -1 | 2 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | full | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | full | 1 | fraction | 0.62 | 1.00 | 0.38 | 0.25 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | full | 1 | median item wall seconds | 4.2 | 0.6 | -3.7 | 2.8 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | full | 1 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | full | 1 | solved | 5 | 8 | 3 | 2 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | full | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | full | 2 | fraction | 0.88 | 1.00 | 0.12 | 0.25 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | full | 2 | median item wall seconds | 3.6 | 0.6 | -3.0 | 2.8 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | full | 2 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | full | 2 | solved | 7 | 8 | 1 | 2 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | full | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | full | 3 | fraction | 0.88 | 1.00 | 0.12 | 0.25 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | full | 3 | median item wall seconds | 3.4 | 2.1 | -1.3 | 2.8 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | full | 3 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | full | 3 | solved | 7 | 8 | 1 | 2 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 0 | fraction | 0.88 | 0.75 | -0.12 | 0.12 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 0 | median item wall seconds | 6.7 | 5.8 | -0.9 | 4.5 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 0 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 0 | solved | 7 | 6 | -1 | 1 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 1 | fraction | 0.62 | 0.75 | 0.12 | 0.12 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 1 | median item wall seconds | 5.8 | 2.2 | -3.6 | 4.5 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 1 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 1 | solved | 5 | 6 | 1 | 1 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 2 | fraction | 0.88 | 1.00 | 0.12 | 0.12 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 2 | median item wall seconds | 3.0 | 1.5 | -1.5 | 4.5 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 2 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 2 | solved | 7 | 8 | 1 | 1 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-dreams | 3 | rows | 0 | 8 | 8 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 0 | rows | 0 | 0 | 0 | 8 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 1 | rows | 0 | 0 | 0 | 8 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 2 | rows | 0 | 0 | 0 | 8 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-library | 3 | rows | 0 | 0 | 0 | 8 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 0 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 0 | fraction | 0.25 | 0.50 | 0.25 | 0.38 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 0 | median item wall seconds | 13.0 | 7.9 | -5.1 | 5.9 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 0 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 0 | solved | 2 | 4 | 2 | 3 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 1 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 1 | fraction | 0.00 | 0.25 | 0.25 | 0.38 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 1 | median item wall seconds | 13.3 | 11.8 | -1.4 | 5.9 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 1 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 1 | solved | 0 | 2 | 2 | 3 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 2 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 2 | fraction | 0.88 | 0.62 | -0.25 | 0.38 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 2 | median item wall seconds | 5.0 | 1.2 | -3.7 | 5.9 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 2 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 2 | solved | 7 | 5 | -2 | 3 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 3 | N | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 3 | fraction | 0.38 | 0.50 | 0.12 | 0.38 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 3 | median item wall seconds | 11.8 | 9.7 | -2.0 | 5.9 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 3 | rows | 8 | 8 | 0 | 0 | at or above measured spread | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-| u8-u9-vmc-9036ca3/mem-choice | u8-u9-vmc-9036ca3/no-memory | retention | no-proposer | 3 | solved | 3 | 4 | 1 | 3 | within noise | u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0 |
-<!-- generated:end differences -->
-
-<!-- generated:begin sources -->
-| saved path | status | sha256 of bytes read | false credit |
-|---|---|---|---|
-| sera-runs/u8-u9-vmc-9036ca3/u-discovery-off/g_curve.json | read | 86e3f3bb51a1d28b502744967c875f57935aa60701546b313fbb1accbbe72228 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0; u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| sera-runs/u8-u9-vmc-9036ca3/u-discovery-off/protocol.json | read | 9498bfa73fb6eef3a3ecf0d47118f25f8efa8463e401fb5d556c679c00cfabd8 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0; u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| sera-runs/u8-u9-vmc-9036ca3/u-discovery-off/state.json | read | 61f05439833f4219026ab4ea7f194d3f80505d3f56b27648c4e95915ab52fa17 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0; u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| sera-runs/u8-u9-vmc-9036ca3/u-full/g_curve.json | read | c5ee2ed00cef5c5fda0a45a40ec2fcc0d39ad7669a60566c7bf81ebb5eab671f | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0; u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| sera-runs/u8-u9-vmc-9036ca3/u-full/protocol.json | read | 81a221eb73b6c86b0f7a72f126473164322a140c0f5211b2ef50dda339bc447a | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0; u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| sera-runs/u8-u9-vmc-9036ca3/u-full/state.json | read | d1277f1c73674024a0dabb7d1a25415080870955a9966da64dbe67f11d46f657 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0; u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| sera-runs/u8-u9-vmc-9036ca3/u-mem-choice/g_curve.json | read | e419973fdf0375eaafec12b8072003982b768d258d970469a681761d12411ef6 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0; u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| sera-runs/u8-u9-vmc-9036ca3/u-mem-choice/protocol.json | read | 30d48e529b4bd287b785e4e3f9618c331971b4d0c01fb2616ac06ab02d4f5522 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0; u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| sera-runs/u8-u9-vmc-9036ca3/u-mem-choice/state.json | read | e5680fc4013b55244b5a6e1cdc8528384fe53a4adca0d148902e3b1753cb49e6 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0; u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| sera-runs/u8-u9-vmc-9036ca3/u-no-memory/g_curve.json | read | 1feda25c8b3d0b948d48e2b735fea7459f61ad27e9d320bceb5cdc2ab666eb30 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0; u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| sera-runs/u8-u9-vmc-9036ca3/u-no-memory/protocol.json | read | 99718ff75d528cb0a70919f48b2069deb8c18e86505e9dc0f9896702e1253e25 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0; u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| sera-runs/u8-u9-vmc-9036ca3/u-no-memory/state.json | read | 67d1880944548e6ce5cfdd6f6b792162402dfbd032c33032c2d1743779f72c83 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0; u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| sera-runs/u9-discovery-vmc/u-discovery-no-unify/g_curve.json | read | 224c356ecf26704a3be332f508fb137f56dd983f43dda77d87b0152dd1f2f1ad | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0; u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| sera-runs/u9-discovery-vmc/u-discovery-no-unify/protocol.json | read | 135ebf42cd1943cb2bd1dd84430e563a6aa427ba080baf41c61e006bdac8223e | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0; u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| sera-runs/u9-discovery-vmc/u-discovery-no-unify/state.json | read | bb25f1397e924faa37abe4c1f234ec4ce1d38cf1f0a74f937903f7b07b7718d3 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0; u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| sera-runs/u9-discovery-vmc/u-discovery-random/g_curve.json | read | 3c6ec8b2894f2bc40cd804c59c94e0ba91dcad8cdcf5be44684d4a322f5b15e9 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0; u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| sera-runs/u9-discovery-vmc/u-discovery-random/protocol.json | read | be2b5524c55bc6d650c22b1672c8d155ab6fa93e07b0d1d7bb2b04ea2fa18871 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0; u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| sera-runs/u9-discovery-vmc/u-discovery-random/state.json | read | a523c18d7ca8a3dd73eadd20732ffff82030a54bc28494e0ba87c17042b606ba | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0; u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| sera-runs/u9-discovery-vmc/u-discovery/g_curve.json | read | 05be015352ab4101a473423fe7d8747f404ee002f046efd4d6193a23c64ae06e | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0; u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| sera-runs/u9-discovery-vmc/u-discovery/protocol.json | read | e296659102ddeb2164b349075003d11001b2ea9c86e198ab42bdc49798213fc3 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0; u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-| sera-runs/u9-discovery-vmc/u-discovery/state.json | read | 6b620440ba095702449732894a0dc9798faaab24763662fbdeb129b03f8e0b05 | u8-u9-vmc-9036ca3/discovery-off: 0; u8-u9-vmc-9036ca3/full: 0; u8-u9-vmc-9036ca3/mem-choice: 0; u8-u9-vmc-9036ca3/no-memory: 0; u9-discovery-vmc/discovery: 0; u9-discovery-vmc/discovery-no-unify: 0; u9-discovery-vmc/discovery-random: 0 |
-<!-- generated:end sources -->
+Detailed per-metric difference inventories remain in the local archive.
+The noise section above retains the summarized comparisons.

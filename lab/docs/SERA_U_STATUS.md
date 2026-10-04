@@ -24,13 +24,12 @@ is loaded; the unified learner initializes its geometric Field from fresh weight
 | U10 thought experiments, invariance, assumptions and predictions | Merged; comparison runs partly complete |
 | U11 scientific and mathematical habits | Merged; comparisons pending |
 | U12 internal-world lineage and gradual-change reasoning | Merged; comparisons pending |
-| U13 typed operations, reconstruction and calibrated estimates | Merged; comparisons pending |
+| U13 typed operations, reconstruction and calibrated estimates | Merged; new comparison snapshots remain incomplete |
+| U14 work clock, one continuing life, question priority and holes | Merged with wiring and clock-loop fixes; behavioral comparisons pending |
 
-Publication validation recorded **504 passing tests and 3 skips** across SERA-U,
-the course, and crutch checks. This is a selected regression suite, not a claim
-that every historical repository test passes. See the
-[publication manifest](../../PUBLICATION_MANIFEST.json) for the source and checks.
-The earlier development count of 429 tests overlaps this suite; do not add it.
+Publication regression checks and exact source identity are recorded in the
+[manifest](../../PUBLICATION_MANIFEST.json). The suite covers SERA-U, the course
+and crutch checks; it does not imply every historical repository test passes.
 
 ## Measured speed
 
@@ -110,6 +109,45 @@ These are individual runs, and several other arms stopped early. See the
 [U10 summary](../sera-runs/u10-einstein-vma/summary.txt). Complete replicated
 comparisons for U10-U13 are pending. Full course and whole-system evaluation
 also remain open.
+
+## New U11-U14 evidence
+
+U11's full arm solved 45/45/46/46 of 48, versus 40/40/34/37 for the Einstein
+control. Disabling one-change experiments scored 48/47/48/47. Anomaly pursuit
+and audited conjectures did activate; the full set found one conserved quantity
+and certified three laws. Single-run differences do not establish a benefit.
+All full arms finished, while several later arms stopped on caps or repaired bugs.
+U10's paradox, invariance and assumption-revision methods did not activate in
+its full arm; these methods depend on certified laws, of which discovery found
+few. One bold prediction in an ablation failed. Building the methods has not yet
+demonstrated their usefulness.
+
+U12's full arm scored 37/43/47/45; its replicate scored 36/39/37/42 of 48.
+The same switches differed by up to 10 answers again. Forecast accuracy was
+approximately 19-22% per trial in cases with a world picture. Cases built
+13-19 likeness trees and 0-3 mechanisms; none of their mechanism predictions
+came true. Nearly all ablation gaps were within the observed spread.
+
+A short U9 probe found that six of nine exact worlds lacked the four observations
+needed before proposing. In the two reported eligible cases, a 0.5-second search
+found nothing while a 2-second allowance found a law, certified by the same judge.
+This supports a budget/observation diagnosis in those cases; it does not establish
+the efficacy of the redesign.
+
+U14 repairs discovery proof delivery to memory layer A and per-item memory choice.
+It adds a clock based on counted work, persistent life checkpoints, a question
+agenda and gaps left by known laws. Initial work-clock runs stalled in loops that
+waited without charging work and used about 6.4-11.6 GB per life. The committed
+fix charges waiting loops and bounds search tables by work. The development record
+reports relaunched lives at roughly 0.7-1.1 GB, but no completed behavioral result
+or independent cross-machine determinism comparison is available here.
+Counted-work budgets change the experimental protocol. Future U14 comparisons
+must match work definitions, budgets and suites; they cannot be treated as direct
+replications of the earlier wall-clock assessments.
+
+U13 comparison runs have started; the earlier report's waiting-for-a-machine
+wording is superseded. Current U13 snapshots are incomplete. Replicated benefit,
+full-course completion and whole-system comparison remain open.
 
 ## Earlier incomplete comparisons
 
